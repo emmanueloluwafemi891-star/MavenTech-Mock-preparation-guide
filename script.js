@@ -194,20 +194,23 @@ function reviewAnswers() {
     div.classList.add("review-item");
 
     const user =
-      userAnswers[i] !== null
-        ? q.options[userAnswers[i]]
-        : "No Answer";
+  userAnswers[i] !== null
+    ? q.options[userAnswers[i]]
+    : "No Answer";
 
-    const correct = q.options[q.answer];
+const correct = q.options[q.answer];
+const isCorrect = userAnswers[i] === q.answer;
 
-    div.innerHTML = `
-      <h4>Question ${i + 1}</h4>
-      <p>${q.question}</p>
-      <p>Your Answer: ${user}</p>
-      <p class="correct">
-        Correct Answer: ${correct}
-      </p>
-    `;
+div.classList.add(isCorrect ? "review-correct" : "review-wrong");
+
+div.innerHTML = `
+  <h4>Question ${i + 1}</h4>
+  <p>${q.question}</p>
+  <p>Your Answer: ${user} ${isCorrect ? "✅" : "❌"}</p>
+  <p class="correct">
+    Correct Answer: ${correct}
+  </p>
+`;
 
     review.appendChild(div);
   });
