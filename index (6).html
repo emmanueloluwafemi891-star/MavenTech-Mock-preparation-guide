@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MavenTech CBT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="start-screen">
+
+  <h1>MAVENTECH WEBSITE</h1>
+
+  <p>
+    MavenTech CBT Mock Exam Guide is an interactive online Computer-Based Test (CBT) platform designed to help students prepare effectively for examinations. The platform provides practice questions across various courses, instant scoring, and an easy-to-use interface that enhances learning and exam readiness.
+  </p>
+
+  <input
+    type="text"
+    id="studentName"
+    placeholder="Enter Full Name"
+  >
+
+  <input
+    type="text"
+    id="matricNo"
+    placeholder="Matric Number (Optional)"
+  >
+
+  <select id="course">
+    <option value="">Select Course</option>
+    <option value="GST112">GST 112</option>
+    <option value="MTH132">MTH 132</option>
+    <option value="PHY102">PHY 102</option>
+    <option value="CSC104">CSC 104</option>
+    <option value="CSC122">CSC 122</option>
+    <option value="COS102">COS 102</option>
+  </select>
+
+  <button onclick="startQuiz()">
+    Start Quiz
+  </button>
+
+  <div id="previousResult"></div>
+
+</div>
+
+
+<div class="container hidden" id="quiz-screen">
+
+  <div class="top-bar">
+
+    <div>
+      <strong>Name:</strong>
+      <span id="displayName"></span>
+    </div>
+
+    <div>
+      <strong>Course:</strong>
+      <span id="displayCourse"></span>
+    </div>
+
+    <div id="timer">
+      Time Left: 30:00
+    </div>
+
+  </div>
+
+  <div class="progress-box">
+    <div id="progress-bar"></div>
+  </div>
+
+  <h2 id="question-number"></h2>
+
+  <h3 id="question"></h3>
+
+  <div id="options"></div>
+
+  <div class="buttons">
+
+    <button onclick="previousQuestion()">
+      Previous
+    </button>
+
+    <button onclick="nextQuestion()">
+      Next
+    </button>
+
+    <button onclick="submitQuiz()">
+      Submit
+    </button>
+
+  </div>
+
+</div>
+
+
+<div class="container hidden" id="result-screen">
+
+  <h1>Quiz Completed!</h1>
+
+  <h2 id="resultName"></h2>
+
+  <h3 id="resultCourse"></h3>
+
+  <h2 id="score"></h2>
+
+  <button onclick="reviewAnswers()">
+    Review Answers
+  </button>
+
+  <button onclick="location.reload()">
+    Retake Quiz
+  </button>
+
+  <div id="reviewBox"></div>
+
+</div>
+
+<script src="script.js"></script>
+<div id="confirmModal" class="modal-overlay" style="display:none;">
+  <div class="modal-box">
+    <p class="modal-text">Are you sure you want to submit?</p>
+    <div class="modal-buttons">
+      <button id="cancelSubmit" class="modal-btn modal-btn-cancel">Cancel</button>
+      <button id="confirmSubmit" class="modal-btn modal-btn-confirm">Yes, Submit</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
