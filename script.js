@@ -31,7 +31,7 @@ function startQuiz() {
 
   document.getElementById("start-screen").classList.add("hidden");
   document.getElementById("quiz-screen").classList.remove("hidden");
-
+  createQuestionPalette();
   startTimer();
   showQuestion();
 }
@@ -98,10 +98,15 @@ function showQuestion() {
 
     div.onclick = function () {
       userAnswers[currentQuestion] = index;
+      updatePalette();
       showQuestion();
     };
 
     optionsDiv.appendChild(div);
+
+    updatepalette();
+
+    
   });
 }
 
@@ -3691,6 +3696,42 @@ const STA112 = [
     answer: 1
   }
 ];
+function createQuestionPalette() {
+    const palette = document.getElementById("questionPalette");
+    palette.innerHTML = "";
+
+    selectedCourse.forEach((_, index) => {
+        const btn = document.createElement("button");
+
+        btn.textContent = index + 1;
+
+        btn.onclick = () => {
+            currentQuestion = index;
+            showQuestion();
+            updatePalette();
+        };
+
+        palette.appendChild(btn);
+    });
+
+    updatePalette();
+}
+
+function updatePalette() {
+    const buttons = document.querySelectorAll("#questionPalette button");
+
+    buttons.forEach((button, index) => {
+        button.classList.remove("current", "answered");
+
+        if (index === currentQuestion) {
+            button.classList.add("current");
+        }
+
+        if (userAnswers[index] !== null) {
+            button.classList.add("answered");
+        }
+    });
+}
 
   
   
