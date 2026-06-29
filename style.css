@@ -231,3 +231,31 @@ button:hover {
   color: #1e1b4b;
   font-weight: bold;
 }
+.question-palette {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.question-palette button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background: #ddd;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.question-palette button.current {
+    background: #007bff;
+    color: white;
+}
+
+.question-palette button.answered {
+    background: #28a745;
+    color: white;
+}
+
+
