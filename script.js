@@ -53,9 +53,16 @@ function startTimer() {
 
     timeLeft--;
 
-    if (timeLeft < 0) {
-      clearInterval(timer);
-      submitQuiz();
+if (timeLeft <= 0) {
+    clearInterval(timer);
+    timeLeft = 0;
+
+    document.getElementById("timer").textContent = "Time Left: 0:00";
+
+    alert("⏰ Time is up! Your exam has been submitted automatically.");
+
+    submitQuiz();
+    return;
     }
   }, 1000);
 }
