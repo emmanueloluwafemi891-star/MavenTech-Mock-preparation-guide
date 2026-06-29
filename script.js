@@ -106,7 +106,7 @@ function showQuestion() {
     
   });
 
-  updatepalette();
+  updatePalette();
 }
 
 // ===== NEXT QUESTION =====
