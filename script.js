@@ -103,11 +103,10 @@ function showQuestion() {
     };
 
     optionsDiv.appendChild(div);
-
-    updatepalette();
-
     
   });
+
+  updatepalette();
 }
 
 // ===== NEXT QUESTION =====
