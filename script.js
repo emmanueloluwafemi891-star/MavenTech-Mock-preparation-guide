@@ -252,7 +252,9 @@ function getCourse(course) {
     COS102,
     STA112,
     CYB102,
-    CYB104  
+    CYB104,
+    CHM102,
+    BIO102
   }[course];
 }
 // ===== SHOW PREVIOUS RESULT =====
@@ -4851,6 +4853,1110 @@ const STA112 = [
     ],
     answer: 1,
     explanation: "By the Central Limit Theorem, a large sample size justifies approximate normality of the sampling distribution of the mean, but it does not mean the underlying population itself is normally distributed."
+  }
+];
+const CHM102 = [
+  {
+    question: "Transition elements are mainly found in which block of the periodic table?",
+    options: [
+      "p-block",
+      "d-block",
+      "s-block",
+      "f-block"
+    ],
+    answer: 1,
+    explanation: "Transition elements occupy the d-block, located between groups 2 and 13 of the periodic table."
+  },
+  {
+    question: "A defining chemical feature of transition metals is their ability to:",
+    options: [
+      "Exhibit multiple oxidation states",
+      "Exist only as gases at room temperature",
+      "Form only one oxidation state",
+      "React violently with water like Group 1 metals"
+    ],
+    answer: 0,
+    explanation: "Transition metals commonly show variable oxidation states because electrons in both the outer s and inner d orbitals can be lost."
+  },
+  {
+    question: "Many transition metal compounds are coloured mainly because of:",
+    options: [
+      "Their high melting points",
+      "d-d electron transitions within partially filled d orbitals",
+      "Their low density",
+      "Their position in Group 1"
+    ],
+    answer: 1,
+    explanation: "Colour in transition metal compounds usually arises from electronic transitions between partially filled d orbitals."
+  },
+  {
+    question: "Which property makes transition metals useful as industrial catalysts?",
+    options: [
+      "Their extreme softness",
+      "Their tendency to dissolve in water",
+      "Their inability to form complex ions",
+      "Their ability to exist in multiple oxidation states and form intermediates"
+    ],
+    answer: 3,
+    explanation: "The ability to switch between oxidation states allows transition metals to form temporary intermediates, making them effective catalysts."
+  },
+  {
+    question: "Group 1 elements are commonly known as the:",
+    options: [
+      "Alkali metals",
+      "Noble gases",
+      "Halogens",
+      "Alkaline earth metals"
+    ],
+    answer: 0,
+    explanation: "Group 1 elements, such as sodium and potassium, are known as the alkali metals."
+  },
+  {
+    question: "Alkali metals are generally stored under oil mainly to prevent:",
+    options: [
+      "Increase in melting point",
+      "Reaction with air and moisture",
+      "Loss of colour",
+      "Loss of radioactivity"
+    ],
+    answer: 1,
+    explanation: "Alkali metals are highly reactive with oxygen and water, so they are stored under oil to prevent unwanted reactions."
+  },
+  {
+    question: "Down Group 1, reactivity of the alkali metals generally:",
+    options: [
+      "Remains constant",
+      "Becomes zero",
+      "Increases",
+      "Decreases"
+    ],
+    answer: 2,
+    explanation: "Reactivity increases down Group 1 as the outer electron becomes easier to lose due to increasing atomic size."
+  },
+  {
+    question: "Group 2 elements are referred to as the:",
+    options: [
+      "Alkaline earth metals",
+      "Noble gases",
+      "Transition metals",
+      "Lanthanides"
+    ],
+    answer: 0,
+    explanation: "Group 2 elements, including magnesium and calcium, are called the alkaline earth metals."
+  },
+  {
+    question: "Compared with Group 1 metals, Group 2 metals are generally:",
+    options: [
+      "Identical in reactivity",
+      "Non-metallic",
+      "Harder and less reactive",
+      "Softer and more reactive"
+    ],
+    answer: 2,
+    explanation: "Group 2 metals are harder and less reactive than the corresponding Group 1 metals due to stronger metallic bonding."
+  },
+  {
+    question: "Carbon belongs to which group of the periodic table?",
+    options: [
+      "Group 1",
+      "Group 14 (IV)",
+      "Group 17",
+      "Group 2"
+    ],
+    answer: 1,
+    explanation: "Carbon is the head element of Group 14, also historically called Group IV."
+  },
+  {
+    question: "A characteristic feature shared by all Group 14 elements is:",
+    options: [
+      "A single valence electron",
+      "Strong metallic character only",
+      "Four electrons in the outer shell",
+      "Complete inertness"
+    ],
+    answer: 2,
+    explanation: "All Group 14 elements have four electrons in their outer shell, allowing them to form up to four covalent bonds."
+  },
+  {
+    question: "Diamond and graphite are both examples of:",
+    options: [
+      "Polymers of silicon",
+      "Allotropes of carbon",
+      "Isomers of carbon",
+      "Isotopes of carbon"
+    ],
+    answer: 1,
+    explanation: "Diamond and graphite are allotropes, different structural forms of the same element, carbon."
+  },
+  {
+    question: "An organic compound is generally defined as one that contains:",
+    options: [
+      "Carbon, usually bonded to hydrogen",
+      "Only ionic bonds",
+      "Only metallic elements",
+      "No hydrogen at all"
+    ],
+    answer: 0,
+    explanation: "Organic compounds are typically defined as carbon-containing compounds, most of which also contain hydrogen."
+  },
+  {
+    question: "Carbon's ability to form long chains and rings by bonding to itself is called:",
+    options: [
+      "Isomerism",
+      "Catenation",
+      "Hydrogenation",
+      "Polarization"
+    ],
+    answer: 1,
+    explanation: "Catenation refers to carbon's unique ability to bond extensively with other carbon atoms, forming chains and rings."
+  },
+  {
+    question: "A series of organic compounds differing by a -CH2- unit, with similar chemical properties, is called a:",
+    options: [
+      "Stereo series",
+      "Isotope series",
+      "Polymer chain",
+      "Homologous series"
+    ],
+    answer: 3,
+    explanation: "Compounds in a homologous series share a general formula and similar properties, differing by a repeating -CH2- unit."
+  },
+  {
+    question: "Compounds with the same molecular formula but different structural arrangements are called:",
+    options: [
+      "Allotropes",
+      "Isotopes",
+      "Isomers",
+      "Homologs"
+    ],
+    answer: 2,
+    explanation: "Isomers share the same molecular formula but differ in how their atoms are arranged."
+  },
+  {
+    question: "Hydrocarbons are compounds composed only of:",
+    options: [
+      "Carbon and hydrogen",
+      "Hydrogen and nitrogen",
+      "Carbon and oxygen",
+      "Carbon and nitrogen"
+    ],
+    answer: 0,
+    explanation: "A hydrocarbon, as the name suggests, contains only carbon and hydrogen atoms."
+  },
+  {
+    question: "Hydrocarbons containing only single bonds between carbon atoms are described as:",
+    options: [
+      "Radioactive",
+      "Saturated",
+      "Aromatic",
+      "Unsaturated"
+    ],
+    answer: 1,
+    explanation: "Saturated hydrocarbons contain only single carbon-carbon bonds, with no double or triple bonds."
+  },
+  {
+    question: "The general formula for alkanes is:",
+    options: [
+      "CnH2n",
+      "CnHn",
+      "CnH2n-2",
+      "CnH2n+2"
+    ],
+    answer: 3,
+    explanation: "Alkanes follow the general formula CnH2n+2, reflecting their fully saturated structure."
+  },
+  {
+    question: "Which of the following is the simplest member of the alkane series?",
+    options: [
+      "Methane",
+      "Ethyne",
+      "Ethene",
+      "Propene"
+    ],
+    answer: 0,
+    explanation: "Methane (CH4), with just one carbon atom, is the simplest alkane."
+  },
+  {
+    question: "Alkanes mainly undergo which type of reaction with halogens, under suitable conditions?",
+    options: [
+      "Addition",
+      "Polymerization",
+      "Hydrolysis",
+      "Substitution"
+    ],
+    answer: 3,
+    explanation: "Because alkanes are saturated, they react with halogens mainly through substitution rather than addition."
+  },
+  {
+    question: "Alkenes are unsaturated hydrocarbons that contain at least one:",
+    options: [
+      "Double bond",
+      "Ionic bond",
+      "Hydrogen bond",
+      "Triple bond"
+    ],
+    answer: 0,
+    explanation: "Alkenes are defined by the presence of at least one carbon-carbon double bond."
+  },
+  {
+    question: "The general formula for the alkene series is:",
+    options: [
+      "CnH2n-4",
+      "CnH2n-2",
+      "CnH2n",
+      "CnH2n+2"
+    ],
+    answer: 2,
+    explanation: "Alkenes follow the general formula CnH2n, due to one degree of unsaturation from the double bond."
+  },
+  {
+    question: "A simple test to distinguish an alkene from an alkane is to add the sample to:",
+    options: [
+      "Dilute hydrochloric acid",
+      "Sodium chloride solution",
+      "Distilled water",
+      "Bromine water"
+    ],
+    answer: 3,
+    explanation: "Alkenes decolourize bromine water through an addition reaction, while alkanes do not react under normal conditions."
+  },
+  {
+    question: "Alkenes typically react with hydrogen gas, in the presence of a catalyst, through:",
+    options: [
+      "Combustion only",
+      "Addition",
+      "Oxidation only",
+      "Substitution"
+    ],
+    answer: 1,
+    explanation: "Alkenes readily undergo addition reactions, such as adding hydrogen across the double bond to form an alkane."
+  },
+  {
+    question: "Alkynes are hydrocarbons characterized by the presence of a:",
+    options: [
+      "Single bond only",
+      "Double bond",
+      "Triple bond",
+      "Ionic bond"
+    ],
+    answer: 2,
+    explanation: "Alkynes contain at least one carbon-carbon triple bond, making them more unsaturated than alkenes."
+  },
+  {
+    question: "The general formula for the alkyne series is:",
+    options: [
+      "CnH2n-4",
+      "CnH2n-2",
+      "CnH2n",
+      "CnH2n+2"
+    ],
+    answer: 1,
+    explanation: "Alkynes follow the general formula CnH2n-2, reflecting their triple bond."
+  },
+  {
+    question: "The simplest alkyne, commonly used in welding torches, is:",
+    options: [
+      "Methane",
+      "Propane",
+      "Ethene",
+      "Ethyne"
+    ],
+    answer: 3,
+    explanation: "Ethyne (acetylene), the simplest alkyne, burns with an intensely hot flame and is widely used for welding."
+  },
+  {
+    question: "Compared to alkanes with the same number of carbon atoms, alkynes generally have:",
+    options: [
+      "No hydrogen atoms",
+      "Identical hydrogen content",
+      "Fewer hydrogen atoms",
+      "More hydrogen atoms"
+    ],
+    answer: 2,
+    explanation: "Because of their triple bond, alkynes contain fewer hydrogen atoms than the corresponding alkane."
+  },
+  {
+    question: "Hydrocarbons can be broadly classified as aliphatic or:",
+    options: [
+      "Diatomic",
+      "Radioactive",
+      "Inorganic",
+      "Aromatic"
+    ],
+    answer: 3,
+    explanation: "Hydrocarbons are broadly divided into aliphatic (chain-based) and aromatic (ring-based, like benzene) compounds."
+  },
+  {
+    question: "Petroleum is primarily a natural source of:",
+    options: [
+      "Inorganic salts",
+      "Hydrocarbons",
+      "Metallic ores",
+      "Noble gases"
+    ],
+    answer: 1,
+    explanation: "Crude petroleum is a complex mixture of hydrocarbons, separated industrially through fractional distillation."
+  },
+  {
+    question: "Complete combustion of a hydrocarbon in excess oxygen mainly produces:",
+    options: [
+      "Carbon and hydrogen gas",
+      "Carbon monoxide and water only",
+      "Carbon dioxide and water",
+      "Nitrogen and oxygen"
+    ],
+    answer: 2,
+    explanation: "Complete combustion of hydrocarbons in sufficient oxygen yields carbon dioxide and water as the main products."
+  },
+  {
+    question: "Stereochemistry is the branch of chemistry concerned with:",
+    options: [
+      "The three-dimensional arrangement of atoms in molecules",
+      "The energy changes in reactions",
+      "The rate of chemical reactions",
+      "The naming of inorganic salts"
+    ],
+    answer: 0,
+    explanation: "Stereochemistry studies how atoms are arranged in space within molecules, and how that arrangement affects properties."
+  },
+  {
+    question: "Isomers with the same structural formula but different spatial arrangement are called:",
+    options: [
+      "Chain isomers",
+      "Structural isomers",
+      "Functional isomers",
+      "Stereoisomers"
+    ],
+    answer: 3,
+    explanation: "Stereoisomers share the same connectivity of atoms but differ in their three-dimensional spatial arrangement."
+  },
+  {
+    question: "Cis-trans (geometric) isomerism typically arises in alkenes because of restricted rotation around the:",
+    options: [
+      "Hydrogen bond",
+      "Ionic bond",
+      "Double bond",
+      "Single bond"
+    ],
+    answer: 2,
+    explanation: "The double bond in alkenes restricts rotation, allowing substituents to be fixed on the same or opposite sides, producing cis and trans isomers."
+  },
+  {
+    question: "In a cis-isomer, similar substituent groups are positioned:",
+    options: [
+      "Randomly distributed",
+      "Always at the terminal carbon",
+      "On opposite sides of the double bond",
+      "On the same side of the double bond"
+    ],
+    answer: 3,
+    explanation: "In the cis configuration, similar groups lie on the same side of the carbon-carbon double bond."
+  },
+  {
+    question: "A molecule that is non-superimposable on its mirror image is described as:",
+    options: [
+      "Saturated",
+      "Aromatic",
+      "Chiral",
+      "Symmetrical"
+    ],
+    answer: 2,
+    explanation: "A chiral molecule cannot be superimposed on its own mirror image, much like a left and right hand."
+  },
+  {
+    question: "A carbon atom bonded to four different groups is called a:",
+    options: [
+      "Saturated carbon",
+      "Quaternary carbon",
+      "Aromatic carbon",
+      "Chiral centre"
+    ],
+    answer: 3,
+    explanation: "A carbon bonded to four different substituents is known as a chiral centre, giving rise to optical isomerism."
+  },
+  {
+    question: "Optical isomers that are non-superimposable mirror images of each other are called:",
+    options: [
+      "Enantiomers",
+      "Homologs",
+      "Allotropes",
+      "Polymers"
+    ],
+    answer: 0,
+    explanation: "Enantiomers are pairs of optical isomers that are mirror images of one another but cannot be superimposed."
+  },
+  {
+    question: "Optical isomers mainly differ in their ability to:",
+    options: [
+      "Dissolve in water",
+      "Conduct electricity",
+      "Rotate plane-polarized light",
+      "React with oxygen"
+    ],
+    answer: 2,
+    explanation: "Optical isomers rotate plane-polarized light in different directions, a property used to distinguish them."
+  },
+  {
+    question: "Which functional group characterizes alcohols in organic chemistry?",
+    options: [
+      "-COOH",
+      "-NH2",
+      "-CHO",
+      "-OH"
+    ],
+    answer: 3,
+    explanation: "Alcohols are identified by the hydroxyl (-OH) functional group attached to a carbon chain."
+  },
+  {
+    question: "The functional group -COOH identifies a compound as a member of which class?",
+    options: [
+      "Aldehydes",
+      "Ketones",
+      "Carboxylic acids",
+      "Amines"
+    ],
+    answer: 2,
+    explanation: "The carboxyl group, -COOH, is the defining functional group of carboxylic acids."
+  },
+  {
+    question: "Polymerization of alkenes such as ethene mainly produces:",
+    options: [
+      "Long-chain polymers like polythene",
+      "Alkanes",
+      "Alcohols",
+      "Carboxylic acids"
+    ],
+    answer: 0,
+    explanation: "Alkenes like ethene can undergo addition polymerization, joining many small monomer units into long-chain polymers such as polythene."
+  },
+  {
+    question: "A transition metal commonly used as a catalyst in the Haber process for ammonia production is:",
+    options: [
+      "Magnesium",
+      "Sodium",
+      "Calcium",
+      "Iron"
+    ],
+    answer: 3,
+    explanation: "Iron is used as the catalyst in the Haber process, which combines nitrogen and hydrogen to produce ammonia."
+  },
+  {
+    question: "Group 1 metal oxides dissolved in water generally produce solutions that are:",
+    options: [
+      "Neutral",
+      "Strongly basic",
+      "Strongly acidic",
+      "Weakly acidic"
+    ],
+    answer: 1,
+    explanation: "Group 1 metal oxides react with water to form strongly basic (alkaline) hydroxide solutions."
+  },
+  {
+    question: "Down Group 2, the solubility of the metal hydroxides generally:",
+    options: [
+      "Increases",
+      "Decreases",
+      "Stays constant",
+      "Becomes zero immediately"
+    ],
+    answer: 0,
+    explanation: "Solubility of Group 2 hydroxides generally increases down the group, unlike their sulfates, which decrease."
+  },
+  {
+    question: "Silicon, found in the same group as carbon, is widely used in industry mainly as a:",
+    options: [
+      "Strong reducing agent only",
+      "Semiconductor in electronics",
+      "Noble gas substitute",
+      "Highly reactive metal"
+    ],
+    answer: 1,
+    explanation: "Silicon's intermediate conductivity makes it a key semiconductor material in the electronics industry."
+  },
+  {
+    question: "Which best describes the trend in atomic size down Group 1?",
+    options: [
+      "Atomic size increases",
+      "Atoms disappear entirely",
+      "Atomic size remains unchanged",
+      "Atomic size decreases"
+    ],
+    answer: 0,
+    explanation: "Atomic size increases down Group 1 as additional electron shells are added."
+  },
+  {
+    question: "A key reason transition metals can form complex ions is their:",
+    options: [
+      "Position in Group 1",
+      "Availability of empty or partially filled d-orbitals to accept electron pairs",
+      "Lack of d-orbitals",
+      "Extremely large atomic radius"
+    ],
+    answer: 1,
+    explanation: "Transition metals have empty or partially filled d-orbitals that can accept lone pairs of electrons from ligands, forming complex ions."
+  },
+  {
+    question: "Which best distinguishes organic compounds from most inorganic compounds?",
+    options: [
+      "Organic compounds are based primarily on carbon chains and rings",
+      "Organic compounds are always ionic",
+      "Organic compounds never contain oxygen",
+      "Organic compounds cannot burn"
+    ],
+    answer: 0,
+    explanation: "Organic chemistry centers on carbon-based compounds, typically forming chains or rings with covalent bonding."
+  }
+];
+const BIO102 = [
+  {
+    question: "The science of classifying living organisms into groups is known as:",
+    options: [
+      "Taxonomy",
+      "Genetics",
+      "Physiology",
+      "Ecology"
+    ],
+    answer: 0,
+    explanation: "Taxonomy is the branch of biology concerned with classifying organisms into hierarchical groups."
+  },
+  {
+    question: "The broadest, most inclusive level of biological classification is the:",
+    options: [
+      "Species",
+      "Domain",
+      "Genus",
+      "Family"
+    ],
+    answer: 1,
+    explanation: "Domain is the highest and broadest taxonomic rank, above kingdom."
+  },
+  {
+    question: "The three-domain system of classification was proposed mainly to separate:",
+    options: [
+      "Bacteria, Archaea, and Eukarya",
+      "Vertebrates and invertebrates",
+      "Plants, animals, and fungi",
+      "Producers and consumers"
+    ],
+    answer: 0,
+    explanation: "The three-domain system groups all life into Bacteria, Archaea, and Eukarya, based on fundamental cellular differences."
+  },
+  {
+    question: "Organisms in Domain Archaea are notable for often living in:",
+    options: [
+      "Only temperate forests",
+      "Extreme environments",
+      "Only inside animal bodies",
+      "Only freshwater lakes"
+    ],
+    answer: 1,
+    explanation: "Many archaea are extremophiles, thriving in environments such as hot springs, salt lakes, and deep-sea vents."
+  },
+  {
+    question: "The taxonomic rank directly below Domain is:",
+    options: [
+      "Class",
+      "Order",
+      "Kingdom",
+      "Phylum"
+    ],
+    answer: 2,
+    explanation: "Kingdom is the second-broadest taxonomic rank, found directly beneath domain."
+  },
+  {
+    question: "The traditional five-kingdom classification system includes Monera, Protista, Fungi, Plantae, and:",
+    options: [
+      "Bacteria",
+      "Archaea",
+      "Eukarya",
+      "Animalia"
+    ],
+    answer: 3,
+    explanation: "The five-kingdom system groups life into Monera, Protista, Fungi, Plantae, and Animalia."
+  },
+  {
+    question: "Kingdom Monera is mainly characterized by organisms that are:",
+    options: [
+      "Prokaryotic, lacking a true nucleus",
+      "Multicellular with true nuclei",
+      "Strictly parasitic only",
+      "Always photosynthetic"
+    ],
+    answer: 0,
+    explanation: "Monera consists of prokaryotic organisms, mainly bacteria, whose cells lack a membrane-bound nucleus."
+  },
+  {
+    question: "Which of these best describes a typical member of Kingdom Protista?",
+    options: [
+      "An organism lacking any nucleus",
+      "A simple eukaryotic organism, often unicellular",
+      "A complex multicellular animal",
+      "A spore-forming bacterium"
+    ],
+    answer: 1,
+    explanation: "Protists are typically simple eukaryotic organisms, many of which are unicellular, such as amoeba and paramecium."
+  },
+  {
+    question: "Algae and protozoa are most commonly classified under Kingdom:",
+    options: [
+      "Fungi",
+      "Plantae",
+      "Protista",
+      "Animalia"
+    ],
+    answer: 2,
+    explanation: "Both algae and protozoa are grouped under Kingdom Protista due to their simple eukaryotic cell structure."
+  },
+  {
+    question: "A key feature distinguishing Kingdom Fungi from Kingdom Plantae is that fungi are:",
+    options: [
+      "Always motile",
+      "Entirely prokaryotic",
+      "Autotrophic, containing chlorophyll",
+      "Heterotrophic, lacking chlorophyll"
+    ],
+    answer: 3,
+    explanation: "Unlike plants, fungi cannot photosynthesize and must obtain nutrients by absorbing organic matter."
+  },
+  {
+    question: "The cell walls of most fungi are primarily composed of:",
+    options: [
+      "Chitin",
+      "Cellulose",
+      "Peptidoglycan",
+      "Keratin"
+    ],
+    answer: 0,
+    explanation: "Fungal cell walls are largely made of chitin, a tough structural polysaccharide also found in insect exoskeletons."
+  },
+  {
+    question: "The thread-like structures that make up the body of most fungi are called:",
+    options: [
+      "Villi",
+      "Hyphae",
+      "Rhizomes",
+      "Nephrons"
+    ],
+    answer: 1,
+    explanation: "Hyphae are the thin, branching filaments that form the main body, or mycelium, of most fungi."
+  },
+  {
+    question: "A mass of interwoven hyphae forming the main fungal body is called the:",
+    options: [
+      "Thallus",
+      "Sporangium",
+      "Mycelium",
+      "Mycorrhiza"
+    ],
+    answer: 2,
+    explanation: "The mycelium is the network of hyphae that makes up the vegetative, feeding part of a fungus."
+  },
+  {
+    question: "Yeasts, moulds, and mushrooms are all examples of organisms in Kingdom:",
+    options: [
+      "Plantae",
+      "Protista",
+      "Monera",
+      "Fungi"
+    ],
+    answer: 3,
+    explanation: "Yeasts, moulds, and mushrooms are all classified within Kingdom Fungi."
+  },
+  {
+    question: "In ecosystems, fungi play a major role mainly as:",
+    options: [
+      "Decomposers, breaking down dead organic matter",
+      "Photosynthetic organisms only",
+      "Top predators only",
+      "Primary producers only"
+    ],
+    answer: 0,
+    explanation: "Fungi are key decomposers, breaking down dead organisms and recycling nutrients back into the ecosystem."
+  },
+  {
+    question: "Kingdom Plantae mainly consists of organisms that are:",
+    options: [
+      "Parasitic and chlorophyll-free",
+      "Multicellular and autotrophic, performing photosynthesis",
+      "Prokaryotic and motile",
+      "Unicellular and heterotrophic"
+    ],
+    answer: 1,
+    explanation: "Plants are multicellular autotrophs that manufacture their own food through photosynthesis."
+  },
+  {
+    question: "The cell walls of plant cells are mainly composed of:",
+    options: [
+      "Lignin only",
+      "Peptidoglycan",
+      "Cellulose",
+      "Chitin"
+    ],
+    answer: 2,
+    explanation: "Plant cell walls are primarily built from cellulose, providing structural support."
+  },
+  {
+    question: "Mosses, which lack true vascular tissue, belong to which plant group?",
+    options: [
+      "Pteridophytes",
+      "Gymnosperms",
+      "Angiosperms",
+      "Bryophytes"
+    ],
+    answer: 3,
+    explanation: "Bryophytes, such as mosses, are simple plants that lack true vascular (conducting) tissue."
+  },
+  {
+    question: "Ferns, which reproduce by spores and possess vascular tissue, belong to which group?",
+    options: [
+      "Pteridophytes",
+      "Gymnosperms",
+      "Bryophytes",
+      "Angiosperms"
+    ],
+    answer: 0,
+    explanation: "Pteridophytes, such as ferns, have vascular tissue but reproduce by spores rather than seeds."
+  },
+  {
+    question: "Plants that produce seeds without enclosing them in a fruit, such as pine trees, are called:",
+    options: [
+      "Bryophytes",
+      "Gymnosperms",
+      "Pteridophytes",
+      "Angiosperms"
+    ],
+    answer: 1,
+    explanation: "Gymnosperms, like conifers, produce 'naked' seeds that are not enclosed within a fruit."
+  },
+  {
+    question: "Flowering plants that produce seeds enclosed within a fruit are classified as:",
+    options: [
+      "Bryophytes",
+      "Gymnosperms",
+      "Angiosperms",
+      "Pteridophytes"
+    ],
+    answer: 2,
+    explanation: "Angiosperms are flowering plants whose seeds develop inside a protective fruit."
+  },
+  {
+    question: "Kingdom Animalia consists mainly of organisms that are:",
+    options: [
+      "Prokaryotic and photosynthetic",
+      "Unicellular and autotrophic",
+      "Cell-wall-bound and immobile",
+      "Multicellular and heterotrophic"
+    ],
+    answer: 3,
+    explanation: "Animals are multicellular heterotrophs that must consume other organisms for nutrition."
+  },
+  {
+    question: "Unlike plant cells, typical animal cells lack a:",
+    options: [
+      "Cell wall",
+      "Mitochondria",
+      "Nucleus",
+      "Cell membrane"
+    ],
+    answer: 0,
+    explanation: "Animal cells generally lack the rigid cell wall found surrounding plant cells."
+  },
+  {
+    question: "Animals possessing a backbone are classified as:",
+    options: [
+      "Bryophytes",
+      "Vertebrates",
+      "Invertebrates",
+      "Protists"
+    ],
+    answer: 1,
+    explanation: "Vertebrates are animals that possess a vertebral column, or backbone."
+  },
+  {
+    question: "Insects, worms, and molluscs are examples of animals classified as:",
+    options: [
+      "Bryophytes",
+      "Gymnosperms",
+      "Invertebrates",
+      "Vertebrates"
+    ],
+    answer: 2,
+    explanation: "Invertebrates are animals lacking a backbone, a group that includes insects, worms, and molluscs."
+  },
+  {
+    question: "The correct order of taxonomic ranks, from broadest to most specific, is:",
+    options: [
+      "Genus, Species, Family, Order, Class, Phylum, Kingdom, Domain",
+      "Species, Genus, Family, Order, Class, Phylum, Kingdom, Domain",
+      "Kingdom, Domain, Class, Phylum, Family, Order, Genus, Species",
+      "Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species"
+    ],
+    answer: 3,
+    explanation: "Taxonomic classification proceeds from the broadest rank, Domain, down to the most specific, Species."
+  },
+  {
+    question: "The scientific naming system that gives each organism a two-part Latin name is called:",
+    options: [
+      "Binomial nomenclature",
+      "Cladistic analysis",
+      "Taxonomic ranking",
+      "Phylogenetic mapping"
+    ],
+    answer: 0,
+    explanation: "Binomial nomenclature assigns each species a two-part Latin name, consisting of genus and species."
+  },
+  {
+    question: "In the scientific name 'Homo sapiens,' the word 'Homo' represents the organism's:",
+    options: [
+      "Family",
+      "Genus",
+      "Species",
+      "Kingdom"
+    ],
+    answer: 1,
+    explanation: "In binomial nomenclature, the first word, written with a capital letter, denotes the genus."
+  },
+  {
+    question: "In the scientific name 'Homo sapiens,' the word 'sapiens' represents the organism's:",
+    options: [
+      "Order",
+      "Genus",
+      "Species",
+      "Phylum"
+    ],
+    answer: 2,
+    explanation: "The second word in a binomial name, written in lowercase, denotes the specific species epithet."
+  },
+  {
+    question: "The smallest and most specific unit in biological classification is the:",
+    options: [
+      "Genus",
+      "Domain",
+      "Family",
+      "Species"
+    ],
+    answer: 3,
+    explanation: "Species is the most specific taxonomic rank, referring to a group of organisms capable of interbreeding."
+  },
+  {
+    question: "A major criterion used to classify organisms into Domain Eukarya rather than prokaryotic domains is the presence of:",
+    options: [
+      "A membrane-bound nucleus",
+      "Mobility",
+      "Cell walls",
+      "Photosynthetic pigments"
+    ],
+    answer: 0,
+    explanation: "Domain Eukarya is distinguished by cells possessing a true, membrane-bound nucleus, unlike Bacteria or Archaea."
+  },
+  {
+    question: "Which of the following is generally used as a key criterion when classifying organisms into kingdoms?",
+    options: [
+      "Body colour alone",
+      "Mode of nutrition and cell structure",
+      "Average lifespan alone",
+      "Geographic location alone"
+    ],
+    answer: 1,
+    explanation: "Classification into kingdoms typically considers traits such as nutrition mode, cell structure, and organization."
+  },
+  {
+    question: "Organisms that manufacture their own food using sunlight are described as:",
+    options: [
+      "Parasitic",
+      "Saprophytic",
+      "Autotrophic",
+      "Heterotrophic"
+    ],
+    answer: 2,
+    explanation: "Autotrophic organisms, like green plants, synthesize their own food through photosynthesis."
+  },
+  {
+    question: "Organisms that must obtain nutrients by consuming other organisms are described as:",
+    options: [
+      "Photosynthetic",
+      "Chemosynthetic only",
+      "Autotrophic",
+      "Heterotrophic"
+    ],
+    answer: 3,
+    explanation: "Heterotrophic organisms cannot make their own food and must obtain nutrients from other organisms."
+  },
+  {
+    question: "Bacteria are generally classified within which domain?",
+    options: [
+      "Domain Bacteria",
+      "Domain Eukarya only",
+      "Domain Archaea only",
+      "Domain Plantae"
+    ],
+    answer: 0,
+    explanation: "True bacteria are placed in Domain Bacteria, distinct from the structurally different Archaea."
+  },
+  {
+    question: "A key structural difference between bacteria (Domain Bacteria) and archaea is found mainly in their:",
+    options: [
+      "Presence of a true nucleus in both",
+      "Cell wall and membrane composition",
+      "Total absence of any genetic material",
+      "Identical ribosomal structure"
+    ],
+    answer: 1,
+    explanation: "Bacteria and Archaea differ notably in their cell wall and membrane chemistry, despite both being prokaryotic."
+  },
+  {
+    question: "Viruses are generally NOT classified within the traditional five-kingdom system mainly because they:",
+    options: [
+      "Always contain chlorophyll",
+      "Are too large to classify",
+      "Are not considered fully living, lacking independent cellular structure",
+      "Only exist in plants"
+    ],
+    answer: 2,
+    explanation: "Viruses lack independent cellular structure and cannot reproduce without a host, so they fall outside conventional kingdom classification."
+  },
+  {
+    question: "Mushrooms obtain their nutrients mainly through:",
+    options: [
+      "Active hunting of prey",
+      "Photosynthesis",
+      "Filtering nutrients from air alone",
+      "Absorbing nutrients from organic matter"
+    ],
+    answer: 3,
+    explanation: "Fungi like mushrooms secrete enzymes onto organic material and absorb the resulting nutrients."
+  },
+  {
+    question: "Which group within Kingdom Plantae is generally considered the most evolutionarily advanced, due to flower and fruit production?",
+    options: [
+      "Angiosperms",
+      "Gymnosperms",
+      "Bryophytes",
+      "Pteridophytes"
+    ],
+    answer: 0,
+    explanation: "Angiosperms, the flowering plants, are generally regarded as the most evolutionarily advanced plant group."
+  },
+  {
+    question: "Amoeba, a single-celled organism that moves using pseudopodia, is classified under Kingdom:",
+    options: [
+      "Fungi",
+      "Protista",
+      "Animalia",
+      "Monera"
+    ],
+    answer: 1,
+    explanation: "Amoeba is a unicellular eukaryote classified under Kingdom Protista."
+  },
+  {
+    question: "Which feature is generally used to separate Kingdom Animalia from Kingdom Plantae?",
+    options: [
+      "Animals can never reproduce sexually",
+      "Plants always lack chlorophyll",
+      "Animals are heterotrophic and lack cell walls, unlike plants",
+      "Animals always lack a nucleus"
+    ],
+    answer: 2,
+    explanation: "Animals differ from plants mainly in being heterotrophic and lacking the rigid cellulose cell walls found in plants."
+  },
+  {
+    question: "The classification rank found between Kingdom and Class is the:",
+    options: [
+      "Order",
+      "Genus",
+      "Family",
+      "Phylum"
+    ],
+    answer: 3,
+    explanation: "Phylum is the taxonomic rank that sits directly below Kingdom and above Class."
+  },
+  {
+    question: "Members of the same genus but different species are generally:",
+    options: [
+      "Closely related but unable to interbreed successfully",
+      "Always from different kingdoms",
+      "Incapable of any biological relationship",
+      "Identical in every characteristic"
+    ],
+    answer: 0,
+    explanation: "Species within the same genus share close evolutionary ancestry but are typically unable to produce fertile offspring together."
+  },
+  {
+    question: "A major reason classification systems are continually revised is that:",
+    options: [
+      "Older systems are always proven completely wrong",
+      "New genetic and molecular evidence reshapes our understanding of relationships",
+      "Organisms evolve new kingdoms overnight",
+      "Classification never changes once established"
+    ],
+    answer: 1,
+    explanation: "Advances in genetics and molecular biology frequently provide new evidence that reshapes how organisms are classified."
+  },
+  {
+    question: "In the standard taxonomic hierarchy, which rank comes directly after Family?",
+    options: [
+      "Tribe",
+      "Kingdom",
+      "Genus",
+      "Domain"
+    ],
+    answer: 2,
+    explanation: "In the standard hierarchy, Genus follows directly after Family, without a required intermediate rank for basic classification."
+  },
+  {
+    question: "Which best describes the relationship between Kingdom Monera and bacteria?",
+    options: [
+      "Bacteria were never classified under Monera",
+      "Monera and bacteria are entirely unrelated groups",
+      "Monera consists only of multicellular organisms",
+      "Kingdom Monera traditionally included all bacteria, before being split into separate domains"
+    ],
+    answer: 3,
+    explanation: "Kingdom Monera historically encompassed all bacteria, before molecular evidence led to splitting them into separate domains."
+  },
+  {
+    question: "Lichen, often used as an indicator of air quality, represents a symbiotic relationship between:",
+    options: [
+      "Fungi and algae (or cyanobacteria)",
+      "Plants and animals",
+      "Protists and fungi only",
+      "Bacteria and viruses"
+    ],
+    answer: 0,
+    explanation: "Lichens are a symbiotic partnership between a fungus and a photosynthetic partner, usually algae or cyanobacteria."
+  },
+  {
+    question: "Classifying whales as mammals, despite their aquatic lifestyle, is based mainly on:",
+    options: [
+      "Their habitat in water alone",
+      "Shared characteristics such as live birth and mammary glands",
+      "Their body shape resembling fish",
+      "Their inability to breathe air"
+    ],
+    answer: 1,
+    explanation: "Whales are classified as mammals based on shared traits like live birth, mammary glands, and warm-bloodedness, not habitat."
+  },
+  {
+    question: "A species is generally defined as a group of organisms that can:",
+    options: [
+      "Only share the same colour",
+      "Only live in the same habitat",
+      "Interbreed and produce fertile offspring",
+      "Only belong to the same kingdom"
+    ],
+    answer: 2,
+    explanation: "A species is typically defined as a group capable of interbreeding to produce fertile offspring."
+  },
+  {
+    question: "Overall, biological classification systems primarily aim to:",
+    options: [
+      "Group organisms only by geographic location",
+      "Eliminate the need for further biological study",
+      "Assign random names with no scientific basis",
+      "Organize the diversity of life based on shared characteristics and evolutionary relationships"
+    ],
+    answer: 3,
+    explanation: "Classification systems aim to organize living organisms systematically, reflecting shared traits and evolutionary relationships."
   }
 ];
 function createQuestionPalette() {
