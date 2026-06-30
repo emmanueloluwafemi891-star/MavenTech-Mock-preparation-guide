@@ -214,17 +214,21 @@ const isCorrect = userAnswers[i] === q.answer;
 
 div.classList.add(isCorrect ? "review-correct" : "review-wrong");
 
-div.innerHTML = `
-  <h4>Question ${i + 1}</h4>
-  <p>${q.question}</p>
-  <p>Your Answer: ${user} ${isCorrect ? "✅" : "❌"}</p>
-  <p class="correct">
-    Correct Answer: ${correct}
-  </p>
-`;
+  div.innerHTML = `
+    <h4>Question ${i + 1}</h4>
+    <p>${q.question}</p>
 
-    review.appendChild(div);
-  });
+    <p>Your Answer: ${user ?? "No answer"} ${isCorrect ? "✅" : "❌"}</p>
+
+    <p>Correct Answer: ${correct ?? "Not set"}</p>
+
+    <p>Explanation: ${q.explanation ?? "No explanation"}</p>
+
+    <hr>
+  `;
+
+  review.appendChild(div);
+});
 }
 
 // ===== GET COURSE =====
