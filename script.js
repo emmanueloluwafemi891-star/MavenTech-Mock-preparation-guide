@@ -230,7 +230,7 @@ div.classList.add(isCorrect ? "review-correct" : "review-wrong");
 
     <p>Your Answer: ${user ?? "No answer"} ${isCorrect ? "✅" : "❌"}</p>
 
-    <p>Correct Answer: ${correct ?? "Not set"}</p>
+    <p style="color:#22c55e;font-weight:bold;">Correct Answer: ${correct ?? "Not set"}</p>
 
     <p>Explanation: ${q.working ?? q.explanation ?? "No explanation"}</p>
 
@@ -2113,7 +2113,8 @@ const CSC104 = [
         "A single isolated line of program code",
         "A type of computer storage hardware"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "An application package is pre-written software created to help users perform specific tasks, such as word processing or database management."
 },
 {
     question: "Which of these packages is specifically designed for managing structured databases?",
@@ -2123,7 +2124,8 @@ const CSC104 = [
         "Microsoft PowerPoint",
         "Adobe Photoshop"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Microsoft Access is the application package in this set specifically built for creating and managing structured databases."
 },
 {
     question: "Microsoft Access is most accurately classified as a:",
@@ -2133,7 +2135,8 @@ const CSC104 = [
         "Relational Database Management System",
         "Presentation design application"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "MS Access is a Relational Database Management System (RDBMS), designed to store and manage data in related tables."
 },
 {
     question: "The core purpose of a DBMS such as MS Access is to:",
@@ -2143,7 +2146,8 @@ const CSC104 = [
         "Design slide-based presentations",
         "Store, organize, retrieve, and manage structured data"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "A DBMS like Access exists mainly to store, organize, retrieve, and manage structured data efficiently."
 },
 {
     question: "The structural component in MS Access used to store raw data in rows and columns is called a:",
@@ -2153,7 +2157,8 @@ const CSC104 = [
         "Report",
         "Macro"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "In Access, raw data is stored in rows and columns within a structural component called a Table."
 },
 {
     question: "A single row of data in an Access table, representing one complete entry, is called a:",
@@ -2163,7 +2168,8 @@ const CSC104 = [
         "Record",
         "Query"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "A single row in an Access table, representing one complete entry, is called a Record."
 },
 {
     question: "A single column in an Access table, representing one category of data, is referred to as a:",
@@ -2173,7 +2179,8 @@ const CSC104 = [
         "Field",
         "Record"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "A single column in an Access table, representing one category of data, is called a Field."
 },
 {
     question: "The purpose of a 'Primary Key' in an Access table is to:",
@@ -2183,7 +2190,8 @@ const CSC104 = [
         "Delete unwanted records automatically",
         "Convert numbers into currency format"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A Primary Key uniquely identifies each record in a table and prevents duplicate entries."
 },
 {
     question: "To create a new, blank database in Access, a user typically would:",
@@ -2193,7 +2201,8 @@ const CSC104 = [
         "Select 'Blank Database' and specify a file name and location",
         "Apply the Mail Merge wizard"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "To create a new database in Access, a user selects 'Blank Database' and specifies a file name and save location."
 },
 {
     question: "The default file extension for a modern Access database file is:",
@@ -2203,7 +2212,8 @@ const CSC104 = [
         ".docx",
         ".xlsx"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "The default file extension for a modern Access database file is .accdb."
 },
 {
     question: "To open an already existing database in Access, a user would normally:",
@@ -2213,7 +2223,8 @@ const CSC104 = [
         "Insert a new slide",
         "Use File then Open, then browse to the file"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "To open an existing database, a user goes to File, then Open, and browses to the saved file."
 },
 {
     question: "Which Access view allows users to design or modify a table's structure, including field names and data types?",
@@ -2223,7 +2234,8 @@ const CSC104 = [
         "Print Preview",
         "Report View"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Design View in Access lets users define or modify a table's structure, including field names and data types."
 },
 {
     question: "Datasheet View in Access primarily allows users to:",
@@ -2233,7 +2245,8 @@ const CSC104 = [
         "View and directly edit data in a spreadsheet-like grid",
         "Format text in a printed document"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Datasheet View displays table data in a spreadsheet-like grid, allowing users to view and directly edit records."
 },
 {
     question: "Which data type is most appropriate for a field storing a customer's phone number?",
@@ -2243,7 +2256,8 @@ const CSC104 = [
         "AutoNumber",
         "Yes/No"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A phone number is best stored as Short Text, since it is not used for arithmetic and may include symbols like '+' or '-'."
 },
 {
     question: "The AutoNumber data type in Access is most commonly used to:",
@@ -2253,7 +2267,8 @@ const CSC104 = [
         "Store large blocks of formatted text",
         "Store currency-formatted figures"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "The AutoNumber data type automatically generates a unique, sequential value for each new record."
 },
 {
     question: "A 'Query' in MS Access is best defined as:",
@@ -2263,7 +2278,8 @@ const CSC104 = [
         "A request to retrieve or manipulate specific data based on criteria",
         "A type of slide transition"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "A Query in Access is a request used to retrieve or manipulate specific data based on defined criteria."
 },
 {
     question: "Which query type would best retrieve only customers whose purchases exceed a set amount?",
@@ -2273,7 +2289,8 @@ const CSC104 = [
         "A Select Query with a specific criteria condition",
         "An Update Query applied to all records"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "A Select Query with a specific criteria condition can filter and return only customers whose purchases exceed a set amount."
 },
 {
     question: "'Filtering' table data in Access refers to:",
@@ -2283,7 +2300,8 @@ const CSC104 = [
         "Changing a field's assigned data type",
         "Creating a brand-new slide"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "Filtering temporarily displays only the records in a table that meet specific criteria, without altering the underlying data."
 },
 {
     question: "'Sorting' table or query data in Access allows users to:",
@@ -2293,7 +2311,8 @@ const CSC104 = [
         "Convert the table into a presentation slide",
         "Permanently remove unwanted fields"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Sorting arranges records in a specified ascending or descending order based on a chosen field."
 },
 {
     question: "Which example best illustrates 'data formatting' within an Access table?",
@@ -2303,7 +2322,8 @@ const CSC104 = [
         "Deleting an entire table permanently",
         "Displaying a Date field as dd/mm/yyyy"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "Displaying a Date field as dd/mm/yyyy is an example of data formatting, changing how data appears without changing its stored value."
 },
 {
     question: "A 'Form' in MS Access is primarily used to:",
@@ -2313,7 +2333,8 @@ const CSC104 = [
         "Create animated slide transitions",
         "Store raw table data with no interface"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A Form provides a user-friendly interface for entering and viewing records, rather than working directly with raw table data."
 },
 {
     question: "The relationship between a table and a query in Access is best described as:",
@@ -2323,7 +2344,8 @@ const CSC104 = [
         "A query that dynamically draws and processes data from underlying tables",
         "A permanent, unchangeable static copy of a table"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "A query dynamically draws and processes data from one or more underlying tables, rather than existing independently of them."
 },
 {
     question: "A user wants a 'Date of Birth' field to never accept text characters. The most appropriate data type is:",
@@ -2333,7 +2355,8 @@ const CSC104 = [
         "Short Text",
         "Date/Time"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "Date/Time is the appropriate data type for a Date of Birth field, since it restricts entries to valid dates and prevents text characters."
 },
 {
     question: "Microsoft PowerPoint is primarily classified as a:",
@@ -2343,7 +2366,8 @@ const CSC104 = [
         "Presentation software application",
         "Database management application"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Microsoft PowerPoint is primarily classified as presentation software, used to create slide-based visual presentations."
 },
 {
     question: "To begin a new presentation in PowerPoint, a user typically starts by:",
@@ -2353,7 +2377,8 @@ const CSC104 = [
         "Selecting a blank presentation or design template",
         "Designing a table structure"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "A new PowerPoint presentation typically begins by selecting a blank presentation or a design template."
 },
 {
     question: "A 'Design Template' in PowerPoint provides:",
@@ -2363,7 +2388,8 @@ const CSC104 = [
         "A type of database query structure",
         "A pre-formatted set of colors, fonts, and layout styles"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "A Design Template provides a pre-formatted set of colors, fonts, and layout styles applied consistently across slides."
 },
 {
     question: "The main reason for applying a consistent design template throughout a presentation is to:",
@@ -2373,7 +2399,8 @@ const CSC104 = [
         "Maintain a professional, visually cohesive appearance",
         "Prevent additional slides from being added later"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Applying a consistent design template helps maintain a professional, visually cohesive appearance throughout a presentation."
 },
 {
     question: "The 'Title Slide' layout, typically the first slide, is designed to display:",
@@ -2383,7 +2410,8 @@ const CSC104 = [
         "A large data table only",
         "A main title, often with a subtitle introducing the topic"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "The Title Slide layout, usually the first slide, displays a main title, often together with a subtitle introducing the topic."
 },
 {
     question: "To add a new slide to an existing PowerPoint presentation, a user would:",
@@ -2393,7 +2421,8 @@ const CSC104 = [
         "Use Access's Query Wizard",
         "Use the 'New Slide' command from the Home tab"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "A new slide is added using the 'New Slide' command found on the Home tab."
 },
 {
     question: "A 'Slide Transition' in PowerPoint refers to:",
@@ -2403,7 +2432,8 @@ const CSC104 = [
         "The visual effect occurring when moving between slides",
         "The process of saving a presentation file"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "A Slide Transition is the visual effect that occurs when moving from one slide to the next."
 },
 {
     question: "An 'Animation,' as distinct from a slide transition, refers to:",
@@ -2413,7 +2443,8 @@ const CSC104 = [
         "A type of database query",
         "The process of printing slides"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "Unlike a slide transition, an Animation is an effect applied to objects or text within a single slide."
 },
 {
     question: "Which of the following is an example of an entrance animation effect?",
@@ -2423,7 +2454,8 @@ const CSC104 = [
         "A table relationship in Access",
         "Fade, applied to an object appearing on the slide"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "Fade, applied to an object appearing on a slide, is an example of an entrance animation effect."
 },
 {
     question: "The 'Slide Master' feature in PowerPoint is primarily used to:",
@@ -2433,7 +2465,8 @@ const CSC104 = [
         "Control formatting and layout consistently across all slides",
         "Convert a presentation into a spreadsheet"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "The Slide Master controls formatting and layout consistently across all slides in a presentation."
 },
 {
     question: "Why might a presenter limit excessive or intense animations in a professional presentation?",
@@ -2443,7 +2476,8 @@ const CSC104 = [
         "Animations are unsupported in PowerPoint entirely",
         "Excessive animation can distract from the actual content and appear unprofessional"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "Excessive or intense animation can distract from the actual content and make a presentation appear unprofessional."
 },
 {
     question: "To make slides automatically advance after a set number of seconds without manual clicking, a user adjusts:",
@@ -2453,7 +2487,8 @@ const CSC104 = [
         "Access Form view settings",
         "The Slide Transition timing options"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "Automatic slide advancement after a set time is configured through the Slide Transition timing options."
 },
 {
     question: "Why should a Primary Key field generally never be left blank (Null)?",
@@ -2463,7 +2498,8 @@ const CSC104 = [
         "Blank primary keys actually improve database performance",
         "The key must uniquely identify each record, and a blank value undermines that uniqueness"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "A Primary Key must uniquely identify each record, so leaving it blank would undermine that uniqueness."
 },
 {
     question: "A school wants to store student records and quickly retrieve only those who scored above a set threshold. The best combination of Access tools is:",
@@ -2473,7 +2509,8 @@ const CSC104 = [
         "A PowerPoint slide transition",
         "A Table to store the data, with a Query applying the score criteria"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "Storing data in a Table and applying a Query with the score criteria allows quick retrieval of only the qualifying student records."
 },
 {
     question: "Which scenario best demonstrates appropriate use of a Yes/No data type in Access?",
@@ -2483,7 +2520,8 @@ const CSC104 = [
         "Storing a student's exact examination score",
         "Storing a product's unit price"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A Yes/No data type is appropriate for storing a simple true/false condition, such as whether a student has paid school fees."
 },
 {
     question: "A user enters 'ABC' into a field defined with the Number data type. The most likely outcome is:",
@@ -2493,7 +2531,8 @@ const CSC104 = [
         "The entire table will be deleted automatically",
         "The value will be accepted and stored silently as text"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Access will reject text entered into a Number field, since the entry does not match the field's defined data type."
 },  
 {
     question: "The key difference between sorting and filtering in Access is that:",
@@ -2503,7 +2542,8 @@ const CSC104 = [
         "They are identical operations with no real distinction",
         "Sorting rearranges the order of displayed records, while filtering hides records that don't meet criteria"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "Sorting rearranges the order in which records are displayed, while filtering hides records that don't meet specified criteria."
 },
 {
     question: "A presenter wants consistent fonts, colors, and a logo on every slide without reformatting each one manually. The most efficient feature to use is:",
@@ -2513,7 +2553,8 @@ const CSC104 = [
         "The Datasheet View",
         "The Slide Master"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "The Slide Master allows a presenter to apply consistent fonts, colors, and a logo across every slide without manually reformatting each one."
 },
 {
     question: "A presentation using a completely different font, color, and template on every slide would most likely be critiqued for:",
@@ -2523,7 +2564,8 @@ const CSC104 = [
         "Being technically impossible in PowerPoint",
         "Appearing inconsistent and potentially distracting to the audience"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "A presentation with inconsistent fonts, colors, and templates across slides is typically critiqued as appearing inconsistent and distracting."
 },
 {
     question: "In Access, formatting a number field to display as currency (e.g., ₦1,000.00) primarily affects:",
@@ -2533,7 +2575,8 @@ const CSC104 = [
         "The actual numeric value stored in the database",
         "The field's data type, converting it permanently to text"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "Formatting a number field to display as currency changes only its visual appearance, not the actual numeric value stored in the database."
 },
 {
     question: "A teacher wants each new topic in a slideshow to begin with a distinct visual effect signaling the change. This is best handled using:",
@@ -2543,7 +2586,8 @@ const CSC104 = [
         "MS Access Form Design",
         "PowerPoint Slide Transitions"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "PowerPoint Slide Transitions are used to add a distinct visual effect signaling the start of a new topic in a slideshow."
 },
 {
     question: "The most logical workflow for building a simple Access database from scratch is to:",
@@ -2553,7 +2597,8 @@ const CSC104 = [
         "Build a PowerPoint presentation first, then convert it into Access",
         "Create queries first, before any tables have been designed"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "The logical Access workflow is to create or open a blank database, design the tables with proper fields, enter data, then build queries or forms."
 },
 {
     question: "Why is it good practice to assign specific, appropriate data types to each Access field rather than making every field Short Text?",
@@ -2563,7 +2608,8 @@ const CSC104 = [
         "Appropriate data types ensure data validity and support correct calculations and sorting",
         "It has no real impact on database functionality"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Assigning specific, appropriate data types ensures data validity and supports correct calculations and sorting, unlike using Short Text for everything."
 },
 {
     question: "A user creates a bullet point that 'flies in' from the side when a slide is presented. This represents which animation category?",
@@ -2573,7 +2619,8 @@ const CSC104 = [
         "Emphasis animation",
         "Entrance animation"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "A bullet point flying in from the side as a slide is presented is an example of an entrance animation."
 },
 {
     question: "Which best illustrates an 'Emphasis' animation effect, as opposed to entrance or exit effects?",
@@ -2583,7 +2630,8 @@ const CSC104 = [
         "Text growing larger or changing color while already visible",
         "Text appearing on the slide for the very first time"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "An Emphasis animation effect is text or objects already visible on the slide changing, such as growing larger or changing color."
 },
 {
     question: "A student designs a table to track library books, including Title, Author, ISBN, and Availability. The most appropriate data type pairing is:",
@@ -2593,7 +2641,8 @@ const CSC104 = [
         "Title as Currency, Author as Date/Time, ISBN as AutoNumber",
         "Title and Author as Number, ISBN as Yes/No, Availability as Text"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "For a library book table, Title and Author are best stored as Short Text, ISBN as Short Text, and Availability as Yes/No."
 },
 {
     question: "MS Access and MS PowerPoint are both considered application packages mainly because:",
@@ -2603,7 +2652,8 @@ const CSC104 = [
         "They are identical programs offering the same core features",
         "Both are pre-developed software designed to help users accomplish specific categories of tasks"
     ],
-    answer: 3
+    answer: 3,
+    explanation: "MS Access and MS PowerPoint are both application packages because they are pre-developed software designed to help users accomplish specific categories of tasks."
 }
 ];  
 const COS102 = [
@@ -4260,7 +4310,8 @@ const STA112 = [
       "10!/(3!3!2!2!)",
       "10!/(2!2!2!)"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "The word 'STATISTICS' has 10 letters with S repeated 3 times, T repeated 3 times, and I repeated 2 times, giving 10!/(3!3!2!) distinct arrangements."
   },
   {
     question: "A committee of 5 is to be selected from 7 men and 4 women. In how many ways can this be done if the committee must contain at least 1 woman?",
@@ -4270,7 +4321,8 @@ const STA112 = [
       "21",
       "419"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "The total ways to choose 5 from 11 people is C(11,5)=462; subtracting the 21 all-men committees, C(7,5), leaves 441 committees with at least one woman."
   },
   {
     question: "Which of the following best describes a permutation?",
@@ -4280,7 +4332,8 @@ const STA112 = [
       "Selection of objects with repetition allowed only",
       "Arrangement of objects where repetition is never allowed"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A permutation is an arrangement of objects in which the order matters, unlike a combination, where order is irrelevant."
   },
   {
     question: "If nPr = 336 and nCr = 56, what is r! ?",
@@ -4290,7 +4343,8 @@ const STA112 = [
       "6",
       "8"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Since nPr = nCr × r!, dividing 336 by 56 gives r! = 6."
   },
   {
     question: "A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement. What is the probability that both are red?",
@@ -4300,7 +4354,8 @@ const STA112 = [
       "5/28",
       "5/8"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "P(both red) = (5/8) × (4/7) = 20/56 = 5/14."
   },
   {
     question: "Which of the following is NOT a property of a valid probability distribution?",
@@ -4310,7 +4365,8 @@ const STA112 = [
       "Probabilities can be negative if the event is unlikely",
       "The probabilities are defined over the sample space"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Probabilities can never be negative; this violates a key requirement of a valid probability distribution, making it the correct answer to 'NOT a property.'"
   },
   {
     question: "A random variable that can take on a finite or countably infinite number of values is called:",
@@ -4320,7 +4376,8 @@ const STA112 = [
       "Independent random variable",
       "Standardized random variable"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A discrete random variable takes a finite or countably infinite number of distinct values, unlike a continuous variable, which can take any value in an interval."
   },
   {
     question: "Two events A and B are said to be mutually exclusive if:",
@@ -4330,7 +4387,8 @@ const STA112 = [
       "P(A∪B) = 1",
       "P(A|B) = P(A)"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Two events are mutually exclusive when they cannot occur together, meaning P(A∩B) = 0."
   },
   {
     question: "If P(A) = 0.4, P(B) = 0.5, and A and B are independent, what is P(A∪B)?",
@@ -4340,7 +4398,8 @@ const STA112 = [
       "0.2",
       "0.65"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "For independent events, P(A∪B) = P(A) + P(B) − P(A)P(B) = 0.4 + 0.5 − (0.4×0.5) = 0.7."
   },
   {
     question: "In a class of 60 students, 36 study Economics, 24 study Statistics, and 12 study both. What is the probability that a randomly selected student studies neither?",
@@ -4350,7 +4409,8 @@ const STA112 = [
       "1/10",
       "1/3"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "Using inclusion-exclusion, students studying either subject = 36+24−12 = 48, so 60−48 = 12 study neither, giving a probability of 12/60 = 1/5."
   },
   {
     question: "The probability density function (pdf) of a continuous random variable must satisfy which condition?",
@@ -4360,7 +4420,8 @@ const STA112 = [
       "f(x) can be negative",
       "f(x) must be symmetric"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "A valid probability density function must be non-negative everywhere, and the total area under its curve over all possible values must equal 1."
   },
   {
     question: "For a discrete random variable X, F(x) = P(X ≤ x) is called the:",
@@ -4370,7 +4431,8 @@ const STA112 = [
       "Moment generating function",
       "Joint density function"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "F(x) = P(X ≤ x) defines the cumulative distribution function, which gives the probability that X is less than or equal to a given value."
   },
   {
     question: "Which of the following values CANNOT be a valid probability?",
@@ -4380,7 +4442,8 @@ const STA112 = [
       "1.05",
       "1"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "A probability value can never exceed 1, so 1.05 cannot represent a valid probability."
   },
   {
     question: "A fair coin is tossed 4 times. What is the probability of getting exactly 2 heads?",
@@ -4390,7 +4453,8 @@ const STA112 = [
       "1/2",
       "1/16"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Using the binomial formula, P(exactly 2 heads in 4 tosses) = C(4,2)×(0.5)^4 = 6/16 = 3/8."
   },
   {
     question: "If X and Y are independent random variables, which of the following is always true?",
@@ -4400,7 +4464,8 @@ const STA112 = [
       "Var(X+Y) = Var(X) − Var(Y)",
       "E(X+Y) = E(X) × E(Y)"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "For independent random variables, the variance of their sum equals the sum of their individual variances."
   },
   {
     question: "A student claims: 'If two events have a combined probability greater than 1, they must be independent.' This statement is:",
@@ -4410,7 +4475,8 @@ const STA112 = [
       "True only if one event is the complement of the other",
       "False because it only applies to conditional probability"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A combined probability exceeding 1 is mathematically impossible for valid probabilities and has nothing to do with independence, making the claim false."
   },
   {
     question: "Which probability distribution describes the number of successes in a fixed number of independent Bernoulli trials?",
@@ -4420,7 +4486,8 @@ const STA112 = [
       "Poisson",
       "Normal"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "The binomial distribution models the number of successes in a fixed number of independent Bernoulli trials, each with the same probability of success."
   },
   {
     question: "A Bernoulli random variable X takes the value 1 with probability p. What is Var(X)?",
@@ -4430,7 +4497,8 @@ const STA112 = [
       "p²",
       "1-p"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "For a Bernoulli random variable, the variance is given by Var(X) = p(1−p)."
   },
   {
     question: "For a Bernoulli trial with p = 0.3, what is E(X)?",
@@ -4440,7 +4508,8 @@ const STA112 = [
       "0.3",
       "1"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "For a Bernoulli trial, the expected value E(X) simply equals the probability of success, p, which is 0.3 here."
   },
   {
     question: "Which is a key distinguishing feature of the hypergeometric distribution compared to the binomial distribution?",
@@ -4450,7 +4519,8 @@ const STA112 = [
       "It can only be used when p = 0.5",
       "It has no fixed sample size"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Unlike the binomial distribution, the hypergeometric distribution applies when sampling is done without replacement, so probabilities change with each draw."
   },
   {
     question: "A box contains 10 items, 4 of which are defective. If 3 items are selected without replacement, what is the probability that exactly 2 are defective?",
@@ -4460,7 +4530,8 @@ const STA112 = [
       "C(4,1)C(6,2)/C(10,3)",
       "C(4,3)/C(10,3)"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "The probability of selecting exactly 2 defective items from 3 draws without replacement is found using C(4,2)×C(6,1) divided by the total ways to choose 3 from 10, C(10,3)."
   },
   {
     question: "The standard normal distribution has which of the following properties?",
@@ -4470,7 +4541,8 @@ const STA112 = [
       "Mean = 0, Variance = 0",
       "Mean = 1, Standard deviation = 1"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "The standard normal distribution is defined by a mean of 0 and a standard deviation of 1."
   },
   {
     question: "If X ~ N(50,16), what is the standard deviation of X?",
@@ -4480,7 +4552,8 @@ const STA112 = [
       "50",
       "8"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Since the variance given is 16, the standard deviation is the square root of 16, which is 4."
   },
   {
     question: "To convert a normal random variable X with mean μ and standard deviation σ to a standard normal variable Z, the correct formula is:",
@@ -4490,7 +4563,8 @@ const STA112 = [
       "Z = (X + μ)/σ",
       "Z = (μ − X)/σ²"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Standardizing a normal variable uses the formula Z = (X − μ)/σ."
   },
   {
     question: "If X ~ N(60,25), what is the corresponding Z-value for X = 65?",
@@ -4500,7 +4574,8 @@ const STA112 = [
       "5.0",
       "2.0"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "With mean 60 and variance 25 (σ=5), Z = (65−60)/5 = 1.0."
     },
   {
     question: "Which statement correctly describes the shape of the normal distribution curve?",
@@ -4510,7 +4585,8 @@ const STA112 = [
       "Symmetric and bell-shaped about the mean",
       "Uniform across all values"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "The normal distribution curve is symmetric and bell-shaped about its mean."
   },
   {
     question: "In a standard normal distribution, approximately what percentage of values lie within ±1 standard deviation of the mean?",
@@ -4520,7 +4596,8 @@ const STA112 = [
       "95%",
       "99.7%"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Approximately 68% of values in a normal distribution lie within one standard deviation of the mean, per the empirical rule."
   },
   {
     question: "A lecturer states: 'Since the normal distribution is symmetric, the mean, median, and mode are always equal.' This statement is:",
@@ -4530,7 +4607,8 @@ const STA112 = [
       "False, because the mean is always greater than the median",
       "True only when the variance equals 1"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "In a perfectly normal distribution, symmetry ensures the mean, median, and mode all coincide at the same central value."
   },
   {
     question: "Which of the following is the correct formula for the variance of a discrete random variable X?",
@@ -4540,7 +4618,8 @@ const STA112 = [
       "Var(X) = [E(X)]² − E(X²)",
       "Var(X) = [E(X)]² + E(X²)"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "The variance of a discrete random variable is calculated as E(X²) minus the square of E(X)."
   },
   {
     question: "A discrete random variable X has the distribution P(X=1)=0.2, P(X=2)=0.3, P(X=3)=0.5. What is E(X)?",
@@ -4550,7 +4629,8 @@ const STA112 = [
       "2.5",
       "1.8"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "E(X) = (1×0.2)+(2×0.3)+(3×0.5) = 0.2+0.6+1.5 = 2.3."
   },
   {
     question: "Why can the hypergeometric distribution NOT be approximated by the binomial distribution when the sample size is large relative to the population?",
@@ -4560,7 +4640,8 @@ const STA112 = [
       "The binomial distribution requires sampling without replacement",
       "The mean is undefined"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "When the sample size is large relative to the population, sampling without replacement noticeably changes the probability of success on each draw, violating the constant-probability assumption of the binomial distribution."
   },
   {
     question: "If a fair die is rolled, what is the probability of getting a number greater than 4?",
@@ -4570,7 +4651,8 @@ const STA112 = [
       "2/3",
       "1/6"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Only 2 of the 6 faces (5 and 6) are greater than 4, giving a probability of 2/6 = 1/3."
   },
   {
     question: "The conditional probability P(A|B) is defined as:",
@@ -4580,7 +4662,8 @@ const STA112 = [
       "P(A) × P(B)",
       "P(A∪B)/P(B)"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "Conditional probability is defined as P(A|B) = P(A∩B)/P(B), provided P(B) is not zero."
   },
   {
     question: "Events A and B are independent. Which of the following must be true?",
@@ -4590,7 +4673,8 @@ const STA112 = [
       "P(A∪B) = P(A) + P(B)",
       "P(A) = P(B)"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "By definition, two events are independent if and only if P(A∩B) = P(A) × P(B)."
   },
   {
     question: "A factory produces bolts, 2% of which are defective. In a sample of 100 bolts, which distribution best models the number of defective bolts?",
@@ -4600,7 +4684,8 @@ const STA112 = [
       "Hypergeometric distribution only",
       "Uniform distribution"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "With a fixed sample size and a constant probability of a bolt being defective, the number of defective bolts follows a binomial distribution."
   },
   {
     question: "Which of the following statements about the mean of a probability distribution is FALSE?",
@@ -4610,7 +4695,8 @@ const STA112 = [
       "The mean is a measure of central tendency",
       "The mean can be a non-integer"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "The mean of a probability distribution does not need to be one of the random variable's possible values; it is simply a weighted average and can fall between them."
   },
   {
     question: "A continuous random variable X has pdf f(x)=k for 0 ≤ x ≤ 5 and 0 elsewhere. What is k?",
@@ -4620,7 +4706,8 @@ const STA112 = [
       "1",
       "1/25"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "Since the area under the pdf must equal 1, integrating k over the interval [0,5] gives 5k = 1, so k = 1/5."
   },
   {
     question: "If Z is a standard normal variable, what is P(Z > 0)?",
@@ -4630,7 +4717,8 @@ const STA112 = [
       "0.5",
       "Cannot be determined"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Because the standard normal distribution is symmetric about 0, exactly half its probability lies above 0, so P(Z>0) = 0.5."
   },
   {
     question: "Which statement correctly distinguishes a probability mass function (pmf) from a probability density function (pdf)?",
@@ -4640,7 +4728,8 @@ const STA112 = [
       "They are interchangeable",
       "pmf values must sum to more than 1"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A pmf gives P(X=x) directly for discrete variables, while a pdf requires integrating over an interval to obtain a probability, since P(X=x) is zero for any single point in a continuous distribution."
   },
   {
     question: "A student selects 4 cards from a standard deck without replacement. What distribution models the number of aces selected?",
@@ -4650,7 +4739,8 @@ const STA112 = [
       "Hypergeometric",
       "Normal"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Selecting cards from a deck without replacement, where the population of aces is fixed, is modeled by the hypergeometric distribution."
   },
   {
     question: "If the variance of a random variable X is 0, what can be concluded?",
@@ -4660,7 +4750,8 @@ const STA112 = [
       "X follows a standard normal distribution",
       "X is uniformly distributed"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "A variance of 0 means there is no spread at all in the values of X, so X must be a constant."
   },
   {
     question: "A lecturer sets P(A)=0.6 and P(A∩B)=0.7. What can be immediately concluded?",
@@ -4670,7 +4761,8 @@ const STA112 = [
       "A and B are independent",
       "A and B are mutually exclusive"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Since the intersection of two events can never exceed the probability of either individual event, P(A∩B) cannot be greater than P(A), making this scenario impossible."
   },
   {
     question: "In how many distinct ways can 6 people be seated around a circular table?",
@@ -4680,7 +4772,8 @@ const STA112 = [
       "6!/2",
       "720"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Circular permutations of n distinct objects are calculated as (n−1)!, so seating 6 people around a table gives 5! arrangements."
   },
   {
     question: "Why do we divide by the standard deviation when standardizing a normal variable?",
@@ -4690,7 +4783,8 @@ const STA112 = [
       "To make the distribution skewed",
       "To convert a continuous variable into a discrete variable"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Dividing by the standard deviation rescales the variable into standard deviation units, ensuring the standardized variable has a variance of 1."
   },
   {
     question: "A box contains 6 white and 4 black balls. If 2 balls are drawn with replacement, what is the probability both are white?",
@@ -4700,7 +4794,8 @@ const STA112 = [
       "6/10",
       "1/3"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "Since the draws are with replacement, P(both white) = (6/10) × (6/10) = 9/25."
   },
   {
     question: "Which scenario violates the assumptions required for using the binomial distribution?",
@@ -4710,7 +4805,8 @@ const STA112 = [
       "Testing 20 independent light bulbs",
       "Surveying 50 independent people"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Drawing cards without replacement changes the probability of success on each draw, violating the binomial distribution's requirement of independent trials with constant probability."
   },
   {
     question: "If E(X)=4 and Var(X)=9, what is E(X²)?",
@@ -4720,7 +4816,8 @@ const STA112 = [
       "16",
       "5"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "Since Var(X) = E(X²) − [E(X)]², rearranging gives E(X²) = Var(X) + [E(X)]² = 9 + 16 = 25."
   },
   {
     question: "Which relationship between combinations and permutations is always true?",
@@ -4730,7 +4827,8 @@ const STA112 = [
       "nPr = nCr × r!",
       "They are unrelated"
     ],
-    answer: 2
+    answer: 2,
+    explanation: "Because a permutation accounts for order while a combination does not, nPr always equals nCr multiplied by r!."
   },
     {
     question: "A biased coin has P(Head)=0.7. If tossed 5 times, what is the probability of getting at least one head?",
@@ -4740,7 +4838,8 @@ const STA112 = [
       "0.7 × 5",
       "1 − (0.7)^5"
     ],
-    answer: 0
+    answer: 0,
+    explanation: "The probability of at least one head is the complement of getting no heads at all in 5 tosses, calculated as 1 − (0.3)^5."
   },
   {
     question: "A researcher wrongly assumes that because a dataset is large, it must follow a normal distribution. Which statement best critiques this assumption?",
@@ -4750,7 +4849,8 @@ const STA112 = [
       "The assumption is correct if the variance is finite",
       "Normality only requires the mean to be positive"
     ],
-    answer: 1
+    answer: 1,
+    explanation: "By the Central Limit Theorem, a large sample size justifies approximate normality of the sampling distribution of the mean, but it does not mean the underlying population itself is normally distributed."
   }
 ];
 function createQuestionPalette() {
