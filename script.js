@@ -3681,7 +3681,7 @@ options: [
 answer: 0,
 working: "Transaction files capture short-term, current activity records, later used to update the master file."
 },
-  {
+{
 question: "Which of these qualifies as an example of file processing?",
 options: [
 "Manufacturing a new hard disk drive",
@@ -3823,7 +3823,7 @@ options: [
 ],
 answer: 3,
 working: "A logical, consistent structure makes files easier to locate, manage, and maintain over time."
-},
+},  
 {
 question: "A backup in the context of data processing refers to:",
 options: [
@@ -3956,7 +3956,7 @@ options: [
 answer: 3,
 working: "An interactive store needs instant retrieval of specific, randomly requested records; sequential organization's order-dependent access makes this impractical."
 }
-];  
+];
 const CSC104 = [
 {
     question: "An application package is best described as:",
