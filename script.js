@@ -1911,6 +1911,7 @@ options: [
 answer: 3,
 working: "A logical, consistent structure makes files easier to locate, manage, and maintain over time."
 },
+];  
 // ===== VARIABLES =====
 let selectedCourse = [];
 let currentQuestion = 0;
