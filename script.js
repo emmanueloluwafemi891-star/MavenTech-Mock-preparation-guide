@@ -1911,6 +1911,138 @@ options: [
 answer: 3,
 working: "A logical, consistent structure makes files easier to locate, manage, and maintain over time."
 },
+{
+question: "Data validation is best described as the process of:",
+options: [
+"Checking that data conforms to predefined rules or formats before processing",
+"Permanently deleting incorrect data",
+"Converting information back into raw data",
+"Printing data onto paper for storage"
+],
+answer: 0,
+working: "Data validation checks that incoming data meets set criteria, such as format, range, or type, before it is accepted for processing."
+},
+{
+question: "Data verification differs from data validation in that verification mainly focuses on:",
+options: [
+"Confirming that data was entered or copied accurately, often by comparing it to its original source",
+"Designing the database structure",
+"Determining hardware specifications",
+"Encrypting all stored files"
+],
+answer: 0,
+working: "Verification checks accuracy against the original source, such as through double entry or proofreading, while validation checks data against acceptable rules."
+},
+{
+question: "The principle 'Garbage In, Garbage Out' (GIGO) in data processing means:",
+options: [
+"Computers automatically correct any data entry errors",
+"Poor quality input data will produce poor quality, unreliable output",
+"Waste data is stored separately from useful data",
+"Old files must be deleted before new ones are created"
+],
+answer: 1,
+working: "GIGO highlights that if inaccurate or poor-quality data is entered, the processed output will be equally flawed, regardless of how good the processing method is."
+},
+{
+question: "In a database table, a primary key is used to:",
+options: [
+"Uniquely identify each record in the table",
+"Store duplicate copies of every field",
+"Encrypt the entire table",
+"Permanently lock the table from being read"
+],
+answer: 0,
+working: "A primary key is a field, or set of fields, whose value uniquely identifies each record, preventing duplicate or ambiguous entries."
+},
+{
+question: "A foreign key in a relational database is best described as:",
+options: [
+"A field that links one table to the primary key of another table",
+"A key used only to lock files from foreign countries",
+"A backup copy of the primary key",
+"A field that can never be referenced by other tables"
+],
+answer: 0,
+working: "A foreign key is a field in one table that refers to the primary key in another table, establishing a relationship between the two."
+},
+{
+question: "One major benefit of using a DBMS for maintaining data integrity is that it:",
+options: [
+"Allows unrestricted, unchecked changes to any data at any time",
+"Enforces rules and constraints that keep stored data accurate and consistent",
+"Removes the need for any data backups",
+"Prevents more than one table from ever being created"
+],
+answer: 1,
+working: "A DBMS enforces constraints, such as data types, uniqueness, and relationships, that help keep stored data accurate, consistent, and reliable."
+},
+{
+question: "A backup file is created mainly to:",
+options: [
+"Replace the original file permanently",
+"Provide a copy of data that can restore information if the original is lost or damaged",
+"Speed up day-to-day data entry",
+"Reduce the size of the master file"
+],
+answer: 1,
+working: "Backup files are duplicate copies kept so that data can be recovered if the original file is lost, corrupted, or deleted."
+},
+{
+question: "An archive file is best described as one that:",
+options: [
+"Stores current, frequently updated transaction records",
+"Holds older data that is no longer in active use but is retained for reference or legal purposes",
+"Can never be opened once created",
+"Is automatically deleted after one day"
+],
+answer: 1,
+working: "Archive files store historical or inactive data that is kept for record-keeping, reference, or compliance, rather than for routine daily use."
+},
+{
+question: "A program file differs from a data file in that a program file:",
+options: [
+"Contains instructions that tell the computer how to perform a task",
+"Only contains numerical records about a business",
+"Can never be stored on a hard disk",
+"Is always smaller than a data file"
+],
+answer: 0,
+working: "Program files hold executable instructions or code, while data files store information meant to be processed by those programs."
+},
+{
+question: "A secondary source of data is best exemplified by:",
+options: [
+"A questionnaire administered directly to respondents",
+"Personal observation of an ongoing event",
+"A published report summarizing data already collected by another researcher",
+"An original experiment conducted by the user"
+],
+answer: 2,
+working: "Secondary sources present data that has already been gathered and processed by someone else, unlike primary sources, which involve direct, first-hand collection."
+},
+{
+question: "In a centralized database system, data is:",
+options: [
+"Spread randomly across unrelated, disconnected computers with no central control",
+"Stored and managed at a single central location, accessible to authorized users",
+"Never accessible to more than one department",
+"Always stored only on paper records"
+],
+answer: 1,
+working: "A centralized database keeps all data in one location under unified management, simplifying control even when accessed by many users."
+},
+{
+question: "A hierarchical directory structure organizes files by:",
+options: [
+"Storing every file in a single folder with no subfolders",
+"Arranging folders and subfolders in a tree-like, nested structure",
+"Randomly scattering files with no naming pattern",
+"Requiring all files to share an identical name"
+],
+answer: 1,
+working: "A hierarchical structure nests folders within folders, like a tree, making it easier to logically organize and locate files."
+}
 ];  
 const CSC104 = [
 {
