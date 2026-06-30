@@ -140,13 +140,21 @@ function submitQuiz() {
   };
 }
 
+// ===== HELPER: GET CORRECT ANSWER INDEX (handles both index- and text-based answer formats) =====
+function getCorrectIndex(q) {
+  if (typeof q.answer === "number") {
+    return q.answer;
+  }
+  return q.options.indexOf(q.answer);
+}
+
 function proceedWithSubmit() {
   clearInterval(timer);
 
   let score = 0;
 
   selectedCourse.forEach((q, i) => {
-    if (userAnswers[i] === q.answer) {
+    if (userAnswers[i] === getCorrectIndex(q)) {
       score++;
     }
   });
@@ -172,6 +180,7 @@ function proceedWithSubmit() {
       name: document.getElementById("studentName").value,
       course: document.getElementById("course").value,
       score,
+      total: selectedCourse.length,
       percentage
     })
   );
@@ -209,8 +218,9 @@ function reviewAnswers() {
     ? q.options[userAnswers[i]]
     : "No Answer";
 
-const correct = q.options[q.answer];
-const isCorrect = userAnswers[i] === q.answer;
+const correctIndex = getCorrectIndex(q);
+const correct = q.options[correctIndex];
+const isCorrect = userAnswers[i] === correctIndex;
 
 div.classList.add(isCorrect ? "review-correct" : "review-wrong");
 
@@ -222,7 +232,7 @@ div.classList.add(isCorrect ? "review-correct" : "review-wrong");
 
     <p>Correct Answer: ${correct ?? "Not set"}</p>
 
-    <p>Explanation: ${q.explanation ?? "No explanation"}</p>
+    <p>Explanation: ${q.working ?? q.explanation ?? "No explanation"}</p>
 
     <hr>
   `;
@@ -256,7 +266,7 @@ window.onload = function () {
       <h3>Previous Result</h3>
       <p>Name: ${result.name}</p>
       <p>Course: ${result.course}</p>
-      <p>Score: ${result.score}/50</p>
+      <p>Score: ${result.score}/${result.total ?? "?"}</p>
       <p>Percentage: ${result.percentage}%</p>
     `;
   }
@@ -265,252 +275,302 @@ const GST112 = [
   {
     question: "What was the basis of the Kanem-Bornu socio-political organization?",
     options: ["Trade guilds", "Religious councils only", "Kinship", "Military conquest"],
-    answer: "Kinship"
+    answer: "Kinship",
+    explanation: "Kanem-Bornu's socio-political organization was built on kinship ties, which formed the basis of authority and social organization within the state."
   },
   {
     question: "The King's mother in the Kanem political structure was known as:",
     options: ["Maini Kanendi", "Nokena", "Galadima", "Magira"],
-    answer: "Magira"
+    answer: "Magira",
+    explanation: "In Kanem-Bornu, the king's mother held the important title of Magira and played a significant advisory role in governance."
   },
   {
     question: "The 'Nokena' in Kanem-Bornu was best described as:",
     options: ["The chief judge's court", "A class of slaves", "The royal army", "A council of twelve advisers to the king"],
-    answer: "A council of twelve advisers to the king"
+    answer: "A council of twelve advisers to the king",
+    explanation: "The Nokena was a council of twelve senior advisers who assisted the Mai (king) in running the affairs of the Kanem-Bornu state."
   },
   {
     question: "Bawo's six children founded the six original Hausa states known as:",
     options: ["Saifawa dynasty", "Hausa Bokwoi", "Sarkin Hausawa", "Hausa Banza"],
-    answer: "Hausa Bokwoi"
+    answer: "Hausa Bokwoi",
+    explanation: "Bawo's six sons are traditionally credited with founding the six original Hausa states, collectively known as the Hausa Bokwoi."
   },
   {
     question: "Which group is referred to as the 'Hausa Banza' (bastard states)?",
     options: ["Kanuri, Hausa, Fulani", "Daura, Katsina, Kano, Rano", "Zamfara, Kebbi, Gwari, Yauri, Nupe, Jukun, Yoruba", "Zazzau and Gobir"],
-    answer: "Zamfara, Kebbi, Gwari, Yauri, Nupe, Jukun, Yoruba"
+    answer: "Zamfara, Kebbi, Gwari, Yauri, Nupe, Jukun, Yoruba",
+    explanation: "The 'Hausa Banza' or bastard states refers to Zamfara, Kebbi, Gwari, Yauri, Nupe, Jukun, and Yoruba, considered outside the original seven Hausa states."
   },
   {
     question: "The original homeland of the Fulani people is believed to be:",
     options: ["The Sahara Desert", "Lake Chad basin", "The Niger River valley", "The Senegal River valley"],
-    answer: "The Senegal River valley"
+    answer: "The Senegal River valley",
+    explanation: "Historians trace the original homeland of the Fulani people to the Senegal River valley in West Africa, from where they later migrated eastward."
   },
   {
     question: "The 'Town Fulani' (sedentary Fulani) were predominantly:",
     options: ["Christian", "Animist", "Traditional worshippers only", "Muslim"],
-    answer: "Muslim"
+    answer: "Muslim",
+    explanation: "The Town Fulani, who settled and adopted a sedentary lifestyle, were predominantly Muslim, unlike the nomadic cattle Fulani."
   },
   {
     question: "Uthman dan Fodio served as a tutor/adviser in the court of:",
     options: ["The Etsu Nupe", "The Mai of Bornu", "The king of Gobir", "The Sarki of Kano"],
-    answer: "The king of Gobir"
+    answer: "The king of Gobir",
+    explanation: "Before launching his jihad, Uthman dan Fodio served as a tutor and adviser at the court of the king of Gobir."
   },
   {
     question: "The title 'Sarkin Kasar' given to a Hausa state head means:",
     options: ["Chief judge", "Head of the army", "Ruler of the land", "Defender of the faith"],
-    answer: "Ruler of the land"
+    answer: "Ruler of the land",
+    explanation: "The title 'Sarkin Kasar' translates to 'Ruler of the land,' reflecting the Hausa state head's authority over his territory."
   },
   {
     question: "The Nupe kingdom was founded by:",
     options: ["Eweka I", "Oduduwa", "Ayagba", "Tsoede (Edegi)"],
-    answer: "Tsoede (Edegi)"
+    answer: "Tsoede (Edegi)",
+    explanation: "The Nupe kingdom is traditionally said to have been founded by Tsoede, also known as Edegi."
   },
   {
     question: "Tsoede is said to have been the son of:",
     options: ["An Ife king and a Benin woman", "A Hausa king and a Fulani woman", "An Igala king and a Nupe woman", "A Bini king and a Yoruba woman"],
-    answer: "An Igala king and a Nupe woman"
+    answer: "An Igala king and a Nupe woman",
+    explanation: "Tsoede is traditionally described as the son of an Igala king and a Nupe woman, linking the Nupe and Igala royal lineages."
   },
   {
     question: "The royal title used in the Nupe kingdom was:",
     options: ["Olu", "Alaafin", "Oba", "Etsu"],
-    answer: "Etsu"
+    answer: "Etsu",
+    explanation: "The ruler of the Nupe kingdom bore the royal title 'Etsu.'"
   },
   {
     question: "In Nupe society, the head of each village was known as the:",
     options: ["Shaba", "Etsu", "Achuwo", "Zitzu"],
-    answer: "Zitzu"
+    answer: "Zitzu",
+    explanation: "In Nupe society, each village was headed by an official known as the Zitzu."
   },
   {
     question: "According to the Achadu version, the founder of the Igala dynasty came from:",
     options: ["Hausaland", "Igbo country", "Benin", "Yorubaland"],
-    answer: "Igbo country"
+    answer: "Igbo country",
+    explanation: "According to the Achadu version of Igala history, the founder of the Igala dynasty originated from Igbo country."
   },
   {
     question: "The Igala political structure operated on which two levels?",
     options: ["Federal and state", "Religious and military", "Central and provincial", "Village and clan"],
-    answer: "Central and provincial"
+    answer: "Central and provincial",
+    explanation: "The Igala political system was organized on two levels: a central authority and provincial administrations under it."
   },
   {
     question: "The Jukun people (Kwararafa) practiced what type of government?",
     options: ["Republican", "Military dictatorship", "Democratic", "Theocratic"],
-    answer: "Theocratic"
+    answer: "Theocratic",
+    explanation: "The Jukun (Kwararafa) practiced a theocratic system of government, in which political authority was closely tied to religious belief."
   },
   {
     question: "The head of the Jukun state, believed to represent the gods on earth, was called:",
     options: ["Sarki", "Attah", "Etsu Nupe", "Aku Uka"],
-    answer: "Aku Uka"
+    answer: "Aku Uka",
+    explanation: "The Aku Uka was the head of the Jukun state, regarded as representing the gods on earth."
   },
   {
     question: "Who functioned as the 'Prime Minister' in the Jukun political structure?",
     options: ["Kinda Achuwo", "Aku Nako", "Achuwo", "Abo Zike"],
-    answer: "Achuwo"
+    answer: "Achuwo",
+    explanation: "The Achuwo functioned as the chief adviser, similar to a prime minister, within the Jukun political structure."
   },
   {
     question: "According to P. Bohannan, the Tiv socio-political system was best described as:",
     options: ["Military oligarchy", "Theocratic", "Highly centralized monarchy", "Segmentary/decentralized"],
-    answer: "Segmentary/decentralized"
+    answer: "Segmentary/decentralized",
+    explanation: "P. Bohannan described the Tiv socio-political system as segmentary and decentralized, lacking a single central authority."
   },
   {
     question: "The largest recognized family group entity among the Tiv was called:",
     options: ["Swem", "Ityough Kiteragh", "Tsombor", "Mbavessen"],
-    answer: "Tsombor"
+    answer: "Tsombor",
+    explanation: "Among the Tiv, the Tsombor was recognized as the largest family group entity within their lineage structure."
   },
   {
     question: "According to Samuel Johnson's account, Oduduwa was believed to be the son of:",
     options: ["Obatala", "The Mai of Bornu", "The king of Benin", "Lamurudu, king of Mecca"],
-    answer: "Lamurudu, king of Mecca"
+    answer: "Lamurudu, king of Mecca",
+    explanation: "According to Samuel Johnson's account, Oduduwa was believed to be the son of Lamurudu, the king of Mecca."
   },
   {
     question: "Oranmiyan, the founder of the Oyo kingdom, was:",
     options: ["The founder of the Itsekiri kingdom", "A Hausa prince", "A grandson of Oduduwa", "The first Ogiso of Benin"],
-    answer: "A grandson of Oduduwa"
+    answer: "A grandson of Oduduwa",
+    explanation: "Oranmiyan, founder of the Oyo kingdom, is traditionally described as a grandson of Oduduwa."
   },
   {
     question: "The head of the Oyo Empire was titled:",
     options: ["Attah", "Etsu", "Oba", "Alaafin"],
-    answer: "Alaafin"
+    answer: "Alaafin",
+    explanation: "The ruler of the Oyo Empire held the title 'Alaafin.'"
   },
   {
     question: "The Oyomesi, a council of seven members in Oyo, was headed by:",
     options: ["Ogboni", "Ilari", "Bashorun", "Are-Ona-Kankanfo"],
-    answer: "Bashorun"
+    answer: "Bashorun",
+    explanation: "The Oyomesi, a council of seven kingmakers in Oyo, was headed by the Bashorun."
   },
   {
     question: "What was the primary role of the Ogboni cult in Yoruba society?",
     options: ["Foreign diplomacy", "Tax collection", "Military command", "Mediatory role between the Oyomesi and the Alaafin"],
-    answer: "Mediatory role between the Oyomesi and the Alaafin"
+    answer: "Mediatory role between the Oyomesi and the Alaafin",
+    explanation: "The Ogboni cult primarily served a mediatory role between the Oyomesi council and the Alaafin, helping balance political power."
   },
     {
     question: "In the Oyo Empire, the head of the army held the title:",
     options: ["Oyomesi", "Are-Ona-Kankanfo", "Ilari", "Bashorun"],
-    answer: "Are-Ona-Kankanfo"
+    answer: "Are-Ona-Kankanfo",
+    explanation: "The title 'Are-Ona-Kankanfo' was given to the head of the Oyo Empire's army."
   },
   {
     question: "Which Portuguese explorer arrived in Benin during Ewuare's reign in 1472?",
     options: ["Flora Shaw", "Vasco da Gama", "Ruy de Sequeira", "Alfonso de Aviero"],
-    answer: "Ruy de Sequeira"
+    answer: "Ruy de Sequeira",
+    explanation: "The Portuguese explorer Ruy de Sequeira arrived in Benin in 1472, during the reign of Oba Ewuare."
   },
   {
     question: "According to Bini mythology, the first ruler of Bini became powerful because he:",
     options: ["Inherited wealth from his father", "Was crowned by the Portuguese", "Won a war against Ife", "Chose a snail shell that produced land"],
-    answer: "Chose a snail shell that produced land"
+    answer: "Chose a snail shell that produced land",
+    explanation: "Bini mythology holds that the first ruler became powerful after choosing a snail shell that produced land, symbolizing the founding of the kingdom."
   },
   {
     question: "The first period of pre-colonial Bini history, ruled by 'kings of the sky,' is known as the:",
     options: ["Igodomigodo era", "Oranmiyan era", "Eweka era", "Ogiso era"],
-    answer: "Ogiso era"
+    answer: "Ogiso era",
+    explanation: "The earliest period of Bini history, ruled by figures described as 'kings of the sky,' is known as the Ogiso era."
   },
   {
     question: "Eweka I, the first Oba of Benin, was the son of:",
     options: ["Igbodo and an Ife woman", "Ewuare and a Yoruba woman", "Oranmiyan and a Bini woman", "Oduduwa and a Bini woman"],
-    answer: "Oranmiyan and a Bini woman"
+    answer: "Oranmiyan and a Bini woman",
+    explanation: "Eweka I, the first Oba of Benin, was the son of Oranmiyan and a Bini woman."
   },
   {
     question: "Bini society was classified into two distinct classes:",
     options: ["Etsu and Nupe", "Oyomesi and Ogboni", "Sarki and Talakawa", "Nobility (Adesotu) and Commoners (Ighiotu)"],
-    answer: "Nobility (Adesotu) and Commoners (Ighiotu)"
+    answer: "Nobility (Adesotu) and Commoners (Ighiotu)",
+    explanation: "Bini society was divided into two main classes: the nobility (Adesotu) and the commoners (Ighiotu)."
   },
   {
     question: "The kingdom of Itsekiri is traditionally said to have been founded by:",
     options: ["Oranmiyan", "Eweka I", "Tsoede", "Iginuwa"],
-    answer: "Iginuwa"
+    answer: "Iginuwa",
+    explanation: "The kingdom of Itsekiri is traditionally said to have been founded by Iginuwa."
   },
   {
     question: "Among the Itsekiri, political and spiritual powers were combined in the office of the:",
     options: ["Etsu", "Sarki", "Olu", "Ovie"],
-    answer: "Olu"
+    answer: "Olu",
+    explanation: "Among the Itsekiri, the office of the Olu combined both political authority and spiritual leadership."
   },
   {
     question: "Unlike the Itsekiri and Benin, the Urhobo people never established:",
     options: ["Village councils", "A single unified kingdom", "Age-grade systems", "A trading economy"],
-    answer: "A single unified kingdom"
+    answer: "A single unified kingdom",
+    explanation: "Unlike the Benin and Itsekiri kingdoms, the Urhobo people never established a single unified kingdom, remaining organized around autonomous communities."
   },
   {
     question: "The Igbo are best known for their style of pre-colonial governance described as:",
     options: ["Federal structure", "Theocratic empire", "Centralized monarchy", "Acephalous/segmentary"],
-    answer: "Acephalous/segmentary"
+    answer: "Acephalous/segmentary",
+    explanation: "Pre-colonial Igbo governance is best described as acephalous or segmentary, lacking centralized kingship and instead relying on village-based authority."
   },
   {
     question: "In traditional Igbo society, the staff of authority symbolizing justice was called the:",
     options: ["Alusi", "Ikenga", "Chukwu", "Ofo"],
-    answer: "Ofo"
+    answer: "Ofo",
+    explanation: "The Ofo was a staff of authority among the Igbo, symbolizing truth, justice, and legitimate power."
   },
   {
     question: "The general assembly where male adults performed legislative functions in Igbo society was called:",
     options: ["Igbo-mela", "Okpara council", "Amala Oha", "Nri assembly"],
-    answer: "Amala Oha"
+    answer: "Amala Oha",
+    explanation: "The Amala Oha was the general assembly where male adults in Igbo society exercised legislative functions."
   },
   {
     question: "Among the Ijaw, the main political authority in the village was the assembly presided over by the:",
     options: ["Attah", "Ovie", "Olu", "Amanyanabo"],
-    answer: "Amanyanabo"
+    answer: "Amanyanabo",
+    explanation: "Among the Ijaw, the village assembly was presided over by the Amanyanabo, the recognized political authority."
   },
   {
     question: "The 'House System' is most closely associated with which ethnic group?",
     options: ["Efik", "Annang", "Ibibio", "Ijaw"],
-    answer: "Ijaw"
+    answer: "Ijaw",
+    explanation: "The 'House System,' a trading and political organizational structure, is most closely associated with the Ijaw people."
   },
   {
     question: "Among the Ibibio, the term 'Ibio-ibio' refers to their:",
     options: ["Religious devotion", "Brief way of doing things", "Tall height", "Trading prowess"],
-    answer: "Brief way of doing things"
+    answer: "Brief way of doing things",
+    explanation: "The term 'Ibio-ibio,' from which the Ibibio people's name derives, refers to their brief or concise way of doing things."
   },
   {
     question: "Missionary Mary Slessor helped abolish which practice among the Ibibio?",
     options: ["Polygamy", "Slave trade", "Child labor", "The killing of twins"],
-    answer: "The killing of twins"
+    answer: "The killing of twins",
+    explanation: "Missionary Mary Slessor is best known for helping abolish the practice of killing twins among the Ibibio people."
   },
   {
     question: "The four major Efik settlements collectively came to be known as:",
     options: ["Bonny", "Nembe", "Calabar", "Opobo"],
-    answer: "Calabar"
+    answer: "Calabar",
+    explanation: "The four major Efik settlements collectively became known as Calabar."
   },
   {
     question: "Among the Annang, the family compound formed by tracing common ancestry is called:",
     options: ["Awio", "Idung", "Ekpuk", "Ufok"],
-    answer: "Ufok"
+    answer: "Ufok",
+    explanation: "Among the Annang, the Ufok refers to the family compound formed by people who trace descent from a common ancestor."
   },
   {
     question: "The January 1914 Amalgamation, which unified Northern and Southern Nigeria, was carried out by:",
     options: ["John Macpherson", "Oliver Lyttleton", "Flora Shaw", "Sir Frederick Lugard"],
-    answer: "Sir Frederick Lugard"
+    answer: "Sir Frederick Lugard",
+    explanation: "The January 1914 Amalgamation, which merged Northern and Southern Nigeria into one country, was carried out by Sir Frederick Lugard."
   },
   {
     question: "The primary motivation behind both the 1906 and 1914 amalgamations was mainly:",
     options: ["Educational reform", "Military strategy", "Economic/administrative efficiency", "Religious unity"],
-    answer: "Economic/administrative efficiency"
+    answer: "Economic/administrative efficiency",
+    explanation: "Both the 1906 and 1914 amalgamations were driven mainly by the desire for economic and administrative efficiency in governing the colonial territories."
   },
   {
     question: "The name 'Nigeria,' derived from the Niger River, was suggested by:",
     options: ["Nnamdi Azikiwe", "Herbert Macaulay", "Lord Lugard", "Flora Shaw"],
-    answer: "Flora Shaw"
+    answer: "Flora Shaw",
+    explanation: "The name 'Nigeria,' derived from the Niger River, was suggested by journalist Flora Shaw, who later married Lord Lugard."
   },
   {
     question: "Which constitution is recognized as the first genuine federal constitution in Nigeria since 1914?",
     options: ["Independence Constitution of 1960", "Richards Constitution of 1946", "Lyttleton Constitution of 1954", "Macpherson Constitution of 1951"],
-    answer: "Lyttleton Constitution of 1954"
+    answer: "Lyttleton Constitution of 1954",
+    explanation: "The Lyttleton Constitution of 1954 is recognized as Nigeria's first genuine federal constitution since the 1914 amalgamation."
   },
   {
     question: "The 1979 Constitution replaced the parliamentary system with a:",
     options: ["Confederal system", "Monarchical system", "Military system", "Presidential system"],
-    answer: "Presidential system"
+    answer: "Presidential system",
+    explanation: "The 1979 Constitution replaced the parliamentary system of government with a presidential system, modeled partly on the United States."
   },
   {
     question: "The Universal Basic Education Programme (UBE) was introduced in Nigeria in:",
     options: ["1999", "1976", "1981", "1969"],
-    answer: "1976"
+    answer: "1976",
+    explanation: "This answer reflects the Universal Primary Education (UPE) scheme launched in 1976, an early precursor to today's Universal Basic Education (UBE) programme."
   },
   {
     question: "The Structural Adjustment Programme (SAP), introduced in 1986, was mainly aimed at:",
     options: ["Strengthening regional government powers", "Increasing oil dependency", "Expanding the civil service", "Restructuring and diversifying the economy away from oil dependence"],
-    answer: "Restructuring and diversifying the economy away from oil dependence"
+    answer: "Restructuring and diversifying the economy away from oil dependence",
+    explanation: "The Structural Adjustment Programme (SAP), introduced in 1986, aimed mainly at restructuring and diversifying Nigeria's economy away from its heavy dependence on oil."
   }
 ];
 const MTH132 = [
