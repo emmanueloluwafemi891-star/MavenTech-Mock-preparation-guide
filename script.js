@@ -275,304 +275,664 @@ window.onload = function () {
 };
 const GST112 = [
   {
-    question: "What was the basis of the Kanem-Bornu socio-political organization?",
-    options: ["Trade guilds", "Religious councils only", "Kinship", "Military conquest"],
-    answer: "Kinship",
-    explanation: "Kanem-Bornu's socio-political organization was built on kinship ties, which formed the basis of authority and social organization within the state."
+    question: "The Saifawa dynasty, one of the longest-ruling in pre-colonial West Africa, is traditionally credited to:",
+    options: [
+      "Saif b. Dhiyazan",
+      "Bayajida",
+      "The So people",
+      "Tsoede"
+    ],
+    answer: 0,
+    explanation: "The text attributes the founding of the Saifawa dynasty specifically to the Arab hero Saif b. Dhiyazan, distinct from the So people and unrelated to Bayajida or Tsoede."
   },
   {
-    question: "The King's mother in the Kanem political structure was known as:",
-    options: ["Maini Kanendi", "Nokena", "Galadima", "Magira"],
-    answer: "Magira",
-    explanation: "In Kanem-Bornu, the king's mother held the important title of Magira and played a significant advisory role in governance."
+    question: "In the Kanem-Bornu political structure, the official who served as the Mai's legal adviser and chief judge was the:",
+    options: [
+      "Nokena",
+      "Maini Kanendi",
+      "Magira",
+      "Galadima"
+    ],
+    answer: 1,
+    explanation: "The Maini Kanendi was explicitly the chief judge and legal adviser to the Mai; the Nokena was an advisory council, the Magira was the Queen Mother, and Galadima was a title among the nobility."
   },
   {
-    question: "The 'Nokena' in Kanem-Bornu was best described as:",
-    options: ["The chief judge's court", "A class of slaves", "The royal army", "A council of twelve advisers to the king"],
-    answer: "A council of twelve advisers to the king",
-    explanation: "The Nokena was a council of twelve senior advisers who assisted the Mai (king) in running the affairs of the Kanem-Bornu state."
+    question: "According to the Bayajida legend, the 'Hausa Banza' states are distinguished from the 'Hausa Bokwoi' because they were:",
+    options: [
+      "Conquered by the Fulani jihadists",
+      "Founded by Bawo's six biological sons",
+      "Established through concubines' children",
+      "Founded before Daura existed"
+    ],
+    answer: 2,
+    explanation: "The Hausa Bokwoi descended from Bawo's six sons plus Bayajida's son at Biran, while the Hausa Banza were founded by children through concubines."
   },
   {
-    question: "Bawo's six children founded the six original Hausa states known as:",
-    options: ["Saifawa dynasty", "Hausa Bokwoi", "Sarkin Hausawa", "Hausa Banza"],
-    answer: "Hausa Bokwoi",
-    explanation: "Bawo's six sons are traditionally credited with founding the six original Hausa states, collectively known as the Hausa Bokwoi."
+    question: "The term used to describe sedentary, usually Muslim Fulani who took up permanent residence, as opposed to their nomadic kin, is:",
+    options: [
+      "Fulbe",
+      "Cattle Fulani",
+      "Fulfulde",
+      "Town Fulani"
+    ],
+    answer: 3,
+    explanation: "The text distinguishes 'Town Fulani' (sedentary, Muslim) from 'Cattle Fulani' (nomadic, animist); Fulbe and Fulfulde refer to the people/language generally."
   },
   {
-    question: "Which group is referred to as the 'Hausa Banza' (bastard states)?",
-    options: ["Kanuri, Hausa, Fulani", "Daura, Katsina, Kano, Rano", "Zamfara, Kebbi, Gwari, Yauri, Nupe, Jukun, Yoruba", "Zazzau and Gobir"],
-    answer: "Zamfara, Kebbi, Gwari, Yauri, Nupe, Jukun, Yoruba",
-    explanation: "The 'Hausa Banza' or bastard states refers to Zamfara, Kebbi, Gwari, Yauri, Nupe, Jukun, and Yoruba, considered outside the original seven Hausa states."
+    question: "Which of the following best explains why the Islamization of Hausaland between the 14th-15th centuries is considered significant?",
+    options: [
+      "It introduced Sharia law and new judicial titles like Alkali and Qadi",
+      "It caused the collapse of the Hausa Bokwoi states",
+      "It merged Hausa states with Bornu politically",
+      "It ended the reign of the Sarkin Kasar"
+    ],
+    answer: 0,
+    explanation: "Islamization gave birth to new political institutions and influenced the judicial system through Sharia, introducing titles like Alkali and Qadi."
   },
   {
-    question: "The original homeland of the Fulani people is believed to be:",
-    options: ["The Sahara Desert", "Lake Chad basin", "The Niger River valley", "The Senegal River valley"],
-    answer: "The Senegal River valley",
-    explanation: "Historians trace the original homeland of the Fulani people to the Senegal River valley in West Africa, from where they later migrated eastward."
+    question: "Tsoede (Edegi), founder of the Nupe kingdom, is significant historically because:",
+    options: [
+      "He founded the Etsu Nupe title after defeating the Igala",
+      "He unified previously scattered Nupe chiefdoms under central rule",
+      "He established Islam as state religion in Nupeland",
+      "He was purely of Igala royal blood on both sides"
+    ],
+    answer: 1,
+    explanation: "Tsoede, son of an Igala king and Nupe woman, arrived in Nupeland and defeated small chiefdoms, establishing central administration."
   },
   {
-    question: "The 'Town Fulani' (sedentary Fulani) were predominantly:",
-    options: ["Christian", "Animist", "Traditional worshippers only", "Muslim"],
-    answer: "Muslim",
-    explanation: "The Town Fulani, who settled and adopted a sedentary lifestyle, were predominantly Muslim, unlike the nomadic cattle Fulani."
+    question: "The recurring shift of the Nupe kingdom's capital is best explained in the text as a result of:",
+    options: [
+      "Deliberate strategic planning by successive Etsu Nupe",
+      "Pressure from the Bini kingdom",
+      "Response to historical developments, including succession crises",
+      "Instructions from Idah"
+    ],
+    answer: 2,
+    explanation: "The text ties capital shifts to unfolding historical events, notably succession disputes such as Etsu Jibrilu's deposition and the 1795 dynastic split."
   },
   {
-    question: "Uthman dan Fodio served as a tutor/adviser in the court of:",
-    options: ["The Etsu Nupe", "The Mai of Bornu", "The king of Gobir", "The Sarki of Kano"],
-    answer: "The king of Gobir",
-    explanation: "Before launching his jihad, Uthman dan Fodio served as a tutor and adviser at the court of the king of Gobir."
+    question: "What ultimately resolved the Nupe succession crisis after 1800, resulting in new rulership?",
+    options: [
+      "A peace treaty mediated by Bornu",
+      "Direct rule imposed by the Attah of Igala",
+      "A negotiated settlement between Gbara and Raba",
+      "Intervention of Fulani jihadists invited into the conflict"
+    ],
+    answer: 3,
+    explanation: "The text states that Fulani jihadists, invited into the internal struggle, emerged as the new rulers of the kingdom."
   },
   {
-    question: "The title 'Sarkin Kasar' given to a Hausa state head means:",
-    options: ["Chief judge", "Head of the army", "Ruler of the land", "Defender of the faith"],
-    answer: "Ruler of the land",
-    explanation: "The title 'Sarkin Kasar' translates to 'Ruler of the land,' reflecting the Hausa state head's authority over his territory."
+    question: "Among the various origin traditions of the Igala people, the Achadu version differs from the Abutu Eje version chiefly in that Achadu:",
+    options: [
+      "Came from Igbo country and became a ritual husband to the Attah",
+      "Was reared by a leopard",
+      "Was a foreigner from Ado (Benin)",
+      "Was of Yoruba extraction"
+    ],
+    answer: 0,
+    explanation: "Achadu is said to have come from Igbo country, married the Attah, and became patron of the kingmakers — distinct from Abutu Eje's leopard-rearing origin story."
   },
   {
-    question: "The Nupe kingdom was founded by:",
-    options: ["Eweka I", "Oduduwa", "Ayagba", "Tsoede (Edegi)"],
-    answer: "Tsoede (Edegi)",
-    explanation: "The Nupe kingdom is traditionally said to have been founded by Tsoede, also known as Edegi."
+    question: "The Jukun (Kwararafa) political system is best described as:",
+    options: [
+      "Modeled entirely on the Benin monarchy",
+      "Theocratic, with AKU UKA's power regulated by taboos and public opinion",
+      "A direct democracy without any central figure",
+      "Purely despotic with no checks on royal power"
+    ],
+    answer: 1,
+    explanation: "The Jukun operated a theocratic system where AKU UKA, though powerful, was judged by performance and regulated by taboos and respect for public opinion."
   },
   {
-    question: "Tsoede is said to have been the son of:",
-    options: ["An Ife king and a Benin woman", "A Hausa king and a Fulani woman", "An Igala king and a Nupe woman", "A Bini king and a Yoruba woman"],
-    answer: "An Igala king and a Nupe woman",
-    explanation: "Tsoede is traditionally described as the son of an Igala king and a Nupe woman, linking the Nupe and Igala royal lineages."
+    question: "P. Bohannan's description of the Tiv socio-political system as 'so simple that it was difficult to understand' is best interpreted as referring to:",
+    options: [
+      "A centralized kingdom modeled after Jukun",
+      "A weak, disorganized society without structure",
+      "A highly segmented, decentralized system organized by genealogical hierarchy",
+      "A system entirely controlled by external Cameroonian groups"
+    ],
+    answer: 2,
+    explanation: "The paradox highlights that Tiv society, while lacking centralized authority, had a coherent segmentary structure based on kinship and genealogy."
   },
   {
-    question: "The royal title used in the Nupe kingdom was:",
-    options: ["Olu", "Alaafin", "Oba", "Etsu"],
-    answer: "Etsu",
-    explanation: "The ruler of the Nupe kingdom bore the royal title 'Etsu.'"
+    question: "In Oyo Empire's administration, the body that could remove an Alaafin deemed dictatorial was the:",
+    options: [
+      "Ogboni Cult",
+      "Ilari network",
+      "Are-Ona-Kankanfo's council",
+      "Oyomesi, headed by Bashorun"
+    ],
+    answer: 3,
+    explanation: "The Oyomesi, a council of seven headed by Bashorun, had power to select and remove the Alaafin; the Ogboni acted as a mediating counter-power."
   },
   {
-    question: "In Nupe society, the head of each village was known as the:",
-    options: ["Shaba", "Etsu", "Achuwo", "Zitzu"],
-    answer: "Zitzu",
-    explanation: "In Nupe society, each village was headed by an official known as the Zitzu."
+    question: "The Ogboni cult's primary function in Oyo governance was to:",
+    options: [
+      "Serve as a mediatory body between the Oyomesi and the Alaafin",
+      "Select the Are-Ona-Kankanfo",
+      "Collect tribute from provincial governors",
+      "Command the army in external wars"
+    ],
+    answer: 0,
+    explanation: "The text explicitly states the Ogboni played a mediatory role in conflicts between Oyomesi and Alaafin, acting as a counter-power."
   },
   {
-    question: "According to the Achadu version, the founder of the Igala dynasty came from:",
-    options: ["Hausaland", "Igbo country", "Benin", "Yorubaland"],
-    answer: "Igbo country",
-    explanation: "According to the Achadu version of Igala history, the founder of the Igala dynasty originated from Igbo country."
+    question: "Which factor most directly explains why the Benin monarchy's foundation story (Oranmiyan-Eweka) is interpreted by some scholars as a 'culture capture'?",
+    options: [
+      "It shows the Bini invented their own dynasty independently",
+      "It reflects an attempt to associate Bini monarchy with Ife's prestige and antiquity",
+      "It confirms Benin was founded before Ife",
+      "It proves Oranmiyan never existed"
+    ],
+    answer: 1,
+    explanation: "One school of thought sees the story as an endeavour to link Bini monarchy with the prestigious, ancient Ife dynasty — a symbolic association rather than literal genealogy."
   },
   {
-    question: "The Igala political structure operated on which two levels?",
-    options: ["Federal and state", "Religious and military", "Central and provincial", "Village and clan"],
-    answer: "Central and provincial",
-    explanation: "The Igala political system was organized on two levels: a central authority and provincial administrations under it."
+    question: "Why did the practice of Bini kings personally leading armies into battle end after Ehengbuda's reign?",
+    options: [
+      "The Portuguese demanded the king remain in the palace",
+      "The Oyomesi banned royal military participation",
+      "Ehengbuda died on a return journey from a campaign",
+      "A new constitution was introduced by Ewuare"
+    ],
+    answer: 2,
+    explanation: "The text states Ehengbuda lost his life returning from a campaign, after which the practice was discontinued and the king became more ceremonial."
   },
   {
-    question: "The Jukun people (Kwararafa) practiced what type of government?",
-    options: ["Republican", "Military dictatorship", "Democratic", "Theocratic"],
-    answer: "Theocratic",
-    explanation: "The Jukun (Kwararafa) practiced a theocratic system of government, in which political authority was closely tied to religious belief."
+    question: "The Itsekiri kingdom's founding is distinct among Niger Delta peoples primarily because:",
+    options: [
+      "It has multiple competing origin traditions like the Yoruba",
+      "It never developed any political titles",
+      "It was founded independently of any Benin connection",
+      "Iginuwa was sent away from Benin due to unpopularity, then settled with Ijaw assistance"
+    ],
+    answer: 3,
+    explanation: "Unlike other traditions with many origin versions, the Itsekiri have one clear account: Iginuwa, made unpopular by disastrous advice, was sent by his father to found a kingdom elsewhere, aided by Ijaws."
   },
   {
-    question: "The head of the Jukun state, believed to represent the gods on earth, was called:",
-    options: ["Sarki", "Attah", "Etsu Nupe", "Aku Uka"],
-    answer: "Aku Uka",
-    explanation: "The Aku Uka was the head of the Jukun state, regarded as representing the gods on earth."
+    question: "The Igbo Amala Oha general assembly is best characterized as:",
+    options: [
+      "A form of direct democracy where all adult males participated in legislation",
+      "A hereditary council of chiefs",
+      "A religious body controlling ancestor worship only",
+      "An exclusively economic trade council"
+    ],
+    answer: 0,
+    explanation: "The text describes Amala Oha as a general assembly where all male adults participated in legislative functions — a direct democracy, not a hereditary or religious body."
   },
   {
-    question: "Who functioned as the 'Prime Minister' in the Jukun political structure?",
-    options: ["Kinda Achuwo", "Aku Nako", "Achuwo", "Abo Zike"],
-    answer: "Achuwo",
-    explanation: "The Achuwo functioned as the chief adviser, similar to a prime minister, within the Jukun political structure."
+    question: "Which statement correctly distinguishes the Ijaw Amanyanabo's role before versus after the rise of Atlantic trade?",
+    options: [
+      "It became hereditary only after trade began",
+      "It shifted from a largely ritual role to a genuine political office",
+      "It was abolished once trade began",
+      "It remained purely ritual throughout"
+    ],
+    answer: 1,
+    explanation: "The Amanyanabo's functions were essentially ritual before Atlantic trade, but communities that gained control of European commerce saw the office metamorphose into a political office."
   },
   {
-    question: "According to P. Bohannan, the Tiv socio-political system was best described as:",
-    options: ["Military oligarchy", "Theocratic", "Highly centralized monarchy", "Segmentary/decentralized"],
-    answer: "Segmentary/decentralized",
-    explanation: "P. Bohannan described the Tiv socio-political system as segmentary and decentralized, lacking a single central authority."
+    question: "Among Ibibio society, the group that historically controlled the majority of community wealth through appropriation of palm tree acreage was:",
+    options: [
+      "The Ekpe society generally",
+      "The Obong Isong",
+      "The Amama, of highest rank in Ekpo society",
+      "The Afe Isong"
+    ],
+    answer: 2,
+    explanation: "The text identifies the Amama (highest-ranking Ekpo society members) as controlling most community wealth via palm tree appropriation."
   },
   {
-    question: "The largest recognized family group entity among the Tiv was called:",
-    options: ["Swem", "Ityough Kiteragh", "Tsombor", "Mbavessen"],
-    answer: "Tsombor",
-    explanation: "Among the Tiv, the Tsombor was recognized as the largest family group entity within their lineage structure."
+    question: "The 1906 amalgamation, unlike the 1914 amalgamation, specifically combined:",
+    options: [
+      "All three regions into one government",
+      "Only the Northern Protectorate territories",
+      "Northern and Southern Protectorates",
+      "Lagos Colony and the Protectorate of Southern Nigeria"
+    ],
+    answer: 3,
+    explanation: "The May 1906 amalgamation merged Lagos colony with the Protectorate of Southern Nigeria; the 1914 amalgamation later merged this combined south with the north."
   },
   {
-    question: "According to Samuel Johnson's account, Oduduwa was believed to be the son of:",
-    options: ["Obatala", "The Mai of Bornu", "The king of Benin", "Lamurudu, king of Mecca"],
-    answer: "Lamurudu, king of Mecca",
-    explanation: "According to Samuel Johnson's account, Oduduwa was believed to be the son of Lamurudu, the king of Mecca."
+    question: "According to Tamuno (1980), the primary motive behind the 1906 amalgamation was:",
+    options: [
+      "Economic — using Southern Nigeria's finances to cover Lagos's railway-related costs",
+      "Religious harmonization between north and south",
+      "Political unification for administrative simplicity alone",
+      "Military strategy against European rivals"
+    ],
+    answer: 0,
+    explanation: "Tamuno's assessment states the aim was economic: using the better financial position of Southern Nigeria to cover costs in financially weak Lagos, including its railway extension needs."
   },
   {
-    question: "Oranmiyan, the founder of the Oyo kingdom, was:",
-    options: ["The founder of the Itsekiri kingdom", "A Hausa prince", "A grandson of Oduduwa", "The first Ogiso of Benin"],
-    answer: "A grandson of Oduduwa",
-    explanation: "Oranmiyan, founder of the Oyo kingdom, is traditionally described as a grandson of Oduduwa."
+    question: "Which constitutional feature was unique to the Lyttleton Constitution of 1954 compared to earlier ones?",
+    options: [
+      "It was the first to be named after a Nigerian",
+      "It was the first genuine federal constitution in Nigeria since 1914",
+      "It abolished regional legislatures entirely",
+      "It created the office of Prime Minister for the first time"
+    ],
+    answer: 1,
+    explanation: "The text explicitly states the Lyttleton Constitution was regarded as the first genuine federal constitution in Nigeria since 1914, distinguishing exclusive, concurrent, and residual lists."
   },
   {
-    question: "The head of the Oyo Empire was titled:",
-    options: ["Attah", "Etsu", "Oba", "Alaafin"],
-    answer: "Alaafin",
-    explanation: "The ruler of the Oyo Empire held the title 'Alaafin.'"
+    question: "A key criticism of the 1963 Republican Constitution's judicial arrangement was that:",
+    options: [
+      "The Privy Council retained final appellate authority",
+      "Judges were elected directly by citizens",
+      "Abolishing the Judicial Service Commission compromised judicial independence",
+      "The Supreme Court lost its power of judicial review"
+    ],
+    answer: 2,
+    explanation: "Vesting judicial appointment power in the Prime Minister after abolishing the Judicial Service Commission risked compromising judicial independence."
   },
   {
-    question: "The Oyomesi, a council of seven members in Oyo, was headed by:",
-    options: ["Ogboni", "Ilari", "Bashorun", "Are-Ona-Kankanfo"],
-    answer: "Bashorun",
-    explanation: "The Oyomesi, a council of seven kingmakers in Oyo, was headed by the Bashorun."
+    question: "The 1979 Presidential Constitution differed fundamentally from the 1963 Republican Constitution mainly in that it:",
+    options: [
+      "Abolished the bicameral legislature",
+      "Removed the power of impeachment from the legislature",
+      "Retained a parliamentary system with a ceremonial president",
+      "Replaced parliamentary government with a presidential system where the president was both head of state and government"
+    ],
+    answer: 3,
+    explanation: "The 1979 constitution jettisoned the parliamentary system and replaced it with a presidential system, with the president as both head of state and government."
   },
   {
-    question: "What was the primary role of the Ogboni cult in Yoruba society?",
-    options: ["Foreign diplomacy", "Tax collection", "Military command", "Mediatory role between the Oyomesi and the Alaafin"],
-    answer: "Mediatory role between the Oyomesi and the Alaafin",
-    explanation: "The Ogboni cult primarily served a mediatory role between the Oyomesi council and the Alaafin, helping balance political power."
-  },
-    {
-    question: "In the Oyo Empire, the head of the army held the title:",
-    options: ["Oyomesi", "Are-Ona-Kankanfo", "Ilari", "Bashorun"],
-    answer: "Are-Ona-Kankanfo",
-    explanation: "The title 'Are-Ona-Kankanfo' was given to the head of the Oyo Empire's army."
-  },
-  {
-    question: "Which Portuguese explorer arrived in Benin during Ewuare's reign in 1472?",
-    options: ["Flora Shaw", "Vasco da Gama", "Ruy de Sequeira", "Alfonso de Aviero"],
-    answer: "Ruy de Sequeira",
-    explanation: "The Portuguese explorer Ruy de Sequeira arrived in Benin in 1472, during the reign of Oba Ewuare."
+    question: "Which of these correctly matches a Nigerian political party with the ethnic/regional base it primarily represented in the First Republic?",
+    options: [
+      "AG — Yoruba-dominated Western Region",
+      "UMBC — Yoruba minorities",
+      "NPC — Igbo-dominated Eastern Region",
+      "NCNC — Hausa-Fulani Northern Region"
+    ],
+    answer: 0,
+    explanation: "The Action Group (AG), founded by Awolowo, was Yoruba-based in the West. The NPC represented the North, NCNC became Eastern-associated, and UMBC represented Northern minorities."
   },
   {
-    question: "According to Bini mythology, the first ruler of Bini became powerful because he:",
-    options: ["Inherited wealth from his father", "Was crowned by the Portuguese", "Won a war against Ife", "Chose a snail shell that produced land"],
-    answer: "Chose a snail shell that produced land",
-    explanation: "Bini mythology holds that the first ruler became powerful after choosing a snail shell that produced land, symbolizing the founding of the kingdom."
+    question: "The formation of the APC in 2013 is best explained as:",
+    options: [
+      "A coalition formed solely for the 2019 election",
+      "A merger of four opposition parties (ACN, ANPP, CPC, and an APGA faction)",
+      "A rebranding of the NPN from the Second Republic",
+      "A splinter faction from PDP alone"
+    ],
+    answer: 1,
+    explanation: "APC was formed in 2013 through the merger of four opposition parties — ACN, ANPP, CPC, and a faction of APGA — which then won the presidency in 2015."
   },
   {
-    question: "The first period of pre-colonial Bini history, ruled by 'kings of the sky,' is known as the:",
-    options: ["Igodomigodo era", "Oranmiyan era", "Eweka era", "Ogiso era"],
-    answer: "Ogiso era",
-    explanation: "The earliest period of Bini history, ruled by figures described as 'kings of the sky,' is known as the Ogiso era."
+    question: "Which best explains why the Niger Delta region never developed empires or dominating ambitions over others?",
+    options: [
+      "They were forcibly prevented by the Benin Kingdom",
+      "They lacked contact with Atlantic trade",
+      "Their most common political trait was a democratic-republican spirit centered on the village",
+      "Lack of population growth"
+    ],
+    answer: 2,
+    explanation: "The text attributes this to the region's democratic-republican political culture, where the village was the basic unit and clans formed loose confederations rather than centralized empires."
   },
   {
-    question: "Eweka I, the first Oba of Benin, was the son of:",
-    options: ["Igbodo and an Ife woman", "Ewuare and a Yoruba woman", "Oranmiyan and a Bini woman", "Oduduwa and a Bini woman"],
-    answer: "Oranmiyan and a Bini woman",
-    explanation: "Eweka I, the first Oba of Benin, was the son of Oranmiyan and a Bini woman."
+    question: "In the Rain Forest Region, the key structural difference between Igbo 'village democracy' and Yoruba 'monarchical states' is that:",
+    options: [
+      "Igbo leadership (Okpara) was hereditary while Yoruba leadership was elective",
+      "Only the Yoruba had judicial hierarchies",
+      "The Igbo had kings while the Yoruba had village assemblies",
+      "The Igbo lineage head (Okpara) derives authority from being oldest male and Ofo-holder, while Yoruba town leadership follows hereditary lineage seniority"
+    ],
+    answer: 3,
+    explanation: "Okpara authority in Igbo villages is based on being oldest male and controller of the Ofo, while Yoruba town leadership follows hereditary lineage order of settlement."
   },
   {
-    question: "Bini society was classified into two distinct classes:",
-    options: ["Etsu and Nupe", "Oyomesi and Ogboni", "Sarki and Talakawa", "Nobility (Adesotu) and Commoners (Ighiotu)"],
-    answer: "Nobility (Adesotu) and Commoners (Ighiotu)",
-    explanation: "Bini society was divided into two main classes: the nobility (Adesotu) and the commoners (Ighiotu)."
+    question: "Why is witchcraft belief described as of comparatively lesser importance in most of Igboland, contrasting with the Niger Delta?",
+    options: [
+      "The text draws this distinction explicitly when discussing Rain Forest religious beliefs",
+      "Witchcraft was banned by colonial law in Igboland only",
+      "Igbo religion had no lesser deities at all",
+      "The Igbo were entirely Christian by that period"
+    ],
+    answer: 0,
+    explanation: "The text directly states that unlike in the Niger Delta region, witchcraft belief in most of Igboland is not of paramount importance."
   },
   {
-    question: "The kingdom of Itsekiri is traditionally said to have been founded by:",
-    options: ["Oranmiyan", "Eweka I", "Tsoede", "Iginuwa"],
-    answer: "Iginuwa",
-    explanation: "The kingdom of Itsekiri is traditionally said to have been founded by Iginuwa."
+    question: "The Guinea Savanna region's socio-political organization is best distinguished from the Rain Forest region by:",
+    options: [
+      "Domination entirely by emirate systems from ancient times",
+      "A predominance of petty chiefdoms/village-based democracy, with only a few groups (Igala, Nupe, Jukun) having elaborate monarchies",
+      "Universal adoption of large monarchies before the 19th century",
+      "Complete absence of any centralized government structures"
+    ],
+    answer: 1,
+    explanation: "Most Guinea Savanna groups lacked centralized government, relying on petty chiefdoms; only Igala, Nupe, and Jukun developed monarchical structures predating 19th-century emirates."
   },
   {
-    question: "Among the Itsekiri, political and spiritual powers were combined in the office of the:",
-    options: ["Etsu", "Sarki", "Olu", "Ovie"],
-    answer: "Olu",
-    explanation: "Among the Itsekiri, the office of the Olu combined both political authority and spiritual leadership."
+    question: "Before independence, agriculture's dominant role in the Nigerian economy is best evidenced by the fact that:",
+    options: [
+      "It was concentrated only in the Sudan Savanna",
+      "It contributed less than 20% of GDP",
+      "It accounted for over 50% of GDP and employed about three-quarters of the population",
+      "It was entirely displaced by mining"
+    ],
+    answer: 2,
+    explanation: "The text states agriculture accounted for over fifty percent of GDP pre-independence, with roughly three-quarters of the population engaged in agriculture or related activities."
   },
   {
-    question: "Unlike the Itsekiri and Benin, the Urhobo people never established:",
-    options: ["Village councils", "A single unified kingdom", "Age-grade systems", "A trading economy"],
-    answer: "A single unified kingdom",
-    explanation: "Unlike the Benin and Itsekiri kingdoms, the Urhobo people never established a single unified kingdom, remaining organized around autonomous communities."
+    question: "According to the text, Nigeria cannot currently be considered economically self-reliant mainly because:",
+    options: [
+      "Its population is too small to sustain production",
+      "It has no natural resources",
+      "It lacks any international trade policy",
+      "It shows negative economic indicators like low capacity utilization, debt, and over-dependence on oil/imports"
+    ],
+    answer: 3,
+    explanation: "The text lists low capacity utilization, agricultural neglect, debt, inflation, unemployment, and oil/import dependence as evidence against self-reliance."
   },
   {
-    question: "The Igbo are best known for their style of pre-colonial governance described as:",
-    options: ["Federal structure", "Theocratic empire", "Centralized monarchy", "Acephalous/segmentary"],
-    answer: "Acephalous/segmentary",
-    explanation: "Pre-colonial Igbo governance is best described as acephalous or segmentary, lacking centralized kingship and instead relying on village-based authority."
+    question: "The shift from agricultural dominance to oil dependence in the Nigerian economy had the consequence of:",
+    options: [
+      "Stagnating almost all non-oil sectors while oil revenues were mismanaged",
+      "Strengthening non-oil sectors through reinvestment",
+      "Making Nigeria fully self-sufficient in food by 1980",
+      "Eliminating unemployment nationally"
+    ],
+    answer: 0,
+    explanation: "The relegation of agriculture in favor of the oil boom caused non-oil sectors to become stagnant, compounded by mismanagement of oil revenues."
   },
   {
-    question: "In traditional Igbo society, the staff of authority symbolizing justice was called the:",
-    options: ["Alusi", "Ikenga", "Chukwu", "Ofo"],
-    answer: "Ofo",
-    explanation: "The Ofo was a staff of authority among the Igbo, symbolizing truth, justice, and legitimate power."
+    question: "The Structural Adjustment Programme (SAP) introduced in 1986 was primarily aimed at:",
+    options: [
+      "Nationalizing all private industries",
+      "Restructuring the economy to reduce dependence on oil and imports, and achieving fiscal balance",
+      "Abolishing the private sector entirely",
+      "Increasing government expenditure to stimulate demand"
+    ],
+    answer: 1,
+    explanation: "SAP's goals included restructuring/diversifying the productive base to reduce oil/import dependence, achieving fiscal balance, and intensifying private sector growth."
   },
   {
-    question: "The general assembly where male adults performed legislative functions in Igbo society was called:",
-    options: ["Igbo-mela", "Okpara council", "Amala Oha", "Nri assembly"],
-    answer: "Amala Oha",
-    explanation: "The Amala Oha was the general assembly where male adults in Igbo society exercised legislative functions."
+    question: "Which pairing of Nigerian administration and stated economic vision is correctly matched?",
+    options: [
+      "Tinubu — Change Agenda with three points",
+      "Obasanjo (1999-2007) — top 20 global economies by 2020",
+      "Yar'Adua/Jonathan (2007-2015) — top 20 global economies by 2020",
+      "Buhari (2015-2023) — Renewed Hope Agenda"
+    ],
+    answer: 2,
+    explanation: "The Yar'Adua/Jonathan vision explicitly aimed at propelling Nigeria into the top 20 global economies by 2020. Buhari's was the Change Agenda; Tinubu's is the Renewed Hope Agenda."
   },
   {
-    question: "Among the Ijaw, the main political authority in the village was the assembly presided over by the:",
-    options: ["Attah", "Ovie", "Olu", "Amanyanabo"],
-    answer: "Amanyanabo",
-    explanation: "Among the Ijaw, the village assembly was presided over by the Amanyanabo, the recognized political authority."
+    question: "A central irony highlighted regarding Nigeria's economic paradox is that:",
+    options: [
+      "Nigeria has no natural resources yet remains wealthy",
+      "Nigeria has never engaged in agriculture",
+      "Nigeria's population is too small for its resource base",
+      "Nigeria is regarded as poor despite abundant human and natural resources"
+    ],
+    answer: 3,
+    explanation: "The text explicitly frames Nigeria as a country of paradox, being poor despite abundant human and natural resources."
   },
   {
-    question: "The 'House System' is most closely associated with which ethnic group?",
-    options: ["Efik", "Annang", "Ibibio", "Ijaw"],
-    answer: "Ijaw",
-    explanation: "The 'House System,' a trading and political organizational structure, is most closely associated with the Ijaw people."
+    question: "In traditional African society, the primary reason lesser gods were consulted rather than the Almighty God directly was because:",
+    options: [
+      "The Almighty God was considered too important and remote to concern himself with human affairs",
+      "The Almighty God was believed to be evil",
+      "Only priests were permitted to worship the Almighty God",
+      "Lesser gods were considered superior in power"
+    ],
+    answer: 0,
+    explanation: "The text states the Almighty God was held to be too important and remote for direct consultation, so people approached him through mediating deities."
   },
   {
-    question: "Among the Ibibio, the term 'Ibio-ibio' refers to their:",
-    options: ["Religious devotion", "Brief way of doing things", "Tall height", "Trading prowess"],
-    answer: "Brief way of doing things",
-    explanation: "The term 'Ibio-ibio,' from which the Ibibio people's name derives, refers to their brief or concise way of doing things."
+    question: "How did traditional Urhobo marriage customs illustrate religion's role in social stability?",
+    options: [
+      "Divorce was common due to lack of religious oversight",
+      "Divorce was rare because marriage was seen as sealed with ancestors via offered drinks/food",
+      "Marriages were annulled if childless within a year",
+      "Marriage required no ceremonial rites"
+    ],
+    answer: 1,
+    explanation: "In traditional Urhobo society divorce was uncommon because the ancestors had received the drinks and food during marriage, making the union expected to last forever."
   },
   {
-    question: "Missionary Mary Slessor helped abolish which practice among the Ibibio?",
-    options: ["Polygamy", "Slave trade", "Child labor", "The killing of twins"],
-    answer: "The killing of twins",
-    explanation: "Missionary Mary Slessor is best known for helping abolish the practice of killing twins among the Ibibio people."
+    question: "The economic significance of religion in pre-colonial Nigeria is best illustrated by:",
+    options: [
+      "Land was never considered sacred, allowing free trade",
+      "Religion discouraged all craft production",
+      "Carvers, blacksmiths, and weavers prospered by producing ritual objects, masquerades, and religious insignia",
+      "Only foreign missionaries engaged in economic production"
+    ],
+    answer: 2,
+    explanation: "Festivals and ritual needs drove demand for carvers, potters, blacksmiths, and weavers — directly linking religious practice to craft economies."
   },
   {
-    question: "The four major Efik settlements collectively came to be known as:",
-    options: ["Bonny", "Nembe", "Calabar", "Opobo"],
-    answer: "Calabar",
-    explanation: "The four major Efik settlements collectively became known as Calabar."
+    question: "Why is the political authority of pre-colonial priest-kings like the Oba of Benin or Alafin of Oyo significant?",
+    options: [
+      "They were elected purely by secular councils",
+      "They rejected any claim to divine status",
+      "They separated religious and political power strictly",
+      "They combined priestly functions with political power, presenting themselves as representatives of God/gods"
+    ],
+    answer: 3,
+    explanation: "These rulers combined priestly functions with political power and were regarded as representatives of God on earth, reinforcing political authority through claimed divine status."
   },
   {
-    question: "Among the Annang, the family compound formed by tracing common ancestry is called:",
-    options: ["Awio", "Idung", "Ekpuk", "Ufok"],
-    answer: "Ufok",
-    explanation: "Among the Annang, the Ufok refers to the family compound formed by people who trace descent from a common ancestor."
+    question: "The Maitatsine riots of 1980 are significant in Nigeria's religious history primarily because they:",
+    options: [
+      "Represented an Islamic sect's attempt to force its ideas on an unwilling society, harming national integration",
+      "United Christians and Muslims against a common external enemy",
+      "Resulted in Abuja being renamed",
+      "Led directly to Nigeria's independence"
+    ],
+    answer: 0,
+    explanation: "The Maitatsine riots represented an Islamic sect's attempt to impose its views by force, creating fears that negatively affected national integration and development."
   },
   {
-    question: "The January 1914 Amalgamation, which unified Northern and Southern Nigeria, was carried out by:",
-    options: ["John Macpherson", "Oliver Lyttleton", "Flora Shaw", "Sir Frederick Lugard"],
-    answer: "Sir Frederick Lugard",
-    explanation: "The January 1914 Amalgamation, which merged Northern and Southern Nigeria into one country, was carried out by Sir Frederick Lugard."
+    question: "Criticism of Abuja as a genuine 'home for all' centers on the argument that:",
+    options: [
+      "It has no representation of any religion",
+      "Its entrance symbols and Presidential Villa facilities favor Islamic over national/secular symbols",
+      "It lacks any religious buildings at all",
+      "It was built entirely by foreign contractors"
+    ],
+    answer: 1,
+    explanation: "Criticism notes that Abuja's main entrances carry Islamic rather than national symbols, and the Presidential Villa was equipped only with a mosque — undermining Nigeria's claimed secular status."
   },
   {
-    question: "The primary motivation behind both the 1906 and 1914 amalgamations was mainly:",
-    options: ["Educational reform", "Military strategy", "Economic/administrative efficiency", "Religious unity"],
-    answer: "Economic/administrative efficiency",
-    explanation: "Both the 1906 and 1914 amalgamations were driven mainly by the desire for economic and administrative efficiency in governing the colonial territories."
+    question: "Babangida's 1986 attempt regarding the Organization of Islamic Conference (OIC) is cited as an example of:",
+    options: [
+      "Full disclosure to the Armed Forces Ruling Council",
+      "Successful interfaith cooperation",
+      "Using religion as a political tool without regard for national consequences",
+      "A constitutional requirement being properly followed"
+    ],
+    answer: 2,
+    explanation: "Babangida attempted to smuggle Nigeria into the OIC without his cabinet or Ruling Council's knowledge, illustrating rulers' use of religion as a political weapon."
   },
   {
-    question: "The name 'Nigeria,' derived from the Niger River, was suggested by:",
-    options: ["Nnamdi Azikiwe", "Herbert Macaulay", "Lord Lugard", "Flora Shaw"],
-    answer: "Flora Shaw",
-    explanation: "The name 'Nigeria,' derived from the Niger River, was suggested by journalist Flora Shaw, who later married Lord Lugard."
+    question: "According to the Athenian understanding of citizenship (Plato and Aristotle), full citizenship rights were reserved for:",
+    options: [
+      "All free-born men regardless of class",
+      "Anyone who paid taxes",
+      "All residents of the city-state",
+      "Only those within the ruling/aristocratic class, like the philosopher-king and guardians"
+    ],
+    answer: 3,
+    explanation: "For Plato and Aristotle, only those born into or classified within the ruling class could exercise rights like voting, property, and leadership."
   },
   {
-    question: "Which constitution is recognized as the first genuine federal constitution in Nigeria since 1914?",
-    options: ["Independence Constitution of 1960", "Richards Constitution of 1946", "Lyttleton Constitution of 1954", "Macpherson Constitution of 1951"],
-    answer: "Lyttleton Constitution of 1954",
-    explanation: "The Lyttleton Constitution of 1954 is recognized as Nigeria's first genuine federal constitution since the 1914 amalgamation."
+    question: "The contemporary, more universal understanding of citizenship is traced in the text primarily to:",
+    options: [
+      "The French Revolution's 1789 Declaration of the Rights of Man",
+      "Roman civil law",
+      "The Nigerian Independence Constitution",
+      "Ancient Athenian democracy"
+    ],
+    answer: 0,
+    explanation: "The text traces the modern understanding of citizenship to the 1789 French Declaration of the Rights of Man, alongside the American Declaration of Independence."
   },
   {
-    question: "The 1979 Constitution replaced the parliamentary system with a:",
-    options: ["Confederal system", "Monarchical system", "Military system", "Presidential system"],
-    answer: "Presidential system",
-    explanation: "The 1979 Constitution replaced the parliamentary system of government with a presidential system, modeled partly on the United States."
+    question: "Under Nigerian law, 'Jus Sanguinis' citizenship differs from 'Jus Soli' in that:",
+    options: [
+      "Jus Soli is the only method used in Nigeria",
+      "Jus Sanguinis is based on parental/grandparental citizenship regardless of birthplace, while Jus Soli is based purely on birthplace",
+      "Both terms refer to naturalization only",
+      "Jus Sanguinis requires birth within Nigerian territory regardless of parentage"
+    ],
+    answer: 1,
+    explanation: "Jus Sanguinis (right of blood) grants citizenship via parent/grandparent regardless of birth location, while Jus Soli (right of soil) is based purely on birthplace."
   },
   {
-    question: "The Universal Basic Education Programme (UBE) was introduced in Nigeria in:",
-    options: ["1999", "1976", "1981", "1969"],
-    answer: "1976",
-    explanation: "This answer reflects the Universal Primary Education (UPE) scheme launched in 1976, an early precursor to today's Universal Basic Education (UBE) programme."
+    question: "Which of the following is a requirement for Direct Naturalization as a Nigerian citizen?",
+    options: [
+      "Residency for at least five continuous years",
+      "No residency requirement if of good character",
+      "Continuous residency of fifteen years, or fifteen of a non-continuous twenty years, including twelve consecutive months before application",
+      "Automatic grant upon marriage to a Nigerian citizen"
+    ],
+    answer: 2,
+    explanation: "The text specifies these exact residency conditions for direct naturalization, distinct from derivative naturalization via marriage or parentage."
   },
   {
-    question: "The Structural Adjustment Programme (SAP), introduced in 1986, was mainly aimed at:",
-    options: ["Strengthening regional government powers", "Increasing oil dependency", "Expanding the civil service", "Restructuring and diversifying the economy away from oil dependence"],
-    answer: "Restructuring and diversifying the economy away from oil dependence",
-    explanation: "The Structural Adjustment Programme (SAP), introduced in 1986, aimed mainly at restructuring and diversifying Nigeria's economy away from its heavy dependence on oil."
+    question: "'Derivative Naturalization' as described in the text refers to:",
+    options: [
+      "Citizenship revoked due to criminal conviction",
+      "A group acquiring citizenship through treaty or annexation",
+      "Citizenship acquired purely by birth within Nigeria",
+      "A spouse or child acquiring citizenship as a result of a relative's direct naturalization"
+    ],
+    answer: 3,
+    explanation: "Derivative naturalization is defined as a spouse or child gaining citizenship because of a parent's or spouse's direct naturalization."
+  },
+  {
+    question: "According to Okoli and Okoli (1990), the two broad categories of citizens' rights and privileges are:",
+    options: [
+      "Political rights and civil rights",
+      "Economic rights and cultural rights",
+      "Human rights and animal rights",
+      "Religious rights and property rights"
+    ],
+    answer: 0,
+    explanation: "Okoli and Okoli group citizen rights into political rights (voting/being voted for) and civil rights (life, liberty, fair hearing, freedom of thought)."
+  },
+  {
+    question: "Which of these is listed in the text as an obligation, not a right, of Nigerian citizens?",
+    options: [
+      "Peaceful assembly and association",
+      "Paying tax promptly and defending the state against enemies",
+      "Freedom of movement",
+      "Freedom from discrimination"
+    ],
+    answer: 1,
+    explanation: "The text lists paying taxes promptly, obeying laws, and defending the state as citizen obligations, while freedom of movement and assembly fall under civil rights."
+  },
+  {
+    question: "For Plato, 'social justice' is best understood in the text as:",
+    options: [
+      "A purely legal/administrative concept unrelated to morality",
+      "Something entirely separate from human rights",
+      "A virtue enabling amicable relations between individuals in society, tied to human virtue",
+      "Applicable only to rulers, not ordinary citizens"
+    ],
+    answer: 2,
+    explanation: "Plato saw justice as part of human virtue that made people good and enabled amicable relationships in society, synonymous with human rights."
+  },
+  {
+    question: "Which condition is NOT listed in the text as necessary for achieving individual and social justice in the Nigerian context?",
+    options: [
+      "Full employment for all citizens",
+      "Free education at all levels",
+      "A comprehensive social insurance scheme",
+      "Abolition of all political parties"
+    ],
+    answer: 3,
+    explanation: "The text lists full employment, minimum wage, free education, agricultural modernization, industrialization, and social insurance as conditions — abolishing political parties is not among them."
+  },
+  {
+    question: "The historical roots of Nigeria's social justice problems are traced in the text back to:",
+    options: [
+      "The first amalgamation of 1914",
+      "The introduction of Sharia law",
+      "The 1999 Constitution",
+      "The Nigerian Civil War alone"
+    ],
+    answer: 0,
+    explanation: "The text explicitly states the problem of social justice in Nigeria can be traced back to the first amalgamation of 1914, after which oppression and repression persisted."
+  },
+  {
+    question: "Which of the following is listed in the text as a factor contributing to ongoing social injustice in Nigeria?",
+    options: [
+      "Balanced federal resource allocation",
+      "Tenacity of power among political leaders and discrimination in resource allocation among states",
+      "Full democratic accountability at all levels",
+      "Complete absence of corruption"
+    ],
+    answer: 1,
+    explanation: "The text lists tenacity of power and discrimination in resource allocation among the factors sustaining social injustice, alongside corruption and unjust laws."
+  },
+  {
+    question: "The Latin phrase 'Vox populi Vox dei,' used in the text's conclusion on social justice, is best interpreted to mean:",
+    options: [
+      "The government's voice is always correct",
+      "Public opinion is irrelevant to governance",
+      "The people's voice is equivalent to divine authority and should be heeded",
+      "Only religious leaders can determine justice"
+    ],
+    answer: 2,
+    explanation: "The text uses this phrase to argue that reversing social injustice requires government to listen to all shades of public opinion — the people's voice is God's voice as well."
+  },
+  {
+    question: "Jane F. Doyle's critique implicitly suggests that Nigeria's colonial-era schooling failed because it:",
+    options: [
+      "Was too focused on individual reasoning",
+      "Taught too many practical skills",
+      "Ignored moral training entirely",
+      "Functioned as indoctrination to accept colonial-designed society rather than fostering personal autonomy"
+    ],
+    answer: 3,
+    explanation: "Colonial education schooled Nigerians to accept the society designed for them by the colonialists, contradicting Doyle's view that true education should build personal autonomy."
+  },
+  {
+    question: "The 1969 National Conference on Education is notable in the text because it:",
+    options: [
+      "Involved a broad cross-section of society and shaped the 1977 national policy on education",
+      "Was limited only to university professionals",
+      "Was organized by the British colonial office",
+      "Immediately introduced the 6-3-3-4 system"
+    ],
+    answer: 0,
+    explanation: "The conference drew representatives from diverse groups beyond experts alone, and its findings became the cornerstone of the 1977 national education policy."
+  },
+  {
+    question: "According to the 'Yes' answer regarding Nigerian education system failure, the 'Nigerian factor' refers to:",
+    options: [
+      "Excellent government funding of schools",
+      "Founders of educational facilities being motivated by monetary gain rather than genuine educational outcomes",
+      "Overreliance on foreign teachers",
+      "Strict adherence to indigenous curricula only"
+    ],
+    answer: 1,
+    explanation: "The Nigerian factor refers to many school founders being driven by profit rather than genuine educational purpose, resulting in certificate-holders lacking real knowledge."
+  },
+  {
+    question: "G.N.U. Uzoigwe's (1989) explanation for Nigeria's educational struggles centers on:",
+    options: [
+      "Overemphasis on African traditional values",
+      "Lack of interest from students",
+      "Persistent conflict between foreign intellectual traditions and African tradition, causing moral/intellectual confusion",
+      "Insufficient funding alone"
+    ],
+    answer: 2,
+    explanation: "Uzoigwe attributes slow educational growth to the clash between imported intellectual traditions and indigenous Nigerian traditions, leaving the educated Nigerian in moral and intellectual confusion."
+  },
+  {
+    question: "Which statement best reflects the overall relationship between education and national development as framed across the text?",
+    options: [
+      "Only technical education contributes to development, unlike liberal education",
+      "Education has no proven link to societal development",
+      "Nigerian education has been an unqualified success since 1977",
+      "Education historically functioned as a foundation shaping values and development, but in Nigeria this potential was undermined by indoctrination, corruption, and cultural conflict"
+    ],
+    answer: 3,
+    explanation: "While education is meant to drive development, colonial legacies, indoctrination, cultural conflict, and profit-driven Nigerian factors undermined this potential."
   }
 ];
 const MTH132 = [
