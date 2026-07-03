@@ -275,664 +275,664 @@ window.onload = function () {
 };
 const GST112 = [
   {
-    question: "The Saifawa dynasty, one of the longest-ruling in pre-colonial West Africa, is traditionally credited to:",
+    question: "The Hausa people are predominantly found in which part of Nigeria?",
     options: [
-      "Saif b. Dhiyazan",
-      "Bayajida",
-      "The So people",
-      "Tsoede"
+      "North-West and North-East",
+      "South-East",
+      "South-West",
+      "South-South"
     ],
     answer: 0,
-    explanation: "The text attributes the founding of the Saifawa dynasty specifically to the Arab hero Saif b. Dhiyazan, distinct from the So people and unrelated to Bayajida or Tsoede."
+    explanation: "The Hausa people are mainly concentrated in the North-West and North-East geopolitical zones of Nigeria."
   },
   {
-    question: "In the Kanem-Bornu political structure, the official who served as the Mai's legal adviser and chief judge was the:",
+    question: "The Fulani are originally known as a predominantly:",
     options: [
-      "Nokena",
-      "Maini Kanendi",
-      "Magira",
-      "Galadima"
+      "Fishing community",
+      "Pastoral/nomadic people",
+      "Farming community",
+      "Trading community"
     ],
     answer: 1,
-    explanation: "The Maini Kanendi was explicitly the chief judge and legal adviser to the Mai; the Nokena was an advisory council, the Magira was the Queen Mother, and Galadima was a title among the nobility."
+    explanation: "The Fulani are traditionally a pastoral/nomadic people known for cattle rearing across West Africa."
   },
   {
-    question: "According to the Bayajida legend, the 'Hausa Banza' states are distinguished from the 'Hausa Bokwoi' because they were:",
+    question: "The Yoruba people are mainly concentrated in which geopolitical zone?",
     options: [
-      "Conquered by the Fulani jihadists",
-      "Founded by Bawo's six biological sons",
-      "Established through concubines' children",
-      "Founded before Daura existed"
+      "North-East",
+      "North-Central",
+      "South-West",
+      "South-East"
     ],
     answer: 2,
-    explanation: "The Hausa Bokwoi descended from Bawo's six sons plus Bayajida's son at Biran, while the Hausa Banza were founded by children through concubines."
+    explanation: "The Yoruba people are predominantly found in the South-West geopolitical zone of Nigeria."
   },
   {
-    question: "The term used to describe sedentary, usually Muslim Fulani who took up permanent residence, as opposed to their nomadic kin, is:",
+    question: "The Igbo people are predominantly found in which region of Nigeria?",
     options: [
-      "Fulbe",
-      "Cattle Fulani",
-      "Fulfulde",
-      "Town Fulani"
+      "North-East",
+      "North-West",
+      "South-South",
+      "South-East"
     ],
     answer: 3,
-    explanation: "The text distinguishes 'Town Fulani' (sedentary, Muslim) from 'Cattle Fulani' (nomadic, animist); Fulbe and Fulfulde refer to the people/language generally."
+    explanation: "The Igbo people are mainly concentrated in the South-East geopolitical zone of Nigeria."
   },
   {
-    question: "Which of the following best explains why the Islamization of Hausaland between the 14th-15th centuries is considered significant?",
+    question: "Which of the following is the traditional ruler title of the Yoruba?",
     options: [
-      "It introduced Sharia law and new judicial titles like Alkali and Qadi",
-      "It caused the collapse of the Hausa Bokwoi states",
-      "It merged Hausa states with Bornu politically",
-      "It ended the reign of the Sarkin Kasar"
+      "Oba",
+      "Mai",
+      "Etsu",
+      "Attah"
     ],
     answer: 0,
-    explanation: "Islamization gave birth to new political institutions and influenced the judicial system through Sharia, introducing titles like Alkali and Qadi."
+    explanation: "The Oba is the traditional ruler among the Yoruba people of South-West Nigeria."
   },
   {
-    question: "Tsoede (Edegi), founder of the Nupe kingdom, is significant historically because:",
+    question: "The traditional ruler of the Benin Kingdom holds the title:",
     options: [
-      "He founded the Etsu Nupe title after defeating the Igala",
-      "He unified previously scattered Nupe chiefdoms under central rule",
-      "He established Islam as state religion in Nupeland",
-      "He was purely of Igala royal blood on both sides"
+      "Sultan",
+      "Oba",
+      "Alaafin",
+      "Obi"
     ],
     answer: 1,
-    explanation: "Tsoede, son of an Igala king and Nupe woman, arrived in Nupeland and defeated small chiefdoms, establishing central administration."
+    explanation: "The Oba is the title of the traditional ruler of the Benin Kingdom in Edo State."
   },
   {
-    question: "The recurring shift of the Nupe kingdom's capital is best explained in the text as a result of:",
+    question: "The Tiv people are predominantly found in which state?",
     options: [
-      "Deliberate strategic planning by successive Etsu Nupe",
-      "Pressure from the Bini kingdom",
-      "Response to historical developments, including succession crises",
-      "Instructions from Idah"
+      "Rivers",
+      "Kano",
+      "Benue",
+      "Lagos"
     ],
     answer: 2,
-    explanation: "The text ties capital shifts to unfolding historical events, notably succession disputes such as Etsu Jibrilu's deposition and the 1795 dynastic split."
+    explanation: "The Tiv people are mainly found in Benue State in the North-Central zone of Nigeria."
   },
   {
-    question: "What ultimately resolved the Nupe succession crisis after 1800, resulting in new rulership?",
+    question: "Which of the following groups is indigenous to the Niger Delta region?",
     options: [
-      "A peace treaty mediated by Bornu",
-      "Direct rule imposed by the Attah of Igala",
-      "A negotiated settlement between Gbara and Raba",
-      "Intervention of Fulani jihadists invited into the conflict"
+      "Yoruba",
+      "Hausa",
+      "Igbo",
+      "Ijaw"
     ],
     answer: 3,
-    explanation: "The text states that Fulani jihadists, invited into the internal struggle, emerged as the new rulers of the kingdom."
+    explanation: "The Ijaw people are one of the largest and most indigenous ethnic groups of the Niger Delta region."
   },
   {
-    question: "Among the various origin traditions of the Igala people, the Achadu version differs from the Abutu Eje version chiefly in that Achadu:",
+    question: "The Kanuri people are mainly associated with which ancient empire?",
     options: [
-      "Came from Igbo country and became a ritual husband to the Attah",
-      "Was reared by a leopard",
-      "Was a foreigner from Ado (Benin)",
-      "Was of Yoruba extraction"
+      "Kanem-Bornu Empire",
+      "Oyo Empire",
+      "Benin Kingdom",
+      "Sokoto Caliphate"
     ],
     answer: 0,
-    explanation: "Achadu is said to have come from Igbo country, married the Attah, and became patron of the kingmakers — distinct from Abutu Eje's leopard-rearing origin story."
+    explanation: "The Kanuri people were the dominant group in the Kanem-Bornu Empire, one of the longest-lasting empires in African history."
   },
   {
-    question: "The Jukun (Kwararafa) political system is best described as:",
+    question: "The Sokoto Caliphate was established following the Fulani jihad led by:",
     options: [
-      "Modeled entirely on the Benin monarchy",
-      "Theocratic, with AKU UKA's power regulated by taboos and public opinion",
-      "A direct democracy without any central figure",
-      "Purely despotic with no checks on royal power"
+      "Tsoede",
+      "Uthman dan Fodio",
+      "Oduduwa",
+      "Bayajida"
     ],
     answer: 1,
-    explanation: "The Jukun operated a theocratic system where AKU UKA, though powerful, was judged by performance and regulated by taboos and respect for public opinion."
+    explanation: "Uthman dan Fodio led the Fulani jihad in the early 19th century, establishing the Sokoto Caliphate."
   },
   {
-    question: "P. Bohannan's description of the Tiv socio-political system as 'so simple that it was difficult to understand' is best interpreted as referring to:",
+    question: "The term 'Eze' is a traditional leadership title among the:",
     options: [
-      "A centralized kingdom modeled after Jukun",
-      "A weak, disorganized society without structure",
-      "A highly segmented, decentralized system organized by genealogical hierarchy",
-      "A system entirely controlled by external Cameroonian groups"
+      "Ijaw",
+      "Hausa",
+      "Igbo",
+      "Yoruba"
     ],
     answer: 2,
-    explanation: "The paradox highlights that Tiv society, while lacking centralized authority, had a coherent segmentary structure based on kinship and genealogy."
+    explanation: "Eze is a traditional title for a king or ruler among the Igbo people of South-East Nigeria."
   },
   {
-    question: "In Oyo Empire's administration, the body that could remove an Alaafin deemed dictatorial was the:",
+    question: "Which of the following best describes Nigeria's cultural diversity?",
     options: [
-      "Ogboni Cult",
-      "Ilari network",
-      "Are-Ona-Kankanfo's council",
-      "Oyomesi, headed by Bashorun"
+      "Nigeria has a homogeneous culture",
+      "All Nigerians speak the same language",
+      "Nigeria has only two major ethnic groups",
+      "Nigeria is one of the most ethnically diverse nations in Africa"
     ],
     answer: 3,
-    explanation: "The Oyomesi, a council of seven headed by Bashorun, had power to select and remove the Alaafin; the Ogboni acted as a mediating counter-power."
+    explanation: "Nigeria is home to over 250 ethnic groups and languages, making it one of the most culturally diverse nations in Africa."
   },
   {
-    question: "The Ogboni cult's primary function in Oyo governance was to:",
+    question: "Nigeria was formally amalgamated into one country in:",
     options: [
-      "Serve as a mediatory body between the Oyomesi and the Alaafin",
-      "Select the Are-Ona-Kankanfo",
-      "Collect tribute from provincial governors",
-      "Command the army in external wars"
+      "1914",
+      "1900",
+      "1960",
+      "1906"
     ],
     answer: 0,
-    explanation: "The text explicitly states the Ogboni played a mediatory role in conflicts between Oyomesi and Alaafin, acting as a counter-power."
+    explanation: "The amalgamation of Northern and Southern Nigeria into a single entity was carried out by Lord Lugard in 1914."
   },
   {
-    question: "Which factor most directly explains why the Benin monarchy's foundation story (Oranmiyan-Eweka) is interpreted by some scholars as a 'culture capture'?",
+    question: "The amalgamation of Nigeria in 1914 was carried out by:",
     options: [
-      "It shows the Bini invented their own dynasty independently",
-      "It reflects an attempt to associate Bini monarchy with Ife's prestige and antiquity",
-      "It confirms Benin was founded before Ife",
-      "It proves Oranmiyan never existed"
+      "Hugh Clifford",
+      "Frederick Lugard",
+      "Walter Egerton",
+      "James Robertson"
     ],
     answer: 1,
-    explanation: "One school of thought sees the story as an endeavour to link Bini monarchy with the prestigious, ancient Ife dynasty — a symbolic association rather than literal genealogy."
+    explanation: "Sir Frederick Lugard was the Governor-General who carried out the 1914 amalgamation of Nigeria."
   },
   {
-    question: "Why did the practice of Bini kings personally leading armies into battle end after Ehengbuda's reign?",
+    question: "Nigeria gained independence from Britain on:",
     options: [
-      "The Portuguese demanded the king remain in the palace",
-      "The Oyomesi banned royal military participation",
-      "Ehengbuda died on a return journey from a campaign",
-      "A new constitution was introduced by Ewuare"
+      "January 1, 1960",
+      "January 15, 1966",
+      "October 1, 1960",
+      "October 1, 1963"
     ],
     answer: 2,
-    explanation: "The text states Ehengbuda lost his life returning from a campaign, after which the practice was discontinued and the king became more ceremonial."
+    explanation: "Nigeria gained independence from British colonial rule on October 1, 1960."
   },
   {
-    question: "The Itsekiri kingdom's founding is distinct among Niger Delta peoples primarily because:",
+    question: "Nigeria became a republic in:",
     options: [
-      "It has multiple competing origin traditions like the Yoruba",
-      "It never developed any political titles",
-      "It was founded independently of any Benin connection",
-      "Iginuwa was sent away from Benin due to unpopularity, then settled with Ijaw assistance"
+      "1960",
+      "1962",
+      "1966",
+      "1963"
     ],
     answer: 3,
-    explanation: "Unlike other traditions with many origin versions, the Itsekiri have one clear account: Iginuwa, made unpopular by disastrous advice, was sent by his father to found a kingdom elsewhere, aided by Ijaws."
+    explanation: "Nigeria became a republic on October 1, 1963, replacing the Queen with a Nigerian president as head of state."
   },
   {
-    question: "The Igbo Amala Oha general assembly is best characterized as:",
+    question: "The name 'Nigeria' was coined by:",
     options: [
-      "A form of direct democracy where all adult males participated in legislation",
-      "A hereditary council of chiefs",
-      "A religious body controlling ancestor worship only",
-      "An exclusively economic trade council"
+      "Flora Shaw",
+      "Herbert Macaulay",
+      "Walter Egerton",
+      "Lord Lugard"
     ],
     answer: 0,
-    explanation: "The text describes Amala Oha as a general assembly where all male adults participated in legislative functions — a direct democracy, not a hereditary or religious body."
+    explanation: "Flora Shaw, a journalist who later married Lord Lugard, suggested the name 'Nigeria' derived from the River Niger."
   },
   {
-    question: "Which statement correctly distinguishes the Ijaw Amanyanabo's role before versus after the rise of Atlantic trade?",
+    question: "The first military coup in Nigeria took place in:",
     options: [
-      "It became hereditary only after trade began",
-      "It shifted from a largely ritual role to a genuine political office",
-      "It was abolished once trade began",
-      "It remained purely ritual throughout"
+      "1970",
+      "1966",
+      "1963",
+      "1960"
     ],
     answer: 1,
-    explanation: "The Amanyanabo's functions were essentially ritual before Atlantic trade, but communities that gained control of European commerce saw the office metamorphose into a political office."
+    explanation: "Nigeria's first military coup occurred on January 15, 1966, ending the First Republic."
   },
   {
-    question: "Among Ibibio society, the group that historically controlled the majority of community wealth through appropriation of palm tree acreage was:",
+    question: "The Nigerian Civil War lasted from:",
     options: [
-      "The Ekpe society generally",
-      "The Obong Isong",
-      "The Amama, of highest rank in Ekpo society",
-      "The Afe Isong"
+      "1964–1967",
+      "1970–1975",
+      "1967–1970",
+      "1966–1969"
     ],
     answer: 2,
-    explanation: "The text identifies the Amama (highest-ranking Ekpo society members) as controlling most community wealth via palm tree appropriation."
+    explanation: "The Nigerian Civil War, also known as the Biafran War, lasted from 1967 to 1970."
   },
   {
-    question: "The 1906 amalgamation, unlike the 1914 amalgamation, specifically combined:",
+    question: "Nigeria's First Republic operated under which system of government?",
     options: [
-      "All three regions into one government",
-      "Only the Northern Protectorate territories",
-      "Northern and Southern Protectorates",
-      "Lagos Colony and the Protectorate of Southern Nigeria"
+      "Monarchical",
+      "Presidential",
+      "Military",
+      "Parliamentary"
     ],
     answer: 3,
-    explanation: "The May 1906 amalgamation merged Lagos colony with the Protectorate of Southern Nigeria; the 1914 amalgamation later merged this combined south with the north."
+    explanation: "The First Republic (1963–1966) operated under a parliamentary system of government."
   },
   {
-    question: "According to Tamuno (1980), the primary motive behind the 1906 amalgamation was:",
+    question: "The 1979 constitution introduced which system of government in Nigeria?",
     options: [
-      "Economic — using Southern Nigeria's finances to cover Lagos's railway-related costs",
-      "Religious harmonization between north and south",
-      "Political unification for administrative simplicity alone",
-      "Military strategy against European rivals"
+      "Presidential",
+      "Parliamentary",
+      "Military",
+      "Monarchical"
     ],
     answer: 0,
-    explanation: "Tamuno's assessment states the aim was economic: using the better financial position of Southern Nigeria to cover costs in financially weak Lagos, including its railway extension needs."
+    explanation: "The 1979 constitution replaced the parliamentary system with a presidential system of government."
   },
   {
-    question: "Which constitutional feature was unique to the Lyttleton Constitution of 1954 compared to earlier ones?",
+    question: "Herbert Macaulay is generally referred to as:",
     options: [
-      "It was the first to be named after a Nigerian",
-      "It was the first genuine federal constitution in Nigeria since 1914",
-      "It abolished regional legislatures entirely",
-      "It created the office of Prime Minister for the first time"
+      "First President of Nigeria",
+      "Father of Nigerian nationalism",
+      "First Prime Minister of Nigeria",
+      "Father of Nigerian independence"
     ],
     answer: 1,
-    explanation: "The text explicitly states the Lyttleton Constitution was regarded as the first genuine federal constitution in Nigeria since 1914, distinguishing exclusive, concurrent, and residual lists."
+    explanation: "Herbert Macaulay is widely regarded as the father of Nigerian nationalism for his role in early political activism."
   },
   {
-    question: "A key criticism of the 1963 Republican Constitution's judicial arrangement was that:",
+    question: "The Sudan Savanna zone in Nigeria is mainly associated with which religion?",
     options: [
-      "The Privy Council retained final appellate authority",
-      "Judges were elected directly by citizens",
-      "Abolishing the Judicial Service Commission compromised judicial independence",
-      "The Supreme Court lost its power of judicial review"
+      "Christianity",
+      "Traditional religion",
+      "Islam",
+      "Buddhism"
     ],
     answer: 2,
-    explanation: "Vesting judicial appointment power in the Prime Minister after abolishing the Judicial Service Commission risked compromising judicial independence."
+    explanation: "The Sudan Savanna zone, covering much of northern Nigeria, is predominantly associated with Islam."
   },
   {
-    question: "The 1979 Presidential Constitution differed fundamentally from the 1963 Republican Constitution mainly in that it:",
+    question: "Which culture area is associated with the Nok civilization, one of Africa's earliest known cultures?",
     options: [
-      "Abolished the bicameral legislature",
-      "Removed the power of impeachment from the legislature",
-      "Retained a parliamentary system with a ceremonial president",
-      "Replaced parliamentary government with a presidential system where the president was both head of state and government"
+      "Rain Forest",
+      "Mangrove Swamp",
+      "Sudan Savanna",
+      "Guinea Savanna"
     ],
     answer: 3,
-    explanation: "The 1979 constitution jettisoned the parliamentary system and replaced it with a presidential system, with the president as both head of state and government."
+    explanation: "The Nok civilization, known for its terracotta sculptures, flourished in the Guinea Savanna region of present-day central Nigeria."
   },
   {
-    question: "Which of these correctly matches a Nigerian political party with the ethnic/regional base it primarily represented in the First Republic?",
+    question: "The Rain Forest culture area of Nigeria is predominantly occupied by which groups?",
     options: [
-      "AG — Yoruba-dominated Western Region",
-      "UMBC — Yoruba minorities",
-      "NPC — Igbo-dominated Eastern Region",
-      "NCNC — Hausa-Fulani Northern Region"
+      "Yoruba, Igbo, and Edo",
+      "Hausa and Fulani",
+      "Kanuri and Tiv",
+      "Ijaw and Ibibio only"
     ],
     answer: 0,
-    explanation: "The Action Group (AG), founded by Awolowo, was Yoruba-based in the West. The NPC represented the North, NCNC became Eastern-associated, and UMBC represented Northern minorities."
+    explanation: "The Rain Forest zone is home to major groups including the Yoruba, Igbo, and Edo peoples."
   },
   {
-    question: "The formation of the APC in 2013 is best explained as:",
+    question: "The Mangrove Swamp/Niger Delta culture area is mainly associated with:",
     options: [
-      "A coalition formed solely for the 2019 election",
-      "A merger of four opposition parties (ACN, ANPP, CPC, and an APGA faction)",
-      "A rebranding of the NPN from the Second Republic",
-      "A splinter faction from PDP alone"
+      "Cattle rearing",
+      "Fishing and trading",
+      "Farming of grains",
+      "Iron smelting"
     ],
     answer: 1,
-    explanation: "APC was formed in 2013 through the merger of four opposition parties — ACN, ANPP, CPC, and a faction of APGA — which then won the presidency in 2015."
+    explanation: "The Niger Delta/Mangrove Swamp zone is primarily known for fishing and trading activities."
   },
   {
-    question: "Which best explains why the Niger Delta region never developed empires or dominating ambitions over others?",
+    question: "Which of the following is a major feature of the Sudan Savanna culture area?",
     options: [
-      "They were forcibly prevented by the Benin Kingdom",
-      "They lacked contact with Atlantic trade",
-      "Their most common political trait was a democratic-republican spirit centered on the village",
-      "Lack of population growth"
+      "Absence of any political structures",
+      "Fishing as the primary occupation",
+      "Long-distance trade and Islamic scholarship",
+      "Dense rainforest vegetation"
     ],
     answer: 2,
-    explanation: "The text attributes this to the region's democratic-republican political culture, where the village was the basic unit and clans formed loose confederations rather than centralized empires."
+    explanation: "The Sudan Savanna is noted for its long history of trans-Saharan trade and centers of Islamic learning."
   },
   {
-    question: "In the Rain Forest Region, the key structural difference between Igbo 'village democracy' and Yoruba 'monarchical states' is that:",
+    question: "The Benin Kingdom is located in which culture area?",
     options: [
-      "Igbo leadership (Okpara) was hereditary while Yoruba leadership was elective",
-      "Only the Yoruba had judicial hierarchies",
-      "The Igbo had kings while the Yoruba had village assemblies",
-      "The Igbo lineage head (Okpara) derives authority from being oldest male and Ofo-holder, while Yoruba town leadership follows hereditary lineage seniority"
+      "Guinea Savanna",
+      "Sudan Savanna",
+      "Mangrove Swamp",
+      "Rain Forest"
     ],
     answer: 3,
-    explanation: "Okpara authority in Igbo villages is based on being oldest male and controller of the Ofo, while Yoruba town leadership follows hereditary lineage order of settlement."
+    explanation: "The Benin Kingdom lies within the Rain Forest culture area of southern Nigeria."
   },
   {
-    question: "Why is witchcraft belief described as of comparatively lesser importance in most of Igboland, contrasting with the Niger Delta?",
+    question: "The Guinea Savanna culture area is notable for:",
     options: [
-      "The text draws this distinction explicitly when discussing Rain Forest religious beliefs",
-      "Witchcraft was banned by colonial law in Igboland only",
-      "Igbo religion had no lesser deities at all",
-      "The Igbo were entirely Christian by that period"
+      "A mix of small chiefdoms and some kingdoms like Nupe and Igala",
+      "Completely centralized kingdoms only",
+      "Having no contact with other regions",
+      "Being entirely dominated by Islam"
     ],
     answer: 0,
-    explanation: "The text directly states that unlike in the Niger Delta region, witchcraft belief in most of Igboland is not of paramount importance."
+    explanation: "The Guinea Savanna has a mix of decentralized communities and organized kingdoms such as Nupe, Igala, and Jukun."
   },
   {
-    question: "The Guinea Savanna region's socio-political organization is best distinguished from the Rain Forest region by:",
+    question: "Which of the following crops is most associated with the Sudan Savanna zone?",
     options: [
-      "Domination entirely by emirate systems from ancient times",
-      "A predominance of petty chiefdoms/village-based democracy, with only a few groups (Igala, Nupe, Jukun) having elaborate monarchies",
-      "Universal adoption of large monarchies before the 19th century",
-      "Complete absence of any centralized government structures"
+      "Cocoa",
+      "Groundnut",
+      "Rubber",
+      "Palm oil"
     ],
     answer: 1,
-    explanation: "Most Guinea Savanna groups lacked centralized government, relying on petty chiefdoms; only Igala, Nupe, and Jukun developed monarchical structures predating 19th-century emirates."
+    explanation: "Groundnut (peanut) is a major cash crop of the Sudan Savanna, particularly in states like Kano and Katsina."
   },
   {
-    question: "Before independence, agriculture's dominant role in the Nigerian economy is best evidenced by the fact that:",
+    question: "The Ibibio and Efik peoples are mainly found in which culture area?",
     options: [
-      "It was concentrated only in the Sudan Savanna",
-      "It contributed less than 20% of GDP",
-      "It accounted for over 50% of GDP and employed about three-quarters of the population",
-      "It was entirely displaced by mining"
+      "Sudan Savanna",
+      "Guinea Savanna",
+      "Mangrove Swamp/Cross River area",
+      "Rain Forest"
     ],
     answer: 2,
-    explanation: "The text states agriculture accounted for over fifty percent of GDP pre-independence, with roughly three-quarters of the population engaged in agriculture or related activities."
+    explanation: "The Ibibio and Efik peoples are indigenous to the Cross River/Mangrove area of southern Nigeria."
   },
   {
-    question: "According to the text, Nigeria cannot currently be considered economically self-reliant mainly because:",
+    question: "Masquerades are a significant cultural feature mainly associated with which culture area?",
     options: [
-      "Its population is too small to sustain production",
-      "It has no natural resources",
-      "It lacks any international trade policy",
-      "It shows negative economic indicators like low capacity utilization, debt, and over-dependence on oil/imports"
+      "Sudan Savanna",
+      "Only Northern Nigeria",
+      "Only the Guinea Savanna",
+      "Rain Forest and Niger Delta"
     ],
     answer: 3,
-    explanation: "The text lists low capacity utilization, agricultural neglect, debt, inflation, unemployment, and oil/import dependence as evidence against self-reliance."
+    explanation: "Masquerades are a prominent cultural tradition in the Rain Forest and Niger Delta regions of Nigeria."
   },
   {
-    question: "The shift from agricultural dominance to oil dependence in the Nigerian economy had the consequence of:",
+    question: "The major export crop of Western Nigeria before the oil boom was:",
     options: [
-      "Stagnating almost all non-oil sectors while oil revenues were mismanaged",
-      "Strengthening non-oil sectors through reinvestment",
-      "Making Nigeria fully self-sufficient in food by 1980",
-      "Eliminating unemployment nationally"
+      "Cocoa",
+      "Cotton",
+      "Palm oil",
+      "Groundnut"
     ],
     answer: 0,
-    explanation: "The relegation of agriculture in favor of the oil boom caused non-oil sectors to become stagnant, compounded by mismanagement of oil revenues."
+    explanation: "Cocoa was the dominant export crop of Western Nigeria, making the region prosperous before the oil era."
   },
   {
-    question: "The Structural Adjustment Programme (SAP) introduced in 1986 was primarily aimed at:",
+    question: "Groundnut pyramids were historically associated with which part of Nigeria?",
     options: [
-      "Nationalizing all private industries",
-      "Restructuring the economy to reduce dependence on oil and imports, and achieving fiscal balance",
-      "Abolishing the private sector entirely",
-      "Increasing government expenditure to stimulate demand"
+      "Western Nigeria",
+      "Northern Nigeria",
+      "Southern Nigeria",
+      "Eastern Nigeria"
     ],
     answer: 1,
-    explanation: "SAP's goals included restructuring/diversifying the productive base to reduce oil/import dependence, achieving fiscal balance, and intensifying private sector growth."
+    explanation: "The famous groundnut pyramids were a symbol of Northern Nigeria's agricultural wealth, especially in Kano."
   },
   {
-    question: "Which pairing of Nigerian administration and stated economic vision is correctly matched?",
+    question: "Nigeria's economy is currently described as heavily dependent on:",
     options: [
-      "Tinubu — Change Agenda with three points",
-      "Obasanjo (1999-2007) — top 20 global economies by 2020",
-      "Yar'Adua/Jonathan (2007-2015) — top 20 global economies by 2020",
-      "Buhari (2015-2023) — Renewed Hope Agenda"
+      "Agriculture",
+      "Tourism",
+      "Oil and gas",
+      "Manufacturing"
     ],
     answer: 2,
-    explanation: "The Yar'Adua/Jonathan vision explicitly aimed at propelling Nigeria into the top 20 global economies by 2020. Buhari's was the Change Agenda; Tinubu's is the Renewed Hope Agenda."
+    explanation: "Since the 1970s, Nigeria's economy has been heavily dominated by oil and gas revenue."
   },
   {
-    question: "A central irony highlighted regarding Nigeria's economic paradox is that:",
+    question: "The major problem associated with Nigeria's over-dependence on oil is:",
     options: [
-      "Nigeria has no natural resources yet remains wealthy",
-      "Nigeria has never engaged in agriculture",
-      "Nigeria's population is too small for its resource base",
-      "Nigeria is regarded as poor despite abundant human and natural resources"
+      "Too much foreign investment",
+      "Over-employment in the public sector",
+      "Excessive industrialization",
+      "Neglect of other sectors like agriculture and manufacturing"
     ],
     answer: 3,
-    explanation: "The text explicitly frames Nigeria as a country of paradox, being poor despite abundant human and natural resources."
+    explanation: "Over-reliance on oil has led to the neglect of agriculture, manufacturing, and other vital economic sectors."
   },
   {
-    question: "In traditional African society, the primary reason lesser gods were consulted rather than the Almighty God directly was because:",
+    question: "Which of the following best describes Nigeria's economic classification?",
     options: [
-      "The Almighty God was considered too important and remote to concern himself with human affairs",
-      "The Almighty God was believed to be evil",
-      "Only priests were permitted to worship the Almighty God",
-      "Lesser gods were considered superior in power"
+      "A mixed economy",
+      "A purely socialist economy",
+      "A fully planned economy",
+      "A developed economy"
     ],
     answer: 0,
-    explanation: "The text states the Almighty God was held to be too important and remote for direct consultation, so people approached him through mediating deities."
+    explanation: "Nigeria operates a mixed economy, combining elements of both private enterprise and government involvement."
   },
   {
-    question: "How did traditional Urhobo marriage customs illustrate religion's role in social stability?",
+    question: "The main aim of economic diversification in Nigeria is to:",
     options: [
-      "Divorce was common due to lack of religious oversight",
-      "Divorce was rare because marriage was seen as sealed with ancestors via offered drinks/food",
-      "Marriages were annulled if childless within a year",
-      "Marriage required no ceremonial rites"
+      "Abolish private businesses",
+      "Reduce dependence on oil and develop other sectors",
+      "Increase oil production only",
+      "Reduce the population"
     ],
     answer: 1,
-    explanation: "In traditional Urhobo society divorce was uncommon because the ancestors had received the drinks and food during marriage, making the union expected to last forever."
+    explanation: "Economic diversification aims to develop non-oil sectors such as agriculture, solid minerals, and manufacturing to reduce oil dependence."
   },
   {
-    question: "The economic significance of religion in pre-colonial Nigeria is best illustrated by:",
+    question: "Unemployment in Nigeria is mainly caused by:",
     options: [
-      "Land was never considered sacred, allowing free trade",
-      "Religion discouraged all craft production",
-      "Carvers, blacksmiths, and weavers prospered by producing ritual objects, masquerades, and religious insignia",
-      "Only foreign missionaries engaged in economic production"
+      "Too many industries",
+      "Lack of graduates",
+      "Poor economic diversification and slow industrial growth",
+      "Excess of foreign aid"
     ],
     answer: 2,
-    explanation: "Festivals and ritual needs drove demand for carvers, potters, blacksmiths, and weavers — directly linking religious practice to craft economies."
+    explanation: "High unemployment in Nigeria is largely linked to slow industrial growth and inadequate economic diversification."
   },
   {
-    question: "Why is the political authority of pre-colonial priest-kings like the Oba of Benin or Alafin of Oyo significant?",
+    question: "Which of the following is an example of the informal sector of Nigeria's economy?",
     options: [
-      "They were elected purely by secular councils",
-      "They rejected any claim to divine status",
-      "They separated religious and political power strictly",
-      "They combined priestly functions with political power, presenting themselves as representatives of God/gods"
+      "Nigerian National Petroleum Corporation",
+      "Central Bank of Nigeria",
+      "Federal civil service",
+      "Roadside trading and artisans"
     ],
     answer: 3,
-    explanation: "These rulers combined priestly functions with political power and were regarded as representatives of God on earth, reinforcing political authority through claimed divine status."
+    explanation: "Roadside traders, artisans, and small-scale operators constitute the informal sector of Nigeria's economy."
   },
   {
-    question: "The Maitatsine riots of 1980 are significant in Nigeria's religious history primarily because they:",
+    question: "The two major religions in Nigeria are:",
     options: [
-      "Represented an Islamic sect's attempt to force its ideas on an unwilling society, harming national integration",
-      "United Christians and Muslims against a common external enemy",
-      "Resulted in Abuja being renamed",
-      "Led directly to Nigeria's independence"
+      "Islam and Christianity",
+      "Islam and Hinduism",
+      "Traditional religion and Buddhism",
+      "Buddhism and Hinduism"
     ],
     answer: 0,
-    explanation: "The Maitatsine riots represented an Islamic sect's attempt to impose its views by force, creating fears that negatively affected national integration and development."
+    explanation: "Islam and Christianity are the two dominant religions in Nigeria, practiced by the majority of the population."
   },
   {
-    question: "Criticism of Abuja as a genuine 'home for all' centers on the argument that:",
+    question: "Islam was introduced to Northern Nigeria mainly through:",
     options: [
-      "It has no representation of any religion",
-      "Its entrance symbols and Presidential Villa facilities favor Islamic over national/secular symbols",
-      "It lacks any religious buildings at all",
-      "It was built entirely by foreign contractors"
+      "Southern Nigerian traders",
+      "Trans-Saharan trade and scholars",
+      "The British colonial government",
+      "European missionaries"
     ],
     answer: 1,
-    explanation: "Criticism notes that Abuja's main entrances carry Islamic rather than national symbols, and the Presidential Villa was equipped only with a mosque — undermining Nigeria's claimed secular status."
+    explanation: "Islam spread into northern Nigeria through trans-Saharan trade routes and itinerant Islamic scholars from North Africa."
   },
   {
-    question: "Babangida's 1986 attempt regarding the Organization of Islamic Conference (OIC) is cited as an example of:",
+    question: "Christianity was introduced to Nigeria mainly by:",
     options: [
-      "Full disclosure to the Armed Forces Ruling Council",
-      "Successful interfaith cooperation",
-      "Using religion as a political tool without regard for national consequences",
-      "A constitutional requirement being properly followed"
+      "Indian merchants",
+      "Fulani jihadists",
+      "European missionaries",
+      "Arab traders"
     ],
     answer: 2,
-    explanation: "Babangida attempted to smuggle Nigeria into the OIC without his cabinet or Ruling Council's knowledge, illustrating rulers' use of religion as a political weapon."
+    explanation: "European Christian missionaries, such as those from the CMS and Catholic Church, introduced Christianity to Nigeria in the 19th century."
   },
   {
-    question: "According to the Athenian understanding of citizenship (Plato and Aristotle), full citizenship rights were reserved for:",
+    question: "The Nigerian constitution describes Nigeria as a:",
     options: [
-      "All free-born men regardless of class",
-      "Anyone who paid taxes",
-      "All residents of the city-state",
-      "Only those within the ruling/aristocratic class, like the philosopher-king and guardians"
+      "Islamic state",
+      "Traditional state",
+      "Christian state",
+      "Secular state"
     ],
     answer: 3,
-    explanation: "For Plato and Aristotle, only those born into or classified within the ruling class could exercise rights like voting, property, and leadership."
+    explanation: "The 1999 Constitution of Nigeria declares the country a secular state, with no official state religion."
   },
   {
-    question: "The contemporary, more universal understanding of citizenship is traced in the text primarily to:",
+    question: "Traditional African religion in Nigeria is characterized by belief in:",
     options: [
-      "The French Revolution's 1789 Declaration of the Rights of Man",
-      "Roman civil law",
-      "The Nigerian Independence Constitution",
-      "Ancient Athenian democracy"
+      "A supreme being alongside lesser gods and ancestors",
+      "No god at all",
+      "Only one god with no intermediaries",
+      "Only nature spirits with no supreme being"
     ],
     answer: 0,
-    explanation: "The text traces the modern understanding of citizenship to the 1789 French Declaration of the Rights of Man, alongside the American Declaration of Independence."
+    explanation: "Traditional African religion recognizes a supreme being but also involves worship of lesser gods and veneration of ancestors."
   },
   {
-    question: "Under Nigerian law, 'Jus Sanguinis' citizenship differs from 'Jus Soli' in that:",
+    question: "Religious tolerance in Nigeria means:",
     options: [
-      "Jus Soli is the only method used in Nigeria",
-      "Jus Sanguinis is based on parental/grandparental citizenship regardless of birthplace, while Jus Soli is based purely on birthplace",
-      "Both terms refer to naturalization only",
-      "Jus Sanguinis requires birth within Nigerian territory regardless of parentage"
+      "Everyone must practice the same religion",
+      "Citizens respect each other's right to practice their own religion",
+      "Religion is banned in public spaces",
+      "Only government-approved religions are allowed"
     ],
     answer: 1,
-    explanation: "Jus Sanguinis (right of blood) grants citizenship via parent/grandparent regardless of birth location, while Jus Soli (right of soil) is based purely on birthplace."
+    explanation: "Religious tolerance means respecting and accepting the right of others to freely practice their own religion."
   },
   {
-    question: "Which of the following is a requirement for Direct Naturalization as a Nigerian citizen?",
+    question: "Which of the following is a negative effect of religious extremism in Nigeria?",
     options: [
-      "Residency for at least five continuous years",
-      "No residency requirement if of good character",
-      "Continuous residency of fifteen years, or fifteen of a non-continuous twenty years, including twelve consecutive months before application",
-      "Automatic grant upon marriage to a Nigerian citizen"
+      "Economic growth",
+      "Improved education",
+      "Violence and loss of lives",
+      "National unity"
     ],
     answer: 2,
-    explanation: "The text specifies these exact residency conditions for direct naturalization, distinct from derivative naturalization via marriage or parentage."
+    explanation: "Religious extremism has led to violence, destruction of property, and loss of lives in many parts of Nigeria."
   },
   {
-    question: "'Derivative Naturalization' as described in the text refers to:",
+    question: "The role of religion in traditional Nigerian society included:",
     options: [
-      "Citizenship revoked due to criminal conviction",
-      "A group acquiring citizenship through treaty or annexation",
-      "Citizenship acquired purely by birth within Nigeria",
-      "A spouse or child acquiring citizenship as a result of a relative's direct naturalization"
+      "Banning all forms of government",
+      "Discouraging social interaction",
+      "Preventing trade between communities",
+      "Regulating social behavior and promoting community cohesion"
     ],
     answer: 3,
-    explanation: "Derivative naturalization is defined as a spouse or child gaining citizenship because of a parent's or spouse's direct naturalization."
+    explanation: "Religion in traditional society helped regulate behavior, enforce moral codes, and strengthen community bonds."
   },
   {
-    question: "According to Okoli and Okoli (1990), the two broad categories of citizens' rights and privileges are:",
+    question: "A Nigerian citizen by birth is one who:",
     options: [
-      "Political rights and civil rights",
-      "Economic rights and cultural rights",
-      "Human rights and animal rights",
-      "Religious rights and property rights"
+      "Is born in Nigeria or has at least one Nigerian parent",
+      "Lives in Nigeria for ten years",
+      "Speaks a Nigerian language",
+      "Pays taxes in Nigeria"
     ],
     answer: 0,
-    explanation: "Okoli and Okoli group citizen rights into political rights (voting/being voted for) and civil rights (life, liberty, fair hearing, freedom of thought)."
+    explanation: "By Nigerian law, citizenship by birth is granted to those born in Nigeria or those with at least one Nigerian parent."
   },
   {
-    question: "Which of these is listed in the text as an obligation, not a right, of Nigerian citizens?",
+    question: "Which of the following is a fundamental right of Nigerian citizens?",
     options: [
-      "Peaceful assembly and association",
-      "Paying tax promptly and defending the state against enemies",
-      "Freedom of movement",
-      "Freedom from discrimination"
+      "Right to hold any public office without election",
+      "Right to life, dignity, and fair hearing",
+      "Right to disobey the law",
+      "Right to unlimited wealth"
     ],
     answer: 1,
-    explanation: "The text lists paying taxes promptly, obeying laws, and defending the state as citizen obligations, while freedom of movement and assembly fall under civil rights."
+    explanation: "The 1999 Constitution guarantees fundamental rights including the right to life, human dignity, and fair hearing."
   },
   {
-    question: "For Plato, 'social justice' is best understood in the text as:",
+    question: "Naturalization in Nigeria refers to:",
     options: [
-      "A purely legal/administrative concept unrelated to morality",
-      "Something entirely separate from human rights",
-      "A virtue enabling amicable relations between individuals in society, tied to human virtue",
-      "Applicable only to rulers, not ordinary citizens"
+      "Being born in Nigeria",
+      "Automatic citizenship through marriage",
+      "The process by which a foreigner legally becomes a Nigerian citizen",
+      "Losing Nigerian citizenship"
     ],
     answer: 2,
-    explanation: "Plato saw justice as part of human virtue that made people good and enabled amicable relationships in society, synonymous with human rights."
+    explanation: "Naturalization is the legal process through which a foreign national can acquire Nigerian citizenship."
   },
   {
-    question: "Which condition is NOT listed in the text as necessary for achieving individual and social justice in the Nigerian context?",
+    question: "Which of the following is a civic duty of a Nigerian citizen?",
     options: [
-      "Full employment for all citizens",
-      "Free education at all levels",
-      "A comprehensive social insurance scheme",
-      "Abolition of all political parties"
+      "Avoiding elections",
+      "Refusing military service under all circumstances",
+      "Ignoring government policies",
+      "Paying taxes and obeying laws"
     ],
     answer: 3,
-    explanation: "The text lists full employment, minimum wage, free education, agricultural modernization, industrialization, and social insurance as conditions — abolishing political parties is not among them."
+    explanation: "Paying taxes and obeying the law are fundamental civic obligations of every Nigerian citizen."
   },
   {
-    question: "The historical roots of Nigeria's social justice problems are traced in the text back to:",
+    question: "Freedom of speech in Nigeria means citizens have the right to:",
     options: [
-      "The first amalgamation of 1914",
-      "The introduction of Sharia law",
-      "The 1999 Constitution",
-      "The Nigerian Civil War alone"
+      "Express opinions freely within the limits of the law",
+      "Spread falsehoods without restriction",
+      "Say anything without any consequences",
+      "Insult government officials without punishment"
     ],
     answer: 0,
-    explanation: "The text explicitly states the problem of social justice in Nigeria can be traced back to the first amalgamation of 1914, after which oppression and repression persisted."
+    explanation: "Freedom of speech allows citizens to express themselves freely, but within the boundaries set by Nigerian law."
   },
   {
-    question: "Which of the following is listed in the text as a factor contributing to ongoing social injustice in Nigeria?",
+    question: "The 1999 Constitution of Nigeria guarantees citizens the right to:",
     options: [
-      "Balanced federal resource allocation",
-      "Tenacity of power among political leaders and discrimination in resource allocation among states",
-      "Full democratic accountability at all levels",
-      "Complete absence of corruption"
+      "Personal armies",
+      "Education, health, and social security as state obligations",
+      "Override court decisions",
+      "Unlimited land ownership"
     ],
     answer: 1,
-    explanation: "The text lists tenacity of power and discrimination in resource allocation among the factors sustaining social injustice, alongside corruption and unjust laws."
+    explanation: "Chapter II of the 1999 Constitution outlines the state's obligation to provide education, health, and social security for citizens."
   },
   {
-    question: "The Latin phrase 'Vox populi Vox dei,' used in the text's conclusion on social justice, is best interpreted to mean:",
+    question: "Which body is primarily responsible for protecting citizens' rights in Nigeria?",
     options: [
-      "The government's voice is always correct",
-      "Public opinion is irrelevant to governance",
-      "The people's voice is equivalent to divine authority and should be heeded",
-      "Only religious leaders can determine justice"
+      "The Executive alone",
+      "The Nigerian Army",
+      "The Judiciary",
+      "The Nigerian Police Force only"
     ],
     answer: 2,
-    explanation: "The text uses this phrase to argue that reversing social injustice requires government to listen to all shades of public opinion — the people's voice is God's voice as well."
+    explanation: "The Judiciary is the arm of government primarily responsible for interpreting laws and protecting citizens' constitutional rights."
   },
   {
-    question: "Jane F. Doyle's critique implicitly suggests that Nigeria's colonial-era schooling failed because it:",
+    question: "Social justice in Nigeria requires that government:",
     options: [
-      "Was too focused on individual reasoning",
-      "Taught too many practical skills",
-      "Ignored moral training entirely",
-      "Functioned as indoctrination to accept colonial-designed society rather than fostering personal autonomy"
+      "Ignores the needs of the poor",
+      "Concentrates power in one region",
+      "Favors only the wealthy",
+      "Distributes resources fairly and protects the rights of all citizens"
     ],
     answer: 3,
-    explanation: "Colonial education schooled Nigerians to accept the society designed for them by the colonialists, contradicting Doyle's view that true education should build personal autonomy."
+    explanation: "Social justice demands equitable distribution of resources and equal protection of every citizen's rights regardless of background."
   },
   {
-    question: "The 1969 National Conference on Education is notable in the text because it:",
+    question: "The Universal Basic Education (UBE) programme in Nigeria aims to:",
     options: [
-      "Involved a broad cross-section of society and shaped the 1977 national policy on education",
-      "Was limited only to university professionals",
-      "Was organized by the British colonial office",
-      "Immediately introduced the 6-3-3-4 system"
+      "Ensure free and compulsory basic education for all Nigerian children",
+      "Train only teachers",
+      "Provide university education for free",
+      "Replace secondary education"
     ],
     answer: 0,
-    explanation: "The conference drew representatives from diverse groups beyond experts alone, and its findings became the cornerstone of the 1977 national education policy."
+    explanation: "The UBE programme was established to provide free, compulsory basic education covering primary and junior secondary levels."
   },
   {
-    question: "According to the 'Yes' answer regarding Nigerian education system failure, the 'Nigerian factor' refers to:",
+    question: "Nigeria's education system operates on which structure?",
     options: [
-      "Excellent government funding of schools",
-      "Founders of educational facilities being motivated by monetary gain rather than genuine educational outcomes",
-      "Overreliance on foreign teachers",
-      "Strict adherence to indigenous curricula only"
+      "5-4-4",
+      "6-3-3-4",
+      "7-3-2-4",
+      "4-4-4-4"
     ],
     answer: 1,
-    explanation: "The Nigerian factor refers to many school founders being driven by profit rather than genuine educational purpose, resulting in certificate-holders lacking real knowledge."
+    explanation: "Nigeria operates a 6-3-3-4 education system: 6 years primary, 3 years junior secondary, 3 years senior secondary, and 4 years tertiary."
   },
   {
-    question: "G.N.U. Uzoigwe's (1989) explanation for Nigeria's educational struggles centers on:",
+    question: "A major challenge facing education in Nigeria is:",
     options: [
-      "Overemphasis on African traditional values",
-      "Lack of interest from students",
-      "Persistent conflict between foreign intellectual traditions and African tradition, causing moral/intellectual confusion",
-      "Insufficient funding alone"
+      "Too many qualified teachers",
+      "Excess of schools",
+      "Inadequate funding and poor infrastructure",
+      "Too many students going abroad"
     ],
     answer: 2,
-    explanation: "Uzoigwe attributes slow educational growth to the clash between imported intellectual traditions and indigenous Nigerian traditions, leaving the educated Nigerian in moral and intellectual confusion."
+    explanation: "Inadequate government funding and poor school infrastructure remain major challenges to quality education in Nigeria."
   },
   {
-    question: "Which statement best reflects the overall relationship between education and national development as framed across the text?",
+    question: "Social justice is best achieved in Nigeria when:",
     options: [
-      "Only technical education contributes to development, unlike liberal education",
-      "Education has no proven link to societal development",
-      "Nigerian education has been an unqualified success since 1977",
-      "Education historically functioned as a foundation shaping values and development, but in Nigeria this potential was undermined by indoctrination, corruption, and cultural conflict"
+      "Only educated people have rights",
+      "Resources are controlled by one ethnic group",
+      "Only the military governs",
+      "Every citizen has equal access to opportunities and resources regardless of background"
     ],
     answer: 3,
-    explanation: "While education is meant to drive development, colonial legacies, indoctrination, cultural conflict, and profit-driven Nigerian factors undermined this potential."
+    explanation: "True social justice ensures that all citizens, regardless of ethnicity, religion, or background, have equal access to opportunities and resources."
   }
 ];
 const MTH132 = [
