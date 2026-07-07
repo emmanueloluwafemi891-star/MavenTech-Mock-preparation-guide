@@ -275,2204 +275,554 @@ window.onload = function () {
 };
 const GST112 = [
   {
-    question: "Which zone is NOT one of the four divisions used to categorize the country for this course?",
+    question: "Which of the following best describes the geographical location of Nigeria in Africa?",
     options: [
-      "Central Zone",
-      "Eastern Zone",
-      "Southern Zone",
-      "Northern Zone"
-    ],
-    answer: 2,
-    explanation: "The course explicitly divides the country into four zones: Northern, Central, Western, and Eastern. There is no Southern Zone."
-  },
-  {
-    question: "What language unites all the Kanem-Bornu people?",
-    options: [
-      "Hausa",
-      "Kanuri",
-      "Fulfulde",
-      "Tamasheq"
+      "Southern Africa",
+      "West Africa",
+      "East Africa",
+      "North Africa"
     ],
     answer: 1,
-    explanation: "Kanuri is stated as the language that unites all the Kanem-Bornu people."
+    explanation: "Nigeria is located in West Africa, bordered by Benin, Niger, Chad, and Cameroon."
   },
   {
-    question: "What technology did the first settlers (So people) develop a sophisticated culture around?",
+    question: "The three major ethnic groups in Nigeria are commonly identified as:",
     options: [
-      "Terracotta sculpting",
-      "Gold mining",
-      "Bronze casting",
-      "Iron technology"
-    ],
-    answer: 3,
-    explanation: "The So people built a sophisticated socio-political culture based on agriculture and iron technology."
-  },
-  {
-    question: "Which Arab hero established the Saifawa dynasty in the 9th-10th century?",
-    options: [
-      "Saif b. Dhiyazan",
-      "Bayajida",
-      "Uthman dan Fodio",
-      "Al-Kanemi"
+      "Yoruba, Igbo, Hausa-Fulani",
+      "Igala, Nupe, Efik",
+      "Ijaw, Tiv, Kanuri",
+      "Ibibio, Edo, Urhobo"
     ],
     answer: 0,
-    explanation: "Saif b. Dhiyazan is credited with founding the state and establishing the Saifawa dynasty."
+    explanation: "The Hausa-Fulani, Yoruba, and Igbo are traditionally regarded as Nigeria's three major ethnic groups due to their population size and political influence."
   },
   {
-    question: "Who held the highest authority in Kanem-Bornu?",
+    question: "Pre-colonial Yoruba political organization was primarily structured around:",
     options: [
-      "The Kaigama",
-      "The Maini Kanendi",
-      "The Galadima",
-      "The Mai"
+      "Warrant chief system",
+      "Emirate system",
+      "Segmentary lineage system without central authority",
+      "City-states with an Oba as ruler"
     ],
     answer: 3,
-    explanation: "The Mai (king) was the highest political authority in Kanem-Bornu."
+    explanation: "Yoruba pre-colonial society was organized into city-states, each headed by a divine king known as an Oba."
   },
   {
-    question: "What was the Magira's role in Kanem-Bornu?",
+    question: "The pre-colonial Igbo political system is best described as:",
     options: [
-      "The King's Sister",
-      "The Army Commander",
-      "The Queen Mother",
-      "The Chief Judge"
-    ],
-    answer: 2,
-    explanation: "Magira was the title given to the highly respected Queen Mother in Kanem-Bornu."
-  },
-  {
-    question: "What was the primary duty of the Nokena state council?",
-    options: [
-      "To select the royal bride",
-      "To offer the king useful advice",
-      "To collect taxes",
-      "To command the bush garrison"
+      "Federal system",
+      "Republican/acephalous (stateless) system",
+      "Theocratic caliphate",
+      "Highly centralized monarchy"
     ],
     answer: 1,
-    explanation: "This twelve-member imperial council's principal duty was to advise the king."
+    explanation: "The Igbo operated a decentralized, republican system without kings, governed through councils of elders, age grades, and title societies."
   },
   {
-    question: "Who served as chief judge and legal adviser to the Mai?",
+    question: "The Hausa-Fulani political structure before colonial rule was based on:",
     options: [
-      "The Maini Kanendi",
-      "The Achuwo",
-      "The Yerima",
-      "The Meshema"
+      "The emirate system under an Emir",
+      "Village democracy",
+      "Council of women elders",
+      "Age-grade governance"
     ],
     answer: 0,
-    explanation: "The Maini Kanendi played the major role of chief judge and legal adviser of the state."
+    explanation: "Following the Sokoto Jihad of 1804, the Hausa states were reorganized into emirates under Fulani emirs, subordinate to the Sokoto Caliphate."
   },
   {
-    question: "How was the professional Kanem-Bornu army strategically divided?",
+    question: "The Benin Kingdom's political authority in pre-colonial times was headed by the:",
     options: [
-      "Naval corps and Ground units",
-      "Infantry and Cavalry",
-      "Royal guards and Border patrols",
-      "Home division and Bush garrison"
-    ],
-    answer: 3,
-    explanation: "The army was divided into two strategic divisions: the Home division and the Bush garrison."
-  },
-  {
-    question: "Which title is NOT Kanem-Bornu nobility?",
-    options: [
-      "Galadima",
-      "Kaigama",
-      "Sarki",
-      "Yerima"
+      "Obi",
+      "Eze",
+      "Oba",
+      "Emir"
     ],
     answer: 2,
-    explanation: "Sarki is a Hausa head title, while Galadima, Kaigama, and Yerima were Kanem-Bornu titled nobility."
+    explanation: "The Benin Kingdom was a centralized monarchy ruled by the Oba, supported by chiefs and palace associations."
   },
   {
-    question: "From which city did Bayajida travel before reaching Kanem-Bornu and Hausaland?",
+    question: "Which culture area is associated with the Efik, Ibibio, and Annang peoples?",
     options: [
-      "Cairo",
-      "Baghdad",
-      "Tripoli",
-      "Mecca"
-    ],
-    answer: 1,
-    explanation: "Legend holds that Bayajida came from Baghdad before reaching Kanem-Bornu and Hausaland."
-  },
-  {
-    question: "What heroic act impressed the Queen of Daura?",
-    options: [
-      "He killed a dangerous snake in a well",
-      "He brought Islamic books",
-      "He built a city wall",
-      "He defeated an invading army"
+      "Cross River culture area",
+      "Hausa culture area",
+      "Niger-Delta culture area",
+      "Middle Belt culture area"
     ],
     answer: 0,
-    explanation: "Bayajida killed a dangerous snake in a well, enabling the people of Daura to draw water again, impressing the Queen."
+    explanation: "The Efik, Ibibio, and Annang are indigenous to the Cross River region in southeastern Nigeria."
   },
   {
-    question: "Who was Bayajida's son whose children formed the core Hausa states?",
+    question: "The term 'culture area' in Nigerian studies refers to:",
     options: [
-      "Lamurudu",
-      "Biran",
-      "Bawo",
-      "Tsoede"
+      "A single ethnic group's territory",
+      "Regions with the same religion only",
+      "A geographical region where groups share similar cultural traits",
+      "Areas colonized by the British"
     ],
     answer: 2,
-    explanation: "Bawo's six children went on to found the core Hausa states."
+    explanation: "A culture area denotes a region where different but related groups share common cultural features such as language, customs, and social organization."
   },
   {
-    question: "Which state belongs to the Hausa Bokwoi (original seven)?",
+    question: "The Kanuri people, associated with the Borno Empire, are located primarily in:",
     options: [
-      "Kebbi",
-      "Zazzau",
-      "Zamfara",
-      "Nupe"
-    ],
-    answer: 1,
-    explanation: "Zazzau is listed alongside Daura, Katsina, Kano, Rano, and Gobir as one of the original seven Hausa states."
-  },
-  {
-    question: "Which state is classified as Hausa Banza (bastard state)?",
-    options: [
-      "Jukun",
-      "Rano",
-      "Gobir",
-      "Katsina"
-    ],
-    answer: 0,
-    explanation: "Jukun is listed as one of the seven Hausa Banza (illegitimate/bastard) states, unlike the Hausa Bokwoi."
-  },
-  {
-    question: "From which river valley did the Fulani communities originally derive?",
-    options: [
-      "Niger River valley",
-      "Benue River valley",
-      "Nile River valley",
-      "Senegal River valley"
+      "South-West Nigeria",
+      "South-South Nigeria",
+      "North-Central Nigeria",
+      "North-East Nigeria"
     ],
     answer: 3,
-    explanation: "The Senegal River valley is stated as the original Fulani homeland."
+    explanation: "The Kanuri are historically centered in Borno State and the surrounding areas of North-East Nigeria."
   },
   {
-    question: "What was the predominant religion of the nomadic Cattle Fulani?",
+    question: "The Berlin Conference of 1884-1885 was significant to Nigeria's evolution because it:",
     options: [
-      "Islam",
-      "Animism",
-      "Christianity",
-      "Judaism"
+      "Created the Nigerian constitution",
+      "Partitioned Africa among European powers",
+      "Granted Nigeria independence",
+      "Established the Nigerian currency"
     ],
     answer: 1,
-    explanation: "Unlike the Islamic, sedentary Town Fulani, the nomadic Cattle Fulani were predominantly animist."
+    explanation: "The Berlin Conference formalized the Scramble for Africa, leading to European powers including Britain claiming territories that became Nigeria."
   },
   {
-    question: "In whose court was Uthman dan Fodio a tutor before his jihad?",
+    question: "The amalgamation of the Northern and Southern Protectorates of Nigeria occurred in:",
     options: [
-      "The King of Gobir",
-      "The Attah of Igala",
-      "The Etsu of Nupe",
-      "The Mai of Bornu"
+      "1914",
+      "1960",
+      "1900",
+      "1922"
     ],
     answer: 0,
-    explanation: "Uthman dan Fodio served as tutor and adviser in the Gobir court on the eve of his jihad."
+    explanation: "Lord Frederick Lugard amalgamated the Northern and Southern Protectorates into a single entity called Nigeria in 1914."
   },
   {
-    question: "What is the plural term the Fulani use for themselves?",
+    question: "Who is credited with naming 'Nigeria'?",
     options: [
-      "Fellata",
-      "Fulfulde",
-      "Fulbe",
-      "Fulo"
+      "Queen Victoria",
+      "Lord Lugard",
+      "Flora Shaw",
+      "Herbert Macaulay"
     ],
     answer: 2,
-    explanation: "Fulo is the singular form; Fulbe is the plural form the Fulani use for themselves."
+    explanation: "Flora Shaw, a British journalist who later married Lugard, coined the name Nigeria in 1897, derived from the River Niger."
   },
   {
-    question: "What title means ruler of the land in Hausa?",
+    question: "Nigeria gained political independence from Britain on:",
     options: [
-      "Madawaki",
-      "Galadima",
-      "Alkali",
-      "Sarkin Kasar"
-    ],
-    answer: 3,
-    explanation: "Sarkin Kasar, given to an effective Hausa head of state, literally means ruler of the land."
-  },
-  {
-    question: "Which title was NOT created by Hausaland's Islamization?",
-    options: [
-      "Yari Sarki",
-      "Maini Kanendi",
-      "Sarki Yau",
-      "Dogari"
+      "January 1, 1966",
+      "October 1, 1960",
+      "May 29, 1999",
+      "October 1, 1963"
     ],
     answer: 1,
-    explanation: "Maini Kanendi is a Kanem-Bornu title (chief judge), not one created during Hausaland's Islamic transition."
+    explanation: "Nigeria became an independent nation on October 1, 1960."
   },
   {
-    question: "Which group lived in a centralized state system in the Central Zone before 1800?",
+    question: "Nigeria became a republic on:",
     options: [
-      "Idoma",
-      "Ebirra",
-      "Nupe",
-      "Tiv"
+      "July 29, 1966",
+      "May 29, 1999",
+      "October 1, 1960",
+      "October 1, 1963"
     ],
-    answer: 2,
-    explanation: "Unlike most Central Zone groups which were non-centralized, the Nupe had a centralized state before 1800."
+    answer: 3,
+    explanation: "Nigeria transitioned from a dominion under the British monarch to a republic on October 1, 1963, with Nnamdi Azikiwe as the first President."
   },
   {
-    question: "Who was the founder of the Nupe kingdom, son of an Igala king?",
+    question: "The Richards Constitution of 1946 is notable for:",
     options: [
-      "Tsoede",
-      "Muazu",
-      "Abutu Eje",
-      "Ayagba"
+      "Introducing regionalism into Nigerian governance",
+      "Establishing state creation",
+      "Granting full independence",
+      "Abolishing indirect rule"
     ],
     answer: 0,
-    explanation: "Tradition holds that Tsoede, son of an Igala king and a Nupe woman, founded the Nupe kingdom."
+    explanation: "The Richards Constitution divided Nigeria into three regions (North, East, West), laying the foundation for federalism."
   },
   {
-    question: "What is the royal title of the king of Nupeland?",
+    question: "The Macpherson Constitution was introduced in the year:",
     options: [
-      "Sarki",
-      "Aku Uka",
-      "Attah",
-      "Etsu"
-    ],
-    answer: 3,
-    explanation: "Etsu became the standing royal title for Nupe rulers."
-  },
-  {
-    question: "Why was Etsu Jibrilu driven from the throne in 1762?",
-    options: [
-      "He aroused strong anti-Islamic forces against his rule",
-      "Lost a war against Benin",
-      "Failed harvest",
-      "Tried to move the capital"
-    ],
-    answer: 0,
-    explanation: "Etsu Jibrilu aroused strong anti-Islamic opposition which led directly to his removal from the throne."
-  },
-  {
-    question: "Which trading center connected the Benin and Oyo trade routes?",
-    options: [
-      "Idah",
-      "Nupako",
-      "Lima",
-      "Gbara"
-    ],
-    answer: 3,
-    explanation: "Gbara functioned as an important trading center linking Benin and Oyo trade routes."
-  },
-  {
-    question: "What is the capital of the Igala people?",
-    options: [
-      "Wukari",
-      "Idah",
-      "Raba",
-      "Gboko"
+      "1954",
+      "1951",
+      "1946",
+      "1960"
     ],
     answer: 1,
-    explanation: "Idah has traditionally been the Igala capital and seat of the Attah of Igala."
+    explanation: "The Macpherson Constitution of 1951 expanded regional legislative powers and increased Nigerian participation in governance."
   },
   {
-    question: "Which animal is legendary for rearing Abutu Eje?",
+    question: "The Lyttleton Constitution of 1954 is significant because it:",
     options: [
-      "Snake",
-      "Snail",
-      "Leopard",
-      "Cockerel"
+      "Established Nigeria as a republic",
+      "Created six geopolitical zones",
+      "Formally introduced federalism to Nigeria",
+      "Granted independence"
     ],
     answer: 2,
-    explanation: "Legend has Abutu Eje reared by a leopard, which is why the name Eje is associated with leopard."
+    explanation: "The Lyttleton Constitution formally established a federal system of government for Nigeria."
   },
   {
-    question: "Which ancestor helped the Igala break from Jukun rule?",
+    question: "The system of indirect rule in colonial Nigeria was most successfully applied in the:",
     options: [
-      "Ayagba",
-      "Oranmiyan",
-      "Tsoede",
-      "Achadu"
-    ],
-    answer: 0,
-    explanation: "Ayagba, also called Idoko, is remembered as the ancestor who helped free Igala from Jukun dominance."
-  },
-  {
-    question: "Whose religious supremacy did the Jukun confederation recognize?",
-    options: [
-      "Achuwo",
-      "Zitzu",
-      "Abo Zike",
-      "Aku Uka"
+      "Niger Delta",
+      "South-East",
+      "Middle Belt",
+      "North"
     ],
     answer: 3,
-    explanation: "The Jukun state was a confederation unified by recognition of the Aku Uka's religious supremacy."
+    explanation: "Indirect rule worked effectively in the North because the existing emirate system provided a ready-made centralized structure for the British to govern through."
   },
   {
-    question: "Who served as Prime Minister and head of the Aku Uka's Council of nobles?",
+    question: "Indirect rule faced significant challenges in Igbo land mainly because:",
     options: [
-      "Aku Nako",
-      "Achuwo",
-      "Mbavessen",
-      "Kinda Achuwo"
+      "There were no British administrators available",
+      "The Igbo political system was decentralized/acephalous",
+      "The Igbo had strong centralized kingdoms",
+      "The Igbo refused all forms of leadership"
     ],
     answer: 1,
-    explanation: "The Achuwo headed the Council of Nobles and functioned as prime minister to the Aku Uka."
+    explanation: "Since Igbo society lacked centralized chiefs, the British had to impose warrant chiefs, which often lacked legitimacy and caused unrest including the 1929 Aba Women's Riot."
   },
   {
-    question: "Who classified the Tiv as the largest ethnic group in the middle Benue basin in 1953?",
+    question: "The 1914 amalgamation is often criticized by scholars primarily because it:",
     options: [
-      "Egharevba",
-      "Igbafe",
-      "P. Bohannan",
-      "Samuel Johnson"
+      "Reduced Nigeria's population",
+      "Ended British colonial rule",
+      "United peoples with vastly different cultures and administrative systems for British economic convenience",
+      "Created too many ethnic groups"
     ],
     answer: 2,
-    explanation: "P. Bohannan authored the 1953 book The Tiv of Central Nigeria and made this classification."
+    explanation: "Critics argue the amalgamation merged diverse peoples without regard for their cultural, religious, and political differences, mainly to ease British administrative and economic interests."
   },
   {
-    question: "What is the largest recognized family group in Tiv socio-political structure?",
+    question: "Traditional education in pre-colonial Nigeria was primarily aimed at:",
     options: [
-      "Zitzu",
-      "Tsombor",
-      "Ityough",
-      "Mbavessen"
-    ],
-    answer: 1,
-    explanation: "Tsombor was the largest traditional family unit recognized in Tiv society."
-  },
-  {
-    question: "Who originally used the term Yoruba to mean only Oyo dialect speakers?",
-    options: [
-      "The Fulani",
-      "The Portuguese",
-      "The Hausa",
-      "The British"
-    ],
-    answer: 2,
-    explanation: "The term Yoruba was originally a Hausa designation applied only to speakers of the Oyo dialect."
-  },
-  {
-    question: "Who, according to Samuel Johnson, migrated from Mecca as the Yoruba progenitor?",
-    options: [
-      "Oranmiyan",
-      "Lamurudu",
-      "Obatala",
-      "Oduduwa"
+      "Preparing for international trade only",
+      "Preparing individuals for white-collar jobs",
+      "Teaching Western literacy",
+      "Integrating the individual into the community and imparting vocational/moral skills"
     ],
     answer: 3,
-    explanation: "Johnson recorded Oduduwa as the son of Lamurudu, King of Mecca, and the progenitor of the Yoruba."
+    explanation: "Indigenous education focused on character formation, vocational skills, and socialization into communal values rather than formal literacy."
   },
   {
-    question: "Who got drunk with palm wine and lost leadership in the Oke Oramfe version of Yoruba origin?",
-    options: [
-      "Obatala",
-      "Oranmiyan",
-      "Afonja",
-      "Oduduwa"
-    ],
-    answer: 0,
-    explanation: "Obatala's drunkenness allowed Oduduwa to seize leadership, according to the Oke Oramfe version."
-  },
-  {
-    question: "Which king oversaw Oyo's zenith of power before rebellion followed?",
-    options: [
-      "Alaafin Awole",
-      "Afonja of Ilorin",
-      "Oranyan",
-      "Alaafin Abiodun"
-    ],
-    answer: 3,
-    explanation: "Oyo reached its peak under Alaafin Abiodun's reign before his successor Awole faced rebellion."
-  },
-  {
-    question: "Which council of seven regulated the Alaafin's powers in the Oyo Empire?",
-    options: [
-      "The Oyomesi",
-      "The Ogboni",
-      "The Ilari",
-      "The Uzama"
-    ],
-    answer: 0,
-    explanation: "The Oyomesi, a seven-member council, checked the Alaafin's authority and could remove him if necessary."
-  },
-  {
-    question: "Who headed the Oyomesi and acted as prime minister in Oyo?",
-    options: [
-      "The Ilari",
-      "The Are-Ona-Kankanfo",
-      "The Bashorun",
-      "The Baale"
-    ],
-    answer: 2,
-    explanation: "The Bashorun led the Oyomesi council in a prime-ministerial capacity."
-  },
-  {
-    question: "What title was given to the supreme head of Oyo's military forces?",
-    options: [
-      "Bashorun",
-      "Are-Ona-Kankanfo",
-      "Ilari",
-      "Dogari"
-    ],
-    answer: 1,
-    explanation: "The Are-Ona-Kankanfo was the coveted title given to the supreme head of the Oyo military."
-  },
-  {
-    question: "Which festival was used by the Alaafin to acknowledge provincial governors' renewed allegiance?",
-    options: [
-      "The Bere Festival",
-      "The Swem Festival",
-      "The Sharia Festival",
-      "The Ife Festival"
-    ],
-    answer: 0,
-    explanation: "The annual Bere Festival marked the occasion of provincial governors renewing their allegiance to the Alaafin."
-  },
-  {
-    question: "In which year did the Portuguese first arrive in Benin during the reign of Ewuare?",
-    options: [
-      "1504 A.D.",
-      "1472 A.D.",
-      "1404 A.D.",
-      "1604 A.D."
-    ],
-    answer: 1,
-    explanation: "Ruy de Sequeira arrived in Benin in 1472 A.D. during the reign of Oba Ewuare."
-  },
-  {
-    question: "What did Osanobua's youngest child use to create land out of water?",
-    options: [
-      "A lump of white cloth",
-      "An iron rod",
-      "A snail shell",
-      "A magical bow"
-    ],
-    answer: 2,
-    explanation: "He overturned a snail shell filled with sand onto the water to form dry land, according to Bini mythology."
-  },
-  {
-    question: "What is the name of the first period of pre-colonial Bini history, called the kings of the sky era?",
-    options: [
-      "Evian era",
-      "Oranmiyan era",
-      "Eweka era",
-      "Ogiso era"
-    ],
-    answer: 3,
-    explanation: "Ogiso translates roughly to kings of the sky, naming this founding era of pre-colonial Benin history."
-  },
-  {
-    question: "Who was the last ruler of the sky-kings era whose son was banished?",
-    options: [
-      "Owodo",
-      "Igbodo",
-      "Orire",
-      "Ere"
-    ],
-    answer: 0,
-    explanation: "Owodo clashed with the nobles and through court intrigue his son Ekaladeran was banished."
-  },
-  {
-    question: "Which town was founded by the banished Bini prince Ekaladeran?",
-    options: [
-      "Erua",
-      "Wukari",
-      "Ughoton",
-      "Idah"
-    ],
-    answer: 2,
-    explanation: "Ekaladeran founded the port-town of Ughoton after his banishment from Benin."
-  },
-  {
-    question: "Which leader did the Benin elders request a new ruler from?",
-    options: [
-      "The Attah of Igala",
-      "The Ooni of Ife",
-      "The Mai of Bornu",
-      "The Alaafin of Oyo"
-    ],
-    answer: 1,
-    explanation: "After a political stalemate, the Benin elders sent a delegation to the Ooni of Ife requesting a new ruler."
-  },
-  {
-    question: "What phrase did Oranmiyan use to describe Benin as a land of vexation?",
-    options: [
-      "Kwararafa",
-      "Hausa Bokwoi",
-      "Ile-Ife",
-      "Ile-Ibinu"
-    ],
-    answer: 3,
-    explanation: "Ile-Ibinu, meaning land of vexation or trouble, reflected Oranmiyan's frustration with Benin territory."
-  },
-  {
-    question: "Who was the first Oba of Benin, born to a Bini woman?",
-    options: [
-      "Ewuare",
-      "Eweka I",
-      "Evian",
-      "Ogiamen"
-    ],
-    answer: 1,
-    explanation: "Eweka I was Oranmiyan's son, born to a Bini woman, and became the first Oba of Benin."
-  },
-  {
-    question: "Which group is NOT one of Benin's Adesotu nobility groups?",
-    options: [
-      "The Uzama",
-      "The Eghaevbo n' Ogbe",
-      "The Oyomesi",
-      "The Eghaevbo n' ore"
-    ],
-    answer: 2,
-    explanation: "The Oyomesi is a Yoruba/Oyo institution and is not part of Benin's three-tier nobility structure."
-  },
-  {
-    question: "What specific inheritance system determined succession to the throne of the Oba of Benin?",
-    options: [
-      "Ultimate selection by the Ogboni",
-      "Selection through oracle consultation by the Uzama",
-      "Rotational system among three royal lineages",
-      "Primogeniture — the first surviving son"
-    ],
-    answer: 3,
-    explanation: "Succession to the Benin throne was strictly by primogeniture, passing to the first surviving son."
-  },
-  {
-    question: "What were the professional and craft organizations of the common people called in Benin?",
-    options: [
-      "Guilds",
-      "Nka",
-      "Polo",
-      "Wari"
-    ],
-    answer: 0,
-    explanation: "Ordinary Benin citizens organized into professional craft guilds based on their trade or occupation."
-  },
-  {
-    question: "Which Benin king lost his life returning from a military campaign, ending the practice of kings leading armies?",
-    options: [
-      "Ewuare",
-      "Ozolua",
-      "Ehengbuda",
-      "Esigie"
-    ],
-    answer: 2,
-    explanation: "Ehengbuda's death on campaign ended the tradition of Benin kings personally leading armies into battle."
-  },
-  {
-    question: "How did the Oba's role change after kings stopped leading armies?",
-    options: [
-      "He became a semi-divine ruler occupied in an endless round of ritual",
-      "He relocated the capital",
-      "He was replaced by a council of town chiefs",
-      "He became a purely political administrator"
-    ],
-    answer: 0,
-    explanation: "After Ehengbuda, the Oba withdrew into a largely ceremonial, ritual-focused semi-divine role."
-  },
-  {
-    question: "Which prince founded the Itsekiri kingdom according to Bini and Itsekiri traditions?",
-    options: [
-      "Oranmiyan",
-      "Evian",
-      "Oba Olua",
-      "Iginua"
-    ],
-    answer: 3,
-    explanation: "Iginua, a 15th-century Benin prince and son of Oba Olua, is credited with founding the Itsekiri kingdom."
-  },
-  {
-    question: "Why did Oba Olua arrange a new kingdom outside Benin for his heir?",
-    options: [
-      "The prince wanted to explore Atlantic trade",
-      "The prince gave disastrous advice that made him deeply unpopular",
-      "The oracle commanded it",
-      "The Uzama tried to assassinate the prince"
-    ],
-    answer: 1,
-    explanation: "The prince's disastrous advice made him deeply unpopular with the Benin people, making it unwise for him to rule there."
-  },
-  {
-    question: "What is the historic capital of the Itsekiri Kingdom?",
-    options: [
-      "Benin River settlement",
-      "Escravos",
-      "Ode Itsekiri",
-      "Forcados"
-    ],
-    answer: 2,
-    explanation: "Ode Itsekiri is the historic capital and traditional seat of the Itsekiri kingdom."
-  },
-  {
-    question: "What title was held by the supreme ruler of the Itsekiri Kingdom?",
-    options: [
-      "Olu",
-      "Ovie",
-      "Amanyanabo",
-      "Oba"
-    ],
-    answer: 0,
-    explanation: "The Itsekiri were uniquely ruled by a centralized monarch styled the Olu."
-  },
-  {
-    question: "What is the name of the advisory council of seven nobles assisting the Itsekiri ruler?",
-    options: [
-      "Nokena",
-      "Oyomesi",
-      "Uzama",
-      "Ojoye"
-    ],
-    answer: 3,
-    explanation: "The Ojoye was the council of seven nobles that assisted the Olu of Itsekiri in governance."
-  },
-  {
-    question: "Which Urhobo tradition claims the Urhobo originated directly from the Ijaw?",
-    options: [
-      "Oogun and Olomu version",
-      "Ughelli, Aghara and Ogo version",
-      "Uwherun, Abraka and Agbon version",
-      "The Benin immigrant version"
-    ],
-    answer: 1,
-    explanation: "The Ughelli, Aghara and Ogo version of Urhobo tradition specifically claims direct Ijaw origin."
-  },
-  {
-    question: "What traditional title is given to the ruler of an individual Urhobo village?",
-    options: [
-      "Ovie",
-      "Zitzu",
-      "Olu",
-      "Oba"
-    ],
-    answer: 0,
-    explanation: "Ovie is the traditional title given to the ruler of an individual Urhobo village."
-  },
-  {
-    question: "How was the adult male population structured in traditional Urhobo society?",
-    options: [
-      "Divided strictly by wealth status",
-      "Separated into seven royal lineages",
-      "Structured into secret hunter societies",
-      "Divided into age sets corresponding with youth, middle age, and elders"
-    ],
-    answer: 3,
-    explanation: "Traditional Urhobo society divided adult males into age sets of youth, middle age, and elders."
-  },
-  {
-    question: "The Eastern Zone is generally characterized by which political structure?",
-    options: [
-      "Federal monarchies",
-      "Theocratic military command centers",
-      "Non-centralised societies",
-      "Strongly centralized empires"
-    ],
-    answer: 2,
-    explanation: "The Eastern Zone is generally characterized by non-centralized, acephalous political societies."
-  },
-  {
-    question: "What major factor stimulated small Ijo villages to develop into states?",
-    options: [
-      "Adoption of the Nri religious system",
-      "The growth of the Atlantic trade",
-      "Invasion by Benin forces",
-      "The introduction of Sharia law"
-    ],
-    answer: 1,
-    explanation: "The growth of the Atlantic trade was the major factor that stimulated Ijo villages to develop into larger states."
-  },
-  {
-    question: "Which term describes the segmentary, kingless way of life historically associated with the Igbo?",
-    options: [
-      "Autocratic",
-      "Despotic",
-      "Acephalous",
-      "Theocratic"
-    ],
-    answer: 2,
-    explanation: "Acephalous means headless — describing the Igbo's traditional system without a central king."
-  },
-  {
-    question: "Which is NOT one of the five Igbo sub-cultural groups?",
-    options: [
-      "The Central Valley Igbo",
-      "The Igbo of eastern Nigeria",
-      "The Western Igbo",
-      "The Northern Igbo"
-    ],
-    answer: 0,
-    explanation: "The actual five groups are Eastern, South-eastern, North-eastern, Western, and Northern Igbo. Central Valley is not one of them."
-  },
-  {
-    question: "Which sacred object symbolized the decentralization of power in traditional Igbo political systems?",
-    options: [
-      "The Etsu staff",
-      "The Aku Uka staff",
-      "The Snail shell",
-      "The Ofo staff"
-    ],
-    answer: 3,
-    explanation: "The Ofo staff symbolized authority and was held by lineage heads, reflecting the decentralized Igbo political system."
-  },
-  {
-    question: "According to the Nri version, who descended from the sky and sailed down the Anambra River?",
-    options: [
-      "Bawo",
-      "Eri",
-      "Tsoede",
-      "Swem"
-    ],
-    answer: 1,
-    explanation: "Eri is the founding ancestor in the Nri version of Igbo origin, said to have descended from the sky."
-  },
-  {
-    question: "Why is it historically difficult to reconcile the various versions of Igbo origin?",
-    options: [
-      "Language was not mutually intelligible",
-      "Igbo society was highly centralized under one king",
-      "British records destroyed oral histories",
-      "The society was acephalous with limited professional historians"
-    ],
-    answer: 3,
-    explanation: "The acephalous nature of Igbo society meant there was no central authority to unify historical accounts, and few professional historians recorded them."
-  },
-  {
-    question: "What was the traditional general assembly where male adults met to make final village decisions?",
-    options: [
-      "Afe Isong",
-      "Nokena",
-      "Amala Oha",
-      "Ofo assembly"
-    ],
-    answer: 2,
-    explanation: "The Amala Oha was the general assembly where all male adults gathered in the village square to make final decisions."
-  },
-  {
-    question: "On what factor was social recognition and responsibility based in traditional Igbo society?",
-    options: [
-      "Individual capability and age",
-      "Royal family background and lineage wealth",
-      "Selection by centralized palace chiefs",
-      "Inheritance from the mother's compound"
-    ],
-    answer: 0,
-    explanation: "Social recognition in traditional Igbo society was based on individual capability and age, reflecting its democratic structure."
-  },
-  {
-    question: "Before the Atlantic trade, what were the two internal divisions of a typical small Ijo settlement?",
-    options: [
-      "Fiefdoms and Garrisons",
-      "Wards (polo) and Households (wari)",
-      "Kindreds and Emirates",
-      "Age groups and Secret cults"
-    ],
-    answer: 1,
-    explanation: "Small Ijo settlements were internally divided into Wards (polo) and Households (wari)."
-  },
-  {
-    question: "What title was given to the head of the lineage that founded an Ijo village site?",
-    options: [
-      "Ovie",
-      "Obong",
-      "Amanyanabo",
-      "Olu"
-    ],
-    answer: 2,
-    explanation: "The Amanyanabo was the head of the founding lineage, a role that later became a political office."
-  },
-  {
-    question: "What socio-political institution uniquely characterized Ijaw societies in response to Atlantic trade?",
-    options: [
-      "The Imperial State Council",
-      "The House System",
-      "The Divine Monarchy",
-      "The Segmentary Lineage Framework"
-    ],
-    answer: 1,
-    explanation: "The House System was a unique Ijaw institution that grew significantly in response to expanding Atlantic trade."
-  },
-  {
-    question: "Which prominent neighboring group to the Efik is one of the three largest ethnic groups in Nigeria?",
-    options: [
-      "The Ibibio",
-      "The Annang",
-      "The Ijo",
-      "The Igbo"
-    ],
-    answer: 3,
-    explanation: "The Igbo are one of Nigeria's three largest ethnic groups and a prominent neighbor of the Efik people."
-  },
-  {
-    question: "The four major Efik settlements came to be collectively known as what?",
-    options: [
-      "Calabar",
-      "Nembe",
-      "Bonny",
-      "Opobo"
-    ],
-    answer: 0,
-    explanation: "The four major Efik settlements — Obio Okot, Atakpa, Obutong, and Nsidung — came to be collectively called Calabar."
-  },
-  {
-    question: "Through what political society was effective authority exercised in pre-colonial Efik communities?",
-    options: [
-      "The Ogboni society",
-      "The Idiong cult",
-      "The Ekpe society",
-      "The Afe Isong society"
-    ],
-    answer: 2,
-    explanation: "The Ekpe society was the dominant political institution through which authority was exercised in pre-colonial Efik communities."
-  },
-  {
-    question: "What does Ibibio traditionally translate to?",
-    options: [
-      "Wealthy and powerful",
-      "Tall or giant",
-      "Eloquent or well-spoken",
-      "Short or brief"
-    ],
-    answer: 3,
-    explanation: "Ibibio traditionally translates to short or brief, referring to their brief and concise way of handling activities."
-  },
-  {
-    question: "What term is used in some Ibibio areas for an extended family or lineage unit?",
-    options: [
-      "Idip",
-      "Ekwere",
-      "Wari",
-      "Polo"
-    ],
-    answer: 1,
-    explanation: "Ekwere is the term used in some Ibibio areas to refer to an extended family or lineage unit."
-  },
-  {
-    question: "What economic staple of the Ibibio region was controlled by the highest-ranking Ekpo members?",
-    options: [
-      "The palm tree",
-      "Yam harvesting",
-      "Iron technology",
-      "Atlantic fishing"
-    ],
-    answer: 0,
-    explanation: "Control of palm trees and their produce was the economic privilege of the highest-ranking Amama in Ekpo society."
-  },
-  {
-    question: "What was the title of the highest-ranking individuals in the Ibibio Ekpo society?",
-    options: [
-      "Zitzu",
-      "Alkali",
-      "Obong",
-      "Amama"
-    ],
-    answer: 3,
-    explanation: "The Amama were the highest-ranking members of the Ibibio Ekpo society who controlled most community wealth."
-  },
-  {
-    question: "How were decisions traditionally enforced in Ibibio villages before colonial chieftaincy?",
-    options: [
-      "By the professional bush garrison army",
-      "By direct vote of all female adults",
-      "By masked Ekpe society members acting as ancestors' messengers",
-      "By the chief legal adviser"
-    ],
-    answer: 2,
-    explanation: "Masked members of the Ekpe society enforced decisions by acting as messengers and representatives of the ancestors."
-  },
-  {
-    question: "What is the name of the earth deity in Ibibio religion, appeased via the Obom ceremony?",
-    options: [
-      "Ikpa Isong",
-      "Swem",
-      "Osanobua",
-      "Ndem"
-    ],
-    answer: 0,
-    explanation: "Ikpa Isong is the earth deity appeased through the Obom ceremony to increase harvests and make children plentiful."
-  },
-  {
-    question: "Which famous missionary helped abolish the killing of twin babies among the Ibibio, Annang, and Oron?",
-    options: [
-      "Peter Farb",
-      "Mary Slessor",
-      "Samuel Bill",
-      "Samuel Johnson"
-    ],
-    answer: 1,
-    explanation: "Mary Slessor, a Scottish missionary, is famous for her role in ending the practice of killing twin babies in the region."
-  },
-  {
-    question: "Which independent church was established by Samuel Bill at Ibeno and later spread to the Middle Belt?",
-    options: [
-      "The Apostolic Church",
-      "The Methodist Church",
-      "The Roman Catholic Church",
-      "The Qua Iboe Church"
-    ],
-    answer: 3,
-    explanation: "Samuel Bill established the Qua Iboe Church at Ibeno, which later spread significantly to the Middle Belt region."
-  },
-  {
-    question: "What is the official written and spoken language variant serving the Ibibio people?",
-    options: [
-      "Kanuri Language",
-      "Urhobo Language",
-      "Ibibio-Efik Language",
-      "Fulfulde Language"
-    ],
-    answer: 2,
-    explanation: "The Ibibio-Efik Language is the official written and spoken language variant used by the Ibibio people."
-  },
-  {
-    question: "How many local government areas do the Annang currently occupy in Akwa Ibom State?",
-    options: [
-      "Eight",
-      "Six",
-      "Twelve",
-      "Four"
-    ],
-    answer: 0,
-    explanation: "The Annang occupy eight out of thirty-one local government areas in Akwa Ibom State."
-  },
-  {
-    question: "What does Idip literally translate to in the Annang social structure?",
-    options: [
-      "Compound",
-      "Womb",
-      "Ancestor",
-      "Village"
-    ],
-    answer: 1,
-    explanation: "Idip literally translates to womb, as individuals locate their place in the social world from the womb."
-  },
-  {
-    question: "In Annang social hierarchy, several ufoks combine to form what unit?",
-    options: [
-      "Idung",
-      "Awio",
-      "Nka",
-      "Ekpuks"
-    ],
-    answer: 3,
-    explanation: "Several ufoks (houses/compounds) combine to form Ekpuks, meaning an extended family unit."
-  },
-  {
-    question: "What is the legislative arm of elderly males governing traditional Annang village life?",
-    options: [
-      "Afe Isong",
-      "Nokena",
-      "Nka",
-      "Oyomesi"
-    ],
-    answer: 0,
-    explanation: "The Afe Isong is the legislative body of elderly males that governed traditional Annang village life."
-  },
-  {
-    question: "What title is given to the first-born female in an Annang family?",
-    options: [
-      "Magira",
-      "Adiaha",
-      "Shaba",
-      "Abia Idiong"
-    ],
-    answer: 1,
-    explanation: "Adiaha is the title given to the first-born female in an Annang family, commanding great respect."
-  },
-  {
-    question: "According to American anthropologist Peter Farb, what does Annang mean?",
-    options: [
-      "The children of the leopard",
-      "They who fight bravely",
-      "They who speak well",
-      "Settlers of the coast"
-    ],
-    answer: 2,
-    explanation: "Peter Farb recorded that Annang means they who speak well, reflecting their reputation for eloquence."
-  },
-  {
-    question: "Besides aesthetics, what was the primary educational purpose of the fattening room for young Annang brides?",
-    options: [
-      "To prepare them for the Ekpe society",
-      "To train them in military defense",
-      "To initiate them into iron technology guilds",
-      "To teach housekeeping, child care, history, and citizenship"
-    ],
-    answer: 3,
-    explanation: "The fattening room served as an educational institution teaching young brides housekeeping, child care, history, and citizenship."
-  },
-  {
-    question: "Why did traditional Annang children historically bear their mothers' names before British colonial changes?",
-    options: [
-      "The society was semi-matriarchal",
-      "The village chief assigned names based on farming plots",
-      "Fathers were forbidden from having names",
-      "Women controlled the Afe Isong assembly"
-    ],
-    answer: 0,
-    explanation: "The Annang society was semi-matriarchal, which is why children traditionally bore their mothers' names."
-  },
-  {
-    question: "In the Twi language of Ghana, what does Annang mean?",
-    options: [
-      "Twin babies",
-      "First daughter",
-      "Fourth son",
-      "Wise elder"
-    ],
-    answer: 2,
-    explanation: "In Twi (Ghana), Annang means fourth son, tracing back to the Annang people's migration history."
-  },
-  {
-    question: "Members of the Eka Abiakpo clan observe a strict food taboo against eating which animal?",
-    options: [
-      "Squirrel",
-      "Turtle",
-      "Snake",
-      "Goat"
-    ],
-    answer: 1,
-    explanation: "Members of the Eka Abiakpo clan observe a strict taboo against eating turtle as part of their cultural tradition."
-  },
-  {
-    question: "What animal did the Afaha clan forbid eating due to its quickness and intelligence?",
-    options: [
-      "Cockerel",
-      "Leopard",
-      "Squirrel",
-      "Turtle"
-    ],
-    answer: 2,
-    explanation: "The Afaha clan forbade eating squirrel, regarding its quickness and intelligence with cultural respect."
-  },
-  {
-    question: "Which liberated slave's 1854 account gave the first written mention of the Annang people?",
-    options: [
-      "Jaja",
-      "Eri",
-      "Tsoede",
-      "Ebengo"
-    ],
-    answer: 3,
-    explanation: "Ebengo, a liberated slave from Nkwot in Abak, provided the first written account of the Annang people recorded by Wilhelm Koelle in 1854."
-  },
-  {
-    question: "Why did King Jaja of Opobo fight the Ikot Udo Obong Wars against the Annangs?",
-    options: [
-      "Trading in palm oil directly with British merchants",
-      "Adopting Christianity",
-      "Migrating into Cross River territory",
-      "Refusing to pay allegiance to the Oba of Benin"
-    ],
-    answer: 0,
-    explanation: "King Jaja fought the Annangs because they were trading palm oil directly with British merchants, bypassing his control."
-  },
-  {
-    question: "In 1945, British authorities blamed leopard attacks in Ikot Okoro on which alleged secret society?",
-    options: [
-      "Idiong Cult",
-      "Ekpeowo (The Human Leopards Society)",
-      "Ogboni Cult",
-      "Ekpe Ndem Isong"
-    ],
-    answer: 1,
-    explanation: "British authorities blamed the Ekpeowo, known as The Human Leopards Society, for the 1945 leopard attacks in Ikot Okoro."
-  },
-  {
-    question: "Which specific geographic feature marks the region North East of where versions of Kanem-Bornu origin are known to be exaggerated?",
-    options: [
-      "The Cross River",
-      "The Benue River",
-      "The Niger River",
-      "The Lake Chad"
-    ],
-    answer: 3,
-    explanation: "Lake Chad is the geographic landmark associated with the Kanem-Bornu region in the North East, where origin traditions are sometimes exaggerated."
-  },
-  {
-    question: "Estimated population of the Hausa people by the year 2000?",
-    options: [
-      "Twenty million",
-      "Ten million",
-      "Fifteen million",
-      "Thirty million"
-    ],
-    answer: 0,
-    explanation: "The Hausa population was estimated at approximately twenty million by the year 2000."
-  },
-  {
-    question: "In Kanem-Bornu's traditional political setup, who was specifically tasked with assisting the King in day-to-day administration?",
-    options: [
-      "The chief judge",
-      "The Galadima",
-      "The King's sister",
-      "The King's mother"
-    ],
-    answer: 2,
-    explanation: "The King's sister held an important administrative role, assisting the Mai in the day-to-day running of the kingdom."
-  },
-  {
-    question: "Which title is explicitly listed as belonging to the servile institution of slaves and eunuchs in Kanem-Bornu?",
-    options: [
-      "Yerima",
-      "Kachella",
-      "Meshema",
-      "Kaigama"
-    ],
-    answer: 1,
-    explanation: "Kachella, alongside titles like Mushemu and Yuroma, belonged to the servile institution of slaves and eunuchs in Kanem-Bornu."
-  },
-  {
-    question: "At which location did Bayajida have a son with the Mai of Bornu's daughter?",
-    options: [
-      "Gobir",
-      "Kano",
-      "Biran",
-      "Daura"
-    ],
-    answer: 2,
-    explanation: "Bayajida had a son called Biran with the Mai of Bornu's daughter, and the town of Biran was named after this son."
-  },
-  {
-    question: "Which new legal role became commonplace during Hausaland's Islamization?",
-    options: [
-      "Alkali",
-      "Dogari",
-      "Madawaki",
-      "Sarkin Kasar"
-    ],
-    answer: 0,
-    explanation: "The rise of Sharia law made the Alkali (Islamic judge) a commonplace and important legal office in Hausaland."
-  },
-  {
-    question: "The original Fulani homeland saw miscegenation between local inhabitants and immigrants of which extraction?",
-    options: [
-      "Egyptian immigrants",
-      "Arab immigrants",
-      "Tuareg immigrants",
-      "Berber immigrants"
-    ],
-    answer: 3,
-    explanation: "In the Senegal River valley, local inhabitants intermingled with Berber immigrants, contributing to the Fulani's mixed heritage."
-  },
-  {
-    question: "What is the singular term the Fulani use to refer to an individual of their ethnic group?",
-    options: [
-      "Fulbe",
-      "Pullo",
-      "Fulo",
-      "Peul"
-    ],
-    answer: 1,
-    explanation: "Pullo is the standard singular term the Fulani use for an individual of their group, while Fulbe is the plural."
-  },
-  {
-    question: "What language term is used to describe the tongue spoken by the Fulani?",
-    options: [
-      "Foulah",
-      "Fellata",
-      "Fulfulde",
-      "Peul"
-    ],
-    answer: 2,
-    explanation: "Fulfulde is the name of the language spoken by the Fulani people across West Africa."
-  },
-  {
-    question: "Around which century did the nomadic Cattle Fulani begin migrating out of the River Senegal valley?",
-    options: [
-      "Twelfth century",
-      "Seventeenth century",
-      "Ninth century",
-      "Fifteenth century"
-    ],
-    answer: 0,
-    explanation: "The nomadic Cattle Fulani began their eastward migration from the Senegal River valley around the twelfth century."
-  },
-  {
-    question: "Most peoples of the Central Zone lived in small non-centralised communities before which year?",
-    options: [
-      "1700",
-      "1600",
-      "1500",
-      "1800"
-    ],
-    answer: 3,
-    explanation: "The majority of Central Zone peoples lived in small, non-centralized communities before 1800."
-  },
-  {
-    question: "At which location did Tsoede establish his very first capital in Nupeland?",
-    options: [
-      "Lima",
-      "Nupako",
-      "Gbara",
-      "Raba"
-    ],
-    answer: 1,
-    explanation: "Tsoede established his first capital at Nupako before the capital was later moved to other locations."
-  },
-  {
-    question: "Which Nupe ruler was deposed after serving an eight-year period in the second half of the 18th century?",
-    options: [
-      "Jaja",
-      "Edegi",
-      "Etsu Jibrilu",
-      "Muazu"
-    ],
-    answer: 3,
-    explanation: "Muazu was deposed after an eight-year rule during the second half of the 18th century."
-  },
-  {
-    question: "By 1800, dynastic wranglings split the Nupe kingdom into two parts centered where?",
-    options: [
-      "Nupako and Gbara",
-      "Lima and Raba",
-      "Idah and Wukari",
-      "Kano and Bornu"
-    ],
-    answer: 1,
-    explanation: "Succession disputes split the Nupe kingdom into two factions centered at Lima and Raba by 1800."
-  },
-  {
-    question: "The pre-colonial Nupe state developed on the north bank of the Niger at its confluence with which river?",
-    options: [
-      "Anambra River",
-      "Cross River",
-      "Kaduna River",
-      "Benue River"
-    ],
-    answer: 2,
-    explanation: "The Nupe state developed at the confluence of the Niger and Kaduna rivers on the north bank."
-  },
-  {
-    question: "Which specific noble title assisted the Etsu Nupe within the upper class?",
-    options: [
-      "Shaba",
-      "Zitzu",
-      "Achadu",
-      "Amanyanabo"
-    ],
-    answer: 0,
-    explanation: "The Shaba, alongside titles like Kpotuh and Maku, was a noble title that assisted the Etsu Nupe in governance."
-  },
-  {
-    question: "The village head (Zitzu) in traditional Nupeland was directly appointed by whom?",
-    options: [
-      "The Council of Elders",
-      "The Etsu",
-      "The Prime Minister",
-      "The Attah of Igala"
-    ],
-    answer: 1,
-    explanation: "The Etsu Nupe directly appointed the Zitzu (village head) as his local representative."
-  },
-  {
-    question: "Which version of Igala origin attributes its emergence to a person believed to have come from the Igbo country?",
-    options: [
-      "Achadu Version",
-      "Abutu Eje Version",
-      "Egyptian Version",
-      "Yoruba Version"
-    ],
-    answer: 0,
-    explanation: "The Achadu Version of Igala origin holds that Achadu came from Igbo country and married the Attah, becoming head of the kingmakers."
-  },
-  {
-    question: "What is the name of the leader of the kingmakers who married the Attah in Igala tradition?",
-    options: [
-      "Tsoede",
-      "Ayagba",
-      "Idoko",
-      "Achadu"
-    ],
-    answer: 3,
-    explanation: "Achadu was the leader of the Igalla-mela (kingmakers) who married the Attah in the Achadu version of Igala origin."
-  },
-  {
-    question: "The administrative power of each individual Igalla Mela territory was compared to which Yoruba socio-political body?",
-    options: [
-      "The Baales",
-      "The Ogboni Cult",
-      "The Oyomesi",
-      "The Ilari"
-    ],
-    answer: 2,
-    explanation: "Each Igalla Mela territory's power was compared to the Oyomesi of the Yoruba and also to Benin's Uzama Nihiron."
-  },
-  {
-    question: "The traditional political structure of the Jukun people operated under which type of governance system?",
-    options: [
-      "A theocratic system",
-      "A military dictatorship",
-      "A decentralized segmentation",
-      "A direct democracy"
-    ],
-    answer: 0,
-    explanation: "The Jukun operated a theocratic system where the Aku Uka combined divine and political authority."
-  },
-  {
-    question: "What physical factor did Jukun subjects use to judge and potentially bring down the Aku Uka's popularity?",
-    options: [
-      "His collection of tribute from lineages",
-      "The quality of the agricultural harvest",
-      "His performance in cross-border trade",
-      "The number of external military raids"
-    ],
-    answer: 1,
-    explanation: "The quality of the agricultural harvest was used as a measure of the Aku Uka's divine favor and popularity."
-  },
-  {
-    question: "Which historical document is the most authentic source confirming Jukun raids on Hausaland and Bornu?",
-    options: [
-      "The History of the Yorubas",
-      "The Koelle Account",
-      "The Noah Records",
-      "The Kano Chronicle"
-    ],
-    answer: 3,
-    explanation: "The Kano Chronicle is cited as the most authentic historical document confirming Jukun (Kwararafa) raids on Hausaland and Bornu."
-  },
-  {
-    question: "Which noble title served as second-in-command to the Achuwo in the Jukun Council of Nobles?",
-    options: [
-      "Kinda Achuwo",
-      "Aku Nako",
-      "Abo Zike",
-      "Zitzu"
-    ],
-    answer: 2,
-    explanation: "The Abo Zike served as second-in-command to the Achuwo in the Jukun Council of Nobles."
-  },
-  {
-    question: "Per P. Bohannan's book, which regions flank the southern and eastern portions of the Tiv country?",
-    options: [
-      "The plains of the Senegal valley",
-      "The creeks of the Niger Delta",
-      "The banks of the Kaduna River",
-      "The foothills of the Cameroon highlands"
-    ],
-    answer: 3,
-    explanation: "P. Bohannan described the foothills of the Cameroon highlands as flanking the southern and eastern portions of Tiv country."
-  },
-  {
-    question: "In the hierarchical layout of Tiv segmentary society, which unit sits at the lowest level?",
-    options: [
-      "The family",
-      "The individual",
-      "The clan",
-      "The kindred"
-    ],
-    answer: 1,
-    explanation: "The individual sits at the lowest level of Tiv segmentary society, with family, kindred, and larger units above."
-  },
-  {
-    question: "Which Christian groups extended the designation 'Yoruba' to dialect groups other than Oyo from the 19th century onward?",
+    question: "Western formal education was first introduced into Nigeria by:",
     options: [
       "Christian missionaries",
-      "Portuguese explorers",
-      "British military officers",
-      "Islamic scholars"
+      "Traditional rulers",
+      "Islamic scholars",
+      "The colonial government"
     ],
     answer: 0,
-    explanation: "Christian missionaries from the 19th century extended the term Yoruba beyond Oyo speakers to include other related dialect groups."
+    explanation: "Christian missionaries established the earliest formal Western schools in Nigeria, beginning in the coastal areas in the 19th century."
   },
   {
-    question: "Per Muhammad Bello's account, the ancestors of the Yoruba were a negroid race ejected from which region?",
+    question: "The first Western-style school in Nigeria was established in:",
     options: [
-      "Cameroon",
-      "Ghana",
-      "The Middle East",
-      "Egypt"
-    ],
-    answer: 2,
-    explanation: "Muhammad Bello recorded that the Yoruba's ancestors were a negroid race ejected from the Middle East region."
-  },
-  {
-    question: "Who was the provincial ruler of Ilorin that led the rebellion against Alaafin Awole, leading to Oyo's collapse?",
-    options: [
-      "Oranmiyan",
-      "Afonja",
-      "Abiodun",
-      "Lamurudu"
+      "Kano",
+      "Badagry",
+      "Calabar",
+      "Lagos"
     ],
     answer: 1,
-    explanation: "Afonja, the provincial ruler of Ilorin, led the rebellion against Alaafin Awole which contributed to the eventual collapse of the Oyo Empire."
+    explanation: "The first mission school, Nursery of the Infant Church, was established in Badagry in 1843 by Methodist missionaries."
   },
   {
-    question: "What was the final expectation for an Alaafin formally deposed by the Oyomesi council?",
+    question: "Quranic (Islamic) education in Northern Nigeria historically emphasized:",
     options: [
-      "He was expected to commit suicide",
-      "He became an Ogboni priest",
-      "He was demoted to a provincial Baale",
-      "He was exiled to the Middle East"
+      "Memorization and study of the Quran and Arabic literacy",
+      "Western science",
+      "Vocational carpentry only",
+      "Physical education"
     ],
     answer: 0,
-    explanation: "An Alaafin who was formally deposed by the Oyomesi was expected to commit suicide by accepting an empty calabash as the signal."
+    explanation: "Traditional Islamic education (Almajiri system) centered on Quranic memorization, Arabic language, and Islamic jurisprudence."
   },
   {
-    question: "What arm of Yoruba government played a mediatory role in conflicts between the Oyomesi and the Alaafin?",
+    question: "The Ashby Commission of 1959 was set up to:",
     options: [
-      "The Ilari agents",
-      "The Titled Nobility",
-      "The Army",
-      "The Ogboni Cult"
+      "Draft Nigeria's independence constitution",
+      "Establish the Central Bank of Nigeria",
+      "Review and plan Nigeria's higher education needs",
+      "Create Nigeria's first political parties"
+    ],
+    answer: 2,
+    explanation: "The Ashby Commission investigated Nigeria's needs in higher education, leading to the establishment of more universities post-independence."
+  },
+  {
+    question: "Education is linked to national development mainly because it:",
+    options: [
+      "Increases population growth",
+      "Eliminates the need for governance",
+      "Reduces the number of ethnic groups",
+      "Develops human capital necessary for socio-economic progress"
     ],
     answer: 3,
-    explanation: "The Ogboni Cult served as a mediatory body, balancing power between the Oyomesi council and the Alaafin."
+    explanation: "Education builds skills, knowledge, and critical thinking that drive economic productivity, innovation, and civic participation — key pillars of national development."
   },
   {
-    question: "What title was given to the Alaafin's personal secret agents deployed across Oyo provinces?",
+    question: "The pre-colonial Nigerian economy was primarily based on:",
     options: [
-      "Baale",
-      "Dogari",
-      "Ilari",
-      "Shaba"
-    ],
-    answer: 2,
-    explanation: "The Ilari were the Alaafin's personal secret agents, deployed across Oyo provinces to monitor and report on provincial rulers."
-  },
-  {
-    question: "Which European traveler arrived in Benin during King Ozolua's reign in 1484?",
-    options: [
-      "Alfonso de Aviero",
-      "Samuel Bill",
-      "Ruy de Sequeira",
-      "Mary Slessor"
-    ],
-    answer: 0,
-    explanation: "Alfonso de Aviero arrived in Benin in 1484 during the reign of King Ozolua, following the earlier visit of Ruy de Sequeira."
-  },
-  {
-    question: "Between which years did Benin historically exchange formal ambassadors with the Portuguese?",
-    options: [
-      "1604 and 1608",
-      "1440 and 1473",
-      "1481 and 1504",
-      "1300 and 1350"
-    ],
-    answer: 2,
-    explanation: "Benin and Portugal formally exchanged ambassadors between 1481 and 1504, a period of active diplomatic and trade relations."
-  },
-  {
-    question: "Per Egharevba's version, from which country did the Bini originally emigrate before settling at Ile-Ife?",
-    options: [
-      "Israel",
-      "Egypt",
-      "Mecca",
-      "Baghdad"
+      "Industrial manufacturing",
+      "Agriculture, trade, and craft production",
+      "Oil exports",
+      "Banking and finance"
     ],
     answer: 1,
-    explanation: "Egharevba's account records that the Bini originally emigrated from Egypt before eventually settling at Ile-Ife."
+    explanation: "Before colonization, Nigerian communities relied on farming, local and long-distance trade including trans-Saharan trade, and craftsmanship such as weaving and blacksmithing."
   },
   {
-    question: "Who was the first Ogiso ruler of pre-colonial Bini history?",
+    question: "The Trans-Saharan trade route connected pre-colonial Northern Nigeria with:",
     options: [
-      "Owodo",
-      "Ere",
-      "Orire",
-      "Igbodo"
-    ],
-    answer: 3,
-    explanation: "Igbodo was the first Ogiso (sky king) ruler in pre-colonial Bini history, founding the earliest known Benin dynasty."
-  },
-  {
-    question: "Which Ogiso ruler formed the guild system and laid the foundation for the Benin kingdom?",
-    options: [
-      "Eweka I",
-      "Ere",
-      "Owodo",
-      "Igbodo"
-    ],
-    answer: 1,
-    explanation: "Ere is credited with forming the guild system and laying the administrative foundation of the Benin kingdom."
-  },
-  {
-    question: "What form of government was temporarily established by elders during the interregnum after the Ogiso dynasty ended?",
-    options: [
-      "A segmentary assembly",
-      "A theocratic autocracy",
-      "A republican government",
-      "A divine monarchy"
+      "Southern Africa",
+      "Europe directly",
+      "North Africa and the Mediterranean world",
+      "The Americas"
     ],
     answer: 2,
-    explanation: "A republican government was temporarily established by the elders after the Ogiso dynasty ended and before a new ruling house was found."
+    explanation: "The Trans-Saharan trade linked Northern Nigerian kingdoms like Kanem-Borno to North African markets, exchanging goods such as salt, gold, and slaves."
   },
   {
-    question: "Who attempted to usurp the Benin throne by nominating his own son Ogiamen to succeed him?",
+    question: "The colonial economy in Nigeria was primarily structured to:",
     options: [
-      "Evian",
-      "Ekaladeran",
-      "Oranmiyan",
-      "Ooni of Ife"
-    ],
-    answer: 0,
-    explanation: "Evian, placed in charge as a caretaker, attempted to usurp the throne by putting forward his son Ogiamen as successor."
-  },
-  {
-    question: "Archaeological evidence supports the traditional view that the Benin kingdom was established during which century?",
-    options: [
-      "Seventeenth century",
-      "Eleventh century",
-      "Fifteenth century",
-      "Thirteenth century"
+      "Promote industrialization within Nigeria",
+      "Encourage Nigerian self-sufficiency",
+      "Establish Nigeria as a manufacturing hub",
+      "Extract raw materials for the benefit of the metropole (Britain)"
     ],
     answer: 3,
-    explanation: "Archaeological evidence supports the 13th century as the period when the Benin kingdom was established."
+    explanation: "Colonial economic policy was extractive, focused on exporting raw materials like palm oil, cocoa, and groundnuts to Britain while importing finished goods."
   },
   {
-    question: "Bini political and cultural influence peaked under kings who maintained what military practice?",
+    question: "The discovery of crude oil in commercial quantity in Nigeria occurred in Oloibiri in the year:",
     options: [
-      "Deploying naval canoes on the Cross River",
-      "Leading their armies to war in person",
-      "Using cavalry from Oyo",
-      "Hiring mercenaries from the Central Zone"
-    ],
-    answer: 1,
-    explanation: "Bini influence peaked when kings personally led their armies to war, a practice started by Ewuare and ended after Ehengbuda's death."
-  },
-  {
-    question: "After kings stopped leading wars personally, how often did the semi-divine Oba emerge from his palace?",
-    options: [
-      "Once or twice a year",
-      "Every eighth day",
-      "Only during the Bere festival",
-      "Never after coronation"
+      "1956",
+      "1960",
+      "1946",
+      "1970"
     ],
     answer: 0,
-    explanation: "After kings withdrew from leading armies, the Oba emerged from his palace only once or twice a year for important ceremonies."
+    explanation: "Shell-BP discovered oil in commercial quantities at Oloibiri, in present-day Bayelsa State, in 1956."
   },
   {
-    question: "Linguistic classification groups the Urhobo, Ishan, Ivbiosakon, Etsako, and Isoko into which category?",
+    question: "Nigeria's over-dependence on oil revenue is often criticized because it:",
     options: [
-      "Yoruba-speaking groups",
-      "Igbo-speaking groups",
-      "Ijo-speaking groups",
-      "Edo-speaking groups"
-    ],
-    answer: 3,
-    explanation: "The Urhobo, Ishan, Ivbiosakon, Etsako, and Isoko are all classified as Edo-speaking groups."
-  },
-  {
-    question: "To which geographic area was Prince Iginuwa sent by canoe after meeting some local Ijaws?",
-    options: [
-      "The foothills of Cameroon",
-      "The confluence of River Kaduna",
-      "An Island by the sea",
-      "The open village square of Wukari"
+      "Increased manufacturing output",
+      "Diversified the economy successfully",
+      "Led to neglect of agriculture and other sectors",
+      "Eliminated corruption"
     ],
     answer: 2,
-    explanation: "After meeting local Ijaws, Prince Iginuwa was guided by canoe to an island by the sea where he founded the Itsekiri kingdom."
+    explanation: "The oil boom led to the neglect of agriculture and manufacturing, a phenomenon often referred to as the resource curse or Dutch disease."
   },
   {
-    question: "Why did the Urhobo, unlike the Itsekiri and Benin, never establish a single centralized kingdom?",
+    question: "Indigenous religions in pre-colonial Nigeria were largely characterized by:",
     options: [
-      "Rejected iron technology",
-      "Fragmented, living in different places across the Niger Delta",
-      "Language completely unintelligible between villages",
-      "Banned from creating titles by the Oba"
-    ],
-    answer: 1,
-    explanation: "The Urhobo remained fragmented and scattered across the Niger Delta, which prevented the formation of a single centralized kingdom."
-  },
-  {
-    question: "In the sub-cultural grouping of the Igbo, which classification applies to the Delta Igbo?",
-    options: [
-      "The South-eastern Igbo",
-      "The Igbo of eastern Nigeria",
-      "The Western Igbo",
-      "The Northern Igbo"
-    ],
-    answer: 2,
-    explanation: "The Delta Igbo, including groups like the Onitsha Igbo and those on the far side of the Niger, are classified as Western Igbo."
-  },
-  {
-    question: "Per Nri oral tradition, down which river did the ancestor Eri sail before arriving at Aguleri?",
-    options: [
-      "Anambra River",
-      "Niger River",
-      "Benue River",
-      "Kaduna River"
-    ],
-    answer: 0,
-    explanation: "According to Nri oral tradition, Eri sailed down the Anambra River before arriving at Aguleri."
-  },
-  {
-    question: "The Israeli version of Igbo origin bases its assumptions on what specific indicator?",
-    options: [
-      "Architectural remnants in Orlu",
-      "Royal lineages traceable to Mecca",
-      "Written manuscripts in colonial records",
-      "Similarities between Igbo and ancient Hebrew cultures"
+      "Atheism",
+      "Monotheism only",
+      "Organized centralized churches",
+      "Belief in a Supreme Being, ancestral spirits, and deities"
     ],
     answer: 3,
-    explanation: "The Israeli version of Igbo origin is based on observed cultural and linguistic similarities between the Igbo and ancient Hebrew peoples."
+    explanation: "Traditional Nigerian religions typically involved belief in a Supreme Being, lesser gods/deities, and ancestor veneration, expressed through rituals and festivals."
   },
   {
-    question: "In small pre-colonial Ijo settlements, each individual ward was known locally as what?",
+    question: "Islam was introduced into Northern Nigeria primarily through:",
     options: [
-      "Idip",
-      "Wari",
-      "Polo",
-      "Ekpuk"
-    ],
-    answer: 2,
-    explanation: "In small Ijo settlements, individual wards were known as Polo, while households within them were called Wari."
-  },
-  {
-    question: "What is the alternative spelling or variant name for the Eket dialect?",
-    options: [
-      "Annang",
-      "Ibeno",
-      "Oron",
-      "Ekid"
-    ],
-    answer: 3,
-    explanation: "Ekid is the alternative spelling and variant name used for the Eket dialect group."
-  },
-  {
-    question: "During which historical period was the Ibibio Union formed to ask for British recognition as a sovereign State?",
-    options: [
-      "Pre-colonial period",
-      "Colonial period",
-      "Post-colonial period",
-      "Independence era"
+      "British colonial administrators",
+      "Trans-Saharan trade and Arab/Berber influence",
+      "Portuguese missionaries",
+      "American missionaries"
     ],
     answer: 1,
-    explanation: "The Ibibio Union was formed during the colonial period when the Ibibio sought British recognition as a sovereign political entity."
+    explanation: "Islam spread into Northern Nigeria via trade routes across the Sahara, facilitated by Arab and Berber traders and scholars from as early as the 11th century."
   },
   {
-    question: "Because of their larger population, which group holds primary political control over Akwa Ibom State?",
+    question: "The Sokoto Jihad led by Usman Dan Fodio in 1804 primarily aimed to:",
     options: [
-      "The Ibibio people",
-      "The Efiks",
-      "The Oron community",
-      "The Annangs"
+      "Reform and purify Islamic practice and establish an Islamic state",
+      "Establish British rule",
+      "Create the Yoruba kingdom",
+      "Introduce Christianity"
     ],
     answer: 0,
-    explanation: "The Ibibio people, being the largest population group, hold primary political control in Akwa Ibom State."
+    explanation: "Dan Fodio's jihad sought to purify Islamic practices among the Hausa states and establish the Sokoto Caliphate governed by Islamic law."
   },
   {
-    question: "What is the dialectal term for 'family' used in some specific areas of Ibibio land?",
+    question: "Christianity was reintroduced to Nigeria in the 19th century primarily through:",
     options: [
-      "Idung",
-      "Ekwere",
-      "Awio",
-      "Ekpuk"
-    ],
-    answer: 1,
-    explanation: "Ekwere is a dialectal term used in some Ibibio areas to mean family or lineage unit."
-  },
-  {
-    question: "In the Eastern Ibibio Ikono area, what is a goat called as opposed to 'ebot' elsewhere?",
-    options: [
-      "Iwud",
-      "Ibuot",
-      "Ulok",
-      "Ibut"
+      "Trans-Saharan traders",
+      "The Sokoto Caliphate",
+      "The Benin Kingdom",
+      "European missionary societies"
     ],
     answer: 3,
-    explanation: "In the Ikono area of Eastern Ibibio, a goat is called Ibut rather than the Ebot used in other Ibibio communities."
+    explanation: "European and returnee ex-slave missionaries reintroduced Christianity to coastal Nigeria in the 19th century, following earlier Portuguese attempts in the 15th-16th centuries."
   },
   {
-    question: "Which word means 'house' in Ibeno while other Ibibio groups say 'ufok'?",
+    question: "Religion has contributed to national development in Nigeria primarily through:",
     options: [
-      "Ulok",
-      "Polo",
-      "Ikot",
-      "Wari"
+      "Establishment of schools, hospitals, and moral value systems",
+      "Fueling ethnic division only",
+      "Discouraging trade",
+      "Preventing education"
     ],
     answer: 0,
-    explanation: "In Ibeno, the word Ulok means house, while most other Ibibio communities use the word Ufok."
+    explanation: "Both Christian and Islamic institutions historically built schools and hospitals and promoted moral and social values that contributed to societal development."
   },
   {
-    question: "Besides 'the house of' or 'the people of', what is another literal meaning of 'Ikot' in Ibibio land?",
+    question: "Religious pluralism in Nigeria, while enriching, has also been a source of:",
     options: [
-      "River",
-      "Sea",
-      "Bush",
-      "Sky"
-    ],
-    answer: 2,
-    explanation: "Besides meaning the house of or the people of, Ikot also literally means bush in Ibibio land."
-  },
-  {
-    question: "How do the highest-ranking wealthy Amama members limit economic gain for most other community members?",
-    options: [
-      "Controlling iron technology guilds",
-      "Collecting heavy cash taxes",
-      "Banning external trade with Europeans",
-      "Appropriating hundreds of acres of palm tree for their own use"
-    ],
-    answer: 3,
-    explanation: "The Amama appropriate hundreds of acres of palm trees for their exclusive use, limiting the economic opportunities of other community members."
-  },
-  {
-    question: "What social obligation does the Ekpo society require of initiates to foster an appearance of wealth redistribution?",
-    options: [
-      "Sponsoring feasts for the town to provide the poor with food and drink",
-      "Building houses for widows",
-      "Giving free farmland to family members",
-      "Paying cash tributes to the village head"
-    ],
-    answer: 0,
-    explanation: "Ekpo society initiates are required to sponsor feasts for the whole town, creating an appearance of wealth redistribution."
-  },
-  {
-    question: "What prevents most Ibibio people from accusing masked Ekpo members who overstep boundaries during policing duties?",
-    options: [
-      "Strict British colonial laws",
-      "Fear of retribution from the ancestors",
-      "Severe cash fines from the state chief judge",
-      "Fear of the bush garrison army"
+      "Economic growth exclusively",
+      "Inter-religious tension and conflict",
+      "National unity only",
+      "Educational advancement only"
     ],
     answer: 1,
-    explanation: "Fear of retribution from the ancestors prevents community members from openly accusing masked Ekpo members who overstep their boundaries."
+    explanation: "Nigeria's religious diversity has at times fueled tension, particularly where religion intersects with ethnic and political interests."
   },
   {
-    question: "What is required for an Ibibio male to move into the politically influential grades of the Ekpo society?",
+    question: "Socio-political rights refer to:",
     options: [
-      "He must marry the first-born daughter of the chief",
-      "He must belong to the original royal lineage",
-      "He must have access to wealth",
-      "He must complete a period in the bush garrison"
+      "Rights limited to voting only",
+      "Rights only for traditional rulers",
+      "Entitlements guaranteeing citizens' participation in social and political life",
+      "Economic privileges of the elite"
     ],
     answer: 2,
-    explanation: "Access to wealth is the key requirement for an Ibibio male to advance into the politically influential higher grades of the Ekpo society."
+    explanation: "Socio-political rights encompass freedoms such as expression, association, and political participation that enable citizens to engage meaningfully in society and governance."
   },
   {
-    question: "What is the name of the Ibibio earth deity appeased to make children plentiful and increase the harvest?",
+    question: "In pre-colonial Nigerian societies, moral values were primarily transmitted through:",
     options: [
-      "Swem",
-      "Osanobua",
-      "Ndem Isong",
-      "Ikpa Isong"
+      "Colonial legislation",
+      "Formal written law codes",
+      "The internet",
+      "Oral tradition, proverbs, and customs"
     ],
     answer: 3,
-    explanation: "Ikpa Isong is the earth deity appeased through the Obom ceremony to increase harvests and make children plentiful."
+    explanation: "Moral and ethical values in traditional Nigerian societies were passed down through oral traditions, storytelling, proverbs, and communal customs."
   },
   {
-    question: "How often and for how long is the Obom ceremony performed by each section of an Ibibio village?",
+    question: "The 1999 Nigerian Constitution (as amended) guarantees fundamental human rights in:",
     options: [
-      "End of year, every seventh day for seven weeks",
-      "In the middle of the year, every eighth day for eight weeks",
-      "Once a year for twelve consecutive days",
-      "During the Bere festival for three days"
+      "Chapter IV",
+      "Chapter VI",
+      "Chapter II",
+      "Chapter I"
+    ],
+    answer: 0,
+    explanation: "Chapter IV of the 1999 Constitution specifically outlines the Fundamental Human Rights of Nigerian citizens, including rights to life, dignity, and freedom of expression."
+  },
+  {
+    question: "Chapter II of the 1999 Constitution, dealing with Fundamental Objectives and Directive Principles of State Policy, is:",
+    options: [
+      "Applicable only to state governors",
+      "Fully justiciable in court",
+      "Non-justiciable",
+      "Applicable only to the military"
+    ],
+    answer: 2,
+    explanation: "Chapter II provisions are considered directive principles guiding government policy but are non-justiciable, meaning citizens cannot sue to enforce them directly in court."
+  },
+  {
+    question: "The right to freedom of expression in Nigeria is important for national development because it:",
+    options: [
+      "Limits citizen participation",
+      "Enables accountability and civic engagement",
+      "Encourages authoritarian rule",
+      "Prevents economic growth"
     ],
     answer: 1,
-    explanation: "The Obom ceremony is performed in the middle of the year, every eighth day for eight weeks by each section of the village."
+    explanation: "Freedom of expression allows citizens to hold leaders accountable, participate in public discourse, and contribute to democratic governance."
   },
   {
-    question: "The Ibibio, Annang, and Oron nations historically practiced killing twins and left them where?",
+    question: "Social justice in the Nigerian context primarily refers to:",
     options: [
-      "In their community's local evil forest",
-      "At the entrance of the village square",
-      "Outside the city walls of the capital state",
-      "In the middle of the local river confluence"
-    ],
-    answer: 0,
-    explanation: "Twin babies were killed and left in the community's local evil forest, a practice that was later abolished through missionary work."
-  },
-  {
-    question: "Which European church did Samuel Bill establish at Ibeno, which later spread to the Middle Belt?",
-    options: [
-      "The Presbyterian Church",
-      "The Methodist Church",
-      "The Qua Iboe Church",
-      "The Apostolic Church"
+      "Military rule",
+      "Preferential treatment for one ethnic group",
+      "Fair and equitable treatment, access to resources and opportunities for all citizens",
+      "Equal distribution of wealth only"
     ],
     answer: 2,
-    explanation: "Samuel Bill established the Qua Iboe Church at Ibeno, which later spread significantly into the Middle Belt region of Nigeria."
+    explanation: "Social justice involves fairness in the distribution of resources, opportunities, and privileges, and equal treatment under the law regardless of ethnicity, religion, or status."
   },
   {
-    question: "Which independent church came into the Ibibio area in the second half of the 20th century?",
+    question: "The Federal Character Principle in Nigeria was introduced primarily to:",
     options: [
-      "Deeper Life Bible Church",
-      "The Qua Iboe Church",
-      "The Roman Catholic Church",
-      "The Anglican Church"
+      "Abolish the federal system",
+      "Ensure equitable representation of Nigeria's diverse groups in government and public institutions",
+      "Reduce the number of states",
+      "Promote a single ethnic group's dominance"
+    ],
+    answer: 1,
+    explanation: "The Federal Character Principle aims to prevent domination by a few groups and ensure fair representation of all Nigerian groups in public appointments."
+  },
+  {
+    question: "Which historical event highlighted the struggle for social justice among Nigerian women in the colonial era?",
+    options: [
+      "The Aba Women's Riot of 1929",
+      "The Sokoto Jihad",
+      "The Berlin Conference",
+      "Amalgamation of 1914"
     ],
     answer: 0,
-    explanation: "The Deeper Life Bible Church entered the Ibibio area in the second half of the 20th century as an independent Pentecostal church."
+    explanation: "The Aba Women's Riot was a protest by Igbo and Ibibio women against colonial taxation policies and the warrant chief system, symbolizing resistance for justice and rights."
   },
   {
-    question: "What represents the greatest works of art in traditional Ibibio society?",
+    question: "National integration in Nigeria is challenged mainly by:",
     options: [
-      "Architectural pillars of palace chiefs",
-      "Bronze castings of divine rulers",
-      "The masks and accoutrements of the Ekpe society",
-      "Terracotta figures in the evil forest"
-    ],
-    answer: 2,
-    explanation: "The masks and accoutrements of the Ekpe society are considered the greatest works of art in traditional Ibibio society."
-  },
-  {
-    question: "What are the four major pre-colonial Efik settlements collectively referred to as Calabar?",
-    options: [
-      "Abak, Ikot Ekpene, Essien Udim, and Ukanafun",
-      "Bonny, Kalabari, Opobo, and Brass-Nembe",
-      "Idah, Wukari, Gbara, and Raba",
-      "Obio Okot, Atakpa, Obutong, and Nsidung"
+      "Absence of natural resources",
+      "Lack of a written constitution",
+      "Uniform culture across the country",
+      "Ethnic, religious, and regional diversity coupled with resource competition"
     ],
     answer: 3,
-    explanation: "The four major Efik settlements of Obio Okot, Atakpa, Obutong, and Nsidung came to be collectively known as Calabar."
+    explanation: "Nigeria's deep ethnic, religious, and regional diversity, combined with competition over resources and political power, poses ongoing challenges to national unity."
   },
   {
-    question: "What titular head style was given to leaders of the various Efik communities?",
+    question: "The concept of 'unity in diversity' as applied to Nigeria emphasizes:",
     options: [
-      "The Attah",
-      "The Obong",
-      "The Mai",
-      "The Etsu"
-    ],
-    answer: 1,
-    explanation: "The Obong was the titular head style given to leaders of the various Efik communities in pre-colonial times."
-  },
-  {
-    question: "Since polygamy is practiced in Annang society, individuals tracing ancestry to the same parents form what unit?",
-    options: [
-      "Idip",
-      "Idung",
-      "Ufok",
-      "Ekpuk"
-    ],
-    answer: 2,
-    explanation: "Individuals tracing ancestry to the same parents in a polygamous Annang household form the Ufok (house or compound) unit."
-  },
-  {
-    question: "In the Annang clan layout, several Ekpuks combine to form what unit?",
-    options: [
-      "Ufok",
-      "Idung",
-      "Awio",
-      "Nka"
-    ],
-    answer: 1,
-    explanation: "Several Ekpuks (extended families) combine to form an Idung, meaning village, in the Annang social structure."
-  },
-  {
-    question: "Leadership at the family, lineage, village, or clan level in traditional Annang society remains the prerogative of whom?",
-    options: [
-      "The men",
-      "The female chief priests",
-      "The titled palace chiefs",
-      "The first-born daughters"
+      "Peaceful coexistence and cooperation despite cultural differences",
+      "Elimination of ethnic differences",
+      "Isolation of ethnic groups",
+      "Dominance of one culture over others"
     ],
     answer: 0,
-    explanation: "Leadership at all levels of traditional Annang society — family, lineage, village, and clan — is the prerogative of men."
+    explanation: "Unity in diversity promotes the idea that Nigeria's different ethnic and cultural groups can coexist harmoniously while contributing collectively to national development."
   },
   {
-    question: "Who directs the legislative arm of elderly males (Afe Isong) as head and chief executive of an Annang village or clan?",
+    question: "The 1999 Constitution's provision for 'Federal Character' is most directly linked to promoting which value?",
     options: [
-      "The Galadima",
-      "The Abia Idiong",
-      "The Akwo Annang",
-      "The Obong or Obong Isong"
-    ],
-    answer: 3,
-    explanation: "The Obong or Obong Isong heads and directs the Afe Isong as the chief executive of an Annang village or clan."
-  },
-  {
-    question: "What is the role of Annang female chief priests in the traditional Idiong cult?",
-    options: [
-      "Abia Idiong",
-      "Abi-de",
-      "Afe Isong",
-      "Adiaha"
-    ],
-    answer: 0,
-    explanation: "Female chief priests in the Annang traditional Idiong cult hold the title Abia Idiong."
-  },
-  {
-    question: "Which specific women's organizations give Annang women a strong voice and status in society?",
-    options: [
-      "Wari and Polo",
-      "Abi-de, Nyaama, and Isong Iban",
-      "Oyomesi and Ogboni",
-      "Nokena and Amala Oha"
-    ],
-    answer: 1,
-    explanation: "The women's organizations Abi-de, Nyaama, and Isong Iban give Annang women a strong collective voice and social status."
-  },
-  {
-    question: "What complimentary term is given in Annang land to an individual with the gift of eloquent speech?",
-    options: [
-      "Obong Isong",
-      "Abia Idiong",
-      "Akwo Annang",
-      "Adiaha"
+      "Military governance",
+      "Regional secession",
+      "Equity and inclusiveness in national development",
+      "Ethnic marginalization"
     ],
     answer: 2,
-    explanation: "Akwo Annang is the complimentary title given to an individual in Annang land who is gifted with eloquent speech."
+    explanation: "Federal Character ensures inclusiveness by preventing any single ethnic or regional group from monopolizing government positions and resources, fostering national cohesion."
   },
   {
-    question: "Plump women were seen as beautiful by the Annangs because it historically indicated what?",
+    question: "A major lesson from Nigeria's pre-colonial political systems for contemporary governance is:",
     options: [
-      "She was a high-ranking Ekpe member",
-      "She was chosen by the earth deity Ikpa Isong",
-      "She belonged to the founding village lineage",
-      "She came from a well-to-do home and her husband was well-to-do"
+      "Centralized systems are always superior",
+      "Only monarchy works in Africa",
+      "Traditional systems have no relevance today",
+      "Different governance structures (centralized and decentralized) can effectively organize society when suited to context"
     ],
     answer: 3,
-    explanation: "Plumpness was a sign of wealth and good living, indicating that the woman came from a prosperous home and had a well-to-do husband."
+    explanation: "Nigeria's pre-colonial history shows diverse successful governance models, demonstrating that governance structures should fit societal context."
   },
   {
-    question: "Which European social thinker divided world cultures into primitive and civilized, classifying European culture as advanced?",
+    question: "The overarching goal of studying Nigerian Peoples and Culture (GST 112) is to:",
     options: [
-      "Peter Farb",
-      "Wilhelm Koelle",
-      "Augustus Comte",
-      "Professor Brink"
-    ],
-    answer: 2,
-    explanation: "Augustus Comte, a European social thinker, divided world cultures into primitive and civilized categories, placing European culture at the top."
-  },
-  {
-    question: "Why did traditional Annang children bear female names that were later androgenized into male names?",
-    options: [
-      "Names were assigned exclusively by female chief priests",
-      "The society was semi-matriarchal before Christian missionaries altered it",
-      "British colonial laws forced women into the military",
-      "Fathers lost naming rights during the Ikot Udo Obong Wars"
+      "Promote a single ethnic identity",
+      "Foster mutual understanding, national consciousness, and unity among Nigerian students",
+      "Discourage cultural diversity",
+      "Focus solely on colonial history"
     ],
     answer: 1,
-    explanation: "The Annang society was semi-matriarchal before Christian missionaries arrived and altered naming traditions."
-  },
-  {
-    question: "Oral tradition notes the Annangs started their long migration from Egypt around which year?",
-    options: [
-      "1500 BC",
-      "4000 BC",
-      "1904 AD",
-      "7500 BC"
-    ],
-    answer: 3,
-    explanation: "Annang oral tradition places the beginning of their long migration from Egypt at approximately 7500 BC."
-  },
-  {
-    question: "Which clan was first to come to the northern range of Annang from Eka Abiakpo?",
-    options: [
-      "The Abiakpo clan",
-      "The Ukana clan",
-      "The Ebom clan",
-      "The Utu clan"
-    ],
-    answer: 0,
-    explanation: "The Abiakpo clan was the first to come to the northern range of Annang territory from Eka Abiakpo."
-  },
-  {
-    question: "The British lumped several northern Annang clans together under what name?",
-    options: [
-      "Abak",
-      "Province",
-      "Egbo-Sharry",
-      "Otoro"
-    ],
-    answer: 3,
-    explanation: "The British lumped the northern Annang clans of Ukana, Utu, Ekpu, Ebom, and Nyama together under the collective name Otoro."
-  },
-  {
-    question: "Per oral tradition, the ancestors of the Akwa Cross people were Jews of the Northern Kingdom who left Israel for Egypt before what event?",
-    options: [
-      "The Babylonian captivity",
-      "The Fulani jihad",
-      "The British colonial invasion",
-      "The Atlantic trade era"
-    ],
-    answer: 0,
-    explanation: "Oral tradition holds that the ancestors of the Akwa Cross people were Jews who left Israel for Egypt before the Babylonian captivity."
-  },
-  {
-    question: "Remnants of the Annang language can be found among the Egyptians, according to whose historical records?",
-    options: [
-      "Farb",
-      "Waddell",
-      "Koelle",
-      "Noah"
-    ],
-    answer: 1,
-    explanation: "According to Waddell's historical records, remnants of the Annang language can still be found among the Egyptians."
-  },
-  {
-    question: "Upon arrival at virgin coastal southeastern Nigeria, how did the migrating groups bond together?",
-    options: [
-      "Establishing a centralized kingdom under one king",
-      "Converting immediately to Islam",
-      "Taking an oath of solidarity to fight a common enemy",
-      "Exchanging formal ambassadors with Benin"
-    ],
-    answer: 2,
-    explanation: "Upon arrival in coastal southeastern Nigeria, the migrating groups bonded by taking a collective oath of solidarity to fight whatever they saw as a common enemy."
-  },
-  {
-    question: "What derogatory name did the Efiks use for groups outside coastal areas, meaning 'poor but proud'?",
-    options: [
-      "Hausa Banza",
-      "Kwararafa",
-      "Egbo-Sharry Country",
-      "Ekpo Iseri"
-    ],
-    answer: 3,
-    explanation: "The Efiks used the derogatory term Ekpo Iseri, meaning poor but proud, to describe interior groups outside coastal areas."
-  },
-  {
-    question: "Early European traders referred to interior groups outside coastal Cross River territories as residents of what?",
-    options: [
-      "Calabar State",
-      "Otoro Country",
-      "Egbo-Sharry Country",
-      "Nkwot Territory"
-    ],
-    answer: 2,
-    explanation: "Early European traders called the interior hinterland groups residents of Egbo-Sharry Country, distinguishing them from the coastal Efik traders."
-  },
-  {
-    question: "What tactic did Efik middlemen use to keep Europeans from trading directly with hinterland groups?",
-    options: [
-      "Spreading rumors of cannibalism and using fear tactics",
-      "Signing a formal border treaty with the British",
-      "Offering cash bribes to Portuguese captains",
-      "Blocking the Niger Delta with trade canoes"
-    ],
-    answer: 0,
-    explanation: "Efik middlemen spread rumors of cannibalism and used fear tactics to deter Europeans from venturing inland to trade directly with hinterland groups."
-  },
-  {
-    question: "From which specific town in Abak did the liberated slave Ebengo hail before capture?",
-    options: [
-      "Ikot Ekpene",
-      "Nkwot",
-      "Ikot Okoro",
-      "Oruk Anam"
-    ],
-    answer: 1,
-    explanation: "Ebengo hailed from Nkwot in Abak before being captured and later providing the first written account of the Annang people."
-  },
-  {
-    question: "Where did Ebengo eventually settle after being freed from a Portuguese ship by a British warship?",
-    options: [
-      "Waterloo, Sierra Leone",
-      "Kingston, West Indies",
-      "Accra, Ghana",
-      "Calabar, Nigeria"
-    ],
-    answer: 0,
-    explanation: "After being freed by a British warship, Ebengo eventually settled in Waterloo, Sierra Leone."
-  },
-  {
-    question: "What name did British soldiers list for the languages spoken by the captured slaves on Ebengo's ship?",
-    options: [
-      "Efik",
-      "Annang",
-      "Ekid",
-      "Ibibio"
-    ],
-    answer: 1,
-    explanation: "British soldiers recorded the language spoken by the captured slaves on Ebengo's ship as Annang."
-  },
-  {
-    question: "King Jaja of Opobo fought the Ikot Udo Obong Wars to punish the Annangs for doing what?",
-    options: [
-      "Joining the Human Leopards Society",
-      "Attempting an independent military post at Abak",
-      "Defying his orders and trading in palm oil directly with British merchants",
-      "Refusing agricultural tribute to evil forest priests"
-    ],
-    answer: 2,
-    explanation: "King Jaja fought the Annangs because they defied his orders and traded palm oil directly with British merchants, bypassing his monopoly."
-  },
-  {
-    question: "What did the British do to King Jaja of Opobo after intervening in the war with Annang help?",
-    options: [
-      "Made him chief judge of the state council",
-      "Forced him to commit suicide",
-      "Appointed him supreme Obong of Calabar",
-      "Captured him and exiled him to the West Indies"
-    ],
-    answer: 3,
-    explanation: "After intervening in the conflict, the British captured King Jaja of Opobo and exiled him to the West Indies."
-  },
-  {
-    question: "In what year did the British establish a formal military post at Ikot Ekpene?",
-    options: [
-      "1472",
-      "1854",
-      "1904",
-      "1762"
-    ],
-    answer: 2,
-    explanation: "The British established a formal military post at Ikot Ekpene in 1904 as part of their consolidation of colonial control."
-  },
-  {
-    question: "Why did the Annang region see intensified wild animal attacks during the colonial period?",
-    options: [
-      "Bans on ancient hunting practices plus men fighting in WWII",
-      "Ikpa Isong sent animals as punishment",
-      "British military imported wild leopards",
-      "Local people destroyed forests to plant palm trees"
-    ],
-    answer: 0,
-    explanation: "Bans on traditional hunting practices and the absence of men who went to fight in World War II led to intensified wild animal attacks in the region."
-  },
-  {
-    question: "What name did British colonial authorities give the secret society blamed for local insurgencies and deaths?",
-    options: [
-      "Ekpe Ndem Isong",
-      "Ekpeowo (The Human Leopards Society)",
-      "The Ogboni Cult",
-      "The Igalla-mela Council"
-    ],
-    answer: 1,
-    explanation: "British colonial authorities blamed the Ekpeowo, known as The Human Leopards Society, for deaths and insurgencies in the region."
-  },
-  {
-    question: "Between 1945 and 1948, about 196 people were killed by what the British branded as insurgency or animal attacks in which community?",
-    options: [
-      "Eka Abiakpo clan",
-      "Waterloo community",
-      "Ikot Udo Obong",
-      "Ikot Okoro community"
-    ],
-    answer: 3,
-    explanation: "About 196 people were killed between 1945 and 1948 in Ikot Okoro community in what the British branded as insurgency and animal attacks."
-  },
-  {
-    question: "In which present-day Local Government Area is the historic Ikot Okoro community located?",
-    options: [
-      "Oruk Anam LGA",
-      "Ikot Ekpene LGA",
-      "Essien Udim LGA",
-      "Abak LGA"
-    ],
-    answer: 0,
-    explanation: "The historic Ikot Okoro community is located in Oruk Anam Local Government Area of Akwa Ibom State."
-  },
-  {
-    question: "For this course, the Nigerian geographic scope is divided structurally into how many major zones?",
-    options: [
-      "Six zones",
-      "Three zones",
-      "Two zones",
-      "Four zones"
-    ],
-    answer: 3,
-    explanation: "For this course, Nigeria is structurally divided into four major zones: Northern, Central, Western, and Eastern."
-  },
-  {
-    question: "Which language serves as the common tongue uniting the related Annang, Efik, Ekid, and Oron communities?",
-    options: [
-      "Urhobo language",
-      "Kanuri language",
-      "Ibibio language",
-      "Fulfulde language"
-    ],
-    answer: 2,
-    explanation: "The Ibibio language serves as the common tongue uniting the Annang, Efik, Ekid, and Oron communities of Akwa Ibom and Cross River States."
-  },
-  {
-    question: "What is the fundamental basis of traditional Ibibio religion in the pre-colonial era?",
-    options: [
-      "Emigrating completely to the Middle East",
-      "Paying tribute to the village ancestors",
-      "Observing Sharia law textually",
-      "Building massive stone structures for sky-kings"
-    ],
-    answer: 1,
-    explanation: "The fundamental basis of traditional Ibibio religion in the pre-colonial era was the veneration of and paying tribute to the village ancestors."
+    explanation: "GST 112 is designed to expose students to Nigeria's diverse peoples, history, and culture in order to promote national consciousness, tolerance, and unity among the citizenry."
   }
 ];
 const MTH132 = [
