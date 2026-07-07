@@ -27,7 +27,7 @@ function startQuiz() {
 
   currentQuestion = 0;
   userAnswers = new Array(selectedCourse.length).fill(null);
-  timeLeft = course === "GST112" ? 6000 : 1800;
+  timeLeft = 1800;
 
   document.getElementById("start-screen").classList.add("hidden");
   document.getElementById("quiz-screen").classList.remove("hidden");
