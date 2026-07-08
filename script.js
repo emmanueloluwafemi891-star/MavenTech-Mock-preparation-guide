@@ -242,11 +242,1681 @@ div.classList.add(isCorrect ? "review-correct" : "review-wrong");
 }
 
 // ===== GET COURSE =====
+const PHY102B = [
+  {
+    question: "Two point charges of +4 μC and +9 μC are placed 0.5 m apart in air. Calculate the electrostatic force between them. (k = 9 × 10⁹ N·m²/C²)",
+    options: [
+      "6.48 N",
+      "1.30 N",
+      "2.16 N",
+      "0.65 N"
+    ],
+    answer: 1,
+    explanation: "F = kq₁q₂/r² = (9×10⁹ × 4×10⁻⁶ × 9×10⁻⁶)/(0.5)² = 0.324/0.25 = 1.296 N ≈ 1.30 N."
+  },
+  {
+    question: "Which of the following best describes an equipotential surface?",
+    options: [
+      "A surface where all points have the same electric potential",
+      "A surface where charge density is constant",
+      "A surface where the electric field is maximum",
+      "A surface perpendicular to itself"
+    ],
+    answer: 0,
+    explanation: "By definition, an equipotential surface is one on which every point has the same electric potential; no work is done moving a charge along it, and the electric field is always perpendicular to it."
+  },
+  {
+    question: "A parallel plate capacitor has plate area 0.02 m² and separation 2 mm, with vacuum between the plates. Find its capacitance. (ε₀ = 8.85 × 10⁻¹² F/m)",
+    options: [
+      "8.85 pF",
+      "8.85 × 10⁻¹¹ F",
+      "88.5 pF",
+      "885 pF"
+    ],
+    answer: 1,
+    explanation: "C = ε₀A/d = (8.85×10⁻¹² × 0.02)/(2×10⁻³) = 8.85×10⁻¹¹ F."
+  },
+  {
+    question: "Gauss's law relates the electric flux through a closed surface to:",
+    options: [
+      "The surface area only",
+      "The magnetic flux through the surface",
+      "The potential difference across the surface",
+      "The net charge enclosed by the surface divided by ε₀"
+    ],
+    answer: 3,
+    explanation: "Gauss's law states ∮E·dA = Q_enclosed/ε₀; the total electric flux through a closed surface equals the enclosed charge divided by the permittivity of free space."
+  },
+  {
+    question: "A 12 V battery is connected across a 4 Ω and 8 Ω resistor in series. Find the current flowing in the circuit.",
+    options: [
+      "0.5 A",
+      "1.5 A",
+      "1 A",
+      "3 A"
+    ],
+    answer: 2,
+    explanation: "Total resistance R = 4 + 8 = 12 Ω. Current I = V/R = 12/12 = 1 A."
+  },
+  {
+    question: "What is the SI unit of magnetic flux?",
+    options: [
+      "Weber",
+      "Gauss",
+      "Henry",
+      "Tesla"
+    ],
+    answer: 0,
+    explanation: "Magnetic flux (Φ) is measured in Webers (Wb); Tesla is the unit of magnetic flux density (B), Henry is the unit of inductance."
+  },
+  {
+    question: "A charge of 5 μC experiences a force of 0.02 N at a certain point in an electric field. Calculate the electric field intensity at that point.",
+    options: [
+      "40000 N/C",
+      "250 N/C",
+      "400 N/C",
+      "4000 N/C"
+    ],
+    answer: 3,
+    explanation: "E = F/q = 0.02/(5×10⁻⁶) = 4000 N/C."
+  },
+  {
+    question: "Which statement correctly describes the behavior of a dielectric placed between the plates of a charged, isolated capacitor?",
+    options: [
+      "It reduces the electric field and increases the capacitance",
+      "It has no effect on capacitance or field",
+      "It increases the electric field between the plates",
+      "It decreases the capacitance"
+    ],
+    answer: 0,
+    explanation: "A dielectric polarizes and creates an opposing field, reducing the net electric field; since Q is fixed (isolated capacitor) and V decreases, capacitance increases by factor κ."
+  },
+  {
+    question: "Two capacitors of 6 μF and 3 μF are connected in series across a 9 V battery. Find the equivalent capacitance.",
+    options: [
+      "4.5 μF",
+      "18 μF",
+      "2 μF",
+      "9 μF"
+    ],
+    answer: 2,
+    explanation: "For series: 1/C = 1/6 + 1/3 = 3/6 = 1/2, so C = 2 μF."
+  },
+  {
+    question: "Faraday's law of electromagnetic induction states that the induced EMF in a circuit is:",
+    options: [
+      "Independent of the rate of change of flux",
+      "Equal to the negative rate of change of magnetic flux linkage",
+      "Directly proportional to the resistance of the circuit",
+      "Proportional to the square of the magnetic flux"
+    ],
+    answer: 1,
+    explanation: "Faraday's law: EMF = −N(dΦ/dt); the induced EMF equals the negative rate of change of magnetic flux linkage."
+  },
+  {
+    question: "A wire carrying a current of 5 A is placed in a magnetic field of 0.2 T, perpendicular to the field, over a length of 0.4 m. Calculate the force on the wire.",
+    options: [
+      "4 N",
+      "0.04 N",
+      "1 N",
+      "0.4 N"
+    ],
+    answer: 3,
+    explanation: "F = BIL sinθ = 0.2 × 5 × 0.4 × sin90° = 0.4 N."
+  },
+  {
+    question: "According to Maxwell's equations, a changing electric field produces:",
+    options: [
+      "A displacement current and an induced magnetic field",
+      "No effect on magnetic fields",
+      "A gravitational field",
+      "A static magnetic field only"
+    ],
+    answer: 0,
+    explanation: "Maxwell's modification of Ampere's law shows that a time-varying electric field creates a displacement current, which in turn produces a magnetic field."
+  },
+  {
+    question: "Calculate the electric potential at a point 0.3 m from a point charge of 6 μC. (k = 9 × 10⁹ N·m²/C²)",
+    options: [
+      "5.4 × 10⁴ V",
+      "1.8 × 10⁵ V",
+      "1.8 × 10⁴ V",
+      "9 × 10⁴ V"
+    ],
+    answer: 1,
+    explanation: "V = kq/r = (9×10⁹ × 6×10⁻⁶)/0.3 = 5.4×10⁴/0.3 = 1.8×10⁵ V."
+  },
+  {
+    question: "Which of the following is NOT one of Maxwell's four equations?",
+    options: [
+      "Faraday's law of induction",
+      "Gauss's law for magnetism",
+      "Ohm's law",
+      "Gauss's law for electricity"
+    ],
+    answer: 2,
+    explanation: "Maxwell's equations comprise Gauss's law (electricity), Gauss's law (magnetism), Faraday's law, and the Ampere-Maxwell law. Ohm's law (V=IR) is a separate empirical relation."
+  },
+  {
+    question: "A cylindrical capacitor is being charged. If the potential difference across it is 20 V and it stores 4 × 10⁻⁴ C of charge, calculate its capacitance.",
+    options: [
+      "0.2 μF",
+      "20 μF",
+      "200 μF",
+      "2 μF"
+    ],
+    answer: 1,
+    explanation: "C = Q/V = (4×10⁻⁴)/20 = 2×10⁻⁵ F = 20 μF."
+  },
+  {
+    question: "In an RC circuit, what happens to the current as a capacitor charges fully from a DC source?",
+    options: [
+      "It oscillates",
+      "It increases exponentially",
+      "It decreases exponentially to zero",
+      "It remains constant"
+    ],
+    answer: 2,
+    explanation: "As a capacitor charges in a DC RC circuit, current follows I(t) = (V/R)e^(−t/RC), decaying exponentially from its initial maximum toward zero."
+  },
+  {
+    question: "Three resistors of 2 Ω, 3 Ω, and 5 Ω are connected in parallel. Find the equivalent resistance.",
+    options: [
+      "3.33 Ω",
+      "1.03 Ω",
+      "10.00 Ω",
+      "0.97 Ω"
+    ],
+    answer: 3,
+    explanation: "1/R = 1/2 + 1/3 + 1/5 = 0.500 + 0.333 + 0.200 = 1.033. Therefore R = 1/1.033 ≈ 0.97 Ω."
+  },
+  {
+    question: "The dielectric constant (relative permittivity) of a material is a measure of:",
+    options: [
+      "Its ability to reduce the electric field relative to vacuum when polarized",
+      "Its magnetic permeability",
+      "Its ability to conduct electric current",
+      "Its resistance to current flow"
+    ],
+    answer: 0,
+    explanation: "The dielectric constant κ = ε/ε₀ indicates how much a material reduces an external electric field due to polarization compared to vacuum."
+  },
+  {
+    question: "A proton moving at 2 × 10⁶ m/s enters a magnetic field of 0.5 T perpendicular to its velocity. Calculate the magnetic force on the proton. (q = 1.6 × 10⁻¹⁹ C)",
+    options: [
+      "8 × 10⁻¹⁴ N",
+      "1.6 × 10⁻¹³ N",
+      "1.6 × 10⁻¹⁹ N",
+      "3.2 × 10⁻¹³ N"
+    ],
+    answer: 1,
+    explanation: "F = qvB sinθ = 1.6×10⁻¹⁹ × 2×10⁶ × 0.5 × sin90° = 1.6×10⁻¹³ N."
+  },
+  {
+    question: "What is the primary function of a capacitor in a smoothing (filter) circuit for a rectifier?",
+    options: [
+      "To convert AC to DC directly",
+      "To increase resistance in the circuit",
+      "To store and release charge, reducing voltage ripple",
+      "To increase the frequency of the signal"
+    ],
+    answer: 2,
+    explanation: "In a smoothing circuit, the capacitor charges when voltage rises and discharges when voltage falls, filling gaps in the rectified waveform and reducing voltage ripple."
+  },
+  {
+    question: "Calculate the energy stored in a 10 μF capacitor charged to a potential difference of 100 V.",
+    options: [
+      "0.05 J",
+      "0.1 J",
+      "1 J",
+      "0.5 J"
+    ],
+    answer: 0,
+    explanation: "Energy U = ½CV² = ½ × 10×10⁻⁶ × (100)² = ½ × 10×10⁻⁶ × 10000 = 0.05 J."
+  },
+  {
+    question: "Lenz's law is essentially a statement of which fundamental physical principle?",
+    options: [
+      "Conservation of mass",
+      "Conservation of charge",
+      "Conservation of momentum",
+      "Conservation of energy"
+    ],
+    answer: 3,
+    explanation: "Lenz's law states that induced current opposes the change producing it; this ensures energy is conserved since work must be done against the induced effect to change the flux."
+  },
+  {
+    question: "A solenoid of 500 turns carries a current of 2 A and has a length of 0.25 m. Calculate the magnetic field inside the solenoid. (μ₀ = 4π × 10⁻⁷ T·m/A)",
+    options: [
+      "1.26 × 10⁻² T",
+      "5.03 × 10⁻³ T",
+      "2.51 × 10⁻³ T",
+      "6.28 × 10⁻³ T"
+    ],
+    answer: 1,
+    explanation: "B = μ₀nI, where n = N/L = 500/0.25 = 2000 turns/m. B = 4π×10⁻⁷ × 2000 × 2 = 5.027×10⁻³ T."
+  },
+  {
+    question: "Which of these correctly represents the relationship between electric field (E) and potential (V) in a uniform field?",
+    options: [
+      "E = d/V",
+      "E = V × d",
+      "E = V²/d",
+      "E = V/d"
+    ],
+    answer: 3,
+    explanation: "In a uniform electric field between two points separated by distance d with potential difference V, the field magnitude is E = V/d."
+  },
+  {
+    question: "An electron (charge −1.6 × 10⁻¹⁹ C) is accelerated through a potential difference of 500 V. Calculate the kinetic energy gained by the electron in joules.",
+    options: [
+      "8 × 10⁻¹⁷ J",
+      "1.6 × 10⁻¹⁶ J",
+      "8 × 10⁻¹⁶ J",
+      "3.2 × 10⁻¹⁷ J"
+    ],
+    answer: 0,
+    explanation: "KE = qV = 1.6×10⁻¹⁹ × 500 = 8×10⁻¹⁷ J."
+  },
+  {
+    question: "In the context of Gauss's law, why is it particularly useful for calculating fields of charge distributions with high symmetry?",
+    options: [
+      "It only works for point charges",
+      "It eliminates the need for any charge information",
+      "Symmetry allows E to be pulled out of the flux integral, simplifying calculation",
+      "It only applies to conductors"
+    ],
+    answer: 2,
+    explanation: "When charge distribution has high symmetry, a Gaussian surface can be chosen so that E is constant in magnitude and parallel or perpendicular to the surface, allowing E to be factored out of the flux integral."
+  },
+  {
+    question: "A copper wire has resistance 10 Ω at 20°C. If its temperature coefficient of resistance is 0.004 /°C, calculate its resistance at 70°C.",
+    options: [
+      "10.4 Ω",
+      "12 Ω",
+      "14 Ω",
+      "11 Ω"
+    ],
+    answer: 1,
+    explanation: "R = R₀[1 + α(T−T₀)] = 10[1 + 0.004(70−20)] = 10[1 + 0.2] = 12 Ω."
+  },
+  {
+    question: "What does the term 'displacement current' introduced by Maxwell primarily explain?",
+    options: [
+      "Resistance change due to temperature",
+      "Current caused by mechanical displacement of a wire",
+      "Current flow in a broken (capacitor) circuit due to changing electric field",
+      "The motion of electrons in a conductor"
+    ],
+    answer: 2,
+    explanation: "Maxwell introduced displacement current to account for the apparent current between capacitor plates where there's no actual charge flow, due to the changing electric field, making Ampere's law consistent."
+  },
+  {
+    question: "A 24 V EMF source with internal resistance 2 Ω is connected to an external resistor of 4 Ω. Calculate the terminal voltage of the source.",
+    options: [
+      "16 V",
+      "8 V",
+      "20 V",
+      "24 V"
+    ],
+    answer: 0,
+    explanation: "I = EMF/(R+r) = 24/(4+2) = 4 A. Terminal voltage V = IR = 4 × 4 = 16 V."
+  },
+  {
+    question: "Which of the following best explains why electric field lines never cross each other?",
+    options: [
+      "Field lines are always straight",
+      "Field lines repel each other physically",
+      "Crossing lines would violate Newton's third law",
+      "At any point, the field has a unique direction, so two lines crossing would imply two directions at that point"
+    ],
+    answer: 3,
+    explanation: "The electric field at any given point has one specific direction; if two field lines crossed, that point would have two different directions simultaneously, which is physically impossible."
+  },
+  {
+    question: "Calculate the total charge that flows through a wire carrying a steady current of 3 A for 2 minutes.",
+    options: [
+      "360 C",
+      "180 C",
+      "90 C",
+      "6 C"
+    ],
+    answer: 0,
+    explanation: "Q = It = 3 × (2×60) = 3 × 120 = 360 C."
+  },
+  {
+    question: "A step-up transformer has 100 turns on the primary coil and 500 turns on the secondary coil. If the primary voltage is 20 V, what is the secondary voltage?",
+    options: [
+      "500 V",
+      "20 V",
+      "4 V",
+      "100 V"
+    ],
+    answer: 3,
+    explanation: "Vs/Vp = Ns/Np → Vs = Vp × (Ns/Np) = 20 × (500/100) = 20 × 5 = 100 V."
+  },
+  {
+    question: "Which of the following correctly describes the direction of the magnetic force on a positive charge moving in a magnetic field, according to the right-hand rule?",
+    options: [
+      "Parallel to velocity",
+      "Perpendicular to both velocity and magnetic field",
+      "Parallel to the magnetic field",
+      "Opposite to velocity"
+    ],
+    answer: 1,
+    explanation: "The magnetic force is given by F = qv × B, a cross product, meaning the force is always perpendicular to both the velocity vector and the magnetic field vector."
+  },
+  {
+    question: "Four identical 8 μF capacitors are connected in parallel. Find the total capacitance.",
+    options: [
+      "16 μF",
+      "8 μF",
+      "32 μF",
+      "2 μF"
+    ],
+    answer: 2,
+    explanation: "For capacitors in parallel, C_total = C₁+C₂+C₃+C₄ = 8+8+8+8 = 32 μF."
+  },
+  {
+    question: "Electromagnetic waves are transverse waves because:",
+    options: [
+      "The E and B fields oscillate perpendicular to each other and to the direction of propagation",
+      "They travel only in a vacuum",
+      "They have no magnetic component",
+      "They require a medium to propagate"
+    ],
+    answer: 0,
+    explanation: "In an electromagnetic wave, the electric field, magnetic field, and direction of propagation are all mutually perpendicular, the defining characteristic of a transverse wave."
+  },
+  {
+    question: "A current-carrying conductor of length 0.6 m experiences a force of 1.2 N when placed in a magnetic field of 0.4 T at 90° to the field. Calculate the current in the conductor.",
+    options: [
+      "8 A",
+      "2 A",
+      "5 A",
+      "0.5 A"
+    ],
+    answer: 2,
+    explanation: "F = BIL → I = F/(BL) = 1.2/(0.4 × 0.6) = 1.2/0.24 = 5 A."
+  },
+  {
+    question: "What is the physical significance of the negative sign in Lenz's law (EMF = −N dΦ/dt)?",
+    options: [
+      "It means current flows backward in the circuit",
+      "It has no physical meaning, just a mathematical convention",
+      "It shows the EMF is always negative in value",
+      "It indicates the induced EMF opposes the change in flux that produces it"
+    ],
+    answer: 3,
+    explanation: "The negative sign indicates that the induced EMF acts in a direction that opposes the change in magnetic flux that caused it, consistent with conservation of energy."
+  },
+  {
+    question: "Two identical charges of +2 μC each are separated by 1 m. Calculate the work done in bringing them from infinity to this separation.",
+    options: [
+      "36 J",
+      "0.036 J",
+      "3.6 J",
+      "0.0036 J"
+    ],
+    answer: 1,
+    explanation: "Work done = kq₁q₂/r = (9×10⁹ × 2×10⁻⁶ × 2×10⁻⁶)/1 = 9×10⁹ × 4×10⁻¹² = 0.036 J."
+  },
+  {
+    question: "Why do conductors have zero electric field inside them under electrostatic equilibrium?",
+    options: [
+      "Because conductors are always neutral",
+      "Because conductors have no free charges",
+      "Because free charges redistribute on the surface until the internal field cancels to zero",
+      "Because the electric field cannot penetrate any material"
+    ],
+    answer: 2,
+    explanation: "In electrostatic equilibrium, free electrons in a conductor move in response to any internal field until they redistribute on the surface in a way that exactly cancels the field inside."
+  },
+  {
+    question: "A capacitor of 5 μF is charged to 200 V then disconnected and connected to an uncharged 15 μF capacitor. Find the common potential difference after connection.",
+    options: [
+      "66.7 V",
+      "50 V",
+      "150 V",
+      "200 V"
+    ],
+    answer: 1,
+    explanation: "Q_initial = C₁V₁ = 5×10⁻⁶×200 = 1×10⁻³ C. Common V = Q/(C₁+C₂) = 1×10⁻³/(20×10⁻⁶) = 50 V."
+  },
+  {
+    question: "Which of the following is a correct statement regarding magnetic monopoles based on Gauss's law for magnetism?",
+    options: [
+      "Magnetic field lines start and end on monopoles like electric field lines on charges",
+      "Magnetic monopoles have been experimentally confirmed to exist abundantly",
+      "Magnetic monopoles are responsible for electromagnetic induction",
+      "Gauss's law for magnetism states that the net magnetic flux through any closed surface is zero, implying no magnetic monopoles"
+    ],
+    answer: 3,
+    explanation: "∮B·dA = 0 is Gauss's law for magnetism, showing magnetic field lines always form closed loops without source or sink, meaning isolated magnetic monopoles have never been observed."
+  },
+  {
+    question: "A galvanometer with resistance 50 Ω gives full-scale deflection for a current of 5 mA. What shunt resistance is needed to convert it into an ammeter reading up to 5 A?",
+    options: [
+      "0.05 Ω",
+      "0.5 Ω",
+      "0.005 Ω",
+      "5 Ω"
+    ],
+    answer: 0,
+    explanation: "Shunt Rs = IgRg/(I−Ig) = (0.005×50)/(5−0.005) = 0.25/4.995 ≈ 0.05 Ω."
+  },
+  {
+    question: "In a purely resistive DC circuit, how does power dissipated relate to current and resistance?",
+    options: [
+      "P = I/R",
+      "P = R/I²",
+      "P = I²R",
+      "P = IR²"
+    ],
+    answer: 2,
+    explanation: "By Joule's law, power dissipated in a resistor is P = I²R (equivalently P = VI = V²/R using Ohm's law V=IR)."
+  },
+  {
+    question: "Calculate the capacitance of a spherical conductor of radius 0.09 m in air. (k = 9 × 10⁹ N·m²/C²)",
+    options: [
+      "10 pF",
+      "20 pF",
+      "100 pF",
+      "1 pF"
+    ],
+    answer: 0,
+    explanation: "C = 4πε₀r = r/k = 0.09/(9×10⁹) = 1×10⁻¹¹ F = 10 pF."
+  },
+  {
+    question: "What is the principal reason capacitors are used in AC coupling and filtering applications rather than simple resistors?",
+    options: [
+      "Capacitors convert AC into DC permanently",
+      "Capacitors block DC while allowing AC to pass, due to frequency-dependent reactance",
+      "Capacitors have zero resistance to all currents",
+      "Capacitors amplify the signal"
+    ],
+    answer: 1,
+    explanation: "A capacitor's reactance Xc = 1/(2πfC) is infinite at f=0 (DC) and decreases with increasing frequency, so it blocks DC while passing AC signals."
+  },
+  {
+    question: "An electric heater draws a current of 10 A from a 220 V supply. Calculate the power consumed.",
+    options: [
+      "220 W",
+      "1000 W",
+      "22 W",
+      "2200 W"
+    ],
+    answer: 3,
+    explanation: "P = VI = 220 × 10 = 2200 W."
+  },
+  {
+    question: "Which of the following correctly states the relationship in the Ampere-Maxwell law regarding the sources of magnetic field?",
+    options: [
+      "Magnetic fields are produced only by permanent magnets",
+      "Magnetic fields have no relation to electric currents",
+      "Magnetic fields are produced by conduction current and displacement current (changing electric flux)",
+      "Magnetic fields are produced only by moving magnetic monopoles"
+    ],
+    answer: 2,
+    explanation: "The Ampere-Maxwell law, ∮B·dl = μ₀I + μ₀ε₀(dΦE/dt), shows magnetic fields arise from both conduction current and displacement current due to a changing electric flux."
+  },
+  {
+    question: "A wire loop of area 0.1 m² is placed in a magnetic field that changes from 0.2 T to 0.8 T in 0.3 s. Calculate the average induced EMF.",
+    options: [
+      "0.2 V",
+      "0.6 V",
+      "0.02 V",
+      "2 V"
+    ],
+    answer: 0,
+    explanation: "EMF = ΔΦ/Δt = A(B₂−B₁)/Δt = 0.1×(0.8−0.2)/0.3 = 0.1×0.6/0.3 = 0.2 V."
+  },
+  {
+    question: "Why does increasing the distance between capacitor plates decrease its capacitance (for a parallel plate capacitor)?",
+    options: [
+      "Because C is directly proportional to distance d",
+      "Because C is inversely proportional to d, so larger d reduces the field's ability to store charge per unit voltage",
+      "Because larger plate separation increases the dielectric constant",
+      "Because charge leaks out faster over larger distances"
+    ],
+    answer: 1,
+    explanation: "Since C = ε₀A/d, capacitance is inversely proportional to plate separation d; increasing d weakens the electric field for a given charge, requiring higher voltage, thus lowering capacitance."
+  },
+  {
+    question: "A 100 Ω resistor, an inductor, and a capacitor are in series with an AC source. If at resonance the circuit behaves purely resistively, what is true about the inductive and capacitive reactances at that frequency?",
+    options: [
+      "XL is much greater than XC",
+      "XC is much greater than XL",
+      "Both XL and XC are zero",
+      "XL equals XC, so they cancel out"
+    ],
+    answer: 3,
+    explanation: "At resonance in a series RLC circuit, XL = XC, so the net reactance (XL−XC) is zero, leaving only resistance R — this is why the circuit behaves purely resistively at resonance."
+  }
+];
+const PHY102C = [
+  {
+    question: "A charge of +3 μC is placed 0.2 m from a charge of +6 μC. Calculate the force between them. (k = 9 × 10⁹ N·m²/C²)",
+    options: [
+      "4.05 N",
+      "1.35 N",
+      "0.405 N",
+      "40.5 N"
+    ],
+    answer: 0,
+    explanation: "F = kq₁q₂/r² = (9×10⁹ × 3×10⁻⁶ × 6×10⁻⁶)/(0.2)² = 0.162/0.04 = 4.05 N."
+  },
+  {
+    question: "What happens to the electric field inside a hollow charged conductor in electrostatic equilibrium?",
+    options: [
+      "It varies linearly from center to wall",
+      "It is zero throughout the cavity",
+      "It is maximum at the geometric center",
+      "It equals the field just outside the surface"
+    ],
+    answer: 1,
+    explanation: "All excess charge resides on the outer surface; by Gauss's law the field inside a hollow conductor cavity with no enclosed charge is zero."
+  },
+  {
+    question: "Calculate the potential difference required to store 2 × 10⁻⁴ C of charge on a 40 μF capacitor.",
+    options: [
+      "8 V",
+      "80 V",
+      "5 V",
+      "0.5 V"
+    ],
+    answer: 2,
+    explanation: "V = Q/C = (2×10⁻⁴)/(40×10⁻⁶) = 5 V."
+  },
+  {
+    question: "Which of the following materials would best maximize capacitance in a parallel plate capacitor?",
+    options: [
+      "One with the lowest dielectric constant",
+      "One with the highest dielectric constant",
+      "One with the lowest electrical resistivity",
+      "One with the highest electrical conductivity"
+    ],
+    answer: 1,
+    explanation: "Since C = κε₀A/d, a higher dielectric constant κ directly increases capacitance; conductors would short the plates."
+  },
+  {
+    question: "Two resistors, 6 Ω and 12 Ω, are connected in parallel. Find the equivalent resistance.",
+    options: [
+      "4 Ω",
+      "9 Ω",
+      "6 Ω",
+      "18 Ω"
+    ],
+    answer: 0,
+    explanation: "1/R = 1/6 + 1/12 = 3/12 = 1/4, so R = 4 Ω."
+  },
+  {
+    question: "In Gauss's law, if a closed surface encloses zero net charge, what can be said about the total electric flux through it?",
+    options: [
+      "It is infinite",
+      "It depends on the surface shape",
+      "It is always negative",
+      "It is zero"
+    ],
+    answer: 3,
+    explanation: "By Gauss's law, Φ = Q_enclosed/ε₀; if Q_enclosed = 0, the net flux through the closed surface is zero."
+  },
+  {
+    question: "A straight conductor of length 0.8 m carries a current of 6 A in a magnetic field of 0.25 T, perpendicular to the field. Calculate the force on the conductor.",
+    options: [
+      "0.12 N",
+      "1.2 N",
+      "12 N",
+      "2.4 N"
+    ],
+    answer: 1,
+    explanation: "F = BIL = 0.25 × 6 × 0.8 = 1.2 N."
+  },
+  {
+    question: "What is the main function of Maxwell's displacement current correction to Ampère's law?",
+    options: [
+      "To make Ampère's law consistent with charge conservation where electric fields vary with time",
+      "To eliminate the need for magnetic fields entirely",
+      "To explain only electrostatic induction phenomena",
+      "To increase the calculated speed of light"
+    ],
+    answer: 0,
+    explanation: "Maxwell added displacement current to resolve an inconsistency in Ampère's law in circuits with capacitors, ensuring charge conservation holds even where no conduction current flows."
+  },
+  {
+    question: "An electron is placed in a uniform electric field of 500 N/C. Calculate the force on the electron. (q = 1.6 × 10⁻¹⁹ C)",
+    options: [
+      "3.2 × 10⁻¹⁷ N",
+      "1.6 × 10⁻¹⁶ N",
+      "8 × 10⁻¹⁷ N",
+      "8 × 10⁻¹⁶ N"
+    ],
+    answer: 2,
+    explanation: "F = qE = 1.6×10⁻¹⁹ × 500 = 8×10⁻¹⁷ N."
+  },
+  {
+    question: "Why does the capacitance of a capacitor remain unaffected by the amount of charge stored on it (for a given geometry)?",
+    options: [
+      "Because capacitance increases proportionally with stored charge",
+      "Because capacitance is determined solely by the power source",
+      "Because charge and voltage are physically unrelated",
+      "Because capacitance depends only on geometry and the medium, not on Q or V individually"
+    ],
+    answer: 3,
+    explanation: "Capacitance C = Q/V is a constant ratio; Q and V change together, but their ratio stays fixed, depending only on physical geometry and dielectric medium."
+  },
+  {
+    question: "A solenoid with 800 turns over a length of 0.4 m carries a current of 3 A. Calculate the magnetic field inside. (μ₀ = 4π × 10⁻⁷ T·m/A)",
+    options: [
+      "3.77 × 10⁻³ T",
+      "1.51 × 10⁻² T",
+      "7.54 × 10⁻³ T",
+      "6.28 × 10⁻³ T"
+    ],
+    answer: 2,
+    explanation: "n = N/L = 800/0.4 = 2000 turns/m. B = μ₀nI = 4π×10⁻⁷ × 2000 × 3 = 7.54×10⁻³ T."
+  },
+  {
+    question: "In electromagnetic induction, what does the term 'motional EMF' refer to?",
+    options: [
+      "EMF generated exclusively by AC voltage sources",
+      "EMF induced by relative motion of a conductor through a magnetic field",
+      "EMF produced by resistive heating in a wire",
+      "EMF generated by a stationary conductor in a static field"
+    ],
+    answer: 1,
+    explanation: "Motional EMF arises when a conductor moves through a magnetic field; it is given by EMF = BLv for a rod moving perpendicular to B."
+  },
+  {
+    question: "Calculate the electric potential energy of two point charges, +2 μC and −3 μC, separated by 0.6 m. (k = 9 × 10⁹ N·m²/C²)",
+    options: [
+      "−0.9 J",
+      "−9 × 10⁻⁵ J",
+      "0.09 J",
+      "−0.09 J"
+    ],
+    answer: 3,
+    explanation: "U = kq₁q₂/r = (9×10⁹ × 2×10⁻⁶ × (−3×10⁻⁶))/0.6 = −0.054/0.6 = −0.09 J."
+  },
+  {
+    question: "Which of the following correctly compares conduction current and displacement current?",
+    options: [
+      "Conduction current involves movement of charge carriers; displacement current arises from a changing electric field with no charge crossing the gap",
+      "Displacement current involves actual charge flow through a wire, unlike conduction current",
+      "Both always have identical magnitudes in every type of circuit",
+      "They are completely unrelated phenomena governed by different physical laws"
+    ],
+    answer: 0,
+    explanation: "Conduction current is due to real charge carriers moving through a conductor; displacement current represents the effect of a changing electric field producing a magnetic field without actual charges crossing the gap."
+  },
+  {
+    question: "A battery with EMF 15 V and internal resistance 1 Ω delivers current to an external resistor of 4 Ω. Calculate the current in the circuit.",
+    options: [
+      "3.75 A",
+      "15 A",
+      "3 A",
+      "5 A"
+    ],
+    answer: 2,
+    explanation: "I = EMF/(R+r) = 15/(4+1) = 3 A."
+  },
+  {
+    question: "What is the relationship between the direction of induced current and the change in magnetic flux, according to Lenz's law?",
+    options: [
+      "The induced current always flows in a clockwise direction",
+      "The induced current flows in the same direction as the flux change",
+      "The induced current direction is independent of flux change direction",
+      "The induced current flows in a direction that opposes the change in flux"
+    ],
+    answer: 3,
+    explanation: "Lenz's law states the induced current creates its own magnetic field that opposes the change in the original flux, whether that change is an increase or decrease."
+  },
+  {
+    question: "Two capacitors of 4 μF and 12 μF are connected in series. Find the equivalent capacitance.",
+    options: [
+      "48 μF",
+      "3 μF",
+      "8 μF",
+      "16 μF"
+    ],
+    answer: 1,
+    explanation: "1/C = 1/4 + 1/12 = 4/12 = 1/3, so C = 3 μF."
+  },
+  {
+    question: "Why is copper commonly used as a conducting material in electrical wiring?",
+    options: [
+      "It has low resistivity, allowing efficient current flow with minimal energy loss",
+      "It has an unusually high dielectric constant",
+      "It acts as an effective electrical insulator",
+      "It has high resistivity, generating useful amounts of heat"
+    ],
+    answer: 0,
+    explanation: "Copper has low electrical resistivity, offering little opposition to current flow, minimizing energy loss as heat and making it efficient for wiring."
+  },
+  {
+    question: "A charged particle moves in a circular path in a magnetic field of 0.6 T with speed 4 × 10⁵ m/s and radius 0.02 m. Calculate the charge-to-mass ratio (q/m).",
+    options: [
+      "1.2 × 10⁷ C/kg",
+      "2.4 × 10⁷ C/kg",
+      "3.33 × 10⁷ C/kg",
+      "8.33 × 10⁶ C/kg"
+    ],
+    answer: 2,
+    explanation: "q/m = v/(rB) = (4×10⁵)/(0.02 × 0.6) = 3.33×10⁷ C/kg."
+  },
+  {
+    question: "Which statement is true regarding electric field lines around a negative point charge?",
+    options: [
+      "They originate from infinity and terminate on the charge",
+      "They have no defined direction or orientation",
+      "They radiate outward away from the charge",
+      "They form closed loops encircling the charge"
+    ],
+    answer: 0,
+    explanation: "For a negative charge, field lines point inward (toward the charge), so they originate from infinity and terminate on it."
+  },
+  {
+    question: "A 2000 W electric kettle is used for 15 minutes. Calculate the electrical energy consumed in kWh.",
+    options: [
+      "2 kWh",
+      "30 kWh",
+      "5 kWh",
+      "0.5 kWh"
+    ],
+    answer: 3,
+    explanation: "Energy = Pt = 2 kW × (15/60) h = 2 × 0.25 = 0.5 kWh."
+  },
+  {
+    question: "In an electromagnetic wave, what is the relationship between the speed of the wave and the electric and magnetic field amplitudes (E₀ and B₀)?",
+    options: [
+      "c = E₀ × B₀",
+      "c = E₀/B₀",
+      "c = B₀/E₀",
+      "c = E₀ + B₀"
+    ],
+    answer: 1,
+    explanation: "For an electromagnetic wave in vacuum, the ratio of electric field amplitude to magnetic field amplitude equals the speed of light: c = E₀/B₀."
+  },
+  {
+    question: "Calculate the resistance of a copper wire of length 2 m and cross-sectional area 1 × 10⁻⁶ m². (ρ = 1.7 × 10⁻⁸ Ω·m)",
+    options: [
+      "0.034 Ω",
+      "3.4 Ω",
+      "0.34 Ω",
+      "0.0034 Ω"
+    ],
+    answer: 0,
+    explanation: "R = ρL/A = (1.7×10⁻⁸ × 2)/(1×10⁻⁶) = 0.034 Ω."
+  },
+  {
+    question: "What determines the direction of the induced EMF in a rotating coil within a generator?",
+    options: [
+      "The resistance of the external load circuit only",
+      "The colour of the conducting wire used",
+      "The operating temperature of the rotating coil",
+      "The rate of change of magnetic flux through the coil, per Faraday's and Lenz's laws"
+    ],
+    answer: 3,
+    explanation: "Faraday's law gives the magnitude of induced EMF from the rate of flux change; Lenz's law determines the direction, ensuring the induced current opposes the flux change."
+  },
+  {
+    question: "A parallel plate capacitor with air between the plates has capacitance 6 μF. A dielectric of constant κ = 5 is inserted. Find the new capacitance.",
+    options: [
+      "11 μF",
+      "30 μF",
+      "1.2 μF",
+      "6 μF"
+    ],
+    answer: 1,
+    explanation: "C_new = κC_old = 5 × 6 = 30 μF."
+  },
+  {
+    question: "Which of the following best explains why electric potential is a scalar while electric field is a vector?",
+    options: [
+      "Potential and electric field are actually the same type of physical quantity",
+      "Potential depends on the path taken, while field does not",
+      "Potential is work done per unit charge (energy-related); field is force per unit charge and has inherent direction",
+      "Electric field has magnitude but no physical direction"
+    ],
+    answer: 2,
+    explanation: "Electric potential is derived from potential energy (a scalar), whereas electric field is force per unit charge, inherently having direction and thus being a vector."
+  },
+  {
+    question: "Two long parallel wires carry currents of 5 A and 8 A in the same direction, separated by 0.1 m. Calculate the force per unit length between them. (μ₀ = 4π × 10⁻⁷ T·m/A)",
+    options: [
+      "1.6 × 10⁻⁴ N/m",
+      "8 × 10⁻⁴ N/m",
+      "4 × 10⁻⁵ N/m",
+      "8 × 10⁻⁵ N/m"
+    ],
+    answer: 3,
+    explanation: "F/L = μ₀I₁I₂/(2πr) = (2×10⁻⁷ × 5 × 8)/0.1 = 8×10⁻⁵ N/m."
+  },
+  {
+    question: "What role does a dielectric play in preventing dielectric breakdown in a capacitor?",
+    options: [
+      "It increases the breakdown voltage by withstanding higher field strengths than air before ionizing",
+      "It decreases the maximum voltage the capacitor can safely handle",
+      "It has no measurable role in determining breakdown voltage",
+      "It causes the capacitor plates to gradually short-circuit"
+    ],
+    answer: 0,
+    explanation: "A good dielectric has higher dielectric strength than air, withstanding a higher electric field before ionizing and breaking down, allowing the capacitor to handle higher voltages safely."
+  },
+  {
+    question: "A wire loop rotates in a magnetic field of 0.4 T with area 0.05 m² at angular velocity 100 rad/s. Calculate the peak EMF (EMF_max = BAω).",
+    options: [
+      "20 V",
+      "0.02 V",
+      "2 V",
+      "0.2 V"
+    ],
+    answer: 2,
+    explanation: "EMF_max = BAω = 0.4 × 0.05 × 100 = 2 V."
+  },
+  {
+    question: "Why do electric field lines always emerge perpendicular to the surface of a conductor in electrostatic equilibrium?",
+    options: [
+      "Because conductors carry no charge at any point on their surface",
+      "Because any field component parallel to the surface would drive charges to move until that component vanishes",
+      "Because the electric field inside conductors is always at its maximum value",
+      "Because conductors physically repel all incoming field lines"
+    ],
+    answer: 1,
+    explanation: "If there were a field component parallel to the conductor's surface, free charges would move until they cancel it; equilibrium requires the field to be purely perpendicular to the surface."
+  },
+  {
+    question: "A 20 Ω resistor and a 30 Ω resistor are connected in series with a 100 V supply. Calculate the voltage drop across the 30 Ω resistor.",
+    options: [
+      "60 V",
+      "30 V",
+      "100 V",
+      "40 V"
+    ],
+    answer: 0,
+    explanation: "I = V/R_total = 100/50 = 2 A. V₃₀ = IR = 2 × 30 = 60 V."
+  },
+  {
+    question: "According to Maxwell's equations, what produces a magnetic field when no time-varying electric field is present?",
+    options: [
+      "Changing electric flux acting alone",
+      "Gravitational fields interacting with charge",
+      "Only the field of permanent magnets",
+      "Only steady conduction current, as in the original Ampère's law"
+    ],
+    answer: 3,
+    explanation: "With no changing electric field, the displacement current term vanishes and the Ampère-Maxwell law reduces to the original Ampère's law, where steady conduction current alone produces the magnetic field."
+  },
+  {
+    question: "Calculate the number of electrons flowing through a conductor carrying 2 A for 1 second. (e = 1.6 × 10⁻¹⁹ C)",
+    options: [
+      "8 × 10¹⁸",
+      "3.2 × 10¹⁹",
+      "1.25 × 10¹⁹",
+      "1.6 × 10¹⁹"
+    ],
+    answer: 2,
+    explanation: "Q = It = 2 C. n = Q/e = 2/(1.6×10⁻¹⁹) = 1.25×10¹⁹ electrons."
+  },
+  {
+    question: "In an RC circuit, what does the time constant τ = RC physically represent?",
+    options: [
+      "The total energy stored in the fully charged capacitor",
+      "The time for the capacitor to charge to about 63.2% of its final value, or discharge to 36.8% of its initial value",
+      "The maximum voltage the capacitor can ultimately reach",
+      "The fixed resistance value of the circuit alone"
+    ],
+    answer: 1,
+    explanation: "τ = RC is the time for the capacitor voltage to reach ~63.2% of its final value during charging, or fall to ~36.8% of its initial value during discharging."
+  },
+  {
+    question: "Four resistors of 10 Ω each are connected in parallel. Find the equivalent resistance.",
+    options: [
+      "2.5 Ω",
+      "40 Ω",
+      "10 Ω",
+      "5 Ω"
+    ],
+    answer: 0,
+    explanation: "1/R = 4 × (1/10) = 4/10, so R = 10/4 = 2.5 Ω."
+  },
+  {
+    question: "Which of the following best describes the polarization of a dielectric in an external electric field?",
+    options: [
+      "The material becomes permanently magnetized by the applied field",
+      "Free electrons flow completely through the material as in a metallic conductor",
+      "Bound charges within molecules shift slightly, creating induced dipoles that align with the field",
+      "The atomic structure of the material is destroyed by the field"
+    ],
+    answer: 2,
+    explanation: "In a dielectric, bound charges shift slightly within each molecule creating induced dipoles, or existing dipoles align with the field, opposing the external field."
+  },
+  {
+    question: "A capacitor charged to 300 V stores 6 × 10⁻⁴ C. Calculate the energy stored.",
+    options: [
+      "0.18 J",
+      "0.9 J",
+      "1.8 J",
+      "0.09 J"
+    ],
+    answer: 3,
+    explanation: "U = ½QV = ½ × 6×10⁻⁴ × 300 = 0.09 J."
+  },
+  {
+    question: "What is the significance of the right-hand grip rule for a current-carrying straight wire?",
+    options: [
+      "It determines the electrical resistance of the wire",
+      "It determines the direction of the circular magnetic field lines around the wire based on current direction",
+      "It applies only to alternating current and not direct current",
+      "It determines the direction of the electric field around the wire"
+    ],
+    answer: 1,
+    explanation: "Pointing the right thumb in the direction of conventional current, the curled fingers indicate the direction of the circular magnetic field lines encircling the wire."
+  },
+  {
+    question: "A charge of 8 μC is at a point where the electric potential is 3600 V. Calculate the potential energy of the charge at that point.",
+    options: [
+      "28.8 J",
+      "4.5 × 10² J",
+      "2.88 × 10⁻³ J",
+      "2.88 × 10⁻² J"
+    ],
+    answer: 3,
+    explanation: "U = qV = 8×10⁻⁶ × 3600 = 2.88×10⁻² J."
+  },
+  {
+    question: "Why does a changing magnetic field induce an electric field, according to Faraday's law in Maxwell's equation form?",
+    options: [
+      "Because a time-varying B field produces a curling induced E field, as shown by ∇ × E = −∂B/∂t",
+      "Because of the principle of conservation of mass in electromagnetism",
+      "Because magnetic fields cannot physically exist in the absence of electric fields",
+      "Because electric fields always cause magnetic fields to subsequently change"
+    ],
+    answer: 0,
+    explanation: "Maxwell's form of Faraday's law, ∇ × E = −∂B/∂t, shows that a changing magnetic field directly gives rise to a circulating electric field, even in regions without any charges."
+  },
+  {
+    question: "A 5 Ω and 15 Ω resistor are connected in parallel, and this combination is in series with a 2 Ω resistor. Find the total resistance.",
+    options: [
+      "6 Ω",
+      "5.75 Ω",
+      "22 Ω",
+      "3.75 Ω"
+    ],
+    answer: 1,
+    explanation: "Parallel: 1/R = 1/5 + 1/15 = 4/15, R_parallel = 3.75 Ω. Total = 3.75 + 2 = 5.75 Ω."
+  },
+  {
+    question: "What is the primary reason transformers only work with AC and not DC?",
+    options: [
+      "DC voltage is always too high for the transformer's primary coil",
+      "A steady DC current causes immediate physical damage to the transformer core",
+      "Transformers require a continuously changing magnetic flux to induce EMF in the secondary, which only AC can provide",
+      "AC current has zero resistance while DC has significant resistance"
+    ],
+    answer: 2,
+    explanation: "Transformer operation requires a changing magnetic flux per Faraday's law; a steady DC current produces constant flux after its initial transient, inducing no continuous EMF in the secondary coil."
+  },
+  {
+    question: "Calculate the magnetic flux through a loop of area 0.25 m² when a magnetic field of 0.6 T is perpendicular to the loop.",
+    options: [
+      "1.5 Wb",
+      "0.15 Wb",
+      "2.4 Wb",
+      "0.024 Wb"
+    ],
+    answer: 1,
+    explanation: "Φ = BA cosθ = 0.6 × 0.25 × cos0° = 0.15 Wb."
+  },
+  {
+    question: "In a series RLC circuit driven below resonance frequency, which reactance dominates?",
+    options: [
+      "Both reactances remain equal regardless of the driving frequency",
+      "Inductive reactance (XL) dominates over capacitive reactance (XC)",
+      "Capacitive reactance (XC) dominates over inductive reactance (XL)",
+      "Neither inductive nor capacitive reactance exists below resonance"
+    ],
+    answer: 2,
+    explanation: "Below resonance, XC = 1/(2πfC) is large while XL = 2πfL is small, so the circuit behaves more capacitively with XC dominating."
+  },
+  {
+    question: "A 15 μF capacitor is connected to a 12 V battery. Calculate the charge stored on the capacitor.",
+    options: [
+      "1.8 × 10⁻⁴ C",
+      "1.25 × 10⁻⁶ C",
+      "0.8 C",
+      "180 C"
+    ],
+    answer: 0,
+    explanation: "Q = CV = 15×10⁻⁶ × 12 = 1.8×10⁻⁴ C."
+  },
+  {
+    question: "What happens to the capacitance of a parallel plate capacitor if the plate area is doubled while separation remains constant?",
+    options: [
+      "Capacitance quadruples",
+      "Capacitance is halved",
+      "Capacitance remains unchanged",
+      "Capacitance doubles"
+    ],
+    answer: 3,
+    explanation: "Since C = ε₀A/d, capacitance is directly proportional to plate area A; doubling A while keeping d constant doubles the capacitance."
+  },
+  {
+    question: "An AC generator produces a peak voltage of 170 V. Calculate the RMS voltage. (Vrms = Vpeak/√2)",
+    options: [
+      "170 V",
+      "120.2 V",
+      "240 V",
+      "85 V"
+    ],
+    answer: 1,
+    explanation: "Vrms = 170/√2 = 170/1.414 ≈ 120.2 V."
+  },
+  {
+    question: "What is the physical meaning of magnetic permeability (μ) of a material?",
+    options: [
+      "Its capacity to store electric charge on its surface",
+      "Its ability to withstand high electric fields without breaking down",
+      "A measure of how easily a material can be magnetized or support magnetic field formation within itself",
+      "Its resistance to the flow of electric current through it"
+    ],
+    answer: 2,
+    explanation: "Magnetic permeability μ quantifies how much a material can support the formation of magnetic field lines within it in response to an applied magnetic field."
+  },
+  {
+    question: "A wire of resistance 8 Ω is stretched so that its length doubles (volume constant). Calculate the new resistance.",
+    options: [
+      "4 Ω",
+      "8 Ω",
+      "16 Ω",
+      "32 Ω"
+    ],
+    answer: 3,
+    explanation: "With volume constant, if L doubles then A halves. R' = ρ(2L)/(A/2) = 4 × ρL/A = 4 × 8 = 32 Ω."
+  },
+  {
+    question: "Why is it important that ∇ · B = 0 (Gauss's law for magnetism) holds true in Maxwell's equations?",
+    options: [
+      "It confirms magnetic field lines have no beginning or end, implying no isolated magnetic monopoles exist",
+      "It demonstrates that magnetic flux always equals electric flux in free space",
+      "It proves that magnetic forces always exceed electric forces",
+      "It shows electric charges are the direct source of all magnetic fields"
+    ],
+    answer: 0,
+    explanation: "∇ · B = 0 means the divergence of B is always zero, so magnetic field lines always form closed loops with no source or sink — confirming no isolated magnetic monopoles exist."
+  }
+];
+const PHY102D = [
+  {
+    question: "Two point charges of +5 μC and −2 μC are separated by 0.3 m. Calculate the magnitude of the force between them. (k = 9 × 10⁹ N·m²/C²)",
+    options: [
+      "0.3 N",
+      "1 N",
+      "10 N",
+      "3 N"
+    ],
+    answer: 1,
+    explanation: "F = kq₁q₂/r² = (9×10⁹ × 5×10⁻⁶ × 2×10⁻⁶)/(0.3)² = 0.09/0.09 = 1 N."
+  },
+  {
+    question: "What is the physical meaning of 'work done moving a charge along an equipotential surface is zero'?",
+    options: [
+      "The charge is physically unable to move along the surface",
+      "The surface must necessarily be made of a conductor",
+      "Since all points are at the same potential, there is no potential difference to do work against",
+      "The charge experiences no force anywhere on the surface"
+    ],
+    answer: 2,
+    explanation: "Work W = qΔV; since ΔV = 0 between any two points on an equipotential surface, no work is done moving a charge along it regardless of the path taken."
+  },
+  {
+    question: "A capacitor stores 5 × 10⁻³ C of charge at a potential difference of 250 V. Calculate its capacitance.",
+    options: [
+      "20 μF",
+      "2 μF",
+      "50 μF",
+      "0.05 μF"
+    ],
+    answer: 0,
+    explanation: "C = Q/V = (5×10⁻³)/250 = 2×10⁻⁵ F = 20 μF."
+  },
+  {
+    question: "A Gaussian surface encloses no charge, but external charges exist outside it. What is true about the electric field on this surface?",
+    options: [
+      "Gauss's law cannot be applied to this situation",
+      "The field can be non-zero on the surface, but the net flux through it is zero",
+      "The net flux through the surface is always positive",
+      "The field must be zero everywhere on the surface"
+    ],
+    answer: 1,
+    explanation: "External charges can produce a non-zero field at points on the surface, but since as many field lines enter as leave (no enclosed charge), the net flux integrates to zero."
+  },
+  {
+    question: "A 6 Ω, 4 Ω, and 2 Ω resistor are connected in series to a 24 V battery. Calculate the current in the circuit.",
+    options: [
+      "1 A",
+      "4 A",
+      "2 A",
+      "12 A"
+    ],
+    answer: 2,
+    explanation: "R_total = 6+4+2 = 12 Ω. I = V/R = 24/12 = 2 A."
+  },
+  {
+    question: "Which of the following is the correct SI unit for electric field strength?",
+    options: [
+      "Volt per meter (V/m)",
+      "Newton per coulomb-meter (N/C·m)",
+      "Weber (Wb)",
+      "Coulomb per meter (C/m)"
+    ],
+    answer: 0,
+    explanation: "Electric field is expressed as N/C or equivalently V/m (potential gradient); both are dimensionally equivalent."
+  },
+  {
+    question: "A conducting rod of length 0.5 m moves at 8 m/s perpendicular to a magnetic field of 0.3 T. Calculate the motional EMF induced.",
+    options: [
+      "12 V",
+      "0.12 V",
+      "2.4 V",
+      "1.2 V"
+    ],
+    answer: 3,
+    explanation: "EMF = BLv = 0.3 × 0.5 × 8 = 1.2 V."
+  },
+  {
+    question: "According to Maxwell's equations, electromagnetic waves are self-sustaining because:",
+    options: [
+      "A changing E field creates a changing B field, which recreates a changing E field, and so on indefinitely",
+      "They can only exist in the immediate vicinity of their source",
+      "They lose energy at a steady constant rate as they travel",
+      "They require a medium to continuously push them forward"
+    ],
+    answer: 0,
+    explanation: "The mutual regeneration of electric and magnetic fields — a changing E field induces B, and that changing B induces E — allows the wave to propagate through space without needing a medium."
+  },
+  {
+    question: "Calculate the electric potential at a point 0.25 m from a charge of −4 μC. (k = 9 × 10⁹ N·m²/C²)",
+    options: [
+      "−9 × 10⁴ V",
+      "−1.44 × 10⁵ V",
+      "1.44 × 10⁵ V",
+      "−3.6 × 10⁴ V"
+    ],
+    answer: 1,
+    explanation: "V = kq/r = (9×10⁹ × (−4×10⁻⁶))/0.25 = −3.6×10⁴/0.25 = −1.44×10⁵ V."
+  },
+  {
+    question: "Why does an isolated charged conductor's excess charge reside entirely on its outer surface?",
+    options: [
+      "Because like charges attract each other and cluster at the center",
+      "Because the conductor's core has effectively infinite resistance",
+      "Because mutual repulsion between like charges pushes them as far apart as possible, which is the outer surface",
+      "Because charge carriers are heavier than the surrounding conductor material"
+    ],
+    answer: 2,
+    explanation: "Like charges repel; free charges in a conductor redistribute to minimize repulsive interaction energy, placing them on the outer surface as far apart as the geometry allows."
+  },
+  {
+    question: "A wire carries 4 A in a magnetic field of 0.5 T at 30° to the field, over a length of 0.6 m. Calculate the force on the wire.",
+    options: [
+      "1.2 N",
+      "2.4 N",
+      "0.3 N",
+      "0.6 N"
+    ],
+    answer: 3,
+    explanation: "F = BIL sinθ = 0.5 × 4 × 0.6 × sin30° = 1.2 × 0.5 = 0.6 N."
+  },
+  {
+    question: "Which of the following best describes the concept of electric flux?",
+    options: [
+      "The resistance encountered by an electric field in a medium",
+      "The total electric charge within a given volume",
+      "A measure of the number of electric field lines passing through a given surface",
+      "The rate of flow of electric charge through a conductor"
+    ],
+    answer: 2,
+    explanation: "Electric flux Φ = ∫E·dA quantifies how much of the electric field passes through a surface, conceptually related to the count of field lines crossing it."
+  },
+  {
+    question: "Three 4 μF capacitors are connected in parallel. Find the total capacitance.",
+    options: [
+      "12 μF",
+      "4 μF",
+      "1.33 μF",
+      "8 μF"
+    ],
+    answer: 0,
+    explanation: "For parallel capacitors: C_total = 4+4+4 = 12 μF."
+  },
+  {
+    question: "What is the primary difference between conductors and dielectrics under an applied electric field?",
+    options: [
+      "Conductors cannot be polarized under any circumstances",
+      "Conductors have free charges that move to cancel the internal field; dielectrics have bound charges that only slightly shift, reducing but not eliminating the field",
+      "Dielectrics allow free current flow through them, unlike conductors",
+      "Both materials behave in an identical manner under any applied electric field"
+    ],
+    answer: 1,
+    explanation: "In conductors, free electrons move until the internal field is completely cancelled; in dielectrics, bound charges only shift slightly (polarize), reducing the internal field without eliminating it."
+  },
+  {
+    question: "A current of 0.5 A flows through a resistor for 4 minutes. Calculate the total charge transferred.",
+    options: [
+      "2 C",
+      "30 C",
+      "0.125 C",
+      "120 C"
+    ],
+    answer: 3,
+    explanation: "Q = It = 0.5 × (4×60) = 0.5 × 240 = 120 C."
+  },
+  {
+    question: "In electromagnetic induction, what does it mean for a coil to have 'self-inductance'?",
+    options: [
+      "The coil induces an EMF in itself due to a change in its own current",
+      "The coil is physically incapable of conducting alternating current",
+      "The coil generates current independently without any external magnetic field",
+      "The coil has zero resistance to any flowing current"
+    ],
+    answer: 0,
+    explanation: "Self-inductance describes how a changing current in a coil induces an EMF in that same coil, opposing the current change, due to the changing magnetic flux the coil itself produces."
+  },
+  {
+    question: "A 9 μF and 18 μF capacitor are connected in series across a 30 V supply. Find the equivalent capacitance.",
+    options: [
+      "27 μF",
+      "6 μF",
+      "13.5 μF",
+      "3 μF"
+    ],
+    answer: 1,
+    explanation: "1/C = 1/9 + 1/18 = 3/18 = 1/6, so C = 6 μF."
+  },
+  {
+    question: "Why is the concept of 'drift velocity' important in understanding current flow in conductors?",
+    options: [
+      "It applies exclusively to insulating materials rather than conductors",
+      "It measures the speed at which light travels through the conductor",
+      "It describes the slow net electron movement that constitutes current at the microscopic level, despite electrons' fast random thermal motion",
+      "It has no quantitative relationship to the magnitude of electric current"
+    ],
+    answer: 2,
+    explanation: "Drift velocity is the small net velocity electrons gain from the applied field; despite being slow compared to thermal motion, this net drift constitutes the electric current."
+  },
+  {
+    question: "A particle with mass 2 × 10⁻²⁷ kg and charge 1.6 × 10⁻¹⁹ C moves in a circle of radius 0.1 m in a magnetic field of 0.4 T. Calculate its speed.",
+    options: [
+      "8 × 10⁴ m/s",
+      "6.4 × 10⁵ m/s",
+      "1.6 × 10⁵ m/s",
+      "3.2 × 10⁶ m/s"
+    ],
+    answer: 3,
+    explanation: "v = rqB/m = (0.1 × 1.6×10⁻¹⁹ × 0.4)/(2×10⁻²⁷) = 6.4×10⁻²¹/2×10⁻²⁷ = 3.2×10⁶ m/s."
+  },
+  {
+    question: "Why is the electric field just outside a charged conductor's surface always perpendicular to the surface?",
+    options: [
+      "Because any tangential field component would drive charges to move until only the perpendicular component remains",
+      "Because all conductor surfaces are perfectly flat and smooth",
+      "Because field lines physically repel the conductor's surface",
+      "Because conductors carry no surface charge in any configuration"
+    ],
+    answer: 0,
+    explanation: "In electrostatic equilibrium, any tangential field component would exert a force on surface charges, causing them to move until that component vanishes, leaving a purely perpendicular field."
+  },
+  {
+    question: "Calculate the energy dissipated as heat in a 10 Ω resistor carrying 2 A for 30 seconds.",
+    options: [
+      "20 J",
+      "1200 J",
+      "600 J",
+      "60 J"
+    ],
+    answer: 1,
+    explanation: "P = I²R = 4 × 10 = 40 W. Energy = Pt = 40 × 30 = 1200 J."
+  },
+  {
+    question: "What fundamentally distinguishes radio waves from gamma rays in the electromagnetic spectrum?",
+    options: [
+      "Gamma rays are not classified as electromagnetic waves",
+      "Radio waves cannot propagate through a vacuum unlike other EM waves",
+      "Radio waves travel significantly faster than gamma rays in a vacuum",
+      "They differ in frequency and wavelength — radio waves have much lower frequency and longer wavelength than gamma rays"
+    ],
+    answer: 3,
+    explanation: "All EM waves travel at c in vacuum; they differ in frequency and wavelength, with radio waves at the low-frequency long-wavelength end and gamma rays at the high-frequency short-wavelength end."
+  },
+  {
+    question: "A toroid has 600 turns, mean radius 0.15 m, and carries a current of 2.5 A. Calculate the magnetic field inside. (μ₀ = 4π × 10⁻⁷ T·m/A)",
+    options: [
+      "1 × 10⁻³ T",
+      "4 × 10⁻³ T",
+      "2 × 10⁻³ T",
+      "8 × 10⁻³ T"
+    ],
+    answer: 2,
+    explanation: "B = μ₀NI/(2πr) = (4π×10⁻⁷ × 600 × 2.5)/(2π × 0.15) = 6×10⁻⁴/0.3 = 2×10⁻³ T."
+  },
+  {
+    question: "What does it mean when a physicist says the electric field is 'conservative'?",
+    options: [
+      "The field never changes its magnitude or direction with time",
+      "The work done moving a charge between two points is independent of the path taken",
+      "The field always points vertically downward toward the ground",
+      "The field exists only within conductors and cannot penetrate insulators"
+    ],
+    answer: 1,
+    explanation: "A conservative field is one where the work done between two points depends only on the endpoints, not the path — this allows definition of a scalar electric potential."
+  },
+  {
+    question: "A proton is accelerated from rest through a potential difference of 2000 V. Calculate the final kinetic energy. (q = 1.6 × 10⁻¹⁹ C)",
+    options: [
+      "1.6 × 10⁻¹⁶ J",
+      "8 × 10⁻¹⁷ J",
+      "3.2 × 10⁻¹⁶ J",
+      "6.4 × 10⁻¹⁶ J"
+    ],
+    answer: 2,
+    explanation: "KE = qV = 1.6×10⁻¹⁹ × 2000 = 3.2×10⁻¹⁶ J."
+  },
+  {
+    question: "Why can't two electric field lines intersect at a single point in space?",
+    options: [
+      "Because the field at any point has one unique direction; intersection would imply two directions simultaneously",
+      "Because intersecting field lines would directly violate Coulomb's law",
+      "Because field lines are physical wires that cannot overlap",
+      "Because field lines only exist in the vicinity of conductors"
+    ],
+    answer: 0,
+    explanation: "The electric field vector at any point has a single defined direction; if two lines crossed, that point would have two different directions at once, which is physically impossible."
+  },
+  {
+    question: "A wire carries a current of 12 A for 5 minutes. How much charge flows through the wire?",
+    options: [
+      "60 C",
+      "2.4 C",
+      "600 C",
+      "3600 C"
+    ],
+    answer: 3,
+    explanation: "Q = It = 12 × (5×60) = 12 × 300 = 3600 C."
+  },
+  {
+    question: "A transformer has 200 turns on the primary and 50 on the secondary. If the primary current is 2 A, what is the secondary current (ideal transformer)?",
+    options: [
+      "2 A",
+      "8 A",
+      "0.5 A",
+      "4 A"
+    ],
+    answer: 1,
+    explanation: "For an ideal transformer, Ip·Np = Is·Ns → Is = Ip×(Np/Ns) = 2×(200/50) = 8 A."
+  },
+  {
+    question: "Which of the following best describes 'polarization' in the context of dielectrics?",
+    options: [
+      "The separation of positive and negative charge centers within a material due to an external electric field",
+      "The process of transferring charge to the surface of a conductor",
+      "The complete removal of electrons from the atomic structure of a material",
+      "The alignment of magnetic domains within a ferromagnetic material"
+    ],
+    answer: 0,
+    explanation: "Polarization is the slight displacement or alignment of bound charges within a dielectric in response to an external field, creating induced dipole moments throughout the material."
+  },
+  {
+    question: "A 50 μF capacitor is charged to 40 V. Calculate the energy stored.",
+    options: [
+      "4 J",
+      "0.004 J",
+      "0.04 J",
+      "0.4 J"
+    ],
+    answer: 2,
+    explanation: "U = ½CV² = ½ × 50×10⁻⁶ × 1600 = 0.04 J."
+  },
+  {
+    question: "Why does a changing magnetic flux through a loop induce a current without physical contact?",
+    options: [
+      "This phenomenon occurs exclusively in superconducting materials",
+      "The changing flux directly pushes electrons through empty space",
+      "Magnetic fields spontaneously generate current in all nearby materials",
+      "The changing magnetic field induces a circulating electric field per Faraday's law, which drives current in any conducting loop present"
+    ],
+    answer: 3,
+    explanation: "A time-varying magnetic field creates a circulating electric field in surrounding space (Faraday's law); a conducting loop in this region has current driven through it by this induced E field."
+  },
+  {
+    question: "Two long parallel wires carry currents of 3 A each in opposite directions, separated by 0.05 m. Calculate the force per unit length and state whether attractive or repulsive. (μ₀ = 4π × 10⁻⁷ T·m/A)",
+    options: [
+      "3.6 × 10⁻⁵ N/m, attractive",
+      "3.6 × 10⁻⁵ N/m, repulsive",
+      "1.8 × 10⁻⁵ N/m, repulsive",
+      "7.2 × 10⁻⁵ N/m, repulsive"
+    ],
+    answer: 1,
+    explanation: "F/L = μ₀I₁I₂/(2πr) = (2×10⁻⁷×9)/0.05 = 3.6×10⁻⁵ N/m. Opposite direction currents repel."
+  },
+  {
+    question: "Why is the electric field due to an infinite sheet of charge independent of distance from the sheet?",
+    options: [
+      "Because Gauss's law cannot be applied to planar charge distributions",
+      "Because infinite sheets are always made of conducting material",
+      "Because the sheet carries zero net charge",
+      "Because field lines from an infinite sheet are parallel and don't diverge with distance, unlike those from a point charge"
+    ],
+    answer: 3,
+    explanation: "Field lines from an infinite sheet remain parallel and uniformly spaced regardless of distance, giving constant field E = σ/2ε₀, unlike a point charge where lines spread giving 1/r² dependence."
+  },
+  {
+    question: "A 60 W bulb operates at 120 V. Calculate the resistance of the bulb's filament.",
+    options: [
+      "120 Ω",
+      "0.5 Ω",
+      "240 Ω",
+      "2 Ω"
+    ],
+    answer: 2,
+    explanation: "P = V²/R → R = V²/P = (120)²/60 = 14400/60 = 240 Ω."
+  },
+  {
+    question: "In a series RLC circuit, what happens to the impedance at very high frequencies well above resonance?",
+    options: [
+      "It is dominated by the inductive reactance and increases with frequency",
+      "It remains constant and independent of frequency",
+      "It is dominated by the capacitive reactance",
+      "It approaches zero"
+    ],
+    answer: 0,
+    explanation: "At high frequencies, XL = 2πfL grows large while XC = 1/(2πfC) shrinks toward zero, so impedance becomes dominated by inductive reactance and increases with frequency."
+  },
+  {
+    question: "A capacitor with air dielectric has capacitance 8 μF. When filled with a dielectric, capacitance becomes 24 μF. Calculate the dielectric constant.",
+    options: [
+      "2",
+      "4",
+      "16",
+      "3"
+    ],
+    answer: 3,
+    explanation: "κ = C_new/C_old = 24/8 = 3."
+  },
+  {
+    question: "Which statement correctly describes the behavior of magnetic field lines around a bar magnet?",
+    options: [
+      "They start at the north pole and terminate at the south pole, never forming closed loops",
+      "They radiate outward from both poles infinitely without returning",
+      "They leave the north pole, travel to the south pole externally, then continue inside the magnet back to north, forming closed loops",
+      "They only exist in the external space and not inside the magnet"
+    ],
+    answer: 2,
+    explanation: "Magnetic field lines have no start or end; they form continuous closed loops, running north to south outside and south to north inside the magnet."
+  },
+  {
+    question: "A coil of 300 turns has magnetic flux changing from 0.002 Wb to 0.008 Wb in 0.2 s. Calculate the induced EMF.",
+    options: [
+      "30 V",
+      "9 V",
+      "3 V",
+      "0.3 V"
+    ],
+    answer: 1,
+    explanation: "EMF = N(ΔΦ/Δt) = 300 × (0.008−0.002)/0.2 = 300 × 0.03 = 9 V."
+  },
+  {
+    question: "Why does connecting capacitors in parallel increase total capacitance, while series connection decreases it?",
+    options: [
+      "Parallel connection increases effective plate area for charge storage; series connection increases effective plate separation",
+      "Parallel connections always reduce voltage to zero regardless of source",
+      "Series connections increase the effective plate area unlike parallel",
+      "There is no real practical difference between series and parallel capacitor combinations"
+    ],
+    answer: 0,
+    explanation: "Parallel connection increases effective plate area (each capacitor stores charge at the same voltage), while series increases effective separation — both consistent with C = ε₀A/d."
+  },
+  {
+    question: "A 100 Ω, 200 Ω, and 300 Ω resistor are connected in parallel. Calculate the equivalent resistance (to 1 d.p.).",
+    options: [
+      "200 Ω",
+      "100 Ω",
+      "54.5 Ω",
+      "600 Ω"
+    ],
+    answer: 2,
+    explanation: "1/R = 1/100 + 1/200 + 1/300 = 11/600. R = 600/11 ≈ 54.5 Ω."
+  },
+  {
+    question: "What is the key insight behind Maxwell's prediction that light itself is an electromagnetic wave?",
+    options: [
+      "He observed light physically bending around the poles of strong magnets",
+      "The speed calculated from his equations (1/√(μ₀ε₀)) matched the experimentally known speed of light exactly",
+      "He proved light is a mechanical wave requiring a physical medium like sound",
+      "He observed that light has no relation to electric or magnetic fields"
+    ],
+    answer: 1,
+    explanation: "Maxwell found that EM waves must travel at c = 1/√(μ₀ε₀); this matched the measured speed of light so closely he concluded light itself must be an electromagnetic wave."
+  },
+  {
+    question: "A charge of 10 μC is moved from a point at 500 V to a point at 200 V. Calculate the work done by the electric field on the charge.",
+    options: [
+      "5 × 10⁻³ J",
+      "7 × 10⁻³ J",
+      "−3 × 10⁻³ J",
+      "3 × 10⁻³ J"
+    ],
+    answer: 3,
+    explanation: "W = q(V_initial − V_final) = 10×10⁻⁶ × (500−200) = 10×10⁻⁶ × 300 = 3×10⁻³ J (positive; field does positive work moving positive charge from high to low potential)."
+  },
+  {
+    question: "In an AC circuit containing only a capacitor, what is the phase relationship between current and voltage?",
+    options: [
+      "Current leads voltage by 90°",
+      "Current and voltage are exactly 180° out of phase",
+      "Current and voltage are perfectly in phase with each other",
+      "Voltage leads current by 90°"
+    ],
+    answer: 0,
+    explanation: "In a purely capacitive AC circuit, the current reaches its maximum a quarter-cycle before the voltage does, so current leads voltage by 90°."
+  },
+  {
+    question: "A wire loop of radius 0.1 m carries a current of 3 A. Calculate the magnetic field at the center of the loop. (μ₀ = 4π × 10⁻⁷ T·m/A)",
+    options: [
+      "9.42 × 10⁻⁶ T",
+      "1.88 × 10⁻⁵ T",
+      "3.77 × 10⁻⁵ T",
+      "6 × 10⁻⁵ T"
+    ],
+    answer: 1,
+    explanation: "B = μ₀I/(2r) = (4π×10⁻⁷ × 3)/(2×0.1) = 3.77×10⁻⁶/0.2 = 1.88×10⁻⁵ T."
+  },
+  {
+    question: "Which factor does NOT affect the capacitance of a parallel plate capacitor?",
+    options: [
+      "The amount of charge currently stored on the plates",
+      "The area of the plates",
+      "The distance between the plates",
+      "The dielectric constant of the medium between the plates"
+    ],
+    answer: 0,
+    explanation: "Capacitance C = κε₀A/d depends only on geometry and dielectric medium; it does not depend on the charge currently stored on it."
+  },
+  {
+    question: "A 12 V car battery with internal resistance 0.5 Ω is short-circuited. Calculate the maximum current that flows.",
+    options: [
+      "6 A",
+      "12 A",
+      "0.5 A",
+      "24 A"
+    ],
+    answer: 3,
+    explanation: "In a short circuit, external resistance ≈ 0, so I = EMF/r = 12/0.5 = 24 A."
+  },
+  {
+    question: "Why does Gauss's law take the form ∮E·dA = Q_enc/ε₀ with ε₀ specifically as the proportionality constant?",
+    options: [
+      "ε₀ is chosen to make all numerical answers come out to exactly 1",
+      "It is an arbitrary definition chosen with no physical basis",
+      "ε₀ (permittivity of free space) arises naturally from the fundamental electric force law (Coulomb's law) and reflects the strength of electromagnetic interaction in vacuum",
+      "ε₀ is determined solely by the magnetic permeability of the medium"
+    ],
+    answer: 2,
+    explanation: "ε₀ emerges from Coulomb's law (k = 1/4πε₀) and represents the fundamental relationship between electric field and charge in vacuum, making Gauss's law a natural consequence of the inverse-square law."
+  },
+  {
+    question: "What is the fundamental difference between a step-up and a step-down transformer?",
+    options: [
+      "Both types have identical turn ratios but differ in core material",
+      "Step-up transformers only work with DC while step-down work with AC",
+      "A step-up transformer has fewer turns on the secondary than the primary; step-down has more turns on secondary",
+      "A step-up transformer has more turns on the secondary than the primary, increasing voltage; step-down has fewer, decreasing voltage"
+    ],
+    answer: 3,
+    explanation: "A step-up transformer has more secondary turns than primary (Ns > Np), increasing voltage; a step-down has fewer secondary turns (Ns < Np), decreasing voltage, both governed by Vs/Vp = Ns/Np."
+  },
+  {
+    question: "Why must the electric field be zero inside a conductor under electrostatic conditions, even if the conductor carries a net charge?",
+    options: [
+      "Because net charge on a conductor neutralizes all internal fields instantly",
+      "Because conductors are made of neutral atoms that block electric fields",
+      "Because free charges redistribute until their collective field exactly cancels any externally applied field inside, reaching equilibrium",
+      "Because conductors absorb all electric field lines that enter them"
+    ],
+    answer: 2,
+    explanation: "Free charges in a conductor respond to any internal field by moving until they create an opposing field that cancels it exactly — equilibrium requires zero net internal field."
+  },
+  {
+    question: "In a purely inductive AC circuit, what is the phase relationship between current and voltage?",
+    options: [
+      "Voltage leads current by 90°",
+      "Current and voltage are exactly 180° out of phase",
+      "Current and voltage are perfectly in phase with each other",
+      "Current leads voltage by 90°"
+    ],
+    answer: 0,
+    explanation: "In a purely inductive circuit, the voltage across the inductor leads the current through it by 90° (or equivalently, current lags voltage by 90°), due to the inductor opposing changes in current."
+  },
+  {
+    question: "What is the significance of the superposition principle in electrostatics?",
+    options: [
+      "It only applies when all charges are of equal magnitude",
+      "It states that the net electric field from multiple charges equals the vector sum of the individual fields, allowing complex distributions to be analyzed charge by charge",
+      "It states that only one charge can exist in a region of space at a time",
+      "It states that charges in a system must always cancel to zero"
+    ],
+    answer: 1,
+    explanation: "The superposition principle states that the total electric field from multiple charges is the vector sum of individual contributions, making complex charge distributions tractable by analyzing one charge at a time."
+  }
+];
 function getCourse(course) {
   return {
     GST112,
     MTH132,
     PHY102,
+    PHY102B,
+    PHY102C,
+    PHY102D,
     CSC104,
     CSC122,
     COS102,
