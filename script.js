@@ -4684,6 +4684,9 @@ function getCourse(course) {
   return {
     GST112,
     MTH132,
+    MTH132B,
+    MTH132C,
+    MTH132D,
     PHY102,
     PHY102B,
     PHY102C,
@@ -5705,6 +5708,1665 @@ const MTH132 = [
     explanation: "Using the identity 1 − cos(x) = 2sin²(x/2) together with the standard limit sin(u)/u → 1, the limit evaluates to 1/2."
   }
 ];
+const MTH132B = [
+  {
+    question: "If f(x) = 2x² − 3x + 1, find f(−2).",
+    options: [
+      "11",
+      "15",
+      "3",
+      "7"
+    ],
+    answer: 1,
+    explanation: "f(−2) = 2(4) − 3(−2) + 1 = 8 + 6 + 1 = 15."
+  },
+  {
+    question: "Which of the following best describes a function?",
+    options: [
+      "A rule that assigns every output to exactly one input",
+      "A relation where inputs can repeat with different outputs",
+      "Any set of ordered pairs",
+      "A rule that assigns every input to exactly one output"
+    ],
+    answer: 3,
+    explanation: "Each element of the domain maps to a unique element of the range."
+  },
+  {
+    question: "Evaluate lim (x→3) (x² − 9)/(x − 3).",
+    options: [
+      "9",
+      "6",
+      "0",
+      "Undefined"
+    ],
+    answer: 1,
+    explanation: "Factor: (x−3)(x+3)/(x−3) = x+3. As x→3, limit = 6."
+  },
+  {
+    question: "A function f is continuous at x = a if:",
+    options: [
+      "f(a) exists only",
+      "lim(x→a) f(x) = f(a)",
+      "f is differentiable at a",
+      "lim(x→a) f(x) exists only"
+    ],
+    answer: 1,
+    explanation: "Continuity requires the value and limit to exist and be equal."
+  },
+  {
+    question: "Differentiate y = 5x³ − 4x² + 7.",
+    options: [
+      "5x² − 8x",
+      "15x² − 8x",
+      "15x³ − 8x",
+      "15x² − 8x + 7"
+    ],
+    answer: 1,
+    explanation: "dy/dx = 15x² − 8x since the constant term differentiates to 0."
+  },
+  {
+    question: "The derivative of a function at a point represents:",
+    options: [
+      "The instantaneous rate of change at that point",
+      "The area under the curve",
+      "The average rate of change over an interval",
+      "The total displacement"
+    ],
+    answer: 0,
+    explanation: "f'(a) gives the slope of the tangent line at that point."
+  },
+  {
+    question: "Find dy/dx if y = (3x + 1)⁴.",
+    options: [
+      "4(3x+1)³",
+      "3(3x+1)³",
+      "12(3x+1)³",
+      "12(3x+1)⁴"
+    ],
+    answer: 2,
+    explanation: "Chain rule: dy/dx = 4(3x+1)³ · 3 = 12(3x+1)³."
+  },
+  {
+    question: "At a local maximum point of a differentiable function, the second derivative is generally:",
+    options: [
+      "Undefined",
+      "Positive",
+      "Negative",
+      "Zero always"
+    ],
+    answer: 2,
+    explanation: "A negative second derivative indicates downward concavity at a maximum."
+  },
+  {
+    question: "Find the critical points of f(x) = x³ − 3x + 2.",
+    options: [
+      "x = 1 only",
+      "x = 1 and x = −1",
+      "x = 3 and x = −3",
+      "x = 0 only"
+    ],
+    answer: 1,
+    explanation: "f'(x) = 3x² − 3 = 0 gives x = ±1."
+  },
+  {
+    question: "∫(4x³ − 6x + 5) dx = ?",
+    options: [
+      "4x⁴ − 3x² + 5x + C",
+      "12x² − 6 + C",
+      "x⁴ − 6x² + 5x + C",
+      "x⁴ − 3x² + 5x + C"
+    ],
+    answer: 3,
+    explanation: "Integrate term by term: 4x³→x⁴, −6x→−3x², 5→5x."
+  },
+  {
+    question: "Which statement about indefinite integrals is true?",
+    options: [
+      "They are equal to the derivative of the function",
+      "They represent a family of functions differing by a constant",
+      "They always have a unique numerical value",
+      "They require specified limits"
+    ],
+    answer: 1,
+    explanation: "Antiderivatives are defined up to an arbitrary constant C."
+  },
+  {
+    question: "Evaluate ∫₁³ (2x) dx.",
+    options: [
+      "4",
+      "6",
+      "8",
+      "9"
+    ],
+    answer: 2,
+    explanation: "∫2x dx = x². Evaluate: 9 − 1 = 8."
+  },
+  {
+    question: "The definite integral ∫ₐᵇ f(x)dx geometrically represents:",
+    options: [
+      "The rate of change of f(x)",
+      "The net signed area between f(x) and the x-axis from a to b",
+      "The maximum value of f(x)",
+      "The slope of f(x) between a and b"
+    ],
+    answer: 1,
+    explanation: "This is the fundamental geometric interpretation of the definite integral."
+  },
+  {
+    question: "Find the area bounded by y = x² and the x-axis from x = 0 to x = 2.",
+    options: [
+      "2",
+      "16/3",
+      "8/3",
+      "4"
+    ],
+    answer: 2,
+    explanation: "∫₀² x² dx = [x³/3]₀² = 8/3."
+  },
+  {
+    question: "The equation of a straight line with slope 2 passing through (1, 3) is:",
+    options: [
+      "y = 2x + 5",
+      "y = 2x + 3",
+      "y = 2x + 1",
+      "y = 2x − 1"
+    ],
+    answer: 2,
+    explanation: "y − 3 = 2(x − 1) gives y = 2x + 1."
+  },
+  {
+    question: "Two lines are perpendicular if the product of their slopes equals:",
+    options: [
+      "0",
+      "Undefined",
+      "1",
+      "−1"
+    ],
+    answer: 3,
+    explanation: "Perpendicularity condition: m₁ × m₂ = −1."
+  },
+  {
+    question: "Find the distance between points (2, 3) and (5, 7).",
+    options: [
+      "6",
+      "5",
+      "7",
+      "4"
+    ],
+    answer: 1,
+    explanation: "d = √[(5−2)² + (7−3)²] = √25 = 5."
+  },
+  {
+    question: "The general equation of a circle with center (a, b) and radius r is:",
+    options: [
+      "x² − y² = r²",
+      "(x+a)² + (y+b)² = r",
+      "(x−a)² + (y−b)² = r²",
+      "x² + y² = r²"
+    ],
+    answer: 2,
+    explanation: "This is the standard form of a circle centered at (a,b)."
+  },
+  {
+    question: "Which of the following is NOT a property required for a limit to exist at x = a?",
+    options: [
+      "Left and right limits must be equal",
+      "The left-hand limit must exist",
+      "f(a) must be defined",
+      "The right-hand limit must exist"
+    ],
+    answer: 2,
+    explanation: "A limit can exist even if the function is undefined there."
+  },
+  {
+    question: "Find lim (x→0) (sin x)/x.",
+    options: [
+      "Infinity",
+      "Undefined",
+      "0",
+      "1"
+    ],
+    answer: 3,
+    explanation: "A standard trigonometric limit, provable via the squeeze theorem."
+  },
+  {
+    question: "If f(x) = 1/(x−2), the function is discontinuous at:",
+    options: [
+      "x = 2",
+      "x = −2",
+      "x = 1",
+      "x = 0"
+    ],
+    answer: 0,
+    explanation: "The denominator becomes zero at x = 2."
+  },
+  {
+    question: "Find the derivative of y = ln(x² + 1).",
+    options: [
+      "x/(x²+1)",
+      "2x",
+      "1/(x²+1)",
+      "2x/(x²+1)"
+    ],
+    answer: 3,
+    explanation: "Chain rule: dy/dx = (1/(x²+1)) · 2x = 2x/(x²+1)."
+  },
+  {
+    question: "A function is said to be increasing on an interval if:",
+    options: [
+      "f'(x) < 0 throughout the interval",
+      "f''(x) > 0 throughout the interval",
+      "f'(x) = 0 throughout the interval",
+      "f'(x) > 0 throughout the interval"
+    ],
+    answer: 3,
+    explanation: "A positive derivative means the function's values are rising."
+  },
+  {
+    question: "Find the slope of the tangent to y = x² − 4x at x = 3.",
+    options: [
+      "2",
+      "1",
+      "−1",
+      "3"
+    ],
+    answer: 0,
+    explanation: "y' = 2x − 4. At x = 3: 2(3) − 4 = 2."
+  },
+  {
+    question: "Which of these represents an even function?",
+    options: [
+      "f(x) = x",
+      "f(x) = sin(x)",
+      "f(x) = x³",
+      "f(x) = x² + 1"
+    ],
+    answer: 3,
+    explanation: "f(−x) = f(x): (−x)² + 1 = x² + 1."
+  },
+  {
+    question: "Using the product rule, differentiate y = x²·sin(x).",
+    options: [
+      "x²·cos(x)",
+      "2x·cos(x)",
+      "2x·sin(x) − x²·cos(x)",
+      "2x·sin(x) + x²·cos(x)"
+    ],
+    answer: 3,
+    explanation: "Product rule: (uv)' = u'v + uv' = 2x·sin(x) + x²·cos(x)."
+  },
+  {
+    question: "The Mean Value Theorem requires the function to be:",
+    options: [
+      "Continuous on [a,b] and differentiable on (a,b)",
+      "Only continuous on [a,b]",
+      "Only differentiable on [a,b]",
+      "Continuous and differentiable everywhere on ℝ"
+    ],
+    answer: 0,
+    explanation: "These are the standard hypotheses of the Mean Value Theorem."
+  },
+  {
+    question: "Find the maximum value of f(x) = −x² + 4x + 1.",
+    options: [
+      "4",
+      "3",
+      "5",
+      "1"
+    ],
+    answer: 2,
+    explanation: "f'(x) = 0 at x = 2. f(2) = 5, and f''(x) < 0 confirms a maximum."
+  },
+  {
+    question: "In optimization problems, a critical point where f'(x) = 0 but f''(x) = 0 also requires:",
+    options: [
+      "Further testing, since the second derivative test is inconclusive",
+      "No further analysis; it is automatically a minimum",
+      "No further analysis; it is automatically a maximum",
+      "It cannot be a critical point"
+    ],
+    answer: 0,
+    explanation: "When f''(x) = 0, the second derivative test fails to classify the point."
+  },
+  {
+    question: "Find ∫ cos(x) dx.",
+    options: [
+      "−cos(x) + C",
+      "cos(x) + C",
+      "−sin(x) + C",
+      "sin(x) + C"
+    ],
+    answer: 3,
+    explanation: "The antiderivative of cos(x) is sin(x)."
+  },
+  {
+    question: "Find the volume of the solid formed when y = x is rotated about the x-axis from x = 0 to x = 2.",
+    options: [
+      "2π",
+      "16π/3",
+      "8π/3",
+      "4π"
+    ],
+    answer: 2,
+    explanation: "V = π∫₀² x² dx = π(8/3) = 8π/3."
+  },
+  {
+    question: "The technique of integration by substitution is most useful when:",
+    options: [
+      "The limits of integration are equal",
+      "The integrand is a simple polynomial",
+      "The integrand is a constant",
+      "The integrand contains a composite function whose derivative is also present"
+    ],
+    answer: 3,
+    explanation: "Substitution replaces a composite expression and its derivative with one variable."
+  },
+  {
+    question: "Evaluate ∫ (2x)(x²+1)⁴ dx using substitution.",
+    options: [
+      "(x²+1)⁴/4 + C",
+      "5(x²+1)⁵ + C",
+      "(x²+1)⁵ + C",
+      "(x²+1)⁵/5 + C"
+    ],
+    answer: 3,
+    explanation: "Let u = x²+1, du = 2x dx. Integral becomes u⁵/5 + C."
+  },
+  {
+    question: "Which of the following correctly states the Fundamental Theorem of Calculus (Part 1)?",
+    options: [
+      "It states that differentiation and integration are inverse processes",
+      "It gives the formula for area of a circle",
+      "It defines the limit of a function",
+      "It connects continuity and differentiability"
+    ],
+    answer: 0,
+    explanation: "The FTC shows differentiation and integration undo each other."
+  },
+  {
+    question: "Find the equation of the tangent line to y = x² at the point (2, 4).",
+    options: [
+      "y = 2x − 4",
+      "y = 2x",
+      "y = 4x + 4",
+      "y = 4x − 4"
+    ],
+    answer: 3,
+    explanation: "y' = 2x, slope at x=2 is 4. Line: y = 4x − 4."
+  },
+  {
+    question: "The point-slope form of a straight line is given by:",
+    options: [
+      "y = mx + c",
+      "ax + by + c = 0",
+      "x/a + y/b = 1",
+      "y − y₁ = m(x − x₁)"
+    ],
+    answer: 3,
+    explanation: "This is the standard point-slope formula."
+  },
+  {
+    question: "Find the midpoint of the line segment joining (4, −2) and (−2, 6).",
+    options: [
+      "(1, 4)",
+      "(2, 2)",
+      "(1, 2)",
+      "(3, 2)"
+    ],
+    answer: 2,
+    explanation: "Midpoint = ((4+(−2))/2, (−2+6)/2) = (1, 2)."
+  },
+  {
+    question: "A function f(x) has a removable discontinuity at x = a if:",
+    options: [
+      "f(x) is a constant function",
+      "The function is undefined for all x",
+      "The limit exists at x = a but does not equal f(a), or f(a) is undefined",
+      "The limit does not exist at x = a"
+    ],
+    answer: 2,
+    explanation: "A removable discontinuity is a mismatch between the limit and the function value."
+  },
+  {
+    question: "Differentiate y = e^(3x).",
+    options: [
+      "e^(x)",
+      "3e^(3x)",
+      "e^(3x)",
+      "3xe^(3x−1)"
+    ],
+    answer: 1,
+    explanation: "By chain rule, derivative of e^(kx) is k·e^(kx)."
+  },
+  {
+    question: "In the study of rates of change, if s(t) represents displacement, then s'(t) represents:",
+    options: [
+      "Jerk",
+      "Position",
+      "Velocity",
+      "Acceleration"
+    ],
+    answer: 2,
+    explanation: "The first derivative of displacement gives velocity."
+  },
+  {
+    question: "Find the second derivative of f(x) = x⁴ − 2x².",
+    options: [
+      "4x³ − 4x",
+      "4x² − 4",
+      "12x²",
+      "12x² − 4"
+    ],
+    answer: 3,
+    explanation: "f'(x) = 4x³ − 4x, f''(x) = 12x² − 4."
+  },
+  {
+    question: "A point of inflection occurs where:",
+    options: [
+      "f'(x) = 0 only",
+      "f''(x) changes sign",
+      "f(x) = 0",
+      "f'(x) is undefined only"
+    ],
+    answer: 1,
+    explanation: "A point of inflection is identified by a sign change in the second derivative."
+  },
+  {
+    question: "Find the area between the curve y = 4 − x² and the x-axis from x = −2 to x = 2.",
+    options: [
+      "16/3",
+      "8",
+      "32/3",
+      "10"
+    ],
+    answer: 2,
+    explanation: "∫₋₂² (4−x²)dx = 32/3."
+  },
+  {
+    question: "For the general quadratic function f(x) = ax² + bx + c with a > 0, the graph is:",
+    options: [
+      "A parabola opening upwards",
+      "A straight line",
+      "A parabola opening downwards",
+      "A circle"
+    ],
+    answer: 0,
+    explanation: "A positive leading coefficient gives a parabola opening upward."
+  },
+  {
+    question: "Evaluate lim (x→∞) (3x² + 2x)/(x² − 5).",
+    options: [
+      "1",
+      "3",
+      "0",
+      "Infinity"
+    ],
+    answer: 1,
+    explanation: "Dividing by x², the limit approaches 3/1 = 3."
+  },
+  {
+    question: "The derivative of a constant function is always:",
+    options: [
+      "Equal to 1",
+      "Equal to the constant",
+      "Zero",
+      "Undefined"
+    ],
+    answer: 2,
+    explanation: "A constant function has no rate of change."
+  },
+  {
+    question: "Find ∫₀^(π/2) cos(x) dx.",
+    options: [
+      "1",
+      "0",
+      "−1",
+      "π/2"
+    ],
+    answer: 0,
+    explanation: "sin(π/2) − sin(0) = 1."
+  },
+  {
+    question: "Which of the following best describes an asymptote of a function?",
+    options: [
+      "A line that the graph approaches but never touches as x or y tends to infinity",
+      "The maximum value of the function",
+      "A point of discontinuity only",
+      "A point where the function crosses the x-axis"
+    ],
+    answer: 0,
+    explanation: "Asymptotes describe the long-run boundary behavior of a curve."
+  },
+  {
+    question: "A car's velocity is given by v(t) = 3t² − 2t. Find the distance travelled between t = 0 and t = 2.",
+    options: [
+      "6",
+      "10",
+      "4",
+      "8"
+    ],
+    answer: 2,
+    explanation: "∫₀²(3t²−2t)dt = [t³−t²]₀² = 8−4 = 4."
+  },
+  {
+    question: "In analytic geometry, the general form of a parabola with vertical axis of symmetry is:",
+    options: [
+      "x² + y² = r²",
+      "(x−a)² + (y−b)² = r²",
+      "x = ay² + by + c",
+      "y = ax² + bx + c"
+    ],
+    answer: 3,
+    explanation: "This standard quadratic form gives a parabola with a vertical axis of symmetry."
+  }
+];
+
+const MTH132C = [
+  {
+    question: "If g(x) = √(x + 4), what is the domain of g?",
+    options: [
+      "All real numbers",
+      "x ≤ −4",
+      "x ≥ −4",
+      "x ≥ 4"
+    ],
+    answer: 2,
+    explanation: "The expression under the root must be non-negative: x ≥ −4."
+  },
+  {
+    question: "A one-to-one function is one where:",
+    options: [
+      "It is always increasing",
+      "Every input has multiple outputs",
+      "The domain equals the range",
+      "Every output has exactly one input mapped to it"
+    ],
+    answer: 3,
+    explanation: "This is the injective property: distinct inputs give distinct outputs."
+  },
+  {
+    question: "Evaluate lim (x→2) (x² − x − 2)/(x − 2).",
+    options: [
+      "3",
+      "1",
+      "2",
+      "4"
+    ],
+    answer: 0,
+    explanation: "Factor: (x−2)(x+1)/(x−2) = x+1. As x→2, limit = 3."
+  },
+  {
+    question: "Which type of discontinuity occurs when a function has a vertical asymptote?",
+    options: [
+      "Removable discontinuity",
+      "Jump discontinuity",
+      "No discontinuity occurs",
+      "Infinite discontinuity"
+    ],
+    answer: 3,
+    explanation: "Near a vertical asymptote, function values grow without bound."
+  },
+  {
+    question: "Differentiate y = 7x⁴ − 2x³ + x.",
+    options: [
+      "28x⁴ − 6x² + 1",
+      "28x³ − 6x² + 1",
+      "7x³ − 6x² + 1",
+      "28x³ − 6x²"
+    ],
+    answer: 1,
+    explanation: "Differentiate term by term: 7x⁴→28x³, −2x³→−6x², x→1."
+  },
+  {
+    question: "The chain rule is applied when differentiating:",
+    options: [
+      "A sum of two functions",
+      "A composite function",
+      "A constant function",
+      "A product of two functions"
+    ],
+    answer: 1,
+    explanation: "The chain rule handles functions nested within other functions."
+  },
+  {
+    question: "Find dy/dx if y = (2x − 5)³.",
+    options: [
+      "6(2x−5)³",
+      "2(2x−5)²",
+      "6(2x−5)²",
+      "3(2x−5)²"
+    ],
+    answer: 2,
+    explanation: "Chain rule: dy/dx = 3(2x−5)² · 2 = 6(2x−5)²."
+  },
+  {
+    question: "At an inflection point, which of the following must be true?",
+    options: [
+      "f''(x) = 0 or undefined, with a sign change",
+      "f'(x) = 0",
+      "f(x) = 0",
+      "f'(x) is at a maximum"
+    ],
+    answer: 0,
+    explanation: "An inflection point requires the concavity to change."
+  },
+  {
+    question: "Find the critical points of f(x) = x³ − 6x² + 9x.",
+    options: [
+      "x = 1, x = 2",
+      "x = 2, x = 3",
+      "x = 1, x = 3",
+      "x = 0, x = 3"
+    ],
+    answer: 2,
+    explanation: "f'(x) = 3(x−1)(x−3) = 0 gives x = 1, 3."
+  },
+  {
+    question: "∫(6x² − 4x + 3) dx = ?",
+    options: [
+      "2x³ − 2x² + 3x + C",
+      "2x³ − 4x² + 3x + C",
+      "12x − 4 + C",
+      "6x³ − 4x² + 3x + C"
+    ],
+    answer: 0,
+    explanation: "Integrate term by term: 6x²→2x³, −4x→−2x², 3→3x."
+  },
+  {
+    question: "Which of the following is true regarding definite and indefinite integrals?",
+    options: [
+      "A definite integral yields a numerical value; an indefinite integral yields a function plus a constant",
+      "Both always include a constant of integration",
+      "There is no difference between them",
+      "A definite integral yields a function; an indefinite integral yields a number"
+    ],
+    answer: 0,
+    explanation: "Definite integrals give a number; indefinite integrals give a general antiderivative."
+  },
+  {
+    question: "Evaluate ∫₀² (3x²) dx.",
+    options: [
+      "6",
+      "4",
+      "9",
+      "8"
+    ],
+    answer: 3,
+    explanation: "∫3x² dx = x³. Evaluate: 8 − 0 = 8."
+  },
+  {
+    question: "If a curve lies entirely below the x-axis between a and b, the definite integral ∫ₐᵇ f(x)dx will be:",
+    options: [
+      "Always negative",
+      "Always zero",
+      "Undefined",
+      "Always positive"
+    ],
+    answer: 0,
+    explanation: "Since f(x) < 0 throughout, the signed area is negative."
+  },
+  {
+    question: "Find the area bounded by y = 3x² and the x-axis from x = 1 to x = 3.",
+    options: [
+      "18",
+      "26",
+      "30",
+      "24"
+    ],
+    answer: 1,
+    explanation: "∫₁³ 3x² dx = [x³]₁³ = 27 − 1 = 26."
+  },
+  {
+    question: "Find the equation of a line passing through (−1, 2) with slope −3.",
+    options: [
+      "y = 3x − 1",
+      "y = −3x − 2",
+      "y = −3x + 2",
+      "y = −3x − 1"
+    ],
+    answer: 3,
+    explanation: "y − 2 = −3(x+1) gives y = −3x − 1."
+  },
+  {
+    question: "Two lines are parallel if:",
+    options: [
+      "Their slopes are equal",
+      "They intersect at one point",
+      "Their slopes are negative reciprocals",
+      "Their y-intercepts are equal"
+    ],
+    answer: 0,
+    explanation: "Parallel lines maintain the same gradient."
+  },
+  {
+    question: "Find the distance between points (−3, 1) and (1, −2).",
+    options: [
+      "6",
+      "5",
+      "3",
+      "4"
+    ],
+    answer: 1,
+    explanation: "d = √[(1+3)² + (−2−1)²] = √25 = 5."
+  },
+  {
+    question: "The equation x²/9 + y²/4 = 1 represents:",
+    options: [
+      "An ellipse",
+      "A parabola",
+      "A hyperbola",
+      "A circle"
+    ],
+    answer: 0,
+    explanation: "This is the standard form of an ellipse."
+  },
+  {
+    question: "For lim (x→a) f(x) to exist, which condition is essential?",
+    options: [
+      "f(a) must be defined",
+      "The function must be a polynomial",
+      "f must be increasing near a",
+      "The left-hand and right-hand limits must both exist and be equal"
+    ],
+    answer: 3,
+    explanation: "This is the formal requirement for a two-sided limit to exist."
+  },
+  {
+    question: "Find lim (x→0) (1 − cos x)/x².",
+    options: [
+      "Infinity",
+      "1/2",
+      "0",
+      "1"
+    ],
+    answer: 1,
+    explanation: "A standard limit result: lim = 1/2."
+  },
+  {
+    question: "If f(x) = (x−1)/(x²−1), the function has a removable discontinuity at:",
+    options: [
+      "x = 0",
+      "x = 2",
+      "x = −1",
+      "x = 1"
+    ],
+    answer: 3,
+    explanation: "f(x) simplifies to 1/(x+1) for x≠1, so x=1 is removable."
+  },
+  {
+    question: "Find the derivative of y = cos(3x²).",
+    options: [
+      "−6x·sin(3x²)",
+      "6x·cos(3x²)",
+      "−sin(3x²)",
+      "−6x²·sin(3x)"
+    ],
+    answer: 0,
+    explanation: "Chain rule: dy/dx = −sin(3x²) · 6x."
+  },
+  {
+    question: "A function is concave up on an interval when:",
+    options: [
+      "f(x) > 0",
+      "f''(x) > 0",
+      "f'(x) > 0",
+      "f''(x) < 0"
+    ],
+    answer: 1,
+    explanation: "Positive second derivative means the graph curves upward."
+  },
+  {
+    question: "Find the slope of the tangent to y = x³ − 2x at x = 1.",
+    options: [
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    answer: 1,
+    explanation: "y' = 3x² − 2. At x=1: 1."
+  },
+  {
+    question: "Which of these is an odd function?",
+    options: [
+      "f(x) = |x|",
+      "f(x) = cos(x)",
+      "f(x) = x³ − x",
+      "f(x) = x² + 3"
+    ],
+    answer: 2,
+    explanation: "f(−x) = −f(x): (−x)³ − (−x) = −(x³−x)."
+  },
+  {
+    question: "Using the quotient rule, differentiate y = x/(x+1).",
+    options: [
+      "x/(x+1)²",
+      "−1/(x+1)²",
+      "1/(x+1)",
+      "1/(x+1)²"
+    ],
+    answer: 3,
+    explanation: "Quotient rule gives [x+1−x]/(x+1)² = 1/(x+1)²."
+  },
+  {
+    question: "Rolle's Theorem is a special case of which theorem?",
+    options: [
+      "The Fundamental Theorem of Calculus",
+      "The Squeeze Theorem",
+      "The Mean Value Theorem",
+      "The Intermediate Value Theorem"
+    ],
+    answer: 2,
+    explanation: "Rolle's Theorem applies when f(a) = f(b), a special case of the MVT."
+  },
+  {
+    question: "Find the minimum value of f(x) = x² − 6x + 10.",
+    options: [
+      "0",
+      "1",
+      "2",
+      "−1"
+    ],
+    answer: 1,
+    explanation: "f'(x)=0 at x=3. f(3)=1, and f''(x)=2>0 confirms a minimum."
+  },
+  {
+    question: "Which statement about optimization problems is correct?",
+    options: [
+      "They cannot be solved using derivatives",
+      "They only apply to physics problems",
+      "They always require integration",
+      "They involve finding maximum or minimum values of a function, often subject to constraints"
+    ],
+    answer: 3,
+    explanation: "Optimization uses derivatives to find extreme values under constraints."
+  },
+  {
+    question: "Find ∫ sin(x) dx.",
+    options: [
+      "−sin(x) + C",
+      "−cos(x) + C",
+      "cos(x) + C",
+      "sin(x) + C"
+    ],
+    answer: 1,
+    explanation: "The antiderivative of sin(x) is −cos(x)."
+  },
+  {
+    question: "Find the volume generated when y = √x is rotated about the x-axis from x = 0 to x = 4.",
+    options: [
+      "16π",
+      "8π",
+      "4π",
+      "2π"
+    ],
+    answer: 1,
+    explanation: "V = π∫₀⁴ x dx = π(16/2) = 8π."
+  },
+  {
+    question: "Integration by parts is derived from which differentiation rule?",
+    options: [
+      "The power rule",
+      "The chain rule",
+      "The product rule",
+      "The quotient rule"
+    ],
+    answer: 2,
+    explanation: "Integration by parts rearranges the product rule for differentiation."
+  },
+  {
+    question: "Evaluate ∫ x·cos(x²) dx using substitution.",
+    options: [
+      "sin(x²)/2 + C",
+      "2sin(x²) + C",
+      "−sin(x²)/2 + C",
+      "sin(x²) + C"
+    ],
+    answer: 0,
+    explanation: "Let u = x², du = 2x dx. Integral becomes sin(u)/2 + C."
+  },
+  {
+    question: "The Fundamental Theorem of Calculus (Part 2) is primarily used to:",
+    options: [
+      "Evaluate definite integrals using antiderivatives",
+      "Find derivatives of implicit functions",
+      "Find the domain of a function",
+      "Determine continuity at a point"
+    ],
+    answer: 0,
+    explanation: "It allows definite integrals to be computed as F(b) − F(a)."
+  },
+  {
+    question: "Find the equation of the tangent line to y = x² − 3x at the point (1, −2).",
+    options: [
+      "y = −x − 1",
+      "y = −x",
+      "y = −x + 1",
+      "y = x − 1"
+    ],
+    answer: 0,
+    explanation: "y' = 2x − 3, slope at x=1 is −1. Line: y = −x − 1."
+  },
+  {
+    question: "The general form of a linear equation in two variables is:",
+    options: [
+      "x² + y² = r²",
+      "y = mx + c",
+      "y − y₁ = m(x − x₁)",
+      "ax + by + c = 0"
+    ],
+    answer: 3,
+    explanation: "This standard general form represents any straight line."
+  },
+  {
+    question: "Find the midpoint of the segment joining (−5, 3) and (7, −9).",
+    options: [
+      "(2, −3)",
+      "(6, −3)",
+      "(1, −6)",
+      "(1, −3)"
+    ],
+    answer: 3,
+    explanation: "Midpoint = ((−5+7)/2, (3−9)/2) = (1, −3)."
+  },
+  {
+    question: "A jump discontinuity occurs when:",
+    options: [
+      "The left-hand and right-hand limits exist but are not equal",
+      "The two-sided limit exists but differs from the function value",
+      "The function is continuous everywhere else",
+      "The function approaches infinity"
+    ],
+    answer: 0,
+    explanation: "A jump discontinuity happens when one-sided limits differ."
+  },
+  {
+    question: "Differentiate y = ln(5x).",
+    options: [
+      "1/(5x)",
+      "5x",
+      "1/x",
+      "5/x"
+    ],
+    answer: 2,
+    explanation: "y = ln5 + lnx, so dy/dx = 1/x."
+  },
+  {
+    question: "If v(t) represents velocity, then v'(t) represents:",
+    options: [
+      "Distance",
+      "Acceleration",
+      "Displacement",
+      "Speed only"
+    ],
+    answer: 1,
+    explanation: "The derivative of velocity with respect to time gives acceleration."
+  },
+  {
+    question: "Find the second derivative of f(x) = 3x⁵ − 5x³.",
+    options: [
+      "60x⁴ − 30x²",
+      "15x⁴ − 15x²",
+      "60x³ − 30x",
+      "15x³ − 30x"
+    ],
+    answer: 2,
+    explanation: "f'(x) = 15x⁴ − 15x², f''(x) = 60x³ − 30x."
+  },
+  {
+    question: "The second derivative test fails when:",
+    options: [
+      "f'(x) = 0 and f''(x) > 0",
+      "f'(x) ≠ 0",
+      "f'(x) = 0 and f''(x) < 0",
+      "f'(x) = 0 and f''(x) = 0"
+    ],
+    answer: 3,
+    explanation: "When both conditions hold, the test is inconclusive."
+  },
+  {
+    question: "Find the area between the curve y = x² − 4 and the x-axis from x = −2 to x = 2 (as a positive area).",
+    options: [
+      "32/3",
+      "10",
+      "16/3",
+      "8"
+    ],
+    answer: 0,
+    explanation: "Since y ≤ 0 on this interval, the positive area is 32/3."
+  },
+  {
+    question: "For f(x) = ax² + bx + c with a < 0, the vertex represents:",
+    options: [
+      "A minimum point",
+      "An asymptote",
+      "A point of inflection",
+      "A maximum point"
+    ],
+    answer: 3,
+    explanation: "When a is negative, the parabola opens downward, so the vertex is a maximum."
+  },
+  {
+    question: "Evaluate lim (x→∞) (5x³ − x)/(2x³ + 7).",
+    options: [
+      "Infinity",
+      "5/2",
+      "0",
+      "1"
+    ],
+    answer: 1,
+    explanation: "Dividing by x³, the limit approaches 5/2."
+  },
+  {
+    question: "The derivative of y = xⁿ with respect to x, using the power rule, is:",
+    options: [
+      "n·x^n",
+      "x^(n−1)",
+      "nx^(n−1)",
+      "nx"
+    ],
+    answer: 2,
+    explanation: "This is the standard power rule of differentiation."
+  },
+  {
+    question: "Find ∫₀^π sin(x) dx.",
+    options: [
+      "0",
+      "2",
+      "−2",
+      "1"
+    ],
+    answer: 1,
+    explanation: "−cos(π) − (−cos(0)) = 1 + 1 = 2."
+  },
+  {
+    question: "A vertical asymptote of a rational function typically occurs where:",
+    options: [
+      "Both numerator and denominator are zero",
+      "The numerator equals zero",
+      "The function is at its maximum",
+      "The denominator equals zero (and the numerator does not also vanish there)"
+    ],
+    answer: 3,
+    explanation: "Vertical asymptotes occur where the denominator vanishes without cancellation."
+  },
+  {
+    question: "An object's velocity is given by v(t) = 4t − 3. Find the total distance travelled from t = 0 to t = 3, assuming velocity stays non-negative.",
+    options: [
+      "10.5",
+      "9",
+      "12",
+      "13.5"
+    ],
+    answer: 1,
+    explanation: "∫₀³(4t−3)dt = [2t²−3t]₀³ = 18−9 = 9."
+  },
+  {
+    question: "In analytic geometry, the equation y² = 4ax represents:",
+    options: [
+      "A hyperbola",
+      "A circle",
+      "An ellipse",
+      "A parabola with horizontal axis of symmetry"
+    ],
+    answer: 3,
+    explanation: "This standard form represents a parabola opening along the x-axis."
+  }
+];
+
+const MTH132D = [
+  {
+    question: "If h(x) = 1/(x−3), what is the domain of h?",
+    options: [
+      "x ≠ 0",
+      "x > 3",
+      "All real numbers",
+      "x ≠ 3"
+    ],
+    answer: 3,
+    explanation: "The function is undefined when x = 3, so it's excluded from the domain."
+  },
+  {
+    question: "The range of a function refers to:",
+    options: [
+      "The domain restricted to positive numbers",
+      "The set of all possible output values",
+      "The set of all possible input values",
+      "The set of x-intercepts"
+    ],
+    answer: 1,
+    explanation: "The range is the complete set of values the function can produce."
+  },
+  {
+    question: "Evaluate lim (x→1) (x³ − 1)/(x − 1).",
+    options: [
+      "3",
+      "0",
+      "1",
+      "2"
+    ],
+    answer: 0,
+    explanation: "Factor: (x−1)(x²+x+1)/(x−1). As x→1: 1+1+1 = 3."
+  },
+  {
+    question: "A function f(x) = |x|/x is discontinuous at x = 0 because:",
+    options: [
+      "The function is a polynomial",
+      "The limit exists but f(0) is defined differently",
+      "The function equals zero at x = 0",
+      "The function is undefined and the left/right limits differ"
+    ],
+    answer: 3,
+    explanation: "As x→0⁻, f(x)→−1; as x→0⁺, f(x)→1; f(0) is undefined."
+  },
+  {
+    question: "Differentiate y = 9x⁵ − 3x² + 4x.",
+    options: [
+      "45x⁴ − 6x + 4",
+      "45x⁴ − 6x",
+      "9x⁴ − 6x + 4",
+      "45x⁵ − 6x + 4"
+    ],
+    answer: 0,
+    explanation: "Differentiate term by term: 9x⁵→45x⁴, −3x²→−6x, 4x→4."
+  },
+  {
+    question: "The derivative measures which of the following geometrically?",
+    options: [
+      "The concavity of a curve only",
+      "The area under a curve",
+      "The slope of the secant line between two points",
+      "The slope of the tangent line at a point"
+    ],
+    answer: 3,
+    explanation: "The derivative at a point gives the gradient of the tangent line there."
+  },
+  {
+    question: "Find dy/dx if y = (4 − x²)⁵.",
+    options: [
+      "−10x(4−x²)⁴",
+      "−5x(4−x²)⁴",
+      "5(4−x²)⁴",
+      "10x(4−x²)⁴"
+    ],
+    answer: 0,
+    explanation: "Chain rule: dy/dx = 5(4−x²)⁴ · (−2x) = −10x(4−x²)⁴."
+  },
+  {
+    question: "Which of the following is a necessary condition for a local extremum at an interior point of a differentiable function?",
+    options: [
+      "f''(x) = 0",
+      "f(x) = 0",
+      "f'(x) = 0",
+      "f'(x) is undefined"
+    ],
+    answer: 2,
+    explanation: "At an interior local extremum, the derivative must vanish."
+  },
+  {
+    question: "Find the critical points of f(x) = 2x³ − 3x² − 12x.",
+    options: [
+      "x = −1, x = 2",
+      "x = 0, x = 2",
+      "x = 2, x = −2",
+      "x = 1, x = −2"
+    ],
+    answer: 0,
+    explanation: "f'(x) = 6(x−2)(x+1) = 0 gives x = 2, −1."
+  },
+  {
+    question: "∫(10x⁴ − 3x² + 2) dx = ?",
+    options: [
+      "2x⁵ − x³ + 2x + C",
+      "40x³ − 6x + C",
+      "10x⁵ − x³ + 2x + C",
+      "2x⁵ − x³ + C"
+    ],
+    answer: 0,
+    explanation: "Integrate term by term: 10x⁴→2x⁵, −3x²→−x³, 2→2x."
+  },
+  {
+    question: "What does the constant of integration (C) represent?",
+    options: [
+      "The initial value of the function",
+      "An arbitrary constant accounting for the family of antiderivatives",
+      "The slope of the tangent",
+      "The area under the curve"
+    ],
+    answer: 1,
+    explanation: "C accounts for all possible vertical shifts of the antiderivative."
+  },
+  {
+    question: "Evaluate ∫₁⁴ (2√x) dx.",
+    options: [
+      "28/9",
+      "28/3",
+      "14",
+      "26/3"
+    ],
+    answer: 1,
+    explanation: "∫2√x dx = (4/3)x^(3/2). Evaluate: 32/3 − 4/3 = 28/3."
+  },
+  {
+    question: "If f(x) ≥ g(x) on [a,b], then ∫ₐᵇ f(x)dx compared to ∫ₐᵇ g(x)dx is:",
+    options: [
+      "Always greater than or equal",
+      "Always equal",
+      "Always smaller",
+      "Cannot be determined"
+    ],
+    answer: 0,
+    explanation: "Since f(x) ≥ g(x) throughout, the area under f is at least as large."
+  },
+  {
+    question: "Find the area bounded by y = 2x and the x-axis from x = 0 to x = 5.",
+    options: [
+      "20",
+      "25",
+      "10",
+      "15"
+    ],
+    answer: 1,
+    explanation: "∫₀⁵ 2x dx = [x²]₀⁵ = 25."
+  },
+  {
+    question: "Find the equation of the line through (0, 4) and (2, 0).",
+    options: [
+      "y = 2x + 4",
+      "y = −2x − 4",
+      "y = −4x + 2",
+      "y = −2x + 4"
+    ],
+    answer: 3,
+    explanation: "Slope = −2. Using y-intercept 4: y = −2x + 4."
+  },
+  {
+    question: "The x-intercept of a line is the point where:",
+    options: [
+      "y = 0",
+      "Both x and y equal 0",
+      "x = 0",
+      "The line is undefined"
+    ],
+    answer: 0,
+    explanation: "The x-intercept occurs where the line crosses the x-axis, so y = 0."
+  },
+  {
+    question: "Find the distance between points (0, 0) and (6, 8).",
+    options: [
+      "12",
+      "8",
+      "10",
+      "9"
+    ],
+    answer: 2,
+    explanation: "d = √(36+64) = √100 = 10."
+  },
+  {
+    question: "The equation x² − y² = 1 represents:",
+    options: [
+      "An ellipse",
+      "A parabola",
+      "A hyperbola",
+      "A circle"
+    ],
+    answer: 2,
+    explanation: "This is the standard form of a hyperbola centered at the origin."
+  },
+  {
+    question: "The Squeeze (Sandwich) Theorem is used to:",
+    options: [
+      "Find limits of functions bounded between two other functions with the same limit",
+      "Prove a function is discontinuous",
+      "Compute derivatives directly",
+      "Determine the domain of a function"
+    ],
+    answer: 0,
+    explanation: "If g(x) ≤ f(x) ≤ h(x) near a, and g, h share a limit, f shares it too."
+  },
+  {
+    question: "Find lim (x→0) (tan x)/x.",
+    options: [
+      "Infinity",
+      "0",
+      "1",
+      "Undefined"
+    ],
+    answer: 2,
+    explanation: "tan x = sin x/cos x, so the limit becomes 1·1 = 1."
+  },
+  {
+    question: "If f(x) = (x²−4)/(x−2), the discontinuity at x = 2 is:",
+    options: [
+      "An infinite discontinuity",
+      "A jump discontinuity",
+      "Not a discontinuity",
+      "A removable discontinuity"
+    ],
+    answer: 3,
+    explanation: "f(x) simplifies to x+2 for x≠2, so x=2 is a removable hole."
+  },
+  {
+    question: "Find the derivative of y = tan(x²).",
+    options: [
+      "2x·tan(x²)",
+      "2x·sec²(x)",
+      "2x·sec²(x²)",
+      "sec²(x²)"
+    ],
+    answer: 2,
+    explanation: "Chain rule: dy/dx = sec²(x²) · 2x."
+  },
+  {
+    question: "A decreasing function on an interval satisfies:",
+    options: [
+      "f'(x) < 0",
+      "f''(x) < 0",
+      "f(x) < 0",
+      "f'(x) > 0"
+    ],
+    answer: 0,
+    explanation: "A negative derivative throughout the interval means values are falling."
+  },
+  {
+    question: "Find the slope of the tangent to y = 1/x at x = 2.",
+    options: [
+      "1/4",
+      "−1/4",
+      "1/2",
+      "−1/2"
+    ],
+    answer: 1,
+    explanation: "y' = −1/x². At x=2: −1/4."
+  },
+  {
+    question: "Which condition confirms that a function is neither even nor odd?",
+    options: [
+      "f(−x) = −f(x) for all x",
+      "f(x) = 0 for all x",
+      "f(−x) ≠ f(x) and f(−x) ≠ −f(x) for some x",
+      "f(−x) = f(x) for all x"
+    ],
+    answer: 2,
+    explanation: "If neither symmetry condition holds, the function is neither even nor odd."
+  },
+  {
+    question: "Differentiate y = (x²+1)(x−3) using the product rule.",
+    options: [
+      "3x² − 6x − 1",
+      "2x(x−3)",
+      "3x² − 6x + 1",
+      "2x(x−3) + (x²+1)"
+    ],
+    answer: 2,
+    explanation: "Product rule: 2x(x−3) + (x²+1) = 3x²−6x+1."
+  },
+  {
+    question: "The Intermediate Value Theorem guarantees that:",
+    options: [
+      "A function has a maximum on [a,b]",
+      "A continuous function on [a,b] takes every value between f(a) and f(b) at least once",
+      "A function is differentiable on (a,b)",
+      "A function's derivative is zero somewhere on [a,b]"
+    ],
+    answer: 1,
+    explanation: "This is the formal statement of the IVT."
+  },
+  {
+    question: "Find the maximum value of f(x) = −2x² + 8x − 3.",
+    options: [
+      "6",
+      "8",
+      "5",
+      "3"
+    ],
+    answer: 2,
+    explanation: "f'(x)=0 at x=2. f(2)=5, and f''(x)=−4<0 confirms a maximum."
+  },
+  {
+    question: "A rectangular field is to be enclosed with 200m of fencing. What is the primary calculus technique used to find dimensions that maximize area?",
+    options: [
+      "Finding the second derivative only",
+      "Using the distance formula",
+      "Integration of the perimeter function",
+      "Setting the derivative of the area function (in terms of one variable) to zero"
+    ],
+    answer: 3,
+    explanation: "Differentiate the area function (using the constraint) and set it to zero."
+  },
+  {
+    question: "Find ∫ sec²(x) dx.",
+    options: [
+      "−cot(x) + C",
+      "sec(x) + C",
+      "tan(x) + C",
+      "cot(x) + C"
+    ],
+    answer: 2,
+    explanation: "The derivative of tan(x) is sec²(x)."
+  },
+  {
+    question: "Find the volume generated when y = 3 (a constant) is rotated about the x-axis from x = 0 to x = 5.",
+    options: [
+      "15π",
+      "45π",
+      "25π",
+      "9π"
+    ],
+    answer: 1,
+    explanation: "V = π∫₀⁵ 9 dx = 45π."
+  },
+  {
+    question: "When choosing u in integration by parts (LIATE rule), which type of function is generally prioritized first?",
+    options: [
+      "Exponential functions",
+      "Trigonometric functions",
+      "Algebraic functions",
+      "Logarithmic functions"
+    ],
+    answer: 3,
+    explanation: "LIATE prioritizes Logarithmic functions first for choosing u."
+  },
+  {
+    question: "Evaluate ∫ 3x²(x³+2)³ dx using substitution.",
+    options: [
+      "(x³+2)³/3 + C",
+      "(x³+2)⁴/4 + C",
+      "4(x³+2)⁴ + C",
+      "(x³+2)⁴ + C"
+    ],
+    answer: 1,
+    explanation: "Let u = x³+2, du = 3x² dx. Integral becomes u⁴/4 + C."
+  },
+  {
+    question: "The Fundamental Theorem of Calculus establishes a connection between:",
+    options: [
+      "Slopes of parallel lines",
+      "Differentiation and integration",
+      "Domain and range",
+      "Limits and continuity"
+    ],
+    answer: 1,
+    explanation: "The theorem shows these two operations of calculus are inverses."
+  },
+  {
+    question: "Find the equation of the tangent line to y = √x at the point (4, 2).",
+    options: [
+      "y = x/4 − 1",
+      "y = x/2 + 1",
+      "y = x/4 + 1",
+      "y = 4x + 2"
+    ],
+    answer: 2,
+    explanation: "y' = 1/(2√x). At x=4: 1/4. Line: y = x/4 + 1."
+  },
+  {
+    question: "The slope-intercept form of a line is useful primarily because it directly shows:",
+    options: [
+      "The slope and y-intercept",
+      "The x-intercept and slope",
+      "The distance from the origin",
+      "Two points on the line"
+    ],
+    answer: 0,
+    explanation: "In y = mx + c, m is the slope and c is the y-intercept."
+  },
+  {
+    question: "Find the midpoint of the segment joining (3, −7) and (−9, 1).",
+    options: [
+      "(3, −3)",
+      "(−3, −3)",
+      "(−3, 3)",
+      "(6, −3)"
+    ],
+    answer: 1,
+    explanation: "Midpoint = ((3−9)/2, (−7+1)/2) = (−3, −3)."
+  },
+  {
+    question: "For a piecewise function to be continuous at a boundary point, which condition must hold?",
+    options: [
+      "The pieces must have equal slopes",
+      "The pieces must meet at the same y-value at that x-value",
+      "Both pieces must be linear",
+      "The domain must be restricted"
+    ],
+    answer: 1,
+    explanation: "Continuity requires both pieces and the function value to agree there."
+  },
+  {
+    question: "Differentiate y = log₁₀(x).",
+    options: [
+      "1/x",
+      "ln10/x",
+      "10/x",
+      "1/(x·ln10)"
+    ],
+    answer: 3,
+    explanation: "log₁₀(x) = ln(x)/ln(10), so its derivative is 1/(x·ln10)."
+  },
+  {
+    question: "In kinematics, the area under a velocity-time graph represents:",
+    options: [
+      "Displacement",
+      "Speed at an instant",
+      "Jerk",
+      "Acceleration"
+    ],
+    answer: 0,
+    explanation: "Integrating velocity with respect to time gives net displacement."
+  },
+  {
+    question: "Find the second derivative of f(x) = 2x⁶ − x⁴.",
+    options: [
+      "12x⁴ − 4x²",
+      "12x⁵ − 4x³",
+      "60x⁵ − 12x³",
+      "60x⁴ − 12x²"
+    ],
+    answer: 3,
+    explanation: "f'(x) = 12x⁵ − 4x³, f''(x) = 60x⁴ − 12x²."
+  },
+  {
+    question: "If f''(x) > 0 for all x in an interval, the graph of f(x) on that interval is:",
+    options: [
+      "Concave up",
+      "Constant",
+      "Concave down",
+      "Linear"
+    ],
+    answer: 0,
+    explanation: "A positive second derivative means the curve bends upward."
+  },
+  {
+    question: "Find the area between the curve y = x³ and the x-axis from x = 0 to x = 2.",
+    options: [
+      "8",
+      "2",
+      "4",
+      "16"
+    ],
+    answer: 2,
+    explanation: "∫₀² x³ dx = [x⁴/4]₀² = 4."
+  },
+  {
+    question: "The vertex of the parabola y = 2x² − 8x + 5 occurs at:",
+    options: [
+      "x = 4",
+      "x = 1",
+      "x = 2",
+      "x = −2"
+    ],
+    answer: 2,
+    explanation: "Vertex x-coordinate = −b/2a = 8/4 = 2."
+  },
+  {
+    question: "Evaluate lim (x→∞) (7x + 3)/(2x² − 1).",
+    options: [
+      "7/2",
+      "Infinity",
+      "3",
+      "0"
+    ],
+    answer: 3,
+    explanation: "The denominator's degree exceeds the numerator's, so the limit is 0."
+  },
+  {
+    question: "For a function f(x) = c (a constant), the graph is:",
+    options: [
+      "A horizontal line",
+      "A vertical line",
+      "A parabola",
+      "A curve with varying slope"
+    ],
+    answer: 0,
+    explanation: "Since output never changes, the graph is a flat horizontal line."
+  },
+  {
+    question: "Find ∫₀¹ eˣ dx.",
+    options: [
+      "e − 1",
+      "1",
+      "e",
+      "e + 1"
+    ],
+    answer: 0,
+    explanation: "∫eˣ dx = eˣ. Evaluate: e¹ − e⁰ = e − 1."
+  },
+  {
+    question: "A horizontal asymptote of a rational function describes the behavior of the function as:",
+    options: [
+      "x approaches a specific finite value where the denominator is zero",
+      "The function crosses the x-axis",
+      "y approaches zero",
+      "x approaches positive or negative infinity"
+    ],
+    answer: 3,
+    explanation: "Horizontal asymptotes describe long-term behavior as input grows without bound."
+  },
+  {
+    question: "A particle's velocity is v(t) = 6t² − 6t. Find the displacement from t = 0 to t = 2.",
+    options: [
+      "12",
+      "6",
+      "8",
+      "4"
+    ],
+    answer: 3,
+    explanation: "∫₀²(6t²−6t)dt = [2t³−3t²]₀² = 16−12 = 4."
+  },
+  {
+    question: "In analytic geometry, the eccentricity of a circle is always:",
+    options: [
+      "1",
+      "0",
+      "Greater than 1",
+      "Undefined"
+    ],
+    answer: 1,
+    explanation: "A circle is a special ellipse case where eccentricity equals 0."
+  }
+];
+
 const PHY102 = [
   {
     question: "Two charges of +2 μC and +8 μC are placed 0.4 m apart in air. Calculate the force between them. (k = 9 × 10⁹ Nm²/C²)",
