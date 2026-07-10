@@ -1909,6 +1909,2777 @@ const PHY102D = [
     explanation: "The superposition principle states that the total electric field from multiple charges is the vector sum of individual contributions, making complex charge distributions tractable by analyzing one charge at a time."
   }
 ];
+const CSC122B = [
+  {
+    question: "What is the most accurate definition of 'data' in data processing?",
+    options: [
+      "Raw, unorganized facts and figures",
+      "Processed facts arranged for decision-making",
+      "Information stored in a database only",
+      "A printed report from a computer"
+    ],
+    answer: 0,
+    explanation: "Data refers to raw, unprocessed facts and figures that have not yet been given meaning; once organized and processed, data becomes information."
+  },
+  {
+    question: "Which of the following best distinguishes information from data?",
+    options: [
+      "Information is always numerical",
+      "Information is data that has been processed and given meaning",
+      "Data and information mean the same thing",
+      "Information cannot be stored on a computer"
+    ],
+    answer: 1,
+    explanation: "Information is the output of processing raw data, structured and given context so it becomes useful for decision-making, unlike data which is raw and unorganized."
+  },
+  {
+    question: "Which of the following is NOT a desirable property of good data?",
+    options: [
+      "Accuracy",
+      "Relevance",
+      "Ambiguity",
+      "Timeliness"
+    ],
+    answer: 2,
+    explanation: "Good data should be accurate, timely, and relevant; ambiguity means vague or unclear meaning, which is a flaw rather than a desirable quality."
+  },
+  {
+    question: "Which of these is an example of a primary source of data?",
+    options: [
+      "A government publication of past statistics",
+      "A textbook summary",
+      "A newspaper report on a survey",
+      "Data collected directly through interviews"
+    ],
+    answer: 3,
+    explanation: "Primary data is collected firsthand for a specific purpose, such as through interviews, surveys, or direct observation, unlike secondary data which is gathered from existing sources."
+  },
+  {
+    question: "Which of the following best describes secondary data?",
+    options: [
+      "Data already collected and published by someone else",
+      "Data that is always false",
+      "Data collected directly by the researcher",
+      "Data obtained only through questionnaires"
+    ],
+    answer: 0,
+    explanation: "Secondary data refers to data that already exists, having been collected by another person or organization for a different original purpose, then reused."
+  },
+  {
+    question: "Which of the following is a common method of data collection?",
+    options: [
+      "Data validation",
+      "Data encryption",
+      "Interviews and questionnaires",
+      "File compression"
+    ],
+    answer: 2,
+    explanation: "Interviews and questionnaires are standard methods for gathering data directly from respondents; the other options are processing or security operations, not collection methods."
+  },
+  {
+    question: "In the data processing cycle, what does 'origin of data' refer to?",
+    options: [
+      "The processing software",
+      "The point where data is first created or captured",
+      "The final printed report",
+      "The storage device used"
+    ],
+    answer: 1,
+    explanation: "The origin of data is the initial stage where data first comes into existence, such as when a transaction occurs or an observation is recorded, before any processing."
+  },
+  {
+    question: "What is the main purpose of the data preparation stage?",
+    options: [
+      "To distribute finished reports",
+      "To delete unnecessary files",
+      "To design computer hardware",
+      "To organize and convert raw data into a form suitable for processing"
+    ],
+    answer: 3,
+    explanation: "Data preparation involves collecting, verifying, and converting raw data into a format the processing system can work with efficiently."
+  },
+  {
+    question: "Which of the following best describes the output stage of data processing?",
+    options: [
+      "The stage where files are deleted",
+      "The stage where processed information is presented to the user",
+      "The stage where data is encrypted",
+      "The point where raw data is first collected"
+    ],
+    answer: 1,
+    explanation: "The output stage is where processed data, now meaningful information, is presented to the end user in usable form, such as a report or display."
+  },
+  {
+    question: "Which data processing method relies entirely on human effort without machines?",
+    options: [
+      "Manual method",
+      "Automatic method",
+      "Electronic method",
+      "Mechanical method"
+    ],
+    answer: 0,
+    explanation: "The manual method involves performing all processing tasks by hand, without mechanical or electronic assistance."
+  },
+  {
+    question: "Which method uses devices like calculators and typewriters, but not electronic computers?",
+    options: [
+      "Manual method",
+      "Real-time method",
+      "Mechanical method",
+      "Automatic method"
+    ],
+    answer: 2,
+    explanation: "The mechanical method uses simple mechanical or electromechanical devices to assist processing, sitting between manual and electronic processing."
+  },
+  {
+    question: "Which method uses computers to process data at high speed with minimal manual intervention?",
+    options: [
+      "Electronic method",
+      "Batch method",
+      "Mechanical method",
+      "Manual method"
+    ],
+    answer: 0,
+    explanation: "The electronic method uses computers to process data, offering greater speed and accuracy than manual or mechanical approaches."
+  },
+  {
+    question: "What best describes automatic data processing?",
+    options: [
+      "Processing done only once a year",
+      "Processing that needs constant manual recalculation",
+      "Processing that, once set up, runs with little ongoing human input",
+      "Processing that avoids using computers"
+    ],
+    answer: 2,
+    explanation: "Automatic data processing refers to systems that carry out tasks on their own once initiated, requiring minimal further human intervention."
+  },
+  {
+    question: "Which processing style collects data over time and processes it all together later?",
+    options: [
+      "Time-sharing processing",
+      "Online processing",
+      "Real-time processing",
+      "Batch processing"
+    ],
+    answer: 3,
+    explanation: "Batch processing accumulates data over a period and processes the entire batch together at a scheduled time, rather than immediately."
+  },
+  {
+    question: "Which processing style allows data to be entered and processed immediately as it occurs?",
+    options: [
+      "Batch processing",
+      "Online processing",
+      "Distributed processing",
+      "Multiprogramming"
+    ],
+    answer: 1,
+    explanation: "Online processing allows data to be input and processed immediately, giving direct interactive access rather than waiting for a scheduled run."
+  },
+  {
+    question: "Which processing style lets multiple users share a system by rapidly switching between their tasks?",
+    options: [
+      "Time-sharing processing",
+      "Batch processing",
+      "Multitasking",
+      "Real-time processing"
+    ],
+    answer: 0,
+    explanation: "Time-sharing divides CPU time among multiple users in quick succession, giving each the impression of dedicated access."
+  },
+  {
+    question: "Which processing style requires output fast enough to influence the process it monitors, such as air traffic control?",
+    options: [
+      "Multiprocessing",
+      "Distributed processing",
+      "Batch processing",
+      "Real-time processing"
+    ],
+    answer: 3,
+    explanation: "Real-time processing demands immediate handling of input, with responses fast enough to affect the system being controlled."
+  },
+  {
+    question: "What is the key feature of distributed processing?",
+    options: [
+      "Only one user can access it at a time",
+      "Tasks are spread across multiple connected computers",
+      "All processing happens on one machine",
+      "Data cannot be shared between systems"
+    ],
+    answer: 1,
+    explanation: "Distributed processing spreads tasks across multiple interconnected computers, often in different locations, working together on a common goal."
+  },
+  {
+    question: "What does multiprogramming refer to?",
+    options: [
+      "Running one program on many computers",
+      "Writing programs in several languages",
+      "One CPU holding multiple programs in memory and switching between them",
+      "Using several monitors for one program"
+    ],
+    answer: 2,
+    explanation: "Multiprogramming allows several programs to reside in memory at once, with the CPU switching between them to maximize utilization while one waits for input/output."
+  },
+  {
+    question: "What distinguishes multiprocessing from multiprogramming?",
+    options: [
+      "Multiprocessing only works with one program at a time",
+      "Multiprocessing uses two or more CPUs working simultaneously, while multiprogramming uses one CPU switching tasks",
+      "Multiprocessing cannot run on modern computers",
+      "They are exactly the same concept"
+    ],
+    answer: 1,
+    explanation: "Multiprocessing involves two or more processors executing instructions simultaneously, whereas multiprogramming uses a single CPU that rapidly switches between multiple programs."
+  },
+  {
+    question: "What does multitasking generally refer to in computing?",
+    options: [
+      "A single user running several applications seemingly at once on one system",
+      "Backup of data across devices",
+      "A network of distributed servers",
+      "Several users sharing one file"
+    ],
+    answer: 0,
+    explanation: "Multitasking is the ability of an operating system to let a single user run multiple applications or tasks concurrently, with the CPU rapidly switching between them."
+  },
+  {
+    question: "Which of the following best defines a 'computer file'?",
+    options: [
+      "A physical storage device",
+      "A single character stored temporarily",
+      "A collection of related records stored together under a common name",
+      "A type of software application"
+    ],
+    answer: 2,
+    explanation: "A computer file is an organized collection of related records or data stored together and identified by a unique name, allowing it to be retrieved and managed as a unit."
+  },
+  {
+    question: "Which of the following is a type of computer file based on its content?",
+    options: [
+      "Indexed file",
+      "Direct file",
+      "Sequential file",
+      "Master file"
+    ],
+    answer: 3,
+    explanation: "Master files, transaction files, and reference files are classified by content/purpose; sequential, direct, and indexed files are classified by organization method, not content type."
+  },
+  {
+    question: "What is a 'master file' in file processing?",
+    options: [
+      "A file that holds relatively permanent, ongoing records that are periodically updated",
+      "A temporary file deleted after each use",
+      "A file used solely for backup purposes",
+      "A file containing only error logs"
+    ],
+    answer: 0,
+    explanation: "A master file contains relatively permanent data about an entity (such as customer or employee records) that is periodically updated with new transactions."
+  },
+  {
+    question: "What is a 'transaction file' used for?",
+    options: [
+      "Holding backup copies of software",
+      "Storing permanent records that never change",
+      "Storing only system error messages",
+      "Temporarily holding data about current transactions before it updates the master file"
+    ],
+    answer: 3,
+    explanation: "A transaction file holds data related to day-to-day activities or transactions, which is later used to update the corresponding master file."
+  },
+  {
+    question: "What does 'file processing' primarily involve?",
+    options: [
+      "Designing computer hardware",
+      "Writing programming languages",
+      "Creating, updating, retrieving, and maintaining data stored in files",
+      "Physically manufacturing storage devices"
+    ],
+    answer: 2,
+    explanation: "File processing encompasses the operations performed on files, including creating, reading, updating, deleting, and maintaining records stored within them."
+  },
+  {
+    question: "Which of the following is a common file processing operation?",
+    options: [
+      "Installing an operating system",
+      "Sorting records into a particular order",
+      "Designing a keyboard layout",
+      "Manufacturing circuit boards"
+    ],
+    answer: 1,
+    explanation: "Sorting is a standard file processing activity used to arrange records in a specific order to facilitate easier searching and processing."
+  },
+  {
+    question: "What does 'file organization' refer to?",
+    options: [
+      "The physical location of the computer in a room",
+      "The brand of the storage device used",
+      "The color-coding system for folders",
+      "The way records are logically arranged and stored within a file for efficient access"
+    ],
+    answer: 3,
+    explanation: "File organization refers to the method used to structure and store records within a file, which determines how efficiently data can be accessed, updated, or retrieved."
+  },
+  {
+    question: "In sequential file organization, how are records typically stored and accessed?",
+    options: [
+      "Records can be accessed randomly in any order instantly",
+      "Records are stored and accessed in a particular order, one after another",
+      "Records are stored based on a mathematical hash function only",
+      "Records have no defined storage order at all"
+    ],
+    answer: 1,
+    explanation: "In sequential file organization, records are stored one after another in a specific order and must generally be accessed in that same sequence."
+  },
+  {
+    question: "What is a key characteristic of direct (random) file organization?",
+    options: [
+      "It is only usable with paper-based files",
+      "Records must always be read from the beginning of the file",
+      "Records can be accessed directly using their address or key, without reading previous records",
+      "It requires records to be sorted alphabetically first"
+    ],
+    answer: 2,
+    explanation: "Direct (or random) file organization allows records to be accessed immediately using their storage address or a key value, without needing to sequentially read through preceding records."
+  },
+  {
+    question: "What is the main advantage of indexed sequential file organization?",
+    options: [
+      "It allows both sequential processing and direct access via an index, combining benefits of both methods",
+      "It requires no key field",
+      "It eliminates the need for any index at all",
+      "It can only be used for very small files"
+    ],
+    answer: 0,
+    explanation: "Indexed sequential organization maintains records in sequential order while also providing an index, allowing for both efficient sequential processing and quick direct access to individual records."
+  },
+  {
+    question: "Which of the following best describes a 'data processing environment'?",
+    options: [
+      "The physical temperature of a computer room",
+      "The overall setup of hardware, software, people, and procedures involved in processing data within an organization",
+      "The brand of computer used exclusively",
+      "Only the software installed on a single computer"
+    ],
+    answer: 1,
+    explanation: "A data processing environment encompasses all the resources — hardware, software, personnel, procedures, and data — that work together within an organization to process data effectively."
+  },
+  {
+    question: "Which of the following is typically a stage in the data processing cycle?",
+    options: [
+      "Installation, Configuration, Removal",
+      "Compilation, Debugging, Execution",
+      "Input, Processing, Output",
+      "Login, Browse, Logout"
+    ],
+    answer: 2,
+    explanation: "The standard data processing cycle consists of three basic stages: Input (data entry), Processing (transformation of data), and Output (presentation of results as information)."
+  },
+  {
+    question: "What is the primary role of 'storage' in the data processing cycle?",
+    options: [
+      "To retain data and information for future use or reference",
+      "To physically print documents",
+      "To permanently discard unused data",
+      "To convert data into sound only"
+    ],
+    answer: 0,
+    explanation: "Storage in the data processing cycle serves to hold data and processed information so that it can be retrieved and used again in the future."
+  },
+  {
+    question: "Which of the following best describes a 'field' in the context of a computer file?",
+    options: [
+      "A complete file containing thousands of entries",
+      "An entire collection of related records",
+      "A backup copy of the whole database",
+      "The smallest unit of data representing a single characteristic, such as a name or age"
+    ],
+    answer: 3,
+    explanation: "A field is the smallest logical unit of data in a file, representing a single characteristic or attribute within a record."
+  },
+  {
+    question: "What is a 'record' in file terminology?",
+    options: [
+      "The entire database system",
+      "A collection of related fields treated as a single unit, representing one entity",
+      "A physical disk drive",
+      "A single character stored in memory"
+    ],
+    answer: 1,
+    explanation: "A record is a collection of related fields grouped together to represent all the information about a single entity, such as one employee or one customer."
+  },
+  {
+    question: "Which of the following correctly orders file structure from smallest to largest unit?",
+    options: [
+      "Character, Field, Record, File",
+      "File, Record, Field, Character",
+      "Field, Character, File, Record",
+      "Record, File, Character, Field"
+    ],
+    answer: 0,
+    explanation: "The hierarchy of data organization goes from character (smallest) to field, then to record, and finally to file (the largest collective unit)."
+  },
+  {
+    question: "What is the primary purpose of 'data validation' during data processing?",
+    options: [
+      "To convert data into a foreign language",
+      "To make data processing slower",
+      "To delete all incorrect data permanently without review",
+      "To check that data entered meets certain rules or criteria before processing, reducing errors"
+    ],
+    answer: 3,
+    explanation: "Data validation involves checking that input data conforms to predefined rules or formats before it is accepted for processing, helping to catch errors early."
+  },
+  {
+    question: "Which of the following is an example of a 'manual' data processing activity?",
+    options: [
+      "Running a batch program overnight",
+      "Using an automated teller machine (ATM)",
+      "Recording sales transactions by hand in a ledger book",
+      "Using a computer spreadsheet to calculate totals"
+    ],
+    answer: 2,
+    explanation: "Recording transactions by hand in a ledger, without any mechanical or electronic assistance, is a classic example of manual data processing."
+  },
+  {
+    question: "Which processing style would be most appropriate for a payroll system that processes employee salaries once every month?",
+    options: [
+      "Batch processing",
+      "Real-time processing",
+      "Online processing",
+      "Time-sharing processing"
+    ],
+    answer: 0,
+    explanation: "Payroll is typically processed periodically after accumulating data, making batch processing the most suitable and efficient method."
+  },
+  {
+    question: "Which processing style would be most appropriate for an airline seat reservation system?",
+    options: [
+      "Mechanical processing",
+      "Real-time processing",
+      "Manual processing",
+      "Batch processing"
+    ],
+    answer: 1,
+    explanation: "An airline reservation system needs to immediately reflect seat availability to prevent double-booking, requiring real-time processing so that each booking updates the system instantly."
+  },
+  {
+    question: "What is the main difference between online processing and real-time processing?",
+    options: [
+      "They are identical with no difference",
+      "Real-time processing cannot use computers",
+      "Online processing is always slower than batch processing",
+      "Real-time processing requires immediate response within a strict time constraint, while online processing simply means direct interactive access"
+    ],
+    answer: 3,
+    explanation: "While both involve direct interaction, real-time processing has a strict requirement that output be produced within a specific time frame to control a process, whereas online simply means direct interactive access."
+  },
+  {
+    question: "Which of the following best explains why batch processing is often more efficient for large volumes of routine data?",
+    options: [
+      "It can only handle one record at a time",
+      "It requires constant human supervision throughout",
+      "It processes many records together at once, reducing overhead compared to handling each one individually",
+      "It always requires more computing power than real-time processing"
+    ],
+    answer: 2,
+    explanation: "By grouping many similar transactions and processing them together in one run, batch processing reduces repeated overhead, making it efficient for large routine workloads."
+  },
+  {
+    question: "What does 'data integrity' refer to in a data processing system?",
+    options: [
+      "The color scheme of the user interface",
+      "The accuracy, consistency, and reliability of data throughout its lifecycle",
+      "The physical size of the storage device",
+      "The speed at which data is processed"
+    ],
+    answer: 1,
+    explanation: "Data integrity refers to maintaining the accuracy, consistency, and trustworthiness of data over its entire lifecycle, ensuring it remains unaltered and reliable."
+  },
+  {
+    question: "Which of the following is considered an advantage of electronic data processing over manual methods?",
+    options: [
+      "Lower initial equipment cost",
+      "No need for trained personnel",
+      "Complete immunity to all errors",
+      "Greater speed and accuracy in handling large volumes of data"
+    ],
+    answer: 3,
+    explanation: "Electronic data processing can handle vastly larger volumes of data with much greater speed and accuracy than manual methods, though it does require investment and trained personnel."
+  },
+  {
+    question: "What is a key characteristic of 'multiprocessing' systems?",
+    options: [
+      "They use two or more processors that can execute instructions concurrently, improving overall system performance",
+      "They can only run one program at a time",
+      "They eliminate the need for memory",
+      "They use a single processor exclusively"
+    ],
+    answer: 0,
+    explanation: "Multiprocessing systems use two or more CPUs working together, allowing multiple instructions to be executed simultaneously, increasing overall throughput."
+  },
+  {
+    question: "In which situation would real-time processing be essential rather than optional?",
+    options: [
+      "Printing annual financial summaries",
+      "Archiving old employee records",
+      "Controlling a nuclear reactor where instant monitoring and response is critical",
+      "Generating quarterly reports from stored data"
+    ],
+    answer: 2,
+    explanation: "Nuclear reactor control requires immediate processing of sensor data and responses within extremely tight time constraints, making real-time processing not just preferred but essential."
+  },
+  {
+    question: "Which of these file types is specifically designed to record system events for monitoring or troubleshooting?",
+    options: [
+      "Log file",
+      "Master file",
+      "Backup file",
+      "Transaction file"
+    ],
+    answer: 0,
+    explanation: "A log file is a special-purpose file used to record events, errors, or activities occurring within a system, primarily for monitoring or troubleshooting purposes."
+  },
+  {
+    question: "The process of combining two or more sorted files into one larger sorted file is called:",
+    options: [
+      "Partitioning",
+      "Sorting",
+      "Merging",
+      "Indexing"
+    ],
+    answer: 2,
+    explanation: "Merging is the process of combining two or more already-sorted files into a single sorted file, often used in batch processing to consolidate related data."
+  },
+  {
+    question: "What does the term 'data lifecycle' refer to?",
+    options: [
+      "The speed of a storage device",
+      "The stages data goes through from creation to deletion, including collection, processing, storage, and disposal",
+      "The number of users who access a file",
+      "The time it takes to back up a single file"
+    ],
+    answer: 1,
+    explanation: "The data lifecycle covers all stages a piece of data passes through: creation or capture, processing, storage, use, and eventual deletion or archiving."
+  },
+  {
+    question: "Which of the following best explains the role of an index in indexed sequential file organization?",
+    options: [
+      "It prevents unauthorized access to records",
+      "It compresses records to save space",
+      "It deletes redundant records automatically",
+      "It provides key-based pointers to record locations, enabling fast direct access without full sequential scanning"
+    ],
+    answer: 3,
+    explanation: "An index stores key values and their corresponding record locations, allowing the system to jump directly to a specific record rather than scanning the entire file sequentially."
+  }
+];
+const CSC122C = [
+  {
+    question: "Which term best describes facts and figures that have not yet been processed or interpreted?",
+    options: [
+      "Information",
+      "Data",
+      "Knowledge",
+      "Report"
+    ],
+    answer: 1,
+    explanation: "Data is the raw, unprocessed form of facts and figures before any organization or interpretation is applied to give it meaning."
+  },
+  {
+    question: "What condition must be met before data can be considered 'information'?",
+    options: [
+      "It must be processed and given context",
+      "It must be numerical in nature",
+      "It must be stored on a hard drive",
+      "It must be written by an expert"
+    ],
+    answer: 0,
+    explanation: "Data becomes information only after it has been processed, organized, and given meaningful context that makes it useful for decision-making."
+  },
+  {
+    question: "Which property ensures that data reflects the true state of what it represents?",
+    options: [
+      "Speed",
+      "Format",
+      "Accuracy",
+      "Volume"
+    ],
+    answer: 2,
+    explanation: "Accuracy is the property ensuring that data correctly reflects the real facts or values it is meant to represent, free from errors."
+  },
+  {
+    question: "Which property of data refers to it being available when needed for decision-making?",
+    options: [
+      "Consistency",
+      "Timeliness",
+      "Compression",
+      "Redundancy"
+    ],
+    answer: 1,
+    explanation: "Timeliness refers to data being up-to-date and available at the time it is needed, since outdated data loses much of its value for decisions."
+  },
+  {
+    question: "Data gathered directly from an experiment conducted by the researcher is classified as:",
+    options: [
+      "Tertiary data",
+      "Compiled data",
+      "Archived data",
+      "Primary data"
+    ],
+    answer: 3,
+    explanation: "Data collected firsthand by the researcher, such as through an experiment, survey, or direct observation, is classified as primary data."
+  },
+  {
+    question: "Which term describes data obtained from a source that already processed it for another purpose?",
+    options: [
+      "Secondary data",
+      "Sample data",
+      "Field data",
+      "Live data"
+    ],
+    answer: 0,
+    explanation: "Secondary data is data that has already been collected and possibly processed by someone else for a different original purpose, then reused by another party."
+  },
+  {
+    question: "Which of these is a widely used tool for gathering opinions from a large group of people?",
+    options: [
+      "Spreadsheet",
+      "Compiler",
+      "Questionnaire",
+      "Debugger"
+    ],
+    answer: 2,
+    explanation: "A questionnaire is a structured set of written questions used to collect data or opinions from a large number of respondents efficiently."
+  },
+  {
+    question: "Observing and recording events as they naturally happen, without interference, is called:",
+    options: [
+      "Extraction",
+      "Observation",
+      "Aggregation",
+      "Simulation"
+    ],
+    answer: 1,
+    explanation: "Observation involves watching and recording events or behaviors as they naturally occur, without manipulating the situation."
+  },
+  {
+    question: "The stage where data is first generated or captured is known as the:",
+    options: [
+      "Origin of data",
+      "Storage stage",
+      "Output stage",
+      "Retrieval stage"
+    ],
+    answer: 0,
+    explanation: "The origin of data is the point at which data first comes into existence, such as when a transaction takes place or a measurement is taken."
+  },
+  {
+    question: "Verifying and converting raw data into a usable format before processing is called:",
+    options: [
+      "Data archiving",
+      "Data destination",
+      "Data encryption",
+      "Data preparation"
+    ],
+    answer: 3,
+    explanation: "Data preparation involves checking, organizing, and converting raw data into a suitable format that a processing system can accept."
+  },
+  {
+    question: "The stage where processed results are delivered to the end user is called the:",
+    options: [
+      "Destination stage",
+      "Coding stage",
+      "Collection stage",
+      "Input stage"
+    ],
+    answer: 0,
+    explanation: "The destination stage is where the final processed information reaches its intended recipient, completing the data processing cycle."
+  },
+  {
+    question: "A data processing method that uses no machines of any kind is known as the:",
+    options: [
+      "Automatic method",
+      "Digital method",
+      "Manual method",
+      "Electronic method"
+    ],
+    answer: 2,
+    explanation: "The manual method relies entirely on human effort, without the use of any mechanical or electronic devices, to process data."
+  },
+  {
+    question: "A processing method that uses devices like adding machines but not computers is the:",
+    options: [
+      "Real-time method",
+      "Mechanical method",
+      "Batch method",
+      "Electronic method"
+    ],
+    answer: 1,
+    explanation: "The mechanical method uses simple devices such as calculators or adding machines to assist processing, without involving full electronic computers."
+  },
+  {
+    question: "The processing method that uses computers for high-speed, accurate data handling is the:",
+    options: [
+      "Manual method",
+      "Mechanical method",
+      "Paper-based method",
+      "Electronic method"
+    ],
+    answer: 3,
+    explanation: "The electronic method uses computers and related technology to process data with high speed, accuracy, and efficiency compared to earlier methods."
+  },
+  {
+    question: "A system designed to operate with minimal human intervention once configured is described as:",
+    options: [
+      "Sequential",
+      "Automatic",
+      "Mechanical",
+      "Manual"
+    ],
+    answer: 1,
+    explanation: "An automatic system, once properly set up, performs its tasks largely on its own, requiring little further human input during operation."
+  },
+  {
+    question: "Accumulating data over time and processing it together at intervals describes:",
+    options: [
+      "Time-sharing processing",
+      "Real-time processing",
+      "Batch processing",
+      "Online processing"
+    ],
+    answer: 2,
+    explanation: "Batch processing gathers data over a period and processes the entire collection together at a scheduled time, rather than immediately."
+  },
+  {
+    question: "Processing that occurs immediately as data is entered, with direct system access, is called:",
+    options: [
+      "Online processing",
+      "Batch processing",
+      "Distributed processing",
+      "Multiprogramming"
+    ],
+    answer: 0,
+    explanation: "Online processing allows data to be entered and processed right away, giving the user direct, interactive access to the system."
+  },
+  {
+    question: "A system where several users share CPU time in rapid rotation is known as:",
+    options: [
+      "Multitasking",
+      "Batch processing",
+      "Real-time processing",
+      "Time-sharing processing"
+    ],
+    answer: 3,
+    explanation: "Time-sharing allocates small slices of CPU time to multiple users in quick succession, giving each the appearance of simultaneous access."
+  },
+  {
+    question: "Processing that must respond within a strict time limit to control an ongoing process is:",
+    options: [
+      "Real-time processing",
+      "Batch processing",
+      "Multiprocessing",
+      "Distributed processing"
+    ],
+    answer: 0,
+    explanation: "Real-time processing requires that data be processed and a response generated fast enough to influence or control the process being monitored."
+  },
+  {
+    question: "Spreading processing tasks across several interconnected computers describes:",
+    options: [
+      "Sequential processing",
+      "Centralized processing",
+      "Distributed processing",
+      "Manual processing"
+    ],
+    answer: 2,
+    explanation: "Distributed processing divides workloads across multiple connected computers, often in different physical locations, working cooperatively."
+  },
+  {
+    question: "Allowing a single CPU to hold several programs in memory and switch between them is called:",
+    options: [
+      "Time-slicing only",
+      "Multiprogramming",
+      "Multitasking",
+      "Multiprocessing"
+    ],
+    answer: 1,
+    explanation: "Multiprogramming enables a single processor to keep multiple programs in memory simultaneously, switching between them to maximize CPU usage."
+  },
+  {
+    question: "The use of two or more processors executing tasks at the same time is known as:",
+    options: [
+      "Batch processing",
+      "Multiprogramming",
+      "Sequential processing",
+      "Multiprocessing"
+    ],
+    answer: 3,
+    explanation: "Multiprocessing involves two or more CPUs working simultaneously on different tasks, increasing overall processing throughput."
+  },
+  {
+    question: "A single user running several applications concurrently on one system describes:",
+    options: [
+      "Batch processing",
+      "Multitasking",
+      "Real-time processing",
+      "Distributed processing"
+    ],
+    answer: 1,
+    explanation: "Multitasking allows one user to operate multiple applications at once on a single system, with the CPU switching rapidly between them."
+  },
+  {
+    question: "A named, organized collection of related records stored together is called a:",
+    options: [
+      "Byte",
+      "Index",
+      "Field",
+      "File"
+    ],
+    answer: 3,
+    explanation: "A file is a structured collection of related records stored under a common name, allowing the data to be managed and retrieved as a unit."
+  },
+  {
+    question: "A file containing fairly permanent records that are periodically updated is called a:",
+    options: [
+      "Master file",
+      "Backup file",
+      "Log file",
+      "Transaction file"
+    ],
+    answer: 0,
+    explanation: "A master file stores relatively permanent information about an entity, such as customer details, which is periodically updated as new data arrives."
+  },
+  {
+    question: "A file that temporarily holds current activity data before it updates a permanent file is a:",
+    options: [
+      "Reference file",
+      "Master file",
+      "Transaction file",
+      "Archive file"
+    ],
+    answer: 2,
+    explanation: "A transaction file holds records of recent activities or events, which are later used to update the corresponding master file."
+  },
+  {
+    question: "Creating, retrieving, updating, and maintaining data within files is collectively known as:",
+    options: [
+      "File compression",
+      "File processing",
+      "File encryption",
+      "File organization"
+    ],
+    answer: 1,
+    explanation: "File processing refers to the set of operations performed on stored files, including creation, retrieval, updating, and general maintenance."
+  },
+  {
+    question: "Arranging records into a specific sequence, such as alphabetical order, is called:",
+    options: [
+      "Formatting",
+      "Indexing",
+      "Merging",
+      "Sorting"
+    ],
+    answer: 3,
+    explanation: "Sorting is the process of arranging records within a file into a particular order, typically based on a key field, to aid access and processing."
+  },
+  {
+    question: "The method used to logically arrange and store records within a file is called:",
+    options: [
+      "File security",
+      "File compression",
+      "File organization",
+      "File duplication"
+    ],
+    answer: 2,
+    explanation: "File organization refers to the technique used to structure and store records so that they can be efficiently accessed, retrieved, and updated."
+  },
+  {
+    question: "In this file organization type, records are stored and read one after another in order:",
+    options: [
+      "Sequential organization",
+      "Random organization",
+      "Direct organization",
+      "Indexed organization"
+    ],
+    answer: 0,
+    explanation: "Sequential file organization stores records one after another, typically ordered by a key field, and requires reading through them in that same order."
+  },
+  {
+    question: "This file organization allows immediate access to a record using its address, without reading prior records:",
+    options: [
+      "Sequential organization",
+      "Batch organization",
+      "Manual organization",
+      "Direct organization"
+    ],
+    answer: 3,
+    explanation: "Direct (random) organization allows a record to be accessed immediately via its storage address or key, bypassing the need to read preceding records."
+  },
+  {
+    question: "This file organization combines an index with sequential storage to allow both types of access:",
+    options: [
+      "Direct organization",
+      "Indexed sequential organization",
+      "Hierarchical organization",
+      "Batch organization"
+    ],
+    answer: 1,
+    explanation: "Indexed sequential organization keeps records in order while also maintaining an index, enabling both sequential reading and fast direct access."
+  },
+  {
+    question: "The overall setup of hardware, software, people, and procedures used to process data in an organization is called the:",
+    options: [
+      "File structure",
+      "Input medium",
+      "Data processing environment",
+      "Processing cycle"
+    ],
+    answer: 2,
+    explanation: "The data processing environment includes all the combined resources — hardware, software, staff, and procedures — used within an organization to carry out data processing."
+  },
+  {
+    question: "The three basic stages of the data processing cycle are:",
+    options: [
+      "Input, Processing, Output",
+      "Design, Test, Deploy",
+      "Collect, Sort, Delete",
+      "Compile, Link, Run"
+    ],
+    answer: 0,
+    explanation: "The standard data processing cycle consists of Input (entering data), Processing (transforming it), and Output (presenting the resulting information)."
+  },
+  {
+    question: "Retaining data or information so it can be used again later is the function of:",
+    options: [
+      "Formatting",
+      "Transmission",
+      "Storage",
+      "Deletion"
+    ],
+    answer: 2,
+    explanation: "Storage retains data and processed information for future retrieval and use, rather than discarding it after a single processing run."
+  },
+  {
+    question: "The smallest unit of data representing a single characteristic, such as a name, is called a:",
+    options: [
+      "Byte",
+      "Field",
+      "File",
+      "Record"
+    ],
+    answer: 1,
+    explanation: "A field is the smallest meaningful unit of data, representing one specific attribute, such as an age or a name, within a record."
+  },
+  {
+    question: "A group of related fields treated as a single unit, representing one entity, is called a:",
+    options: [
+      "Record",
+      "File",
+      "Database",
+      "Directory"
+    ],
+    answer: 0,
+    explanation: "A record is a collection of related fields grouped together to represent complete information about a single entity, such as one student or one product."
+  },
+  {
+    question: "Which sequence correctly represents the file structure hierarchy from smallest to largest?",
+    options: [
+      "File, Record, Field, Character",
+      "Field, File, Character, Record",
+      "Record, Character, Field, File",
+      "Character, Field, Record, File"
+    ],
+    answer: 3,
+    explanation: "Data organization progresses from the smallest unit, a character, up through field, record, and finally to file as the largest structure."
+  },
+  {
+    question: "Checking that entered data meets required rules before it is accepted for processing is called:",
+    options: [
+      "Data validation",
+      "Data replication",
+      "Data archiving",
+      "Data indexing"
+    ],
+    answer: 0,
+    explanation: "Data validation checks that input data conforms to predefined rules or formats before being accepted, helping to catch errors early in processing."
+  },
+  {
+    question: "Recording daily sales transactions by hand in a ledger book is an example of:",
+    options: [
+      "Automatic processing",
+      "Distributed processing",
+      "Manual processing",
+      "Electronic processing"
+    ],
+    answer: 2,
+    explanation: "Writing transactions by hand, without any mechanical or electronic aid, is a classic example of the manual data processing method."
+  },
+  {
+    question: "Which processing style is most suitable for generating monthly utility bills for thousands of customers?",
+    options: [
+      "Real-time processing",
+      "Time-sharing processing",
+      "Online processing",
+      "Batch processing"
+    ],
+    answer: 3,
+    explanation: "Generating bills monthly for many customers at once, after accumulating usage data, is a routine, large-volume task well-suited to batch processing."
+  },
+  {
+    question: "Which processing style is most appropriate for a hospital's patient monitoring system?",
+    options: [
+      "Manual processing",
+      "Real-time processing",
+      "Batch processing",
+      "Mechanical processing"
+    ],
+    answer: 1,
+    explanation: "Patient monitoring requires immediate detection and response to changes in vital signs, which demands real-time processing to ensure timely alerts."
+  },
+  {
+    question: "What primarily distinguishes online processing from real-time processing?",
+    options: [
+      "They are the same with no distinction",
+      "Online processing cannot use a computer",
+      "Real-time processing is always slower",
+      "Real-time has a strict response deadline, while online mainly means direct interactive access"
+    ],
+    answer: 3,
+    explanation: "Both involve direct interaction, but real-time processing has a strict time constraint for response to control a process, while online simply means immediate interactive access without such strict timing."
+  },
+  {
+    question: "Why is batch processing often efficient for handling large volumes of routine, similar transactions?",
+    options: [
+      "It requires constant manual checking of each record",
+      "It processes many records together, reducing repeated setup overhead",
+      "It always demands more computing power than real-time methods",
+      "It can process only a single record per session"
+    ],
+    answer: 1,
+    explanation: "Grouping many similar transactions together for one processing run reduces the repeated overhead of starting and stopping for each individual item, making batch processing efficient for large routine workloads."
+  },
+  {
+    question: "Maintaining the accuracy and consistency of data throughout its lifecycle is referred to as:",
+    options: [
+      "Data variety",
+      "Data velocity",
+      "Data integrity",
+      "Data volume"
+    ],
+    answer: 2,
+    explanation: "Data integrity refers to the accuracy, consistency, and trustworthiness of data as it is stored, transferred, and processed over time."
+  },
+  {
+    question: "Which is a genuine advantage of electronic data processing over manual methods?",
+    options: [
+      "It processes large volumes of data with greater speed and accuracy",
+      "It needs no initial setup cost",
+      "It requires no trained staff at all",
+      "It is completely free of any errors"
+    ],
+    answer: 0,
+    explanation: "Electronic data processing can handle much larger volumes of data far more quickly and accurately than manual methods, though it still requires investment and skilled personnel."
+  },
+  {
+    question: "Withdrawing money from an ATM, with the transaction processed immediately, is an example of:",
+    options: [
+      "Manual processing",
+      "Distributed archiving",
+      "Batch processing",
+      "Online processing"
+    ],
+    answer: 3,
+    explanation: "An ATM transaction is entered and processed right away in an interactive manner, which is characteristic of online data processing."
+  },
+  {
+    question: "A key reason organizations adopt distributed processing over a single centralized system is to:",
+    options: [
+      "Reduce the risk of a single point of failure and process data closer to its source",
+      "Guarantee lower costs regardless of scale",
+      "Avoid using any network connections",
+      "Rely entirely on one computer for all tasks"
+    ],
+    answer: 0,
+    explanation: "Distributed processing spreads workloads across multiple systems, reducing dependence on a single machine and allowing processing to occur closer to where data originates."
+  },
+  {
+    question: "The overall goal of data processing can best be summarized as:",
+    options: [
+      "Making raw data more complex and confusing",
+      "Turning raw data into accurate, useful information for decisions",
+      "Removing the need for any human judgment",
+      "Storing data permanently without any future use"
+    ],
+    answer: 1,
+    explanation: "Data processing exists fundamentally to transform raw, unorganized data into meaningful, accurate information that supports effective decision-making."
+  },
+  {
+    question: "A report file used to record system events or errors for later review is typically called a:",
+    options: [
+      "Master file",
+      "Sequential file",
+      "Log file",
+      "Index file"
+    ],
+    answer: 2,
+    explanation: "A log file is a special-purpose file used to record events, errors, or activities occurring within a system, primarily for monitoring or troubleshooting purposes."
+  }
+];
+const CSC122D = [
+  {
+    question: "Facts and figures that carry no meaning until they are organized are referred to as:",
+    options: [
+      "Reports",
+      "Data",
+      "Knowledge",
+      "Statistics"
+    ],
+    answer: 1,
+    explanation: "Data consists of raw facts and figures that have no inherent meaning until they are organized, processed, and interpreted."
+  },
+  {
+    question: "What must happen to data before it can support a business decision?",
+    options: [
+      "It must be processed into information",
+      "It must be printed on paper",
+      "It must be translated into another language",
+      "It must be deleted after use"
+    ],
+    answer: 0,
+    explanation: "Raw data must first be processed and given context, becoming information, before it can meaningfully support decision-making."
+  },
+  {
+    question: "Which property of data ensures that the same figure is recorded the same way across all records?",
+    options: [
+      "Speed",
+      "Consistency",
+      "Volume",
+      "Complexity"
+    ],
+    answer: 1,
+    explanation: "Consistency ensures that data values are represented uniformly across records, avoiding contradictions or mismatches in the same dataset."
+  },
+  {
+    question: "Which property refers to data being free from unnecessary or irrelevant details for the task at hand?",
+    options: [
+      "Latency",
+      "Duplication",
+      "Relevance",
+      "Redundancy"
+    ],
+    answer: 2,
+    explanation: "Relevance means the data collected is pertinent and directly useful for the specific purpose or decision it is meant to support."
+  },
+  {
+    question: "Data collected by a student directly through a lab experiment is an example of:",
+    options: [
+      "Published data",
+      "Historical data",
+      "Secondary data",
+      "Primary data"
+    ],
+    answer: 3,
+    explanation: "Data gathered firsthand through direct experimentation or observation by the researcher is classified as primary data."
+  },
+  {
+    question: "A researcher using population figures published years earlier by a government agency is using:",
+    options: [
+      "Secondary data",
+      "Primary data",
+      "Live data",
+      "Sample data"
+    ],
+    answer: 0,
+    explanation: "Data that was already collected and published by another party for a different original purpose, and is now reused, is secondary data."
+  },
+  {
+    question: "Which method involves asking people direct questions face-to-face or by phone to gather data?",
+    options: [
+      "Extraction",
+      "Compilation",
+      "Interview",
+      "Simulation"
+    ],
+    answer: 2,
+    explanation: "An interview is a data collection method involving direct verbal questioning of respondents, either in person or remotely."
+  },
+  {
+    question: "Watching customer behavior in a store without interacting with them is an example of:",
+    options: [
+      "Archiving",
+      "Observation",
+      "Sampling",
+      "Interviewing"
+    ],
+    answer: 1,
+    explanation: "Observation involves recording behavior or events as they naturally occur, without direct interference or interaction with the subjects."
+  },
+  {
+    question: "The point at which data is first created, such as during a sales transaction, is called the:",
+    options: [
+      "Origin",
+      "Destination",
+      "Index point",
+      "Checkpoint"
+    ],
+    answer: 0,
+    explanation: "The origin is the initial stage in the data processing cycle where data first comes into existence, before any processing takes place."
+  },
+  {
+    question: "Organizing and converting raw data into a form a computer can accept is called:",
+    options: [
+      "Data destination",
+      "Data disposal",
+      "Data replication",
+      "Data preparation"
+    ],
+    answer: 3,
+    explanation: "Data preparation involves checking, coding, and converting raw data so it is in a suitable format for input into a processing system."
+  },
+  {
+    question: "The point where finished information reaches the person who requested it is the:",
+    options: [
+      "Destination",
+      "Origin",
+      "Coding stage",
+      "Collection point"
+    ],
+    answer: 0,
+    explanation: "The destination is the final stage of the data processing cycle, where the processed output reaches its intended user."
+  },
+  {
+    question: "A processing approach that uses no machine assistance whatsoever is called the:",
+    options: [
+      "Digital method",
+      "Manual method",
+      "Electronic method",
+      "Automatic method"
+    ],
+    answer: 1,
+    explanation: "The manual method processes data purely through human effort, without any mechanical or electronic tools."
+  },
+  {
+    question: "A processing approach using devices such as calculating machines, but not full computers, is the:",
+    options: [
+      "Batch method",
+      "Electronic method",
+      "Mechanical method",
+      "Real-time method"
+    ],
+    answer: 2,
+    explanation: "The mechanical method relies on simple electromechanical devices, like calculators, to assist processing, without using complete computer systems."
+  },
+  {
+    question: "A processing approach using computers for fast, accurate handling of data is the:",
+    options: [
+      "Manual method",
+      "Paper-based method",
+      "Mechanical method",
+      "Electronic method"
+    ],
+    answer: 3,
+    explanation: "The electronic method uses computer systems to process data with far greater speed and accuracy than manual or mechanical approaches."
+  },
+  {
+    question: "A system that, once configured, runs largely without further human input is called:",
+    options: [
+      "Interactive",
+      "Mechanical",
+      "Automatic",
+      "Manual"
+    ],
+    answer: 2,
+    explanation: "An automatic system performs its designated tasks on its own after initial setup, needing little ongoing human involvement."
+  },
+  {
+    question: "Gathering transactions over a period and processing them all at a set time describes:",
+    options: [
+      "Real-time processing",
+      "Multitasking",
+      "Online processing",
+      "Batch processing"
+    ],
+    answer: 3,
+    explanation: "Batch processing collects data over time and processes the accumulated batch together at a scheduled interval, rather than instantly."
+  },
+  {
+    question: "Entering and processing data immediately, with direct access to the system, describes:",
+    options: [
+      "Online processing",
+      "Batch processing",
+      "Multiprogramming",
+      "Distributed processing"
+    ],
+    answer: 0,
+    explanation: "Online processing allows data to be entered and processed right away through direct, interactive access to the system."
+  },
+  {
+    question: "Multiple users sharing a computer by rapidly rotating small slices of CPU time describes:",
+    options: [
+      "Batch processing",
+      "Time-sharing processing",
+      "Multiprocessing",
+      "Real-time processing"
+    ],
+    answer: 1,
+    explanation: "Time-sharing divides processor time among several users in quick rotation, giving each the impression of simultaneous, dedicated access."
+  },
+  {
+    question: "Processing that must respond within a strict, very short time frame to control a live process is:",
+    options: [
+      "Distributed processing",
+      "Multitasking",
+      "Real-time processing",
+      "Batch processing"
+    ],
+    answer: 2,
+    explanation: "Real-time processing requires immediate handling of data, with responses fast enough to directly influence or control the ongoing process."
+  },
+  {
+    question: "Spreading data processing tasks over several linked computers is known as:",
+    options: [
+      "Batch processing",
+      "Distributed processing",
+      "Manual processing",
+      "Centralized processing"
+    ],
+    answer: 1,
+    explanation: "Distributed processing divides processing work across multiple interconnected computers, which may be located in different places, working together."
+  },
+  {
+    question: "A single processor holding several programs in memory and switching between them describes:",
+    options: [
+      "Multitasking",
+      "Multiprocessing",
+      "Time-slicing alone",
+      "Multiprogramming"
+    ],
+    answer: 3,
+    explanation: "Multiprogramming lets one CPU keep multiple programs loaded in memory, switching between them to make efficient use of processing time."
+  },
+  {
+    question: "Two or more processors carrying out instructions at the same time describes:",
+    options: [
+      "Multiprocessing",
+      "Sequential processing",
+      "Multiprogramming",
+      "Batch processing"
+    ],
+    answer: 0,
+    explanation: "Multiprocessing uses two or more CPUs working concurrently on different tasks, increasing the system's overall processing capacity."
+  },
+  {
+    question: "One user operating several applications at once on a single machine describes:",
+    options: [
+      "Batch processing",
+      "Distributed processing",
+      "Real-time processing",
+      "Multitasking"
+    ],
+    answer: 3,
+    explanation: "Multitasking allows a single user to run and switch between multiple applications concurrently on one system."
+  },
+  {
+    question: "A named collection of related records stored together as a unit is called a:",
+    options: [
+      "File",
+      "Field",
+      "Bit",
+      "Cache"
+    ],
+    answer: 0,
+    explanation: "A file is an organized, named collection of related records grouped together so they can be stored, retrieved, and managed as one unit."
+  },
+  {
+    question: "A file holding fairly permanent records that get updated from time to time is called a:",
+    options: [
+      "Log file",
+      "Transaction file",
+      "Master file",
+      "Temporary file"
+    ],
+    answer: 2,
+    explanation: "A master file stores relatively stable, long-term data about an entity, which is periodically updated as new information arrives."
+  },
+  {
+    question: "A file that holds recent activity data used to update a permanent file is called a:",
+    options: [
+      "Master file",
+      "Transaction file",
+      "Reference file",
+      "Archive file"
+    ],
+    answer: 1,
+    explanation: "A transaction file temporarily stores records of recent activities, which are later applied to update the corresponding master file."
+  },
+  {
+    question: "The set of activities involving creating, updating, and retrieving data in files is called:",
+    options: [
+      "File compression",
+      "File organization",
+      "File processing",
+      "File encryption"
+    ],
+    answer: 2,
+    explanation: "File processing covers the operations performed on stored files, such as creating, updating, retrieving, and maintaining records."
+  },
+  {
+    question: "Placing records into a defined order, such as by date or name, is called:",
+    options: [
+      "Merging",
+      "Formatting",
+      "Indexing",
+      "Sorting"
+    ],
+    answer: 3,
+    explanation: "Sorting arranges records in a file into a specific sequence, often based on a chosen key field, to make access and processing easier."
+  },
+  {
+    question: "The technique used to logically structure and store records in a file is:",
+    options: [
+      "File duplication",
+      "File organization",
+      "File compression",
+      "File security"
+    ],
+    answer: 1,
+    explanation: "File organization refers to how records are logically arranged and stored within a file to support efficient access and management."
+  },
+  {
+    question: "A file organization where records are stored and processed one after another in order is called:",
+    options: [
+      "Sequential organization",
+      "Random organization",
+      "Indexed organization",
+      "Direct organization"
+    ],
+    answer: 0,
+    explanation: "In sequential organization, records are stored one after another, typically by a key field, and are generally accessed in that same order."
+  },
+  {
+    question: "A file organization allowing a record to be accessed instantly using its address is called:",
+    options: [
+      "Manual organization",
+      "Direct organization",
+      "Batch organization",
+      "Sequential organization"
+    ],
+    answer: 1,
+    explanation: "Direct (random) file organization permits immediate access to any record via its storage address, without reading through prior records."
+  },
+  {
+    question: "A file organization that combines an index with ordered storage for flexible access is called:",
+    options: [
+      "Direct organization",
+      "Batch organization",
+      "Indexed sequential organization",
+      "Hierarchical organization"
+    ],
+    answer: 2,
+    explanation: "Indexed sequential organization keeps records ordered while maintaining an index, allowing both sequential and fast direct access methods."
+  },
+  {
+    question: "The complete setup of hardware, software, staff, and procedures used for processing data in a company is the:",
+    options: [
+      "Data processing environment",
+      "Output medium",
+      "Processing cycle",
+      "File hierarchy"
+    ],
+    answer: 0,
+    explanation: "The data processing environment refers to all the combined resources — equipment, programs, personnel, and procedures — an organization uses to process its data."
+  },
+  {
+    question: "The three fundamental stages of the data processing cycle are:",
+    options: [
+      "Compile, Link, Execute",
+      "Gather, Sort, Discard",
+      "Plan, Build, Test",
+      "Input, Processing, Output"
+    ],
+    answer: 3,
+    explanation: "The core data processing cycle consists of Input (entering data), Processing (transforming the data), and Output (delivering the results)."
+  },
+  {
+    question: "Keeping data and information available for later retrieval and use is the role of:",
+    options: [
+      "Deletion",
+      "Compilation",
+      "Storage",
+      "Transmission"
+    ],
+    answer: 2,
+    explanation: "Storage preserves data and processed information so it can be accessed and reused after the initial processing has been completed."
+  },
+  {
+    question: "The smallest logical unit of data representing a single attribute is called a:",
+    options: [
+      "File",
+      "Field",
+      "Directory",
+      "Record"
+    ],
+    answer: 1,
+    explanation: "A field is the smallest meaningful data unit, representing one specific piece of information, such as a phone number or date of birth."
+  },
+  {
+    question: "A collection of related fields grouped to represent one entity is called a:",
+    options: [
+      "Record",
+      "Table only",
+      "Database",
+      "File"
+    ],
+    answer: 0,
+    explanation: "A record groups together related fields to represent complete information about a single entity, such as one customer or one order."
+  },
+  {
+    question: "Which sequence correctly shows the file structure hierarchy from smallest to largest?",
+    options: [
+      "File, Field, Record, Character",
+      "Record, Character, File, Field",
+      "Field, Record, Character, File",
+      "Character, Field, Record, File"
+    ],
+    answer: 3,
+    explanation: "Data structure builds up from character (smallest), to field, then record, and finally file, which is the largest organizational unit."
+  },
+  {
+    question: "Confirming that entered data satisfies defined rules before processing continues is called:",
+    options: [
+      "Data partitioning",
+      "Data validation",
+      "Data mirroring",
+      "Data archiving"
+    ],
+    answer: 1,
+    explanation: "Data validation ensures input data meets specific rules or formatting requirements before it is accepted for further processing, catching errors early."
+  },
+  {
+    question: "Writing down daily attendance records by hand in a register is an example of:",
+    options: [
+      "Manual processing",
+      "Electronic processing",
+      "Distributed processing",
+      "Automatic processing"
+    ],
+    answer: 0,
+    explanation: "Recording information entirely by hand, without any mechanical or electronic tool, exemplifies the manual data processing method."
+  },
+  {
+    question: "Which processing style suits generating annual tax assessment reports for a whole city?",
+    options: [
+      "Real-time processing",
+      "Time-sharing processing",
+      "Online processing",
+      "Batch processing"
+    ],
+    answer: 3,
+    explanation: "Producing large-scale annual reports from accumulated records is a routine, high-volume task well-suited to batch processing."
+  },
+  {
+    question: "Which processing style best fits a stock trading platform where prices must update instantly?",
+    options: [
+      "Mechanical processing",
+      "Batch processing",
+      "Real-time processing",
+      "Manual processing"
+    ],
+    answer: 2,
+    explanation: "Stock trading requires immediate reflection of price changes and trades, demanding real-time processing to keep data current."
+  },
+  {
+    question: "What is the main difference between time-sharing and batch processing?",
+    options: [
+      "Time-sharing cannot support more than one user",
+      "Time-sharing gives interactive access to multiple users at once, while batch groups jobs for later processing",
+      "There is no real difference between them",
+      "Batch processing always responds faster than time-sharing"
+    ],
+    answer: 1,
+    explanation: "Time-sharing allows multiple users to interact with the system directly and concurrently, while batch processing groups tasks together to run later without immediate interaction."
+  },
+  {
+    question: "Why might a company prefer real-time processing despite its higher cost compared to batch processing?",
+    options: [
+      "It provides immediate responses needed for time-critical operations",
+      "It is always cheaper to implement",
+      "It processes data only once a year",
+      "It requires no computing infrastructure"
+    ],
+    answer: 0,
+    explanation: "Despite generally higher costs, real-time processing is chosen when immediate response is essential for operations like monitoring or control systems, where delays would cause problems."
+  },
+  {
+    question: "Ensuring that stored data remains accurate and unaltered over time is known as maintaining:",
+    options: [
+      "Data volume",
+      "Data variety",
+      "Data integrity",
+      "Data velocity"
+    ],
+    answer: 2,
+    explanation: "Data integrity involves preserving the accuracy, consistency, and reliability of data throughout its storage and use."
+  },
+  {
+    question: "A genuine benefit of automatic data processing systems is that they:",
+    options: [
+      "Require constant manual recalculation of every result",
+      "Cannot process large volumes of data",
+      "Always eliminate the need for any programming",
+      "Reduce the need for repetitive human intervention once set up"
+    ],
+    answer: 3,
+    explanation: "Automatic systems are designed to carry out repetitive tasks on their own after initial configuration, reducing the need for ongoing manual involvement."
+  },
+  {
+    question: "Checking your account balance through a banking app, with results shown immediately, is an example of:",
+    options: [
+      "Manual processing",
+      "Online processing",
+      "Batch processing",
+      "Distributed archiving"
+    ],
+    answer: 1,
+    explanation: "Viewing account information through an app that responds immediately to the request reflects the direct, interactive nature of online processing."
+  },
+  {
+    question: "A key reason for using multiprocessing systems in an organization is to:",
+    options: [
+      "Limit the system to running one task at a time",
+      "Guarantee that no errors will ever occur",
+      "Increase overall processing speed by running tasks on multiple processors simultaneously",
+      "Avoid the need for any operating system"
+    ],
+    answer: 2,
+    explanation: "Multiprocessing systems use multiple processors working together, which increases the overall speed and throughput of task execution compared to a single processor."
+  },
+  {
+    question: "The fundamental purpose of organizing data into well-structured files is to:",
+    options: [
+      "Make retrieval and updating of records more difficult",
+      "Prevent any form of data access",
+      "Increase the physical size of storage devices unnecessarily",
+      "Enable efficient storage, retrieval, and maintenance of related records"
+    ],
+    answer: 3,
+    explanation: "Structured file organization exists to make it easier and more efficient to store, retrieve, update, and maintain related records over time."
+  },
+  {
+    question: "A file used to keep a permanent copy of important data in case the original is lost or damaged is called a:",
+    options: [
+      "Backup file",
+      "Sequential file",
+      "Reference file",
+      "Index file"
+    ],
+    answer: 0,
+    explanation: "A backup file is a duplicate copy of data kept specifically to restore information in case the original file is lost, corrupted, or damaged."
+  }
+];
+const BIO102B = [
+  {
+    question: "Which taxonomic rank is the highest in modern biological classification?",
+    options: [
+      "Domain",
+      "Class",
+      "Kingdom",
+      "Phylum"
+    ],
+    answer: 0,
+    explanation: "Domain is the highest taxonomic rank and includes Bacteria, Archaea, and Eukarya."
+  },
+  {
+    question: "Which kingdom consists mainly of multicellular organisms that obtain food by ingestion?",
+    options: [
+      "Protista",
+      "Animalia",
+      "Fungi",
+      "Plantae"
+    ],
+    answer: 1,
+    explanation: "Animals are multicellular organisms that feed by ingesting food."
+  },
+  {
+    question: "Members of the kingdom Fungi obtain nutrients primarily by:",
+    options: [
+      "Photosynthesis",
+      "Chemosynthesis",
+      "Absorption",
+      "Ingestion"
+    ],
+    answer: 2,
+    explanation: "Fungi absorb dissolved nutrients from their surroundings."
+  },
+  {
+    question: "Which of the following is a characteristic of plants?",
+    options: [
+      "Cell wall made of chitin",
+      "Lack of chlorophyll",
+      "No nucleus",
+      "Cell wall made of cellulose"
+    ],
+    answer: 3,
+    explanation: "Plant cells possess cellulose cell walls and chloroplasts."
+  },
+  {
+    question: "Which kingdom contains organisms that may be unicellular or simple multicellular eukaryotes?",
+    options: [
+      "Animalia",
+      "Protista",
+      "Fungi",
+      "Plantae"
+    ],
+    answer: 1,
+    explanation: "Protists include mostly unicellular eukaryotes and some simple multicellular forms."
+  },
+  {
+    question: "Which domain contains organisms without a true nucleus?",
+    options: [
+      "Bacteria and Archaea",
+      "Plantae only",
+      "Eukarya only",
+      "Protista only"
+    ],
+    answer: 0,
+    explanation: "Bacteria and Archaea are prokaryotic domains."
+  },
+  {
+    question: "Which kingdom includes mushrooms and moulds?",
+    options: [
+      "Protista",
+      "Plantae",
+      "Fungi",
+      "Animalia"
+    ],
+    answer: 2,
+    explanation: "Mushrooms and moulds belong to Kingdom Fungi."
+  },
+  {
+    question: "Which scientist introduced the binomial system of naming organisms?",
+    options: [
+      "Charles Darwin",
+      "Carolus Linnaeus",
+      "Louis Pasteur",
+      "Robert Hooke"
+    ],
+    answer: 1,
+    explanation: "Linnaeus developed binomial nomenclature."
+  },
+  {
+    question: "Which kingdom contains organisms with chlorophyll that manufacture their own food?",
+    options: [
+      "Plantae",
+      "Fungi",
+      "Animalia",
+      "Protista"
+    ],
+    answer: 0,
+    explanation: "Plants carry out photosynthesis using chlorophyll."
+  },
+  {
+    question: "Which of the following belongs to Kingdom Protista?",
+    options: [
+      "Grasshopper",
+      "Moss",
+      "Mushroom",
+      "Amoeba"
+    ],
+    answer: 3,
+    explanation: "Amoeba is a unicellular protist."
+  },
+  {
+    question: "Which taxonomic rank comes immediately below kingdom?",
+    options: [
+      "Phylum",
+      "Order",
+      "Class",
+      "Domain"
+    ],
+    answer: 0,
+    explanation: "The order is Domain → Kingdom → Phylum → Class."
+  },
+  {
+    question: "Animals differ from plants mainly because animals:",
+    options: [
+      "Produce spores only",
+      "Have cell walls",
+      "Lack chloroplasts",
+      "Contain chlorophyll"
+    ],
+    answer: 2,
+    explanation: "Animal cells do not contain chloroplasts."
+  },
+  {
+    question: "Which of the following is NOT a kingdom of Eukarya?",
+    options: [
+      "Animalia",
+      "Plantae",
+      "Fungi",
+      "Archaea"
+    ],
+    answer: 3,
+    explanation: "Archaea is a domain, not a kingdom within Eukarya."
+  },
+  {
+    question: "Which feature is common to fungi and plants?",
+    options: [
+      "Ingestion of food",
+      "Cell wall",
+      "Motility",
+      "Photosynthesis"
+    ],
+    answer: 1,
+    explanation: "Both have cell walls, though their compositions differ."
+  },
+  {
+    question: "The scientific name of an organism consists of:",
+    options: [
+      "Family and genus",
+      "Order and class",
+      "Genus and species",
+      "Kingdom and species"
+    ],
+    answer: 2,
+    explanation: "Binomial nomenclature uses genus and species names."
+  },
+  {
+    question: "Which kingdom includes yeast?",
+    options: [
+      "Plantae",
+      "Animalia",
+      "Protista",
+      "Fungi"
+    ],
+    answer: 3,
+    explanation: "Yeast is a unicellular fungus."
+  },
+  {
+    question: "Which domain includes humans?",
+    options: [
+      "Eukarya",
+      "Bacteria",
+      "Archaea",
+      "Monera"
+    ],
+    answer: 0,
+    explanation: "Humans are eukaryotic organisms."
+  },
+  {
+    question: "An organism that lacks membrane-bound organelles belongs to:",
+    options: [
+      "Protista",
+      "Prokaryotes",
+      "Plantae",
+      "Animalia"
+    ],
+    answer: 1,
+    explanation: "Prokaryotes do not possess membrane-bound organelles."
+  },
+  {
+    question: "Which kingdom is composed entirely of multicellular organisms?",
+    options: [
+      "Bacteria",
+      "Archaea",
+      "Animalia",
+      "Protista"
+    ],
+    answer: 2,
+    explanation: "Animals are multicellular organisms."
+  },
+  {
+    question: "Which of the following organisms is most likely to reproduce by spores?",
+    options: [
+      "Mushroom",
+      "Cat",
+      "Fish",
+      "Goat"
+    ],
+    answer: 0,
+    explanation: "Many fungi reproduce through spores."
+  },
+  {
+    question: "Which kingdom contains organisms that can be autotrophic or heterotrophic?",
+    options: [
+      "Animalia",
+      "Protista",
+      "Fungi",
+      "Plantae"
+    ],
+    answer: 1,
+    explanation: "Some protists photosynthesize, while others feed on organic matter."
+  },
+  {
+    question: "The presence of chitin in the cell wall is characteristic of:",
+    options: [
+      "Animalia",
+      "Plantae",
+      "Protista",
+      "Fungi"
+    ],
+    answer: 3,
+    explanation: "Fungal cell walls are made mainly of chitin."
+  },
+  {
+    question: "Which of the following is an example of a multicellular plant?",
+    options: [
+      "Amoeba",
+      "Paramecium",
+      "Fern",
+      "Euglena"
+    ],
+    answer: 2,
+    explanation: "Ferns are multicellular plants."
+  },
+  {
+    question: "Which kingdom contains organisms that do not have cell walls?",
+    options: [
+      "Fungi",
+      "Animalia",
+      "Plantae",
+      "Bacteria"
+    ],
+    answer: 1,
+    explanation: "Animal cells lack cell walls."
+  },
+  {
+    question: "The primary purpose of biological classification is to:",
+    options: [
+      "Eliminate extinct organisms",
+      "Prevent evolution",
+      "Increase the number of species",
+      "Simplify the study of living organisms"
+    ],
+    answer: 3,
+    explanation: "Classification organizes living organisms into groups based on similarities, making identification and study easier."
+  },
+  {
+    question: "Which of the following kingdoms contains organisms that are primarily decomposers?",
+    options: [
+      "Fungi",
+      "Plantae",
+      "Protista",
+      "Animalia"
+    ],
+    answer: 0,
+    explanation: "Most fungi obtain nutrients by decomposing dead organic matter."
+  },
+  {
+    question: "Which characteristic is shared by all members of the domain Eukarya?",
+    options: [
+      "They have peptidoglycan cell walls",
+      "They lack a nucleus",
+      "They are all multicellular",
+      "They possess membrane-bound organelles"
+    ],
+    answer: 3,
+    explanation: "All eukaryotes have a true nucleus and membrane-bound organelles."
+  },
+  {
+    question: "Which of the following organisms belongs to Kingdom Animalia?",
+    options: [
+      "Hydra",
+      "Spirogyra",
+      "Amoeba",
+      "Rhizopus"
+    ],
+    answer: 0,
+    explanation: "Hydra is a simple multicellular animal."
+  },
+  {
+    question: "The taxonomic rank immediately below class is:",
+    options: [
+      "Family",
+      "Phylum",
+      "Order",
+      "Genus"
+    ],
+    answer: 2,
+    explanation: "The sequence is Domain → Kingdom → Phylum → Class → Order → Family → Genus → Species."
+  },
+  {
+    question: "Which of the following is NOT a feature of fungi?",
+    options: [
+      "Cell walls contain chitin",
+      "They possess chlorophyll",
+      "They reproduce by spores",
+      "They absorb nutrients"
+    ],
+    answer: 1,
+    explanation: "Fungi do not contain chlorophyll and therefore cannot photosynthesize."
+  },
+  {
+    question: "Euglena is difficult to classify because it:",
+    options: [
+      "Has characteristics of both plants and animals",
+      "Has no nucleus",
+      "Is both unicellular and multicellular",
+      "Is a bacterium"
+    ],
+    answer: 0,
+    explanation: "Euglena photosynthesizes but can also feed heterotrophically."
+  },
+  {
+    question: "Which kingdom is characterized by cellulose cell walls and chloroplasts?",
+    options: [
+      "Animalia",
+      "Fungi",
+      "Protista",
+      "Plantae"
+    ],
+    answer: 3,
+    explanation: "Plants have cellulose cell walls and chloroplasts for photosynthesis."
+  },
+  {
+    question: "Which of the following is the correct sequence from highest to lowest taxonomic rank?",
+    options: [
+      "Domain → Phylum → Kingdom → Order",
+      "Domain → Kingdom → Phylum → Class",
+      "Kingdom → Domain → Phylum → Class",
+      "Kingdom → Phylum → Domain → Class"
+    ],
+    answer: 1,
+    explanation: "Domain → Kingdom → Phylum → Class is the correct hierarchical order."
+  },
+  {
+    question: "Which of the following belongs to Kingdom Fungi?",
+    options: [
+      "Earthworm",
+      "Moss",
+      "Penicillium",
+      "Paramecium"
+    ],
+    answer: 2,
+    explanation: "Penicillium is a genus of fungi."
+  },
+  {
+    question: "Which kingdom includes organisms that are capable of voluntary movement?",
+    options: [
+      "Animalia",
+      "Bacteria",
+      "Fungi",
+      "Plantae"
+    ],
+    answer: 0,
+    explanation: "Most animals can move voluntarily at some stage of their life cycle."
+  },
+  {
+    question: "Organisms in the kingdom Protista are mostly:",
+    options: [
+      "Multicellular fungi",
+      "Multicellular prokaryotes",
+      "Unicellular eukaryotes",
+      "Non-living organisms"
+    ],
+    answer: 2,
+    explanation: "Most protists are single-celled organisms with a true nucleus."
+  },
+  {
+    question: "Which taxonomic category contains closely related genera?",
+    options: [
+      "Phylum",
+      "Family",
+      "Species",
+      "Order"
+    ],
+    answer: 1,
+    explanation: "A family consists of one or more closely related genera."
+  },
+  {
+    question: "Which of the following is correctly matched?",
+    options: [
+      "Peptidoglycan — Fungi",
+      "Chitin — Plantae",
+      "Cellulose — Animalia",
+      "Chlorophyll — Plantae"
+    ],
+    answer: 3,
+    explanation: "Chlorophyll is the green pigment responsible for photosynthesis in plants."
+  },
+  {
+    question: "Which kingdom includes algae such as Chlamydomonas?",
+    options: [
+      "Protista",
+      "Fungi",
+      "Plantae",
+      "Animalia"
+    ],
+    answer: 0,
+    explanation: "Chlamydomonas is a unicellular green alga classified as a protist."
+  },
+  {
+    question: "The smallest unit of biological classification is:",
+    options: [
+      "Order",
+      "Family",
+      "Species",
+      "Genus"
+    ],
+    answer: 2,
+    explanation: "Species is the basic and smallest unit of classification."
+  },
+  {
+    question: "Which kingdom contains organisms that lack chlorophyll but possess cell walls?",
+    options: [
+      "Plantae",
+      "Animalia",
+      "Protista",
+      "Fungi"
+    ],
+    answer: 3,
+    explanation: "Fungi have cell walls but do not contain chlorophyll."
+  },
+  {
+    question: "Which feature distinguishes animals from fungi?",
+    options: [
+      "Presence of a nucleus",
+      "Ingestion of food",
+      "Presence of cell walls",
+      "Ability to absorb nutrients"
+    ],
+    answer: 1,
+    explanation: "Animals ingest food, whereas fungi absorb nutrients."
+  },
+  {
+    question: "Which of the following is correctly written as a scientific name?",
+    options: [
+      "Homo sapiens",
+      "HOMO SAPIENS",
+      "homo sapiens",
+      "Homo Sapiens"
+    ],
+    answer: 0,
+    explanation: "The genus starts with a capital letter, while the species name is lowercase."
+  },
+  {
+    question: "Which kingdom includes slime molds?",
+    options: [
+      "Animalia",
+      "Protista",
+      "Plantae",
+      "Fungi"
+    ],
+    answer: 1,
+    explanation: "Slime molds are generally classified under Protista."
+  },
+  {
+    question: "Organisms belonging to Kingdom Plantae are generally:",
+    options: [
+      "Heterotrophic and motile",
+      "Parasitic and unicellular",
+      "Autotrophic and non-motile",
+      "Saprophytic and motile"
+    ],
+    answer: 2,
+    explanation: "Most plants produce their own food and remain fixed in one place."
+  },
+  {
+    question: "Which kingdom contains organisms that lack cell walls entirely?",
+    options: [
+      "Plantae",
+      "Protista",
+      "Fungi",
+      "Animalia"
+    ],
+    answer: 3,
+    explanation: "Animal cells do not have cell walls."
+  },
+  {
+    question: "Which of the following organisms is correctly classified under Kingdom Plantae?",
+    options: [
+      "Hydra",
+      "Amoeba",
+      "Moss",
+      "Mushroom"
+    ],
+    answer: 2,
+    explanation: "Moss is a simple non-flowering plant."
+  },
+  {
+    question: "The main purpose of assigning scientific names to organisms is to:",
+    options: [
+      "Replace all common names permanently",
+      "Group organisms by size",
+      "Increase the number of species",
+      "Avoid confusion caused by local names"
+    ],
+    answer: 3,
+    explanation: "Scientific names provide a universal system of identification."
+  },
+  {
+    question: "Which kingdom is most likely to include organisms that are both aquatic and terrestrial?",
+    options: [
+      "Plantae",
+      "Animalia",
+      "Fungi",
+      "Protista"
+    ],
+    answer: 1,
+    explanation: "Animals inhabit a wide range of environments, including water and land."
+  },
+  {
+    question: "Which statement best explains the importance of biological classification?",
+    options: [
+      "It helps scientists identify relationships among organisms",
+      "It reduces the number of living organisms",
+      "It prevents the discovery of new species",
+      "It eliminates the need for scientific names"
+    ],
+    answer: 0,
+    explanation: "Biological classification groups organisms based on similarities and evolutionary relationships, making identification and study easier."
+  }
+];
+const BIO102C = [
+  {
+    question: "Which of the following taxonomic groups contains the greatest number of different organisms?",
+    options: [
+      "Family",
+      "Kingdom",
+      "Species",
+      "Genus"
+    ],
+    answer: 1,
+    explanation: "Kingdom is a broader taxonomic rank than family, genus, and species."
+  },
+  {
+    question: "Which kingdom includes organisms that digest food outside their bodies before absorbing it?",
+    options: [
+      "Fungi",
+      "Plantae",
+      "Protista",
+      "Animalia"
+    ],
+    answer: 0,
+    explanation: "Fungi secrete enzymes onto their food and absorb the digested nutrients."
+  },
+  {
+    question: "Which of the following is an example of a protist?",
+    options: [
+      "Earthworm",
+      "Euglena",
+      "Mushroom",
+      "Moss"
+    ],
+    answer: 1,
+    explanation: "Euglena is a unicellular eukaryote classified under Protista."
+  },
+  {
+    question: "Which kingdom contains organisms that are exclusively multicellular?",
+    options: [
+      "Animalia",
+      "Fungi",
+      "Protista",
+      "Bacteria"
+    ],
+    answer: 0,
+    explanation: "All animals are multicellular."
+  },
+  {
+    question: "Which feature is found in both plants and fungi?",
+    options: [
+      "Chlorophyll",
+      "Ability to move freely",
+      "Cell wall",
+      "Cellulose cell wall"
+    ],
+    answer: 2,
+    explanation: "Plants and fungi both have cell walls, though they differ in composition."
+  },
+  {
+    question: "Organisms in the domain Archaea differ from bacteria mainly because they:",
+    options: [
+      "Lack DNA",
+      "Are multicellular",
+      "Possess chloroplasts",
+      "Have unique cell membrane chemistry"
+    ],
+    answer: 3,
+    explanation: "Archaea have distinct membrane lipids and genetic features."
+  },
+  {
+    question: "Which of the following represents the correct order from the lowest to the highest taxonomic rank?",
+    options: [
+      "Genus → Species → Family → Order",
+      "Species → Family → Genus → Order",
+      "Species → Genus → Family → Order",
+      "Family → Species → Genus → Class"
+    ],
+    answer: 2,
+    explanation: "Taxonomic ranks increase from species upward."
+  },
+  {
+    question: "Which kingdom contains organisms capable of photosynthesis but lacking true roots, stems, and leaves?",
+    options: [
+      "Fungi",
+      "Protista",
+      "Archaea",
+      "Animalia"
+    ],
+    answer: 1,
+    explanation: "Many algae are protists and lack true plant organs."
+  },
+  {
+    question: "Which scientist is regarded as the father of taxonomy?",
+    options: [
+      "Carolus Linnaeus",
+      "Charles Darwin",
+      "Robert Koch",
+      "Gregor Mendel"
+    ],
+    answer: 0,
+    explanation: "Linnaeus developed the modern classification system."
+  },
+  {
+    question: "Which kingdom contains bread mould?",
+    options: [
+      "Plantae",
+      "Animalia",
+      "Protista",
+      "Fungi"
+    ],
+    answer: 3,
+    explanation: "Bread mould belongs to Kingdom Fungi."
+  },
+  {
+    question: "Which of the following is NOT a characteristic of animals?",
+    options: [
+      "Multicellular body",
+      "Ability to respond to stimuli",
+      "Cellulose cell wall",
+      "Heterotrophic nutrition"
+    ],
+    answer: 2,
+    explanation: "Animal cells do not have cell walls."
+  },
+  {
+    question: "Which taxonomic rank contains one or more related families?",
+    options: [
+      "Class",
+      "Species",
+      "Genus",
+      "Order"
+    ],
+    answer: 3,
+    explanation: "Orders consist of related families."
+  },
+  {
+    question: "Which of the following is a flowering plant?",
+    options: [
+      "Mango",
+      "Mushroom",
+      "Moss",
+      "Fern"
+    ],
+    answer: 0,
+    explanation: "Mango is an angiosperm (flowering plant)."
+  },
+  {
+    question: "Which kingdom includes organisms such as Paramecium?",
+    options: [
+      "Animalia",
+      "Protista",
+      "Fungi",
+      "Plantae"
+    ],
+    answer: 1,
+    explanation: "Paramecium is a unicellular protist."
+  },
+  {
+    question: "Which feature is common to all eukaryotic organisms?",
+    options: [
+      "Absence of DNA",
+      "Lack of cytoplasm",
+      "No chromosomes",
+      "Membrane-bound nucleus"
+    ],
+    answer: 3,
+    explanation: "All eukaryotes possess a true nucleus."
+  },
+  {
+    question: "Which kingdom includes organisms that produce spores as one method of reproduction?",
+    options: [
+      "Plantae only",
+      "Animalia",
+      "Fungi",
+      "Archaea"
+    ],
+    answer: 2,
+    explanation: "Most fungi reproduce through spores."
+  },
+  {
+    question: "Which of the following organisms belongs to Kingdom Plantae?",
+    options: [
+      "Amoeba",
+      "Pine tree",
+      "Hydra",
+      "Mushroom"
+    ],
+    answer: 1,
+    explanation: "Pine is a gymnosperm plant."
+  },
+  {
+    question: "A species is best defined as a group of organisms that:",
+    options: [
+      "Can interbreed to produce fertile offspring",
+      "Have similar body size",
+      "Share the same colour",
+      "Live in the same habitat only"
+    ],
+    answer: 0,
+    explanation: "This is the biological definition of a species."
+  },
+  {
+    question: "Which kingdom contains organisms that are primarily consumers?",
+    options: [
+      "Fungi",
+      "Plantae",
+      "Protista",
+      "Animalia"
+    ],
+    answer: 3,
+    explanation: "Animals obtain food by consuming other organisms."
+  },
+  {
+    question: "Which domain includes organisms commonly known as 'true bacteria'?",
+    options: [
+      "Bacteria",
+      "Archaea",
+      "Protista",
+      "Eukarya"
+    ],
+    answer: 0,
+    explanation: "The domain Bacteria contains the true bacteria."
+  },
+  {
+    question: "Which of the following is an advantage of biological classification?",
+    options: [
+      "It prevents evolution",
+      "It eliminates scientific research",
+      "It helps identify organisms accurately",
+      "It reduces biodiversity"
+    ],
+    answer: 2,
+    explanation: "Classification makes identification and comparison easier."
+  },
+  {
+    question: "Which kingdom contains organisms with hyphae?",
+    options: [
+      "Plantae",
+      "Fungi",
+      "Protista",
+      "Animalia"
+    ],
+    answer: 1,
+    explanation: "Hyphae are thread-like structures that make up most fungi."
+  },
+  {
+    question: "Which of the following belongs to Kingdom Animalia?",
+    options: [
+      "Starfish",
+      "Spirogyra",
+      "Rhizopus",
+      "Yeast"
+    ],
+    answer: 0,
+    explanation: "Starfish are marine animals."
+  },
+  {
+    question: "The scientific name Zea mays refers to:",
+    options: [
+      "Millet",
+      "Maize",
+      "Rice",
+      "Wheat"
+    ],
+    answer: 1,
+    explanation: "Zea mays is the scientific name for maize (corn)."
+  },
+  {
+    question: "Which of the following is the main basis for modern biological classification?",
+    options: [
+      "Colour of the organism",
+      "Habitat only",
+      "Evolutionary relationships and shared characteristics",
+      "Body size alone"
+    ],
+    answer: 2,
+    explanation: "Modern classification groups organisms based on shared features and evolutionary history."
+  },
+  {
+    question: "Which of the following organisms belongs to Kingdom Fungi?",
+    options: [
+      "Euglena",
+      "Hydra",
+      "Spirogyra",
+      "Rhizopus"
+    ],
+    answer: 3,
+    explanation: "Rhizopus is a common bread mould and belongs to Kingdom Fungi."
+  },
+  {
+    question: "Which kingdom contains organisms that are mostly non-motile and produce their own food?",
+    options: [
+      "Fungi",
+      "Plantae",
+      "Animalia",
+      "Protista"
+    ],
+    answer: 1,
+    explanation: "Plants are generally non-motile and manufacture food through photosynthesis."
+  },
+  {
+    question: "The branch of biology concerned with naming and classifying organisms is known as:",
+    options: [
+      "Taxonomy",
+      "Genetics",
+      "Ecology",
+      "Physiology"
+    ],
+    answer: 0,
+    explanation: "Taxonomy deals with the identification, naming, and classification of organisms."
+  },
+  {
+    question: "Which of the following belongs to the domain Eukarya?",
+    options: [
+      "Escherichia coli",
+      "Methanobacterium",
+      "Cyanobacterium",
+      "Mushroom"
+    ],
+    answer: 3,
+    explanation: "Mushrooms are fungi and belong to Domain Eukarya."
+  },
+  {
+    question: "Which characteristic is common to all animals?",
+    options: [
+      "Presence of chlorophyll",
+      "Cell walls made of cellulose",
+      "Heterotrophic mode of nutrition",
+      "Reproduction by spores only"
+    ],
+    answer: 2,
+    explanation: "Animals cannot make their own food; they depend on other organisms."
+  },
+  {
+    question: "Which of the following is NOT a member of Kingdom Protista?",
+    options: [
+      "Mushroom",
+      "Euglena",
+      "Amoeba",
+      "Paramecium"
+    ],
+    answer: 0,
+    explanation: "Mushrooms belong to Kingdom Fungi."
+  },
+  {
+    question: "Which kingdom includes organisms with tissues such as xylem and phloem?",
+    options: [
+      "Protista",
+      "Fungi",
+      "Plantae",
+      "Animalia"
+    ],
+    answer: 2,
+    explanation: "Vascular plants possess xylem and phloem for transport."
+  },
+  {
+    question: "In the scientific name Homo sapiens, the word Homo represents the:",
+    options: [
+      "Species",
+      "Genus",
+      "Family",
+      "Order"
+    ],
+    answer: 1,
+    explanation: "The first word in a scientific name is the genus."
+  },
+  {
+    question: "Which of the following is a characteristic of protists?",
+    options: [
+      "All possess chitin cell walls",
+      "They lack nuclei",
+      "All are multicellular",
+      "Most are unicellular eukaryotes"
+    ],
+    answer: 3,
+    explanation: "Most protists are single-celled organisms with true nuclei."
+  },
+  {
+    question: "Which kingdom contains organisms that lack chloroplasts but possess chitinous cell walls?",
+    options: [
+      "Protista",
+      "Fungi",
+      "Plantae",
+      "Animalia"
+    ],
+    answer: 1,
+    explanation: "Chitin is the main component of fungal cell walls."
+  },
+  {
+    question: "Which taxonomic rank is immediately above genus?",
+    options: [
+      "Family",
+      "Class",
+      "Species",
+      "Order"
+    ],
+    answer: 0,
+    explanation: "A family contains one or more closely related genera."
+  },
+  {
+    question: "Which of the following organisms is correctly matched with its kingdom?",
+    options: [
+      "Mushroom — Protista",
+      "Amoeba — Plantae",
+      "Yeast — Fungi",
+      "Moss — Animalia"
+    ],
+    answer: 2,
+    explanation: "Yeast is a unicellular fungus."
+  },
+  {
+    question: "The primary function of chlorophyll in plants is to:",
+    options: [
+      "Protect against disease",
+      "Carry water to the leaves",
+      "Absorb nutrients from the soil",
+      "Trap light energy for photosynthesis"
+    ],
+    answer: 3,
+    explanation: "Chlorophyll captures sunlight for food production."
+  },
+  {
+    question: "Which of the following kingdoms contains only heterotrophic organisms?",
+    options: [
+      "Animalia and Fungi",
+      "Plantae",
+      "Protista",
+      "Animalia"
+    ],
+    answer: 0,
+    explanation: "Both animals and fungi obtain food from other organisms."
+  },
+  {
+    question: "Which scientist proposed the five-kingdom classification system?",
+    options: [
+      "Charles Darwin",
+      "Gregor Mendel",
+      "Carolus Linnaeus",
+      "Robert Whittaker"
+    ],
+    answer: 3,
+    explanation: "Robert Whittaker proposed the five-kingdom system in 1969."
+  },
+  {
+    question: "Which of the following is an autotrophic protist?",
+    options: [
+      "Amoeba",
+      "Hydra",
+      "Euglena",
+      "Mushroom"
+    ],
+    answer: 2,
+    explanation: "Euglena can photosynthesize because it contains chloroplasts."
+  },
+  {
+    question: "Which kingdom includes organisms that store food mainly as glycogen?",
+    options: [
+      "Bacteria only",
+      "Animalia and Fungi",
+      "Plantae",
+      "Protista only"
+    ],
+    answer: 1,
+    explanation: "Animals and fungi store carbohydrates as glycogen."
+  },
+  {
+    question: "Which characteristic best distinguishes plants from animals?",
+    options: [
+      "Ability to produce food by photosynthesis",
+      "Presence of cytoplasm",
+      "Presence of DNA",
+      "Cellular respiration"
+    ],
+    answer: 0,
+    explanation: "Plants are generally autotrophic due to photosynthesis."
+  },
+  {
+    question: "Which kingdom includes lichens as one of its members?",
+    options: [
+      "Plantae",
+      "Animalia",
+      "Fungi",
+      "Protista"
+    ],
+    answer: 2,
+    explanation: "Lichens are formed through a partnership involving fungi and are classified with fungi."
+  },
+  {
+    question: "Which of the following is a benefit of using scientific names?",
+    options: [
+      "They are easier than common names",
+      "They provide a universal means of identification",
+      "They differ from country to country",
+      "They eliminate all local names"
+    ],
+    answer: 1,
+    explanation: "Scientific names are recognized worldwide."
+  },
+  {
+    question: "Which kingdom contains seaweeds in many introductory classification systems?",
+    options: [
+      "Animalia",
+      "Fungi",
+      "Plantae",
+      "Protista"
+    ],
+    answer: 3,
+    explanation: "Many algae, including seaweeds, are placed in Protista in introductory biology."
+  },
+  {
+    question: "Which taxonomic rank contains the largest number of species?",
+    options: [
+      "Kingdom",
+      "Order",
+      "Family",
+      "Genus"
+    ],
+    answer: 0,
+    explanation: "Kingdom is one of the broadest taxonomic ranks and includes many species."
+  },
+  {
+    question: "Which statement about fungi is correct?",
+    options: [
+      "They manufacture food using sunlight",
+      "They are all unicellular",
+      "Their cell walls contain cellulose only",
+      "They obtain nutrients by absorption"
+    ],
+    answer: 3,
+    explanation: "Fungi absorb nutrients after secreting digestive enzymes."
+  },
+  {
+    question: "Which of the following is a multicellular member of Kingdom Plantae?",
+    options: [
+      "Yeast",
+      "Amoeba",
+      "Fern",
+      "Euglena"
+    ],
+    answer: 2,
+    explanation: "Ferns are multicellular vascular plants."
+  },
+  {
+    question: "Which of the following best explains why organisms are classified into groups?",
+    options: [
+      "To reduce the number of living organisms",
+      "To make the study and identification of organisms easier",
+      "To prevent new species from being discovered",
+      "To replace ecological studies"
+    ],
+    answer: 1,
+    explanation: "Classification organizes organisms based on shared characteristics and evolutionary relationships, making them easier to study, compare, and identify."
+  }
+];
 function getCourse(course) {
   return {
     GST112,
@@ -1919,12 +4690,19 @@ function getCourse(course) {
     PHY102D,
     CSC104,
     CSC122,
+    CSC122B,
+    CSC122C,
+    CSC122D,
     COS102,
     STA112,
     CYB102,
+    CYB102B,
+    CYB102C,
     CYB104,
     CHM102,
-    BIO102
+    BIO102,
+    BIO102B,
+    BIO102C
   }[course];
 }
 // ===== SHOW PREVIOUS RESULT =====
@@ -5682,6 +8460,1112 @@ const CYB102 = [
   explanation: "Ethical hacking is authorized testing of system security to find vulnerabilities."
 } 
 ];
+const CYB102B = [
+  {
+    question: "Which of the following best describes data?",
+    options: [
+      "Organized reports",
+      "Raw facts without meaning",
+      "Computer instructions",
+      "Processed facts ready for decision-making"
+    ],
+    answer: 1,
+    explanation: "Data is raw facts before processing into meaning."
+  },
+  {
+    question: "Information is obtained when data is:",
+    options: [
+      "Printed on paper",
+      "Processed into a meaningful form",
+      "Deleted from storage",
+      "Randomly arranged"
+    ],
+    answer: 1,
+    explanation: "Information is data processed into a meaningful form."
+  },
+  {
+    question: "Which storage device uses flash memory?",
+    options: [
+      "USB Flash Drive",
+      "Floppy Disk",
+      "Magnetic Tape",
+      "Hard Disk Drive"
+    ],
+    answer: 0,
+    explanation: "USB flash drives use flash memory."
+  },
+  {
+    question: "Which of the following is a magnetic storage device?",
+    options: [
+      "SSD",
+      "Hard Disk Drive",
+      "DVD",
+      "Memory Card"
+    ],
+    answer: 1,
+    explanation: "HDDs store data using magnetic platters."
+  },
+  {
+    question: "Data integrity refers to:",
+    options: [
+      "The accuracy and consistency of data",
+      "The amount of data stored",
+      "The cost of storing data",
+      "The speed of data processing"
+    ],
+    answer: 0,
+    explanation: "Data integrity means data stays accurate and consistent."
+  },
+  {
+    question: "Which backup method stores only files changed since the last backup?",
+    options: [
+      "Mirror backup",
+      "Manual backup",
+      "Incremental backup",
+      "Full backup"
+    ],
+    answer: 2,
+    explanation: "Incremental backups save only recently changed data."
+  },
+  {
+    question: "Which of the following is an example of information?",
+    options: [
+      "Random letters",
+      "Student result showing grades",
+      "45, 60, 80, 92",
+      "Binary digits only"
+    ],
+    answer: 1,
+    explanation: "Processed exam results give meaningful information."
+  },
+  {
+    question: "Data validation is mainly carried out to:",
+    options: [
+      "Ensure data entered is acceptable",
+      "Encrypt documents",
+      "Increase storage space",
+      "Delete unnecessary files"
+    ],
+    answer: 0,
+    explanation: "Validation checks whether entered data meets rules."
+  },
+  {
+    question: "Which of the following is NOT a cyber threat?",
+    options: [
+      "Malware",
+      "Firewall",
+      "Phishing",
+      "Ransomware"
+    ],
+    answer: 1,
+    explanation: "A firewall is a security tool, not a threat."
+  },
+  {
+    question: "Which attack attempts to trick users into revealing sensitive information?",
+    options: [
+      "Defragmentation",
+      "Compression",
+      "Brute-force attack",
+      "Phishing"
+    ],
+    answer: 3,
+    explanation: "Phishing deceives users into giving confidential data."
+  },
+  {
+    question: "Which cloud service provides virtual servers and networking resources?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "DaaS",
+      "SaaS"
+    ],
+    answer: 0,
+    explanation: "IaaS offers virtual computing resources."
+  },
+  {
+    question: "Which of the following improves password security?",
+    options: [
+      "Sharing passwords with friends",
+      "Using a strong, unique password",
+      "Using \"123456\"",
+      "Using your name"
+    ],
+    answer: 1,
+    explanation: "Strong, unique passwords reduce unauthorized access."
+  },
+  {
+    question: "Which storage medium is mainly used for long-term archival backups?",
+    options: [
+      "Cache Memory",
+      "SSD",
+      "Magnetic Tape",
+      "RAM"
+    ],
+    answer: 2,
+    explanation: "Magnetic tape suits long-term backup due to reliability and cost."
+  },
+  {
+    question: "Data cleaning involves:",
+    options: [
+      "Formatting the computer",
+      "Encrypting files",
+      "Detecting and correcting inaccurate data",
+      "Physically washing storage devices"
+    ],
+    answer: 2,
+    explanation: "Data cleaning removes errors and inconsistencies."
+  },
+  {
+    question: "Which of the following is considered personal data?",
+    options: [
+      "Weather forecast",
+      "Population of Africa",
+      "School timetable",
+      "National Identification Number"
+    ],
+    answer: 3,
+    explanation: "A National ID Number identifies an individual."
+  },
+  {
+    question: "Malware designed to replicate itself across computers is called:",
+    options: [
+      "Driver",
+      "Firewall",
+      "Browser",
+      "Worm"
+    ],
+    answer: 3,
+    explanation: "A worm spreads automatically across networks."
+  },
+  {
+    question: "Which storage device has no moving mechanical parts?",
+    options: [
+      "Magnetic Tape",
+      "Floppy Disk",
+      "Solid-State Drive",
+      "Hard Disk Drive"
+    ],
+    answer: 2,
+    explanation: "SSDs use flash memory without moving parts."
+  },
+  {
+    question: "Digital responsibility includes:",
+    options: [
+      "Respecting others online",
+      "Hacking websites for fun",
+      "Sharing copyrighted materials illegally",
+      "Spreading fake news"
+    ],
+    answer: 0,
+    explanation: "Responsible digital behavior means respecting others online."
+  },
+  {
+    question: "Which of the following helps protect data privacy?",
+    options: [
+      "Using weak passwords",
+      "Ignoring software updates",
+      "Encryption",
+      "Publicly sharing passwords"
+    ],
+    answer: 2,
+    explanation: "Encryption protects data from unauthorized access."
+  },
+  {
+    question: "Which cyber attack locks a victim's files until payment is made?",
+    options: [
+      "Spyware",
+      "Virus",
+      "Ransomware",
+      "Trojan Horse"
+    ],
+    answer: 2,
+    explanation: "Ransomware encrypts files and demands payment."
+  },
+  {
+    question: "Which cloud deployment model is owned and managed by a single organization?",
+    options: [
+      "Public Cloud",
+      "Private Cloud",
+      "Community Cloud",
+      "Hybrid Cloud"
+    ],
+    answer: 1,
+    explanation: "A private cloud is dedicated to one organization."
+  },
+  {
+    question: "Which of the following is an example of data organization?",
+    options: [
+      "Arranging files into folders",
+      "Installing a browser",
+      "Replacing a keyboard",
+      "Restarting a computer"
+    ],
+    answer: 0,
+    explanation: "Organizing files into folders improves data management."
+  },
+  {
+    question: "Which of the following is an ethical practice in data handling?",
+    options: [
+      "Sharing users' passwords",
+      "Selling customer data illegally",
+      "Protecting confidential information",
+      "Accessing confidential files without permission"
+    ],
+    answer: 2,
+    explanation: "Ethical handling requires protecting confidential information."
+  },
+  {
+    question: "What is the primary purpose of two-factor authentication (2FA)?",
+    options: [
+      "Add an extra layer of security during login",
+      "Prevent software installation",
+      "Increase internet speed",
+      "Reduce file size"
+    ],
+    answer: 0,
+    explanation: "2FA requires extra verification beyond a password."
+  },
+  {
+    question: "Which of the following best describes digital identity?",
+    options: [
+      "A network cable",
+      "A computer's operating system",
+      "Information representing a person online",
+      "A storage device"
+    ],
+    answer: 2,
+    explanation: "Digital identity is the info/credentials tied to a person online."
+  },
+  {
+    question: "Which of the following is the primary purpose of organizing data?",
+    options: [
+      "To reduce internet speed",
+      "To damage stored files",
+      "To make data easier to access and manage",
+      "To increase file size"
+    ],
+    answer: 2,
+    explanation: "Organizing data improves storage, retrieval, and management."
+  },
+  {
+    question: "Which of the following is an example of secondary storage?",
+    options: [
+      "CPU Register",
+      "Hard Disk Drive",
+      "Cache Memory",
+      "RAM"
+    ],
+    answer: 1,
+    explanation: "Secondary storage keeps data even when power is off."
+  },
+  {
+    question: "A Trojan Horse is best described as:",
+    options: [
+      "Malware disguised as legitimate software",
+      "A cloud service",
+      "A hardware component",
+      "A backup device"
+    ],
+    answer: 0,
+    explanation: "Trojans look harmless but act maliciously once installed."
+  },
+  {
+    question: "Which of the following is an example of cloud storage?",
+    options: [
+      "DVD-ROM",
+      "USB Flash Drive",
+      "RAM",
+      "Online file storage service"
+    ],
+    answer: 3,
+    explanation: "Cloud storage keeps files on remote servers via the internet."
+  },
+  {
+    question: "Which type of backup copies every selected file each time a backup is performed?",
+    options: [
+      "Differential Backup",
+      "Incremental Backup",
+      "Full Backup",
+      "Selective Backup"
+    ],
+    answer: 2,
+    explanation: "A full backup makes a complete copy of all selected data."
+  },
+  {
+    question: "Which of the following is used to verify that data falls within a specified range?",
+    options: [
+      "Type Check",
+      "Range Check",
+      "Format Check",
+      "Presence Check"
+    ],
+    answer: 1,
+    explanation: "A range check ensures values fall within acceptable limits."
+  },
+  {
+    question: "Which practice best protects your online accounts?",
+    options: [
+      "Using one password for every account",
+      "Sharing passwords with trusted friends",
+      "Enabling multi-factor authentication",
+      "Writing passwords publicly"
+    ],
+    answer: 2,
+    explanation: "Multi-factor authentication adds an extra security layer."
+  },
+  {
+    question: "Which of the following is an example of personally identifiable information (PII)?",
+    options: [
+      "Weather report",
+      "Student ID number linked to a student",
+      "Football score",
+      "Public holiday calendar"
+    ],
+    answer: 1,
+    explanation: "PII can be used to identify a specific individual."
+  },
+  {
+    question: "Which cyber attack secretly records a user's activities?",
+    options: [
+      "Firewall",
+      "Router",
+      "Spyware",
+      "Backup Software"
+    ],
+    answer: 2,
+    explanation: "Spyware monitors user activities without consent."
+  },
+  {
+    question: "Which storage device generally provides the fastest data access?",
+    options: [
+      "Floppy Disk",
+      "Solid-State Drive (SSD)",
+      "Magnetic Tape",
+      "DVD"
+    ],
+    answer: 1,
+    explanation: "SSDs access data much faster than magnetic devices."
+  },
+  {
+    question: "Which of the following best describes data quality?",
+    options: [
+      "The usefulness, accuracy, and completeness of data",
+      "The color of stored files",
+      "The age of a computer",
+      "The quantity of data collected"
+    ],
+    answer: 0,
+    explanation: "Quality data is accurate, complete, relevant, and reliable."
+  },
+  {
+    question: "Which of the following is an ethical responsibility when handling data?",
+    options: [
+      "Respecting users' privacy",
+      "Sharing confidential information without consent",
+      "Selling private records",
+      "Ignoring security policies"
+    ],
+    answer: 0,
+    explanation: "Ethical handling requires respecting privacy and confidentiality."
+  },
+  {
+    question: "Which cloud service model allows users to access software over the internet?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "LAN"
+    ],
+    answer: 2,
+    explanation: "SaaS delivers applications through the internet."
+  },
+  {
+    question: "Which of the following is NOT a magnetic storage device?",
+    options: [
+      "Magnetic Tape",
+      "Hard Disk Drive",
+      "Solid-State Drive",
+      "Floppy Disk"
+    ],
+    answer: 2,
+    explanation: "SSDs use flash memory, not magnetic technology."
+  },
+  {
+    question: "What is the main objective of cyber security?",
+    options: [
+      "To slow internet access",
+      "To protect systems, networks, and data from attacks",
+      "To reduce storage capacity",
+      "To increase computer prices"
+    ],
+    answer: 1,
+    explanation: "Cyber security protects digital assets from threats."
+  },
+  {
+    question: "Which of the following is a strong example of digital responsibility?",
+    options: [
+      "Downloading pirated software",
+      "Respecting copyright laws",
+      "Posting false information online",
+      "Sharing someone else's account details"
+    ],
+    answer: 1,
+    explanation: "Responsible users respect intellectual property rights."
+  },
+  {
+    question: "Which validation rule checks that a required field is not left empty?",
+    options: [
+      "Format Check",
+      "Range Check",
+      "Presence Check",
+      "Type Check"
+    ],
+    answer: 2,
+    explanation: "A presence check ensures mandatory fields contain data."
+  },
+  {
+    question: "Which of the following is a benefit of cloud computing?",
+    options: [
+      "Permanent hardware ownership",
+      "Access to resources from different locations",
+      "No internet connection required",
+      "Limited accessibility"
+    ],
+    answer: 1,
+    explanation: "Cloud computing allows access from anywhere online."
+  },
+  {
+    question: "Which of the following can help prevent phishing attacks?",
+    options: [
+      "Ignoring browser security warnings",
+      "Clicking every email link",
+      "Sharing passwords through email",
+      "Verifying the sender before responding"
+    ],
+    answer: 3,
+    explanation: "Verifying the sender helps avoid fraudulent emails."
+  },
+  {
+    question: "Which of the following is considered a cyber attack?",
+    options: [
+      "SQL Injection",
+      "Data Compression",
+      "Disk Formatting",
+      "File Organization"
+    ],
+    answer: 0,
+    explanation: "SQL Injection exploits database-driven application flaws."
+  },
+  {
+    question: "Which of the following best protects sensitive files stored on a computer?",
+    options: [
+      "Renaming files only",
+      "Encryption",
+      "Compressing files",
+      "Increasing screen brightness"
+    ],
+    answer: 1,
+    explanation: "Encryption converts readable data into unreadable form."
+  },
+  {
+    question: "Which of the following is a common source of malware infection?",
+    options: [
+      "Printing documents",
+      "Opening suspicious email attachments",
+      "Turning off the monitor",
+      "Trusted software updates"
+    ],
+    answer: 1,
+    explanation: "Malicious attachments often contain harmful software."
+  },
+  {
+    question: "Which of the following best describes digital identity protection?",
+    options: [
+      "Protecting online personal information from misuse",
+      "Posting passwords on social media",
+      "Sharing login credentials with friends",
+      "Using the same password for every account"
+    ],
+    answer: 0,
+    explanation: "It helps prevent identity theft and unauthorized access."
+  },
+  {
+    question: "Which of the following is the greatest advantage of maintaining regular data backups?",
+    options: [
+      "Increased screen resolution",
+      "Faster internet speed",
+      "Recovery of important files after data loss",
+      "Lower electricity consumption"
+    ],
+    answer: 2,
+    explanation: "Backups allow lost or damaged data to be restored."
+  },
+  {
+    question: "Which of the following is the best practice for protecting personal information online?",
+    options: [
+      "Share passwords with classmates",
+      "Disable security software permanently",
+      "Ignore suspicious login alerts",
+      "Use strong passwords and keep software updated"
+    ],
+    answer: 3,
+    explanation: "Strong passwords and updates greatly reduce cyber risks."
+  }
+];
+
+const CYB102C = [
+  {
+    question: "Which of the following best distinguishes information from data?",
+    options: [
+      "Information cannot be stored electronically.",
+      "Information is processed data with meaning.",
+      "Data is obtained after processing information.",
+      "Information is always numerical."
+    ],
+    answer: 1,
+    explanation: "Information is data processed into a meaningful form."
+  },
+  {
+    question: "Which of the following is an input device used for data collection?",
+    options: [
+      "Monitor",
+      "Speaker",
+      "Printer",
+      "Keyboard"
+    ],
+    answer: 3,
+    explanation: "A keyboard allows users to enter data into a computer."
+  },
+  {
+    question: "Which storage device is most suitable for carrying files between computers?",
+    options: [
+      "Magnetic Tape",
+      "Blu-ray Drive",
+      "Internal Hard Disk",
+      "USB Flash Drive"
+    ],
+    answer: 3,
+    explanation: "USB flash drives are portable and convenient for transfer."
+  },
+  {
+    question: "Which of the following is a characteristic of high-quality data?",
+    options: [
+      "It is duplicated several times.",
+      "It is always handwritten.",
+      "It occupies little storage space.",
+      "It is accurate and complete."
+    ],
+    answer: 3,
+    explanation: "High-quality data should be accurate, complete, and reliable."
+  },
+  {
+    question: "Which backup method copies all selected files every time it runs?",
+    options: [
+      "Mirror Synchronization",
+      "Incremental Backup",
+      "Full Backup",
+      "Differential Backup"
+    ],
+    answer: 2,
+    explanation: "A full backup copies every selected file each run."
+  },
+  {
+    question: "Which of the following is an example of logical data organization?",
+    options: [
+      "Arranging records in a database table",
+      "Connecting a monitor",
+      "Cleaning a keyboard",
+      "Replacing a hard disk"
+    ],
+    answer: 0,
+    explanation: "Logical organization arranges data for efficient retrieval."
+  },
+  {
+    question: "Which cyber threat attempts to guess passwords repeatedly?",
+    options: [
+      "Phishing",
+      "Brute-force Attack",
+      "Spyware",
+      "Worm"
+    ],
+    answer: 1,
+    explanation: "Brute-force attacks repeatedly try password combinations."
+  },
+  {
+    question: "Which of the following is NOT considered malware?",
+    options: [
+      "Virus",
+      "Firewall",
+      "Ransomware",
+      "Trojan Horse"
+    ],
+    answer: 1,
+    explanation: "A firewall protects systems; it is not malicious software."
+  },
+  {
+    question: "What is the primary purpose of data validation?",
+    options: [
+      "To increase storage capacity",
+      "To compress files",
+      "To ensure entered data follows specified rules",
+      "To improve internet speed"
+    ],
+    answer: 2,
+    explanation: "Validation checks whether data meets predefined conditions."
+  },
+  {
+    question: "Which of the following can reduce the risk of identity theft?",
+    options: [
+      "Posting personal details publicly",
+      "Sharing passwords with friends",
+      "Using the same password everywhere",
+      "Using multi-factor authentication"
+    ],
+    answer: 3,
+    explanation: "Multi-factor authentication makes unauthorized access harder."
+  },
+  {
+    question: "Which storage medium stores data using magnetic coating?",
+    options: [
+      "Magnetic Tape",
+      "CD-ROM",
+      "Flash Card",
+      "SSD"
+    ],
+    answer: 0,
+    explanation: "Magnetic tape stores information magnetically."
+  },
+  {
+    question: "Which of the following is a responsibility of a digital citizen?",
+    options: [
+      "Sending spam emails",
+      "Creating fake accounts",
+      "Respecting privacy online",
+      "Sharing pirated software"
+    ],
+    answer: 2,
+    explanation: "Responsible digital citizens respect others' privacy and rights."
+  },
+  {
+    question: "Which cloud deployment model combines public and private clouds?",
+    options: [
+      "Hybrid Cloud",
+      "Private Cloud",
+      "Community Cloud",
+      "Public Cloud"
+    ],
+    answer: 0,
+    explanation: "A hybrid cloud combines public and private cloud features."
+  },
+  {
+    question: "Which of the following is a benefit of encrypting sensitive data?",
+    options: [
+      "Faster typing speed",
+      "Prevents unauthorized reading of data",
+      "Deletes duplicate files",
+      "Increases monitor resolution"
+    ],
+    answer: 1,
+    explanation: "Encryption protects data from unauthorized access."
+  },
+  {
+    question: "Which cyber attack encrypts a victim's files and demands payment?",
+    options: [
+      "Adware",
+      "Worm",
+      "Spyware",
+      "Ransomware"
+    ],
+    answer: 3,
+    explanation: "Ransomware locks files until a ransom is paid."
+  },
+  {
+    question: "Which of the following is an example of confidential information?",
+    options: [
+      "Football match schedule",
+      "Student examination records",
+      "Public weather forecast",
+      "Bus timetable"
+    ],
+    answer: 1,
+    explanation: "Examination records should be kept confidential."
+  },
+  {
+    question: "What does data cleaning mainly involve?",
+    options: [
+      "Removing errors and inconsistencies from data",
+      "Installing antivirus software",
+      "Increasing RAM size",
+      "Formatting storage devices"
+    ],
+    answer: 0,
+    explanation: "Data cleaning improves quality by correcting errors."
+  },
+  {
+    question: "Which of the following is commonly used for disaster recovery?",
+    options: [
+      "Disconnecting from the internet permanently",
+      "Deleting old files daily",
+      "Disabling antivirus software",
+      "Regular data backups"
+    ],
+    answer: 3,
+    explanation: "Backups allow data to be restored after disasters."
+  },
+  {
+    question: "Which cloud service model provides a platform for application development?",
+    options: [
+      "SaaS",
+      "LAN",
+      "IaaS",
+      "PaaS"
+    ],
+    answer: 3,
+    explanation: "PaaS provides tools for developing and deploying applications."
+  },
+  {
+    question: "Which of the following helps maintain data integrity?",
+    options: [
+      "Restricting unauthorized modifications",
+      "Allowing unrestricted editing",
+      "Ignoring validation errors",
+      "Sharing administrator passwords"
+    ],
+    answer: 0,
+    explanation: "Preventing unauthorized changes preserves data integrity."
+  },
+  {
+    question: "Which of the following best describes phishing?",
+    options: [
+      "Compressing files for storage",
+      "Sending fake messages to obtain sensitive information",
+      "Organizing folders alphabetically",
+      "Stealing physical storage devices"
+    ],
+    answer: 1,
+    explanation: "Phishing tricks users into revealing confidential information."
+  },
+  {
+    question: "Which of the following is an example of digital identity?",
+    options: [
+      "Online username and profile details",
+      "External speaker",
+      "Computer motherboard",
+      "USB cable"
+    ],
+    answer: 0,
+    explanation: "Digital identity includes info that represents a user online."
+  },
+  {
+    question: "Which validation rule checks whether the entered data matches the required data type?",
+    options: [
+      "Range Check",
+      "Length Check",
+      "Presence Check",
+      "Type Check"
+    ],
+    answer: 3,
+    explanation: "A type check ensures data is of the expected type."
+  },
+  {
+    question: "Which of the following storage devices generally has the largest storage capacity?",
+    options: [
+      "Magnetic Tape Cartridge",
+      "DVD",
+      "CD-ROM",
+      "Floppy Disk"
+    ],
+    answer: 0,
+    explanation: "Magnetic tape cartridges store very large amounts of data."
+  },
+  {
+    question: "Which of the following is the most appropriate action after receiving a suspicious email requesting your password?",
+    options: [
+      "Forward it to all your contacts.",
+      "Reply with your password immediately.",
+      "Ignore security warnings and click the link.",
+      "Verify the sender before taking any action."
+    ],
+    answer: 3,
+    explanation: "Always verify the sender before acting on such requests."
+  },
+  {
+    question: "Which of the following best describes data redundancy?",
+    options: [
+      "Compressing files to save space",
+      "Organizing data alphabetically",
+      "Encrypting data before storage",
+      "Storing the same data in multiple places unnecessarily"
+    ],
+    answer: 3,
+    explanation: "Data redundancy is unnecessary duplication, causing inconsistency."
+  },
+  {
+    question: "Which of the following is a common physical storage device?",
+    options: [
+      "USB Flash Drive",
+      "Email Account",
+      "Web Browser",
+      "Cloud Server"
+    ],
+    answer: 0,
+    explanation: "A USB flash drive is a physical data storage device."
+  },
+  {
+    question: "Which cyber security principle ensures that only authorized users can access information?",
+    options: [
+      "Confidentiality",
+      "Accuracy",
+      "Portability",
+      "Availability"
+    ],
+    answer: 0,
+    explanation: "Confidentiality protects information from unauthorized access."
+  },
+  {
+    question: "Which of the following is an example of biometric authentication?",
+    options: [
+      "PIN code",
+      "Fingerprint scan",
+      "Username",
+      "Password"
+    ],
+    answer: 1,
+    explanation: "Biometric authentication uses unique physical characteristics."
+  },
+  {
+    question: "Which of the following is most likely to spread through infected email attachments?",
+    options: [
+      "Router",
+      "Virus",
+      "Switch",
+      "Firewall"
+    ],
+    answer: 1,
+    explanation: "Viruses commonly spread through infected files and attachments."
+  },
+  {
+    question: "Which data validation rule checks that the number of characters entered is acceptable?",
+    options: [
+      "Length Check",
+      "Presence Check",
+      "Range Check",
+      "Type Check"
+    ],
+    answer: 0,
+    explanation: "A length check verifies the character count meets limits."
+  },
+  {
+    question: "Which of the following is a benefit of cloud computing?",
+    options: [
+      "Automatic accessibility from multiple devices",
+      "Unlimited free hardware upgrades",
+      "Permanent internet disconnection",
+      "Elimination of all cyber threats"
+    ],
+    answer: 0,
+    explanation: "Cloud services allow access from different connected devices."
+  },
+  {
+    question: "Which of the following is considered unethical in data handling?",
+    options: [
+      "Encrypting confidential files",
+      "Performing regular backups",
+      "Accessing records without authorization",
+      "Updating antivirus software"
+    ],
+    answer: 2,
+    explanation: "Unauthorized access to confidential data is unethical."
+  },
+  {
+    question: "What is the primary purpose of an antivirus program?",
+    options: [
+      "Improve internet speed",
+      "Compress large files",
+      "Increase storage capacity",
+      "Detect and remove malicious software"
+    ],
+    answer: 3,
+    explanation: "Antivirus software identifies and removes malware."
+  },
+  {
+    question: "Which of the following is an example of optical storage?",
+    options: [
+      "Magnetic Tape",
+      "DVD",
+      "SSD",
+      "Hard Disk Drive"
+    ],
+    answer: 1,
+    explanation: "DVDs store data using laser technology."
+  },
+  {
+    question: "Which of the following best protects confidential data sent over the internet?",
+    options: [
+      "Encryption",
+      "Formatting",
+      "File compression",
+      "Defragmentation"
+    ],
+    answer: 0,
+    explanation: "Encryption makes data unreadable during transmission."
+  },
+  {
+    question: "Which backup method copies all files changed since the last full backup?",
+    options: [
+      "Differential Backup",
+      "Incremental Backup",
+      "Mirror Backup",
+      "Full Backup"
+    ],
+    answer: 0,
+    explanation: "Differential backups copy changes since the last full backup."
+  },
+  {
+    question: "Which of the following is a social engineering attack?",
+    options: [
+      "Formatting",
+      "Data Compression",
+      "Disk Cleanup",
+      "Phishing"
+    ],
+    answer: 3,
+    explanation: "Phishing manipulates people into revealing confidential info."
+  },
+  {
+    question: "Which of the following helps improve data quality?",
+    options: [
+      "Disabling validation rules",
+      "Deleting all records",
+      "Ignoring duplicate records",
+      "Data cleaning"
+    ],
+    answer: 3,
+    explanation: "Data cleaning removes duplicates, errors, and inconsistencies."
+  },
+  {
+    question: "Which of the following is an example of strong password practice?",
+    options: [
+      "P@ss2026!Secure",
+      "password123",
+      "yourname",
+      "12345678"
+    ],
+    answer: 0,
+    explanation: "Strong passwords mix uppercase, lowercase, numbers, symbols."
+  },
+  {
+    question: "Which of the following is a major objective of data backup?",
+    options: [
+      "Reduce electricity usage",
+      "Increase processor speed",
+      "Improve monitor quality",
+      "Recover data after loss or damage"
+    ],
+    answer: 3,
+    explanation: "Backups ensure important files can be restored if lost."
+  },
+  {
+    question: "Which cloud deployment model is available to the general public?",
+    options: [
+      "Internal Cloud",
+      "Hybrid Cloud",
+      "Private Cloud",
+      "Public Cloud"
+    ],
+    answer: 3,
+    explanation: "Public clouds are offered to users over the internet."
+  },
+  {
+    question: "Which of the following can help prevent unauthorized access to a computer?",
+    options: [
+      "Disabling authentication",
+      "Using screen lock and passwords",
+      "Leaving it unlocked",
+      "Sharing login credentials"
+    ],
+    answer: 1,
+    explanation: "Passwords and screen locks prevent unauthorized access."
+  },
+  {
+    question: "Which of the following is an example of digital responsibility?",
+    options: [
+      "Respecting online privacy policies",
+      "Downloading pirated software",
+      "Sharing fake news",
+      "Posting harmful content intentionally"
+    ],
+    answer: 0,
+    explanation: "Responsible behavior includes respecting privacy and rules."
+  },
+  {
+    question: "Which of the following is NOT part of the CIA Triad of cyber security?",
+    options: [
+      "Confidentiality",
+      "Compatibility",
+      "Availability",
+      "Integrity"
+    ],
+    answer: 1,
+    explanation: "The CIA Triad is Confidentiality, Integrity, and Availability."
+  },
+  {
+    question: "What is the purpose of a firewall?",
+    options: [
+      "Increase RAM capacity",
+      "Store backup files",
+      "Filter incoming and outgoing network traffic",
+      "Create spreadsheets"
+    ],
+    answer: 2,
+    explanation: "Firewalls monitor and control network traffic by rules."
+  },
+  {
+    question: "Which of the following is most important before deleting data permanently?",
+    options: [
+      "Disconnect the keyboard",
+      "Turn off the monitor",
+      "Create a backup if the data may be needed later",
+      "Restart the computer"
+    ],
+    answer: 2,
+    explanation: "Backing up important data prevents accidental permanent loss."
+  },
+  {
+    question: "Which of the following best describes digital footprint?",
+    options: [
+      "The trail of activities a user leaves online",
+      "A backup method",
+      "A type of storage device",
+      "A computer's storage capacity"
+    ],
+    answer: 0,
+    explanation: "A digital footprint is the record of online activities."
+  },
+  {
+    question: "Which of the following is a good practice for protecting your digital identity?",
+    options: [
+      "Reusing the same password everywhere",
+      "Sharing personal information with strangers online",
+      "Using public Wi-Fi for banking without protection",
+      "Reviewing privacy settings regularly"
+    ],
+    answer: 3,
+    explanation: "Regularly checking privacy settings protects personal info."
+  },
+  {
+    question: "Which of the following best explains cyber security?",
+    options: [
+      "Installing computer hardware only",
+      "Protecting computer systems, networks, and data from digital attacks",
+      "Organizing files into folders",
+      "The process of manufacturing computers"
+    ],
+    answer: 1,
+    explanation: "Cyber security safeguards digital systems and information."
+  }
+];
+
 const CYB104 = [
   {
   question: "Which of the following best describes application packages in cybersecurity?",
