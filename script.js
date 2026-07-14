@@ -4692,11 +4692,18 @@ function getCourse(course) {
     PHY102C,
     PHY102D,
     CSC104,
+    CSC104B,
+    CSC104C,
+    CSC104D,
     CSC122,
     CSC122B,
     CSC122C,
     CSC122D,
     COS102,
+    COS102B,
+    COS102C,
+    COS102D,
+    COS102E,
     STA112,
     CYB102,
     CYB102B,
@@ -9017,7 +9024,1666 @@ const CSC104 = [
     answer: 3,
     explanation: "MS Access and MS PowerPoint are both application packages because they are pre-developed software designed to help users accomplish specific categories of tasks."
 }
-];  
+];
+const CSC104B = [
+  {
+    question: "Which of the following is an example of an application package?",
+    options: [
+      "BIOS",
+      "Device Driver",
+      "Operating System",
+      "Microsoft PowerPoint"
+    ],
+    answer: 3,
+    explanation: "Microsoft PowerPoint is application software used for creating presentations."
+  },
+  {
+    question: "The primary purpose of Microsoft Access is to:",
+    options: [
+      "Edit videos",
+      "Create presentations",
+      "Manage databases",
+      "Browse the internet"
+    ],
+    answer: 2,
+    explanation: "Microsoft Access is a Database Management System used to create and manage databases."
+  },
+  {
+    question: "A Database Management System (DBMS) is mainly used to:",
+    options: [
+      "Create computer hardware",
+      "Design websites",
+      "Increase internet speed",
+      "Organize and manage data efficiently"
+    ],
+    answer: 3,
+    explanation: "A DBMS helps users store, organize, retrieve, and manage data."
+  },
+  {
+    question: "In Microsoft Access, a collection of related records is stored in a:",
+    options: [
+      "Table",
+      "Report",
+      "Form",
+      "Query"
+    ],
+    answer: 0,
+    explanation: "Tables store related records in rows and columns."
+  },
+  {
+    question: "Which of the following is the first step in creating a new database in Microsoft Access?",
+    options: [
+      "Print the database",
+      "Choose Blank Database or a template",
+      "Create a report",
+      "Insert a query"
+    ],
+    answer: 1,
+    explanation: "A new database begins by selecting a blank database or template."
+  },
+  {
+    question: "Which Access object is mainly used to retrieve specific information from one or more tables?",
+    options: [
+      "Form",
+      "Report",
+      "Macro",
+      "Query"
+    ],
+    answer: 3,
+    explanation: "Queries are used to search, filter, and retrieve specific data."
+  },
+  {
+    question: "Which view allows users to modify the structure of a table?",
+    options: [
+      "Datasheet View",
+      "Print Preview",
+      "Layout View",
+      "Design View"
+    ],
+    answer: 3,
+    explanation: "Design View is used to define fields and data types."
+  },
+  {
+    question: "Which of the following best describes a field in a database?",
+    options: [
+      "A complete database",
+      "A row of related data",
+      "A column containing one type of information",
+      "A printed report"
+    ],
+    answer: 2,
+    explanation: "A field is a column that stores one type of data."
+  },
+  {
+    question: "Which Access object provides a user-friendly interface for entering data?",
+    options: [
+      "Module",
+      "Form",
+      "Query",
+      "Macro"
+    ],
+    answer: 1,
+    explanation: "Forms simplify data entry and editing."
+  },
+  {
+    question: "Which of the following data types is suitable for storing a person's age?",
+    options: [
+      "Hyperlink",
+      "Short Text",
+      "Number",
+      "Attachment"
+    ],
+    answer: 2,
+    explanation: "Ages are numerical values."
+  },
+  {
+    question: "Which of the following is NOT an object in Microsoft Access?",
+    options: [
+      "Query",
+      "Report",
+      "Table",
+      "Worksheet"
+    ],
+    answer: 3,
+    explanation: "Worksheets belong to Microsoft Excel, not Access."
+  },
+  {
+    question: "Data formatting in Microsoft Access is mainly used to:",
+    options: [
+      "Change the appearance of data",
+      "Create backups",
+      "Compress files",
+      "Delete records"
+    ],
+    answer: 0,
+    explanation: "Formatting changes how data is displayed without changing its value."
+  },
+  {
+    question: "A filter in Microsoft Access is used to:",
+    options: [
+      "Permanently delete records",
+      "Encrypt the database",
+      "Close the application",
+      "Display records that meet specified conditions"
+    ],
+    answer: 3,
+    explanation: "Filtering temporarily displays only matching records."
+  },
+  {
+    question: "Which Microsoft Office application is primarily used for creating slide presentations?",
+    options: [
+      "Word",
+      "Excel",
+      "Access",
+      "PowerPoint"
+    ],
+    answer: 3,
+    explanation: "PowerPoint is designed for creating presentations."
+  },
+  {
+    question: "Which slide is usually created first in a presentation?",
+    options: [
+      "Picture Slide",
+      "Chart Slide",
+      "Summary Slide",
+      "Title Slide"
+    ],
+    answer: 3,
+    explanation: "The title slide introduces the presentation."
+  },
+  {
+    question: "Which feature changes the appearance of all slides in a presentation?",
+    options: [
+      "Design Template",
+      "Animation Pane",
+      "Spell Checker",
+      "Zoom Tool"
+    ],
+    answer: 0,
+    explanation: "Design templates apply a consistent appearance to slides."
+  },
+  {
+    question: "Which command is used to insert another slide into a presentation?",
+    options: [
+      "Replace",
+      "Print",
+      "New Slide",
+      "Save As"
+    ],
+    answer: 2,
+    explanation: "The New Slide command adds additional slides."
+  },
+  {
+    question: "Slide Transition refers to:",
+    options: [
+      "File compression",
+      "Effects between slides",
+      "Image cropping",
+      "Text formatting"
+    ],
+    answer: 1,
+    explanation: "Transitions control how one slide changes to another."
+  },
+  {
+    question: "Animation in PowerPoint is applied mainly to:",
+    options: [
+      "File folders",
+      "Objects on a slide",
+      "Database tables",
+      "Entire operating system"
+    ],
+    answer: 1,
+    explanation: "Animations affect text, pictures, and other slide objects."
+  },
+  {
+    question: "Which of the following can be animated in PowerPoint?",
+    options: [
+      "Shapes",
+      "Images",
+      "All of the above",
+      "Text"
+    ],
+    answer: 2,
+    explanation: "PowerPoint allows animations on different slide objects."
+  },
+  {
+    question: "Which Access view displays records in rows and columns?",
+    options: [
+      "Layout View",
+      "Report View",
+      "Design View",
+      "Datasheet View"
+    ],
+    answer: 3,
+    explanation: "Datasheet View resembles a spreadsheet for viewing and editing records."
+  },
+  {
+    question: "Which of the following best defines a record in a database table?",
+    options: [
+      "A database file",
+      "A field name",
+      "A report page",
+      "A single row of related information"
+    ],
+    answer: 3,
+    explanation: "A record consists of related fields describing one item."
+  },
+  {
+    question: "Which option is commonly used to open an existing Access database?",
+    options: [
+      "Export",
+      "Publish",
+      "Animate",
+      "Open"
+    ],
+    answer: 3,
+    explanation: "The Open command loads an existing database file."
+  },
+  {
+    question: "Which of the following is an advantage of using Microsoft Access?",
+    options: [
+      "Increased battery life",
+      "Automatic hardware repair",
+      "Efficient storage and retrieval of data",
+      "Faster internet browsing"
+    ],
+    answer: 2,
+    explanation: "Access makes storing, organizing, and retrieving data easier."
+  },
+  {
+    question: "Before presenting a PowerPoint slideshow to an audience, it is most important to:",
+    options: [
+      "Review the slides for errors",
+      "Delete all animations",
+      "Remove the title slide",
+      "Convert every slide into a picture"
+    ],
+    answer: 0,
+    explanation: "Reviewing helps identify and correct mistakes before presentation."
+  },
+  {
+    question: "Which of the following is the default file extension for a Microsoft Access database?",
+    options: [
+      ".xlsx",
+      ".docx",
+      ".accdb",
+      ".pptx"
+    ],
+    answer: 2,
+    explanation: "Modern Access databases are saved with the .accdb extension."
+  },
+  {
+    question: "Which Access object is mainly used to produce printable summaries of data?",
+    options: [
+      "Table",
+      "Query",
+      "Report",
+      "Form"
+    ],
+    answer: 2,
+    explanation: "Reports present data in a format suitable for printing."
+  },
+  {
+    question: "Which of the following is an advantage of using a database instead of paper records?",
+    options: [
+      "Occupies more physical space",
+      "Requires no electricity",
+      "Cannot be edited",
+      "Easier searching and updating of records"
+    ],
+    answer: 3,
+    explanation: "Databases allow quick searching, editing, and retrieval of information."
+  },
+  {
+    question: "Which Access object stores the actual data?",
+    options: [
+      "Form",
+      "Query",
+      "Table",
+      "Report"
+    ],
+    answer: 2,
+    explanation: "Tables are the primary storage objects in a database."
+  },
+  {
+    question: "Which of the following is an example of a field name in a student database?",
+    options: [
+      "Student Record",
+      "Access Window",
+      "Student Name",
+      "Database File"
+    ],
+    answer: 2,
+    explanation: "A field name identifies a specific type of data stored in a table."
+  },
+  {
+    question: "Which view is most suitable for entering records into an existing table?",
+    options: [
+      "Print Preview",
+      "Datasheet View",
+      "Design View",
+      "Slide Show View"
+    ],
+    answer: 1,
+    explanation: "Datasheet View allows users to add and edit records directly."
+  },
+  {
+    question: "A query in Microsoft Access can be used to:",
+    options: [
+      "Replace the operating system",
+      "Design presentation slides",
+      "Install software updates",
+      "Retrieve records that meet specific criteria"
+    ],
+    answer: 3,
+    explanation: "Queries search for and display records matching specified conditions."
+  },
+  {
+    question: "What is the purpose of sorting records in Microsoft Access?",
+    options: [
+      "To protect the database with a password",
+      "To delete unwanted records",
+      "To create a new database",
+      "To arrange data in a specific order"
+    ],
+    answer: 3,
+    explanation: "Sorting organizes records in ascending or descending order."
+  },
+  {
+    question: "Which PowerPoint feature controls how one slide changes to the next?",
+    options: [
+      "Slide Transition",
+      "Hyperlink",
+      "Theme",
+      "Animation"
+    ],
+    answer: 0,
+    explanation: "Slide transitions determine the effect used when moving between slides."
+  },
+  {
+    question: "Which of the following is an example of a presentation theme?",
+    options: [
+      "A spreadsheet formula",
+      "A network connection",
+      "A database table",
+      "A collection of colors, fonts, and effects"
+    ],
+    answer: 3,
+    explanation: "A theme provides a consistent design throughout a presentation."
+  },
+  {
+    question: "Which tab in PowerPoint is commonly used to insert pictures into a slide?",
+    options: [
+      "Insert",
+      "Home",
+      "Review",
+      "View"
+    ],
+    answer: 0,
+    explanation: "The Insert tab contains commands for adding pictures and other objects."
+  },
+  {
+    question: "Which of the following is true about animations in PowerPoint?",
+    options: [
+      "They can only be applied to text.",
+      "They automatically affect every slide.",
+      "They permanently change the theme.",
+      "They can be applied to different slide objects."
+    ],
+    answer: 3,
+    explanation: "Animations can be applied to text, images, shapes, charts, and other objects."
+  },
+  {
+    question: "Which keyboard shortcut is commonly used to save a presentation?",
+    options: [
+      "Ctrl + X",
+      "Ctrl + S",
+      "Ctrl + C",
+      "Ctrl + P"
+    ],
+    answer: 1,
+    explanation: "Ctrl + S saves the current presentation or database."
+  },
+  {
+    question: "Which of the following best describes a primary key in Microsoft Access?",
+    options: [
+      "A field used only for printing",
+      "The first field in every table",
+      "A field that uniquely identifies each record",
+      "A field containing only numbers"
+    ],
+    answer: 2,
+    explanation: "A primary key uniquely identifies every record in a table."
+  },
+  {
+    question: "Which of the following actions can improve the appearance of a PowerPoint presentation?",
+    options: [
+      "Disabling transitions permanently",
+      "Applying a suitable design template",
+      "Removing all images",
+      "Deleting all slides except one"
+    ],
+    answer: 1,
+    explanation: "Design templates give presentations a professional and consistent appearance."
+  },
+  {
+    question: "What is the main purpose of a title slide?",
+    options: [
+      "To print reports",
+      "To introduce the presentation",
+      "To create database tables",
+      "To display calculations"
+    ],
+    answer: 1,
+    explanation: "The title slide introduces the topic and presenter."
+  },
+  {
+    question: "Which of the following can be used as a criterion when filtering records?",
+    options: [
+      "File Size of Windows",
+      "Student Department",
+      "CPU Speed",
+      "Screen Resolution"
+    ],
+    answer: 1,
+    explanation: "Filters can display records based on field values such as department."
+  },
+  {
+    question: "Which of the following statements about Microsoft Access is correct?",
+    options: [
+      "It is mainly used for editing videos.",
+      "It is only used for creating presentations.",
+      "It is a web browser.",
+      "It is a database management application."
+    ],
+    answer: 3,
+    explanation: "Microsoft Access is designed for creating and managing databases."
+  },
+  {
+    question: "What happens when a filter is removed in Microsoft Access?",
+    options: [
+      "All records are permanently deleted.",
+      "The database closes automatically.",
+      "The hidden records become visible again.",
+      "The primary key changes."
+    ],
+    answer: 2,
+    explanation: "Removing a filter displays all records again."
+  },
+  {
+    question: "Which of the following should be avoided in a good PowerPoint presentation?",
+    options: [
+      "Consistent slide design",
+      "Clear and readable text",
+      "Appropriate font size",
+      "Excessive animations on every object"
+    ],
+    answer: 3,
+    explanation: "Too many animations can distract the audience."
+  },
+  {
+    question: "Which Access object is most appropriate for displaying data without changing the table structure?",
+    options: [
+      "Design View",
+      "Relationship View",
+      "Datasheet View",
+      "SQL View"
+    ],
+    answer: 2,
+    explanation: "Datasheet View is used for viewing and editing records without modifying the table design."
+  },
+  {
+    question: "Which of the following best explains data formatting?",
+    options: [
+      "Creating a new database",
+      "Encrypting files",
+      "Deleting duplicate records",
+      "Changing the way data appears without changing its value"
+    ],
+    answer: 3,
+    explanation: "Formatting affects appearance only, not the stored value."
+  },
+  {
+    question: "Which of the following is NOT a benefit of Microsoft PowerPoint?",
+    options: [
+      "Managing relational databases",
+      "Organizing ideas into slides",
+      "Presenting information visually",
+      "Supporting multimedia content"
+    ],
+    answer: 0,
+    explanation: "Database management is performed by Microsoft Access, not PowerPoint."
+  },
+  {
+    question: "Which of the following is most likely to improve audience understanding during a presentation?",
+    options: [
+      "Using different fonts on every line",
+      "Using simple and well-organized slides",
+      "Filling every slide with long paragraphs",
+      "Applying every available animation effect"
+    ],
+    answer: 1,
+    explanation: "Simple, organized slides make presentations easier to understand."
+  },
+  {
+    question: "Which statement best describes Microsoft PowerPoint?",
+    options: [
+      "It is software designed for creating and delivering presentations.",
+      "It is an operating system.",
+      "It is used only for database administration.",
+      "It is mainly used for programming applications."
+    ],
+    answer: 0,
+    explanation: "PowerPoint is presentation software used to create and deliver slide-based presentations."
+  }
+];
+
+const CSC104C = [
+  {
+    question: "Which of the following best describes an application package?",
+    options: [
+      "Software used to control computer hardware",
+      "A computer network",
+      "A programming language",
+      "A program designed to perform specific user tasks"
+    ],
+    answer: 3,
+    explanation: "Application packages help users perform specific tasks such as creating databases or presentations."
+  },
+  {
+    question: "Which Microsoft Access object is used to establish relationships between tables?",
+    options: [
+      "Relationship Window",
+      "Form",
+      "Report",
+      "Query"
+    ],
+    answer: 0,
+    explanation: "The Relationship Window is used to define how tables are connected."
+  },
+  {
+    question: "In a student database, which field is most appropriate as a primary key?",
+    options: [
+      "Department",
+      "Student Name",
+      "Course of Study",
+      "Matriculation Number"
+    ],
+    answer: 3,
+    explanation: "A primary key must uniquely identify each record, and a matriculation number is unique."
+  },
+  {
+    question: "Which feature in Microsoft Access allows users to select records that satisfy certain conditions?",
+    options: [
+      "Filter",
+      "Animation",
+      "Theme",
+      "Transition"
+    ],
+    answer: 0,
+    explanation: "A filter displays only records that match specified criteria."
+  },
+  {
+    question: "Which of the following data types is best for storing students' names?",
+    options: [
+      "Date/Time",
+      "Number",
+      "Short Text",
+      "Currency"
+    ],
+    answer: 2,
+    explanation: "Names consist of letters and are stored as Short Text."
+  },
+  {
+    question: "What is the main function of the Navigation Pane in Microsoft Access?",
+    options: [
+      "To create animations",
+      "To start a slideshow",
+      "To display database objects",
+      "To print reports"
+    ],
+    answer: 2,
+    explanation: "The Navigation Pane lists tables, queries, forms, and reports."
+  },
+  {
+    question: "Which of the following is NOT a database object in Microsoft Access?",
+    options: [
+      "Workbook",
+      "Query",
+      "Report",
+      "Form"
+    ],
+    answer: 0,
+    explanation: "A workbook is associated with Microsoft Excel, not Access."
+  },
+  {
+    question: "Which command should be used to preserve an existing presentation while creating another version?",
+    options: [
+      "Save As",
+      "Close",
+      "Save",
+      "Export"
+    ],
+    answer: 0,
+    explanation: "Save As creates a new copy without replacing the original file."
+  },
+  {
+    question: "Which PowerPoint view displays one slide at a time for editing?",
+    options: [
+      "Normal View",
+      "Slide Show View",
+      "Slide Sorter View",
+      "Reading View"
+    ],
+    answer: 0,
+    explanation: "Normal View is the default editing view."
+  },
+  {
+    question: "Which of the following is an advantage of using templates in PowerPoint?",
+    options: [
+      "They increase computer memory.",
+      "They convert slides into databases.",
+      "They remove animations automatically.",
+      "They provide a consistent design."
+    ],
+    answer: 3,
+    explanation: "Templates help maintain a professional and consistent appearance."
+  },
+  {
+    question: "Which Access object can be created to simplify data entry for users?",
+    options: [
+      "Report",
+      "Relationship",
+      "Table",
+      "Form"
+    ],
+    answer: 3,
+    explanation: "Forms provide a convenient interface for entering and editing records."
+  },
+  {
+    question: "Which of the following actions can be performed using a query?",
+    options: [
+      "Create presentation themes",
+      "Install antivirus software",
+      "Replace the operating system",
+      "Display students whose GPA is above 4.0"
+    ],
+    answer: 3,
+    explanation: "Queries retrieve records that meet specified conditions."
+  },
+  {
+    question: "Which symbol is commonly used as a wildcard representing multiple characters in Access?",
+    options: [
+      "#",
+      "@",
+      "*",
+      "%"
+    ],
+    answer: 2,
+    explanation: "The asterisk (*) is commonly used as a wildcard in Access searches."
+  },
+  {
+    question: "Which of the following is the main purpose of Slide Master?",
+    options: [
+      "To sort records",
+      "To control the overall appearance of slides",
+      "To create tables in Access",
+      "To open databases"
+    ],
+    answer: 1,
+    explanation: "Slide Master applies consistent formatting throughout a presentation."
+  },
+  {
+    question: "Which animation category draws attention to an object already visible on a slide?",
+    options: [
+      "Emphasis",
+      "Motion Path",
+      "Entrance",
+      "Exit"
+    ],
+    answer: 0,
+    explanation: "Emphasis animations highlight existing objects."
+  },
+  {
+    question: "Which keyboard shortcut is commonly used to start a slideshow from the beginning?",
+    options: [
+      "F7",
+      "F12",
+      "F1",
+      "F5"
+    ],
+    answer: 3,
+    explanation: "Pressing F5 starts the presentation from the first slide."
+  },
+  {
+    question: "In Microsoft Access, records are arranged horizontally while fields are arranged:",
+    options: [
+      "Diagonally",
+      "Circularly",
+      "Randomly",
+      "Vertically"
+    ],
+    answer: 3,
+    explanation: "Records are rows, while fields are columns."
+  },
+  {
+    question: "Which of the following best describes a database?",
+    options: [
+      "A collection of presentation slides",
+      "A collection of related data organized for easy access",
+      "A web browser",
+      "A programming language"
+    ],
+    answer: 1,
+    explanation: "Databases organize related information for efficient management."
+  },
+  {
+    question: "Which command is used to duplicate an object in PowerPoint quickly?",
+    options: [
+      "Ctrl + P",
+      "Ctrl + N",
+      "Ctrl + V",
+      "Ctrl + D"
+    ],
+    answer: 3,
+    explanation: "Ctrl + D duplicates the selected object or slide."
+  },
+  {
+    question: "Which feature allows PowerPoint slides to change automatically after a specified time?",
+    options: [
+      "Transition Timing",
+      "Animation Timing",
+      "Notes Pane",
+      "Font Settings"
+    ],
+    answer: 0,
+    explanation: "Transition timing controls automatic movement between slides."
+  },
+  {
+    question: "Which Access feature is used to arrange records from highest to lowest?",
+    options: [
+      "Find",
+      "Group",
+      "Filter",
+      "Sort Descending"
+    ],
+    answer: 3,
+    explanation: "Sort Descending arranges values from highest to lowest or Z to A."
+  },
+  {
+    question: "Which of the following is a good presentation practice?",
+    options: [
+      "Place all information on one slide",
+      "Add animations to every object",
+      "Use readable fonts and simple layouts",
+      "Use many font styles on every slide"
+    ],
+    answer: 2,
+    explanation: "Simple layouts and readable fonts improve audience understanding."
+  },
+  {
+    question: "Which database object is mainly intended for presenting information to users in a printable format?",
+    options: [
+      "Relationship",
+      "Table",
+      "Report",
+      "Query"
+    ],
+    answer: 2,
+    explanation: "Reports organize data for printing and presentation."
+  },
+  {
+    question: "Which of the following can be inserted into a PowerPoint presentation?",
+    options: [
+      "All of the above",
+      "Charts",
+      "Audio",
+      "Video"
+    ],
+    answer: 0,
+    explanation: "PowerPoint supports multimedia, charts, tables, and other objects."
+  },
+  {
+    question: "Which of the following should be done before delivering a PowerPoint presentation?",
+    options: [
+      "Delete the title slide",
+      "Convert all text into images",
+      "Preview the slideshow",
+      "Remove all pictures"
+    ],
+    answer: 2,
+    explanation: "Previewing the slideshow helps identify and correct any errors before presenting."
+  },
+  {
+    question: "Which of the following is the main purpose of a database table?",
+    options: [
+      "To create presentation slides",
+      "To store related data in rows and columns",
+      "To print documents",
+      "To design animations"
+    ],
+    answer: 1,
+    explanation: "A table is the primary object used to store data in a database."
+  },
+  {
+    question: "In Microsoft Access, which property determines the maximum number of characters allowed in a Short Text field?",
+    options: [
+      "Format",
+      "Caption",
+      "Validation Rule",
+      "Field Size"
+    ],
+    answer: 3,
+    explanation: "The Field Size property specifies the maximum number of characters for a Short Text field."
+  },
+  {
+    question: "Which of the following allows users to move from one record to another in Datasheet View?",
+    options: [
+      "Formula Bar",
+      "Slide Pane",
+      "Record Navigation Bar",
+      "Status Bar"
+    ],
+    answer: 2,
+    explanation: "The Record Navigation Bar is used to move through records in a table or query."
+  },
+  {
+    question: "Which command is used to create a copy of an existing Access database with a different name?",
+    options: [
+      "Save As",
+      "Open",
+      "Close",
+      "Import"
+    ],
+    answer: 0,
+    explanation: "Save As creates another copy while preserving the original database."
+  },
+  {
+    question: "Which of the following is an advantage of using forms instead of entering data directly into tables?",
+    options: [
+      "They replace queries.",
+      "They provide a more user-friendly interface.",
+      "They automatically create reports.",
+      "They increase storage capacity."
+    ],
+    answer: 1,
+    explanation: "Forms simplify data entry and reduce input errors."
+  },
+  {
+    question: "Which PowerPoint feature is used to change the background color of all slides at once?",
+    options: [
+      "Notes Page",
+      "Slide Master",
+      "Animation Pane",
+      "Design Theme"
+    ],
+    answer: 1,
+    explanation: "Changes made in Slide Master can affect all slides in the presentation."
+  },
+  {
+    question: "Which of the following is NOT commonly inserted into a PowerPoint slide?",
+    options: [
+      "SmartArt",
+      "Spreadsheet Formula Bar",
+      "Chart",
+      "Picture"
+    ],
+    answer: 1,
+    explanation: "The Formula Bar is an Excel feature, not a PowerPoint object."
+  },
+  {
+    question: "Which keyboard shortcut starts a slideshow from the currently selected slide?",
+    options: [
+      "Alt + F5",
+      "Shift + F5",
+      "F5",
+      "Ctrl + F5"
+    ],
+    answer: 1,
+    explanation: "Shift + F5 begins the slideshow from the current slide."
+  },
+  {
+    question: "Which of the following can be used to highlight important information on a PowerPoint slide?",
+    options: [
+      "Emphasis animation",
+      "Bold text",
+      "Appropriate color contrast",
+      "All of the above"
+    ],
+    answer: 3,
+    explanation: "All these techniques can help draw attention to important content."
+  },
+  {
+    question: "Which of the following best describes a query?",
+    options: [
+      "A storage device",
+      "An object used to search, filter, and retrieve data",
+      "A tool for creating slides",
+      "A programming language"
+    ],
+    answer: 1,
+    explanation: "Queries retrieve records that meet specified criteria."
+  },
+  {
+    question: "Which of the following actions can improve the readability of a PowerPoint presentation?",
+    options: [
+      "Using many font colors randomly",
+      "Filling each slide with long paragraphs",
+      "Using large, clear fonts",
+      "Applying every animation available"
+    ],
+    answer: 2,
+    explanation: "Large, readable fonts make presentations easier to follow."
+  },
+  {
+    question: "Which of the following database objects is most suitable for printing students' results?",
+    options: [
+      "Query",
+      "Table",
+      "Form",
+      "Report"
+    ],
+    answer: 3,
+    explanation: "Reports are designed for formatted printing."
+  },
+  {
+    question: "Which PowerPoint tab contains commands for applying transitions?",
+    options: [
+      "Transitions",
+      "View",
+      "Review",
+      "Home"
+    ],
+    answer: 0,
+    explanation: "The Transitions tab is used to apply and modify slide transitions."
+  },
+  {
+    question: "Which of the following is true about database records?",
+    options: [
+      "Every record is a database.",
+      "Every record contains only numbers.",
+      "Every record contains related fields.",
+      "Records cannot be edited."
+    ],
+    answer: 2,
+    explanation: "A record is a collection of related fields describing one item."
+  },
+  {
+    question: "Which feature allows users to search for a particular word in an Access table?",
+    options: [
+      "Find",
+      "Replace",
+      "Sort",
+      "Filter by Form"
+    ],
+    answer: 0,
+    explanation: "The Find command locates specific text or values quickly."
+  },
+  {
+    question: "Which animation category makes an object disappear from a slide?",
+    options: [
+      "Exit",
+      "Emphasis",
+      "Motion Path",
+      "Entrance"
+    ],
+    answer: 0,
+    explanation: "Exit animations remove objects from view during the presentation."
+  },
+  {
+    question: "Which of the following is considered good practice when designing presentation slides?",
+    options: [
+      "Using paragraphs of over 300 words on every slide",
+      "Using different fonts for every sentence",
+      "Keeping each slide focused on one main idea",
+      "Avoiding headings"
+    ],
+    answer: 2,
+    explanation: "One main idea per slide improves clarity and audience understanding."
+  },
+  {
+    question: "Which component of Microsoft Access displays all available database objects?",
+    options: [
+      "Ribbon",
+      "Navigation Pane",
+      "Quick Access Toolbar",
+      "Status Bar"
+    ],
+    answer: 1,
+    explanation: "The Navigation Pane lists tables, forms, queries, and reports."
+  },
+  {
+    question: "Which of the following best explains a presentation template?",
+    options: [
+      "A backup copy of a presentation",
+      "A printer setting",
+      "A ready-made design used to create presentations",
+      "A database containing records"
+    ],
+    answer: 2,
+    explanation: "Templates provide predefined layouts, colors, and fonts."
+  },
+  {
+    question: "Which of the following can be used to arrange slides into a preferred sequence?",
+    options: [
+      "Notes View",
+      "Slide Sorter View",
+      "Outline View",
+      "Reading View"
+    ],
+    answer: 1,
+    explanation: "Slide Sorter View makes it easy to rearrange slides."
+  },
+  {
+    question: "Which Access feature helps ensure that data entered into a field follows specific rules?",
+    options: [
+      "Animation",
+      "Validation Rule",
+      "Theme",
+      "Transition"
+    ],
+    answer: 1,
+    explanation: "Validation rules help prevent invalid data entry."
+  },
+  {
+    question: "Which of the following is an advantage of using Microsoft Access over keeping records manually?",
+    options: [
+      "Slower retrieval of information",
+      "Faster searching and updating of records",
+      "Greater risk of duplication",
+      "Increased paper usage"
+    ],
+    answer: 1,
+    explanation: "Access enables quick searching, editing, and management of records."
+  },
+  {
+    question: "Which of the following should be considered when choosing a PowerPoint design theme?",
+    options: [
+      "It should include as many animations as possible.",
+      "It must contain the brightest colors only.",
+      "It must use different fonts on every slide.",
+      "It should suit the presentation topic."
+    ],
+    answer: 3,
+    explanation: "A suitable theme enhances professionalism and readability."
+  },
+  {
+    question: "Which command is used to insert a blank slide into an existing PowerPoint presentation?",
+    options: [
+      "Replace Slide",
+      "Slide Layout",
+      "Duplicate Slide",
+      "New Slide"
+    ],
+    answer: 3,
+    explanation: "The New Slide command adds another slide to the presentation."
+  },
+  {
+    question: "Which statement correctly compares Microsoft Access and Microsoft PowerPoint?",
+    options: [
+      "Both applications are used mainly for database management.",
+      "Access creates spreadsheets, while PowerPoint manages databases.",
+      "Both applications perform exactly the same functions.",
+      "Access manages databases, while PowerPoint creates presentations."
+    ],
+    answer: 3,
+    explanation: "Access is a database management application, while PowerPoint is presentation software."
+  }
+];
+
+const CSC104D = [
+  {
+    question: "Which of the following is the main reason for using application packages?",
+    options: [
+      "To control electrical power",
+      "To perform specialized user tasks",
+      "To replace computer memory",
+      "To manufacture computer hardware"
+    ],
+    answer: 1,
+    explanation: "Application packages are designed to perform specific tasks such as creating databases and presentations."
+  },
+  {
+    question: "Microsoft Access belongs to which category of software?",
+    options: [
+      "Utility Software",
+      "Firmware",
+      "System Software",
+      "Application Software"
+    ],
+    answer: 3,
+    explanation: "Microsoft Access is an application software used for database management."
+  },
+  {
+    question: "Which of the following is the smallest meaningful unit of information stored in a database table?",
+    options: [
+      "Field",
+      "Report",
+      "Query",
+      "Record"
+    ],
+    answer: 0,
+    explanation: "A field stores one particular type of information, such as Name or Age."
+  },
+  {
+    question: "A table in Microsoft Access consists of:",
+    options: [
+      "Records and fields",
+      "Pages and paragraphs",
+      "Charts and pictures",
+      "Slides and animations"
+    ],
+    answer: 0,
+    explanation: "Tables are made up of rows (records) and columns (fields)."
+  },
+  {
+    question: "Which Microsoft Access object is mainly used for displaying selected information from a database?",
+    options: [
+      "Query",
+      "Relationship",
+      "Module",
+      "Table"
+    ],
+    answer: 0,
+    explanation: "Queries retrieve and display data based on specified conditions."
+  },
+  {
+    question: "Which of the following is required before records can be entered into a new table?",
+    options: [
+      "The database must be exported.",
+      "The table structure must be created.",
+      "A presentation must be designed.",
+      "A report must be printed."
+    ],
+    answer: 1,
+    explanation: "Fields and data types should be defined before entering records."
+  },
+  {
+    question: "Which Microsoft Access feature helps prevent duplicate values in a primary key field?",
+    options: [
+      "Primary Key Constraint",
+      "Filter Feature",
+      "Validation Rule",
+      "Sort Feature"
+    ],
+    answer: 0,
+    explanation: "A primary key ensures every record has a unique identifier."
+  },
+  {
+    question: "Which of the following is an example of database software?",
+    options: [
+      "Adobe Reader",
+      "Microsoft Access",
+      "VLC Media Player",
+      "Microsoft Paint"
+    ],
+    answer: 1,
+    explanation: "Microsoft Access is a Database Management System."
+  },
+  {
+    question: "When opening an existing Access database, which command is commonly selected?",
+    options: [
+      "Save As",
+      "New Database",
+      "Open",
+      "Print"
+    ],
+    answer: 2,
+    explanation: "The Open command is used to access an existing database."
+  },
+  {
+    question: "Which feature allows records to be arranged alphabetically from A to Z?",
+    options: [
+      "Formatting",
+      "Sorting",
+      "Printing",
+      "Filtering"
+    ],
+    answer: 1,
+    explanation: "Sorting arranges records in ascending or descending order."
+  },
+  {
+    question: "Which of the following is a benefit of formatting data?",
+    options: [
+      "It creates new tables automatically.",
+      "It improves the appearance of information.",
+      "It deletes duplicate records.",
+      "It increases storage capacity."
+    ],
+    answer: 1,
+    explanation: "Formatting changes how data appears without changing its actual value."
+  },
+  {
+    question: "Which view is most suitable for changing the name of a field?",
+    options: [
+      "Print Preview",
+      "Datasheet View",
+      "Report View",
+      "Design View"
+    ],
+    answer: 3,
+    explanation: "Design View allows modification of field names and properties."
+  },
+  {
+    question: "Which PowerPoint feature controls how text or objects appear during a presentation?",
+    options: [
+      "Notes",
+      "Slide Transition",
+      "Theme",
+      "Animation"
+    ],
+    answer: 3,
+    explanation: "Animations affect objects within a slide."
+  },
+  {
+    question: "Which PowerPoint feature affects the movement between two slides?",
+    options: [
+      "Theme",
+      "Transition",
+      "Layout",
+      "Animation"
+    ],
+    answer: 1,
+    explanation: "Transitions determine how one slide changes to the next."
+  },
+  {
+    question: "Which of the following can be inserted into a PowerPoint slide?",
+    options: [
+      "Audio",
+      "All of the above",
+      "Pictures",
+      "Charts"
+    ],
+    answer: 1,
+    explanation: "PowerPoint supports many multimedia and graphical objects."
+  },
+  {
+    question: "Which of the following is the purpose of a title slide?",
+    options: [
+      "To store database records",
+      "To create formulas",
+      "To print reports",
+      "To introduce the presentation topic"
+    ],
+    answer: 3,
+    explanation: "The title slide gives the audience an overview of the presentation."
+  },
+  {
+    question: "Which PowerPoint tab is commonly used for inserting tables and pictures?",
+    options: [
+      "Review",
+      "Home",
+      "View",
+      "Insert"
+    ],
+    answer: 3,
+    explanation: "The Insert tab contains commands for adding objects."
+  },
+  {
+    question: "Which keyboard shortcut is commonly used to create a new presentation?",
+    options: [
+      "Ctrl + O",
+      "Ctrl + N",
+      "Ctrl + P",
+      "Ctrl + X"
+    ],
+    answer: 1,
+    explanation: "Ctrl + N creates a new presentation."
+  },
+  {
+    question: "Which of the following best describes a report in Microsoft Access?",
+    options: [
+      "A database table",
+      "A collection of animations",
+      "A formatted presentation of database information",
+      "A presentation template"
+    ],
+    answer: 2,
+    explanation: "Reports organize data into a professional format for viewing or printing."
+  },
+  {
+    question: "Which Access object allows users to enter information without directly editing a table?",
+    options: [
+      "Form",
+      "Report",
+      "Query",
+      "Relationship"
+    ],
+    answer: 0,
+    explanation: "Forms provide a user-friendly interface for entering records."
+  },
+  {
+    question: "Which of the following actions is performed before applying a slide transition?",
+    options: [
+      "Print the presentation",
+      "Close the presentation",
+      "Delete the slide",
+      "Select the slide"
+    ],
+    answer: 3,
+    explanation: "A slide must first be selected before a transition can be applied."
+  },
+  {
+    question: "Which of the following is an advantage of Slide Sorter View?",
+    options: [
+      "It filters records.",
+      "It creates relationships.",
+      "It edits database tables.",
+      "It displays all slides as thumbnails."
+    ],
+    answer: 3,
+    explanation: "Slide Sorter View makes it easy to rearrange slides."
+  },
+  {
+    question: "Which feature is used to emphasize an important point without changing slides?",
+    options: [
+      "Hyperlink",
+      "Transition",
+      "Theme",
+      "Animation"
+    ],
+    answer: 3,
+    explanation: "Animations highlight objects within the same slide."
+  },
+  {
+    question: "Which of the following is good practice when creating a PowerPoint presentation?",
+    options: [
+      "Use simple and consistent formatting.",
+      "Use many different fonts on one slide.",
+      "Use bright colors for every background.",
+      "Fill every slide with long paragraphs."
+    ],
+    answer: 0,
+    explanation: "Consistent formatting improves readability and professionalism."
+  },
+  {
+    question: "Which statement is correct?",
+    options: [
+      "Microsoft Access manages databases, while Microsoft PowerPoint creates presentations.",
+      "Microsoft Access is used only for typing letters.",
+      "Both applications perform exactly the same function.",
+      "Microsoft PowerPoint is a database management system."
+    ],
+    answer: 0,
+    explanation: "Access is used for databases, while PowerPoint is used for presentations."
+  },
+  {
+    question: "Which of the following database objects stores information permanently?",
+    options: [
+      "Report",
+      "Table",
+      "Query",
+      "Form"
+    ],
+    answer: 1,
+    explanation: "Tables are the primary objects that permanently store data in Microsoft Access."
+  },
+  {
+    question: "Which of the following is most appropriate for storing students' dates of birth?",
+    options: [
+      "Date/Time",
+      "Short Text",
+      "Number",
+      "Currency"
+    ],
+    answer: 0,
+    explanation: "The Date/Time data type is used for storing dates and times."
+  },
+  {
+    question: "Which of the following can be used to display only students from the Computer Science department?",
+    options: [
+      "Slide Transition",
+      "Filter",
+      "Theme",
+      "Animation"
+    ],
+    answer: 1,
+    explanation: "A filter displays only records that meet specified conditions."
+  },
+  {
+    question: "Which Microsoft Access object can collect data from users in an organized manner?",
+    options: [
+      "Report",
+      "Macro",
+      "Relationship",
+      "Form"
+    ],
+    answer: 3,
+    explanation: "Forms provide an organized interface for entering and editing records."
+  },
+  {
+    question: "Which of the following statements about a primary key is correct?",
+    options: [
+      "It may contain duplicate values.",
+      "It stores only text values.",
+      "It uniquely identifies each record.",
+      "It is optional in every table."
+    ],
+    answer: 2,
+    explanation: "A primary key uniquely identifies every record in a table."
+  },
+  {
+    question: "Which view is mainly used to modify field properties in Microsoft Access?",
+    options: [
+      "Design View",
+      "Report View",
+      "Print Preview",
+      "Datasheet View"
+    ],
+    answer: 0,
+    explanation: "Design View allows you to edit field names, data types, and properties."
+  },
+  {
+    question: "Which feature enables a presenter to move to any slide during a slideshow?",
+    options: [
+      "Hyperlink or slide navigation",
+      "Query",
+      "Filter",
+      "Validation Rule"
+    ],
+    answer: 0,
+    explanation: "Hyperlinks and navigation controls allow movement to specific slides."
+  },
+  {
+    question: "Which of the following is an example of multimedia that can be inserted into PowerPoint?",
+    options: [
+      "Video",
+      "All of the above",
+      "Audio",
+      "Picture"
+    ],
+    answer: 1,
+    explanation: "PowerPoint supports various multimedia objects, including audio, video, and pictures."
+  },
+  {
+    question: "Which of the following helps maintain a professional appearance throughout a presentation?",
+    options: [
+      "Applying one consistent theme",
+      "Using different colors for every heading",
+      "Using random font styles on every slide",
+      "Changing backgrounds on every slide"
+    ],
+    answer: 0,
+    explanation: "A consistent theme gives the presentation a uniform and professional appearance."
+  },
+  {
+    question: "Which Access feature displays records in ascending or descending order?",
+    options: [
+      "Transition",
+      "Animation",
+      "Insert",
+      "Sort"
+    ],
+    answer: 3,
+    explanation: "Sorting arranges records according to selected criteria."
+  },
+  {
+    question: "Which of the following is a benefit of using queries instead of searching records manually?",
+    options: [
+      "Increased file size",
+      "Faster retrieval of required information",
+      "Automatic printing of reports",
+      "Reduced database security"
+    ],
+    answer: 1,
+    explanation: "Queries quickly retrieve records that match specified conditions."
+  },
+  {
+    question: "Which keyboard shortcut is commonly used to save a Microsoft Access database or PowerPoint presentation?",
+    options: [
+      "Ctrl + C",
+      "Ctrl + Z",
+      "Ctrl + P",
+      "Ctrl + S"
+    ],
+    answer: 3,
+    explanation: "Ctrl + S saves the current file."
+  },
+  {
+    question: "Which of the following is NOT a presentation view in Microsoft PowerPoint?",
+    options: [
+      "Slide Show View",
+      "Slide Sorter View",
+      "Notes Page View",
+      "Database View"
+    ],
+    answer: 3,
+    explanation: "Database View is not a PowerPoint view."
+  },
+  {
+    question: "Which Access object can display information from more than one table?",
+    options: [
+      "Datasheet only",
+      "Report only",
+      "Query",
+      "Form only"
+    ],
+    answer: 2,
+    explanation: "Queries can combine data from multiple related tables."
+  },
+  {
+    question: "What is the purpose of applying animations to slide objects?",
+    options: [
+      "To attract attention to important content",
+      "To change database fields",
+      "To improve internet speed",
+      "To reduce file size"
+    ],
+    answer: 0,
+    explanation: "Animations help emphasize information during a presentation."
+  },
+  {
+    question: "Which of the following best describes a presentation layout?",
+    options: [
+      "The order of records in a database",
+      "The arrangement of placeholders on a slide",
+      "The type of storage device used",
+      "The database relationship diagram"
+    ],
+    answer: 1,
+    explanation: "A slide layout determines where titles, text, and other objects appear."
+  },
+  {
+    question: "Which command should be used if you accidentally delete a slide?",
+    options: [
+      "Save As",
+      "Print",
+      "Close",
+      "Undo"
+    ],
+    answer: 3,
+    explanation: "The Undo command reverses the last action."
+  },
+  {
+    question: "Which of the following is the primary purpose of a database?",
+    options: [
+      "To edit videos",
+      "To browse the internet",
+      "To create presentation effects",
+      "To organize and manage related data"
+    ],
+    answer: 3,
+    explanation: "Databases are designed for efficient storage and management of data."
+  },
+  {
+    question: "Which PowerPoint feature allows text to appear one bullet point at a time?",
+    options: [
+      "Transition",
+      "Theme",
+      "Slide Master",
+      "Animation"
+    ],
+    answer: 3,
+    explanation: "Animation effects can display bullet points one after another."
+  },
+  {
+    question: "Which of the following actions is commonly performed in Datasheet View?",
+    options: [
+      "Applying slide transitions",
+      "Editing records directly",
+      "Creating presentation themes",
+      "Running animations"
+    ],
+    answer: 1,
+    explanation: "Datasheet View allows users to add, edit, and delete records."
+  },
+  {
+    question: "Which of the following is an advantage of using Microsoft Access?",
+    options: [
+      "Automatic creation of websites",
+      "Editing audio recordings",
+      "Efficient storage and retrieval of data",
+      "Faster internet connection"
+    ],
+    answer: 2,
+    explanation: "Microsoft Access makes it easy to organize, store, and retrieve information."
+  },
+  {
+    question: "Which of the following should be considered when selecting fonts for a presentation?",
+    options: [
+      "Decorative appearance only",
+      "Randomness",
+      "Complexity",
+      "Readability"
+    ],
+    answer: 3,
+    explanation: "Fonts should be easy for the audience to read."
+  },
+  {
+    question: "Which feature allows all slides in a presentation to share the same font and background?",
+    options: [
+      "Slide Master",
+      "Animation Pane",
+      "Review Tab",
+      "Record Navigation Bar"
+    ],
+    answer: 0,
+    explanation: "Slide Master applies consistent formatting to all slides."
+  },
+  {
+    question: "Which of the following is a good reason for previewing a presentation before delivery?",
+    options: [
+      "To convert the presentation into a database",
+      "To delete every animation",
+      "To reduce the number of slides automatically",
+      "To identify and correct errors"
+    ],
+    answer: 3,
+    explanation: "Previewing helps ensure the presentation is accurate and runs smoothly."
+  },
+  {
+    question: "Which statement best describes the relationship between Microsoft Access and Microsoft PowerPoint?",
+    options: [
+      "Both are application packages designed for different purposes.",
+      "Both perform database management only.",
+      "Both are programming languages.",
+      "Both are operating systems."
+    ],
+    answer: 0,
+    explanation: "Access is used for database management, while PowerPoint is used for creating presentations."
+  }
+];
+
 const COS102 = [
 {
   question: "Which statement best describes the event-driven nature of Visual Basic programming?",
@@ -9570,6 +11236,2218 @@ const COS102 = [
   explanation: "Loops make it easy to process every element of an array one after another."
 } 
 ];
+const COS102B = [
+  {
+    question: "Visual Basic is primarily classified as a:",
+    options: [
+      "Database Management System",
+      "Operating System",
+      "Web Browser",
+      "Programming Language"
+    ],
+    answer: 3,
+    explanation: "Visual Basic is a programming language used to develop Windows applications."
+  },
+  {
+    question: "Which of the following is the main purpose of a programming language?",
+    options: [
+      "To increase computer memory",
+      "To browse the internet",
+      "To repair hardware automatically",
+      "To communicate instructions to a computer"
+    ],
+    answer: 3,
+    explanation: "Programming languages are used to write instructions that a computer can execute."
+  },
+  {
+    question: "Which of the following is the default starting point of a Visual Basic application?",
+    options: [
+      "Toolbox",
+      "Module",
+      "Form",
+      "Debugger"
+    ],
+    answer: 2,
+    explanation: "A Visual Basic project typically starts with a form that serves as the application's interface."
+  },
+  {
+    question: "Which window in Visual Basic displays the properties of the selected object?",
+    options: [
+      "Project Explorer",
+      "Output Window",
+      "Properties Window",
+      "Code Window"
+    ],
+    answer: 2,
+    explanation: "The Properties Window allows you to modify an object's characteristics."
+  },
+  {
+    question: "Which control is commonly used to display text that users cannot edit?",
+    options: [
+      "Button",
+      "TextBox",
+      "Label",
+      "ListBox"
+    ],
+    answer: 2,
+    explanation: "A Label displays information without allowing user input."
+  },
+  {
+    question: "Which control allows users to type information?",
+    options: [
+      "Shape",
+      "TextBox",
+      "PictureBox",
+      "Label"
+    ],
+    answer: 1,
+    explanation: "A TextBox is used to receive input from users."
+  },
+  {
+    question: "Which event occurs when a command button is pressed?",
+    options: [
+      "Change",
+      "Paint",
+      "Load",
+      "Click"
+    ],
+    answer: 3,
+    explanation: "The Click event is triggered when the user clicks a button."
+  },
+  {
+    question: "Which statement is used to make a decision between two alternatives?",
+    options: [
+      "Select Case End",
+      "For...Next",
+      "Do...Loop",
+      "If...Then...Else"
+    ],
+    answer: 3,
+    explanation: "The If...Then...Else statement performs conditional decision-making."
+  },
+  {
+    question: "Which looping statement repeats a block of code a specified number of times?",
+    options: [
+      "While...End While",
+      "For...Next",
+      "Do Until",
+      "Select Case"
+    ],
+    answer: 1,
+    explanation: "A For...Next loop executes a known number of iterations."
+  },
+  {
+    question: "Which loop continues executing as long as a condition remains true?",
+    options: [
+      "While...End While",
+      "If...Else",
+      "Select Case",
+      "Exit Sub"
+    ],
+    answer: 0,
+    explanation: "A While loop repeats while its condition evaluates to True."
+  },
+  {
+    question: "Which statement is best used when testing multiple possible values of one expression?",
+    options: [
+      "For Each",
+      "If...Then",
+      "Do While",
+      "Select Case"
+    ],
+    answer: 3,
+    explanation: "Select Case provides a cleaner way to evaluate multiple conditions."
+  },
+  {
+    question: "Which Visual Basic control is mainly used to execute a command?",
+    options: [
+      "PictureBox",
+      "Label",
+      "Button",
+      "TextBox"
+    ],
+    answer: 2,
+    explanation: "A Button executes code when clicked."
+  },
+  {
+    question: "Which property determines the text displayed on a button?",
+    options: [
+      "Name",
+      "Text",
+      "Size",
+      "Font"
+    ],
+    answer: 1,
+    explanation: "The Text property controls what appears on the button."
+  },
+  {
+    question: "Which property uniquely identifies a control in the code?",
+    options: [
+      "Name",
+      "Width",
+      "Caption",
+      "Color"
+    ],
+    answer: 0,
+    explanation: "The Name property is used to reference controls in code."
+  },
+  {
+    question: "Which dialog box allows users to choose a file to open?",
+    options: [
+      "OpenFileDialog",
+      "PrintDialog",
+      "ColorDialog",
+      "FontDialog"
+    ],
+    answer: 0,
+    explanation: "OpenFileDialog lets users browse and select files."
+  },
+  {
+    question: "Which dialog box is used to select a font?",
+    options: [
+      "SaveFileDialog",
+      "FolderBrowserDialog",
+      "OpenFileDialog",
+      "FontDialog"
+    ],
+    answer: 3,
+    explanation: "FontDialog allows users to choose font style, size, and appearance."
+  },
+  {
+    question: "What is debugging?",
+    options: [
+      "Saving a project",
+      "Finding and correcting program errors",
+      "Creating new forms",
+      "Designing user interfaces"
+    ],
+    answer: 1,
+    explanation: "Debugging involves identifying and fixing errors in a program."
+  },
+  {
+    question: "A syntax error occurs when:",
+    options: [
+      "The program gives an incorrect result.",
+      "A file is deleted accidentally.",
+      "The program violates the rules of the programming language.",
+      "The computer is switched off."
+    ],
+    answer: 2,
+    explanation: "Syntax errors occur when code does not follow language rules."
+  },
+  {
+    question: "Which type of error allows a program to run but produces incorrect results?",
+    options: [
+      "Logical Error",
+      "Syntax Error",
+      "Compilation Error",
+      "Installation Error"
+    ],
+    answer: 0,
+    explanation: "Logical errors affect program output even though the program executes."
+  },
+  {
+    question: "A procedure is mainly used to:",
+    options: [
+      "Divide a program into smaller reusable parts",
+      "Create databases",
+      "Store pictures",
+      "Print documents"
+    ],
+    answer: 0,
+    explanation: "Procedures improve program organization and code reuse."
+  },
+  {
+    question: "Which keyword is commonly used to define a procedure in Visual Basic?",
+    options: [
+      "Class",
+      "Module",
+      "Array",
+      "Sub"
+    ],
+    answer: 3,
+    explanation: "Procedures are commonly declared using the Sub keyword."
+  },
+  {
+    question: "Which data structure stores multiple values under one variable name?",
+    options: [
+      "Control",
+      "Procedure",
+      "Array",
+      "Constant"
+    ],
+    answer: 2,
+    explanation: "Arrays allow several related values to be stored using one variable name."
+  },
+  {
+    question: "Array elements are usually accessed using:",
+    options: [
+      "File names",
+      "Index numbers",
+      "Passwords",
+      "Control names"
+    ],
+    answer: 1,
+    explanation: "Each array element is identified by its index."
+  },
+  {
+    question: "Which file operation saves information into a data file?",
+    options: [
+      "Search",
+      "Write",
+      "Close",
+      "Read"
+    ],
+    answer: 1,
+    explanation: "Writing stores data in a file."
+  },
+  {
+    question: "Which of the following is a major advantage of using data files?",
+    options: [
+      "They automatically debug programs.",
+      "They allow data to be stored permanently.",
+      "They increase processor speed.",
+      "They reduce monitor size."
+    ],
+    answer: 1,
+    explanation: "Data files preserve information even after the program is closed."
+  },
+  {
+    question: "Which of the following best describes an algorithm?",
+    options: [
+      "A step-by-step procedure for solving a problem",
+      "A database table",
+      "A computer virus",
+      "A type of computer hardware"
+    ],
+    answer: 0,
+    explanation: "An algorithm is a logical sequence of steps used to solve a problem."
+  },
+  {
+    question: "Which stage of problem-solving comes immediately before writing the program code?",
+    options: [
+      "Program maintenance",
+      "Program testing",
+      "Documentation",
+      "Algorithm design"
+    ],
+    answer: 3,
+    explanation: "An algorithm is usually developed before coding begins."
+  },
+  {
+    question: "Which of the following symbols is commonly used for assignment in Visual Basic?",
+    options: [
+      ":=",
+      "<>",
+      "==",
+      "="
+    ],
+    answer: 3,
+    explanation: "The equals sign (=) is used to assign values to variables in Visual Basic."
+  },
+  {
+    question: "A variable is best described as:",
+    options: [
+      "A type of loop",
+      "A programming error",
+      "A permanent value that never changes",
+      "A named memory location used to store data"
+    ],
+    answer: 3,
+    explanation: "Variables temporarily store data during program execution."
+  },
+  {
+    question: "Which keyword is used to declare a variable in Visual Basic?",
+    options: [
+      "Input",
+      "Public",
+      "Let",
+      "Dim"
+    ],
+    answer: 3,
+    explanation: "The Dim keyword is commonly used to declare variables."
+  },
+  {
+    question: "Which of the following is a valid numeric data type in Visual Basic?",
+    options: [
+      "Integer",
+      "Label",
+      "Menu",
+      "Picture"
+    ],
+    answer: 0,
+    explanation: "Integer is used to store whole numbers."
+  },
+  {
+    question: "Which control is most suitable for displaying a list of items from which only one item can be selected?",
+    options: [
+      "PictureBox",
+      "Timer",
+      "Label",
+      "ListBox"
+    ],
+    answer: 3,
+    explanation: "A ListBox displays a list of items for selection."
+  },
+  {
+    question: "Which control allows users to choose only one option from a group?",
+    options: [
+      "TextBox",
+      "RichTextBox",
+      "CheckBox",
+      "RadioButton"
+    ],
+    answer: 3,
+    explanation: "Radio buttons allow only one selection within a group."
+  },
+  {
+    question: "Which control allows users to select more than one option?",
+    options: [
+      "RadioButton",
+      "Button",
+      "CheckBox",
+      "Label"
+    ],
+    answer: 2,
+    explanation: "Check boxes allow multiple selections."
+  },
+  {
+    question: "Which event occurs automatically when a form is first displayed?",
+    options: [
+      "Leave",
+      "Click",
+      "Load",
+      "DoubleClick"
+    ],
+    answer: 2,
+    explanation: "The Load event occurs before the form appears to the user."
+  },
+  {
+    question: "Which statement is used to terminate a loop before all iterations are completed?",
+    options: [
+      "End Program",
+      "Exit For",
+      "Continue",
+      "Return"
+    ],
+    answer: 1,
+    explanation: "Exit For immediately leaves a For...Next loop."
+  },
+  {
+    question: "What is the purpose of a nested loop?",
+    options: [
+      "To remove syntax errors",
+      "To create variables automatically",
+      "To create multiple forms",
+      "To place one loop inside another loop"
+    ],
+    answer: 3,
+    explanation: "A nested loop is a loop contained within another loop."
+  },
+  {
+    question: "Which debugging tool allows a programmer to execute code one statement at a time?",
+    options: [
+      "Build",
+      "Step Into",
+      "Save",
+      "Compile"
+    ],
+    answer: 1,
+    explanation: "Step Into executes the program one line at a time for debugging."
+  },
+  {
+    question: "Which of the following is an example of a run-time error?",
+    options: [
+      "Forgetting a closing bracket before compilation",
+      "Dividing a number by zero during execution",
+      "Using an invalid variable name",
+      "Misspelling a keyword"
+    ],
+    answer: 1,
+    explanation: "Run-time errors occur while the program is executing."
+  },
+  {
+    question: "A procedure that returns a value is commonly known as a:",
+    options: [
+      "Module",
+      "Form",
+      "Label",
+      "Function"
+    ],
+    answer: 3,
+    explanation: "A Function performs a task and returns a value."
+  },
+  {
+    question: "Which of the following is an advantage of using procedures?",
+    options: [
+      "They increase file size.",
+      "They remove variables automatically.",
+      "They reduce code repetition.",
+      "They eliminate all program errors."
+    ],
+    answer: 2,
+    explanation: "Procedures promote code reuse and improve readability."
+  },
+  {
+    question: "Which of the following is true about arrays?",
+    options: [
+      "All elements usually have the same data type.",
+      "Arrays cannot be modified.",
+      "Every element must have a different data type.",
+      "Arrays can store only text values."
+    ],
+    answer: 0,
+    explanation: "Arrays typically store multiple values of the same data type."
+  },
+  {
+    question: "Which operation retrieves information from a data file?",
+    options: [
+      "Save",
+      "Print",
+      "Write",
+      "Read"
+    ],
+    answer: 3,
+    explanation: "Reading obtains previously stored data from a file."
+  },
+  {
+    question: "Which file mode allows new information to be added to the end of an existing file?",
+    options: [
+      "Design Mode",
+      "Input Mode",
+      "Read Mode",
+      "Append Mode"
+    ],
+    answer: 3,
+    explanation: "Append Mode adds new records without deleting existing ones."
+  },
+  {
+    question: "Which of the following best explains a menu in a Visual Basic application?",
+    options: [
+      "A collection of variables",
+      "A data file",
+      "A debugging tool",
+      "A list of commands available to the user"
+    ],
+    answer: 3,
+    explanation: "Menus provide users with organized program commands."
+  },
+  {
+    question: "Which dialog box is most appropriate for selecting a location to save a file?",
+    options: [
+      "SaveFileDialog",
+      "FontDialog",
+      "OpenFileDialog",
+      "ColorDialog"
+    ],
+    answer: 0,
+    explanation: "SaveFileDialog allows users to choose where a file should be saved."
+  },
+  {
+    question: "Which of the following is the main purpose of testing a program?",
+    options: [
+      "To increase the computer's memory",
+      "To verify that it works correctly",
+      "To replace the operating system",
+      "To install Visual Basic"
+    ],
+    answer: 1,
+    explanation: "Testing ensures the program performs as expected."
+  },
+  {
+    question: "Which programming structure repeats a set of statements while a condition is true?",
+    options: [
+      "Declaration",
+      "Selection",
+      "Sequence",
+      "Iteration"
+    ],
+    answer: 3,
+    explanation: "Iteration (looping) repeatedly executes statements based on a condition."
+  },
+  {
+    question: "Which of the following is considered good programming practice?",
+    options: [
+      "Ignoring comments in code",
+      "Writing the entire program in one procedure",
+      "Using meaningful variable names",
+      "Using one variable for every purpose"
+    ],
+    answer: 2,
+    explanation: "Meaningful variable names improve readability and maintenance."
+  },
+  {
+    question: "Which statement best describes Visual Basic?",
+    options: [
+      "It is an operating system for personal computers.",
+      "It is a programming language used to develop applications with graphical user interfaces.",
+      "It is software used only for creating databases.",
+      "It is a web browser used for internet access."
+    ],
+    answer: 1,
+    explanation: "Visual Basic is an event-driven programming language commonly used to build Windows applications with GUIs."
+  }
+];
+
+const COS102C = [
+  {
+    question: "Which of the following is the primary purpose of Visual Basic?",
+    options: [
+      "To repair damaged hardware",
+      "To create application programs",
+      "To format storage devices",
+      "To manage network traffic"
+    ],
+    answer: 1,
+    explanation: "Visual Basic is a programming language used to develop software applications."
+  },
+  {
+    question: "A Visual Basic project is made up of one or more:",
+    options: [
+      "Tables",
+      "Slides",
+      "Forms",
+      "Records"
+    ],
+    answer: 2,
+    explanation: "A Visual Basic project consists of one or more forms that make up the application's interface."
+  },
+  {
+    question: "Which component of the Visual Basic environment contains the controls used to design a form?",
+    options: [
+      "Taskbar",
+      "Toolbox",
+      "Output Window",
+      "Status Bar"
+    ],
+    answer: 1,
+    explanation: "The Toolbox contains controls such as buttons, labels, and text boxes."
+  },
+  {
+    question: "Which control is most suitable for displaying a company logo?",
+    options: [
+      "Label",
+      "PictureBox",
+      "CheckBox",
+      "Button"
+    ],
+    answer: 1,
+    explanation: "The PictureBox control is used to display images."
+  },
+  {
+    question: "Which property changes the background color of a control?",
+    options: [
+      "Text",
+      "Name",
+      "Font",
+      "BackColor"
+    ],
+    answer: 3,
+    explanation: "The BackColor property changes the background color of a control."
+  },
+  {
+    question: "Which property determines whether a control is visible on a form?",
+    options: [
+      "Visible",
+      "Width",
+      "Height",
+      "Enabled"
+    ],
+    answer: 0,
+    explanation: "Setting the Visible property determines whether a control appears on the form."
+  },
+  {
+    question: "Which control is commonly used to allow users to select a date?",
+    options: [
+      "Label",
+      "ListBox",
+      "DateTimePicker",
+      "GroupBox"
+    ],
+    answer: 2,
+    explanation: "DateTimePicker provides a calendar interface for selecting dates."
+  },
+  {
+    question: "Which statement is used to repeat a block of code until a condition becomes true?",
+    options: [
+      "If...Then",
+      "Do Until...Loop",
+      "Select Case",
+      "End If"
+    ],
+    answer: 1,
+    explanation: "A Do Until loop continues until the specified condition becomes true."
+  },
+  {
+    question: "Which loop is most suitable when the number of repetitions is unknown?",
+    options: [
+      "For...Next",
+      "Select Case",
+      "While...End While",
+      "If...Then"
+    ],
+    answer: 2,
+    explanation: "A While loop is useful when the number of iterations depends on a condition."
+  },
+  {
+    question: "Which statement transfers program execution to another procedure?",
+    options: [
+      "Print",
+      "Exit",
+      "Read",
+      "Call"
+    ],
+    answer: 3,
+    explanation: "The Call statement invokes another procedure."
+  },
+  {
+    question: "Which of the following is an example of a Boolean value?",
+    options: [
+      "\"Computer\"",
+      "100",
+      "15.6",
+      "True"
+    ],
+    answer: 3,
+    explanation: "Boolean values are either True or False."
+  },
+  {
+    question: "Which data type is most suitable for storing decimal numbers?",
+    options: [
+      "Double",
+      "Boolean",
+      "String",
+      "Integer"
+    ],
+    answer: 0,
+    explanation: "Double stores numbers with decimal points."
+  },
+  {
+    question: "Which operator is commonly used for multiplication in Visual Basic?",
+    options: [
+      "%",
+      "#",
+      "&",
+      "*"
+    ],
+    answer: 3,
+    explanation: "The asterisk (*) is the multiplication operator."
+  },
+  {
+    question: "Which operator is used to join two text strings together?",
+    options: [
+      "/",
+      "&",
+      "*",
+      "^"
+    ],
+    answer: 1,
+    explanation: "The ampersand (&) concatenates strings."
+  },
+  {
+    question: "Which menu normally contains commands such as Save, Open, and Exit?",
+    options: [
+      "Edit",
+      "File",
+      "Help",
+      "View"
+    ],
+    answer: 1,
+    explanation: "The File menu contains file management commands."
+  },
+  {
+    question: "Which dialog box allows users to choose a color?",
+    options: [
+      "ColorDialog",
+      "SaveFileDialog",
+      "FontDialog",
+      "PrintDialog"
+    ],
+    answer: 0,
+    explanation: "ColorDialog lets users select colors."
+  },
+  {
+    question: "Which of the following is a benefit of debugging?",
+    options: [
+      "It increases RAM capacity.",
+      "It creates forms automatically.",
+      "It helps locate and correct program errors.",
+      "It improves internet speed."
+    ],
+    answer: 2,
+    explanation: "Debugging helps identify and fix programming errors."
+  },
+  {
+    question: "Which type of error prevents a program from compiling successfully?",
+    options: [
+      "Logical Error",
+      "Syntax Error",
+      "Run-time Error",
+      "Calculation Error"
+    ],
+    answer: 1,
+    explanation: "Syntax errors violate programming language rules."
+  },
+  {
+    question: "Which statement immediately ends a procedure?",
+    options: [
+      "Continue For",
+      "End While",
+      "Exit Sub",
+      "Break"
+    ],
+    answer: 2,
+    explanation: "Exit Sub terminates the current procedure."
+  },
+  {
+    question: "Which keyword is commonly used to declare a constant?",
+    options: [
+      "Static",
+      "Fixed",
+      "Const",
+      "Let"
+    ],
+    answer: 2,
+    explanation: "The Const keyword defines values that cannot change."
+  },
+  {
+    question: "Which of the following is an advantage of using arrays?",
+    options: [
+      "They eliminate loops.",
+      "They automatically create files.",
+      "They prevent all syntax errors.",
+      "They reduce the need for multiple related variables."
+    ],
+    answer: 3,
+    explanation: "Arrays store multiple related values under one variable name."
+  },
+  {
+    question: "Which array index represents the first element in a zero-based array?",
+    options: [
+      "1",
+      "2",
+      "0",
+      "-1"
+    ],
+    answer: 2,
+    explanation: "In a zero-based array, the first element has an index of 0."
+  },
+  {
+    question: "Which operation removes a file from storage permanently?",
+    options: [
+      "Write",
+      "Read",
+      "Delete",
+      "Append"
+    ],
+    answer: 2,
+    explanation: "Delete removes a file from storage."
+  },
+  {
+    question: "Which file operation stores additional information without removing existing contents?",
+    options: [
+      "Append",
+      "Read",
+      "Rename",
+      "Close"
+    ],
+    answer: 0,
+    explanation: "Append adds new data to the end of an existing file."
+  },
+  {
+    question: "Which of the following best explains modular programming?",
+    options: [
+      "Using only one procedure for the entire program",
+      "Avoiding the use of variables",
+      "Writing every statement on one line",
+      "Dividing a program into smaller, manageable procedures"
+    ],
+    answer: 3,
+    explanation: "Modular programming improves readability, maintenance, and code reuse."
+  },
+  {
+    question: "Which Visual Basic control is commonly used to group related controls together?",
+    options: [
+      "TextBox",
+      "PictureBox",
+      "GroupBox",
+      "Label"
+    ],
+    answer: 2,
+    explanation: "A GroupBox organizes related controls, especially RadioButtons and CheckBoxes."
+  },
+  {
+    question: "Which property determines whether a user can interact with a control?",
+    options: [
+      "Enabled",
+      "BackColor",
+      "Font",
+      "Height"
+    ],
+    answer: 0,
+    explanation: "Setting the Enabled property to False prevents user interaction."
+  },
+  {
+    question: "Which of the following is an example of an input device in a Visual Basic application?",
+    options: [
+      "Label",
+      "Shape",
+      "PictureBox",
+      "TextBox"
+    ],
+    answer: 3,
+    explanation: "A TextBox allows users to enter data into an application."
+  },
+  {
+    question: "Which programming structure executes statements one after another without making decisions?",
+    options: [
+      "Iteration",
+      "Sequence",
+      "Recursion",
+      "Selection"
+    ],
+    answer: 1,
+    explanation: "Sequence is the simplest control structure where instructions are executed in order."
+  },
+  {
+    question: "Which statement is used to execute one block of code when a condition is true and another when it is false?",
+    options: [
+      "If...Then...Else",
+      "Do...Loop",
+      "For...Next",
+      "Select Case"
+    ],
+    answer: 0,
+    explanation: "If...Then...Else allows a program to choose between two alternatives."
+  },
+  {
+    question: "Which loop is guaranteed to execute its body at least once?",
+    options: [
+      "Do...Loop",
+      "While...End While",
+      "Select Case",
+      "For...Next"
+    ],
+    answer: 0,
+    explanation: "A Do...Loop with the condition checked at the end executes at least once."
+  },
+  {
+    question: "Which Visual Basic statement is most appropriate when there are many possible values for one variable?",
+    options: [
+      "Do Until",
+      "Select Case",
+      "While...End While",
+      "Exit Sub"
+    ],
+    answer: 1,
+    explanation: "Select Case is efficient when comparing one expression against many values."
+  },
+  {
+    question: "Which menu option is commonly used to close an application?",
+    options: [
+      "Exit",
+      "Save",
+      "View",
+      "Edit"
+    ],
+    answer: 0,
+    explanation: "The Exit command closes the application."
+  },
+  {
+    question: "Which dialog box allows a user to choose a printer before printing?",
+    options: [
+      "OpenFileDialog",
+      "ColorDialog",
+      "FontDialog",
+      "PrintDialog"
+    ],
+    answer: 3,
+    explanation: "PrintDialog lets users select a printer and printing options."
+  },
+  {
+    question: "Which of the following best describes a breakpoint?",
+    options: [
+      "A file storage location",
+      "A place where program execution pauses during debugging",
+      "A command used to end a program",
+      "A type of syntax error"
+    ],
+    answer: 1,
+    explanation: "Breakpoints allow programmers to pause execution and inspect variables."
+  },
+  {
+    question: "Which debugging technique involves checking the value of variables while the program is running?",
+    options: [
+      "Variable inspection",
+      "Documentation",
+      "Compilation",
+      "Formatting"
+    ],
+    answer: 0,
+    explanation: "Inspecting variables helps identify incorrect values during execution."
+  },
+  {
+    question: "Which type of procedure does not return a value?",
+    options: [
+      "Event Procedure",
+      "Sub Procedure",
+      "Constructor",
+      "Function Procedure"
+    ],
+    answer: 1,
+    explanation: "A Sub procedure performs actions but does not return a value."
+  },
+  {
+    question: "Which keyword is commonly used to send a value back from a Function procedure?",
+    options: [
+      "Exit",
+      "Return",
+      "Stop",
+      "End"
+    ],
+    answer: 1,
+    explanation: "The Return statement sends the function's result back to the calling code."
+  },
+  {
+    question: "Which of the following is an advantage of passing arguments to a procedure?",
+    options: [
+      "It allows procedures to work with different values.",
+      "It removes syntax errors.",
+      "It automatically creates arrays.",
+      "It prevents loops from executing."
+    ],
+    answer: 0,
+    explanation: "Arguments make procedures more flexible and reusable."
+  },
+  {
+    question: "Which statement correctly describes an array?",
+    options: [
+      "It stores a collection of related values.",
+      "It stores one value only.",
+      "It stores only text.",
+      "It stores only numbers."
+    ],
+    answer: 0,
+    explanation: "Arrays store multiple related values under one variable name."
+  },
+  {
+    question: "If an array contains 10 elements and uses zero-based indexing, what is the index of the last element?",
+    options: [
+      "11",
+      "10",
+      "9",
+      "8"
+    ],
+    answer: 2,
+    explanation: "Zero-based arrays start at index 0, so the tenth element has index 9."
+  },
+  {
+    question: "Which file operation is performed first before data can be read from a file?",
+    options: [
+      "Open the file",
+      "Rename the file",
+      "Delete the file",
+      "Close the file"
+    ],
+    answer: 0,
+    explanation: "A file must be opened before it can be read."
+  },
+  {
+    question: "Which statement is true about data files?",
+    options: [
+      "They are used only for images.",
+      "They allow information to be stored permanently.",
+      "They exist only while the program is running.",
+      "They cannot be edited."
+    ],
+    answer: 1,
+    explanation: "Data files keep information even after the program is closed."
+  },
+  {
+    question: "Which of the following is an example of external data storage?",
+    options: [
+      "Data File",
+      "Array",
+      "Variable",
+      "Constant"
+    ],
+    answer: 0,
+    explanation: "Data files are stored on storage devices outside the program's memory."
+  },
+  {
+    question: "Which of the following is most important when naming variables?",
+    options: [
+      "The name should contain spaces.",
+      "The name should be meaningful.",
+      "The name should begin with a number.",
+      "The name should be as short as possible, even if unclear."
+    ],
+    answer: 1,
+    explanation: "Meaningful variable names improve program readability."
+  },
+  {
+    question: "Which of the following best explains an event-driven program?",
+    options: [
+      "It contains no procedures.",
+      "It responds to user or system actions.",
+      "It runs only on the internet.",
+      "It cannot use loops."
+    ],
+    answer: 1,
+    explanation: "Event-driven programs respond to events such as mouse clicks and key presses."
+  },
+  {
+    question: "Which control is most appropriate for displaying information that the user should not edit?",
+    options: [
+      "Label",
+      "CheckBox",
+      "TextBox",
+      "ComboBox"
+    ],
+    answer: 0,
+    explanation: "Labels display text without allowing user modification."
+  },
+  {
+    question: "Which of the following is the main purpose of comments in a program?",
+    options: [
+      "To remove logical errors automatically",
+      "To increase execution speed",
+      "To explain the code for easier understanding",
+      "To reduce memory usage"
+    ],
+    answer: 2,
+    explanation: "Comments make programs easier to understand and maintain."
+  },
+  {
+    question: "Which of the following is a benefit of modular programming?",
+    options: [
+      "Increased hardware speed",
+      "Easier testing and maintenance",
+      "Reduced storage capacity",
+      "Elimination of all programming errors"
+    ],
+    answer: 1,
+    explanation: "Breaking programs into modules makes them easier to test, debug, and maintain."
+  },
+  {
+    question: "During program development, what should be done after coding is completed?",
+    options: [
+      "Install another programming language",
+      "Format the hard drive",
+      "Test and debug the program",
+      "Delete the source code"
+    ],
+    answer: 2,
+    explanation: "After coding, the program should be tested and debugged to ensure it works correctly."
+  }
+];
+
+const COS102D = [
+  {
+    question: "Which of the following best describes a compiler?",
+    options: [
+      "A software used to create presentations",
+      "A device used to store data permanently",
+      "A program that converts source code into machine code",
+      "A programming language"
+    ],
+    answer: 2,
+    explanation: "A compiler translates an entire program from source code into machine code before execution."
+  },
+  {
+    question: "Which of the following is an example of an event in Visual Basic?",
+    options: [
+      "Integer",
+      "Click",
+      "Module",
+      "String"
+    ],
+    answer: 1,
+    explanation: "An event is an action such as clicking a button or pressing a key."
+  },
+  {
+    question: "Which control is most suitable for allowing users to choose one option from a drop-down list?",
+    options: [
+      "PictureBox",
+      "ComboBox",
+      "Timer",
+      "Label"
+    ],
+    answer: 1,
+    explanation: "A ComboBox combines a text box with a drop-down list."
+  },
+  {
+    question: "Which of the following is NOT a valid reason for using variables in programming?",
+    options: [
+      "To replace the operating system",
+      "To improve program flexibility",
+      "To hold values that may change during execution",
+      "To store data temporarily"
+    ],
+    answer: 0,
+    explanation: "Variables store data; they do not replace an operating system."
+  },
+  {
+    question: "Which arithmetic operator is used to calculate the remainder after division in Visual Basic?",
+    options: [
+      "/",
+      "*",
+      "Mod",
+      "^"
+    ],
+    answer: 2,
+    explanation: "The Mod operator returns the remainder after division."
+  },
+  {
+    question: "Which relational operator checks whether two values are not equal?",
+    options: [
+      "<=",
+      "<>",
+      ">=",
+      "="
+    ],
+    answer: 1,
+    explanation: "The <> operator means \"not equal to.\""
+  },
+  {
+    question: "Which logical operator returns True only when both conditions are True?",
+    options: [
+      "Or",
+      "And",
+      "Xor",
+      "Not"
+    ],
+    answer: 1,
+    explanation: "The And operator requires both conditions to be true."
+  },
+  {
+    question: "Which programming structure is represented by decision-making?",
+    options: [
+      "Output",
+      "Sequence",
+      "Selection",
+      "Input"
+    ],
+    answer: 2,
+    explanation: "Selection chooses between different actions based on conditions."
+  },
+  {
+    question: "Which of the following is the purpose of indentation in programming?",
+    options: [
+      "To improve code readability",
+      "To reduce memory usage",
+      "To prevent compilation",
+      "To increase execution speed"
+    ],
+    answer: 0,
+    explanation: "Indentation makes code easier to read and understand."
+  },
+  {
+    question: "Which statement is used to stop the execution of the current loop immediately?",
+    options: [
+      "Return",
+      "End",
+      "Continue While",
+      "Exit Do"
+    ],
+    answer: 3,
+    explanation: "Exit Do immediately terminates a Do loop."
+  },
+  {
+    question: "Which Visual Basic control is mainly used to display a list from which multiple items may be selected?",
+    options: [
+      "Button",
+      "ListBox",
+      "Timer",
+      "Label"
+    ],
+    answer: 1,
+    explanation: "A ListBox can be configured to allow multiple selections."
+  },
+  {
+    question: "Which property determines the size of text displayed in a control?",
+    options: [
+      "Width",
+      "Font",
+      "Visible",
+      "Enabled"
+    ],
+    answer: 1,
+    explanation: "The Font property controls font style, type, and size."
+  },
+  {
+    question: "Which of the following best describes an infinite loop?",
+    options: [
+      "A loop used only for arrays",
+      "A loop that always produces an error",
+      "A loop that never ends because its stopping condition is never met",
+      "A loop that executes once only"
+    ],
+    answer: 2,
+    explanation: "Infinite loops continue indefinitely unless interrupted."
+  },
+  {
+    question: "Which statement is true about comments in Visual Basic?",
+    options: [
+      "They are used to declare variables.",
+      "They increase program speed.",
+      "They are ignored during program execution.",
+      "They are executed before every statement."
+    ],
+    answer: 2,
+    explanation: "Comments explain code and are ignored by the compiler."
+  },
+  {
+    question: "Which debugging feature allows a programmer to observe variable values while execution is paused?",
+    options: [
+      "Watch Window",
+      "Toolbox",
+      "Solution Explorer",
+      "Project Explorer"
+    ],
+    answer: 0,
+    explanation: "The Watch Window monitors variable values during debugging."
+  },
+  {
+    question: "Which of the following is the main purpose of testing a procedure separately?",
+    options: [
+      "To reduce processor speed",
+      "To verify that it performs its intended task correctly",
+      "To increase RAM size",
+      "To create more variables"
+    ],
+    answer: 1,
+    explanation: "Individual testing helps identify errors before integrating procedures."
+  },
+  {
+    question: "Which statement correctly describes a parameter?",
+    options: [
+      "A menu option",
+      "A storage device",
+      "A programming error",
+      "A value passed into a procedure or function"
+    ],
+    answer: 3,
+    explanation: "Parameters allow procedures to receive information."
+  },
+  {
+    question: "Which of the following is an advantage of functions over repeated calculations?",
+    options: [
+      "They increase file size.",
+      "They eliminate variables.",
+      "They reduce code duplication.",
+      "They prevent syntax errors automatically."
+    ],
+    answer: 2,
+    explanation: "Functions promote code reuse and easier maintenance."
+  },
+  {
+    question: "Which array operation retrieves the value stored at a specific position?",
+    options: [
+      "Debugging",
+      "Compiling",
+      "Indexing",
+      "Formatting"
+    ],
+    answer: 2,
+    explanation: "Array elements are accessed using their index."
+  },
+  {
+    question: "Which statement is true about array indices?",
+    options: [
+      "They identify the position of elements in an array.",
+      "They determine file size.",
+      "They store procedure names.",
+      "They are used only in loops."
+    ],
+    answer: 0,
+    explanation: "Each array element is identified by an index."
+  },
+  {
+    question: "Which file operation is performed after reading or writing data?",
+    options: [
+      "Compile",
+      "Close",
+      "Rename",
+      "Delete"
+    ],
+    answer: 1,
+    explanation: "Files should be closed after use to free system resources."
+  },
+  {
+    question: "Which file organization stores information in records?",
+    options: [
+      "Label",
+      "Menu",
+      "Button",
+      "Data File"
+    ],
+    answer: 3,
+    explanation: "Data files store information as records that can be read or updated."
+  },
+  {
+    question: "Which of the following is considered good programming practice?",
+    options: [
+      "Using descriptive procedure names",
+      "Avoiding comments completely",
+      "Writing all code inside one procedure",
+      "Using meaningless variable names"
+    ],
+    answer: 0,
+    explanation: "Descriptive names improve readability and maintenance."
+  },
+  {
+    question: "Which Visual Basic window displays all forms and modules in a project?",
+    options: [
+      "Output Window",
+      "Status Bar",
+      "Immediate Window",
+      "Project Explorer"
+    ],
+    answer: 3,
+    explanation: "Project Explorer lists all project components."
+  },
+  {
+    question: "Which of the following best explains problem-solving in programming?",
+    options: [
+      "The replacement of computer hardware",
+      "An organized process of analyzing a problem and developing a solution",
+      "The creation of presentation slides",
+      "The installation of programming software"
+    ],
+    answer: 1,
+    explanation: "Problem-solving involves understanding a problem, designing a solution, coding, testing, and refining the program."
+  },
+  {
+    question: "Which of the following controls is commonly used to display time at regular intervals in a Visual Basic application?",
+    options: [
+      "Label",
+      "Timer",
+      "CheckBox",
+      "ComboBox"
+    ],
+    answer: 1,
+    explanation: "The Timer control generates events at specified time intervals."
+  },
+  {
+    question: "Which property determines the text shown in the title bar of a form?",
+    options: [
+      "Width",
+      "Text",
+      "Caption",
+      "Name"
+    ],
+    answer: 1,
+    explanation: "In modern Visual Basic (.NET), the Text property determines the form's title."
+  },
+  {
+    question: "Which statement is used to declare an array named Scores with 20 elements?",
+    options: [
+      "Dim Scores(19) As Integer",
+      "Scores = New Integer(20)",
+      "Array Scores = 20",
+      "Integer Scores(20)"
+    ],
+    answer: 0,
+    explanation: "In a zero-based array, Scores(19) creates 20 elements (indices 0-19)."
+  },
+  {
+    question: "Which of the following is the primary purpose of a menu in an application?",
+    options: [
+      "To replace procedures",
+      "To increase processor speed",
+      "To store variables permanently",
+      "To provide users with organized commands"
+    ],
+    answer: 3,
+    explanation: "Menus group commands so users can easily access program functions."
+  },
+  {
+    question: "Which debugging window allows a programmer to execute commands during program execution?",
+    options: [
+      "Toolbox",
+      "Properties Window",
+      "Immediate Window",
+      "Form Designer"
+    ],
+    answer: 2,
+    explanation: "The Immediate Window allows execution of commands and evaluation of expressions during debugging."
+  },
+  {
+    question: "Which of the following is an example of a run-time error?",
+    options: [
+      "Forgetting to close quotation marks",
+      "Using an invalid variable name",
+      "Misspelling a keyword",
+      "Attempting to open a file that does not exist"
+    ],
+    answer: 3,
+    explanation: "Run-time errors occur while the program is executing."
+  },
+  {
+    question: "Which keyword is commonly used to exit a Function procedure before reaching the end?",
+    options: [
+      "End Function",
+      "Stop Function",
+      "Break Function",
+      "Exit Function"
+    ],
+    answer: 3,
+    explanation: "Exit Function terminates the function immediately."
+  },
+  {
+    question: "Which of the following is the main advantage of using functions?",
+    options: [
+      "They eliminate debugging.",
+      "They can return calculated values.",
+      "They replace variables completely.",
+      "They automatically create forms."
+    ],
+    answer: 1,
+    explanation: "Functions process data and return results to the calling code."
+  },
+  {
+    question: "Which statement is true about arrays?",
+    options: [
+      "Arrays can contain only one value.",
+      "Every element occupies a separate memory location.",
+      "Arrays are used only for text.",
+      "Arrays cannot be sorted."
+    ],
+    answer: 1,
+    explanation: "Each array element has its own memory location and index."
+  },
+  {
+    question: "Which operation is used to retrieve stored information from a data file?",
+    options: [
+      "Read",
+      "Rename",
+      "Delete",
+      "Append"
+    ],
+    answer: 0,
+    explanation: "Reading retrieves data from an existing file."
+  },
+  {
+    question: "Which file mode preserves existing records while adding new ones?",
+    options: [
+      "Binary Mode",
+      "Output Mode",
+      "Append Mode",
+      "Input Mode"
+    ],
+    answer: 2,
+    explanation: "Append Mode adds new records to the end of the file."
+  },
+  {
+    question: "Which Visual Basic control allows users to increase or decrease a numeric value using arrows?",
+    options: [
+      "GroupBox",
+      "NumericUpDown",
+      "Label",
+      "PictureBox"
+    ],
+    answer: 1,
+    explanation: "NumericUpDown provides arrow buttons for adjusting numeric values."
+  },
+  {
+    question: "Which event occurs when a user changes the contents of a TextBox?",
+    options: [
+      "TextChanged",
+      "Paint",
+      "Load",
+      "Click"
+    ],
+    answer: 0,
+    explanation: "The TextChanged event occurs whenever the text changes."
+  },
+  {
+    question: "Which programming principle encourages breaking large programs into smaller sections?",
+    options: [
+      "Binary programming",
+      "Machine coding",
+      "Sequential programming",
+      "Modular programming"
+    ],
+    answer: 3,
+    explanation: "Modular programming improves organization, testing, and maintenance."
+  },
+  {
+    question: "Which statement best describes a logical operator?",
+    options: [
+      "It combines or evaluates conditions.",
+      "It declares variables.",
+      "It performs arithmetic calculations only.",
+      "It stores values permanently."
+    ],
+    answer: 0,
+    explanation: "Logical operators such as And, Or, and Not evaluate conditions."
+  },
+  {
+    question: "Which of the following is most suitable for storing a person's full name?",
+    options: [
+      "String",
+      "Boolean",
+      "Double",
+      "Integer"
+    ],
+    answer: 0,
+    explanation: "The String data type stores text."
+  },
+  {
+    question: "Which symbol is commonly used to begin a comment in Visual Basic?",
+    options: [
+      "' (apostrophe)",
+      "&",
+      "*",
+      "#"
+    ],
+    answer: 0,
+    explanation: "An apostrophe (') marks the beginning of a comment."
+  },
+  {
+    question: "Which step usually follows debugging during program development?",
+    options: [
+      "Flowchart creation",
+      "Algorithm design",
+      "Variable declaration",
+      "Documentation or deployment"
+    ],
+    answer: 3,
+    explanation: "After debugging, programs are commonly documented or deployed."
+  },
+  {
+    question: "Which of the following best describes source code?",
+    options: [
+      "A printed copy of a program",
+      "Machine language executed directly by hardware",
+      "Data stored in a database",
+      "Instructions written by a programmer in a programming language"
+    ],
+    answer: 3,
+    explanation: "Source code is the human-readable code written by programmers."
+  },
+  {
+    question: "Which control is commonly used to allow users to select a single item from a drop-down list?",
+    options: [
+      "Timer",
+      "ComboBox",
+      "Label",
+      "PictureBox"
+    ],
+    answer: 1,
+    explanation: "A ComboBox displays a drop-down list for selecting an item."
+  },
+  {
+    question: "Which of the following is an advantage of proper program documentation?",
+    options: [
+      "It increases processor speed.",
+      "It eliminates all errors.",
+      "It reduces hard disk size.",
+      "It makes programs easier to understand and maintain."
+    ],
+    answer: 3,
+    explanation: "Documentation helps programmers understand and maintain software."
+  },
+  {
+    question: "Which type of testing checks whether the complete program works as expected?",
+    options: [
+      "Data Type Testing",
+      "System Testing",
+      "Variable Testing",
+      "Syntax Testing"
+    ],
+    answer: 1,
+    explanation: "System testing verifies the complete application."
+  },
+  {
+    question: "Which statement is true about event-driven programming?",
+    options: [
+      "Programs execute only from top to bottom without interruption.",
+      "Program execution is triggered by events such as clicks and key presses.",
+      "Events are ignored during execution.",
+      "It does not support graphical interfaces."
+    ],
+    answer: 1,
+    explanation: "Event-driven programs respond to user and system events."
+  },
+  {
+    question: "Which of the following is a common reason for using procedures?",
+    options: [
+      "To prevent user input",
+      "To replace arrays completely",
+      "To avoid repeating the same code in multiple places",
+      "To remove all variables from a program"
+    ],
+    answer: 2,
+    explanation: "Procedures improve code reuse and reduce duplication."
+  },
+  {
+    question: "Which of the following best describes Visual Basic?",
+    options: [
+      "A computer operating system",
+      "An event-driven programming language used to develop Windows applications",
+      "A database management package",
+      "A spreadsheet application"
+    ],
+    answer: 1,
+    explanation: "Visual Basic is an event-driven programming language widely used for building Windows-based applications."
+  }
+];
+
+const COS102E = [
+  {
+    question: "What is the output?\n\nDim x As Integer = 8\nDim y As Integer = 5\nConsole.WriteLine(x - y)",
+    options: [
+      "8",
+      "40",
+      "3",
+      "13"
+    ],
+    answer: 2,
+    explanation: "8 - 5 = 3."
+  },
+  {
+    question: "What is the output?\n\nDim a As Integer = 4\na = a * 3\nConsole.WriteLine(a)",
+    options: [
+      "12",
+      "3",
+      "16",
+      "7"
+    ],
+    answer: 0,
+    explanation: "4 x 3 = 12."
+  },
+  {
+    question: "What will be displayed?\n\nDim x As Integer = 10\nIf x > 6 Then\n  Console.WriteLine(\"Yes\")\nElse\n  Console.WriteLine(\"No\")\nEnd If",
+    options: [
+      "No",
+      "Yes",
+      "Error",
+      "Nothing"
+    ],
+    answer: 1,
+    explanation: "Since 10 is greater than 6, Yes is displayed."
+  },
+  {
+    question: "What is the value of sum after execution?\n\nDim sum As Integer = 0\nFor i = 1 To 4\n  sum += i\nNext",
+    options: [
+      "10",
+      "6",
+      "8",
+      "12"
+    ],
+    answer: 0,
+    explanation: "1 + 2 + 3 + 4 = 10."
+  },
+  {
+    question: "What is printed?\n\nDim n As Integer = 15\nIf n Mod 2 = 0 Then\n  Console.WriteLine(\"Even\")\nElse\n  Console.WriteLine(\"Odd\")\nEnd If",
+    options: [
+      "15",
+      "Even",
+      "Odd",
+      "Error"
+    ],
+    answer: 2,
+    explanation: "15 is not divisible by 2."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 9\nx += 2\nConsole.WriteLine(x)",
+    options: [
+      "11",
+      "18",
+      "7",
+      "9"
+    ],
+    answer: 0,
+    explanation: "9 + 2 = 11."
+  },
+  {
+    question: "How many times will the loop execute?\n\nFor i = 2 To 8 Step 2\nNext",
+    options: [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    answer: 0,
+    explanation: "Values are 2, 4, 6, 8 (4 iterations)."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 20\nSelect Case x\n  Case 10\n    Console.WriteLine(\"A\")\n  Case 20\n    Console.WriteLine(\"B\")\n  Case Else\n    Console.WriteLine(\"C\")\nEnd Select",
+    options: [
+      "B",
+      "A",
+      "C",
+      "Error"
+    ],
+    answer: 0,
+    explanation: "The value matches Case 20."
+  },
+  {
+    question: "What is displayed?\n\nDim i As Integer = 5\nDo While i > 2\n  i -= 1\nLoop\nConsole.WriteLine(i)",
+    options: [
+      "1",
+      "2",
+      "5",
+      "3"
+    ],
+    answer: 1,
+    explanation: "The loop stops when i becomes 2."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 6\nDim y As Integer = 4\nConsole.WriteLine(x + y * 2)",
+    options: [
+      "10",
+      "14",
+      "16",
+      "20"
+    ],
+    answer: 1,
+    explanation: "Multiplication first: 4 x 2 = 8; then 6 + 8 = 14."
+  },
+  {
+    question: "Which control is mainly used to accept user input?",
+    options: [
+      "PictureBox",
+      "Timer",
+      "Label",
+      "TextBox"
+    ],
+    answer: 3,
+    explanation: "A TextBox allows users to enter data."
+  },
+  {
+    question: "What is the output?\n\nDim a As Integer = 3\nFor i = 1 To 2\n  a += 2\nNext\nConsole.WriteLine(a)",
+    options: [
+      "7",
+      "5",
+      "8",
+      "6"
+    ],
+    answer: 0,
+    explanation: "3 -> 5 -> 7."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 12\nIf x < 10 Then\n  Console.WriteLine(\"Low\")\nElse\n  Console.WriteLine(\"High\")\nEnd If",
+    options: [
+      "High",
+      "12",
+      "Low",
+      "Error"
+    ],
+    answer: 0,
+    explanation: "12 is greater than 10."
+  },
+  {
+    question: "What is the value of i after execution?\n\nDim i As Integer = 1\nWhile i < 6\n  i += 2\nEnd While",
+    options: [
+      "6",
+      "7",
+      "8",
+      "5"
+    ],
+    answer: 1,
+    explanation: "1 -> 3 -> 5 -> 7, then the condition becomes false."
+  },
+  {
+    question: "Which keyword is used to declare a variable?",
+    options: [
+      "Loop",
+      "Dim",
+      "Const",
+      "Sub"
+    ],
+    answer: 1,
+    explanation: "Dim declares variables in Visual Basic."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 7\nConsole.WriteLine(x Mod 3)",
+    options: [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    answer: 0,
+    explanation: "The remainder when 7 is divided by 3 is 1."
+  },
+  {
+    question: "What is displayed?\n\nDim total As Integer = 5\ntotal *= 4\nConsole.WriteLine(total)",
+    options: [
+      "9",
+      "10",
+      "20",
+      "25"
+    ],
+    answer: 2,
+    explanation: "5 x 4 = 20."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 4\nIf x = 4 Then\n  Console.WriteLine(\"Correct\")\nEnd If",
+    options: [
+      "Wrong",
+      "Error",
+      "Nothing",
+      "Correct"
+    ],
+    answer: 3,
+    explanation: "The condition is true."
+  },
+  {
+    question: "Which event occurs when a button is pressed?",
+    options: [
+      "Close",
+      "Paint",
+      "Load",
+      "Click"
+    ],
+    answer: 3,
+    explanation: "The Click event occurs when the button is clicked."
+  },
+  {
+    question: "What is the output?\n\nDim arr() As Integer = {2,4,6,8}\nConsole.WriteLine(arr(2))",
+    options: [
+      "8",
+      "2",
+      "6",
+      "4"
+    ],
+    answer: 2,
+    explanation: "Arrays start at index 0, so arr(2) is the third element: 6."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 18\nConsole.WriteLine(x / 3)",
+    options: [
+      "18",
+      "9",
+      "6",
+      "5"
+    ],
+    answer: 2,
+    explanation: "18 / 3 = 6."
+  },
+  {
+    question: "Which of the following is used to store many values under one variable name?",
+    options: [
+      "Label",
+      "Form",
+      "Procedure",
+      "Array"
+    ],
+    answer: 3,
+    explanation: "An array stores multiple related values."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 2\nFor i = 1 To 3\n  x *= 2\nNext\nConsole.WriteLine(x)",
+    options: [
+      "16",
+      "12",
+      "8",
+      "10"
+    ],
+    answer: 0,
+    explanation: "2 -> 4 -> 8 -> 16."
+  },
+  {
+    question: "What is displayed?\n\nDim x As Integer = 5\nSelect Case x\n  Case 1 To 4\n    Console.WriteLine(\"Small\")\n  Case 5 To 8\n    Console.WriteLine(\"Medium\")\nEnd Select",
+    options: [
+      "Error",
+      "Small",
+      "Large",
+      "Medium"
+    ],
+    answer: 3,
+    explanation: "5 falls within the range 5 to 8."
+  },
+  {
+    question: "Which statement is used to define a procedure that does not return a value?",
+    options: [
+      "Module",
+      "Sub",
+      "Function",
+      "Dim"
+    ],
+    answer: 1,
+    explanation: "A Sub procedure performs actions but does not return a value."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 3\nDim y As Integer = 4\nConsole.WriteLine(x ^ 2 + y)",
+    options: [
+      "7",
+      "9",
+      "13",
+      "12"
+    ],
+    answer: 2,
+    explanation: "3^2 = 9, then 9 + 4 = 13."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 12\nIf x >= 10 And x < 20 Then\n  Console.WriteLine(\"Valid\")\nElse\n  Console.WriteLine(\"Invalid\")\nEnd If",
+    options: [
+      "Error",
+      "Invalid",
+      "Valid",
+      "Nothing"
+    ],
+    answer: 2,
+    explanation: "Both conditions are true, so Valid is displayed."
+  },
+  {
+    question: "What is the value of sum after execution?\n\nDim sum As Integer = 5\nFor i = 1 To 3\n  sum += 2\nNext",
+    options: [
+      "11",
+      "9",
+      "12",
+      "10"
+    ],
+    answer: 0,
+    explanation: "The loop adds 2 three times: 5 + 2 + 2 + 2 = 11."
+  },
+  {
+    question: "What is the output?\n\nDim arr() As Integer = {5, 10, 15}\nConsole.WriteLine(arr(0) + arr(2))",
+    options: [
+      "20",
+      "25",
+      "30",
+      "15"
+    ],
+    answer: 0,
+    explanation: "5 + 15 = 20."
+  },
+  {
+    question: "What will be displayed?\n\nDim x As Integer = 9\nDo Until x = 6\n  x -= 1\nLoop\nConsole.WriteLine(x)",
+    options: [
+      "9",
+      "5",
+      "6",
+      "7"
+    ],
+    answer: 2,
+    explanation: "The loop stops when x becomes 6."
+  },
+  {
+    question: "Which statement correctly declares a string variable?",
+    options: [
+      "Dim name As String",
+      "Dim String = name",
+      "name String Dim",
+      "String Dim name"
+    ],
+    answer: 0,
+    explanation: "This is the correct Visual Basic syntax."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 4\nIf x <> 5 Then\n  Console.WriteLine(\"True\")\nElse\n  Console.WriteLine(\"False\")\nEnd If",
+    options: [
+      "False",
+      "Nothing",
+      "Error",
+      "True"
+    ],
+    answer: 3,
+    explanation: "Since 4 is not equal to 5, the condition is true."
+  },
+  {
+    question: "What is printed?\n\nDim i As Integer\nFor i = 3 To 9 Step 3\n  Console.Write(i & \" \")\nNext",
+    options: [
+      "9",
+      "3 4 5 6 7 8 9",
+      "3 6 9",
+      "6 9"
+    ],
+    answer: 2,
+    explanation: "The values are 3, 6, and 9."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 16\nConsole.WriteLine(x \\ 5)",
+    options: [
+      "4",
+      "3",
+      "3.2",
+      "1"
+    ],
+    answer: 1,
+    explanation: "\\ performs integer division. 16 \\ 5 = 3."
+  },
+  {
+    question: "Which property is used to change the name of a button as seen in code?",
+    options: [
+      "Text",
+      "Name",
+      "Size",
+      "Font"
+    ],
+    answer: 1,
+    explanation: "The Name property identifies the control in code."
+  },
+  {
+    question: "What is the output?\n\nDim a As Integer = 2\nDim b As Integer = 5\nConsole.WriteLine(a + b * a)",
+    options: [
+      "7",
+      "12",
+      "10",
+      "14"
+    ],
+    answer: 1,
+    explanation: "Multiply first: 5 x 2 = 10; then 2 + 10 = 12."
+  },
+  {
+    question: "What is displayed?\n\nDim score As Integer = 45\nSelect Case score\n  Case 0 To 39\n    Console.WriteLine(\"Fail\")\n  Case 40 To 100\n    Console.WriteLine(\"Pass\")\nEnd Select",
+    options: [
+      "Fail",
+      "Pass",
+      "Error",
+      "Nothing"
+    ],
+    answer: 1,
+    explanation: "45 falls within the range 40-100."
+  },
+  {
+    question: "What is the output?\n\nDim arr() As Integer = {8, 6, 4, 2}\nConsole.WriteLine(arr(1))",
+    options: [
+      "2",
+      "4",
+      "8",
+      "6"
+    ],
+    answer: 3,
+    explanation: "Index 1 is the second element, which is 6."
+  },
+  {
+    question: "Which debugging tool pauses execution at a selected line?",
+    options: [
+      "MenuStrip",
+      "Breakpoint",
+      "Timer",
+      "Toolbox"
+    ],
+    answer: 1,
+    explanation: "A breakpoint temporarily stops program execution."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 5\nWhile x < 9\n  x += 1\nEnd While\nConsole.WriteLine(x)",
+    options: [
+      "8",
+      "10",
+      "9",
+      "5"
+    ],
+    answer: 2,
+    explanation: "The loop ends when x reaches 9."
+  },
+  {
+    question: "Which of the following is used to store information permanently?",
+    options: [
+      "Procedure",
+      "Loop",
+      "Variable",
+      "Data File"
+    ],
+    answer: 3,
+    explanation: "Data files retain information even after the program ends."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 7\nConsole.WriteLine(x Mod 4)",
+    options: [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    answer: 1,
+    explanation: "The remainder when 7 is divided by 4 is 3."
+  },
+  {
+    question: "What is the output?\n\nDim total As Integer = 0\nFor i = 2 To 6 Step 2\n  total += i\nNext\nConsole.WriteLine(total)",
+    options: [
+      "12",
+      "8",
+      "14",
+      "10"
+    ],
+    answer: 0,
+    explanation: "2 + 4 + 6 = 12."
+  },
+  {
+    question: "Which statement is used to return a value from a Function?",
+    options: [
+      "Next",
+      "Exit Sub",
+      "Return",
+      "End"
+    ],
+    answer: 2,
+    explanation: "Return sends the function's result back to the caller."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 10\nIf x <= 5 Then\n  Console.WriteLine(\"Low\")\nElse\n  Console.WriteLine(\"High\")\nEnd If",
+    options: [
+      "Nothing",
+      "Error",
+      "High",
+      "Low"
+    ],
+    answer: 2,
+    explanation: "Since 10 is greater than 5, \"High\" is displayed."
+  },
+  {
+    question: "What is the output?\n\nDim arr() As Integer = {1, 3, 5}\nConsole.WriteLine(arr(0) + arr(1) + arr(2))",
+    options: [
+      "11",
+      "9",
+      "8",
+      "10"
+    ],
+    answer: 1,
+    explanation: "1 + 3 + 5 = 9."
+  },
+  {
+    question: "Which control is mainly used to display pictures?",
+    options: [
+      "TextBox",
+      "Label",
+      "PictureBox",
+      "Button"
+    ],
+    answer: 2,
+    explanation: "A PictureBox displays image files."
+  },
+  {
+    question: "What is the output?\n\nDim n As Integer = 3\nDo While n < 7\n  n += 2\nLoop\nConsole.WriteLine(n)",
+    options: [
+      "8",
+      "6",
+      "5",
+      "7"
+    ],
+    answer: 3,
+    explanation: "3 -> 5 -> 7, then the condition becomes false."
+  },
+  {
+    question: "Which file operation is used to add new data without removing existing records?",
+    options: [
+      "Close",
+      "Append",
+      "Delete",
+      "Read"
+    ],
+    answer: 1,
+    explanation: "Append adds new information to the end of an existing file."
+  },
+  {
+    question: "What is the output?\n\nDim x As Integer = 2\nFor i = 1 To 4\n  x = x + i\nNext\nConsole.WriteLine(x)",
+    options: [
+      "10",
+      "13",
+      "11",
+      "12"
+    ],
+    answer: 3,
+    explanation: "Starting with x = 2: after adding 1, 2, 3, 4, the final value is 12."
+  }
+];
+
 const CYB102 = [
 {
   question: "Which statement best distinguishes data from information?",
