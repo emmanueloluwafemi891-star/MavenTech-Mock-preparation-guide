@@ -1453,12 +1453,1656 @@ const ENGLISHD = [
     explanation: "Emphatic \"do\" before a base verb intensifies and confirms sincerity, especially when appreciation might otherwise be assumed absent or doubted."
   },
 ];
+const PHYSICSA = [
+  {
+    question: "What is the SI unit of force?",
+    options: ["Pascal", "Joule", "Watt", "Newton"],
+    answer: 3,
+    explanation: "Force is defined by Newton's second law (F = ma), and its SI unit — the Newton (N) — equals 1 kg·m/s². Joule measures energy/work, Watt measures power, and Pascal measures pressure."
+  },
+  {
+    question: "Which of the following is a vector quantity?",
+    options: ["Mass", "Temperature", "Time", "Displacement"],
+    answer: 3,
+    explanation: "Displacement has both magnitude and direction (e.g., \"5m East\"), making it a vector, unlike mass, time, and temperature, which are scalars with magnitude only."
+  },
+  {
+    question: "The standard value of acceleration due to gravity on Earth's surface is approximately:",
+    options: ["12.0 m/s²", "8.9 m/s²", "9.8 m/s²", "10.8 m/s²"],
+    answer: 2,
+    explanation: "The internationally accepted standard value of gravitational acceleration near Earth's surface is 9.8 m/s² (sometimes approximated as 10 m/s² for simpler calculations)."
+  },
+  {
+    question: "Calculate the kinetic energy of a 5 kg mass moving at 4 m/s.",
+    options: ["20 J", "10 J", "40 J", "80 J"],
+    answer: 2,
+    explanation: "KE = ½mv² = ½ × 5 × 4² = ½ × 5 × 16 = 40 J."
+  },
+  {
+    question: "Which instrument is used to measure atmospheric pressure?",
+    options: ["Manometer", "Barometer", "Hydrometer", "Thermometer"],
+    answer: 1,
+    explanation: "A barometer specifically measures atmospheric pressure, while a manometer measures gas pressure differences, a hydrometer measures liquid density, and a thermometer measures temperature."
+  },
+  {
+    question: "Sound waves cannot travel through which of the following?",
+    options: ["Steel", "Water", "Air", "Vacuum"],
+    answer: 3,
+    explanation: "Sound is a mechanical wave requiring a medium (solid, liquid, or gas) to propagate through vibrating particles. A vacuum has no particles, so sound cannot travel through it."
+  },
+  {
+    question: "The focal length of a concave mirror is conventionally taken as:",
+    options: ["Negative", "Zero", "Infinite", "Positive"],
+    answer: 0,
+    explanation: "Using the standard sign convention in optics, concave mirrors (converging mirrors) have their focal length measured as negative since the focus lies in front of the mirror (same side as the object)."
+  },
+  {
+    question: "Which equation correctly represents Ohm's Law?",
+    options: ["F = ma", "Q = It", "P = IV", "V = IR"],
+    answer: 3,
+    explanation: "Ohm's Law states that voltage (V) equals current (I) multiplied by resistance (R): V = IR. The other equations represent Newton's second law, electrical power, and electric charge respectively."
+  },
+  {
+    question: "Which color in the visible light spectrum has the longest wavelength?",
+    options: ["Violet", "Green", "Blue", "Red"],
+    answer: 3,
+    explanation: "In the visible spectrum, red light has the longest wavelength (approximately 700nm), while violet has the shortest (approximately 400nm)."
+  },
+  {
+    question: "Work done by a force is zero when the force and displacement are:",
+    options: ["Parallel", "Perpendicular", "Equal", "Opposite"],
+    answer: 1,
+    explanation: "Work = F × d × cos(θ). When the force is perpendicular to displacement (θ = 90°), cos(90°) = 0, making the work done zero."
+  },
+  {
+    question: "What is the SI unit of power?",
+    options: ["Watt", "Volt", "Newton", "Joule"],
+    answer: 0,
+    explanation: "Power is the rate of doing work (Power = Work/Time), and its SI unit is the Watt (W), equivalent to 1 Joule per second."
+  },
+  {
+    question: "A car travels 100m in 10 seconds. Calculate its speed.",
+    options: ["100 m/s", "10 m/s", "5 m/s", "1000 m/s"],
+    answer: 1,
+    explanation: "Speed = distance/time = 100m/10s = 10 m/s."
+  },
+  {
+    question: "At what temperature does ice melt under standard atmospheric pressure, expressed in Kelvin?",
+    options: ["100K", "273K", "373K", "0K"],
+    answer: 1,
+    explanation: "Ice melts at 0°C, which converts to Kelvin using K = °C + 273, giving 273K."
+  },
+  {
+    question: "Total internal reflection occurs when light travels from:",
+    options: ["None of the above", "Rarer medium to denser medium", "Denser medium to rarer medium", "Air to air"],
+    answer: 2,
+    explanation: "Total internal reflection happens when light moves from a denser medium (like glass) to a rarer medium (like air) at an angle greater than the critical angle, causing the light to be completely reflected back."
+  },
+  {
+    question: "Which device is specifically used to measure electric current?",
+    options: ["Ammeter", "Galvanometer", "Voltmeter", "Ohmmeter"],
+    answer: 0,
+    explanation: "An ammeter is specifically calibrated to measure current in amperes, while a voltmeter measures voltage, an ohmmeter measures resistance, and a galvanometer detects small currents but isn't calibrated for direct current measurement."
+  },
+  {
+    question: "What is the approximate escape velocity from Earth's gravitational field?",
+    options: ["15 km/s", "7.9 km/s", "11.2 km/s", "3×10⁸ m/s"],
+    answer: 2,
+    explanation: "Escape velocity is the minimum speed needed to break free from Earth's gravitational pull without further propulsion, calculated to be approximately 11.2 km/s. (7.9 km/s is actually the orbital velocity for low Earth orbit, a common distractor.)"
+  },
+  {
+    question: "Which of the following is NOT considered a renewable energy source?",
+    options: ["Coal", "Wind", "Solar", "Hydro"],
+    answer: 0,
+    explanation: "Coal is a fossil fuel formed over millions of years and is non-renewable, while solar, wind, and hydro are naturally replenished energy sources."
+  },
+  {
+    question: "A wave has a wavelength of 2m and travels at 10 m/s. Calculate its frequency.",
+    options: ["10 Hz", "20 Hz", "2 Hz", "5 Hz"],
+    answer: 3,
+    explanation: "Using v = fλ, frequency f = v/λ = 10/2 = 5 Hz."
+  },
+  {
+    question: "What is the magnification produced by a plane mirror?",
+    options: ["0", "0.5", "1", "2"],
+    answer: 2,
+    explanation: "A plane mirror produces an image of the same size as the object (magnification = image height/object height = 1), unlike curved mirrors which can magnify or diminish images."
+  },
+  {
+    question: "Which statement correctly describes the law of conservation of energy?",
+    options: ["Energy changes entirely to mass", "Total energy remains constant in an isolated system", "Energy can be destroyed", "Energy can be created"],
+    answer: 1,
+    explanation: "The law of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another — total energy in an isolated system remains constant."
+  },
+  {
+    question: "The resistance of a wire depends on:",
+    options: ["Voltage only", "Length only", "Area only", "Material, length, and cross-sectional area"],
+    answer: 3,
+    explanation: "Resistance is given by R = ρL/A, where ρ is resistivity (material-dependent), L is length, and A is cross-sectional area — all three factors combined determine resistance."
+  },
+  {
+    question: "One horsepower is approximately equal to:",
+    options: ["860 W", "550 W", "746 W", "1000 W"],
+    answer: 2,
+    explanation: "The standard conversion is 1 horsepower = 746 Watts, a commonly tested unit conversion in physics."
+  },
+  {
+    question: "Radio waves are classified as:",
+    options: ["Matter waves", "Mechanical waves", "Transverse electromagnetic waves", "Longitudinal waves"],
+    answer: 2,
+    explanation: "Radio waves are part of the electromagnetic spectrum, and all electromagnetic waves are transverse in nature, requiring no medium to travel (unlike mechanical waves)."
+  },
+  {
+    question: "Which type of lens causes light rays to diverge (spread out)?",
+    options: ["Cylindrical", "Convex", "Concave", "Plane"],
+    answer: 2,
+    explanation: "A concave (diverging) lens is thinner at the center than the edges, causing parallel light rays to spread outward, unlike convex lenses which converge light."
+  },
+  {
+    question: "Nuclear fusion naturally occurs in:",
+    options: ["The Sun", "X-ray tubes", "Nuclear reactors", "Atomic bombs"],
+    answer: 0,
+    explanation: "The Sun generates energy through nuclear fusion, where hydrogen nuclei combine to form helium under extreme temperature and pressure — nuclear reactors typically use fission, not fusion."
+  },
+  {
+    question: "Pressure is defined by which formula?",
+    options: ["W/t", "F/A", "m×a", "F×A"],
+    answer: 1,
+    explanation: "Pressure is defined as force per unit area (P = F/A), measured in Pascals (N/m²)."
+  },
+  {
+    question: "Inertia of an object is directly dependent on its:",
+    options: ["Force", "Mass", "Velocity", "Acceleration"],
+    answer: 1,
+    explanation: "Inertia is the resistance of an object to changes in its state of motion, and this resistance is directly proportional to the object's mass — greater mass means greater inertia."
+  },
+  {
+    question: "What is the correct SI unit for specific heat capacity?",
+    options: ["J/(kg·°C)", "J/kg", "J/°C", "W"],
+    answer: 0,
+    explanation: "Specific heat capacity is defined as the heat energy required to raise the temperature of 1kg of a substance by 1°C, giving units of J/(kg·°C) or J/(kg·K)."
+  },
+  {
+    question: "A transformer operates using which type of current?",
+    options: ["AC only", "Neither AC nor DC", "Both AC and DC", "DC only"],
+    answer: 0,
+    explanation: "Transformers work on the principle of electromagnetic induction, which requires a changing magnetic field — only alternating current (AC) produces this continuously changing field, not steady DC."
+  },
+  {
+    question: "An alpha particle is essentially:",
+    options: ["A single electron", "A helium nucleus", "A neutron", "A single proton"],
+    answer: 1,
+    explanation: "An alpha particle consists of 2 protons and 2 neutrons, making it identical to a helium nucleus (He²⁺), commonly emitted during radioactive decay."
+  },
+  {
+    question: "What is the latent heat of fusion of ice?",
+    options: ["4200 J/g", "80 J/g", "336 J/g", "2260 J/g"],
+    answer: 2,
+    explanation: "The latent heat of fusion of ice is approximately 336 J/g — the energy required to convert 1g of ice at 0°C to water at 0°C without temperature change. (80 cal/g is the value in calories, a common source of confusion; 2260 J/g is actually the latent heat of vaporization of water.)"
+  },
+  {
+    question: "Which type of wave absolutely requires a medium to propagate?",
+    options: ["Radio waves", "X-rays", "Light", "Sound"],
+    answer: 3,
+    explanation: "Sound waves are mechanical waves that require a physical medium (solid, liquid, or gas) to travel through vibrating particles, unlike electromagnetic waves (light, radio, X-rays) which can travel through a vacuum."
+  },
+  {
+    question: "What is the correct SI unit for electric field strength?",
+    options: ["V/m", "Both A and C are correct", "N/C", "J"],
+    answer: 1,
+    explanation: "Electric field strength can be correctly expressed in either N/C (force per unit charge) or V/m (potential difference per unit distance) — both units are dimensionally equivalent and interchangeable."
+  },
+  {
+    question: "A 60W bulb is used for 5 hours. Calculate the energy consumed in watt-hours.",
+    options: ["1.08 MJ", "300 Wh", "300 J", "12 kWh"],
+    answer: 1,
+    explanation: "Energy = Power × Time = 60W × 5h = 300 Wh (watt-hours)."
+  },
+  {
+    question: "The path followed by a projectile under gravity (ignoring air resistance) is a:",
+    options: ["Parabola", "Straight line", "Hyperbola", "Circle"],
+    answer: 0,
+    explanation: "Projectile motion combines constant horizontal velocity with uniformly accelerated vertical motion (due to gravity), producing a parabolic trajectory."
+  },
+  {
+    question: "Which simple machine can have a mechanical advantage greater than 1?",
+    options: ["All of the above", "Inclined plane", "Lever", "Pulley"],
+    answer: 0,
+    explanation: "All simple machines listed (levers, pulleys, inclined planes) can be configured to provide mechanical advantage greater than 1, depending on their specific arrangement (e.g., lever arm lengths, pulley systems, or incline angles)."
+  },
+  {
+    question: "The density of water is:",
+    options: ["1000 kg/m³", "9.8 (no unit)", "1 g/cm³", "Both B and C are correct"],
+    answer: 3,
+    explanation: "1000 kg/m³ and 1 g/cm³ represent the same density value for water, just expressed in different unit systems (SI vs CGS) — both are correct."
+  },
+  {
+    question: "Which of the following materials is a good conductor of electricity?",
+    options: ["Copper", "Glass", "Wood", "Plastic"],
+    answer: 0,
+    explanation: "Copper has free electrons that move easily through its structure, making it an excellent conductor, while wood, glass, and plastic are insulators that resist electron flow."
+  },
+  {
+    question: "The Doppler effect is primarily used to explain changes in:",
+    options: ["Pitch", "Speed", "Color", "Intensity"],
+    answer: 0,
+    explanation: "The Doppler effect describes the change in frequency (perceived as pitch for sound waves) of a wave as the source moves relative to an observer."
+  },
+  {
+    question: "The beat frequency produced by two sound waves is calculated as:",
+    options: ["f1 - f2 (absolute difference)", "f1 × f2", "f1/f2", "f1 + f2"],
+    answer: 0,
+    explanation: "Beat frequency is the absolute difference between two close frequencies (|f1 - f2|), resulting in periodic variations in amplitude/loudness."
+  },
+  {
+    question: "The photoelectric effect provides evidence for which nature of light?",
+    options: ["Wave nature", "Both wave and particle nature", "Particle nature", "Neither"],
+    answer: 2,
+    explanation: "The photoelectric effect demonstrates that light behaves as discrete packets of energy (photons), supporting the particle nature of light — this couldn't be explained by wave theory alone, leading to Einstein's quantum explanation."
+  },
+  {
+    question: "A capacitor primarily stores:",
+    options: ["Power", "Electric charge", "Voltage", "Current"],
+    answer: 1,
+    explanation: "A capacitor stores electrical energy in the form of separated electric charge on its plates, creating an electric field between them."
+  },
+  {
+    question: "A satellite remains in orbit around Earth due to:",
+    options: ["Gravitational force providing centripetal force", "Thrust from engines", "Centripetal force alone", "Both gravity and centripetal force acting independently"],
+    answer: 0,
+    explanation: "Gravity acts as the centripetal force that continuously pulls the satellite toward Earth, causing it to follow a curved orbital path rather than moving in a straight line — they're not independent forces but the same force serving this function."
+  },
+  {
+    question: "What is the SI unit of moment of force (torque)?",
+    options: ["J", "Nm", "Pa", "W"],
+    answer: 1,
+    explanation: "Moment of force (torque) is calculated as Force × perpendicular distance, giving units of Newton-meters (Nm) — dimensionally similar to Joules but conceptually distinct (torque vs energy)."
+  },
+  {
+    question: "The boiling point of water at standard atmospheric pressure (1 atm) is:",
+    options: ["100°C", "90°C", "212°F", "Both 100°C and 212°F"],
+    answer: 3,
+    explanation: "Water boils at 100°C, which is equivalent to 212°F using the conversion formula °F = (°C × 9/5) + 32 — both values correctly describe the same boiling point."
+  },
+  {
+    question: "Heat transfer through a vacuum occurs only by:",
+    options: ["Conduction", "Convection", "No heat transfer is possible", "Radiation"],
+    answer: 3,
+    explanation: "Radiation is the only heat transfer method that doesn't require a medium, traveling as electromagnetic waves — this is how the Sun's heat reaches Earth through the vacuum of space."
+  },
+  {
+    question: "The refractive index of a medium is defined as:",
+    options: ["v/c", "λf/c", "c/v", "nλ"],
+    answer: 2,
+    explanation: "Refractive index (n) is defined as the ratio of the speed of light in vacuum (c) to the speed of light in the medium (v): n = c/v."
+  },
+  {
+    question: "The electron volt (eV) is a unit of:",
+    options: ["Current", "Energy", "Charge", "Potential difference"],
+    answer: 1,
+    explanation: "An electron volt is defined as the energy gained by an electron accelerated through a potential difference of 1 volt — it's a unit of energy, commonly used in atomic and nuclear physics."
+  },
+  {
+    question: "X-rays typically have wavelengths in the range of:",
+    options: ["Greater than 1mm", "Greater than 1m", "400-700nm", "0.01-10nm"],
+    answer: 3,
+    explanation: "X-rays occupy a specific portion of the electromagnetic spectrum with very short wavelengths (0.01-10nm), much shorter than visible light (400-700nm) but longer than gamma rays."
+  },
+  {
+    question: "A Geiger counter is specifically designed to detect:",
+    options: ["Sound", "Radiation", "Light", "Heat"],
+    answer: 1,
+    explanation: "A Geiger counter detects ionizing radiation (alpha, beta, gamma particles) by measuring the ionization they cause in a gas-filled tube, commonly used in nuclear physics and radiation safety."
+  },
+];
+
+const PHYSICSB = [
+  {
+    question: "The critical angle for total internal reflection depends on:",
+    options: ["Amplitude of light", "The medium only", "Both the wavelength and the medium involved", "Wavelength only"],
+    answer: 2,
+    explanation: "The critical angle is determined by the refractive indices of the two media involved, and since refractive index itself varies slightly with wavelength (dispersion), both factors influence the critical angle."
+  },
+  {
+    question: "Eddy currents, induced in conductors by changing magnetic fields, primarily cause:",
+    options: ["Heating", "Light emission", "Cooling", "Magnetism"],
+    answer: 0,
+    explanation: "Eddy currents are circulating currents induced within a conductor due to changing magnetic flux, and due to the conductor's resistance, this current flow generates heat (energy loss), a principle used in induction heating and braking systems."
+  },
+  {
+    question: "Lenz's Law, which determines the direction of induced current, is fundamentally based on:",
+    options: ["Conservation of mass", "Conservation of energy", "Conservation of momentum", "Conservation of charge"],
+    answer: 1,
+    explanation: "Lenz's Law states that induced current opposes the change causing it — this direction ensures energy is conserved, preventing the creation of energy from nothing (which would violate the law of conservation of energy)."
+  },
+  {
+    question: "A diode is an electronic component that allows current to flow:",
+    options: ["Only during AC cycles", "In one direction only", "In no direction (blocks all current)", "In both directions equally"],
+    answer: 1,
+    explanation: "A diode is designed to allow current flow in only one direction (forward bias) while blocking flow in the reverse direction, making it useful for rectification (converting AC to DC)."
+  },
+  {
+    question: "How many terminals does a standard transistor have?",
+    options: ["4", "5", "2", "3"],
+    answer: 3,
+    explanation: "A standard bipolar junction transistor (BJT) has three terminals: the base, collector, and emitter, which control current flow for amplification or switching purposes."
+  },
+  {
+    question: "A photocell (photovoltaic cell) primarily converts:",
+    options: ["Sound to electricity", "None of the above", "Heat to light", "Light energy to electrical energy"],
+    answer: 3,
+    explanation: "A photocell uses the photoelectric or photovoltaic effect to convert light energy directly into electrical energy, commonly used in solar panels and light sensors."
+  },
+  {
+    question: "What is the orbital period of a geostationary satellite?",
+    options: ["48 hours", "7 days", "24 hours", "12 hours"],
+    answer: 2,
+    explanation: "A geostationary satellite orbits at a specific altitude and speed such that its orbital period exactly matches Earth's rotational period (24 hours), allowing it to remain fixed relative to a point on Earth's surface."
+  },
+  {
+    question: "Capillarity (the rise or fall of liquid in a narrow tube) is caused by:",
+    options: ["Viscosity", "Plasticity", "Elasticity", "Surface tension"],
+    answer: 3,
+    explanation: "Capillary action occurs due to surface tension and adhesive forces between the liquid and the tube's walls, causing the liquid to rise (or fall) in narrow spaces against gravity."
+  },
+  {
+    question: "What is the correct SI unit for viscosity?",
+    options: ["N/m", "W", "Pa·s", "J"],
+    answer: 2,
+    explanation: "Viscosity, which measures a fluid's resistance to flow, is measured in Pascal-seconds (Pa·s) in SI units, representing the relationship between shear stress and shear rate."
+  },
+  {
+    question: "The elastic limit of a material refers to:",
+    options: ["The point where permanent deformation occurs", "Maximum strain experienced", "The point where breaking occurs", "The point of maximum applied stress before permanent deformation begins"],
+    answer: 3,
+    explanation: "The elastic limit is the maximum stress a material can withstand while still returning to its original shape once the force is removed — beyond this point, permanent (plastic) deformation occurs."
+  },
+  {
+    question: "The period of a simple pendulum primarily depends on:",
+    options: ["The amplitude of swing", "The material of the bob", "The length of the pendulum", "The mass of the bob"],
+    answer: 2,
+    explanation: "The period of a simple pendulum is given by T = 2π√(L/g), showing dependence only on length (L) and gravitational acceleration (g) — not on mass or amplitude (for small oscillations)."
+  },
+  {
+    question: "Resonance in a system occurs when:",
+    options: ["The applied frequency is greater than the natural frequency", "The applied frequency equals the natural frequency of the system", "Frequency has no effect on resonance", "The applied frequency is less than the natural frequency"],
+    answer: 1,
+    explanation: "Resonance occurs when an external driving force matches the natural (resonant) frequency of a system, causing amplitude to increase dramatically due to constructive reinforcement of oscillations."
+  },
+  {
+    question: "A thermos flask reduces heat loss by minimizing which methods of heat transfer?",
+    options: ["Conduction only", "All three methods (conduction, convection, and radiation)", "Radiation only", "Convection only"],
+    answer: 1,
+    explanation: "A thermos flask uses a vacuum layer (prevents conduction and convection) and silvered/reflective walls (minimizes radiation), effectively reducing heat transfer through all three mechanisms."
+  },
+  {
+    question: "Beta particles emitted during radioactive decay are essentially:",
+    options: ["Photons", "Protons", "Neutrons", "High-energy electrons"],
+    answer: 3,
+    explanation: "Beta particles are high-energy, high-speed electrons (or positrons) emitted from the nucleus during beta decay, when a neutron converts into a proton (or vice versa)."
+  },
+  {
+    question: "Gamma rays are characterized as:",
+    options: ["Charged particles", "Heavy particles", "Slow-moving particles", "Uncharged electromagnetic radiation"],
+    answer: 3,
+    explanation: "Unlike alpha and beta particles, gamma rays are high-energy electromagnetic waves (photons) with no mass and no electric charge, making them highly penetrating."
+  },
+  {
+    question: "The half-life of a specific radioactive substance is:",
+    options: ["Variable and decreases over time", "Variable and increases over time", "A constant value unique to that substance", "Dependent on external temperature"],
+    answer: 2,
+    explanation: "Half-life is an intrinsic, constant property of a radioactive isotope, representing the time required for half of the sample to decay — it remains unchanged regardless of external conditions like temperature or pressure."
+  },
+  {
+    question: "Which isotope is commonly used as fuel in nuclear reactors?",
+    options: ["Oxygen-16", "Uranium-235", "Carbon-12", "Hydrogen-1"],
+    answer: 1,
+    explanation: "Uranium-235 is fissile, meaning its nucleus can be split by neutron bombardment to release large amounts of energy through nuclear fission, making it the primary fuel in most nuclear reactors."
+  },
+  {
+    question: "Laser light is distinguished from ordinary light by being:",
+    options: ["Coherent (waves in phase)", "Random in phase", "Incoherent", "Diffused in direction"],
+    answer: 0,
+    explanation: "Laser light is coherent, meaning all light waves are in phase with each other, both spatially and temporally — this property allows lasers to maintain focus over long distances, unlike ordinary incoherent light sources."
+  },
+  {
+    question: "Fiber optic cables transmit light signals primarily using the principle of:",
+    options: ["Total internal reflection (TIR)", "Refraction", "Diffraction", "Simple reflection"],
+    answer: 0,
+    explanation: "Fiber optics work by trapping light within the core of the fiber through total internal reflection, occurring when light hits the core-cladding boundary at an angle greater than the critical angle, allowing signals to travel long distances with minimal loss."
+  },
+  {
+    question: "GPS (Global Positioning System) technology primarily relies on which type of waves for communication?",
+    options: ["Ultraviolet waves", "Microwaves", "Infrared waves", "Standard radio waves"],
+    answer: 1,
+    explanation: "GPS satellites communicate using microwave signals (a subset of radio waves, but specifically in the microwave frequency range), which can penetrate the atmosphere effectively and provide precise timing signals for location triangulation."
+  },
+];
+
+const PHYSICSC = [
+  {
+    question: "The dimensional formula for density is:",
+    options: ["[ML³]", "[ML⁻²]", "[M⁻¹L³]", "[ML⁻³]"],
+    answer: 3,
+    explanation: "Density = mass/volume = M/L³, giving dimensions [ML⁻³]."
+  },
+  {
+    question: "Which of the following is a fundamental (base) SI unit?",
+    options: ["Watt", "Kilogram", "Newton", "Joule"],
+    answer: 1,
+    explanation: "The kilogram is one of the seven SI base units (mass), while Newton, Joule, and Watt are all derived units built from combinations of base units."
+  },
+  {
+    question: "A measurement of 0.004050 has how many significant figures?",
+    options: ["4", "5", "3", "7"],
+    answer: 0,
+    explanation: "Leading zeros are not significant, but the zero between non-zero digits (4050) and the trailing zero after the decimal point are significant — giving 4, 0, 5, 0 = 4 significant figures."
+  },
+  {
+    question: "The dimensional formula for force is:",
+    options: ["[MLT⁻²]", "[MLT⁻¹]", "[MLT⁻³]", "[ML²T⁻²]"],
+    answer: 0,
+    explanation: "Force = mass × acceleration = M × (LT⁻²) = [MLT⁻²]."
+  },
+  {
+    question: "Which of the following pairs has the same dimensions?",
+    options: ["Momentum and Force", "Work and Torque", "Work and Power", "Force and Pressure"],
+    answer: 1,
+    explanation: "Both work (F×d) and torque (F×d, perpendicular distance) have dimensions [ML²T⁻²], even though they represent physically different concepts."
+  },
+  {
+    question: "A student measures the length of a table three times and gets 1.20m, 1.22m, and 1.21m. What is considered the precision of these measurements?",
+    options: ["Low precision, high accuracy", "High precision, unknown accuracy", "Low precision, low accuracy", "High precision, high accuracy"],
+    answer: 1,
+    explanation: "Precision refers to how close repeated measurements are to each other (these values are very close, showing high precision), but accuracy (closeness to the true value) cannot be determined without knowing the actual length."
+  },
+  {
+    question: "Convert 72 km/h to m/s.",
+    options: ["7.2 m/s", "72 m/s", "20 m/s", "25.9 m/s"],
+    answer: 2,
+    explanation: "72 km/h × (1000m/1km) × (1h/3600s) = 72 × 1000/3600 = 20 m/s."
+  },
+  {
+    question: "Which instrument is most suitable for measuring the diameter of a thin wire accurately?",
+    options: ["Measuring tape", "Meter rule", "Screw gauge (micrometer)", "Vernier caliper"],
+    answer: 2,
+    explanation: "A screw gauge (micrometer) has the highest precision (up to 0.01mm) among these instruments, making it ideal for measuring very small dimensions like wire diameter."
+  },
+  {
+    question: "The dimensional formula [ML²T⁻³] represents which physical quantity?",
+    options: ["Power", "Force", "Energy", "Pressure"],
+    answer: 0,
+    explanation: "Power = Work/Time = (ML²T⁻²)/T = [ML²T⁻³], distinguishing it from energy which lacks the extra T⁻¹ term."
+  },
+  {
+    question: "Two quantities can only be added or subtracted if they have:",
+    options: ["The same numerical value", "The same dimensions", "The same unit system", "The same magnitude"],
+    answer: 1,
+    explanation: "The principle of dimensional homogeneity requires that only quantities with identical dimensions can be added or subtracted (e.g., you cannot add length to time)."
+  },
+  {
+    question: "Which of the following is a scalar quantity?",
+    options: ["Energy", "Momentum", "Velocity", "Acceleration"],
+    answer: 0,
+    explanation: "Energy has magnitude only and no specific direction, making it a scalar, unlike velocity, acceleration, and momentum, which are all vectors."
+  },
+  {
+    question: "Two forces of 3N and 4N act perpendicular to each other. Find the resultant force.",
+    options: ["12N", "5N", "7N", "1N"],
+    answer: 1,
+    explanation: "For perpendicular vectors, resultant = √(3² + 4²) = √(9+16) = √25 = 5N (Pythagorean theorem)."
+  },
+  {
+    question: "The resultant of two vectors is maximum when the angle between them is:",
+    options: ["90°", "45°", "0°", "180°"],
+    answer: 2,
+    explanation: "When two vectors point in the same direction (0° between them), their magnitudes add directly, producing the maximum possible resultant (R = A + B)."
+  },
+  {
+    question: "A vector of magnitude 10 units is directed at 30° to the horizontal. What is its horizontal component?",
+    options: ["5 units", "7.07 units", "8.66 units", "10 units"],
+    answer: 2,
+    explanation: "Horizontal component = magnitude × cos(θ) = 10 × cos(30°) = 10 × 0.866 = 8.66 units."
+  },
+  {
+    question: "Which of the following statements about vector subtraction is correct?",
+    options: ["A - B = B - A", "Vector subtraction always gives a scalar", "Vector subtraction is commutative", "A - B = -(B - A)"],
+    answer: 3,
+    explanation: "Vector subtraction is not commutative — reversing the order reverses the direction of the resultant vector, hence A - B = -(B - A)."
+  },
+  {
+    question: "The resultant of two equal vectors acting at 120° to each other is:",
+    options: ["Equal to one of the vectors", "Equal to twice one vector", "Equal to zero", "Equal to the square root of the sum"],
+    answer: 0,
+    explanation: "Using the resultant formula R = √(A² + B² + 2AB cos θ), with A = B and θ = 120° (cos120° = -0.5): R = √(A² + A² - A²) = √(A²) = A, equal to one vector's magnitude."
+  },
+  {
+    question: "Which of these is NOT a vector quantity?",
+    options: ["Speed", "Torque", "Weight", "Displacement"],
+    answer: 0,
+    explanation: "Speed is a scalar (magnitude only), unlike velocity which includes direction. Weight, displacement, and torque all have both magnitude and direction."
+  },
+  {
+    question: "A boat's velocity relative to water is 5 m/s, and the water current flows at 3 m/s in the same direction. Find the boat's resultant velocity relative to the ground.",
+    options: ["2 m/s", "8 m/s", "15 m/s", "4 m/s"],
+    answer: 1,
+    explanation: "When both velocities are in the same direction, they simply add: 5 + 3 = 8 m/s."
+  },
+  {
+    question: "The process of finding the components of a vector along perpendicular axes is called:",
+    options: ["Vector addition", "Scalar multiplication", "Vector resolution", "Vector multiplication"],
+    answer: 2,
+    explanation: "Vector resolution is the process of breaking down a single vector into two (or more) perpendicular components, commonly horizontal and vertical."
+  },
+  {
+    question: "Two vectors A and B have magnitudes 6 and 8 respectively, acting at 180° to each other. Find their resultant.",
+    options: ["10", "2", "48", "14"],
+    answer: 1,
+    explanation: "When vectors act in exactly opposite directions (180°), the resultant is simply the difference in magnitudes: 8 - 6 = 2."
+  },
+  {
+    question: "A car accelerates uniformly from rest to 20 m/s in 5 seconds. Calculate its acceleration.",
+    options: ["100 m/s²", "4 m/s²", "25 m/s²", "15 m/s²"],
+    answer: 1,
+    explanation: "a = (v-u)/t = (20-0)/5 = 4 m/s²."
+  },
+  {
+    question: "Which equation of motion correctly relates final velocity, initial velocity, acceleration, and displacement (without time)?",
+    options: ["s = vt", "s = ut + ½at²", "v² = u² + 2as", "v = u + at"],
+    answer: 2,
+    explanation: "This is the third equation of motion, specifically derived to relate velocity and displacement without requiring time as a variable."
+  },
+  {
+    question: "An object is thrown vertically upward with an initial velocity of 20 m/s. How long does it take to reach maximum height? (g = 10 m/s²)",
+    options: ["4s", "0.5s", "2s", "1s"],
+    answer: 2,
+    explanation: "At maximum height, final velocity = 0. Using v = u - gt: 0 = 20 - 10t, so t = 2s."
+  },
+  {
+    question: "The area under a velocity-time graph represents:",
+    options: ["Speed", "Displacement", "Force", "Acceleration"],
+    answer: 1,
+    explanation: "Since velocity × time = displacement, the area enclosed under a velocity-time graph gives the total displacement covered."
+  },
+  {
+    question: "A body falls freely from rest. What is its velocity after falling for 3 seconds? (g = 10 m/s²)",
+    options: ["3.33 m/s", "90 m/s", "13 m/s", "30 m/s"],
+    answer: 3,
+    explanation: "v = u + gt = 0 + (10×3) = 30 m/s."
+  },
+  {
+    question: "The slope of a displacement-time graph represents:",
+    options: ["Acceleration", "Force", "Velocity", "Distance"],
+    answer: 2,
+    explanation: "Velocity is the rate of change of displacement with time, which is exactly what the gradient (slope) of a displacement-time graph shows."
+  },
+  {
+    question: "A stone is dropped from a height of 45m. How long does it take to hit the ground? (g = 10 m/s²)",
+    options: ["3s", "2.12s", "4.5s", "9s"],
+    answer: 0,
+    explanation: "Using s = ½gt²: 45 = ½ × 10 × t², so 90 = 10t², t² = 9, t = 3s."
+  },
+  {
+    question: "Which of the following best describes uniform acceleration?",
+    options: ["Velocity changing at varying rates", "Increasing velocity at a constant rate", "Constant velocity", "Zero velocity throughout"],
+    answer: 1,
+    explanation: "Uniform acceleration means the velocity changes by equal amounts in equal time intervals — a constant rate of change, not necessarily just \"increasing\" (could also be uniformly decreasing/deceleration)."
+  },
+  {
+    question: "A car travels at 30 m/s and decelerates uniformly to rest over 100m. Find the deceleration.",
+    options: ["6 m/s²", "15 m/s²", "3 m/s²", "4.5 m/s²"],
+    answer: 3,
+    explanation: "Using v² = u² - 2as (deceleration): 0 = 30² - 2a(100), so 2a(100) = 900, a = 900/200 = 4.5 m/s²."
+  },
+  {
+    question: "Which quantity remains constant for a body undergoing uniform circular motion at constant speed?",
+    options: ["Acceleration", "Direction", "Speed", "Velocity"],
+    answer: 2,
+    explanation: "In uniform circular motion, speed (magnitude of velocity) remains constant, but velocity itself constantly changes direction, and acceleration (centripetal) is also constantly changing direction while maintaining constant magnitude."
+  },
+  {
+    question: "Newton's First Law of Motion is fundamentally about:",
+    options: ["Force and acceleration relationship", "Inertia", "Momentum conservation", "Action-reaction pairs"],
+    answer: 1,
+    explanation: "Newton's First Law (Law of Inertia) states that an object remains at rest or in uniform motion unless acted upon by an external force — this describes the concept of inertia."
+  },
+  {
+    question: "A net force of 20N acts on a 4kg mass. Calculate the resulting acceleration.",
+    options: ["16 m/s²", "5 m/s²", "24 m/s²", "80 m/s²"],
+    answer: 1,
+    explanation: "Using F = ma: a = F/m = 20/4 = 5 m/s²."
+  },
+  {
+    question: "Newton's Third Law states that:",
+    options: ["Force equals mass times acceleration", "Objects in motion stay in motion", "For every action, there is an equal and opposite reaction", "Momentum is conserved"],
+    answer: 2,
+    explanation: "This is the precise statement of Newton's Third Law, describing how forces always occur in equal and opposite pairs between interacting objects."
+  },
+  {
+    question: "Which of the following best describes mass?",
+    options: ["A measure of an object's inertia (amount of matter)", "Dependent on location", "The force of gravity acting on an object", "A vector quantity"],
+    answer: 0,
+    explanation: "Mass is a scalar measure of the amount of matter in an object and its resistance to acceleration (inertia) — unlike weight, mass does not change with location (like on the Moon vs Earth)."
+  },
+  {
+    question: "A 10kg object rests on a frictionless surface. What horizontal force is needed to accelerate it at 3 m/s²?",
+    options: ["13N", "30N", "7N", "3.33N"],
+    answer: 1,
+    explanation: "F = ma = 10 × 3 = 30N."
+  },
+  {
+    question: "Which of these is an example of Newton's Third Law in action?",
+    options: ["A ball rolling to a stop due to friction", "A car accelerating when the accelerator is pressed", "A book remaining stationary on a table", "A rocket propelling forward by expelling gas backward"],
+    answer: 3,
+    explanation: "Rocket propulsion demonstrates action-reaction pairs directly — the rocket pushes gas backward (action), and the gas pushes the rocket forward (reaction), following Newton's Third Law."
+  },
+  {
+    question: "The weight of a 5kg object on Earth (g = 10 m/s²) is:",
+    options: ["5N", "50N", "0.5N", "15N"],
+    answer: 1,
+    explanation: "Weight = mass × gravitational acceleration = 5 × 10 = 50N."
+  },
+  {
+    question: "Which factor does NOT affect the frictional force between two surfaces?",
+    options: ["Nature of the surfaces", "Normal force", "Area of contact", "Type of material"],
+    answer: 2,
+    explanation: "Contrary to intuition, frictional force is generally independent of the apparent contact area — it depends primarily on the normal force and the coefficient of friction (surface roughness/material)."
+  },
+  {
+    question: "A 2kg ball moving at 5 m/s collides with a wall and bounces back at 3 m/s. If the collision lasts 0.1s, calculate the average force exerted by the wall.",
+    options: ["160N", "40N", "16N", "100N"],
+    answer: 0,
+    explanation: "Using impulse-momentum theorem: F = m(v-u)/t = 2 × (-3 - 5)/0.1 = 2 × (-8)/0.1 = -160N (magnitude 160N, direction opposite to initial motion)."
+  },
+  {
+    question: "According to Newton's Second Law, force is directly proportional to:",
+    options: ["Mass only", "Rate of change of momentum", "Velocity only", "Displacement"],
+    answer: 1,
+    explanation: "Newton's Second Law in its most general form states that force equals the rate of change of momentum (F = dp/dt), which simplifies to F = ma when mass is constant."
+  },
+  {
+    question: "Calculate the work done when a force of 50N moves an object 8m in the direction of the force.",
+    options: ["58J", "400J", "42J", "6.25J"],
+    answer: 1,
+    explanation: "Work = Force × displacement × cos(θ) = 50 × 8 × cos(0°) = 50 × 8 × 1 = 400J."
+  },
+  {
+    question: "The potential energy of a 2kg object raised to a height of 5m is: (g = 10 m/s²)",
+    options: ["50J", "10J", "25J", "100J"],
+    answer: 3,
+    explanation: "PE = mgh = 2 × 10 × 5 = 100J."
+  },
+  {
+    question: "Which of the following is NOT a form of mechanical energy?",
+    options: ["Kinetic energy", "Elastic potential energy", "Chemical energy", "Potential energy"],
+    answer: 2,
+    explanation: "Chemical energy is stored in molecular bonds and released through chemical reactions — it is not classified as mechanical energy, unlike kinetic, gravitational potential, and elastic potential energy."
+  },
+  {
+    question: "A machine does 500J of work in 10 seconds. Calculate its power output.",
+    options: ["5000W", "510W", "5W", "50W"],
+    answer: 3,
+    explanation: "Power = Work/Time = 500/10 = 50W."
+  },
+  {
+    question: "According to the work-energy theorem, the work done on an object equals:",
+    options: ["Its momentum change", "Its change in kinetic energy", "Its change in potential energy", "Its total energy"],
+    answer: 1,
+    explanation: "The work-energy theorem states that the net work done on an object equals the change in its kinetic energy (W = ΔKE), a direct consequence of Newton's laws."
+  },
+  {
+    question: "A spring with spring constant 200 N/m is compressed by 0.1m. Calculate the elastic potential energy stored.",
+    options: ["1J", "200J", "2J", "20J"],
+    answer: 0,
+    explanation: "Elastic PE = ½kx² = ½ × 200 × (0.1)² = ½ × 200 × 0.01 = 1J."
+  },
+  {
+    question: "Which statement about energy conversion is correct in a hydroelectric power plant?",
+    options: ["Nuclear energy converts to mechanical energy", "Gravitational PE converts to kinetic energy, then to electrical energy", "Solar energy converts to thermal energy", "Chemical energy converts to electrical energy"],
+    answer: 1,
+    explanation: "In hydroelectric plants, water stored at height has gravitational potential energy, which converts to kinetic energy as it falls, turning turbines to generate electrical energy."
+  },
+  {
+    question: "A 60kg person climbs a staircase of height 4m in 8 seconds. Calculate the power exerted. (g = 10 m/s²)",
+    options: ["30W", "300W", "240W", "480W"],
+    answer: 1,
+    explanation: "Power = Work/Time = (mgh)/t = (60×10×4)/8 = 2400/8 = 300W."
+  },
+  {
+    question: "The efficiency of a machine is defined as:",
+    options: ["The ratio of input work to output work", "Total energy output", "The ratio of useful output energy to total input energy", "Total energy input"],
+    answer: 2,
+    explanation: "Efficiency = (Useful output energy/Total input energy) × 100%, measuring how effectively a machine converts input energy into useful work, accounting for losses (like friction/heat)."
+  },
+  {
+    question: "A car of mass 1000kg moving at 20 m/s has kinetic energy equal to:",
+    options: ["400,000J", "20,000J", "200,000J", "100,000J"],
+    answer: 2,
+    explanation: "KE = ½mv² = ½ × 1000 × 20² = ½ × 1000 × 400 = 200,000J."
+  },
+];
+
+const PHYSICSD = [
+  {
+    question: "A 3kg object moving at 4 m/s collides and sticks to a stationary 1kg object. Calculate their common velocity after collision.",
+    options: ["1 m/s", "3 m/s", "2 m/s", "4 m/s"],
+    answer: 1,
+    explanation: "Using conservation of momentum: m1u1 = (m1+m2)v → 3×4 = (3+1)v → 12 = 4v → v = 3 m/s."
+  },
+  {
+    question: "Which type of collision conserves both momentum and kinetic energy?",
+    options: ["Perfectly inelastic collision", "Elastic collision", "Explosive collision", "Inelastic collision"],
+    answer: 1,
+    explanation: "In an elastic collision, both momentum and kinetic energy are conserved, unlike inelastic collisions where kinetic energy is lost (converted to heat, sound, or deformation)."
+  },
+  {
+    question: "A gun of mass 2kg fires a 0.01kg bullet at 400 m/s. Calculate the recoil velocity of the gun.",
+    options: ["8 m/s", "2 m/s", "0.5 m/s", "4 m/s"],
+    answer: 1,
+    explanation: "Using conservation of momentum (initial momentum = 0): m(gun)×v(gun) = m(bullet)×v(bullet) → 2×v = 0.01×400 → v = 4/2 = 2 m/s."
+  },
+  {
+    question: "Momentum is defined as the product of:",
+    options: ["Force and time", "Force and displacement", "Mass and velocity", "Mass and displacement"],
+    answer: 2,
+    explanation: "Momentum (p) = mass × velocity (p = mv), a vector quantity that indicates the quantity of motion an object possesses."
+  },
+  {
+    question: "In a perfectly inelastic collision, what happens to the colliding objects?",
+    options: ["They stick together and move with a common velocity", "They exchange velocities", "They separate with equal speeds", "They bounce back with the same speed"],
+    answer: 0,
+    explanation: "A perfectly inelastic collision is defined by the colliding objects sticking together after impact, moving with a single common velocity, and kinetic energy is not conserved."
+  },
+  {
+    question: "Two objects of masses 5kg and 3kg move toward each other at 4 m/s and 2 m/s respectively. Calculate the total momentum of the system before collision (taking the 5kg object's direction as positive).",
+    options: ["20 kg·m/s", "6 kg·m/s", "14 kg·m/s", "26 kg·m/s"],
+    answer: 2,
+    explanation: "Total momentum = (5×4) + (3×(-2)) = 20 - 6 = 14 kg·m/s (the second object moves in the opposite direction, hence negative)."
+  },
+  {
+    question: "Impulse is equal to:",
+    options: ["Force times distance", "Force divided by time", "Change in momentum", "Mass times acceleration"],
+    answer: 2,
+    explanation: "Impulse (J = FΔt) is defined as the product of force and the time it acts, and by Newton's Second Law, this equals the change in momentum of the object (J = Δp)."
+  },
+  {
+    question: "In an elastic collision between two objects of equal mass, where one is initially at rest, what happens after collision?",
+    options: ["Both objects move together", "The moving object stops, and the stationary object moves with the initial velocity", "Both objects move with half the initial velocity", "The moving object continues, and the stationary one remains at rest"],
+    answer: 1,
+    explanation: "For elastic collisions between equal masses (one initially at rest), a complete transfer of velocity occurs — the incoming object stops, and the target object moves off with the exact initial velocity, conserving both momentum and kinetic energy."
+  },
+  {
+    question: "A ball of mass 0.5kg hits a wall at 6 m/s and bounces back at 4 m/s. Calculate the change in momentum.",
+    options: ["5 kg·m/s", "1 kg·m/s", "2 kg·m/s", "3 kg·m/s"],
+    answer: 0,
+    explanation: "Change in momentum = m(v-u) = 0.5 × (-4 - 6) = 0.5 × (-10) = -5 kg·m/s (magnitude 5 kg·m/s, direction reversed)."
+  },
+  {
+    question: "The law of conservation of momentum applies to:",
+    options: ["All systems regardless of external forces", "Isolated systems with no external forces", "Only elastic collisions", "Only inelastic collisions"],
+    answer: 1,
+    explanation: "Momentum is conserved specifically in isolated (closed) systems where no external net force acts — this applies to both elastic and inelastic collisions as long as the system remains isolated."
+  },
+  {
+    question: "The centripetal force acting on an object in circular motion is directed:",
+    options: ["Toward the center of the circle", "In the direction of motion", "Away from the center", "Tangent to the circle"],
+    answer: 0,
+    explanation: "Centripetal force always acts toward the center of the circular path, continuously changing the direction of velocity to maintain circular motion (without it, the object would move in a straight line)."
+  },
+  {
+    question: "A 2kg object moves in a circle of radius 0.5m at 4 m/s. Calculate the centripetal force required.",
+    options: ["8N", "4N", "16N", "64N"],
+    answer: 3,
+    explanation: "Fc = mv²/r = 2 × 4²/0.5 = 2 × 16/0.5 = 32/0.5 = 64N."
+  },
+  {
+    question: "Which of the following best describes angular velocity?",
+    options: ["Speed of an object", "Rate of change of angular displacement", "Force causing rotation", "Distance traveled per unit time"],
+    answer: 1,
+    explanation: "Angular velocity (ω) measures how quickly an object rotates or revolves, defined as the rate of change of angular displacement with respect to time."
+  },
+  {
+    question: "For a car navigating a banked curve, the banking angle helps provide:",
+    options: ["Reduced gravitational force", "Reduced speed", "Increased friction", "Additional centripetal force component"],
+    answer: 3,
+    explanation: "Banking a curve tilts the normal force so that a component of it contributes to the centripetal force needed for circular motion, reducing dependency on friction alone (especially useful at high speeds)."
+  },
+  {
+    question: "An object moving in uniform circular motion has constant:",
+    options: ["Velocity", "Acceleration", "Speed", "Displacement"],
+    answer: 2,
+    explanation: "In uniform circular motion, speed remains constant, but velocity changes continuously due to changing direction, and acceleration (centripetal) also constantly changes direction while maintaining constant magnitude."
+  },
+  {
+    question: "The relationship between linear velocity (v) and angular velocity (ω) for circular motion is given by:",
+    options: ["v = ω²r", "v = ωr", "v = ω/r", "v = ω + r"],
+    answer: 1,
+    explanation: "Linear velocity equals angular velocity multiplied by the radius of the circular path (v = ωr), showing points farther from the center move faster for the same angular velocity."
+  },
+  {
+    question: "A car takes a turn too fast on a flat road and skids outward. This happens because:",
+    options: ["There is no centripetal force", "Friction force is too high", "The car's mass increased", "Centripetal force exceeds available friction"],
+    answer: 3,
+    explanation: "When the required centripetal force (based on speed and turn radius) exceeds the maximum static friction available between tires and road, the car cannot maintain the circular path and skids outward."
+  },
+  {
+    question: "Calculate the angular velocity of a wheel completing 10 revolutions in 5 seconds.",
+    options: ["10π rad/s", "20π rad/s", "2π rad/s", "4π rad/s"],
+    answer: 3,
+    explanation: "ω = 2πn/t = 2π×10/5 = 20π/5 = 4π rad/s."
+  },
+  {
+    question: "Which force provides the centripetal force for satellites orbiting Earth?",
+    options: ["Frictional force", "Gravitational force", "Normal force", "Tension"],
+    answer: 1,
+    explanation: "Earth's gravitational pull on the satellite acts as the centripetal force, continuously pulling it toward Earth's center and maintaining its curved orbital path."
+  },
+  {
+    question: "In circular motion, if the radius doubles while speed remains constant, the centripetal force:",
+    options: ["Quadruples", "Remains the same", "Doubles", "Halves"],
+    answer: 3,
+    explanation: "Since Fc = mv²/r, and force is inversely proportional to radius (with v and m constant), doubling r results in the force being halved."
+  },
+  {
+    question: "According to Newton's Law of Universal Gravitation, gravitational force between two masses is:",
+    options: ["Directly proportional to distance", "Independent of mass", "Directly proportional to the square of distance", "Inversely proportional to the square of the distance between them"],
+    answer: 3,
+    explanation: "Newton's Law states F = Gm1m2/r², showing gravitational force decreases with the square of the distance between two masses (inverse square law)."
+  },
+  {
+    question: "If the distance between two masses is tripled, the gravitational force between them becomes:",
+    options: ["Nine times weaker", "Three times stronger", "Three times weaker", "Nine times stronger"],
+    answer: 0,
+    explanation: "Since F ∝ 1/r², tripling the distance (r→3r) means the force becomes 1/3² = 1/9 of the original value — nine times weaker."
+  },
+  {
+    question: "The gravitational field strength on Earth's surface is approximately:",
+    options: ["9.8 N/kg", "100 N/kg", "3×10⁸ N/kg", "6.67×10⁻¹¹ N/kg"],
+    answer: 0,
+    explanation: "Gravitational field strength (g) at Earth's surface equals approximately 9.8 N/kg, numerically identical to the acceleration due to gravity (9.8 m/s²)."
+  },
+  {
+    question: "Which of the following statements about gravitational potential energy is correct?",
+    options: ["It increases as objects move closer together", "It is always positive", "It becomes zero at infinite distance and negative closer to the mass", "It only depends on mass, not distance"],
+    answer: 2,
+    explanation: "Gravitational potential energy is conventionally defined as zero at infinite separation and becomes increasingly negative as objects move closer together (since gravity does positive work as objects approach)."
+  },
+  {
+    question: "Two objects of mass 4kg and 6kg are separated by 2m. Calculate the gravitational force between them. (G = 6.67×10⁻¹¹ Nm²/kg²)",
+    options: ["2×10⁻¹⁰ N", "8×10⁻¹⁰ N", "4×10⁻¹¹ N", "4×10⁻¹⁰ N"],
+    answer: 3,
+    explanation: "F = Gm1m2/r² = (6.67×10⁻¹¹ × 4 × 6)/2² = (6.67×10⁻¹¹ × 24)/4 = 1.6×10⁻⁹/4 ≈ 4×10⁻¹⁰ N."
+  },
+  {
+    question: "Why do astronauts experience \"weightlessness\" in orbit around Earth?",
+    options: ["They are in continuous free fall along with their spacecraft", "There is no gravity in space", "Gravity is cancelled by centrifugal force", "Earth's gravitational pull doesn't reach that far"],
+    answer: 0,
+    explanation: "Astronauts and their spacecraft are both in continuous free fall toward Earth (following the curved orbital path), so there's no normal force from a surface pushing back on them, creating the sensation of weightlessness — not because gravity is absent."
+  },
+  {
+    question: "Kepler's Third Law relates a planet's orbital period to:",
+    options: ["Its distance from the sun (specifically the cube of semi-major axis)", "Its rotational speed", "Its mass only", "Its gravitational field strength"],
+    answer: 0,
+    explanation: "Kepler's Third Law states that the square of a planet's orbital period is proportional to the cube of its semi-major axis (average distance from the sun): T² ∝ r³."
+  },
+  {
+    question: "The value of gravitational acceleration (g) decreases as altitude increases because:",
+    options: ["Earth's rotation speeds up", "Air resistance increases", "Distance from Earth's center increases, weakening gravitational pull", "Mass of the object decreases"],
+    answer: 2,
+    explanation: "Since gravitational force follows an inverse square law with distance from Earth's center, increasing altitude increases this distance, thereby reducing the gravitational acceleration experienced."
+  },
+  {
+    question: "The universal gravitational constant (G) has units of:",
+    options: ["m/s²", "N/kg", "kg/m³", "Nm²/kg²"],
+    answer: 3,
+    explanation: "G is derived from rearranging F = Gm1m2/r² to G = Fr²/m1m2, giving units of N·m²/kg² (Newton meter squared per kilogram squared)."
+  },
+  {
+    question: "If Earth's mass suddenly doubled while its radius remained the same, the gravitational acceleration at its surface would:",
+    options: ["Quadruple", "Remain the same", "Halve", "Double"],
+    answer: 3,
+    explanation: "Since g = GM/r², and g is directly proportional to mass (with radius constant), doubling Earth's mass would directly double the gravitational acceleration."
+  },
+  {
+    question: "Young's modulus is a measure of a material's:",
+    options: ["Melting point", "Stiffness/elasticity in the direction of applied force", "Thermal conductivity", "Density"],
+    answer: 1,
+    explanation: "Young's modulus (E = stress/strain) quantifies how much a material resists deformation under tensile or compressive stress, essentially measuring its stiffness."
+  },
+  {
+    question: "A wire of original length 2m stretches to 2.02m under tension. Calculate the strain.",
+    options: ["0.01", "0.1", "1.01", "0.02"],
+    answer: 0,
+    explanation: "Strain = extension/original length = 0.02/2 = 0.01 (dimensionless ratio)."
+  },
+  {
+    question: "Which state of matter has a definite volume but no definite shape?",
+    options: ["Gas", "Solid", "Liquid", "Plasma"],
+    answer: 2,
+    explanation: "Liquids maintain a fixed volume (particles are closely packed) but take the shape of their container due to their ability to flow, unlike solids (fixed shape and volume) or gases (neither fixed)."
+  },
+  {
+    question: "Surface tension in liquids is primarily caused by:",
+    options: ["Temperature differences", "Cohesive forces between liquid molecules at the surface", "Atmospheric pressure", "Gravitational forces between molecules"],
+    answer: 1,
+    explanation: "Surface tension arises because surface molecules experience net inward cohesive forces (unlike molecules within the bulk liquid), creating a \"skin-like\" effect that minimizes surface area."
+  },
+  {
+    question: "The elastic limit of a material refers to the point beyond which:",
+    options: ["Stress becomes zero", "The material breaks immediately", "The material returns to its original shape", "Permanent deformation occurs"],
+    answer: 3,
+    explanation: "Beyond the elastic limit, a material no longer returns to its original shape when the deforming force is removed — permanent (plastic) deformation occurs."
+  },
+  {
+    question: "Which factor does NOT affect the viscosity of a liquid?",
+    options: ["Nature of the liquid", "Color of the liquid", "Intermolecular forces", "Temperature"],
+    answer: 1,
+    explanation: "Viscosity depends on molecular properties like intermolecular forces, temperature, and the liquid's inherent nature — color is a visual property unrelated to flow resistance."
+  },
+  {
+    question: "A force of 500N is applied to a wire with cross-sectional area 2×10⁻⁶ m². Calculate the stress.",
+    options: ["2.5×10⁸ N/m²", "2.5×10⁻⁹ N/m²", "1000 N/m²", "250 N/m²"],
+    answer: 0,
+    explanation: "Stress = Force/Area = 500/(2×10⁻⁶) = 2.5×10⁸ N/m²."
+  },
+  {
+    question: "Which of the following best describes Hooke's Law?",
+    options: ["Stress is inversely proportional to strain", "Extension is directly proportional to applied force (within elastic limit)", "Force equals mass times acceleration", "Pressure equals force over area"],
+    answer: 1,
+    explanation: "Hooke's Law states that within the elastic limit, the extension (or compression) of a material is directly proportional to the applied force (F = kx), where k is the spring/force constant."
+  },
+  {
+    question: "Capillary rise in a narrow tube is inversely proportional to:",
+    options: ["Surface tension", "Density of the liquid", "Angle of contact", "Radius of the tube"],
+    answer: 3,
+    explanation: "According to the capillary rise formula (h = 2Tcosθ/rρg), the height of liquid rise is inversely proportional to the radius of the tube — narrower tubes cause greater capillary rise."
+  },
+  {
+    question: "A material that returns to its original shape after the removing deforming force is called:",
+    options: ["Elastic", "Brittle", "Plastic", "Ductile"],
+    answer: 0,
+    explanation: "Elasticity is specifically the property of a material to return to its original shape and size after the deforming force is removed, as long as the elastic limit isn't exceeded."
+  },
+  {
+    question: "Calculate the heat energy required to raise the temperature of 2kg of water by 10°C. (Specific heat capacity of water = 4200 J/kg°C)",
+    options: ["8400 J", "42,000 J", "840 J", "84,000 J"],
+    answer: 3,
+    explanation: "Q = mcΔT = 2 × 4200 × 10 = 84,000 J."
+  },
+  {
+    question: "Which temperature scale has no negative values under normal physical conditions?",
+    options: ["Fahrenheit", "Celsius", "Both A and B", "Kelvin"],
+    answer: 3,
+    explanation: "The Kelvin scale is an absolute temperature scale starting at absolute zero (0K = -273°C), the theoretical point where all molecular motion ceases, making negative Kelvin values physically impossible under normal conditions."
+  },
+  {
+    question: "Convert 25°C to Kelvin.",
+    options: ["25K", "248K", "273K", "298K"],
+    answer: 3,
+    explanation: "K = °C + 273 = 25 + 273 = 298K."
+  },
+  {
+    question: "Thermal expansion in solids occurs because:",
+    options: ["Molecules gain mass", "Increased kinetic energy causes molecules to vibrate more and occupy more space", "Density increases with temperature", "Molecules increase in size"],
+    answer: 1,
+    explanation: "As temperature increases, molecules gain kinetic energy and vibrate more vigorously, increasing the average distance between them, causing the material to expand — the molecules themselves don't change size or mass."
+  },
+  {
+    question: "The specific latent heat of vaporization is defined as:",
+    options: ["Heat lost during cooling", "Heat required to raise temperature by 1°C", "Heat required to melt 1kg of solid", "Heat required to change 1kg of substance from liquid to gas without temperature change"],
+    answer: 3,
+    explanation: "Specific latent heat of vaporization specifically refers to the energy needed to convert 1kg of a liquid into vapor at constant temperature (at its boiling point), without any temperature change during the phase transition."
+  },
+  {
+    question: "Calculate the heat required to melt 0.5kg of ice completely. (Latent heat of fusion of ice = 336,000 J/kg)",
+    options: ["336,000 J", "67,200 J", "168,000 J", "672,000 J"],
+    answer: 2,
+    explanation: "Q = mL = 0.5 × 336,000 = 168,000 J."
+  },
+  {
+    question: "Which method of heat transfer involves the actual movement of heated particles/fluid?",
+    options: ["Conduction", "Radiation", "Convection", "Insulation"],
+    answer: 2,
+    explanation: "Convection involves the physical movement of heated fluid particles (liquid or gas), creating currents that transfer heat, unlike conduction (particle vibration) or radiation (electromagnetic waves)."
+  },
+  {
+    question: "A metal rod expands when heated due to increased:",
+    options: ["Density", "Mass", "Molecular vibration and spacing", "Chemical composition"],
+    answer: 2,
+    explanation: "Heating increases the kinetic energy of atoms in the metal, causing them to vibrate more and effectively increase the average spacing between atoms, resulting in overall linear/volume expansion."
+  },
+  {
+    question: "Two bodies are in thermal equilibrium when:",
+    options: ["They have the same specific heat capacity", "They have the same mass", "They are touching each other", "They have the same temperature and no net heat flows between them"],
+    answer: 3,
+    explanation: "Thermal equilibrium is achieved when two bodies reach the same temperature, at which point there is no net heat exchange between them — this is the foundation of the Zeroth Law of Thermodynamics."
+  },
+  {
+    question: "Which of the following substances has the highest specific heat capacity, making it useful for cooling systems?",
+    options: ["Aluminum", "Copper", "Iron", "Water"],
+    answer: 3,
+    explanation: "Water has an unusually high specific heat capacity (4200 J/kg°C) compared to most metals, allowing it to absorb significant heat energy with relatively small temperature changes — ideal for cooling applications like car radiators."
+  },
+];
+
+const PHYSICSE = [
+  {
+    question: "According to Boyle's Law, at constant temperature, the pressure of a gas is:",
+    options: ["Independent of volume", "Inversely proportional to volume", "Proportional to the square of volume", "Directly proportional to volume"],
+    answer: 1,
+    explanation: "Boyle's Law states that at constant temperature, pressure and volume of a fixed mass of gas are inversely proportional (PV = constant) — as volume decreases, pressure increases."
+  },
+  {
+    question: "A gas occupies 4L at a pressure of 200kPa. If the pressure increases to 400kPa at constant temperature, calculate the new volume.",
+    options: ["8L", "1L", "2L", "4L"],
+    answer: 2,
+    explanation: "Using Boyle's Law (P1V1 = P2V2): 200×4 = 400×V2, so V2 = 800/400 = 2L."
+  },
+  {
+    question: "Charles' Law states that at constant pressure, the volume of a gas is:",
+    options: ["Inversely proportional to pressure", "Inversely proportional to temperature (in Kelvin)", "Directly proportional to temperature (in Kelvin)", "Independent of temperature"],
+    answer: 2,
+    explanation: "Charles' Law establishes that at constant pressure, volume and absolute temperature (Kelvin) are directly proportional (V/T = constant) — as temperature increases, volume increases proportionally."
+  },
+  {
+    question: "A gas at 27°C occupies 2L. If heated to 127°C at constant pressure, calculate the new volume.",
+    options: ["1.5L", "9.4L", "4L", "2.67L"],
+    answer: 3,
+    explanation: "Convert to Kelvin: T1=300K, T2=400K. Using V1/T1 = V2/T2: 2/300 = V2/400, so V2 = (2×400)/300 = 2.67L."
+  },
+  {
+    question: "The ideal gas equation is represented as:",
+    options: ["PV² = nRT", "P = nRT/V²", "PV = nRT", "P/V = nRT"],
+    answer: 2,
+    explanation: "The ideal gas law combines Boyle's, Charles', and Avogadro's laws into PV = nRT, where n is moles, R is the gas constant, and T is absolute temperature."
+  },
+  {
+    question: "Which of the following best describes an ideal gas?",
+    options: ["Any real gas under normal conditions", "A gas that behaves differently at every temperature", "A gas at very high pressure", "A gas with negligible intermolecular forces and negligible molecular volume"],
+    answer: 3,
+    explanation: "An ideal gas is a theoretical model assuming no intermolecular forces and negligible particle volume compared to the container — real gases only approximate this behavior under specific conditions (low pressure, high temperature)."
+  },
+  {
+    question: "At constant volume, according to Gay-Lussac's Law, pressure is:",
+    options: ["Independent of temperature", "Directly proportional to temperature (Kelvin)", "Inversely proportional to volume", "Inversely proportional to temperature"],
+    answer: 1,
+    explanation: "Gay-Lussac's Law states that at constant volume, pressure is directly proportional to absolute temperature (P/T = constant) — heating a sealed container increases pressure proportionally."
+  },
+  {
+    question: "A sealed gas container at 2 atm and 300K is heated to 600K at constant volume. Calculate the new pressure.",
+    options: ["8 atm", "2 atm", "1 atm", "4 atm"],
+    answer: 3,
+    explanation: "Using Gay-Lussac's Law (P1/T1 = P2/T2): 2/300 = P2/600, so P2 = (2×600)/300 = 4 atm."
+  },
+  {
+    question: "Avogadro's Law states that equal volumes of gases at the same temperature and pressure contain:",
+    options: ["Equal densities", "Equal masses", "Equal number of molecules", "Different numbers of molecules depending on the gas"],
+    answer: 2,
+    explanation: "Avogadro's Law establishes that under identical temperature and pressure conditions, equal volumes of any gas contain the same number of molecules, regardless of the gas's identity."
+  },
+  {
+    question: "Real gases deviate from ideal gas behavior most significantly under conditions of:",
+    options: ["Standard temperature and pressure", "Low pressure and high temperature", "High pressure and low temperature", "Any pressure and temperature equally"],
+    answer: 2,
+    explanation: "At high pressure (molecules forced closer, increasing intermolecular forces) and low temperature (reduced kinetic energy, allowing attractive forces to matter more), real gases deviate most from ideal behavior."
+  },
+  {
+    question: "The distance between two consecutive crests of a wave is called:",
+    options: ["Amplitude", "Frequency", "Period", "Wavelength"],
+    answer: 3,
+    explanation: "Wavelength is defined as the distance between two successive points in phase on a wave, such as consecutive crests or troughs."
+  },
+  {
+    question: "A wave has a frequency of 50Hz and wavelength of 4m. Calculate its speed.",
+    options: ["200 m/s", "54 m/s", "12.5 m/s", "46 m/s"],
+    answer: 0,
+    explanation: "Wave speed = frequency × wavelength = 50 × 4 = 200 m/s."
+  },
+  {
+    question: "Which type of wave requires particles to vibrate parallel to the direction of wave propagation?",
+    options: ["Surface wave", "Transverse wave", "Electromagnetic wave", "Longitudinal wave"],
+    answer: 3,
+    explanation: "In longitudinal waves (like sound), particle vibration occurs parallel to (along) the direction of wave travel, creating compressions and rarefactions, unlike transverse waves where vibration is perpendicular."
+  },
+  {
+    question: "The time taken for one complete wave cycle is called:",
+    options: ["Wavelength", "Frequency", "Period", "Amplitude"],
+    answer: 2,
+    explanation: "Period (T) is defined as the time required for one complete oscillation or wave cycle, related to frequency by T = 1/f."
+  },
+  {
+    question: "If the frequency of a wave increases while speed remains constant, the wavelength:",
+    options: ["Remains the same", "Decreases", "Increases", "Becomes zero"],
+    answer: 1,
+    explanation: "Since v = fλ (speed = frequency × wavelength), with constant speed, frequency and wavelength are inversely proportional — increasing frequency decreases wavelength."
+  },
+  {
+    question: "Which phenomenon occurs when two waves overlap and their amplitudes combine?",
+    options: ["Interference", "Reflection", "Diffraction", "Refraction"],
+    answer: 0,
+    explanation: "Interference occurs when two or more waves meet and superpose, resulting in constructive interference (amplitudes add) or destructive interference (amplitudes cancel)."
+  },
+  {
+    question: "A wave completes 20 oscillations in 4 seconds. Calculate its frequency.",
+    options: ["5 Hz", "80 Hz", "0.2 Hz", "24 Hz"],
+    answer: 0,
+    explanation: "Frequency = number of oscillations/time = 20/4 = 5 Hz."
+  },
+  {
+    question: "Diffraction of waves is most pronounced when:",
+    options: ["The wave has high frequency only", "The wavelength is comparable to the size of the obstacle/gap", "The wavelength is much smaller than the obstacle/gap", "Wave speed is very high"],
+    answer: 1,
+    explanation: "Diffraction (bending of waves around obstacles or through gaps) becomes most noticeable when the wavelength is similar in size to the obstacle or aperture the wave encounters."
+  },
+  {
+    question: "Which of the following is a property unique to transverse waves (not longitudinal)?",
+    options: ["They require a medium", "They transfer energy", "They can be polarized", "They can be reflected"],
+    answer: 2,
+    explanation: "Polarization (restricting oscillation to a single plane) is a property specific to transverse waves because their vibration is perpendicular to propagation — longitudinal waves vibrate along the direction of travel and cannot be polarized."
+  },
+  {
+    question: "The amplitude of a wave is related to:",
+    options: ["Wave speed", "Wavelength", "Wave frequency", "Energy/intensity carried by the wave"],
+    answer: 3,
+    explanation: "Amplitude represents the maximum displacement of particles from their rest position, and it's directly related to the energy (and intensity) the wave carries — larger amplitude means more energy."
+  },
+  {
+    question: "The speed of sound is generally fastest in which medium?",
+    options: ["Solids (like steel)", "Water", "Vacuum", "Air"],
+    answer: 0,
+    explanation: "Sound travels fastest through solids due to closely packed particles allowing rapid transmission of vibrations, slower through liquids, and slowest through gases (air) — and cannot travel through a vacuum at all."
+  },
+  {
+    question: "The loudness of sound is primarily determined by its:",
+    options: ["Frequency", "Speed", "Wavelength", "Amplitude"],
+    answer: 3,
+    explanation: "Loudness is directly related to the amplitude of sound waves — larger amplitude means more energy carried, perceived as louder sound."
+  },
+  {
+    question: "The pitch of a sound is determined by its:",
+    options: ["Speed", "Amplitude", "Wavelength", "Frequency"],
+    answer: 3,
+    explanation: "Pitch corresponds to frequency — higher frequency sound waves are perceived as higher pitched, and lower frequency as lower pitched."
+  },
+  {
+    question: "The audible range of frequencies for human hearing is approximately:",
+    options: ["20,000Hz to 200,000Hz", "20Hz to 20,000Hz", "200Hz to 2000Hz", "2Hz to 200Hz"],
+    answer: 1,
+    explanation: "The typical human audible range spans from 20Hz (lower limit) to 20,000Hz (20kHz, upper limit), though this range can decrease with age."
+  },
+  {
+    question: "Sound waves with frequency above 20,000Hz are called:",
+    options: ["Radio waves", "Microwaves", "Ultrasonic waves", "Infrasonic waves"],
+    answer: 2,
+    explanation: "Ultrasonic waves have frequencies above the human hearing threshold (>20,000Hz), used in applications like medical imaging and sonar."
+  },
+  {
+    question: "An echo is produced due to:",
+    options: ["Refraction of sound", "Diffraction of sound", "Absorption of sound", "Reflection of sound waves off a surface"],
+    answer: 3,
+    explanation: "An echo occurs when sound waves reflect off a hard surface (like a wall or cliff) and return to the listener after a time delay, perceived as a repeated sound."
+  },
+  {
+    question: "The minimum distance required to hear a distinct echo (assuming speed of sound = 340 m/s) is approximately:",
+    options: ["1m", "340m", "17m", "680m"],
+    answer: 2,
+    explanation: "For a distinct echo to be heard (minimum time gap of 0.1s for human ear to distinguish), distance = (speed × time)/2 = (340×0.1)/2 = 17m (sound travels to the surface and back)."
+  },
+  {
+    question: "Resonance in sound occurs when:",
+    options: ["Sound waves cancel each other out", "Sound travels through a vacuum", "An object vibrates at its natural frequency due to an external periodic force matching that frequency", "Two different frequencies combine"],
+    answer: 2,
+    explanation: "Resonance occurs when an external vibrating source matches the natural frequency of an object, causing it to vibrate with dramatically increased amplitude (e.g., a singer shattering a glass by matching its resonant frequency)."
+  },
+  {
+    question: "The Doppler effect causes an apparent change in frequency when:",
+    options: ["Sound reflects off a surface", "The medium changes temperature", "Two sound waves interfere", "There is relative motion between the sound source and observer"],
+    answer: 3,
+    explanation: "The Doppler effect describes the apparent shift in frequency (and pitch) perceived by an observer when there's relative motion between the sound source and the observer (e.g., a siren sounding higher-pitched as it approaches, lower as it recedes)."
+  },
+  {
+    question: "Beats are produced when two sound waves of:",
+    options: ["Very different frequencies combine", "Same amplitude but different speeds combine", "Slightly different frequencies interfere, creating periodic variation in amplitude", "The same frequency interfere"],
+    answer: 2,
+    explanation: "Beats occur due to interference between two sound waves with slightly different frequencies, creating a periodic rise and fall in perceived loudness (beat frequency = |f1-f2|)."
+  },
+  {
+    question: "According to the laws of reflection, the angle of incidence is:",
+    options: ["Equal to the angle of reflection", "Unrelated to the angle of reflection", "Always less than the angle of reflection", "Always greater than the angle of reflection"],
+    answer: 0,
+    explanation: "The law of reflection states that the angle of incidence equals the angle of reflection, both measured from the normal (perpendicular line) to the reflecting surface."
+  },
+  {
+    question: "A concave mirror with focal length 10cm forms an image of an object placed 20cm from the mirror. Calculate the image distance using the mirror formula.",
+    options: ["20cm", "6.67cm", "10cm", "30cm"],
+    answer: 0,
+    explanation: "Using 1/f = 1/u + 1/v: 1/10 = 1/20 + 1/v, so 1/v = 1/10 - 1/20 = 1/20, giving v = 20cm."
+  },
+  {
+    question: "Which type of lens is used to correct short-sightedness (myopia)?",
+    options: ["Cylindrical lens", "Convex lens", "Bifocal lens", "Concave lens"],
+    answer: 3,
+    explanation: "Myopia (short-sightedness) occurs when the eye focuses images in front of the retina; a concave (diverging) lens spreads out light rays before entering the eye, pushing the focal point back onto the retina."
+  },
+  {
+    question: "The refractive index of a medium with speed of light 2×10⁸ m/s (given c = 3×10⁸ m/s) is:",
+    options: ["1.0", "0.67", "1.5", "2.0"],
+    answer: 2,
+    explanation: "Refractive index n = c/v = (3×10⁸)/(2×10⁸) = 1.5."
+  },
+  {
+    question: "Which phenomenon explains why a straw appears bent when placed in a glass of water?",
+    options: ["Reflection", "Refraction", "Diffraction", "Dispersion"],
+    answer: 1,
+    explanation: "Refraction occurs because light changes speed (and bends) when passing from one medium (water) to another (air), causing the visual distortion that makes the straw appear bent at the water's surface."
+  },
+  {
+    question: "A convex lens forms a real, inverted image when the object is placed:",
+    options: ["Beyond the focal point", "Between the lens and focal point", "At the focal point", "At infinity only"],
+    answer: 0,
+    explanation: "When an object is placed beyond the focal length of a convex lens, it produces a real, inverted image (unlike when placed within the focal length, which produces a virtual, upright, magnified image)."
+  },
+  {
+    question: "The splitting of white light into its constituent colors is called:",
+    options: ["Diffraction", "Reflection", "Refraction", "Dispersion"],
+    answer: 3,
+    explanation: "Dispersion occurs when white light passes through a prism, and different wavelengths (colors) refract by different amounts due to varying refractive indices, splitting into a visible spectrum."
+  },
+  {
+    question: "An object is placed 15cm from a convex lens of focal length 10cm. Calculate the image distance.",
+    options: ["6cm", "5cm", "30cm", "25cm"],
+    answer: 2,
+    explanation: "Using 1/f = 1/v - 1/u (with sign convention, u negative for real object): 1/10 = 1/v - 1/(-15), so 1/v = 1/10 - 1/15 = 3/30 - 2/30 = 1/30, giving v = 30cm."
+  },
+  {
+    question: "Which mirror is commonly used in car side mirrors to provide a wider field of view?",
+    options: ["Convex mirror", "Parabolic mirror", "Concave mirror", "Plane mirror"],
+    answer: 0,
+    explanation: "Convex mirrors diverge reflected light, producing a smaller, wider-angle image, making them ideal for side mirrors to give drivers a broader field of view (though objects appear smaller/farther than they are)."
+  },
+  {
+    question: "The critical angle for total internal reflection occurs when the angle of refraction equals:",
+    options: ["60°", "45°", "0°", "90°"],
+    answer: 3,
+    explanation: "The critical angle is specifically defined as the angle of incidence (in the denser medium) at which the refracted ray travels exactly along the boundary surface, meaning the angle of refraction is 90°."
+  },
+  {
+    question: "Like charges:",
+    options: ["Have no interaction", "Attract each other", "Neutralize each other", "Repel each other"],
+    answer: 3,
+    explanation: "According to the fundamental law of electrostatics, charges of the same sign (both positive or both negative) repel each other, while opposite charges attract."
+  },
+  {
+    question: "Calculate the electrostatic force between two charges of 2×10⁻⁶C and 3×10⁻⁶C separated by 0.1m. (k = 9×10⁹ Nm²/C²)",
+    options: ["5.4N", "54N", "540N", "0.54N"],
+    answer: 0,
+    explanation: "F = kq1q2/r² = (9×10⁹ × 2×10⁻⁶ × 3×10⁻⁶)/(0.1)² = (9×10⁹ × 6×10⁻¹²)/0.01 = 5.4×10⁻²/0.01 = 5.4N."
+  },
+  {
+    question: "An object that has gained electrons becomes:",
+    options: ["Radioactive", "Negatively charged", "Positively charged", "Neutral"],
+    answer: 1,
+    explanation: "Electrons carry negative charge, so an object gaining extra electrons accumulates excess negative charge, becoming negatively charged overall."
+  },
+  {
+    question: "Electric field lines around a positive point charge point:",
+    options: ["Toward the charge", "Parallel to each other", "In circles around the charge", "Away from the charge (radially outward)"],
+    answer: 3,
+    explanation: "By convention, electric field lines originate from positive charges and point radially outward, indicating the direction a positive test charge would move if placed in that field."
+  },
+  {
+    question: "Coulomb's Law describes the force between two point charges as:",
+    options: ["Independent of charge magnitude", "Inversely proportional to charge", "Directly proportional to the product of charges and inversely proportional to the square of distance", "Directly proportional to distance"],
+    answer: 2,
+    explanation: "Coulomb's Law states F = kq1q2/r², showing force depends directly on the product of the two charges and inversely on the square of the separation distance."
+  },
+  {
+    question: "A capacitor with capacitance 5μF is charged to a potential difference of 12V. Calculate the charge stored.",
+    options: ["60C", "2.4×10⁻⁶ C", "17μC", "60μC"],
+    answer: 3,
+    explanation: "Q = CV = 5×10⁻⁶ × 12 = 60×10⁻⁶ C = 60μC."
+  },
+  {
+    question: "Electrostatic shielding (Faraday cage effect) works because:",
+    options: ["Charges redistribute on the conductor's surface, canceling the field inside", "Electric fields cannot penetrate any material", "Charges accumulate uniformly throughout the conductor", "The conductor absorbs all charge"],
+    answer: 0,
+    explanation: "In a conductor, free charges redistribute themselves on the surface in response to an external field, creating an internal field that exactly cancels the external field, resulting in zero net electric field inside the conductor (Faraday cage principle)."
+  },
+  {
+    question: "The SI unit of electric charge is:",
+    options: ["Farad", "Coulomb", "Ampere", "Volt"],
+    answer: 1,
+    explanation: "Electric charge is measured in Coulombs (C), named after Charles-Augustin de Coulomb, who formulated the law describing electrostatic force."
+  },
+  {
+    question: "Grounding (earthing) an object allows it to:",
+    options: ["Gain maximum charge", "Increase its electric field", "Become permanently charged", "Neutralize excess charge by providing a path to the ground"],
+    answer: 3,
+    explanation: "Grounding connects an object to the Earth (acting as an infinite charge reservoir), allowing excess charge to flow away (or in) until the object reaches electrical neutrality."
+  },
+  {
+    question: "Electric potential energy between two charges is defined as:",
+    options: ["The rate of charge flow", "The charge stored in a capacitor", "The work done in bringing a charge from infinity to a specific point in the field", "The force required to separate them"],
+    answer: 2,
+    explanation: "Electric potential energy represents the work done (energy required) to move a charge from a reference point (infinity, where potential energy is defined as zero) to its current position within an electric field."
+  },
+];
+
+const PHYSICSF = [
+  {
+    question: "Calculate the current flowing through a circuit with a resistance of 20Ω and voltage of 240V.",
+    options: ["0.083A", "4800A", "12A", "220A"],
+    answer: 2,
+    explanation: "Using Ohm's Law: I = V/R = 240/20 = 12A."
+  },
+  {
+    question: "In a series circuit, the total resistance is:",
+    options: ["Equal to the reciprocal of the sum of reciprocals", "Always constant regardless of components", "Less than the smallest individual resistance", "Equal to the sum of individual resistances"],
+    answer: 3,
+    explanation: "In series circuits, resistors are connected end-to-end, so total resistance is simply the sum of all individual resistances (R = R1+R2+R3...)."
+  },
+  {
+    question: "Two resistors of 4Ω and 6Ω are connected in parallel. Calculate the total resistance.",
+    options: ["2.4Ω", "24Ω", "10Ω", "1.5Ω"],
+    answer: 0,
+    explanation: "For parallel resistors: 1/R = 1/4 + 1/6 = 3/12 + 2/12 = 5/12, so R = 12/5 = 2.4Ω."
+  },
+  {
+    question: "Electrical power can be calculated using which formula?",
+    options: ["P = VI", "P = V+I", "P = V/I", "P = I/V"],
+    answer: 0,
+    explanation: "Electrical power is the product of voltage and current (P = VI), derived from combining the definitions of power, voltage, and current."
+  },
+  {
+    question: "A 240V, 2kW electric heater draws how much current?",
+    options: ["8.33A", "120A", "0.12A", "480A"],
+    answer: 0,
+    explanation: "Using P = VI: I = P/V = 2000/240 = 8.33A."
+  },
+  {
+    question: "Which of the following materials is classified as a semiconductor?",
+    options: ["Rubber", "Glass", "Copper", "Silicon"],
+    answer: 3,
+    explanation: "Silicon is a well-known semiconductor material, having electrical conductivity between that of conductors (like copper) and insulators (like rubber/glass), widely used in electronic devices."
+  },
+  {
+    question: "The resistance of a conductor increases with:",
+    options: ["Increasing temperature (for metals)", "Decreasing temperature (for metals)", "Increasing cross-sectional area", "Decreasing length"],
+    answer: 0,
+    explanation: "For most metallic conductors, increased temperature causes greater atomic vibration, increasing collision frequency with electrons and thus increasing resistance."
+  },
+  {
+    question: "Calculate the energy consumed by a 100W bulb operating for 3 hours.",
+    options: ["300J", "300Wh", "33.3Wh", "1080Wh"],
+    answer: 1,
+    explanation: "Energy = Power × Time = 100W × 3h = 300Wh."
+  },
+  {
+    question: "In a parallel circuit, the voltage across each component is:",
+    options: ["Divided based on resistance", "The same across all components", "Dependent on current only", "Zero for all but one component"],
+    answer: 1,
+    explanation: "In parallel circuits, all components share the same two connection points, meaning voltage across each branch is identical, though current can differ based on individual resistance."
+  },
+  {
+    question: "The internal resistance of a battery causes:",
+    options: ["Terminal voltage to equal EMF always", "Terminal voltage to exceed EMF", "Terminal voltage to be less than EMF when current flows", "No effect on circuit behavior"],
+    answer: 2,
+    explanation: "When current flows through a battery, some voltage is \"lost\" due to internal resistance (V=EMF-Ir), making the terminal voltage (available to the external circuit) less than the EMF."
+  },
+  {
+    question: "A current-carrying wire produces a magnetic field in which pattern?",
+    options: ["Random directions", "No magnetic field is produced", "Concentric circles around the wire", "Straight lines parallel to the wire"],
+    answer: 2,
+    explanation: "According to the right-hand rule, a current-carrying conductor produces a magnetic field that forms concentric circles around the wire, with direction determined by current flow direction."
+  },
+  {
+    question: "Which rule determines the direction of the magnetic field around a current-carrying conductor?",
+    options: ["Left-hand rule", "Lenz's rule", "Faraday's rule", "Right-hand rule (grip rule)"],
+    answer: 3,
+    explanation: "The right-hand grip rule states that if you point your right thumb in the direction of current flow, your curled fingers indicate the direction of the magnetic field lines around the conductor."
+  },
+  {
+    question: "The force on a current-carrying conductor in a magnetic field is given by:",
+    options: ["F = BIL sin θ", "F = BIL cos θ", "F = BI/L", "F = B/IL"],
+    answer: 0,
+    explanation: "The force on a current-carrying conductor in a magnetic field is F = BILsinθ, where θ is the angle between the current direction and the magnetic field — maximum force occurs when the conductor is perpendicular to the field (sin90°=1)."
+  },
+  {
+    question: "A solenoid's magnetic field strength can be increased by:",
+    options: ["Inserting an iron core", "Decreasing the number of turns", "Reducing current", "Increasing the length of the solenoid without changing turns"],
+    answer: 0,
+    explanation: "Inserting a ferromagnetic core (like iron) significantly increases the magnetic field strength of a solenoid because the material becomes magnetized, amplifying the overall field."
+  },
+  {
+    question: "Which of the following materials is NOT ferromagnetic?",
+    options: ["Iron", "Cobalt", "Nickel", "Copper"],
+    answer: 3,
+    explanation: "Copper is not ferromagnetic (it's actually diamagnetic, weakly repelled by magnetic fields), while iron, nickel, and cobalt are classic examples of ferromagnetic materials that can be strongly magnetized."
+  },
+  {
+    question: "The magnetic field inside a long solenoid is:",
+    options: ["Zero", "Uniform and parallel to the axis", "Circular around the solenoid", "Strongest at the ends"],
+    answer: 1,
+    explanation: "Inside a long solenoid, the magnetic field is essentially uniform and parallel to the solenoid's axis, similar to the field of a bar magnet, due to the cumulative effect of all the current loops."
+  },
+  {
+    question: "A charged particle moving through a magnetic field experiences maximum force when it moves:",
+    options: ["Force is always zero regardless of angle", "Parallel to the field", "Perpendicular to the field", "At 45° to the field"],
+    answer: 2,
+    explanation: "The magnetic force on a moving charge is F = qvBsinθ, which is maximum when the particle moves perpendicular to the magnetic field (θ=90°, sin90°=1)."
+  },
+  {
+    question: "Which device converts electrical energy into mechanical energy using magnetic principles?",
+    options: ["Generator", "Electric motor", "Transformer", "Battery"],
+    answer: 1,
+    explanation: "An electric motor uses the interaction between magnetic fields and current-carrying conductors to convert electrical energy into mechanical (rotational) energy, unlike a generator which does the reverse."
+  },
+  {
+    question: "The strength of an electromagnet depends on:",
+    options: ["Only the length of the wire", "Only the material of the wire", "Number of turns, current, and core material", "Only the current flowing through it"],
+    answer: 2,
+    explanation: "Electromagnet strength is influenced by multiple factors: the number of coil turns, the magnitude of current flowing, and the presence/type of core material (like iron) used to enhance the field."
+  },
+  {
+    question: "Two parallel wires carrying current in the same direction will:",
+    options: ["Have no interaction", "Attract each other", "Rotate around each other", "Repel each other"],
+    answer: 1,
+    explanation: "Parallel currents flowing in the same direction create magnetic fields that result in an attractive force between the wires, while currents in opposite directions cause repulsion."
+  },
+  {
+    question: "Faraday's Law of electromagnetic induction states that induced EMF is proportional to:",
+    options: ["The magnetic field strength only", "The current flowing through the circuit", "The rate of change of magnetic flux", "The resistance of the circuit"],
+    answer: 2,
+    explanation: "Faraday's Law states that induced EMF equals the negative rate of change of magnetic flux through a circuit (EMF = -dΦ/dt) — faster flux changes produce greater induced EMF."
+  },
+  {
+    question: "A coil with 100 turns experiences a change in magnetic flux from 0.02Wb to 0.08Wb in 2 seconds. Calculate the induced EMF.",
+    options: ["3V", "0.03V", "300V", "30V"],
+    answer: 0,
+    explanation: "EMF = N(ΔΦ/Δt) = 100 × (0.08-0.02)/2 = 100 × 0.06/2 = 100 × 0.03 = 3V."
+  },
+  {
+    question: "Lenz's Law states that the direction of induced current:",
+    options: ["Supports the change in magnetic flux", "Is always clockwise", "Opposes the change in magnetic flux that produced it", "Is independent of the change causing it"],
+    answer: 2,
+    explanation: "Lenz's Law specifies that induced current flows in a direction that creates a magnetic field opposing the change in flux that caused it — this is a direct consequence of energy conservation."
+  },
+  {
+    question: "Which factor does NOT affect the magnitude of induced EMF in a coil?",
+    options: ["Rate of change of magnetic flux", "Number of turns in the coil", "Color of the wire", "Strength of the magnetic field"],
+    answer: 2,
+    explanation: "The color of the wire is a visual property that has no bearing on electromagnetic induction — only physical/electromagnetic factors like turns, field strength, and rate of change matter."
+  },
+  {
+    question: "A generator converts:",
+    options: ["Electrical energy to mechanical energy", "Thermal energy to mechanical energy", "Mechanical energy to electrical energy", "Chemical energy to electrical energy"],
+    answer: 2,
+    explanation: "A generator operates on electromagnetic induction principles, using mechanical motion (like a rotating coil in a magnetic field) to induce and generate electrical energy."
+  },
+  {
+    question: "Self-induction occurs when:",
+    options: ["Two separate coils interact", "Current flows through a resistor", "A magnet moves near a stationary coil", "A changing current in a coil induces an EMF in itself"],
+    answer: 3,
+    explanation: "Self-induction refers to the phenomenon where a changing current within a single coil induces an opposing EMF in that same coil, due to the changing magnetic flux it creates."
+  },
+  {
+    question: "Mutual induction is the basis of operation for which device?",
+    options: ["Capacitor", "Transformer", "Diode", "Resistor"],
+    answer: 1,
+    explanation: "Transformers work on mutual induction, where a changing current in the primary coil induces an EMF in a separate, magnetically coupled secondary coil."
+  },
+  {
+    question: "A step-up transformer increases:",
+    options: ["Voltage", "Frequency", "Power", "Current"],
+    answer: 0,
+    explanation: "A step-up transformer increases voltage from primary to secondary coil (while proportionally decreasing current to conserve power), achieved by having more turns in the secondary coil than the primary."
+  },
+  {
+    question: "The unit of magnetic flux is:",
+    options: ["Weber", "Tesla", "Farad", "Henry"],
+    answer: 0,
+    explanation: "Magnetic flux is measured in Webers (Wb), representing the total magnetic field passing through a given area, while Tesla measures magnetic flux density (field strength)."
+  },
+  {
+    question: "According to the principle of electromagnetic induction, no EMF is induced when:",
+    options: ["Current changes in a nearby coil", "There is no relative motion between coil and magnetic field (constant flux)", "A coil rotates within a magnetic field", "The magnetic flux changes rapidly"],
+    answer: 1,
+    explanation: "EMF induction fundamentally requires a changing magnetic flux — if the flux remains constant (no relative motion, no current change), there is no induced EMF regardless of the field's absolute strength."
+  },
+  {
+    question: "The mechanical advantage of a machine is defined as:",
+    options: ["Work output divided by work input", "Load force divided by effort force", "Effort force divided by load force", "Distance moved by load divided by distance moved by effort"],
+    answer: 1,
+    explanation: "Mechanical advantage (MA) = Load/Effort, indicating how much a machine multiplies the input force to overcome a resistance (load)."
+  },
+  {
+    question: "A lever has a load of 200N positioned 0.5m from the fulcrum, and effort is applied 2m from the fulcrum. Calculate the effort required (assuming ideal lever).",
+    options: ["800N", "400N", "50N", "100N"],
+    answer: 2,
+    explanation: "Using the principle of moments (Load × load arm = Effort × effort arm): 200 × 0.5 = Effort × 2, so Effort = 100/2 = 50N."
+  },
+  {
+    question: "The velocity ratio of a machine is defined as:",
+    options: ["Work output/Work input", "Effort/Load", "Distance moved by effort/Distance moved by load", "Load/Effort"],
+    answer: 2,
+    explanation: "Velocity ratio (VR) compares the distance moved by the effort to the distance moved by the load — it's a geometric property of the machine, independent of friction or efficiency."
+  },
+  {
+    question: "In an ideal (100% efficient) machine, mechanical advantage equals:",
+    options: ["Zero", "Double the velocity ratio", "The velocity ratio", "Half the velocity ratio"],
+    answer: 2,
+    explanation: "For a perfectly efficient (ideal, frictionless) machine, mechanical advantage exactly equals velocity ratio, since efficiency = (MA/VR) × 100%, and 100% efficiency means MA=VR."
+  },
+  {
+    question: "A pulley system has a velocity ratio of 4 and mechanical advantage of 3.2. Calculate its efficiency.",
+    options: ["40%", "125%", "12.8%", "80%"],
+    answer: 3,
+    explanation: "Efficiency = (MA/VR) × 100% = (3.2/4) × 100% = 80%."
+  },
+  {
+    question: "Which class of lever has the fulcrum positioned between the effort and the load?",
+    options: ["First class lever", "Third class lever", "Fourth class lever (doesn't exist)", "Second class lever"],
+    answer: 0,
+    explanation: "In a first-class lever (like a seesaw), the fulcrum sits between the effort and the load, distinguishing it from second-class (load between fulcrum and effort) and third-class (effort between fulcrum and load) levers."
+  },
+  {
+    question: "An inclined plane has a length of 5m and height of 1m. Calculate its velocity ratio.",
+    options: ["0.2", "4", "1", "5"],
+    answer: 3,
+    explanation: "For an inclined plane, velocity ratio = length of incline/height = 5/1 = 5."
+  },
+  {
+    question: "Which of the following is an example of a third-class lever?",
+    options: ["Crowbar", "Wheelbarrow", "Seesaw", "Human forearm (biceps lifting)"],
+    answer: 3,
+    explanation: "In a third-class lever (like the human forearm), the effort (bicep muscle) is applied between the fulcrum (elbow) and the load (hand/object), unlike wheelbarrows (second-class) or seesaws (first-class)."
+  },
+  {
+    question: "Why is efficiency of real machines always less than 100%?",
+    options: ["Due to friction and other energy losses", "Due to excessive load", "Due to the material used", "Due to conservation of energy being violated"],
+    answer: 0,
+    explanation: "Real machines experience energy losses primarily due to friction (and sometimes deformation, air resistance), meaning some input work is converted to heat rather than useful output — hence efficiency is always below 100%."
+  },
+  {
+    question: "A screw jack has a pitch of 5mm and a handle length of 40cm. Calculate its velocity ratio. (VR = 2πL/pitch)",
+    options: ["80", "502.4", "8", "50.24"],
+    answer: 1,
+    explanation: "VR = 2πL/pitch = (2×π×400mm)/5mm = 2513.6/5 ≈ 502.4 (using L=400mm to match pitch units)."
+  },
+  {
+    question: "According to Einstein's mass-energy equivalence, energy is related to mass by:",
+    options: ["E = mc", "E = mc²", "E = mc³", "E = m²c"],
+    answer: 1,
+    explanation: "Einstein's famous equation E=mc² shows that mass and energy are interchangeable, with even small amounts of mass corresponding to enormous amounts of energy (c being the speed of light)."
+  },
+  {
+    question: "Calculate the energy equivalent of 1×10⁻⁶ kg of mass. (c = 3×10⁸ m/s)",
+    options: ["3×10² J", "9×10¹⁰ J", "9×10¹³ J", "3×10⁸ J"],
+    answer: 1,
+    explanation: "E = mc² = 1×10⁻⁶ × (3×10⁸)² = 1×10⁻⁶ × 9×10¹⁶ = 9×10¹⁰ J."
+  },
+  {
+    question: "Nuclear fission involves:",
+    options: ["Absorption of neutrons without splitting", "Combining light nuclei to form a heavier nucleus", "Emission of electrons from an atom", "Splitting a heavy nucleus into lighter nuclei"],
+    answer: 3,
+    explanation: "Nuclear fission is the process where a heavy, unstable nucleus (like Uranium-235) splits into two or more lighter nuclei, releasing significant energy in the process."
+  },
+  {
+    question: "Which particle has no electric charge and no mass (or negligible mass)?",
+    options: ["Electron", "Photon", "Neutron", "Proton"],
+    answer: 1,
+    explanation: "While a neutron has no charge but does have mass, a photon (particle of light) has no rest mass and no electric charge, making it the correct answer for \"no charge and negligible/no mass.\""
+  },
+  {
+    question: "The half-life of a radioactive substance is 10 years. After 30 years, what fraction of the original sample remains?",
+    options: ["1/2", "1/8", "1/16", "1/4"],
+    answer: 1,
+    explanation: "30 years represents 3 half-lives (30/10=3). Remaining fraction = (1/2)³ = 1/8."
+  },
+  {
+    question: "Which type of radioactive decay results in the emission of a helium nucleus?",
+    options: ["Gamma decay", "Beta decay", "Neutron emission", "Alpha decay"],
+    answer: 3,
+    explanation: "Alpha decay specifically involves the emission of an alpha particle, which is identical to a helium nucleus (2 protons and 2 neutrons)."
+  },
+  {
+    question: "The photoelectric equation is given by:",
+    options: ["p = h/λ", "E = hf", "hf = Φ + KEmax", "E = mc²"],
+    answer: 2,
+    explanation: "Einstein's photoelectric equation states that the energy of an incident photon (hf) equals the work function (Φ, minimum energy to release an electron) plus the maximum kinetic energy of the emitted electron (KEmax)."
+  },
+  {
+    question: "In nuclear fusion, energy is released because:",
+    options: ["Mass increases during the reaction", "The mass of products is slightly less than the mass of reactants (mass defect converts to energy)", "Neutrons are absorbed", "Electrons are released"],
+    answer: 1,
+    explanation: "During fusion, some mass is \"lost\" (converted to energy according to E=mc²) because the total mass of the resulting nucleus is slightly less than the combined mass of the original nuclei — this mass defect is released as energy."
+  },
+  {
+    question: "X-rays are produced when:",
+    options: ["Atoms undergo radioactive decay", "Protons collide with neutrons", "Electrons combine with protons", "High-speed electrons are suddenly decelerated upon hitting a metal target"],
+    answer: 3,
+    explanation: "X-rays are typically generated in X-ray tubes when high-energy electrons are rapidly decelerated (or stopped) upon striking a metal target, converting kinetic energy into electromagnetic radiation (X-rays)."
+  },
+  {
+    question: "The atomic number of an element represents:",
+    options: ["The total mass of the atom", "The number of protons in the nucleus", "The number of neutrons only", "The total number of protons and neutrons"],
+    answer: 1,
+    explanation: "Atomic number (Z) specifically refers to the number of protons in an atom's nucleus, which determines the element's identity and its position on the periodic table."
+  },
+];
+
 function getCourse(course) {
   return {
     ENGLISH,
     ENGLISHB,
     ENGLISHC,
-    ENGLISHD
+    ENGLISHD,
+    PHYSICSA,
+    PHYSICSB,
+    PHYSICSC,
+    PHYSICSD,
+    PHYSICSE,
+    PHYSICSF
   }[course];
 }
 // ===== SHOW PREVIOUS RESULT =====
