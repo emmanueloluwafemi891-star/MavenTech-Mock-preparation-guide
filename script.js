@@ -3091,6 +3091,1218 @@ const PHYSICSF = [
   },
 ];
 
+const CHEMISTRYA = [
+  {
+    question: "Which separation technique is most suitable for separating a mixture of sand and salt dissolved in water?",
+    options: ["Distillation only", "Decantation", "Filtration followed by evaporation", "Filtration only"],
+    answer: 2,
+    explanation: "Filtration removes the insoluble sand first, then evaporation of the filtrate (salt solution) recovers the salt by evaporating the water — a two-step process needed since salt is dissolved, not suspended."
+  },
+  {
+    question: "Chromatography is primarily used to separate:",
+    options: ["Components of a mixture based on differing solubilities/affinities", "Solids from liquids", "Gases from liquids", "Immiscible liquids"],
+    answer: 0,
+    explanation: "Chromatography separates mixture components based on their different rates of movement through a stationary phase, determined by solubility and affinity differences — commonly used for separating pigments or dissolved substances."
+  },
+  {
+    question: "Which of the following is a physical change (not chemical)?",
+    options: ["Burning of wood", "Souring of milk", "Melting of ice", "Rusting of iron"],
+    answer: 2,
+    explanation: "Melting ice is a physical change (state change, no new substance formed), while rusting, burning, and souring milk all involve chemical reactions producing new substances."
+  },
+  {
+    question: "Distillation is most appropriate for separating:",
+    options: ["Colored components from a solution", "Two miscible liquids with different boiling points", "Two immiscible liquids", "A solid from another solid"],
+    answer: 1,
+    explanation: "Distillation separates miscible liquids based on differences in boiling points — the liquid with the lower boiling point vaporizes first and is collected separately upon condensation."
+  },
+  {
+    question: "A mixture of iron filings and sulfur can be separated using:",
+    options: ["Filtration", "Evaporation", "Distillation", "A magnet"],
+    answer: 3,
+    explanation: "Since iron is magnetic and sulfur is not, a magnet can easily separate the iron filings from the sulfur powder — a simple physical separation method."
+  },
+  {
+    question: "Which technique is used to separate immiscible liquids like oil and water?",
+    options: ["Chromatography", "Separating funnel (decantation)", "Distillation", "Sublimation"],
+    answer: 1,
+    explanation: "A separating funnel exploits the density difference and immiscibility between oil and water, allowing the layers to be drained off separately based on density."
+  },
+  {
+    question: "Sublimation is the process where a substance changes directly from:",
+    options: ["Gas to solid", "Liquid to gas", "Solid to gas without passing through liquid state", "Solid to liquid"],
+    answer: 2,
+    explanation: "Sublimation is a special phase transition where a solid converts directly into vapor (gas) without passing through the intermediate liquid phase (e.g., dry ice, iodine)."
+  },
+  {
+    question: "Which of the following best classifies a solution of sugar in water?",
+    options: ["Homogeneous mixture", "Element", "Compound", "Heterogeneous mixture"],
+    answer: 0,
+    explanation: "A sugar solution is uniform throughout (same composition and properties at every point), classifying it as a homogeneous mixture, unlike heterogeneous mixtures with visibly distinct components."
+  },
+  {
+    question: "Fractional distillation is specifically used to separate:",
+    options: ["Insoluble solids from liquids", "Multiple miscible liquids with close boiling points", "A mixture of solids", "Solutions of salts"],
+    answer: 1,
+    explanation: "Fractional distillation uses a fractionating column to separate multiple liquids with relatively close boiling points more efficiently than simple distillation, achieved through repeated vaporization-condensation cycles (e.g., separating crude oil components)."
+  },
+  {
+    question: "Which property is exploited when using a centrifuge to separate mixtures?",
+    options: ["Density differences", "Solubility differences", "Magnetic properties", "Boiling point differences"],
+    answer: 0,
+    explanation: "Centrifugation separates components based on density differences, using rapid spinning to force denser particles to settle faster than lighter ones (commonly used for blood separation in labs)."
+  },
+  {
+    question: "The atomic number of an element represents the number of:",
+    options: ["Protons and neutrons combined", "Protons in the nucleus", "Electrons in the outermost shell", "Neutrons in the nucleus"],
+    answer: 1,
+    explanation: "Atomic number (Z) is defined specifically as the number of protons in an atom's nucleus, which uniquely identifies the element."
+  },
+  {
+    question: "An atom of chlorine has atomic number 17 and mass number 35. How many neutrons does it contain?",
+    options: ["17", "18", "52", "35"],
+    answer: 1,
+    explanation: "Neutrons = mass number - atomic number = 35 - 17 = 18."
+  },
+  {
+    question: "Isotopes of an element have the same number of:",
+    options: ["Electrons and neutrons but different protons", "Neutrons but different protons", "Protons and neutrons but different electrons", "Protons but different neutrons"],
+    answer: 3,
+    explanation: "Isotopes are atoms of the same element (same number of protons, hence same atomic number) but with differing numbers of neutrons, resulting in different mass numbers."
+  },
+  {
+    question: "The maximum number of electrons that can occupy the second electron shell (n=2) is:",
+    options: ["8", "32", "2", "18"],
+    answer: 0,
+    explanation: "Using the formula 2n², the second shell (n=2) can hold a maximum of 2×2² = 8 electrons."
+  },
+  {
+    question: "Which subatomic particle has a negligible mass compared to protons and neutrons?",
+    options: ["Nucleon", "Neutron", "Proton", "Electron"],
+    answer: 3,
+    explanation: "Electrons have a mass approximately 1/1836 that of a proton, making their mass negligible in atomic mass calculations compared to protons and neutrons."
+  },
+  {
+    question: "An ion with electronic configuration 2,8 and a charge of +1 most likely corresponds to which element?",
+    options: ["Fluorine", "Magnesium", "Sodium", "Neon"],
+    answer: 2,
+    explanation: "Sodium (atomic number 11) has electronic configuration 2,8,1. Losing one electron (to form Na⁺) gives 2,8, matching the described ion configuration."
+  },
+  {
+    question: "Which model of the atom proposed that electrons orbit the nucleus in fixed energy levels?",
+    options: ["Dalton's model", "Thomson's model", "Bohr's model", "Rutherford's model"],
+    answer: 2,
+    explanation: "Bohr's model specifically introduced the concept of electrons occupying fixed, quantized energy levels (shells) around the nucleus, unlike earlier models that didn't account for energy quantization."
+  },
+  {
+    question: "The relative atomic mass of an element is based on which isotope as standard?",
+    options: ["Hydrogen-1", "Helium-4", "Carbon-12", "Oxygen-16"],
+    answer: 2,
+    explanation: "The modern atomic mass scale uses Carbon-12 as the standard reference, defined as having a mass of exactly 12 atomic mass units (amu)."
+  },
+  {
+    question: "Calculate the number of electrons in a Mg²⁺ ion (atomic number of Mg = 12).",
+    options: ["10", "12", "14", "2"],
+    answer: 0,
+    explanation: "Mg²⁺ has lost 2 electrons from its neutral state (12 electrons), leaving 12-2 = 10 electrons."
+  },
+  {
+    question: "Which statement about isotopes is correct?",
+    options: ["They belong to different elements", "They have the same chemical properties but different physical properties (like mass)", "They have different atomic numbers", "They have different chemical properties"],
+    answer: 1,
+    explanation: "Since isotopes have identical electron configurations (same number of protons/electrons), their chemical properties remain the same, while physical properties like mass and density can differ due to varying neutron numbers."
+  },
+  {
+    question: "Elements in the same group of the periodic table have similar chemical properties because they have the same:",
+    options: ["Number of protons", "Number of neutrons", "Atomic mass", "Number of valence electrons"],
+    answer: 3,
+    explanation: "Elements within the same group share the same number of valence (outermost) electrons, which primarily determines chemical bonding behavior and reactivity patterns."
+  },
+  {
+    question: "As you move across a period from left to right, atomic radius generally:",
+    options: ["Increases then decreases", "Increases", "Decreases", "Remains constant"],
+    answer: 2,
+    explanation: "Moving left to right across a period, protons increase (stronger nuclear charge) while electrons are added to the same shell, pulling electrons closer to the nucleus and decreasing atomic radius."
+  },
+  {
+    question: "Which of the following elements has the highest electronegativity?",
+    options: ["Oxygen", "Fluorine", "Sodium", "Chlorine"],
+    answer: 1,
+    explanation: "Fluorine has the highest electronegativity of all elements (approximately 4.0 on the Pauling scale) due to its small atomic radius and strong attraction for electrons."
+  },
+  {
+    question: "Ionization energy generally increases across a period because:",
+    options: ["Electron shielding increases significantly", "Nuclear charge increases while electrons are added to the same shell, increasing attraction", "Atomic mass decreases", "Atomic radius increases"],
+    answer: 1,
+    explanation: "As you move across a period, protons (nuclear charge) increase without adding new electron shells, resulting in stronger attraction between the nucleus and outer electrons, making them harder to remove (higher ionization energy)."
+  },
+  {
+    question: "Which group in the periodic table is known as the alkali metals?",
+    options: ["Group 17", "Group 18", "Group 1", "Group 2"],
+    answer: 2,
+    explanation: "Group 1 elements (excluding hydrogen) are classified as alkali metals, characterized by having one valence electron and high reactivity, especially with water."
+  },
+  {
+    question: "Noble gases are generally unreactive because they have:",
+    options: ["Very small atomic radius", "No electrons in their outer shell", "A complete outer electron shell (stable configuration)", "High atomic mass"],
+    answer: 2,
+    explanation: "Noble gases (Group 18) have a full valence electron shell, providing exceptional stability and minimal tendency to gain, lose, or share electrons with other atoms."
+  },
+  {
+    question: "Metallic character in the periodic table generally increases:",
+    options: ["Down a group and from right to left across a period", "Up a group and left to right across a period", "Down a group and across a period (left to right)", "Across a period (left to right) and up a group"],
+    answer: 0,
+    explanation: "Metallic character increases down a group (larger atoms, easier electron loss) and from right to left across a period (fewer valence electrons, more metallic behavior)."
+  },
+  {
+    question: "Which of these elements would have the largest atomic radius?",
+    options: ["Lithium", "Sodium", "Rubidium", "Potassium"],
+    answer: 2,
+    explanation: "Atomic radius increases down a group due to additional electron shells; among these alkali metals, rubidium is positioned lowest in Group 1, giving it the largest atomic radius."
+  },
+  {
+    question: "The periodic law states that properties of elements are a periodic function of their:",
+    options: ["Density", "Number of neutrons", "Atomic number", "Atomic mass"],
+    answer: 2,
+    explanation: "The modern periodic law (revised from Mendeleev's original mass-based law) states that chemical and physical properties recur periodically when elements are arranged by increasing atomic number."
+  },
+  {
+    question: "Which trend correctly describes electron affinity across a period (left to right)?",
+    options: ["Generally increases (becomes more negative/exothermic)", "Generally decreases", "Remains constant", "Fluctuates randomly with no pattern"],
+    answer: 0,
+    explanation: "Electron affinity generally becomes more negative (more energy released, indicating greater attraction for an additional electron) across a period due to increasing nuclear charge, though there are some exceptions at specific points."
+  },
+  {
+    question: "Ionic bonds are formed through:",
+    options: ["Weak intermolecular attractions", "Overlapping of atomic orbitals", "Transfer of electrons from one atom to another", "Sharing of electrons between atoms"],
+    answer: 2,
+    explanation: "Ionic bonding occurs when one atom (typically a metal) transfers electrons to another atom (typically a non-metal), creating oppositely charged ions that attract each other electrostatically."
+  },
+  {
+    question: "Which type of bond is formed in a molecule of oxygen gas (O₂)?",
+    options: ["Ionic bond", "Covalent bond (double bond)", "Hydrogen bond", "Metallic bond"],
+    answer: 1,
+    explanation: "Oxygen gas consists of two oxygen atoms sharing two pairs of electrons (double covalent bond) to achieve stable octet configurations."
+  },
+  {
+    question: "Which property is characteristic of ionic compounds?",
+    options: ["Poor conductivity in molten state", "Non-polar nature", "High melting and boiling points", "Low melting points"],
+    answer: 2,
+    explanation: "Ionic compounds typically have high melting and boiling points due to the strong electrostatic forces holding oppositely charged ions together in a rigid lattice structure."
+  },
+  {
+    question: "A coordinate (dative) covalent bond is formed when:",
+    options: ["One atom donates both electrons of the shared pair", "Electrons are completely transferred", "Two atoms equally share one electron each", "Metallic atoms share a sea of electrons"],
+    answer: 0,
+    explanation: "In a coordinate (dative) covalent bond, one atom (the donor) provides both electrons for the shared pair, while the other atom (acceptor) contributes none, unlike normal covalent bonds where each atom contributes one electron."
+  },
+  {
+    question: "Metallic bonding is best described as:",
+    options: ["Weak intermolecular forces between metal atoms", "Sharing of electrons between two specific metal atoms", "Transfer of electrons between metal atoms", "A \"sea\" of delocalized electrons surrounding positive metal ions"],
+    answer: 3,
+    explanation: "Metallic bonding involves a lattice of positive metal ions surrounded by a \"sea\" of delocalized (free-moving) electrons, explaining properties like electrical conductivity and malleability."
+  },
+  {
+    question: "Which type of intermolecular force is responsible for water's unusually high boiling point?",
+    options: ["Dipole-dipole forces only", "Hydrogen bonding", "London dispersion forces only", "Ionic bonding"],
+    answer: 1,
+    explanation: "Water molecules form strong hydrogen bonds (due to highly electronegative oxygen bonded to hydrogen), requiring significant energy to break these bonds during boiling, explaining water's unusually high boiling point compared to similar-sized molecules."
+  },
+  {
+    question: "According to VSEPR theory, a molecule with 4 bonding pairs and no lone pairs around the central atom adopts which geometry?",
+    options: ["Trigonal planar", "Octahedral", "Tetrahedral", "Linear"],
+    answer: 2,
+    explanation: "VSEPR (Valence Shell Electron Pair Repulsion) theory predicts that 4 electron pairs (bonding, no lone pairs) arrange themselves as far apart as possible, resulting in tetrahedral geometry (109.5° bond angles), as seen in methane (CH₄)."
+  },
+  {
+    question: "Which of the following compounds is most likely to be covalent?",
+    options: ["CaF₂", "CO₂", "NaCl", "MgO"],
+    answer: 1,
+    explanation: "CO₂ consists of two non-metals (carbon and oxygen) sharing electrons through covalent bonds, unlike the other options which involve metal-nonmetal combinations typical of ionic bonding."
+  },
+  {
+    question: "Polar covalent bonds occur when:",
+    options: ["No electrons are involved in bonding", "Electrons are shared equally between two identical atoms", "Electrons are shared unequally due to differing electronegativities", "Electrons are transferred completely"],
+    answer: 2,
+    explanation: "Polar covalent bonds form when atoms with different electronegativities share electrons unequally, creating partial positive and negative charges (dipole) within the molecule."
+  },
+  {
+    question: "Which of the following best explains why noble gases rarely form chemical bonds?",
+    options: ["Their electron configuration is already stable (full outer shell)", "They lack protons for bonding", "They are too large to bond", "They have too many valence electrons"],
+    answer: 0,
+    explanation: "Noble gases already possess a complete/stable valence electron configuration, eliminating the driving force (achieving stability) that typically causes atoms to form chemical bonds."
+  },
+  {
+    question: "Balance the equation: Mg + O₂ → MgO. What are the correct coefficients?",
+    options: ["1, 1, 1", "1, 2, 1", "2, 1, 2", "2, 2, 1"],
+    answer: 2,
+    explanation: "Balancing requires equal atoms on both sides: 2Mg + O₂ → 2MgO gives 2 Mg atoms and 2 O atoms on each side, achieving balance."
+  },
+  {
+    question: "What is the correct chemical formula for calcium chloride?",
+    options: ["CaCl", "Ca₂Cl₂", "CaCl₂", "Ca₂Cl"],
+    answer: 2,
+    explanation: "Calcium has a +2 charge (Ca²⁺) and chloride has a -1 charge (Cl⁻), requiring two chloride ions to balance one calcium ion, giving CaCl₂."
+  },
+  {
+    question: "In the reaction Zn + 2HCl → ZnCl₂ + H₂, this is classified as a:",
+    options: ["Double decomposition reaction", "Decomposition reaction", "Combination reaction", "Displacement (single replacement) reaction"],
+    answer: 3,
+    explanation: "This reaction involves zinc displacing hydrogen from hydrochloric acid, a classic example of a single displacement (replacement) reaction where a more reactive metal replaces a less reactive one in a compound."
+  },
+  {
+    question: "What is the empirical formula of a compound containing 40% carbon, 6.7% hydrogen, and 53.3% oxygen by mass? (Assume 100g sample: C=12, H=1, O=16)",
+    options: ["CH₄O", "CH₂O", "C₂H₄O₂", "C₂H₂O"],
+    answer: 1,
+    explanation: "Moles: C=40/12=3.33, H=6.7/1=6.7, O=53.3/16=3.33. Dividing by smallest (3.33): C=1, H=2, O=1, giving empirical formula CH₂O."
+  },
+  {
+    question: "Balance the equation: Fe + O₂ → Fe₂O₃. What are the correct coefficients?",
+    options: ["2, 3, 2", "2, 2, 1", "3, 2, 1", "4, 3, 2"],
+    answer: 3,
+    explanation: "Balancing gives 4Fe + 3O₂ → 2Fe₂O₃, providing 4 Fe atoms and 6 O atoms on each side (2×3=6 from O₂, 2×3=6 from Fe₂O₃)."
+  },
+  {
+    question: "Which type of reaction is represented by: CaCO₃ → CaO + CO₂?",
+    options: ["Decomposition reaction", "Combination reaction", "Neutralization reaction", "Displacement reaction"],
+    answer: 0,
+    explanation: "This reaction shows a single compound (calcium carbonate) breaking down into two simpler substances (calcium oxide and carbon dioxide), characteristic of a decomposition reaction (typically requiring heat)."
+  },
+  {
+    question: "What is the correct formula for aluminum sulfate?",
+    options: ["Al₃(SO₄)₂", "Al₂(SO₄)₃", "Al₂SO₄", "AlSO₄"],
+    answer: 1,
+    explanation: "Aluminum has a +3 charge (Al³⁺) and sulfate has a -2 charge (SO₄²⁻). To balance charges: 2(+3) = 3(-2) = 6, giving the formula Al₂(SO₄)₃."
+  },
+  {
+    question: "In the equation 2H₂ + O₂ → 2H₂O, if 4 moles of H₂ react completely, how many moles of H₂O are produced?",
+    options: ["8 moles", "4 moles", "2 moles", "1 mole"],
+    answer: 1,
+    explanation: "From the balanced equation, the mole ratio of H₂ to H₂O is 2:2 (or 1:1), so 4 moles of H₂ produces 4 moles of H₂O."
+  },
+  {
+    question: "Which of the following represents a combination (synthesis) reaction?",
+    options: ["Zn + CuSO₄ → ZnSO₄ + Cu", "AgNO₃ + NaCl → AgCl + NaNO₃", "2H₂O → 2H₂ + O₂", "N₂ + 3H₂ → 2NH₃"],
+    answer: 3,
+    explanation: "A combination reaction involves two or more simple substances combining to form a single, more complex product — nitrogen and hydrogen combining to form ammonia fits this definition perfectly."
+  },
+  {
+    question: "What is the molecular formula of a compound with empirical formula CH₂O and molar mass 180 g/mol? (Empirical formula mass = 30 g/mol)",
+    options: ["C₃H₆O₃", "C₆H₁₂O₆", "C₄H₈O₄", "C₂H₄O₂"],
+    answer: 1,
+    explanation: "Molecular mass/Empirical mass = 180/30 = 6, so multiply the empirical formula by 6: (CH₂O)×6 = C₆H₁₂O₆ (glucose)."
+  },
+];
+
+const CHEMISTRYB = [
+  {
+    question: "Calculate the number of moles in 44g of CO₂. (C=12, O=16)",
+    options: ["1 mol", "2 mol", "0.5 mol", "4 mol"],
+    answer: 0,
+    explanation: "Molar mass of CO₂ = 12 + (16×2) = 44 g/mol. Moles = mass/molar mass = 44/44 = 1 mol."
+  },
+  {
+    question: "Avogadro's number represents the number of particles in:",
+    options: ["1 mL of water", "1 liter of any gas", "1 gram of any substance", "1 mole of any substance"],
+    answer: 3,
+    explanation: "Avogadro's number (6.02×10²³) defines the number of particles (atoms, molecules, ions) contained in exactly one mole of any substance."
+  },
+  {
+    question: "How many molecules are present in 0.5 mol of water? (Avogadro's number = 6.02×10²³)",
+    options: ["1.204×10²³", "6.02×10²³", "3.01×10²³", "12.04×10²³"],
+    answer: 2,
+    explanation: "Number of molecules = moles × Avogadro's number = 0.5 × 6.02×10²³ = 3.01×10²³."
+  },
+  {
+    question: "Calculate the mass of 3 moles of NaOH. (Na=23, O=16, H=1)",
+    options: ["120g", "80g", "40g", "60g"],
+    answer: 0,
+    explanation: "Molar mass of NaOH = 23+16+1 = 40 g/mol. Mass = moles × molar mass = 3 × 40 = 120g."
+  },
+  {
+    question: "In the reaction N₂ + 3H₂ → 2NH₃, how many moles of H₂ are needed to react completely with 2 moles of N₂?",
+    options: ["6 mol", "4 mol", "3 mol", "2 mol"],
+    answer: 0,
+    explanation: "Mole ratio of N₂:H₂ is 1:3, so 2 moles of N₂ requires 2×3 = 6 moles of H₂."
+  },
+  {
+    question: "What volume does 2 moles of an ideal gas occupy at STP? (Molar volume at STP = 22.4 L/mol)",
+    options: ["44.8 L", "22.4 L", "11.2 L", "67.2 L"],
+    answer: 0,
+    explanation: "Volume = moles × molar volume at STP = 2 × 22.4 = 44.8 L."
+  },
+  {
+    question: "Calculate the molar concentration of a solution containing 0.2 mol of NaCl in 500mL of solution.",
+    options: ["0.4 mol/L", "0.2 mol/L", "0.1 mol/L", "2.5 mol/L"],
+    answer: 0,
+    explanation: "Concentration = moles/volume(L) = 0.2/0.5 = 0.4 mol/L."
+  },
+  {
+    question: "In the reaction 2Al + 3CuSO₄ → Al₂(SO₄)₃ + 3Cu, if 4 moles of Al react completely, how many moles of Cu are produced?",
+    options: ["2 mol", "4 mol", "6 mol", "3 mol"],
+    answer: 2,
+    explanation: "Mole ratio of Al:Cu is 2:3, so 4 moles of Al produces (4×3)/2 = 6 moles of Cu."
+  },
+  {
+    question: "What is the limiting reagent when 4 moles of H₂ react with 1 mole of O₂ in the equation 2H₂ + O₂ → 2H₂O?",
+    options: ["Both are used up completely", "Neither, water is limiting", "O₂", "H₂"],
+    answer: 2,
+    explanation: "The required ratio is 2H₂:1O₂. With 1 mole O₂ requiring 2 moles H₂, but 4 moles H₂ available exceeds what's needed, meaning O₂ runs out first, making it the limiting reagent, while H₂ is in excess."
+  },
+  {
+    question: "Calculate the percentage yield if a reaction theoretically should produce 50g of product, but only 40g is actually obtained.",
+    options: ["90%", "10%", "80%", "125%"],
+    answer: 2,
+    explanation: "Percentage yield = (actual yield/theoretical yield) × 100 = (40/50) × 100 = 80%."
+  },
+  {
+    question: "According to the Arrhenius theory, an acid is a substance that:",
+    options: ["Produces hydrogen ions (H⁺) in aqueous solution", "Produces hydroxide ions (OH⁻) in solution", "Accepts electron pairs", "Accepts protons"],
+    answer: 0,
+    explanation: "The Arrhenius definition specifically states that acids increase the concentration of H⁺ ions (or H₃O⁺) when dissolved in water, distinguishing them from bases which produce OH⁻ ions."
+  },
+  {
+    question: "Calculate the pH of a solution with [H⁺] = 1×10⁻⁴ mol/L.",
+    options: ["0.0001", "-4", "4", "10"],
+    answer: 2,
+    explanation: "pH = -log[H⁺] = -log(1×10⁻⁴) = 4."
+  },
+  {
+    question: "A neutralization reaction between an acid and a base produces:",
+    options: ["Only a salt", "Only water", "Salt and hydrogen gas", "Salt and water"],
+    answer: 3,
+    explanation: "The general neutralization reaction is Acid + Base → Salt + Water, where the acid's hydrogen ions combine with the base's hydroxide ions to form water, while the remaining ions form a salt."
+  },
+  {
+    question: "Which of the following is classified as a strong acid?",
+    options: ["Carbonic acid", "Citric acid", "Acetic acid", "Hydrochloric acid"],
+    answer: 3,
+    explanation: "Hydrochloric acid completely dissociates in water, releasing all its H⁺ ions, classifying it as a strong acid, unlike acetic, carbonic, and citric acids which only partially ionize (weak acids)."
+  },
+  {
+    question: "A solution with pH 9 is:",
+    options: ["Strongly acidic to neutral", "Strongly acidic", "Basic (alkaline)", "Neutral"],
+    answer: 2,
+    explanation: "On the pH scale, values above 7 indicate basic (alkaline) solutions, with pH 9 being moderately basic (pH 7 is neutral, below 7 is acidic)."
+  },
+  {
+    question: "Which of the following salts would produce an acidic solution when dissolved in water?",
+    options: ["NH₄Cl (weak base + strong acid)", "KNO₃ (strong acid + strong base)", "CH₃COONa (weak acid + strong base)", "NaCl (strong acid + strong base)"],
+    answer: 0,
+    explanation: "Salts formed from a weak base and strong acid (like NH₄Cl) hydrolyze in water to produce an acidic solution, as the ammonium ion releases H⁺ ions upon reaction with water."
+  },
+  {
+    question: "Calculate the volume of 0.1M HCl needed to neutralize 25mL of 0.2M NaOH.",
+    options: ["50mL", "12.5mL", "100mL", "25mL"],
+    answer: 0,
+    explanation: "Using M1V1 = M2V2 (moles of acid = moles of base for 1:1 reaction): 0.1×V1 = 0.2×25, so V1 = 5/0.1 = 50mL."
+  },
+  {
+    question: "Which indicator turns pink in basic solutions and remains colorless in acidic solutions?",
+    options: ["Methyl orange", "Litmus", "Phenolphthalein", "Universal indicator"],
+    answer: 2,
+    explanation: "Phenolphthalein is a common indicator that remains colorless in acidic/neutral solutions but turns distinctly pink/magenta in basic solutions (pH>8.2), commonly used in titrations."
+  },
+  {
+    question: "According to the Bronsted-Lowry theory, a base is defined as a substance that:",
+    options: ["Produces OH⁻ ions only", "Donates electron pairs only", "Accepts protons", "Donates protons"],
+    answer: 2,
+    explanation: "The Bronsted-Lowry theory broadens the definition of bases beyond Arrhenius theory, defining a base as any species capable of accepting a proton (H⁺), regardless of whether it produces OH⁻ ions."
+  },
+  {
+    question: "Which type of salt is formed when a strong acid completely reacts with a strong base?",
+    options: ["Amphoteric salt", "Acidic salt", "Neutral salt", "Basic salt"],
+    answer: 2,
+    explanation: "When a strong acid (fully dissociating, providing H⁺) reacts completely with a strong base (fully dissociating, providing OH⁻), the resulting salt doesn't hydrolyze significantly, producing a neutral solution (pH≈7)."
+  },
+  {
+    question: "In a redox reaction, oxidation is defined as:",
+    options: ["Gain of protons", "Loss of electrons", "Gain of electrons", "Loss of protons"],
+    answer: 1,
+    explanation: "Oxidation is specifically defined as the loss of electrons by a substance, resulting in an increase in oxidation state, while reduction (the opposite process) involves gaining electrons."
+  },
+  {
+    question: "In the reaction Zn + Cu²⁺ → Zn²⁺ + Cu, which species is reduced?",
+    options: ["Cu²⁺", "Zn²⁺", "Zn", "Cu"],
+    answer: 0,
+    explanation: "Cu²⁺ gains 2 electrons to become Cu (reduction, decrease in oxidation state from +2 to 0), while Zn loses electrons to become Zn²⁺ (oxidation)."
+  },
+  {
+    question: "What is the oxidation state of chlorine in KClO₃?",
+    options: ["+1", "+5", "+3", "-1"],
+    answer: 1,
+    explanation: "In KClO₃, K is +1 and O is -2 (×3=-6). For neutral compound: +1 + Cl + (-6) = 0, so Cl = +5."
+  },
+  {
+    question: "A reducing agent in a redox reaction:",
+    options: ["Remains unchanged throughout the reaction", "Gets reduced itself while causing oxidation of another substance", "Only exists in acidic solutions", "Gets oxidized itself while causing reduction of another substance"],
+    answer: 3,
+    explanation: "A reducing agent donates electrons to another substance (causing that substance to be reduced), and in doing so, the reducing agent itself becomes oxidized (loses electrons)."
+  },
+  {
+    question: "Which half-reaction represents oxidation?",
+    options: ["Neither represents oxidation", "Fe³⁺ + e⁻ → Fe²⁺ (reduction)", "Both represent oxidation", "Fe²⁺ → Fe³⁺ + e⁻ (oxidation)"],
+    answer: 3,
+    explanation: "Fe²⁺ → Fe³⁺ + e⁻ shows iron losing an electron (increasing oxidation state from +2 to +3), which is the definition of oxidation."
+  },
+  {
+    question: "Balance the redox equation (in acidic medium): MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺. What coefficient is needed for Fe²⁺?",
+    options: ["2", "1", "5", "3"],
+    answer: 2,
+    explanation: "MnO₄⁻ undergoes a 5-electron reduction (Mn: +7→+2), while Fe²⁺→Fe³⁺ is a 1-electron oxidation. To balance electrons, 5 Fe²⁺ ions are needed for every 1 MnO₄⁻ ion."
+  },
+  {
+    question: "Which of the following is an example of a disproportionation reaction?",
+    options: ["Zn + CuSO₄ → ZnSO₄ + Cu", "Cl₂ + H₂O → HCl + HOCl", "NaOH + HCl → NaCl + H₂O", "2H₂ + O₂ → 2H₂O"],
+    answer: 1,
+    explanation: "Disproportionation occurs when the same element is simultaneously oxidized and reduced within a single reaction — chlorine (0 oxidation state) forms both HCl (-1) and HOCl (+1), demonstrating this dual change."
+  },
+  {
+    question: "In electrolysis, oxidation occurs at which electrode?",
+    options: ["Cathode", "Neither electrode", "Anode", "Both electrodes equally"],
+    answer: 2,
+    explanation: "By convention, oxidation always occurs at the anode (loss of electrons) in both electrolytic and galvanic cells, while reduction occurs at the cathode."
+  },
+  {
+    question: "What is the oxidation number of sulfur in H₂SO₄?",
+    options: ["+2", "+4", "+6", "-2"],
+    answer: 2,
+    explanation: "In H₂SO₄, H is +1(×2=+2) and O is -2(×4=-8). For neutral compound: +2 + S + (-8) = 0, so S = +6."
+  },
+  {
+    question: "A redox reaction always involves:",
+    options: ["Simultaneous oxidation and reduction", "Only oxidation", "Only reduction", "Neither oxidation nor reduction"],
+    answer: 0,
+    explanation: "By definition, redox (reduction-oxidation) reactions always involve both processes occurring simultaneously — electrons lost by one species (oxidation) must be gained by another (reduction)."
+  },
+  {
+    question: "In a galvanic (voltaic) cell, chemical energy is converted to:",
+    options: ["Mechanical energy", "Nuclear energy", "Electrical energy", "Heat energy only"],
+    answer: 2,
+    explanation: "Galvanic cells harness spontaneous redox reactions to generate electrical energy from chemical energy, forming the basis of batteries."
+  },
+  {
+    question: "In electrolysis, which type of energy conversion occurs?",
+    options: ["Chemical to electrical energy", "Mechanical to chemical energy", "Thermal to electrical energy", "Electrical to chemical energy"],
+    answer: 3,
+    explanation: "Electrolysis uses an external electrical energy source to drive a non-spontaneous chemical reaction, converting electrical energy into chemical energy (opposite of a galvanic cell)."
+  },
+  {
+    question: "Calculate the mass of copper deposited when 2 Faradays of electricity pass through a copper sulfate solution. (Cu=64, Cu²⁺ + 2e⁻ → Cu)",
+    options: ["64g", "32g", "16g", "128g"],
+    answer: 0,
+    explanation: "2 Faradays = 2 moles of electrons. Since 2 moles of electrons deposit 1 mole of Cu (from the half-equation), mass = 1 × 64 = 64g."
+  },
+  {
+    question: "The standard hydrogen electrode has a defined standard reduction potential of:",
+    options: ["+0.5V", "+1.0V", "0V", "-1.0V"],
+    answer: 2,
+    explanation: "By international convention, the standard hydrogen electrode (SHE) is arbitrarily assigned a standard reduction potential of exactly 0V, serving as the reference point for measuring all other electrode potentials."
+  },
+  {
+    question: "In a Daniell cell, which metal acts as the anode?",
+    options: ["Platinum", "Copper", "Zinc", "Silver"],
+    answer: 2,
+    explanation: "In a classic Daniell cell, zinc (more reactive, higher tendency to lose electrons) acts as the anode, undergoing oxidation, while copper acts as the cathode."
+  },
+  {
+    question: "Faraday's first law of electrolysis states that the mass of substance deposited is directly proportional to:",
+    options: ["Quantity of electricity passed (charge)", "Current only", "Voltage applied", "Time only"],
+    answer: 0,
+    explanation: "Faraday's first law specifically states that mass deposited/liberated during electrolysis is directly proportional to the total quantity of electric charge (Q=It) passed through the electrolyte."
+  },
+  {
+    question: "Which electrode in an electrolytic cell attracts positive ions (cations)?",
+    options: ["Cathode", "Neither electrode", "Anode", "Both electrodes equally"],
+    answer: 0,
+    explanation: "The cathode is negatively charged in an electrolytic cell, attracting positively charged cations, which then gain electrons (reduction) at this electrode."
+  },
+  {
+    question: "Calculate the number of Faradays required to deposit 108g of silver. (Ag=108, Ag⁺ + e⁻ → Ag)",
+    options: ["4 F", "2 F", "0.5 F", "1 F"],
+    answer: 3,
+    explanation: "108g of Ag = 108/108 = 1 mole. Since 1 mole of electrons deposits 1 mole of Ag (1:1 ratio from half-equation), 1 Faraday is required."
+  },
+  {
+    question: "The salt bridge in a galvanic cell serves to:",
+    options: ["Prevent any ion movement between half-cells", "Complete the circuit and maintain electrical neutrality between half-cells", "Increase the voltage of the cell", "Generate electricity directly"],
+    answer: 1,
+    explanation: "The salt bridge allows ion flow between half-cells to balance charge buildup (maintaining electrical neutrality) as the reaction proceeds, without allowing direct mixing of the two solutions."
+  },
+  {
+    question: "Which factor does NOT affect the amount of substance deposited during electrolysis?",
+    options: ["Time of electrolysis", "Chemical equivalent of the substance", "Color of the electrolyte", "Current strength"],
+    answer: 2,
+    explanation: "According to Faraday's laws, the amount of substance deposited depends on current, time, and the chemical equivalent weight of the substance — the color of the electrolyte solution has no bearing on deposition amount."
+  },
+  {
+    question: "Which state of matter has particles arranged in a fixed, orderly pattern with minimal movement?",
+    options: ["Liquid", "Solid", "Plasma", "Gas"],
+    answer: 1,
+    explanation: "Solids have particles held tightly together in fixed positions (often in a crystalline lattice), allowing only vibrational movement, unlike liquids and gases where particles have greater freedom of motion."
+  },
+  {
+    question: "The process of a gas changing directly to a solid is called:",
+    options: ["Evaporation", "Condensation", "Sublimation", "Deposition"],
+    answer: 3,
+    explanation: "Deposition is the reverse of sublimation, referring to a gas transitioning directly into a solid state without passing through the liquid phase (e.g., frost formation)."
+  },
+  {
+    question: "Which factor increases the rate of evaporation of a liquid?",
+    options: ["Decreasing temperature", "Increasing atmospheric pressure", "Increasing surface area", "Decreasing surface area"],
+    answer: 2,
+    explanation: "A larger surface area exposes more liquid molecules to the surface, increasing the likelihood of molecules gaining sufficient energy to escape into the gas phase, thus increasing evaporation rate."
+  },
+  {
+    question: "Plasma is often described as the fourth state of matter because it consists of:",
+    options: ["Solid particles suspended in gas", "Ionized gas with free electrons and ions", "Neutral atoms only", "A mixture of solid and liquid"],
+    answer: 1,
+    explanation: "Plasma consists of a highly ionized gas containing free electrons and positive ions, giving it unique electrical and magnetic properties distinct from ordinary gases."
+  },
+  {
+    question: "During melting, the temperature of a substance:",
+    options: ["Increases steadily", "Remains constant until melting is complete", "Decreases steadily", "Fluctuates randomly"],
+    answer: 1,
+    explanation: "During a phase change (like melting), temperature remains constant because the energy absorbed goes into breaking intermolecular forces (latent heat) rather than increasing kinetic energy/temperature."
+  },
+  {
+    question: "Which intermolecular forces are strongest, generally leading to higher boiling points?",
+    options: ["London dispersion forces", "Van der Waals forces", "Dipole-dipole forces", "Hydrogen bonds"],
+    answer: 3,
+    explanation: "Among common intermolecular forces, hydrogen bonds (a special, strong type of dipole-dipole interaction involving H bonded to highly electronegative atoms like O, N, F) are generally the strongest, significantly raising boiling points."
+  },
+  {
+    question: "The kinetic theory of matter states that particles in a gas:",
+    options: ["Are stationary", "Are tightly packed with strong forces", "Move randomly and rapidly with negligible intermolecular forces", "Vibrate only around fixed points"],
+    answer: 2,
+    explanation: "Kinetic theory describes gas particles as being in constant, random, rapid motion, with negligible attractive forces between them (compared to liquids/solids), explaining gas behavior like compressibility and diffusion."
+  },
+  {
+    question: "Which change of state involves the release of energy (exothermic)?",
+    options: ["Boiling", "Freezing", "Sublimation (solid to gas)", "Melting"],
+    answer: 1,
+    explanation: "Freezing (liquid to solid) is exothermic because energy is released as particles lose kinetic energy and form more ordered structures with stronger intermolecular attractions, unlike melting/boiling/sublimation which require energy input (endothermic)."
+  },
+  {
+    question: "Brownian motion provides evidence for:",
+    options: ["The existence of atoms only", "Chemical bonding", "Constant random motion of particles in a fluid", "The structure of solids"],
+    answer: 2,
+    explanation: "Brownian motion (random movement of visible particles suspended in fluid) provides direct observable evidence for the constant, random motion of invisible molecules colliding with larger suspended particles."
+  },
+  {
+    question: "Which of the following best explains why gases can be easily compressed compared to liquids and solids?",
+    options: ["Gas particles are stationary", "Gas particles have large spaces between them", "Gas particles are chemically different", "Gas particles have no mass"],
+    answer: 1,
+    explanation: "Unlike liquids and solids where particles are closely packed, gas particles have large spaces between them, allowing significant reduction in volume when pressure is applied (compression)."
+  },
+];
+
+const CHEMISTRYC = [
+  {
+    question: "A gas occupies 6L at 300K. Calculate its volume at 400K if pressure remains constant.",
+    options: ["3L", "6L", "8L", "4.5L"],
+    answer: 2,
+    explanation: "Using Charles' Law (V1/T1 = V2/T2): 6/300 = V2/400, so V2 = (6×400)/300 = 8L."
+  },
+  {
+    question: "According to the ideal gas equation PV=nRT, if temperature and moles remain constant, doubling pressure will cause volume to:",
+    options: ["Double", "Remain the same", "Quadruple", "Halve"],
+    answer: 3,
+    explanation: "With n and T constant, PV=nRT simplifies to PV=constant (Boyle's Law), meaning pressure and volume are inversely proportional — doubling pressure halves volume."
+  },
+  {
+    question: "Calculate the number of moles of gas in a 10L container at 2 atm and 300K. (R = 0.0821 L·atm/mol·K)",
+    options: ["2.44 mol", "1.22 mol", "0.81 mol", "0.41 mol"],
+    answer: 2,
+    explanation: "Using PV=nRT: n = PV/RT = (2×10)/(0.0821×300) = 20/24.63 ≈ 0.81 mol."
+  },
+  {
+    question: "Dalton's Law of partial pressures states that the total pressure of a gas mixture equals:",
+    options: ["The pressure of the most abundant gas only", "The sum of partial pressures of individual gases", "The average of individual gas pressures", "The product of individual gas pressures"],
+    answer: 1,
+    explanation: "Dalton's Law states that in a mixture of non-reacting gases, the total pressure equals the sum of the partial pressures each gas would exert if it alone occupied the entire volume."
+  },
+  {
+    question: "A sample of gas at STP (0°C, 1 atm) occupies 22.4L. If temperature increases to 273°C at constant pressure, what happens to volume?",
+    options: ["Halves", "Triples", "Doubles", "Remains the same"],
+    answer: 2,
+    explanation: "Converting to Kelvin: initial T=273K, final T=273+273=546K. Since V∝T at constant pressure, and 546K is double 273K, volume doubles."
+  },
+  {
+    question: "Graham's Law of diffusion states that the rate of diffusion of a gas is inversely proportional to:",
+    options: ["Its pressure", "Its volume", "Its temperature", "The square root of its molar mass"],
+    answer: 3,
+    explanation: "Graham's Law states that lighter gases diffuse faster than heavier ones, with rate of diffusion inversely proportional to the square root of molar mass (rate ∝ 1/√M)."
+  },
+  {
+    question: "Calculate the volume of 5 moles of gas at STP.",
+    options: ["44.8L", "112L", "5L", "22.4L"],
+    answer: 1,
+    explanation: "Volume = moles × molar volume at STP = 5 × 22.4 = 112L."
+  },
+  {
+    question: "Which gas law combines the relationships between pressure, volume, and temperature into one equation?",
+    options: ["Boyle's Law", "Charles' Law", "Avogadro's Law", "Combined Gas Law"],
+    answer: 3,
+    explanation: "The Combined Gas Law (P1V1/T1 = P2V2/T2) merges Boyle's, Charles', and Gay-Lussac's laws into a single relationship, useful when multiple variables change simultaneously."
+  },
+  {
+    question: "Real gases deviate from ideal behavior because ideal gas assumptions ignore:",
+    options: ["Gas color", "Gas density", "Intermolecular forces and molecular volume", "Chemical reactivity"],
+    answer: 2,
+    explanation: "The ideal gas law assumes no intermolecular forces and negligible molecular volume — real gases deviate from this ideal behavior, especially at high pressure and low temperature, where these factors become significant."
+  },
+  {
+    question: "A 2L container holds nitrogen gas at 3 atm. If transferred to a 6L container at the same temperature, what is the new pressure?",
+    options: ["6 atm", "1 atm", "9 atm", "0.5 atm"],
+    answer: 1,
+    explanation: "Using Boyle's Law (P1V1=P2V2): 3×2 = P2×6, so P2 = 6/6 = 1 atm."
+  },
+  {
+    question: "An exothermic reaction is one where:",
+    options: ["Only heat is absorbed, never released", "Energy is released to the surroundings", "Energy is absorbed from the surroundings", "No energy change occurs"],
+    answer: 1,
+    explanation: "Exothermic reactions release energy (usually as heat) to the surroundings, resulting in products having lower energy than reactants, often causing a temperature increase in the surroundings."
+  },
+  {
+    question: "Calculate the enthalpy change when 2 moles of methane burn, given ΔH = -890 kJ/mol for the combustion of methane.",
+    options: ["+1780 kJ", "-445 kJ", "-890 kJ", "-1780 kJ"],
+    answer: 3,
+    explanation: "Total enthalpy change = moles × ΔH per mole = 2 × (-890) = -1780 kJ."
+  },
+  {
+    question: "Which of the following best describes an endothermic reaction?",
+    options: ["Products have lower energy than reactants", "Reactants absorb energy, resulting in products with higher energy", "Energy is released to surroundings", "Temperature of surroundings increases"],
+    answer: 1,
+    explanation: "Endothermic reactions absorb energy from surroundings (often causing a temperature decrease in surroundings), resulting in products having higher energy content than the original reactants."
+  },
+  {
+    question: "Activation energy is best defined as:",
+    options: ["The energy difference between reactants and products", "The energy absorbed during bond breaking only", "The minimum energy required for reactants to form products", "The total energy released in a reaction"],
+    answer: 2,
+    explanation: "Activation energy represents the energy barrier that must be overcome for a reaction to proceed — the minimum energy needed for reactant particles to successfully collide and transform into products."
+  },
+  {
+    question: "According to Hess's Law, the total enthalpy change for a reaction:",
+    options: ["Depends on the specific pathway taken", "Cannot be calculated indirectly", "Only applies to exothermic reactions", "Is independent of the reaction pathway (depends only on initial and final states)"],
+    answer: 3,
+    explanation: "Hess's Law states that enthalpy change is a state function, meaning total energy change depends only on the initial and final states, regardless of the specific reaction pathway or number of steps taken."
+  },
+  {
+    question: "In an energy profile diagram, the difference between the energy of reactants and the peak (transition state) represents:",
+    options: ["Activation energy", "Lattice energy", "Enthalpy change", "Bond energy"],
+    answer: 0,
+    explanation: "The activation energy is specifically represented as the energy difference between the reactants' initial energy level and the highest point (transition state/activated complex) on the energy profile diagram."
+  },
+  {
+    question: "Calculate the enthalpy change for a reaction where bonds broken require 500kJ and bonds formed release 650kJ.",
+    options: ["-150kJ", "+1150kJ", "+150kJ", "-1150kJ"],
+    answer: 0,
+    explanation: "ΔH = Energy absorbed (bonds broken) - Energy released (bonds formed) = 500 - 650 = -150kJ (negative indicates exothermic reaction)."
+  },
+  {
+    question: "A catalyst affects a chemical reaction by:",
+    options: ["Providing an alternative pathway with lower activation energy", "Increasing the enthalpy change", "Being consumed in the reaction", "Shifting the equilibrium position"],
+    answer: 0,
+    explanation: "Catalysts speed up reactions by providing an alternative reaction pathway with lower activation energy, without being consumed or altering the overall enthalpy change of the reaction."
+  },
+  {
+    question: "Bond breaking is generally:",
+    options: ["Endothermic (requires energy)", "Energy neutral", "Only relevant in ionic compounds", "Exothermic (releases energy)"],
+    answer: 0,
+    explanation: "Breaking chemical bonds requires energy input to overcome the attractive forces holding atoms together, making bond breaking an endothermic process, while bond formation releases energy (exothermic)."
+  },
+  {
+    question: "Standard enthalpy of formation refers to the enthalpy change when:",
+    options: ["Bonds are broken in a reaction", "1 mole of a compound forms from its constituent elements in their standard states", "Any reaction occurs at standard conditions", "A compound decomposes into elements"],
+    answer: 1,
+    explanation: "Standard enthalpy of formation (ΔHf°) is specifically defined as the enthalpy change when exactly 1 mole of a compound is formed from its elements in their standard states under standard conditions (298K, 1 atm)."
+  },
+  {
+    question: "Which factor does NOT generally affect the rate of a chemical reaction?",
+    options: ["Presence of a catalyst", "Color of the container", "Concentration of reactants", "Temperature"],
+    answer: 1,
+    explanation: "The color of the reaction container has no chemical or physical influence on reaction rate — temperature, concentration, surface area, pressure, and catalysts are the actual factors affecting reaction rates."
+  },
+  {
+    question: "Increasing temperature generally increases reaction rate because:",
+    options: ["Particles move faster, increasing collision frequency and energy", "Particles have more mass", "Concentration automatically increases", "Particles become larger"],
+    answer: 0,
+    explanation: "Higher temperature gives particles more kinetic energy, causing them to move faster and collide more frequently with greater energy, increasing the likelihood of successful reactions exceeding activation energy."
+  },
+  {
+    question: "According to collision theory, for a reaction to occur, particles must:",
+    options: ["Move at the same speed", "Have identical charges", "Simply come into contact", "Collide with sufficient energy and correct orientation"],
+    answer: 3,
+    explanation: "Collision theory states that successful reactions require particles to not only collide but do so with energy equal to or exceeding activation energy, AND with proper geometric orientation for bond rearrangement."
+  },
+  {
+    question: "Increasing the surface area of a solid reactant generally:",
+    options: ["Increases reaction rate", "Only affects gaseous reactions", "Has no effect on reaction rate", "Decreases reaction rate"],
+    answer: 0,
+    explanation: "Greater surface area exposes more reactant particles to potential collisions with other reactants, increasing the frequency of successful collisions and thus increasing reaction rate (e.g., powdered vs. lump solid)."
+  },
+  {
+    question: "A catalyst increases reaction rate by:",
+    options: ["Being consumed in the reaction", "Increasing temperature", "Increasing the concentration of reactants", "Providing an alternative pathway with lower activation energy"],
+    answer: 3,
+    explanation: "Catalysts work by offering an alternative reaction mechanism with a lower activation energy barrier, allowing more particles to have sufficient energy to react successfully, without being permanently consumed."
+  },
+  {
+    question: "In a reaction rate experiment, doubling the concentration of a reactant (first order) will:",
+    options: ["Halve the reaction rate", "Quadruple the reaction rate", "Have no effect on rate", "Double the reaction rate"],
+    answer: 3,
+    explanation: "For a first-order reaction with respect to a specific reactant, the rate is directly proportional to that reactant's concentration — doubling concentration directly doubles the rate."
+  },
+  {
+    question: "Which of the following would generally decrease reaction rate?",
+    options: ["Increasing temperature", "Decreasing surface area of solid reactants", "Adding a catalyst", "Increasing concentration"],
+    answer: 1,
+    explanation: "Decreasing surface area reduces the number of exposed reactant particles available for collision, thereby decreasing the frequency of successful collisions and slowing reaction rate."
+  },
+  {
+    question: "The rate of reaction is generally measured as:",
+    options: ["Temperature change during reaction", "Change in concentration of reactant/product per unit time", "Total energy released", "Total time for reaction completion"],
+    answer: 1,
+    explanation: "Reaction rate is quantitatively defined as the change in concentration (of either reactants decreasing or products increasing) divided by the time interval over which this change occurs."
+  },
+  {
+    question: "Why does increased pressure generally increase reaction rate for gaseous reactions?",
+    options: ["It increases temperature automatically", "It has no relationship to reaction rate", "It decreases activation energy", "It decreases the volume, increasing concentration and collision frequency"],
+    answer: 3,
+    explanation: "Increased pressure on a gas system effectively compresses the gas into a smaller volume, increasing the concentration of gas particles and thus increasing collision frequency, leading to faster reaction rates."
+  },
+  {
+    question: "An enzyme acts as a biological catalyst by:",
+    options: ["Increasing the activation energy", "Changing the products of a reaction", "Being permanently altered during the reaction", "Lowering the activation energy of biochemical reactions"],
+    answer: 3,
+    explanation: "Like other catalysts, enzymes work by providing an alternative reaction pathway with lower activation energy, significantly speeding up biochemical reactions without being permanently consumed or altered."
+  },
+  {
+    question: "At chemical equilibrium, which statement is true?",
+    options: ["Only the forward reaction continues", "The concentrations of reactants and products remain constant, with forward and reverse rates equal", "The reaction has completely stopped", "All reactants have converted to products"],
+    answer: 1,
+    explanation: "Chemical equilibrium is a dynamic state where forward and reverse reaction rates become equal, resulting in constant (not necessarily equal) concentrations of reactants and products, even though reactions continue to occur."
+  },
+  {
+    question: "According to Le Chatelier's Principle, if pressure is increased on a gaseous equilibrium system, the equilibrium will shift toward:",
+    options: ["No shift occurs", "The side with more gas moles", "Always toward products", "The side with fewer gas moles"],
+    answer: 3,
+    explanation: "Le Chatelier's Principle states that increasing pressure shifts equilibrium toward the side with fewer gas moles, as this reduces the total number of gas particles and partially counteracts the pressure increase."
+  },
+  {
+    question: "For the equilibrium N₂ + 3H₂ ⇌ 2NH₃, increasing temperature (assuming the forward reaction is exothermic) will shift equilibrium toward:",
+    options: ["The reverse direction (more N₂ and H₂)", "No change occurs", "The forward direction (more NH₃)", "Complete conversion to NH₃"],
+    answer: 0,
+    explanation: "For an exothermic forward reaction, increasing temperature favors the endothermic reverse reaction (as the system tries to absorb the added heat), shifting equilibrium toward reactants (N₂ and H₂)."
+  },
+  {
+    question: "The equilibrium constant (Kc) is defined as:",
+    options: ["The activation energy of the reaction", "The rate of forward reaction only", "The ratio of product concentrations to reactant concentrations (raised to their stoichiometric powers) at equilibrium", "The total concentration of all species"],
+    answer: 2,
+    explanation: "Kc represents the ratio of equilibrium concentrations of products to reactants, each raised to the power of their stoichiometric coefficients, providing a quantitative measure of the equilibrium position."
+  },
+  {
+    question: "If Kc is very large (>>1) for a reaction, this indicates:",
+    options: ["The reaction favors products significantly", "The reaction rate is very slow", "The reaction favors reactants significantly", "The reaction is at equilibrium exactly halfway"],
+    answer: 0,
+    explanation: "A large Kc value indicates that at equilibrium, the concentration of products vastly exceeds that of reactants, meaning the reaction proceeds substantially toward completion (product-favored)."
+  },
+  {
+    question: "Adding a catalyst to an equilibrium system will:",
+    options: ["Have no effect on equilibrium position, only speeds up attainment of equilibrium", "Shift equilibrium toward reactants", "Shift equilibrium toward products", "Increase the value of Kc"],
+    answer: 0,
+    explanation: "Catalysts speed up both forward and reverse reactions equally, helping the system reach equilibrium faster, but they don't affect the equilibrium position or the value of Kc."
+  },
+  {
+    question: "According to Le Chatelier's Principle, adding more reactant to an equilibrium system will shift equilibrium toward:",
+    options: ["No shift occurs", "Depends on temperature only", "Products (forward direction)", "Reactants (reverse direction)"],
+    answer: 2,
+    explanation: "Increasing reactant concentration disturbs the equilibrium, and the system shifts forward (toward products) to consume some of the added reactant, partially restoring equilibrium."
+  },
+  {
+    question: "For a reaction at equilibrium, if Kc = 1, this suggests:",
+    options: ["Only reactants are present", "The reaction hasn't started", "Only products are present", "Reactant and product concentrations are comparable"],
+    answer: 3,
+    explanation: "When Kc equals approximately 1, it indicates that at equilibrium, neither reactants nor products are strongly favored — their concentrations are roughly comparable in magnitude."
+  },
+  {
+    question: "Which of the following factors does NOT affect the position of equilibrium?",
+    options: ["Concentration changes", "Presence of a catalyst", "Temperature", "Pressure (for gaseous systems)"],
+    answer: 1,
+    explanation: "While catalysts speed up the rate of reaching equilibrium, they do not shift the equilibrium position itself — only temperature, pressure, and concentration changes can shift where equilibrium lies."
+  },
+  {
+    question: "For the equilibrium 2SO₂ + O₂ ⇌ 2SO₃, decreasing the volume of the container (increasing pressure) will shift equilibrium toward:",
+    options: ["No shift occurs", "Cannot be determined", "Products (right, toward SO₃)", "Reactants (left)"],
+    answer: 2,
+    explanation: "The product side (2 moles SO₃) has fewer total gas moles than the reactant side (2+1=3 moles), so decreasing volume/increasing pressure shifts equilibrium toward the side with fewer moles — favoring SO₃ production."
+  },
+  {
+    question: "Solubility is generally defined as:",
+    options: ["The rate at which a solute dissolves", "The color change during dissolution", "The total volume of solution", "The maximum amount of solute that dissolves in a given amount of solvent at a specific temperature"],
+    answer: 3,
+    explanation: "Solubility specifically refers to the maximum quantity of a solute that can dissolve in a specified amount of solvent at a given temperature, forming a saturated solution."
+  },
+  {
+    question: "Which of the following generally increases the solubility of most solid solutes in water?",
+    options: ["Decreasing pressure", "Decreasing temperature", "Increasing temperature", "Adding more solute beyond saturation"],
+    answer: 2,
+    explanation: "For most solid solutes, increasing temperature provides more kinetic energy to break intermolecular forces, allowing more solute particles to dissolve, thus increasing solubility."
+  },
+  {
+    question: "A saturated solution is one where:",
+    options: ["The maximum amount of solute has dissolved at that temperature, with excess undissolved solute present", "The solvent has completely evaporated", "No solute has been added yet", "The solution is unstable and will decompose"],
+    answer: 0,
+    explanation: "A saturated solution contains the maximum dissolvable amount of solute at a given temperature, existing in equilibrium with any undissolved excess solute present."
+  },
+  {
+    question: "Calculate the concentration (in mol/L) of a solution containing 5.85g of NaCl dissolved in 500mL of water. (Na=23, Cl=35.5)",
+    options: ["1.0 mol/L", "0.2 mol/L", "0.5 mol/L", "0.1 mol/L"],
+    answer: 1,
+    explanation: "Molar mass NaCl = 23+35.5 = 58.5 g/mol. Moles = 5.85/58.5 = 0.1 mol. Concentration = 0.1mol/0.5L = 0.2 mol/L."
+  },
+  {
+    question: "Which of the following best describes an unsaturated solution?",
+    options: ["Cannot dissolve any more solute", "Contains exactly the saturation point of solute", "Contains more solute than can dissolve", "Contains less solute than the maximum that could dissolve at that temperature"],
+    answer: 3,
+    explanation: "An unsaturated solution has dissolved less solute than the maximum solubility limit at that specific temperature, meaning additional solute could still dissolve if added."
+  },
+  {
+    question: "How does increasing pressure typically affect the solubility of a gas in a liquid?",
+    options: ["Has no effect on gas solubility", "Decreases gas solubility", "Only affects solid solubility", "Increases gas solubility"],
+    answer: 3,
+    explanation: "According to Henry's Law, increasing pressure above a liquid increases the solubility of a gas within that liquid, as higher pressure forces more gas molecules into solution (e.g., carbonated beverages)."
+  },
+  {
+    question: "A supersaturated solution contains:",
+    options: ["No solute at all", "Less solute than the saturation point", "Exactly the saturation point of solute", "More dissolved solute than would normally be possible at that temperature (unstable state)"],
+    answer: 3,
+    explanation: "Supersaturated solutions contain more dissolved solute than the normal saturation limit at that temperature, achieved through careful preparation (like slow cooling) — these solutions are inherently unstable and can rapidly crystallize if disturbed."
+  },
+  {
+    question: "Calculate the mass of solute needed to prepare 250mL of a 0.4M NaOH solution. (Na=23, O=16, H=1)",
+    options: ["4g", "8g", "10g", "2g"],
+    answer: 0,
+    explanation: "Moles needed = M×V = 0.4×0.25 = 0.1 mol. Molar mass NaOH = 40g/mol. Mass = 0.1×40 = 4g."
+  },
+  {
+    question: "Which of the following factors does NOT typically affect solubility?",
+    options: ["Nature of solute and solvent", "Container shape", "Temperature", "Pressure (for gases)"],
+    answer: 1,
+    explanation: "The physical shape of the container holding a solution has no chemical influence on solubility — temperature, pressure (for gases), and the chemical nature of solute/solvent (like polarity) are the actual determining factors."
+  },
+  {
+    question: "The principle \"like dissolves like\" refers to:",
+    options: ["Only solids dissolving in solids", "Polar solvents dissolving polar solutes, and non-polar solvents dissolving non-polar solutes", "Temperature having no effect on solubility", "Only gases dissolving in gases"],
+    answer: 1,
+    explanation: "This fundamental solubility principle explains that substances with similar polarity/intermolecular force characteristics tend to be mutually soluble (e.g., polar water dissolves polar/ionic compounds, while non-polar solvents dissolve non-polar substances like oils)."
+  },
+];
+
+const CHEMISTRYD = [
+  {
+    question: "Which functional group characterizes alcohols?",
+    options: ["-COOH", "-CHO", "-OH", "-NH₂"],
+    answer: 2,
+    explanation: "The hydroxyl group (-OH) attached to a carbon chain is the defining functional group of alcohols, distinguishing them from other organic compound classes."
+  },
+  {
+    question: "What is the general formula for alkanes?",
+    options: ["CₙH₂ₙ₊₂", "CₙH₂ₙ₊₁", "CₙH₂ₙ₋₂", "CₙH₂ₙ"],
+    answer: 0,
+    explanation: "Alkanes are saturated hydrocarbons with only single bonds, following the general formula CₙH₂ₙ₊₂ (e.g., methane CH₄, ethane C₂H₆)."
+  },
+  {
+    question: "Which type of hydrocarbon contains at least one carbon-carbon double bond?",
+    options: ["Alkane", "Alkyne", "Cycloalkane", "Alkene"],
+    answer: 3,
+    explanation: "Alkenes are unsaturated hydrocarbons characterized by at least one C=C double bond, following the general formula CₙH₂ₙ, distinguishing them from fully saturated alkanes."
+  },
+  {
+    question: "What is the name of the organic compound CH₃COOH?",
+    options: ["Methanol", "Methanoic acid", "Ethanoic acid (acetic acid)", "Ethanol"],
+    answer: 2,
+    explanation: "CH₃COOH is ethanoic acid (commonly known as acetic acid), characterized by the carboxylic acid functional group (-COOH), commonly found in vinegar."
+  },
+  {
+    question: "Which reaction type converts an alkene into an alkane?",
+    options: ["Hydrogenation (addition of H₂)", "Oxidation", "Esterification", "Substitution"],
+    answer: 0,
+    explanation: "Hydrogenation involves adding hydrogen atoms across the double bond of an alkene, converting it into a saturated alkane, commonly used industrially (e.g., converting vegetable oils to margarine)."
+  },
+  {
+    question: "Isomers are compounds that have:",
+    options: ["Different elements entirely", "The same molecular formula but different structural arrangements", "Identical properties in all aspects", "Different molecular formulas but same structure"],
+    answer: 1,
+    explanation: "Isomers share identical molecular formulas (same types and numbers of atoms) but differ in how these atoms are structurally arranged, often resulting in different physical/chemical properties."
+  },
+  {
+    question: "Which functional group is present in ketones?",
+    options: ["-NH₂", "-COOH", "C=O (carbonyl, between two carbon groups)", "-OH"],
+    answer: 2,
+    explanation: "Ketones are characterized by a carbonyl group (C=O) positioned between two carbon-containing groups (R-CO-R'), distinguishing them from aldehydes where the carbonyl is at the end of the chain."
+  },
+  {
+    question: "The process of converting an alcohol into a carboxylic acid is called:",
+    options: ["Oxidation", "Esterification", "Reduction", "Hydrolysis"],
+    answer: 0,
+    explanation: "Oxidation of primary alcohols (using oxidizing agents) converts them first to aldehydes, then further to carboxylic acids, involving loss of hydrogen and gain of oxygen."
+  },
+  {
+    question: "What type of reaction occurs between an alcohol and a carboxylic acid to form an ester?",
+    options: ["Addition reaction", "Elimination reaction", "Substitution reaction", "Esterification (condensation reaction)"],
+    answer: 3,
+    explanation: "Esterification is a condensation reaction where an alcohol reacts with a carboxylic acid, releasing water and forming an ester bond, commonly catalyzed by an acid catalyst."
+  },
+  {
+    question: "Polymerization is the process where:",
+    options: ["Molecules undergo combustion", "Large molecules break down into smaller units", "Atoms are ionized", "Small molecules (monomers) combine to form large molecules (polymers)"],
+    answer: 3,
+    explanation: "Polymerization involves the joining of numerous small, repeating molecular units (monomers) through chemical bonds to create large macromolecules (polymers), such as forming polyethylene from ethylene monomers."
+  },
+  {
+    question: "Which gas is primarily responsible for the greenhouse effect and is a product of complete combustion of hydrocarbons?",
+    options: ["Methane", "Carbon monoxide", "Carbon dioxide", "Nitrogen dioxide"],
+    answer: 2,
+    explanation: "Carbon dioxide (CO₂) is produced during complete combustion of hydrocarbons and is a major greenhouse gas, trapping heat in the atmosphere and contributing significantly to global warming."
+  },
+  {
+    question: "The Haber process is industrially used to produce:",
+    options: ["Ammonia", "Sulfuric acid", "Nitric acid", "Sodium hydroxide"],
+    answer: 0,
+    explanation: "The Haber process combines nitrogen and hydrogen gases under high pressure/temperature with an iron catalyst to synthesize ammonia (N₂ + 3H₂ ⇌ 2NH₃), crucial for fertilizer production."
+  },
+  {
+    question: "Which of the following is a property of Group 17 elements (halogens)?",
+    options: ["Metallic in nature", "Highly unreactive", "Highly reactive, existing as diatomic molecules", "Form only positive ions"],
+    answer: 2,
+    explanation: "Halogens (Group 17) are highly reactive non-metals that naturally exist as diatomic molecules (F₂, Cl₂, Br₂, I₂), readily forming compounds by gaining one electron to achieve stable octet configuration."
+  },
+  {
+    question: "The Contact process is used industrially to manufacture:",
+    options: ["Ammonia", "Sulfuric acid", "Sodium carbonate", "Nitric acid"],
+    answer: 1,
+    explanation: "The Contact process converts sulfur dioxide to sulfur trioxide (using a vanadium(V) oxide catalyst), which then reacts with water to produce sulfuric acid (H₂SO₄), one of the most important industrial chemicals."
+  },
+  {
+    question: "Which property makes carbon unique among elements, allowing it to form millions of organic compounds?",
+    options: ["High electronegativity", "High metallic character", "Large atomic radius", "Ability to form four covalent bonds and catenate (bond to itself extensively)"],
+    answer: 3,
+    explanation: "Carbon's ability to form four strong covalent bonds and catenate (create long chains/rings by bonding to other carbon atoms) provides the structural diversity necessary for the vast array of organic compounds."
+  },
+  {
+    question: "What is the main component of natural gas?",
+    options: ["Butane", "Propane", "Methane", "Ethane"],
+    answer: 2,
+    explanation: "Natural gas is predominantly composed of methane (CH₄), typically making up 70-90% of its composition, along with smaller amounts of other hydrocarbons."
+  },
+  {
+    question: "Which alkali metal reacts most vigorously with water?",
+    options: ["Potassium", "Sodium", "Lithium", "Cesium (among common lab alkali metals)"],
+    answer: 3,
+    explanation: "Reactivity of alkali metals increases down Group 1 due to decreasing ionization energy (larger atomic radius, weaker attraction to outermost electron), making cesium react most vigorously with water among the commonly discussed alkali metals."
+  },
+  {
+    question: "Which industrial process is used to extract aluminum from its ore (bauxite)?",
+    options: ["Solvay process", "Hall-Héroult process (electrolysis)", "Contact process", "Haber process"],
+    answer: 1,
+    explanation: "The Hall-Héroult process uses electrolysis of molten aluminum oxide (dissolved in cryolite to lower melting point) to extract pure aluminum metal, as aluminum is too reactive to be extracted by simple reduction methods."
+  },
+  {
+    question: "Transition metals are characterized by their ability to:",
+    options: ["Exist only as gases", "Be highly reactive with water", "Form only one oxidation state", "Form colored compounds and multiple oxidation states"],
+    answer: 3,
+    explanation: "Transition metals typically exhibit variable oxidation states and form colored compounds/ions due to unique d-orbital electron configurations, distinguishing them from main group elements."
+  },
+  {
+    question: "Which gas is produced when metal carbonates react with dilute acids?",
+    options: ["Sulfur dioxide", "Carbon dioxide", "Hydrogen", "Oxygen"],
+    answer: 1,
+    explanation: "Metal carbonates react with acids to release carbon dioxide gas, along with forming a salt and water (e.g., CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂)."
+  },
+  {
+    question: "Acid rain is primarily caused by atmospheric pollution from:",
+    options: ["Carbon dioxide only", "Water vapor", "Oxygen and nitrogen", "Sulfur dioxide and nitrogen oxides"],
+    answer: 3,
+    explanation: "Sulfur dioxide (from burning fossil fuels) and nitrogen oxides (from vehicle emissions/industrial processes) react with atmospheric water vapor to form sulfuric and nitric acids, falling as acid rain."
+  },
+  {
+    question: "Which gas is primarily responsible for depleting the ozone layer?",
+    options: ["Methane", "Nitrogen", "Carbon dioxide", "Chlorofluorocarbons (CFCs)"],
+    answer: 3,
+    explanation: "CFCs release chlorine atoms when broken down by UV radiation in the stratosphere, and these chlorine atoms catalytically destroy ozone molecules, significantly depleting the protective ozone layer."
+  },
+  {
+    question: "The greenhouse effect refers to:",
+    options: ["The trapping of heat by certain atmospheric gases, warming Earth's surface", "The cooling of Earth's atmosphere", "The depletion of oxygen in the atmosphere", "The formation of acid rain"],
+    answer: 0,
+    explanation: "The greenhouse effect describes how certain gases (CO₂, methane, water vapor) absorb and re-radiate infrared heat within Earth's atmosphere, preventing excessive heat loss to space and maintaining livable temperatures (though excessive levels cause global warming)."
+  },
+  {
+    question: "Which of the following is a major source of carbon monoxide pollution?",
+    options: ["Incomplete combustion of fossil fuels", "Complete combustion of fuels", "Photosynthesis", "Ozone depletion"],
+    answer: 0,
+    explanation: "Carbon monoxide (CO) forms specifically during incomplete combustion of carbon-based fuels (insufficient oxygen supply), unlike complete combustion which produces carbon dioxide."
+  },
+  {
+    question: "Eutrophication in water bodies is primarily caused by:",
+    options: ["Temperature decrease", "Excess nutrients (like nitrates/phosphates) causing algal overgrowth", "Acid rain only", "Excessive oxygen levels"],
+    answer: 1,
+    explanation: "Eutrophication occurs when excess nutrients (often from agricultural runoff containing nitrates and phosphates) cause excessive algae growth, which subsequently depletes oxygen levels when the algae decompose, harming aquatic life."
+  },
+  {
+    question: "Which pollutant is primarily responsible for the formation of photochemical smog?",
+    options: ["Nitrogen oxides and volatile organic compounds (VOCs) reacting with sunlight", "Sulfur dioxide", "Carbon dioxide", "Water vapor"],
+    answer: 0,
+    explanation: "Photochemical smog forms when nitrogen oxides and VOCs (from vehicle emissions) react with sunlight (UV radiation), producing harmful ground-level ozone and other secondary pollutants."
+  },
+  {
+    question: "Global warming potential (GWP) is used to compare:",
+    options: ["The reactivity of different gases", "The relative ability of different gases to trap heat compared to CO₂", "The toxicity of different pollutants", "The solubility of gases in water"],
+    answer: 1,
+    explanation: "GWP quantifies how much heat a greenhouse gas traps in the atmosphere relative to the same mass of CO₂ over a specific time period, helping assess the relative climate impact of different gases (e.g., methane has a much higher GWP than CO₂)."
+  },
+  {
+    question: "Which of the following practices helps reduce carbon footprint?",
+    options: ["Increased use of fossil fuels", "Using renewable energy sources", "Increased industrial emissions", "Deforestation"],
+    answer: 1,
+    explanation: "Renewable energy sources (solar, wind, hydro) produce little to no direct carbon emissions during operation, significantly reducing the carbon footprint compared to fossil fuel combustion."
+  },
+  {
+    question: "Biodegradable pollutants are those that:",
+    options: ["Are always non-toxic", "Only exist in solid form", "Cannot be broken down naturally", "Can be broken down by natural biological processes over time"],
+    answer: 3,
+    explanation: "Biodegradable pollutants can be decomposed by natural biological processes (bacteria, fungi, etc.) into simpler, often less harmful substances over time, unlike non-biodegradable pollutants (like plastics) which persist in the environment."
+  },
+  {
+    question: "Which process helps mitigate the effects of excess atmospheric CO₂?",
+    options: ["Deforestation", "Increased fossil fuel combustion", "Afforestation (planting trees) and carbon capture", "Ozone depletion"],
+    answer: 2,
+    explanation: "Trees absorb CO₂ during photosynthesis, acting as natural carbon sinks, while carbon capture technologies actively remove/store CO₂ from industrial emissions — both strategies help reduce atmospheric CO₂ concentrations."
+  },
+  {
+    question: "Which type of radioactive emission has the least penetrating power?",
+    options: ["Gamma rays", "Beta particles", "X-rays", "Alpha particles"],
+    answer: 3,
+    explanation: "Alpha particles, being relatively large and heavy (helium nuclei), have the least penetrating power among common radioactive emissions, easily stopped by just a sheet of paper or skin."
+  },
+  {
+    question: "The half-life of a radioactive isotope is 5 years. After 15 years, what fraction of the original sample remains?",
+    options: ["1/4", "1/16", "1/2", "1/8"],
+    answer: 3,
+    explanation: "15 years represents 3 half-lives (15/5=3). Remaining fraction = (1/2)³ = 1/8."
+  },
+  {
+    question: "Nuclear fission differs from nuclear fusion in that fission involves:",
+    options: ["Only occurring in stars", "Splitting heavy nuclei into lighter ones", "No change in nuclear mass", "Combining light nuclei"],
+    answer: 1,
+    explanation: "Nuclear fission specifically involves splitting a heavy, unstable nucleus (like Uranium-235) into two or more lighter nuclei, releasing energy, distinct from fusion which combines light nuclei."
+  },
+  {
+    question: "Which particle is emitted during beta decay?",
+    options: ["Helium nucleus", "Photon only", "High-energy electron", "Proton"],
+    answer: 2,
+    explanation: "Beta decay involves the emission of a high-energy, high-speed electron (or positron) from the nucleus, occurring when a neutron converts to a proton (or vice versa) within the nucleus."
+  },
+  {
+    question: "Radioactive isotopes are commonly used in medicine for:",
+    options: ["Only cancer treatment", "Only diagnostic imaging", "Both diagnostic imaging and cancer treatment", "Neither, they're only used in industry"],
+    answer: 2,
+    explanation: "Radioactive isotopes serve dual medical purposes: diagnostic imaging (like PET scans using specific radioactive tracers) and therapeutic treatment (like radiotherapy for cancer, using radiation to destroy cancerous cells)."
+  },
+  {
+    question: "Which type of nuclear radiation carries no electric charge?",
+    options: ["Alpha particles", "All carry charge", "Beta particles", "Gamma rays"],
+    answer: 3,
+    explanation: "Gamma rays are high-energy electromagnetic radiation (photons), carrying no mass and no electric charge, unlike alpha particles (+2 charge) and beta particles (-1 charge, if electrons)."
+  },
+  {
+    question: "Carbon-14 dating is used to determine the age of:",
+    options: ["Rocks and minerals only", "Water samples", "Organic materials (once-living matter)", "Metal artifacts only"],
+    answer: 2,
+    explanation: "Carbon-14 dating exploits the known half-life of radioactive Carbon-14 (found in organic matter) to estimate the age of once-living materials, based on measuring remaining C-14 relative to stable C-12."
+  },
+  {
+    question: "Which safety measure is commonly used to protect against gamma radiation exposure?",
+    options: ["Thick lead or concrete shielding", "Thin aluminum foil", "No shielding is necessary", "Paper shielding"],
+    answer: 0,
+    explanation: "Due to gamma rays' high penetrating power, only dense materials like thick lead or concrete provide effective shielding, unlike alpha (stopped by paper) or beta particles (stopped by aluminum)."
+  },
+  {
+    question: "Nuclear power plants primarily use which process to generate energy?",
+    options: ["Radioactive decay only", "Nuclear fusion", "Nuclear fission", "Chemical combustion"],
+    answer: 2,
+    explanation: "Current commercial nuclear power plants use controlled nuclear fission (typically of Uranium-235) to generate heat, which then produces steam to drive turbines for electricity generation."
+  },
+  {
+    question: "What happens to the atomic number of an element during alpha decay?",
+    options: ["Increases by 2", "Remains unchanged", "Decreases by 2", "Decreases by 4"],
+    answer: 2,
+    explanation: "Alpha decay involves emission of an alpha particle (2 protons, 2 neutrons), directly reducing the atomic number by 2 (loss of 2 protons) and mass number by 4."
+  },
+  {
+    question: "Hard water is primarily caused by the presence of:",
+    options: ["Dissolved oxygen", "Calcium and magnesium ions", "Chloride ions only", "Sodium and potassium ions"],
+    answer: 1,
+    explanation: "Water hardness results from dissolved calcium (Ca²⁺) and magnesium (Mg²⁺) ions, typically originating from minerals like limestone that water passes through in the ground."
+  },
+  {
+    question: "Temporary hardness in water can be removed by:",
+    options: ["Boiling the water", "Cannot be removed", "Adding acid", "Adding more calcium"],
+    answer: 0,
+    explanation: "Temporary hardness (caused by calcium/magnesium bicarbonates) can be removed by boiling, which decomposes the bicarbonates into insoluble carbonates that precipitate out, effectively softening the water."
+  },
+  {
+    question: "Permanent hardness in water is caused by which type of salts?",
+    options: ["Sulfates and chlorides of calcium/magnesium", "Carbonates only", "Nitrates", "Bicarbonates"],
+    answer: 0,
+    explanation: "Unlike temporary hardness (bicarbonates), permanent hardness results from calcium and magnesium sulfates/chlorides, which don't decompose upon boiling and require alternative softening methods (like ion exchange)."
+  },
+  {
+    question: "Which method is commonly used to soften permanently hard water?",
+    options: ["Adding more minerals", "Ion exchange (using resins or zeolites)", "Boiling only", "Simple filtration"],
+    answer: 1,
+    explanation: "Ion exchange methods (using ion exchange resins or zeolites) replace calcium/magnesium ions with sodium ions, effectively softening both temporary and permanent hard water where boiling alone is ineffective."
+  },
+  {
+    question: "Hard water causes problems primarily by:",
+    options: ["Changing water color", "Forming scale/scum and reducing soap effectiveness", "Increasing water's boiling point significantly", "Making water unsafe to drink"],
+    answer: 1,
+    explanation: "Hard water reacts with soap to form insoluble scum (reducing lathering effectiveness) and can deposit mineral scale in pipes/appliances when heated, though it's generally not harmful to drink."
+  },
+  {
+    question: "Which test is commonly used to determine water hardness?",
+    options: ["Temperature measurement", "Soap solution test (measuring lather formation)", "Color observation", "pH testing only"],
+    answer: 1,
+    explanation: "A classic method for detecting water hardness involves adding soap solution and observing lather formation — hard water requires significantly more soap to produce lasting lather due to calcium/magnesium ions reacting with soap first."
+  },
+  {
+    question: "The chemical formula for limescale (commonly found in hard water deposits) is primarily:",
+    options: ["NaCl", "CaSO₄", "CaCO₃", "MgCl₂"],
+    answer: 2,
+    explanation: "Limescale is primarily composed of calcium carbonate (CaCO₃), formed when calcium bicarbonate in temporarily hard water decomposes upon heating, depositing as solid scale."
+  },
+  {
+    question: "Which of the following is an advantage of hard water?",
+    options: ["Always tastes better", "No advantages exist", "Better lathering with soap", "Prevents lead poisoning by coating pipes with protective mineral layer"],
+    answer: 3,
+    explanation: "Interestingly, hard water can form a protective mineral coating inside pipes, which can help prevent toxic metals (like lead) from leaching into the water supply, providing an unexpected health benefit."
+  },
+  {
+    question: "Distilled water is generally:",
+    options: ["Soft (free from dissolved minerals)", "Cannot be used for any purpose", "Very hard", "Contains high calcium content"],
+    answer: 0,
+    explanation: "The distillation process removes dissolved minerals (including calcium and magnesium), resulting in soft water that's essentially free from the ions responsible for hardness."
+  },
+  {
+    question: "Water softening using washing soda (sodium carbonate) works by:",
+    options: ["Removing all water molecules", "Precipitating calcium/magnesium ions as insoluble carbonates", "Adding more hardness ions", "Evaporating the water completely"],
+    answer: 1,
+    explanation: "Sodium carbonate reacts with calcium and magnesium ions in hard water, forming insoluble calcium/magnesium carbonate precipitates, effectively removing these hardness-causing ions from solution."
+  },
+];
+
 function getCourse(course) {
   return {
     ENGLISH,
@@ -3102,7 +4314,11 @@ function getCourse(course) {
     PHYSICSC,
     PHYSICSD,
     PHYSICSE,
-    PHYSICSF
+    PHYSICSF,
+    CHEMISTRYA,
+    CHEMISTRYB,
+    CHEMISTRYC,
+    CHEMISTRYD
   }[course];
 }
 // ===== SHOW PREVIOUS RESULT =====
