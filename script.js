@@ -4303,6 +4303,3279 @@ const CHEMISTRYD = [
   },
 ];
 
+const MATHSA = [
+  {
+    question: "Convert 25 (base 10) to binary (base 2).",
+    options: ["10101", "10011", "11001", "11010"],
+    answer: 2,
+    explanation: "25 = 16+8+1 = 2⁴+2³+2⁰ → binary: 11001. Check: 1(16)+1(8)+0(4)+0(2)+1(1) = 25."
+  },
+  {
+    question: "Convert 1101₂ to base 10.",
+    options: ["15", "13", "11", "14"],
+    answer: 1,
+    explanation: "1101₂ = (1×2³)+(1×2²)+(0×2¹)+(1×2⁰) = 8+4+0+1 = 13."
+  },
+  {
+    question: "In number base systems, the base of a number determines:",
+    options: ["Whether the number is even or odd", "The total value of the number", "The number of decimal places", "The number of symbols/digits available for that system"],
+    answer: 3,
+    explanation: "A number base (radix) defines how many unique digit symbols exist in that system — base 10 uses digits 0-9, base 2 uses only 0-1, base 8 uses 0-7, and so on."
+  },
+  {
+    question: "Convert 45 (base 10) to base 8 (octal).",
+    options: ["54₈", "55₈", "45₈", "56₈"],
+    answer: 1,
+    explanation: "45÷8 = 5 remainder 5; 5÷8 = 0 remainder 5. Reading remainders bottom-up: 55₈. Check: (5×8)+5 = 45."
+  },
+  {
+    question: "Add the following in base 2: 1011₂ + 1101₂",
+    options: ["10101₂", "10111₂", "11000₂", "11001₂"],
+    answer: 2,
+    explanation: "1011₂(11) + 1101₂(13) = 24 in base 10. Converting 24 to binary: 16+8 = 11000₂."
+  },
+  {
+    question: "Convert 2A₁₆ (base 16/hexadecimal) to base 10.",
+    options: ["26", "44", "40", "42"],
+    answer: 3,
+    explanation: "In hex, A=10. So 2A₁₆ = (2×16)+(10×1) = 32+10 = 42."
+  },
+  {
+    question: "Which of the following number bases uses digits 0-7 only?",
+    options: ["Hexadecimal", "Decimal", "Octal", "Binary"],
+    answer: 2,
+    explanation: "Octal (base 8) uses exactly 8 digit symbols (0-7), unlike binary (0-1, base 2), decimal (0-9, base 10), or hexadecimal (0-9, A-F, base 16)."
+  },
+  {
+    question: "Convert 111₂ to base 10.",
+    options: ["5", "8", "6", "7"],
+    answer: 3,
+    explanation: "111₂ = (1×4)+(1×2)+(1×1) = 4+2+1 = 7."
+  },
+  {
+    question: "Subtract in base 2: 1100₂ - 101₂",
+    options: ["111₂", "1001₂", "110₂", "101₂"],
+    answer: 0,
+    explanation: "1100₂(12) - 101₂(5) = 7 in decimal. Converting 7 to binary: 4+2+1 = 111₂."
+  },
+  {
+    question: "Why is base 2 (binary) fundamentally important in computer systems?",
+    options: ["It was arbitrarily chosen with no technical reason", "Computer circuits naturally represent two states (on/off, 0/1)", "It's easier for humans to read", "It requires fewer digits than decimal"],
+    answer: 1,
+    explanation: "Binary directly corresponds to the two physical states of electronic circuits (voltage present/absent, representing 1/0), making it the natural language for digital computing hardware."
+  },
+  {
+    question: "Convert 3/8 to a decimal.",
+    options: ["0.425", "0.38", "0.325", "0.375"],
+    answer: 3,
+    explanation: "3÷8 = 0.375."
+  },
+  {
+    question: "Express 0.65 as a fraction in its simplest form.",
+    options: ["6/10", "65/10", "13/20", "65/100"],
+    answer: 2,
+    explanation: "0.65 = 65/100, simplifying by dividing both by GCD(65,100)=5: 65/100 = 13/20."
+  },
+  {
+    question: "Calculate 25% of 340.",
+    options: ["68", "76.5", "90", "85"],
+    answer: 3,
+    explanation: "25% of 340 = (25/100) × 340 = 0.25 × 340 = 85."
+  },
+  {
+    question: "A price increases from ₦200 to ₦250. Calculate the percentage increase.",
+    options: ["25%", "30%", "20%", "50%"],
+    answer: 0,
+    explanation: "Percentage increase = (Increase/Original) × 100 = (50/200) × 100 = 25%."
+  },
+  {
+    question: "Simplify: 2/3 + 1/4",
+    options: ["3/7", "11/12", "1/2", "5/6"],
+    answer: 1,
+    explanation: "Finding common denominator (12): 2/3=8/12, 1/4=3/12. Sum = 8/12+3/12 = 11/12."
+  },
+  {
+    question: "Which of the following correctly describes a recurring (repeating) decimal?",
+    options: ["A decimal with a digit or group of digits that repeats infinitely", "A decimal that terminates after a fixed number of digits", "A decimal that cannot be converted to a fraction", "A decimal equal to a whole number"],
+    answer: 0,
+    explanation: "A recurring decimal has one or more digits that repeat indefinitely (e.g., 1/3 = 0.333...), and importantly, all recurring decimals CAN be converted to fractions (as rational numbers)."
+  },
+  {
+    question: "A student scores 45 out of 60 in a test. Calculate the percentage score.",
+    options: ["70%", "65%", "80%", "75%"],
+    answer: 3,
+    explanation: "Percentage = (45/60) × 100 = 0.75 × 100 = 75%."
+  },
+  {
+    question: "Simplify: 5/6 ÷ 2/3",
+    options: ["15/12", "5/9", "5/4", "10/18"],
+    answer: 2,
+    explanation: "Dividing fractions: 5/6 ÷ 2/3 = 5/6 × 3/2 = 15/12 = 5/4 (simplified)."
+  },
+  {
+    question: "A shirt originally priced at ₦1500 is sold at a 20% discount. Calculate the sale price.",
+    options: ["₦1350", "₦1200", "₦1300", "₦1250"],
+    answer: 1,
+    explanation: "Discount amount = 20% × 1500 = 300. Sale price = 1500-300 = ₦1200."
+  },
+  {
+    question: "Convert 7/20 to a percentage.",
+    options: ["40%", "35%", "30%", "33%"],
+    answer: 1,
+    explanation: "7/20 = 0.35 = 35%."
+  },
+  {
+    question: "Divide ₦4500 in the ratio 2:3:4.",
+    options: ["₦1000, ₦1500, ₦2000", "₦900, ₦1350, ₦1800", "₦1200, ₦1400, ₦1900", "₦1500, ₦1500, ₦1500"],
+    answer: 0,
+    explanation: "Total ratio parts = 2+3+4=9. Value per part = 4500/9 = 500. Shares: 2×500=₦1000, 3×500=₦1500, 4×500=₦2000."
+  },
+  {
+    question: "If a:b = 3:5 and b:c = 2:7, find a:c.",
+    options: ["5:14", "3:7", "6:35", "6:7"],
+    answer: 2,
+    explanation: "To combine ratios, make b consistent: a:b=3:5=6:10, b:c=2:7=10:35 (multiplying to match b=10). So a:b:c = 6:10:35, giving a:c = 6:35."
+  },
+  {
+    question: "A car travels 240km in 3 hours. Calculate its average speed.",
+    options: ["70 km/h", "60 km/h", "90 km/h", "80 km/h"],
+    answer: 3,
+    explanation: "Speed = Distance/Time = 240/3 = 80 km/h."
+  },
+  {
+    question: "In a proportion a:b = c:d, which of the following is always true?",
+    options: ["a+b = c+d", "a÷c = b×d", "a-b = c-d", "a×d = b×c"],
+    answer: 3,
+    explanation: "The fundamental property of proportions states that the product of extremes equals the product of means: a×d = b×c (cross multiplication)."
+  },
+  {
+    question: "If 8 workers complete a job in 15 days, how many days would 12 workers take (assuming same work rate)?",
+    options: ["12 days", "10 days", "20 days", "8 days"],
+    answer: 1,
+    explanation: "This is inverse proportion (more workers = less time). Total work = 8×15=120 worker-days. Time for 12 workers = 120/12 = 10 days."
+  },
+  {
+    question: "A recipe requires flour and sugar in ratio 5:2. If 15kg of flour is used, how much sugar is needed?",
+    options: ["6kg", "4kg", "5kg", "7kg"],
+    answer: 0,
+    explanation: "Ratio 5:2 means for every 5 parts flour, 2 parts sugar. Scale factor = 15/5=3. Sugar needed = 2×3 = 6kg."
+  },
+  {
+    question: "Which statement correctly distinguishes direct and inverse proportion?",
+    options: ["In direct proportion, both variables increase or decrease together; in inverse, one increases as the other decreases", "Inverse proportion only applies to whole numbers", "In direct proportion, as one variable increases, the other decreases", "Both types behave identically"],
+    answer: 0,
+    explanation: "Direct proportion means variables change in the same direction (both increase/decrease together, y=kx), while inverse proportion means variables change in opposite directions (as one increases, the other decreases, y=k/x)."
+  },
+  {
+    question: "A map has a scale of 1:50000. If a distance on the map is 4cm, calculate the actual distance in km.",
+    options: ["2.5km", "2km", "5km", "1km"],
+    answer: 1,
+    explanation: "Actual distance = 4cm × 50000 = 200000cm = 2000m = 2km."
+  },
+  {
+    question: "If x is directly proportional to y, and x=12 when y=4, find x when y=10.",
+    options: ["30", "35", "25", "20"],
+    answer: 0,
+    explanation: "x=ky, so 12=k×4, giving k=3. When y=10: x=3×10=30."
+  },
+  {
+    question: "A car uses 8 liters of fuel to travel 120km. Calculate the fuel needed to travel 300km at the same rate.",
+    options: ["24 liters", "15 liters", "18 liters", "20 liters"],
+    answer: 3,
+    explanation: "Fuel rate = 8/120 = 1/15 liters per km. For 300km: 300 × (1/15) = 20 liters."
+  },
+  {
+    question: "Simplify: 2³ × 2⁴",
+    options: ["4⁷", "2¹", "2⁷", "2¹²"],
+    answer: 2,
+    explanation: "When multiplying powers with the same base, add the exponents: 2³ × 2⁴ = 2^(3+4) = 2⁷."
+  },
+  {
+    question: "Simplify: (3²)³",
+    options: ["3⁶", "3⁵", "3⁹", "9⁶"],
+    answer: 0,
+    explanation: "When raising a power to another power, multiply the exponents: (3²)³ = 3^(2×3) = 3⁶."
+  },
+  {
+    question: "Evaluate: 5⁰",
+    options: ["Undefined", "1", "5", "0"],
+    answer: 1,
+    explanation: "Any non-zero number raised to the power of 0 equals 1, a fundamental rule of indices (x⁰=1 for x≠0)."
+  },
+  {
+    question: "Simplify: 2⁻³",
+    options: ["8", "-8", "1/8", "-6"],
+    answer: 2,
+    explanation: "A negative exponent indicates a reciprocal: 2⁻³ = 1/2³ = 1/8."
+  },
+  {
+    question: "Simplify: (2³)/(2⁵)",
+    options: ["2²", "2⁻²", "2⁸", "4⁻²"],
+    answer: 1,
+    explanation: "When dividing powers with the same base, subtract exponents: 2³/2⁵ = 2^(3-5) = 2⁻²."
+  },
+  {
+    question: "Which of the following correctly represents the law of indices for aᵐ × aⁿ?",
+    options: ["a^(m+n)", "a^(m/n)", "a^(m-n)", "a^(m×n)"],
+    answer: 0,
+    explanation: "The multiplication law of indices states that when multiplying powers with the same base, exponents are added: aᵐ × aⁿ = a^(m+n)."
+  },
+  {
+    question: "Evaluate: 4^(1/2)",
+    options: ["8", "2", "16", "4"],
+    answer: 1,
+    explanation: "A fractional exponent of 1/2 represents a square root: 4^(1/2) = √4 = 2."
+  },
+  {
+    question: "Simplify: (2x²)³",
+    options: ["8x⁶", "2x⁶", "8x⁵", "6x⁶"],
+    answer: 0,
+    explanation: "Apply the power to both the coefficient and variable: (2x²)³ = 2³ × x^(2×3) = 8x⁶."
+  },
+  {
+    question: "Evaluate: 27^(2/3)",
+    options: ["9", "6", "18", "3"],
+    answer: 0,
+    explanation: "27^(2/3) means (27^(1/3))² = (cube root of 27)² = 3² = 9."
+  },
+  {
+    question: "Simplify: x⁵ ÷ x⁵",
+    options: ["1", "x¹⁰", "x", "0"],
+    answer: 0,
+    explanation: "Any non-zero base divided by itself with equal exponents gives x^(5-5)=x⁰=1, following the division law and zero exponent rule."
+  },
+  {
+    question: "If log₁₀ 100 = 2, this means:",
+    options: ["10² = 100", "100² = 10", "2¹⁰ = 100", "10¹⁰⁰ = 2"],
+    answer: 0,
+    explanation: "Logarithms and exponents are inverse operations — log₁₀ 100 = 2 means \"10 raised to what power gives 100?\", answered by 10²=100."
+  },
+  {
+    question: "Evaluate: log₂ 8",
+    options: ["2", "8", "3", "4"],
+    answer: 2,
+    explanation: "log₂ 8 asks \"2 raised to what power equals 8?\" Since 2³=8, log₂ 8 = 3."
+  },
+  {
+    question: "Simplify: log 5 + log 4 (using log base 10)",
+    options: ["log 20", "log 9", "log 45", "log 1.25"],
+    answer: 0,
+    explanation: "The logarithm product rule states log a + log b = log(a×b), so log 5 + log 4 = log(5×4) = log 20."
+  },
+  {
+    question: "Simplify: log 100 - log 10",
+    options: ["log 1000", "log 1", "log 10", "log 90"],
+    answer: 2,
+    explanation: "The logarithm quotient rule states log a - log b = log(a/b), so log 100 - log 10 = log(100/10) = log 10."
+  },
+  {
+    question: "Evaluate: log₃ 81",
+    options: ["4", "3", "9", "27"],
+    answer: 0,
+    explanation: "log₃ 81 asks \"3 raised to what power equals 81?\" Since 3⁴=81, log₃ 81 = 4."
+  },
+  {
+    question: "Which law of logarithms states that log(aⁿ) = n log a?",
+    options: ["Power rule", "Change of base rule", "Product rule", "Quotient rule"],
+    answer: 0,
+    explanation: "The power rule of logarithms specifically allows an exponent within a logarithm to be brought down as a coefficient multiplying the logarithm: log(aⁿ) = n log a."
+  },
+  {
+    question: "Solve for x: log₁₀ x = 3",
+    options: ["x = 30", "x = 300", "x = 1000", "x = 3000"],
+    answer: 2,
+    explanation: "log₁₀ x = 3 means 10³ = x, so x = 1000."
+  },
+  {
+    question: "Simplify: 2 log 5 (as a single logarithm)",
+    options: ["log 25", "log 10", "log 50", "log 7"],
+    answer: 0,
+    explanation: "Using the power rule in reverse: 2 log 5 = log(5²) = log 25."
+  },
+  {
+    question: "Why is the logarithm of a negative number undefined in the real number system?",
+    options: ["Negative numbers cannot be multiplied", "No real exponent applied to a positive base yields a negative result", "Logarithms only work with even numbers", "Logarithms only apply to base 10"],
+    answer: 1,
+    explanation: "Since logarithms are defined based on positive bases raised to real exponents (which always yield positive results for positive bases), there's no real number exponent that would produce a negative output, making log of negative numbers undefined in real numbers."
+  },
+  {
+    question: "Evaluate: log₅ 1",
+    options: ["Undefined", "5", "1", "0"],
+    answer: 3,
+    explanation: "Any base raised to the power 0 equals 1, so log₅ 1 = 0 (since 5⁰=1), a universal property of logarithms regardless of base."
+  },
+];
+
+const MATHSB = [
+  {
+    question: "Simplify: √50",
+    options: ["5√2", "10√5", "25√2", "2√5"],
+    answer: 0,
+    explanation: "√50 = √(25×2) = √25 × √2 = 5√2."
+  },
+  {
+    question: "Simplify: √12 + √27",
+    options: ["6√3", "3√13", "5√3", "√39"],
+    answer: 2,
+    explanation: "√12=2√3, √27=3√3. Adding: 2√3+3√3 = 5√3."
+  },
+  {
+    question: "Which of the following best defines a surd?",
+    options: ["A rational number expressed as a fraction", "Any number with a decimal point", "An irrational root that cannot be simplified to a whole number", "Any square root"],
+    answer: 2,
+    explanation: "A surd is specifically an irrational number expressed as a root (like √2, √3) that cannot be simplified to remove the root sign, remaining irrational (non-terminating, non-repeating decimal)."
+  },
+  {
+    question: "Rationalize the denominator: 1/√3",
+    options: ["√3/3", "3/√3", "1/3", "√3"],
+    answer: 0,
+    explanation: "Multiply numerator and denominator by √3: (1×√3)/(√3×√3) = √3/3."
+  },
+  {
+    question: "Simplify: (√5)²",
+    options: ["√5", "5", "10", "25"],
+    answer: 1,
+    explanation: "Squaring a square root cancels the root: (√5)² = 5."
+  },
+  {
+    question: "Simplify: √8 × √2",
+    options: ["16", "√16", "2√4", "4"],
+    answer: 3,
+    explanation: "√8 × √2 = √(8×2) = √16 = 4."
+  },
+  {
+    question: "Rationalize: 2/(√5-1)",
+    options: ["2(√5-1)", "(2√5+2)/4", "(√5-1)/2", "(√5+1)/2"],
+    answer: 3,
+    explanation: "Multiply by conjugate (√5+1)/(√5+1): [2(√5+1)]/[(√5)²-1²] = [2(√5+1)]/(5-1) = [2(√5+1)]/4 = (√5+1)/2."
+  },
+  {
+    question: "Simplify: 3√2 × 2√8",
+    options: ["12√2", "6√16", "24", "5√10"],
+    answer: 2,
+    explanation: "3√2 × 2√8 = 6√(2×8) = 6√16 = 6×4 = 24."
+  },
+  {
+    question: "Which of these is an example of a surd in its simplest form?",
+    options: ["√16", "√4", "√9", "√7"],
+    answer: 3,
+    explanation: "√7 cannot be simplified further since 7 has no perfect square factors, remaining as an irrational surd, unlike √4=2, √9=3, √16=4 which simplify to whole numbers."
+  },
+  {
+    question: "Simplify: √18 - √8",
+    options: ["√10", "2√2", "3√2", "√2"],
+    answer: 3,
+    explanation: "√18=3√2, √8=2√2. Subtracting: 3√2-2√2 = √2."
+  },
+  {
+    question: "Expand: (x+3)(x+5)",
+    options: ["x²+8x+8", "x²+15", "x²+15x+8", "x²+8x+15"],
+    answer: 3,
+    explanation: "Using FOIL: x×x + x×5 + 3×x + 3×5 = x²+5x+3x+15 = x²+8x+15."
+  },
+  {
+    question: "Factorize: x²-9",
+    options: ["(x-3)(x-3)", "(x-9)(x+1)", "(x+9)(x-1)", "(x+3)(x-3)"],
+    answer: 3,
+    explanation: "This is a difference of squares (a²-b² = (a+b)(a-b)), where x²-9 = x²-3² = (x+3)(x-3)."
+  },
+  {
+    question: "Simplify: 3x + 5y - 2x + 3y",
+    options: ["5x + 8y", "x + 8y", "5x + 2y", "x + 2y"],
+    answer: 1,
+    explanation: "Combining like terms: (3x-2x)+(5y+3y) = x+8y."
+  },
+  {
+    question: "Factorize: x²+7x+12",
+    options: ["(x+1)(x+12)", "(x+5)(x+2)", "(x+3)(x+4)", "(x+2)(x+6)"],
+    answer: 2,
+    explanation: "Looking for two numbers that multiply to 12 and add to 7: 3×4=12, 3+4=7. So x²+7x+12 = (x+3)(x+4)."
+  },
+  {
+    question: "Expand: (2x-3)²",
+    options: ["4x²-9", "4x²+9", "4x²-12x+9", "2x²-6x+9"],
+    answer: 2,
+    explanation: "Using (a-b)²=a²-2ab+b²: (2x)²-2(2x)(3)+3² = 4x²-12x+9."
+  },
+  {
+    question: "Which term correctly describes expressions like 3x² and 5x² (with identical variable parts)?",
+    options: ["Like terms", "Constants", "Coefficients", "Unlike terms"],
+    answer: 0,
+    explanation: "Like terms have identical variable parts (same variables raised to the same powers) — 3x² and 5x² both have x² as their variable component, making them like terms that can be combined."
+  },
+  {
+    question: "Simplify: (x+2)(x-2)",
+    options: ["x²-4", "x²-2x-4", "x²+2x-4", "x²+4"],
+    answer: 0,
+    explanation: "This is a difference of squares pattern: (x+2)(x-2) = x²-2² = x²-4."
+  },
+  {
+    question: "Factorize completely: 2x²+8x",
+    options: ["2x(x+4)", "x(2x+8)", "2(x²+4x)", "4x(x/2+2)"],
+    answer: 0,
+    explanation: "The greatest common factor is 2x: 2x²+8x = 2x(x+4), fully factored with no further common factors remaining."
+  },
+  {
+    question: "Simplify: (3x²y)(2xy³)",
+    options: ["5x³y⁴", "6x³y⁴", "6x²y³", "6xy³"],
+    answer: 1,
+    explanation: "Multiply coefficients and add exponents of like variables: (3×2)(x^(2+1))(y^(1+3)) = 6x³y⁴."
+  },
+  {
+    question: "What does the term \"coefficient\" refer to in an algebraic expression like 5x²?",
+    options: ["The entire expression", "The exponent 2", "The variable x", "The numerical factor multiplying the variable (5)"],
+    answer: 3,
+    explanation: "A coefficient is the numerical value that multiplies a variable term — in 5x², the coefficient is 5, distinct from the variable (x) and exponent (2)."
+  },
+  {
+    question: "Solve for x: 3x + 5 = 20",
+    options: ["x = 7", "x = 5", "x = 15", "x = 3"],
+    answer: 1,
+    explanation: "3x = 20-5 = 15, so x = 15/3 = 5."
+  },
+  {
+    question: "Solve the inequality: 2x - 3 > 7",
+    options: ["x > 5", "x < 5", "x > 2", "x > 10"],
+    answer: 0,
+    explanation: "2x > 7+3 = 10, so x > 10/2 = 5."
+  },
+  {
+    question: "Solve for x: (x/4) + 3 = 8",
+    options: ["x = 20", "x = 5", "x = 11", "x = 32"],
+    answer: 0,
+    explanation: "x/4 = 8-3 = 5, so x = 5×4 = 20."
+  },
+  {
+    question: "When solving an inequality, if both sides are multiplied or divided by a negative number, the inequality sign:",
+    options: ["Must be reversed", "Becomes an equal sign", "Is removed entirely", "Remains unchanged"],
+    answer: 0,
+    explanation: "A fundamental rule of inequalities states that multiplying or dividing both sides by a negative number reverses the direction of the inequality sign to maintain a true statement."
+  },
+  {
+    question: "Solve: 5(x-2) = 3x+4",
+    options: ["x = 9", "x = 5", "x = 3", "x = 7"],
+    answer: 3,
+    explanation: "5x-10 = 3x+4 → 5x-3x = 4+10 → 2x=14 → x=7."
+  },
+  {
+    question: "Solve the inequality: -3x + 6 ≤ 15",
+    options: ["x ≤ 3", "x ≥ 3", "x ≤ -3", "x ≥ -3"],
+    answer: 3,
+    explanation: "-3x ≤ 15-6=9, dividing by -3 (reverse inequality): x ≥ 9/(-3) = -3."
+  },
+  {
+    question: "A linear equation in one variable has how many solutions typically?",
+    options: ["Infinite", "Zero", "Exactly two", "One (unique solution)"],
+    answer: 3,
+    explanation: "A standard linear equation in one variable (like ax+b=c, where a≠0) typically has exactly one unique solution, unlike quadratic equations which can have two solutions."
+  },
+  {
+    question: "Solve: 2(3x-1) - 4 = 3(x+2)",
+    options: ["x = 4", "x = 2", "x = 3", "x = 12/3"],
+    answer: 0,
+    explanation: "6x-2-4 = 3x+6 → 6x-6=3x+6 → 6x-3x=6+6 → 3x=12 → x=4."
+  },
+  {
+    question: "Solve for x: (2x+1)/3 = 5",
+    options: ["x = 8", "x = 14", "x = 6", "x = 7"],
+    answer: 3,
+    explanation: "2x+1 = 5×3=15, so 2x=14, giving x=7."
+  },
+  {
+    question: "Which of the following represents a valid linear inequality?",
+    options: ["2x - 7 ≤ 10", "x³ = 27", "x² + 3 > 5", "√x = 4"],
+    answer: 0,
+    explanation: "A linear inequality involves variables raised only to the first power with an inequality symbol — 2x-7≤10 fits this definition, unlike the others which involve squares, cubes, or roots."
+  },
+  {
+    question: "Solve: x² - 5x + 6 = 0",
+    options: ["x = 2 or x = 3", "x = 1 or x = 6", "x = 5 or x = 6", "x = -2 or x = -3"],
+    answer: 0,
+    explanation: "Factoring: (x-2)(x-3)=0, giving x=2 or x=3."
+  },
+  {
+    question: "Using the quadratic formula, solve: x² - 4x - 5 = 0",
+    options: ["x = 4 or x = -1", "x = 5 or x = -1", "x = 5 or x = 1", "x = -5 or x = 1"],
+    answer: 1,
+    explanation: "Using x = [-b±√(b²-4ac)]/2a with a=1,b=-4,c=-5: x = [4±√(16+20)]/2 = [4±6]/2, giving x=5 or x=-1."
+  },
+  {
+    question: "The discriminant (b²-4ac) of a quadratic equation determines:",
+    options: ["The nature of roots (real, equal, or complex)", "The sum of roots", "The value of x directly", "The product of roots"],
+    answer: 0,
+    explanation: "The discriminant reveals the nature of solutions: positive discriminant gives two distinct real roots, zero gives one repeated real root, and negative gives complex (no real) roots."
+  },
+  {
+    question: "If the discriminant of a quadratic equation is zero, this means:",
+    options: ["Two distinct real roots exist", "No real roots exist", "Exactly one repeated real root exists", "Infinite roots exist"],
+    answer: 2,
+    explanation: "A discriminant of exactly zero indicates the quadratic has one repeated (double) real root, where the parabola touches the x-axis at exactly one point."
+  },
+  {
+    question: "Solve by factoring: x² + 7x + 10 = 0",
+    options: ["x = 2 or x = -5", "x = -2 or x = 5", "x = 2 or x = 5", "x = -2 or x = -5"],
+    answer: 3,
+    explanation: "Looking for factors of 10 that sum to 7: 2 and 5. So (x+2)(x+5)=0, giving x=-2 or x=-5."
+  },
+  {
+    question: "Solve using the quadratic formula: 2x² + 3x - 2 = 0",
+    options: ["x = 1/2 or x = -2", "x = 2 or x = -1/2", "x = -1/2 or x = 2", "x = -2 or x = -1/2"],
+    answer: 0,
+    explanation: "Using x=[-3±√(9+16)]/4 = [-3±5]/4, giving x=1/2 or x=-2."
+  },
+  {
+    question: "For a quadratic equation ax²+bx+c=0, the sum of roots equals:",
+    options: ["-c/a", "c/a", "b/a", "-b/a"],
+    answer: 3,
+    explanation: "For a quadratic in standard form, Vieta's formulas state that sum of roots = -b/a, derived from the relationship between coefficients and roots."
+  },
+  {
+    question: "Solve: x² - 16 = 0",
+    options: ["x = -4 only", "x = 4 or x = -4", "x = 8 or x = -8", "x = 4 only"],
+    answer: 1,
+    explanation: "x²=16, taking square root of both sides gives x=±4 (both positive and negative roots satisfy the equation since (-4)²=16 too)."
+  },
+  {
+    question: "For a quadratic equation ax²+bx+c=0, the product of roots equals:",
+    options: ["-c/a", "c/a", "-b/a", "b/a"],
+    answer: 1,
+    explanation: "Vieta's formulas state that the product of roots for a quadratic equation equals c/a."
+  },
+  {
+    question: "Solve: x² + 6x + 9 = 0",
+    options: ["x = -3 or x = 3", "x = 3 (repeated root)", "x = 9 or x = -9", "x = -3 (repeated root)"],
+    answer: 3,
+    explanation: "This factors as (x+3)²=0 (perfect square trinomial), giving a repeated root of x=-3 (discriminant=36-36=0, confirming one repeated root)."
+  },
+  {
+    question: "Solve simultaneously: x+y=10, x-y=4",
+    options: ["x=6, y=4", "x=7, y=3", "x=8, y=2", "x=5, y=5"],
+    answer: 1,
+    explanation: "Adding both equations: 2x=14, so x=7. Substituting: 7+y=10, giving y=3."
+  },
+  {
+    question: "Solve simultaneously: 2x+y=8, x-y=1",
+    options: ["x=2, y=4", "x=4, y=0", "x=3, y=2", "x=1, y=6"],
+    answer: 2,
+    explanation: "Adding equations: 3x=9, so x=3. Substituting into x-y=1: 3-y=1, giving y=2."
+  },
+  {
+    question: "In the elimination method for solving simultaneous equations, the goal is to:",
+    options: ["Add or subtract equations to eliminate one variable", "Graph both equations", "Multiply variables together", "Substitute one variable's expression into the other equation"],
+    answer: 0,
+    explanation: "The elimination method involves manipulating equations (multiplying by constants if needed) so that adding or subtracting them cancels out one variable, allowing you to solve for the remaining variable."
+  },
+  {
+    question: "Solve simultaneously: 3x+2y=16, x+y=6",
+    options: ["x=2, y=4", "x=6, y=0", "x=3, y=3", "x=4, y=2"],
+    answer: 3,
+    explanation: "From x+y=6: x=6-y. Substituting: 3(6-y)+2y=16 → 18-3y+2y=16 → -y=-2 → y=2. Then x=6-2=4."
+  },
+  {
+    question: "Solve simultaneously: 4x-3y=1, 2x+3y=11",
+    options: ["x=1, y=1", "x=2, y=7/3", "x=2, y=7", "x=3, y=11/3"],
+    answer: 1,
+    explanation: "Adding equations: 6x=12, so x=2. Substituting into 2x+3y=11: 4+3y=11, giving 3y=7, y=7/3."
+  },
+  {
+    question: "Which method involves graphing both equations and finding their intersection point?",
+    options: ["Elimination method", "Substitution method", "Matrix method", "Graphical method"],
+    answer: 3,
+    explanation: "The graphical method solves simultaneous equations by plotting both equations on the same coordinate system and identifying the point(s) where the lines intersect — this intersection represents the solution."
+  },
+  {
+    question: "Solve simultaneously: y=2x+1, y=x+4",
+    options: ["x=4, y=8", "x=1, y=5", "x=3, y=7", "x=2, y=6"],
+    answer: 2,
+    explanation: "Setting equal: 2x+1=x+4, so x=3. Substituting: y=2(3)+1=7."
+  },
+  {
+    question: "For two simultaneous linear equations to have a unique solution, their graphs must:",
+    options: ["Never intersect", "Be parallel lines", "Be the same line", "Intersect at exactly one point"],
+    answer: 3,
+    explanation: "A unique solution to simultaneous linear equations corresponds to the lines intersecting at exactly one point — parallel lines (never intersecting) indicate no solution, while identical lines indicate infinite solutions."
+  },
+  {
+    question: "Solve simultaneously: 5x+2y=19, 3x-2y=5",
+    options: ["x=4, y=1", "x=1, y=4", "x=2, y=3", "x=3, y=2"],
+    answer: 3,
+    explanation: "Adding equations: 8x=24, so x=3. Substituting into 3x-2y=5: 9-2y=5, giving 2y=4, y=2."
+  },
+  {
+    question: "If a system of two linear equations has no solution, this indicates that the lines are:",
+    options: ["Intersecting at one point", "Parallel with different y-intercepts", "Identical (same line)", "Perpendicular"],
+    answer: 1,
+    explanation: "No solution occurs when two lines are parallel (same slope) but have different y-intercepts, meaning they never intersect at any point."
+  },
+];
+
+const MATHSC = [
+  {
+    question: "Find the 10th term of the arithmetic sequence: 3, 7, 11, 15, ...",
+    options: ["43", "47", "35", "39"],
+    answer: 3,
+    explanation: "Using Tₙ = a + (n-1)d, where a=3, d=4, n=10: T₁₀ = 3 + (9×4) = 3+36 = 39."
+  },
+  {
+    question: "Find the sum of the first 5 terms of the arithmetic series: 2, 5, 8, 11, 14",
+    options: ["40", "45", "35", "30"],
+    answer: 0,
+    explanation: "Sum = n/2 × (first term + last term) = 5/2 × (2+14) = 2.5×16 = 40."
+  },
+  {
+    question: "In a geometric sequence, each term is obtained by:",
+    options: ["Dividing by the term number", "Adding a constant value to the previous term", "Multiplying the previous term by a constant ratio", "Subtracting a constant value"],
+    answer: 2,
+    explanation: "A geometric sequence is defined by a common ratio (r) that each term is multiplied by to get the next term, distinguishing it from arithmetic sequences (constant difference)."
+  },
+  {
+    question: "Find the 6th term of the geometric sequence: 2, 6, 18, 54, ...",
+    options: ["162", "324", "972", "486"],
+    answer: 3,
+    explanation: "Common ratio r=3. Using Tₙ=ar^(n-1): T₆=2×3⁵=2×243=486."
+  },
+  {
+    question: "Calculate the sum of the first 4 terms of the geometric series: 3, 6, 12, 24",
+    options: ["45", "51", "48", "42"],
+    answer: 0,
+    explanation: "Sum = 3+6+12+24 = 45."
+  },
+  {
+    question: "What distinguishes an arithmetic sequence from a geometric sequence?",
+    options: ["Both have common differences", "Arithmetic has a common ratio; geometric has a common difference", "Both have common ratios", "Arithmetic has a common difference; geometric has a common ratio"],
+    answer: 3,
+    explanation: "Arithmetic sequences progress by adding/subtracting a constant value (common difference), while geometric sequences progress by multiplying/dividing by a constant value (common ratio)."
+  },
+  {
+    question: "Find the sum to infinity of the geometric series: 8, 4, 2, 1, ... (where |r|<1)",
+    options: ["12", "8", "20", "16"],
+    answer: 3,
+    explanation: "For infinite geometric series with |r|<1: S∞ = a/(1-r) = 8/(1-0.5) = 8/0.5 = 16."
+  },
+  {
+    question: "The nth term of an arithmetic sequence with first term 5 and common difference 3 is:",
+    options: ["5+3n", "5+3(n-1)", "3+5(n-1)", "3n-5"],
+    answer: 1,
+    explanation: "The general formula for arithmetic sequences is Tₙ=a+(n-1)d, so with a=5, d=3: Tₙ=5+3(n-1)."
+  },
+  {
+    question: "Find the common ratio of the geometric sequence: 100, 20, 4, 0.8, ...",
+    options: ["5", "4", "1/5", "1/4"],
+    answer: 2,
+    explanation: "Common ratio = second term/first term = 20/100 = 1/5."
+  },
+  {
+    question: "Calculate the sum of the first 20 terms of the arithmetic series where first term=1 and common difference=2.",
+    options: ["420", "360", "380", "400"],
+    answer: 3,
+    explanation: "Sum = n/2[2a+(n-1)d] = 20/2[2(1)+19(2)] = 10[2+38] = 10×40 = 400."
+  },
+  {
+    question: "If A = {1,2,3,4} and B = {3,4,5,6}, find A∩B (intersection).",
+    options: ["{1,2,3,4,5,6}", "{3,4}", "{1,2,5,6}", "{}"],
+    answer: 1,
+    explanation: "The intersection (A∩B) contains elements common to both sets — only 3 and 4 appear in both A and B."
+  },
+  {
+    question: "If A = {1,2,3} and B = {4,5,6}, find A∪B (union).",
+    options: ["{4,5,6}", "{1,2,3,4,5,6}", "{1,2,3}", "{}"],
+    answer: 1,
+    explanation: "The union (A∪B) combines all unique elements from both sets — since A and B share no common elements, the union simply lists all elements from both."
+  },
+  {
+    question: "What is meant by the complement of a set A (denoted A')?",
+    options: ["Elements that are in both A and the universal set", "Elements only in A", "Elements in the universal set that are NOT in A", "An empty set"],
+    answer: 2,
+    explanation: "The complement of set A (A') consists of all elements within the universal set that do not belong to A, essentially representing \"everything else.\""
+  },
+  {
+    question: "If the universal set U = {1,2,3,4,5,6,7,8} and A = {2,4,6,8}, find A'.",
+    options: ["{1,3,5,7}", "{1,2,3,4,5,6,7,8}", "{}", "{2,4,6,8}"],
+    answer: 0,
+    explanation: "A' contains elements in U but not in A — since A contains all even numbers, A' contains the remaining odd numbers: {1,3,5,7}."
+  },
+  {
+    question: "If n(A)=15, n(B)=20, and n(A∩B)=8, find n(A∪B).",
+    options: ["43", "20", "35", "27"],
+    answer: 3,
+    explanation: "Using the formula n(A∪B)=n(A)+n(B)-n(A∩B) = 15+20-8 = 27."
+  },
+  {
+    question: "Two sets are called disjoint if:",
+    options: ["They share no common elements (A∩B = ∅)", "One set contains the other", "They have the same number of elements", "They have identical elements"],
+    answer: 0,
+    explanation: "Disjoint sets have no elements in common, meaning their intersection is the empty set (∅) — this doesn't require equal size, just zero overlap."
+  },
+  {
+    question: "If A = {a,b,c} and B = {b,c,d,e}, find A-B (elements in A but not in B).",
+    options: ["{a,b,c,d,e}", "{b,c}", "{a}", "{d,e}"],
+    answer: 2,
+    explanation: "A-B (set difference) contains elements present in A but absent from B — only 'a' exists in A but not in B."
+  },
+  {
+    question: "A set with no elements is called:",
+    options: ["A universal set", "An empty set (null set)", "A subset", "A complement set"],
+    answer: 1,
+    explanation: "An empty set (denoted ∅ or {}) is specifically defined as a set containing no elements whatsoever."
+  },
+  {
+    question: "If n(U)=50, n(A)=30, find n(A').",
+    options: ["30", "80", "20", "50"],
+    answer: 2,
+    explanation: "Since A and A' together make up the entire universal set: n(A)+n(A')=n(U), so n(A')=50-30=20."
+  },
+  {
+    question: "Which symbol represents \"is a subset of\"?",
+    options: ["∈", "⊆", "∩", "∪"],
+    answer: 1,
+    explanation: "The symbol ⊆ specifically denotes \"is a subset of,\" indicating that all elements of one set are contained within another set."
+  },
+  {
+    question: "If f(x) = 2x + 3, find f(4).",
+    options: ["7", "9", "11", "14"],
+    answer: 2,
+    explanation: "Substitute x=4: f(4)=2(4)+3=8+3=11."
+  },
+  {
+    question: "If f(x) = x² - 2x + 1, find f(3).",
+    options: ["6", "2", "4", "10"],
+    answer: 2,
+    explanation: "Substitute x=3: f(3)=3²-2(3)+1=9-6+1=4."
+  },
+  {
+    question: "What defines a function in mathematics?",
+    options: ["A relation where outputs can have multiple inputs", "An equation with two unknowns", "A relation where each input has exactly one output", "Any relationship between two variables"],
+    answer: 2,
+    explanation: "A function is specifically defined as a relation where every input (x-value) maps to exactly one unique output (y-value)."
+  },
+  {
+    question: "If f(x) = 3x - 1 and g(x) = x + 2, find (f+g)(x).",
+    options: ["4x+1", "4x-1", "3x+1", "2x-3"],
+    answer: 0,
+    explanation: "(f+g)(x) = f(x)+g(x) = (3x-1)+(x+2) = 4x+1."
+  },
+  {
+    question: "If f(x) = 2x+1, find f⁻¹(x) (the inverse function).",
+    options: ["(x-2)/1", "(x-1)/2", "2x-1", "(x+1)/2"],
+    answer: 1,
+    explanation: "To find the inverse, swap x and y then solve: y=2x+1 → x=2y+1 → x-1=2y → y=(x-1)/2."
+  },
+  {
+    question: "If f(x)=x² and g(x)=x+3, find (fog)(x) [f composed with g].",
+    options: ["x²+9", "(x+3)²", "x²+3", "x+9"],
+    answer: 1,
+    explanation: "(fog)(x) means f(g(x)) — substitute g(x) into f: f(x+3) = (x+3)²."
+  },
+  {
+    question: "A function f(x) is called \"one-to-one\" if:",
+    options: ["Every input has multiple outputs", "Every output has exactly one input", "It only works for positive numbers", "The function is undefined for some values"],
+    answer: 1,
+    explanation: "A one-to-one (injective) function ensures that different inputs always produce different outputs."
+  },
+  {
+    question: "If f(x) = 5, this represents:",
+    options: ["A linear function", "A constant function", "An undefined function", "A quadratic function"],
+    answer: 1,
+    explanation: "A constant function always outputs the same value regardless of input — f(x)=5 means every x-value maps to the output 5."
+  },
+  {
+    question: "If f(x) = 4x - 7 and f(a) = 9, find the value of a.",
+    options: ["4", "2", "5", "3"],
+    answer: 0,
+    explanation: "Set up equation: 4a-7=9, so 4a=16, giving a=4."
+  },
+  {
+    question: "The domain of a function refers to:",
+    options: ["The set of all possible input values", "The y-intercept only", "The graph of the function", "The set of all possible output values"],
+    answer: 0,
+    explanation: "The domain specifically represents all valid input values (x-values) for which the function is defined."
+  },
+  {
+    question: "The sum of interior angles in a triangle is always:",
+    options: ["90°", "180°", "270°", "360°"],
+    answer: 1,
+    explanation: "The three interior angles of any triangle always sum to exactly 180°."
+  },
+  {
+    question: "Calculate the size of each interior angle in a regular hexagon.",
+    options: ["100°", "108°", "135°", "120°"],
+    answer: 3,
+    explanation: "Sum of interior angles = (n-2)×180° = (6-2)×180° = 720°. For a regular hexagon, each angle = 720°/6 = 120°."
+  },
+  {
+    question: "Two angles that sum to 90° are called:",
+    options: ["Complementary angles", "Supplementary angles", "Alternate angles", "Vertical angles"],
+    answer: 0,
+    explanation: "Complementary angles are specifically defined as two angles whose measures add up to exactly 90°."
+  },
+  {
+    question: "In a right-angled triangle, if one angle is 35°, find the other non-right angle.",
+    options: ["145°", "55°", "65°", "45°"],
+    answer: 1,
+    explanation: "Since angles sum to 180° and one angle is 90° (right angle): 180-90-35 = 55°."
+  },
+  {
+    question: "Which property is true for all parallelograms?",
+    options: ["All sides are equal", "Diagonals are always equal", "All angles are equal", "Opposite sides are parallel and equal in length"],
+    answer: 3,
+    explanation: "A defining property of parallelograms is that opposite sides are both parallel and equal in length."
+  },
+  {
+    question: "Calculate the exterior angle of a regular pentagon.",
+    options: ["72°", "60°", "90°", "108°"],
+    answer: 0,
+    explanation: "Sum of exterior angles of any polygon = 360°. For a regular pentagon: 360°/5 = 72°."
+  },
+  {
+    question: "Vertically opposite angles formed by two intersecting lines are always:",
+    options: ["Supplementary", "Adjacent", "Complementary", "Equal"],
+    answer: 3,
+    explanation: "When two lines intersect, the angles opposite each other (vertical angles) are always equal in measure."
+  },
+  {
+    question: "In a triangle, if two sides are equal, the triangle is classified as:",
+    options: ["Scalene", "Right-angled", "Equilateral", "Isosceles"],
+    answer: 3,
+    explanation: "An isosceles triangle is specifically defined as having exactly two equal sides."
+  },
+  {
+    question: "Calculate angle x if two parallel lines are cut by a transversal, and the co-interior angles are x and 110°.",
+    options: ["110°", "80°", "70°", "90°"],
+    answer: 2,
+    explanation: "Co-interior (allied) angles between parallel lines are supplementary (sum to 180°): x+110=180, so x=70°."
+  },
+  {
+    question: "The angle sum of interior angles in any quadrilateral is:",
+    options: ["360°", "450°", "180°", "270°"],
+    answer: 0,
+    explanation: "Using the formula (n-2)×180° for a 4-sided polygon: (4-2)×180° = 360°."
+  },
+  {
+    question: "Calculate the area of a rectangle with length 12cm and width 7cm.",
+    options: ["38cm²", "19cm²", "84cm²", "42cm²"],
+    answer: 2,
+    explanation: "Area of rectangle = length × width = 12×7 = 84cm²."
+  },
+  {
+    question: "Calculate the circumference of a circle with radius 7cm. (π=22/7)",
+    options: ["44cm", "49cm", "154cm", "22cm"],
+    answer: 0,
+    explanation: "Circumference = 2πr = 2×(22/7)×7 = 44cm."
+  },
+  {
+    question: "Calculate the area of a triangle with base 10cm and height 6cm.",
+    options: ["60cm²", "16cm²", "30cm²", "45cm²"],
+    answer: 2,
+    explanation: "Area of triangle = ½ × base × height = ½×10×6 = 30cm²."
+  },
+  {
+    question: "Calculate the volume of a cube with side length 4cm.",
+    options: ["12cm³", "64cm³", "48cm³", "16cm³"],
+    answer: 1,
+    explanation: "Volume of cube = side³ = 4³ = 64cm³."
+  },
+  {
+    question: "Calculate the area of a circle with radius 14cm. (π=22/7)",
+    options: ["308cm²", "88cm²", "616cm²", "176cm²"],
+    answer: 2,
+    explanation: "Area = πr² = (22/7)×14² = (22/7)×196 = 616cm²."
+  },
+  {
+    question: "Calculate the volume of a cylinder with radius 3cm and height 10cm. (π=3.14)",
+    options: ["188.4cm³", "942cm³", "282.6cm³", "94.2cm³"],
+    answer: 2,
+    explanation: "Volume = πr²h = 3.14×3²×10 = 3.14×9×10 = 282.6cm³."
+  },
+  {
+    question: "The formula for the surface area of a sphere is:",
+    options: ["2πr²", "4πr²", "(4/3)πr³", "πr²"],
+    answer: 1,
+    explanation: "The surface area of a sphere is calculated using the formula 4πr², distinct from the volume formula (4/3)πr³."
+  },
+  {
+    question: "Calculate the perimeter of a rectangle with length 15cm and width 8cm.",
+    options: ["120cm", "23cm", "60cm", "46cm"],
+    answer: 3,
+    explanation: "Perimeter = 2(length+width) = 2(15+8) = 2×23 = 46cm."
+  },
+  {
+    question: "Calculate the volume of a cone with radius 6cm and height 9cm. (π=3.14)",
+    options: ["113.04cm³", "452.16cm³", "339.12cm³", "1017.36cm³"],
+    answer: 2,
+    explanation: "Volume of cone = (1/3)πr²h = (1/3)×3.14×36×9 = (1/3)×1017.36 = 339.12cm³."
+  },
+  {
+    question: "Calculate the total surface area of a cube with side length 5cm.",
+    options: ["25cm²", "125cm²", "100cm²", "150cm²"],
+    answer: 3,
+    explanation: "Total surface area of a cube = 6×side² = 6×5² = 6×25 = 150cm² (accounting for all 6 faces)."
+  },
+];
+
+const MATHSD = [
+  {
+    question: "In a right-angled triangle, if the opposite side is 3cm and the hypotenuse is 5cm, calculate sin θ.",
+    options: ["4/5", "3/4", "5/3", "3/5"],
+    answer: 3,
+    explanation: "sin θ = opposite/hypotenuse = 3/5."
+  },
+  {
+    question: "Calculate the value of cos 60°.",
+    options: ["0.5", "1", "0", "0.866"],
+    answer: 0,
+    explanation: "cos 60° is a standard trigonometric value equal to 1/2 (0.5)."
+  },
+  {
+    question: "In a right-angled triangle, if the adjacent side is 4cm and hypotenuse is 5cm, find the opposite side using Pythagoras' theorem.",
+    options: ["9cm", "3cm", "2cm", "6cm"],
+    answer: 1,
+    explanation: "Using a²+b²=c²: 4²+b²=5² → 16+b²=25 → b²=9 → b=3cm."
+  },
+  {
+    question: "Which trigonometric ratio is defined as opposite/adjacent?",
+    options: ["Cosine", "Secant", "Sine", "Tangent"],
+    answer: 3,
+    explanation: "Tangent (tan θ) is specifically defined as the ratio of the opposite side to the adjacent side in a right-angled triangle."
+  },
+  {
+    question: "Calculate tan 45°.",
+    options: ["√2", "0.5", "0", "1"],
+    answer: 3,
+    explanation: "tan 45° = 1, a standard value derived from an isosceles right triangle where opposite and adjacent sides are equal."
+  },
+  {
+    question: "Using the sine rule, if a=8, sin A=0.6, and sin B=0.75, find b.",
+    options: ["12", "9", "10", "6"],
+    answer: 2,
+    explanation: "Sine rule states a/sinA = b/sinB. So 8/0.6 = b/0.75, giving b = (8×0.75)/0.6 = 6/0.6 = 10."
+  },
+  {
+    question: "What is the value of sin 90°?",
+    options: ["0.5", "1", "Undefined", "0"],
+    answer: 1,
+    explanation: "sin 90° equals exactly 1, representing the maximum value of the sine function."
+  },
+  {
+    question: "Calculate the height of a tree if the angle of elevation from a point 20m away is 30°. (tan 30° = 0.577)",
+    options: ["34.6m", "10m", "17.3m", "11.5m"],
+    answer: 3,
+    explanation: "tan(angle) = height/distance, so height = distance × tan(30°) = 20×0.577 = 11.54m ≈ 11.5m."
+  },
+  {
+    question: "Using the cosine rule, calculate side c if a=7, b=9, and angle C=60°. (cos 60°=0.5)",
+    options: ["8.5", "8", "7.5", "6.9"],
+    answer: 1,
+    explanation: "c²=a²+b²-2ab·cosC = 49+81-2(7)(9)(0.5) = 130-63 = 67. c=√67≈8.19, closest to 8."
+  },
+  {
+    question: "Which identity correctly represents sin²θ + cos²θ?",
+    options: ["2", "1", "tan²θ", "0"],
+    answer: 1,
+    explanation: "This is the fundamental Pythagorean trigonometric identity, always equal to 1 for any angle θ."
+  },
+  {
+    question: "Calculate the mean of the data set: 4, 8, 6, 10, 12.",
+    options: ["9", "10", "7", "8"],
+    answer: 3,
+    explanation: "Mean = sum of values/number of values = (4+8+6+10+12)/5 = 40/5 = 8."
+  },
+  {
+    question: "Find the median of the data set: 3, 7, 9, 12, 15.",
+    options: ["12", "9", "9.2", "7"],
+    answer: 1,
+    explanation: "With data already ordered and 5 values (odd number), the median is the middle value: 9."
+  },
+  {
+    question: "Which measure of central tendency is most affected by extreme outlier values?",
+    options: ["Range", "Mode", "Median", "Mean"],
+    answer: 3,
+    explanation: "The mean is calculated using all values in the dataset, making it highly sensitive to extreme outliers."
+  },
+  {
+    question: "Find the mode of the data set: 2, 4, 4, 6, 8, 4, 9.",
+    options: ["No mode exists", "8", "4", "6"],
+    answer: 2,
+    explanation: "Mode is the value that appears most frequently — 4 appears three times, more than any other value in the set."
+  },
+  {
+    question: "Calculate the range of the data set: 15, 22, 8, 30, 12.",
+    options: ["18", "30", "22", "8"],
+    answer: 2,
+    explanation: "Range = highest value - lowest value = 30-8 = 22."
+  },
+  {
+    question: "For a data set with an even number of values, the median is calculated by:",
+    options: ["Taking the middle value directly", "Averaging the two middle values", "Taking the mode instead", "Taking the smallest value"],
+    answer: 1,
+    explanation: "When there's an even number of data points, the median is found by averaging the two central values after arranging data in order."
+  },
+  {
+    question: "Calculate the mean of the data set: 10, 15, 20, 25, 30.",
+    options: ["18", "15", "20", "22"],
+    answer: 2,
+    explanation: "Mean = (10+15+20+25+30)/5 = 100/5 = 20."
+  },
+  {
+    question: "In a frequency distribution table, the class with the highest frequency is called the:",
+    options: ["Mean class", "Range class", "Median class", "Modal class"],
+    answer: 3,
+    explanation: "The modal class is specifically defined as the class interval with the highest frequency in a grouped frequency distribution."
+  },
+  {
+    question: "Which statement correctly describes standard deviation?",
+    options: ["It equals the range divided by 2", "It measures the average value of a dataset", "It measures how spread out data values are from the mean", "It represents the most frequent value"],
+    answer: 2,
+    explanation: "Standard deviation quantifies the dispersion or spread of data points relative to the mean."
+  },
+  {
+    question: "A data set has values: 5, 5, 5, 5, 5. What is the standard deviation?",
+    options: ["5", "25", "0", "1"],
+    answer: 2,
+    explanation: "Since all values are identical (no variation from the mean), the standard deviation is exactly 0."
+  },
+  {
+    question: "A fair coin is tossed once. What is the probability of getting heads?",
+    options: ["1", "1/4", "0", "1/2"],
+    answer: 3,
+    explanation: "A fair coin has two equally likely outcomes (heads/tails), so probability of heads = 1/2."
+  },
+  {
+    question: "A die is rolled once. Calculate the probability of getting a number greater than 4.",
+    options: ["1/3", "1/6", "2/3", "1/2"],
+    answer: 0,
+    explanation: "Numbers greater than 4 on a die are 5 and 6 (2 favorable outcomes out of 6 total): probability = 2/6 = 1/3."
+  },
+  {
+    question: "If two events are mutually exclusive, this means:",
+    options: ["They can occur simultaneously", "One always causes the other", "They cannot occur at the same time", "They are independent events"],
+    answer: 2,
+    explanation: "Mutually exclusive events cannot both happen at the same time."
+  },
+  {
+    question: "A bag contains 4 red balls and 6 blue balls. Calculate the probability of picking a red ball.",
+    options: ["1/4", "6/10", "4/6", "4/10"],
+    answer: 3,
+    explanation: "Probability = favorable outcomes/total outcomes = 4 red/(4+6 total) = 4/10 = 2/5."
+  },
+  {
+    question: "For two independent events A and B, P(A and B) is calculated as:",
+    options: ["P(A) + P(B)", "P(A) / P(B)", "P(A) × P(B)", "P(A) - P(B)"],
+    answer: 2,
+    explanation: "For independent events, the probability of both occurring together equals the product of their individual probabilities."
+  },
+  {
+    question: "A card is drawn from a standard deck of 52 cards. Calculate the probability of drawing a King.",
+    options: ["1/52", "13/52", "4/52", "1/13"],
+    answer: 3,
+    explanation: "There are 4 Kings in a deck of 52 cards: probability = 4/52 = 1/13."
+  },
+  {
+    question: "If P(A) = 0.3, calculate P(not A) [complement].",
+    options: ["0", "1.3", "0.7", "0.3"],
+    answer: 2,
+    explanation: "Since probabilities of an event and its complement always sum to 1: P(not A) = 1-P(A) = 1-0.3 = 0.7."
+  },
+  {
+    question: "Two dice are rolled. Calculate the probability of getting a sum of 7.",
+    options: ["1/12", "6/36", "1/6", "5/36"],
+    answer: 1,
+    explanation: "Combinations giving sum 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 favorable outcomes out of 36 total: 6/36 = 1/6."
+  },
+  {
+    question: "What is the probability of an impossible event?",
+    options: ["0.5", "0", "1", "Undefined"],
+    answer: 1,
+    explanation: "An impossible event has zero probability of occurring."
+  },
+  {
+    question: "A bag contains 5 white and 3 black balls. If one ball is drawn, calculate the probability it is black.",
+    options: ["5/3", "3/8", "5/8", "3/5"],
+    answer: 1,
+    explanation: "Probability = favorable/total = 3 black/(5+3 total) = 3/8."
+  },
+  {
+    question: "Calculate the distance between points (2,3) and (5,7).",
+    options: ["4", "6", "5", "7"],
+    answer: 2,
+    explanation: "Using distance formula: √[(5-2)²+(7-3)²] = √[9+16] = √25 = 5."
+  },
+  {
+    question: "Find the gradient (slope) of the line passing through points (1,2) and (4,8).",
+    options: ["2", "3", "1", "6"],
+    answer: 0,
+    explanation: "Gradient = (y₂-y₁)/(x₂-x₁) = (8-2)/(4-1) = 6/3 = 2."
+  },
+  {
+    question: "Find the midpoint of the line segment joining (2,4) and (6,8).",
+    options: ["(4,6)", "(2,3)", "(3,5)", "(8,12)"],
+    answer: 0,
+    explanation: "Midpoint formula: [(x₁+x₂)/2, (y₁+y₂)/2] = [(2+6)/2, (4+8)/2] = (4,6)."
+  },
+  {
+    question: "The equation of a line in the form y=mx+c represents:",
+    options: ["m as the gradient, c as the y-intercept", "Neither m nor c has specific meaning", "Both m and c as gradients", "m as the y-intercept, c as the gradient"],
+    answer: 0,
+    explanation: "In the slope-intercept form y=mx+c, m represents the gradient (slope) of the line, while c represents the y-intercept."
+  },
+  {
+    question: "Find the equation of a line with gradient 3 passing through point (2,5).",
+    options: ["y=3x+1", "y=3x-1", "y=3x-5", "y=3x+5"],
+    answer: 1,
+    explanation: "Using y-y₁=m(x-x₁): y-5=3(x-2) → y-5=3x-6 → y=3x-1."
+  },
+  {
+    question: "Two lines are parallel if their gradients are:",
+    options: ["Both zero", "Opposite in sign only", "Equal", "Negative reciprocals of each other"],
+    answer: 2,
+    explanation: "Parallel lines share the exact same gradient (slope)."
+  },
+  {
+    question: "Two lines are perpendicular if the product of their gradients equals:",
+    options: ["-1", "0", "1", "Undefined"],
+    answer: 0,
+    explanation: "Perpendicular lines have gradients that are negative reciprocals of each other, meaning their product always equals -1."
+  },
+  {
+    question: "Find the y-intercept of the line y=4x-7.",
+    options: ["7", "4", "-4", "-7"],
+    answer: 3,
+    explanation: "In the form y=mx+c, the y-intercept is the constant term c, which here is -7."
+  },
+  {
+    question: "Calculate the gradient of a line perpendicular to a line with gradient 2/3.",
+    options: ["-3/2", "2/3", "3/2", "-2/3"],
+    answer: 0,
+    explanation: "Perpendicular gradients are negative reciprocals: if original gradient is 2/3, perpendicular gradient = -1/(2/3) = -3/2."
+  },
+  {
+    question: "Which of the following points lies on the line y=2x+1?",
+    options: ["(1,2)", "(2,5)", "(3,6)", "(0,2)"],
+    answer: 1,
+    explanation: "Testing (2,5): y=2(2)+1=5. This matches, confirming the point lies on the line."
+  },
+  {
+    question: "Add the matrices: [[1,2],[3,4]] + [[5,6],[7,8]]",
+    options: ["[[5,8],[10,12]]", "[[5,12],[21,32]]", "[[6,8],[10,12]]", "[[6,6],[10,10]]"],
+    answer: 2,
+    explanation: "Matrix addition adds corresponding elements: [1+5,2+6],[3+7,4+8] = [[6,8],[10,12]]."
+  },
+  {
+    question: "Calculate the determinant of matrix [[3,4],[2,5]].",
+    options: ["15", "8", "23", "7"],
+    answer: 3,
+    explanation: "For a 2×2 matrix [[a,b],[c,d]], determinant = ad-bc = (3×5)-(4×2) = 15-8 = 7."
+  },
+  {
+    question: "Which condition must be met for two matrices to be multiplied together?",
+    options: ["Both matrices must be square", "They must both be 2×2 matrices", "They must have the same dimensions", "The number of columns in the first matrix must equal the number of rows in the second"],
+    answer: 3,
+    explanation: "Matrix multiplication requires the number of columns in the first matrix to match the number of rows in the second matrix."
+  },
+  {
+    question: "Find vector AB if A=(2,3) and B=(5,7).",
+    options: ["(-3,-4)", "(7,10)", "(2.5,3.5)", "(3,4)"],
+    answer: 3,
+    explanation: "Vector AB = B-A (coordinates) = (5-2, 7-3) = (3,4)."
+  },
+  {
+    question: "Calculate the magnitude of vector (3,4).",
+    options: ["12", "25", "5", "7"],
+    answer: 2,
+    explanation: "Magnitude = √(x²+y²) = √(3²+4²) = √(9+16) = √25 = 5."
+  },
+  {
+    question: "Multiply the matrix [[2,3]] by scalar 4.",
+    options: ["[[8,12]]", "[[2,3,4]]", "[[8,3]]", "[[6,7]]"],
+    answer: 0,
+    explanation: "Scalar multiplication multiplies every element by the scalar: [2×4, 3×4] = [8,12]."
+  },
+  {
+    question: "For a 2×2 matrix to have an inverse, its determinant must be:",
+    options: ["Not equal to zero", "Always negative", "Always positive", "Equal to zero"],
+    answer: 0,
+    explanation: "A matrix inverse only exists when the determinant is non-zero."
+  },
+  {
+    question: "Add vectors: (2,5) + (3,-2)",
+    options: ["(6,-10)", "(-1,7)", "(5,3)", "(1,7)"],
+    answer: 2,
+    explanation: "Vector addition adds corresponding components: (2+3, 5+(-2)) = (5,3)."
+  },
+  {
+    question: "Find the inverse of matrix [[2,0],[0,3]] (a diagonal matrix).",
+    options: ["[[3,0],[0,2]]", "[[0.5,0.5],[0.5,0.5]]", "[[1/2,0],[0,1/3]]", "[[-2,0],[0,-3]]"],
+    answer: 2,
+    explanation: "For a diagonal matrix, the inverse simply takes the reciprocal of each diagonal element: [[1/2,0],[0,1/3]]."
+  },
+  {
+    question: "Which of the following describes a null (zero) vector?",
+    options: ["A vector with maximum magnitude", "A vector equal to (1,1)", "A vector pointing in the positive x-direction only", "A vector with zero magnitude and no specific direction"],
+    answer: 3,
+    explanation: "A null vector has zero magnitude (length) and, by convention, has no defined direction."
+  },
+];
+
+const BIOLOGYA = [
+  {
+    question: "Which organelle is responsible for producing energy (ATP) in a cell?",
+    options: ["Golgi apparatus", "Nucleus", "Ribosome", "Mitochondrion"],
+    answer: 3,
+    explanation: "Mitochondria are known as the \"powerhouse of the cell\" because they carry out cellular respiration, converting glucose and oxygen into ATP (usable energy)."
+  },
+  {
+    question: "Which structure controls the entry and exit of substances into and out of a cell?",
+    options: ["Cytoplasm", "Nucleus", "Cell wall", "Cell membrane"],
+    answer: 3,
+    explanation: "The cell (plasma) membrane is selectively permeable, regulating what substances can pass into or out of the cell, maintaining internal homeostasis."
+  },
+  {
+    question: "Which of the following organelles is found in plant cells but NOT in animal cells?",
+    options: ["Mitochondria", "Chloroplast", "Ribosome", "Nucleus"],
+    answer: 1,
+    explanation: "Chloroplasts, responsible for photosynthesis, are unique to plant cells (and some protists), while animal cells lack this organelle since they don't photosynthesize."
+  },
+  {
+    question: "The nucleus of a cell primarily functions to:",
+    options: ["Break down waste materials", "Generate energy", "Control cellular activities and store genetic material (DNA)", "Produce proteins"],
+    answer: 2,
+    explanation: "The nucleus houses the cell's DNA and acts as the control center, directing cellular activities like growth, metabolism, and reproduction through gene expression."
+  },
+  {
+    question: "Which organelle is responsible for protein synthesis?",
+    options: ["Lysosome", "Ribosome", "Vacuole", "Golgi apparatus"],
+    answer: 1,
+    explanation: "Ribosomes are the cellular structures where amino acids are assembled into proteins based on genetic instructions from mRNA."
+  },
+  {
+    question: "The rigid outer layer found in plant cells (but absent in animal cells) is called the:",
+    options: ["Cytoplasm", "Cell wall", "Cell membrane", "Nuclear membrane"],
+    answer: 1,
+    explanation: "The cell wall, primarily made of cellulose, provides structural support and protection specifically to plant cells, a feature absent in animal cells."
+  },
+  {
+    question: "Lysosomes primarily function to:",
+    options: ["Store water", "Break down waste materials and cellular debris", "Produce energy", "Control cell division"],
+    answer: 1,
+    explanation: "Lysosomes contain digestive enzymes that break down waste materials, damaged organelles, and foreign substances, acting as the cell's \"recycling and disposal\" system."
+  },
+  {
+    question: "Which of the following best describes the difference between prokaryotic and eukaryotic cells?",
+    options: ["Eukaryotic cells are always smaller", "Prokaryotic cells have a nucleus; eukaryotic cells don't", "Both have identical structures", "Prokaryotic cells lack a true nucleus; eukaryotic cells have a membrane-bound nucleus"],
+    answer: 3,
+    explanation: "The defining distinction is that prokaryotic cells (like bacteria) lack a membrane-enclosed nucleus, with genetic material floating freely in the cytoplasm, while eukaryotic cells have a true, membrane-bound nucleus."
+  },
+  {
+    question: "The Golgi apparatus primarily functions to:",
+    options: ["Produce ATP", "Break down large molecules", "Modify, package, and transport proteins", "Store genetic material"],
+    answer: 2,
+    explanation: "The Golgi apparatus acts as the cell's \"post office,\" receiving proteins from the endoplasmic reticulum, modifying them, and packaging them for transport to their final destinations."
+  },
+  {
+    question: "Which structure is responsible for maintaining cell shape and enabling movement of organelles within animal cells?",
+    options: ["Nuclear membrane", "Vacuole", "Cytoskeleton", "Cell wall"],
+    answer: 2,
+    explanation: "The cytoskeleton, a network of protein fibers, provides structural support, maintains cell shape, and facilitates the movement of organelles and the cell itself."
+  },
+  {
+    question: "Mitosis results in the production of:",
+    options: ["One large cell", "Two genetically identical daughter cells", "Four genetically different daughter cells", "Four identical daughter cells"],
+    answer: 1,
+    explanation: "Mitosis is a type of cell division that produces two genetically identical daughter cells, each with the same chromosome number as the parent cell, essential for growth and repair."
+  },
+  {
+    question: "Meiosis specifically produces:",
+    options: ["Four identical daughter cells with full chromosome number", "One daughter cell", "Four genetically different daughter cells with half the chromosome number", "Two identical daughter cells"],
+    answer: 2,
+    explanation: "Meiosis is specifically involved in producing gametes (sex cells), resulting in four genetically diverse daughter cells, each with half the original chromosome number (haploid)."
+  },
+  {
+    question: "During which phase of mitosis do chromosomes align at the cell's equator?",
+    options: ["Telophase", "Metaphase", "Anaphase", "Prophase"],
+    answer: 1,
+    explanation: "Metaphase is characterized by chromosomes aligning along the metaphase plate (cell's equator), ensuring accurate separation during the subsequent anaphase."
+  },
+  {
+    question: "Why is meiosis essential for sexual reproduction?",
+    options: ["It maintains the same chromosome number across generations by halving it during gamete formation", "It doubles the chromosome number", "It produces more cells for growth", "It has no specific importance"],
+    answer: 0,
+    explanation: "Meiosis halves the chromosome number in gametes, ensuring that when two gametes fuse during fertilization, the resulting offspring has the correct diploid chromosome number."
+  },
+  {
+    question: "During which phase of the cell cycle does DNA replication occur?",
+    options: ["Telophase", "Interphase (S phase)", "Metaphase", "Prophase"],
+    answer: 1,
+    explanation: "DNA replication specifically occurs during the S (synthesis) phase of interphase, before the cell enters the actual division phases."
+  },
+  {
+    question: "What is the significance of crossing over during meiosis?",
+    options: ["It reduces genetic diversity", "It increases genetic variation by exchanging genetic material between homologous chromosomes", "It only occurs during mitosis", "It has no biological significance"],
+    answer: 1,
+    explanation: "Crossing over involves the exchange of genetic segments between homologous chromosomes during meiosis, creating new combinations of alleles and significantly increasing genetic diversity in offspring."
+  },
+  {
+    question: "Which of the following is a key difference between mitosis and meiosis?",
+    options: ["Mitosis maintains chromosome number; meiosis halves it", "Mitosis occurs only in plants", "Meiosis produces genetically identical cells, mitosis doesn't", "There is no difference"],
+    answer: 0,
+    explanation: "A fundamental distinction is that mitosis produces daughter cells with the same chromosome number as the parent, while meiosis specifically reduces the chromosome number by half for sexual reproduction."
+  },
+  {
+    question: "During cytokinesis, what specifically occurs?",
+    options: ["Nuclear membrane breakdown", "DNA replication", "Chromosome alignment", "Division of the cytoplasm to form two separate cells"],
+    answer: 3,
+    explanation: "Cytokinesis is the final stage of cell division where the cytoplasm physically divides, creating two separate daughter cells, following the division of genetic material."
+  },
+  {
+    question: "How many chromosomes would a human gamete (sperm or egg) contain, given that human somatic cells have 46 chromosomes?",
+    options: ["46", "23", "92", "12"],
+    answer: 1,
+    explanation: "Since meiosis halves the chromosome number, human gametes contain 23 chromosomes (haploid number), which combine during fertilization to restore the full 46 chromosomes (diploid) in the offspring."
+  },
+  {
+    question: "Uncontrolled cell division, often associated with damaged regulatory mechanisms, can lead to:",
+    options: ["No significant consequences", "Improved organism health", "Faster healing only", "Cancer (tumor formation)"],
+    answer: 3,
+    explanation: "When normal cell division control mechanisms fail (due to genetic mutations), cells can divide uncontrollably, forming tumors and potentially leading to cancer."
+  },
+  {
+    question: "Photosynthesis in plants primarily occurs in which organelle?",
+    options: ["Chloroplast", "Ribosome", "Mitochondria", "Nucleus"],
+    answer: 0,
+    explanation: "Chloroplasts contain chlorophyll, the pigment essential for capturing light energy and converting carbon dioxide and water into glucose and oxygen during photosynthesis."
+  },
+  {
+    question: "Which of the following is the correct overall equation for photosynthesis?",
+    options: ["6O₂ + 6H₂O → C₆H₁₂O₆ + 6CO₂", "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O", "C₆H₁₂O₆ → 6CO₂ + 6H₂O", "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (using light energy)"],
+    answer: 3,
+    explanation: "Photosynthesis converts carbon dioxide and water into glucose and oxygen, using light energy captured by chlorophyll."
+  },
+  {
+    question: "Herbivores are animals that primarily feed on:",
+    options: ["Decomposed matter only", "Other animals", "Both plants and animals", "Plants only"],
+    answer: 3,
+    explanation: "Herbivores are specifically classified as animals whose diet consists mainly or entirely of plant material, distinguishing them from carnivores and omnivores."
+  },
+  {
+    question: "Which type of nutrition involves organisms making their own food using light energy?",
+    options: ["Parasitic nutrition", "Saprophytic nutrition", "Heterotrophic nutrition", "Autotrophic (photosynthetic) nutrition"],
+    answer: 3,
+    explanation: "Autotrophic nutrition, specifically photosynthetic autotrophy, describes organisms (like plants) that synthesize their own organic food from inorganic materials using light energy."
+  },
+  {
+    question: "Which enzyme in human saliva begins the digestion of starch?",
+    options: ["Lipase", "Trypsin", "Amylase", "Pepsin"],
+    answer: 2,
+    explanation: "Salivary amylase specifically breaks down starch into simpler sugars (maltose) as the initial step of carbohydrate digestion, beginning in the mouth."
+  },
+  {
+    question: "Which part of the human digestive system is primarily responsible for nutrient absorption?",
+    options: ["Stomach", "Large intestine", "Small intestine", "Esophagus"],
+    answer: 2,
+    explanation: "The small intestine, with its extensive surface area created by villi and microvilli, is the primary site where digested nutrients are absorbed into the bloodstream."
+  },
+  {
+    question: "Parasitic nutrition involves an organism that:",
+    options: ["Only consumes decaying matter", "Makes its own food", "Lives on or in another organism, deriving nutrients while harming the host", "Photosynthesizes for energy"],
+    answer: 2,
+    explanation: "Parasites obtain nutrition by living on or within a host organism, typically causing harm to the host while benefiting themselves nutritionally."
+  },
+  {
+    question: "Which of the following nutrients is primarily broken down by the enzyme pepsin in the stomach?",
+    options: ["Proteins", "Fats", "Vitamins", "Carbohydrates"],
+    answer: 0,
+    explanation: "Pepsin, secreted in the stomach, specifically breaks down proteins into smaller peptide chains, functioning optimally in the stomach's acidic environment."
+  },
+  {
+    question: "Saprophytic nutrition refers to organisms that:",
+    options: ["Produce their own food through photosynthesis", "Only consume living plants", "Cannot digest any food", "Obtain nutrients by feeding on dead and decaying organic matter"],
+    answer: 3,
+    explanation: "Saprophytes (like many fungi and bacteria) obtain nutrition by decomposing and absorbing nutrients from dead organic material, playing a crucial role in nutrient recycling."
+  },
+  {
+    question: "Which mineral element is essential for chlorophyll formation in plants?",
+    options: ["Calcium", "Phosphorus", "Potassium", "Magnesium"],
+    answer: 3,
+    explanation: "Magnesium is a central component of the chlorophyll molecule structure, making it essential for chlorophyll synthesis and, consequently, photosynthesis."
+  },
+  {
+    question: "Which plant tissue is responsible for transporting water and minerals from roots to leaves?",
+    options: ["Epidermis", "Cortex", "Xylem", "Phloem"],
+    answer: 2,
+    explanation: "Xylem tissue specifically transports water and dissolved minerals upward from roots to other parts of the plant, primarily through a passive process driven by transpiration."
+  },
+  {
+    question: "Phloem tissue in plants is primarily responsible for transporting:",
+    options: ["Water only", "Manufactured food (sugars) from leaves to other plant parts", "Oxygen", "Minerals only"],
+    answer: 1,
+    explanation: "Phloem transports organic nutrients, primarily sucrose produced during photosynthesis, from source tissues to sink tissues throughout the plant."
+  },
+  {
+    question: "In the human circulatory system, which chamber of the heart pumps oxygenated blood to the body?",
+    options: ["Right ventricle", "Right atrium", "Left ventricle", "Left atrium"],
+    answer: 2,
+    explanation: "The left ventricle receives oxygenated blood from the left atrium and pumps it with significant force through the aorta to circulate throughout the entire body."
+  },
+  {
+    question: "Which blood vessels carry blood away from the heart?",
+    options: ["Arteries", "Veins", "Capillaries", "Venules"],
+    answer: 0,
+    explanation: "Arteries are specifically defined as blood vessels carrying blood away from the heart (regardless of oxygen content), while veins carry blood back toward the heart."
+  },
+  {
+    question: "What is the primary function of red blood cells?",
+    options: ["Transporting oxygen throughout the body", "Blood clotting", "Fighting infections", "Producing antibodies"],
+    answer: 0,
+    explanation: "Red blood cells contain hemoglobin, a protein that binds to oxygen in the lungs and releases it to body tissues, making oxygen transport their primary function."
+  },
+  {
+    question: "Which process describes the movement of water from roots through the plant and its evaporation from leaves?",
+    options: ["Germination", "Photosynthesis", "Respiration", "Transpiration"],
+    answer: 3,
+    explanation: "Transpiration is the process by which water evaporates from plant leaves (primarily through stomata), creating a pull that draws water upward through the xylem from the roots."
+  },
+  {
+    question: "Which blood cells are primarily responsible for fighting infections?",
+    options: ["White blood cells", "Platelets", "Red blood cells", "Plasma cells only"],
+    answer: 0,
+    explanation: "White blood cells (leukocytes) are the immune system's primary defenders, identifying and destroying pathogens like bacteria and viruses."
+  },
+  {
+    question: "In double circulation (as in mammals), blood passes through the heart:",
+    options: ["Twice per complete circuit (once for pulmonary, once for systemic circulation)", "Never passes through the heart", "Once per complete circuit", "Three times per circuit"],
+    answer: 0,
+    explanation: "Double circulation involves blood passing through the heart twice in one complete cycle — once through pulmonary circulation and once through systemic circulation."
+  },
+  {
+    question: "What is the function of platelets in blood?",
+    options: ["Producing hormones", "Blood clotting", "Oxygen transport", "Fighting infections"],
+    answer: 1,
+    explanation: "Platelets (thrombocytes) are essential for blood clotting, aggregating at injury sites to form clots that prevent excessive blood loss."
+  },
+  {
+    question: "Root hairs increase the efficiency of water absorption in plants primarily by:",
+    options: ["Increasing the surface area for water and mineral uptake", "Storing food reserves", "Producing more chlorophyll", "Photosynthesizing more efficiently"],
+    answer: 0,
+    explanation: "Root hairs are thin extensions of root epidermal cells that significantly increase the surface area in contact with soil, maximizing water and mineral ion absorption efficiency."
+  },
+  {
+    question: "Which type of respiration requires oxygen?",
+    options: ["Aerobic respiration", "Fermentation", "Anaerobic respiration", "Photosynthesis"],
+    answer: 0,
+    explanation: "Aerobic respiration specifically requires oxygen to fully break down glucose, producing significantly more ATP energy compared to oxygen-independent processes."
+  },
+  {
+    question: "What is the primary end product of anaerobic respiration in human muscle cells during intense exercise?",
+    options: ["Water", "Carbon dioxide only", "Ethanol", "Lactic acid"],
+    answer: 3,
+    explanation: "When oxygen supply is insufficient during intense exercise, human muscle cells undergo anaerobic respiration, producing lactic acid as a byproduct."
+  },
+  {
+    question: "In which cellular organelle does aerobic respiration primarily occur?",
+    options: ["Golgi apparatus", "Mitochondria", "Nucleus", "Ribosome"],
+    answer: 1,
+    explanation: "Mitochondria house the enzymes and structures necessary for the later stages of aerobic respiration, where most ATP is generated."
+  },
+  {
+    question: "Write the general word equation for aerobic respiration.",
+    options: ["Glucose + water → oxygen + energy", "Carbon dioxide + water → glucose + oxygen", "Glucose + oxygen → carbon dioxide + water + energy", "Glucose → ethanol + carbon dioxide"],
+    answer: 2,
+    explanation: "Aerobic respiration breaks down glucose using oxygen, releasing carbon dioxide, water, and energy (ATP) as products."
+  },
+  {
+    question: "Which gas is exchanged during breathing, specifically taken IN by the lungs?",
+    options: ["Oxygen", "Methane", "Nitrogen", "Carbon dioxide"],
+    answer: 0,
+    explanation: "During inhalation, oxygen from the atmosphere enters the lungs and diffuses into the bloodstream, essential for cellular aerobic respiration."
+  },
+  {
+    question: "Yeast undergoing anaerobic respiration (fermentation) produces:",
+    options: ["Only water", "Only oxygen", "Lactic acid", "Ethanol and carbon dioxide"],
+    answer: 3,
+    explanation: "Yeast performs alcoholic fermentation under anaerobic conditions, converting glucose into ethanol and carbon dioxide."
+  },
+  {
+    question: "Why does anaerobic respiration release significantly less energy than aerobic respiration?",
+    options: ["It uses more oxygen", "Glucose is only partially broken down, releasing less stored chemical energy", "It occurs faster", "It doesn't involve glucose at all"],
+    answer: 1,
+    explanation: "Anaerobic respiration incompletely breaks down glucose, releasing far less ATP compared to the complete breakdown achieved through aerobic respiration."
+  },
+  {
+    question: "Which structures in the lungs are the primary sites of gas exchange?",
+    options: ["Alveoli", "Trachea", "Bronchioles", "Bronchi"],
+    answer: 0,
+    explanation: "Alveoli are tiny, thin-walled air sacs with extensive surface area and rich blood supply, specifically structured to maximize efficient gas exchange."
+  },
+  {
+    question: "During vigorous exercise, breathing rate increases primarily to:",
+    options: ["Decrease oxygen supply to muscles", "Increase oxygen intake and remove excess carbon dioxide more efficiently", "Slow down metabolism", "Reduce heart rate"],
+    answer: 1,
+    explanation: "Increased breathing rate during exercise helps meet the elevated oxygen demand of actively respiring muscle tissue while efficiently expelling the increased carbon dioxide produced."
+  },
+  {
+    question: "Which of the following correctly compares aerobic and anaerobic respiration in terms of ATP yield per glucose molecule?",
+    options: ["Neither process produces ATP", "Anaerobic produces more ATP than aerobic", "Aerobic produces significantly more ATP than anaerobic", "Both produce identical amounts of ATP"],
+    answer: 2,
+    explanation: "Aerobic respiration can yield approximately 36-38 ATP molecules per glucose molecule, while anaerobic respiration yields only about 2 ATP molecules."
+  },
+];
+
+const BIOLOGYB = [
+  {
+    question: "Which organ is primarily responsible for filtering waste products from the blood in humans?",
+    options: ["Lungs", "Skin", "Liver", "Kidney"],
+    answer: 3,
+    explanation: "Kidneys filter blood to remove metabolic waste products (especially urea) and excess substances, forming urine as the primary excretory product."
+  },
+  {
+    question: "What is the main nitrogenous waste product excreted by humans?",
+    options: ["Carbon dioxide", "Urea", "Ammonia", "Uric acid"],
+    answer: 1,
+    explanation: "Humans primarily excrete urea, a less toxic form of nitrogenous waste converted from ammonia by the liver, then filtered out by the kidneys."
+  },
+  {
+    question: "Which structure within the kidney is the functional unit responsible for filtration?",
+    options: ["Ureter", "Renal pelvis", "Nephron", "Bladder"],
+    answer: 2,
+    explanation: "The nephron is the microscopic functional unit of the kidney, responsible for the entire process of blood filtration, reabsorption, and urine formation."
+  },
+  {
+    question: "Which organ produces urea as a byproduct of protein metabolism?",
+    options: ["Pancreas", "Kidney", "Spleen", "Liver"],
+    answer: 3,
+    explanation: "The liver converts toxic ammonia (from protein breakdown) into less harmful urea through the urea cycle, which is then transported to the kidneys for excretion."
+  },
+  {
+    question: "Sweat glands in human skin primarily help excrete:",
+    options: ["Digestive enzymes", "Carbon dioxide only", "Bile", "Water, salts, and small amounts of urea"],
+    answer: 3,
+    explanation: "Sweat glands excrete water, salts, and trace amounts of urea through the skin, serving a dual function of excretion and temperature regulation."
+  },
+  {
+    question: "Which excretory structure do insects use, distinct from human kidneys?",
+    options: ["Malpighian tubules", "Nephridia", "Gills", "Contractile vacuoles"],
+    answer: 0,
+    explanation: "Insects possess Malpighian tubules, specialized excretory structures that filter waste from the hemolymph and produce a concentrated waste product."
+  },
+  {
+    question: "In plants, excess water and some waste gases are primarily removed through:",
+    options: ["Stomata (in leaves)", "Flowers", "Roots", "Seeds"],
+    answer: 0,
+    explanation: "Stomata, tiny pores mainly on leaf surfaces, facilitate the exchange of gases and water vapor loss (transpiration), serving excretory-like functions in plants."
+  },
+  {
+    question: "Why is ammonia, though a natural waste product, dangerous if allowed to accumulate in the human body?",
+    options: ["It has no biological effects", "It causes excessive urination only", "It provides too much energy", "It is highly toxic even in small concentrations"],
+    answer: 3,
+    explanation: "Ammonia is extremely toxic to cells even at low concentrations, which is why the liver rapidly converts it to the safer, less toxic compound urea."
+  },
+  {
+    question: "The process of removing metabolic waste products from an organism's body is called:",
+    options: ["Respiration", "Excretion", "Absorption", "Digestion"],
+    answer: 1,
+    explanation: "Excretion is specifically defined as the biological process of eliminating metabolic waste products that could become toxic if allowed to accumulate."
+  },
+  {
+    question: "Which of the following is NOT typically considered an excretory organ/structure in humans?",
+    options: ["Kidneys", "Skin", "Lungs", "Stomach"],
+    answer: 3,
+    explanation: "While kidneys, lungs, and skin are recognized excretory organs, the stomach is primarily involved in digestion, not excretion of metabolic waste."
+  },
+  {
+    question: "Homeostasis refers to:",
+    options: ["The maintenance of a stable internal environment despite external changes", "The breakdown of food", "The growth of an organism", "The process of reproduction"],
+    answer: 0,
+    explanation: "Homeostasis describes the body's ability to maintain relatively constant internal conditions regardless of fluctuations in the external environment."
+  },
+  {
+    question: "Which organ primarily regulates blood glucose levels through hormone secretion?",
+    options: ["Kidney", "Pancreas", "Spleen", "Liver"],
+    answer: 1,
+    explanation: "The pancreas secretes insulin and glucagon, hormones that work antagonistically to regulate blood glucose levels."
+  },
+  {
+    question: "When body temperature rises above normal, which mechanism helps cool the body down?",
+    options: ["Vasoconstriction", "Reduced blood flow to skin", "Shivering", "Sweating and vasodilation"],
+    answer: 3,
+    explanation: "When body temperature increases, sweat glands increase perspiration while blood vessels near the skin dilate, increasing heat loss to the environment."
+  },
+  {
+    question: "Insulin's primary function is to:",
+    options: ["Regulate body temperature", "Decrease blood glucose levels by promoting cellular uptake and storage", "Control water balance", "Increase blood glucose levels"],
+    answer: 1,
+    explanation: "Insulin, released when blood glucose is high, stimulates cells to absorb glucose from the blood and convert excess into glycogen for storage."
+  },
+  {
+    question: "Which hormone raises blood glucose levels when they become too low?",
+    options: ["Glucagon", "Insulin", "Estrogen", "Adrenaline (only)"],
+    answer: 0,
+    explanation: "Glucagon, also secreted by the pancreas, stimulates the liver to convert stored glycogen back into glucose, raising blood glucose levels."
+  },
+  {
+    question: "Negative feedback mechanisms in homeostasis work by:",
+    options: ["Amplifying the initial change", "Only working during illness", "Counteracting changes to return the system to its normal set point", "Having no effect on the original stimulus"],
+    answer: 2,
+    explanation: "Negative feedback is the primary homeostatic mechanism where the body detects a deviation from normal and initiates responses that counteract and reverse that change."
+  },
+  {
+    question: "When body temperature drops below normal, which response helps generate heat?",
+    options: ["Shivering (muscle contractions generating heat)", "Vasodilation", "Sweating", "Increased blood flow to skin"],
+    answer: 0,
+    explanation: "Shivering involves rapid, involuntary muscle contractions that generate heat through increased metabolic activity."
+  },
+  {
+    question: "Which organ plays a key role in regulating water balance in the human body?",
+    options: ["Liver", "Pancreas", "Stomach", "Kidney"],
+    answer: 3,
+    explanation: "Kidneys regulate water balance by adjusting the amount of water reabsorbed back into the blood versus excreted as urine."
+  },
+  {
+    question: "Diabetes mellitus is primarily characterized by:",
+    options: ["No connection to blood sugar regulation", "Overproduction of glucagon only", "Inability to properly regulate blood glucose levels (often due to insufficient insulin or insulin resistance)", "Excess insulin production"],
+    answer: 2,
+    explanation: "Diabetes mellitus results from either insufficient insulin production or the body's cells becoming resistant to insulin's effects, leading to chronically elevated blood glucose levels."
+  },
+  {
+    question: "Vasoconstriction (narrowing of blood vessels near the skin) helps the body:",
+    options: ["Have no thermoregulatory effect", "Increase heat loss", "Increase sweating", "Conserve heat by reducing blood flow to the skin surface"],
+    answer: 3,
+    explanation: "When body temperature drops, vasoconstriction reduces blood flow to skin surface capillaries, minimizing heat loss to the environment."
+  },
+  {
+    question: "Which type of joint allows movement in multiple directions, as seen in the shoulder?",
+    options: ["Hinge joint", "Fixed joint", "Pivot joint", "Ball and socket joint"],
+    answer: 3,
+    explanation: "Ball and socket joints allow extensive multidirectional movement due to their unique rounded structure fitting into a cup-shaped socket."
+  },
+  {
+    question: "The human skeleton primarily functions to:",
+    options: ["Regulate body temperature", "Provide support, protection, and enable movement (with muscles)", "Only produce blood cells", "Only store minerals"],
+    answer: 1,
+    explanation: "The skeletal system serves multiple crucial functions: providing structural support, protecting vital organs, enabling movement, and storing minerals."
+  },
+  {
+    question: "Which type of muscle is responsible for voluntary movement, such as walking?",
+    options: ["Involuntary muscle only", "Smooth muscle", "Skeletal muscle", "Cardiac muscle"],
+    answer: 2,
+    explanation: "Skeletal muscles are attached to bones and are under voluntary (conscious) control, enabling deliberate movements like walking."
+  },
+  {
+    question: "Tendons connect:",
+    options: ["Bone to skin", "Muscle to bone", "Bone to bone", "Muscle to muscle"],
+    answer: 1,
+    explanation: "Tendons are tough connective tissue structures that specifically attach muscles to bones."
+  },
+  {
+    question: "Ligaments primarily function to:",
+    options: ["Generate movement", "Connect muscle to bone", "Connect bone to bone, providing joint stability", "Store energy"],
+    answer: 2,
+    explanation: "Ligaments are fibrous connective tissues that specifically connect bones to other bones at joints, providing stability."
+  },
+  {
+    question: "Which type of joint allows movement in only one plane, like the elbow?",
+    options: ["Ball and socket joint", "Pivot joint", "Hinge joint", "Gliding joint"],
+    answer: 2,
+    explanation: "Hinge joints permit movement in a single plane, similar to a door hinge, allowing flexion and extension but not rotation."
+  },
+  {
+    question: "The human vertebral column (spine) primarily functions to:",
+    options: ["Support the body, protect the spinal cord, and enable flexibility", "Only produce blood cells", "Only enable digestion", "Store excess fat"],
+    answer: 0,
+    explanation: "The vertebral column provides crucial structural support for the body, protects the delicate spinal cord, and its segmented structure allows flexible movement."
+  },
+  {
+    question: "In muscle contraction, which two proteins primarily interact to cause shortening of muscle fibers?",
+    options: ["Hemoglobin and myoglobin", "Collagen and elastin", "Keratin and collagen", "Actin and myosin"],
+    answer: 3,
+    explanation: "Actin and myosin are the primary contractile proteins within muscle fibers that interact to cause muscle contraction and shortening."
+  },
+  {
+    question: "Cartilage differs from bone primarily in that cartilage is:",
+    options: ["More flexible and less rigid than bone", "Only found in fish", "Not found in the human body", "Harder than bone"],
+    answer: 0,
+    explanation: "Cartilage is a flexible, somewhat rubbery connective tissue that provides cushioning and support in areas requiring flexibility."
+  },
+  {
+    question: "Antagonistic muscle pairs (like biceps and triceps) work by:",
+    options: ["Contracting simultaneously to create movement", "Working independently with no coordination", "One muscle contracting while the other relaxes, creating opposite movements", "Both muscles staying permanently relaxed"],
+    answer: 2,
+    explanation: "Antagonistic muscle pairs work in opposition — when one muscle contracts to bend a joint, its antagonist relaxes, and vice versa."
+  },
+  {
+    question: "Which type of reproduction involves the fusion of male and female gametes?",
+    options: ["Sexual reproduction", "Budding", "Binary fission", "Asexual reproduction"],
+    answer: 0,
+    explanation: "Sexual reproduction specifically involves the fusion of specialized sex cells (gametes) from two parents, combining genetic material."
+  },
+  {
+    question: "Which of the following is an example of asexual reproduction?",
+    options: ["Human reproduction", "Binary fission in bacteria", "Flowering plant pollination", "Animal mating"],
+    answer: 1,
+    explanation: "Binary fission, where a single organism splits into two genetically identical daughter cells, is a classic example of asexual reproduction."
+  },
+  {
+    question: "In flowering plants, fertilization occurs when:",
+    options: ["Petals fall off", "The male gamete (from pollen) fuses with the female gamete (ovule) after pollen tube growth", "Pollen lands on the stigma only", "Leaves photosynthesize"],
+    answer: 1,
+    explanation: "True fertilization in flowering plants requires pollen grains to germinate and grow a pollen tube down to the ovule, allowing the male gamete to fuse with the female gamete."
+  },
+  {
+    question: "Which human reproductive organ produces sperm cells?",
+    options: ["Ovary", "Testis", "Fallopian tube", "Uterus"],
+    answer: 1,
+    explanation: "Testes are the male reproductive organs specifically responsible for producing sperm cells and secreting testosterone."
+  },
+  {
+    question: "Where does fertilization typically occur in the human female reproductive system?",
+    options: ["Fallopian tube", "Ovary", "Vagina", "Uterus"],
+    answer: 0,
+    explanation: "Fertilization typically occurs in the fallopian tube, after which the resulting zygote travels to the uterus for implantation."
+  },
+  {
+    question: "Which of the following best describes an advantage of sexual reproduction over asexual reproduction?",
+    options: ["It produces genetic variation, potentially aiding species survival", "It requires only one parent", "It's faster", "It always produces more offspring"],
+    answer: 0,
+    explanation: "Sexual reproduction combines genetic material from two parents, creating genetically diverse offspring, which can enhance a species' ability to adapt."
+  },
+  {
+    question: "In plants, vegetative propagation (like using stem cuttings) is an example of:",
+    options: ["Fertilization", "Sexual reproduction", "Pollination", "Asexual reproduction"],
+    answer: 3,
+    explanation: "Vegetative propagation involves producing new plants from parts of a single parent plant without gamete fusion, making it a form of asexual reproduction."
+  },
+  {
+    question: "The process by which pollen is transferred from the anther to the stigma is called:",
+    options: ["Pollination", "Photosynthesis", "Fertilization", "Germination"],
+    answer: 0,
+    explanation: "Pollination specifically refers to the transfer of pollen grains from the anther to the stigma, a necessary precursor to fertilization."
+  },
+  {
+    question: "Which hormone is primarily responsible for triggering ovulation in the human female menstrual cycle?",
+    options: ["Estrogen only", "Luteinizing hormone (LH) surge", "Progesterone only", "Testosterone"],
+    answer: 1,
+    explanation: "A sudden surge in luteinizing hormone (LH) triggers ovulation, causing the mature egg to be released from the ovary."
+  },
+  {
+    question: "Budding, as seen in organisms like Hydra, is a form of:",
+    options: ["Internal fertilization", "External fertilization", "Sexual reproduction", "Asexual reproduction"],
+    answer: 3,
+    explanation: "Budding involves a new individual developing as an outgrowth from the parent organism's body, requiring only one parent."
+  },
+  {
+    question: "Which type of growth involves an increase in both cell number and cell size?",
+    options: ["Growth (combining cell division and cell enlargement)", "Only cell division", "Only cell enlargement", "Cell death"],
+    answer: 0,
+    explanation: "Biological growth typically involves both an increase in cell number (through mitosis) and an increase in individual cell size."
+  },
+  {
+    question: "Metamorphosis, as seen in butterflies, refers to:",
+    options: ["No change during development", "Reproduction only", "Only growth in size without form change", "A dramatic change in body form during development from larva to adult"],
+    answer: 3,
+    explanation: "Metamorphosis describes the significant transformation in body structure that certain organisms undergo during development."
+  },
+  {
+    question: "Which hormone is primarily responsible for stimulating growth in humans?",
+    options: ["Thyroxine only", "Growth hormone (from the pituitary gland)", "Insulin", "Adrenaline"],
+    answer: 1,
+    explanation: "Growth hormone, secreted by the pituitary gland, stimulates growth in tissues throughout the body, particularly bone and muscle growth."
+  },
+  {
+    question: "Puberty in humans is primarily triggered by:",
+    options: ["Environmental temperature changes", "Decreased metabolism", "Growth hormone alone", "Increased secretion of sex hormones (testosterone/estrogen)"],
+    answer: 3,
+    explanation: "Puberty is triggered by increased secretion of sex hormones, leading to the development of secondary sexual characteristics and reproductive maturity."
+  },
+  {
+    question: "Which of the following best describes indeterminate growth (seen in many plants)?",
+    options: ["Growth only during embryonic development", "No growth after birth", "Continuous growth throughout the organism's life", "Growth that stops at a specific predetermined size"],
+    answer: 2,
+    explanation: "Indeterminate growth describes organisms (like most plants) that continue growing throughout their entire lifespan."
+  },
+  {
+    question: "In human development, the stage immediately following the embryo stage (from about 9 weeks until birth) is called:",
+    options: ["Fetal stage", "Infant stage", "Zygote stage", "Blastocyst stage"],
+    answer: 0,
+    explanation: "After the embryonic stage, human development enters the fetal stage, continuing from 9 weeks until birth."
+  },
+  {
+    question: "Which factor is NOT typically considered essential for normal growth and development?",
+    options: ["Genetic factors", "Proper hormone balance", "Adequate nutrition", "Random environmental noise"],
+    answer: 3,
+    explanation: "While nutrition, hormones, and genetics are all critical factors, random environmental noise has no established biological role in these processes."
+  },
+  {
+    question: "Which stage of insect metamorphosis is typically inactive/non-feeding, undergoing significant internal transformation?",
+    options: ["Pupa stage", "Adult stage", "Egg stage", "Larva stage"],
+    answer: 0,
+    explanation: "The pupa stage is characterized by dramatic internal restructuring, during which the organism typically doesn't feed and appears externally inactive."
+  },
+  {
+    question: "Growth curves in organisms typically show which pattern?",
+    options: ["Immediate maximum growth at birth", "An S-shaped (sigmoid) curve — slow initial growth, rapid growth phase, then plateau", "No predictable pattern", "Constant linear growth throughout life"],
+    answer: 1,
+    explanation: "Many organisms display sigmoid (S-shaped) growth curves — starting with slower initial growth, followed by a rapid growth phase, and eventually leveling off."
+  },
+  {
+    question: "Which of the following is an example of complete metamorphosis (four distinct stages)?",
+    options: ["Grasshopper development", "Cockroach development", "Butterfly development (egg-larva-pupa-adult)", "Human development"],
+    answer: 2,
+    explanation: "Butterflies undergo complete metamorphosis with four distinct stages, each looking dramatically different, unlike incomplete metamorphosis."
+  },
+];
+
+const BIOLOGYC = [
+  {
+    question: "A cross between a homozygous tall plant (TT) and a homozygous short plant (tt) produces offspring that are:",
+    options: ["All short", "All tall (heterozygous, Tt)", "All homozygous short", "Half tall, half short"],
+    answer: 1,
+    explanation: "Since T (tall) is typically dominant, crossing TT×tt produces all Tt offspring, which display the dominant tall phenotype despite being heterozygous."
+  },
+  {
+    question: "In a monohybrid cross between two heterozygous parents (Aa × Aa), what is the expected phenotypic ratio in offspring?",
+    options: ["1:2:1", "1:1", "3:1", "9:3:3:1"],
+    answer: 2,
+    explanation: "Crossing Aa×Aa produces genotypes AA:Aa:aA:aa (1:2:1 ratio), but phenotypically results in a 3:1 ratio since A is dominant."
+  },
+  {
+    question: "Which term describes the genetic makeup of an organism, as opposed to its physical appearance?",
+    options: ["Trait", "Phenotype", "Genotype", "Allele"],
+    answer: 2,
+    explanation: "Genotype specifically refers to an organism's genetic composition, while phenotype refers to the observable physical characteristics resulting from that genotype."
+  },
+  {
+    question: "If a person has blood type AB, this demonstrates which genetic concept?",
+    options: ["Recessive inheritance", "Sex-linked inheritance", "Complete dominance", "Codominance (both A and B alleles are expressed)"],
+    answer: 3,
+    explanation: "Blood type AB demonstrates codominance, where both A and B alleles are fully and simultaneously expressed in the phenotype."
+  },
+  {
+    question: "In humans, red-green color blindness is a sex-linked recessive trait carried on the X chromosome. Why are males more commonly affected than females?",
+    options: ["Females cannot carry the trait", "The trait only affects males biologically", "Males have only one X chromosome, so a single recessive allele will be expressed", "Males have two X chromosomes"],
+    answer: 2,
+    explanation: "Since males are XY, a single recessive allele on their X chromosome will be expressed, while females need two recessive alleles to show the trait."
+  },
+  {
+    question: "A dihybrid cross between two heterozygous individuals (AaBb × AaBb) produces which classic phenotypic ratio?",
+    options: ["1:2:1", "3:1", "1:1:1:1", "9:3:3:1"],
+    answer: 3,
+    explanation: "A dihybrid cross involving two independently assorting genes typically produces the classic 9:3:3:1 phenotypic ratio."
+  },
+  {
+    question: "Which structure carries genetic information in the form of a double helix?",
+    options: ["DNA", "Ribosome", "RNA", "Protein"],
+    answer: 0,
+    explanation: "DNA is the molecule that stores genetic information in its characteristic double helix structure, composed of nucleotide base pairs."
+  },
+  {
+    question: "A mutation is best defined as:",
+    options: ["The process of cell division", "A change in the DNA sequence that can potentially alter an organism's traits", "A normal genetic process with no effects", "Only beneficial changes in DNA"],
+    answer: 1,
+    explanation: "A mutation is any change in the DNA nucleotide sequence, which may be neutral, harmful, or occasionally beneficial."
+  },
+  {
+    question: "If both parents are carriers of a recessive genetic disorder (Aa × Aa), what is the probability their child will be affected (aa)?",
+    options: ["0%", "25%", "100%", "50%"],
+    answer: 1,
+    explanation: "Using a Punnett square for Aa×Aa: offspring genotypes are AA:Aa:Aa:aa (1:2:1), meaning 1 out of 4 (25%) will be homozygous recessive."
+  },
+  {
+    question: "Which scientist is credited with establishing the fundamental laws of inheritance through pea plant experiments?",
+    options: ["Charles Darwin", "Gregor Mendel", "Rosalind Franklin", "James Watson"],
+    answer: 1,
+    explanation: "Gregor Mendel's systematic pea plant breeding experiments established the fundamental principles of inheritance, earning him recognition as the \"father of genetics.\""
+  },
+  {
+    question: "Natural selection, as proposed by Darwin, describes the process where:",
+    options: ["Evolution occurs within a single generation", "All organisms survive equally", "Traits are randomly distributed with no survival advantage", "Organisms with favorable traits are more likely to survive and reproduce"],
+    answer: 3,
+    explanation: "Natural selection describes how organisms with traits better suited to their environment have a survival and reproductive advantage."
+  },
+  {
+    question: "Which of the following provides evidence for evolution through comparative anatomy?",
+    options: ["Identical genetic codes across all species", "Homologous structures (similar bone structures with different functions across species)", "Random mutations only", "Lack of any structural similarities between species"],
+    answer: 1,
+    explanation: "Homologous structures provide strong evidence of common ancestry and evolutionary divergence."
+  },
+  {
+    question: "Which term describes the process by which a new species arises from an existing one?",
+    options: ["Adaptation", "Speciation", "Selection", "Mutation"],
+    answer: 1,
+    explanation: "Speciation specifically refers to the evolutionary process through which populations evolve to become distinct species."
+  },
+  {
+    question: "Fossil evidence supports evolution by showing:",
+    options: ["A chronological record of gradual changes in organisms across geological time", "Only modern species existed historically", "No changes in organisms over time", "All species appeared simultaneously"],
+    answer: 0,
+    explanation: "The fossil record demonstrates a chronological sequence showing gradual anatomical changes in organisms over vast time periods."
+  },
+  {
+    question: "Analogous structures (like the wings of insects and birds) demonstrate:",
+    options: ["Common ancestry", "Identical genetic origin", "Convergent evolution (similar function evolving independently, not from common ancestry)", "No evolutionary significance"],
+    answer: 2,
+    explanation: "Analogous structures serve similar functions but evolved independently in unrelated lineages, demonstrating convergent evolution."
+  },
+  {
+    question: "Which factor is essential for natural selection to occur within a population?",
+    options: ["All individuals must be genetically identical", "No environmental pressures should be present", "Genetic variation must exist within the population", "Reproduction must be asexual only"],
+    answer: 2,
+    explanation: "Natural selection requires genetic variation within a population — without differences in traits, there would be nothing for environmental pressures to select."
+  },
+  {
+    question: "Antibiotic resistance in bacteria is a modern example of:",
+    options: ["Natural selection in action", "Artificial selection only", "No evolutionary relevance", "Genetic engineering"],
+    answer: 0,
+    explanation: "Antibiotic resistance demonstrates natural selection in real-time — resistant bacteria survive and reproduce while susceptible bacteria die."
+  },
+  {
+    question: "Which of the following best describes \"survival of the fittest\" in evolutionary context?",
+    options: ["Organisms best adapted to their specific environment are more likely to survive and reproduce", "All organisms have equal survival chances", "Fitness refers only to physical strength", "Only the physically strongest organisms survive"],
+    answer: 0,
+    explanation: "\"Fitness\" refers to an organism's reproductive success relative to others in its environment, not physical strength alone."
+  },
+  {
+    question: "Genetic drift refers to:",
+    options: ["Random changes in allele frequencies within a population, especially significant in small populations", "No change in genetic composition", "Only beneficial mutations spreading", "Directed evolution toward a specific goal"],
+    answer: 0,
+    explanation: "Genetic drift describes random fluctuations in allele frequencies due to chance events, more pronounced in smaller populations."
+  },
+  {
+    question: "Charles Darwin's observations during his voyage on the HMS Beagle, particularly in the Galápagos Islands, primarily contributed to his theory of:",
+    options: ["Cell theory", "Natural selection and evolution", "Photosynthesis", "Genetic inheritance"],
+    answer: 1,
+    explanation: "Darwin's observations of varied finch species with different beak adaptations provided crucial evidence supporting his theory of evolution through natural selection."
+  },
+  {
+    question: "In an ecosystem, organisms that produce their own food through photosynthesis are called:",
+    options: ["Decomposers", "Consumers", "Predators", "Producers"],
+    answer: 3,
+    explanation: "Producers form the base of ecological food chains, converting light energy into chemical energy through photosynthesis."
+  },
+  {
+    question: "Which trophic level consists of organisms that break down dead organic matter, recycling nutrients back into the ecosystem?",
+    options: ["Primary producers", "Primary consumers", "Decomposers", "Secondary consumers"],
+    answer: 2,
+    explanation: "Decomposers break down dead organisms and waste products, releasing nutrients back into the environment for reuse."
+  },
+  {
+    question: "A food chain typically shows:",
+    options: ["A simple, linear sequence of who eats whom", "Complex feeding relationships among many species", "Only producer organisms", "Random relationships with no order"],
+    answer: 0,
+    explanation: "A food chain represents a simplified, linear pathway of energy flow, unlike food webs which show more complex, interconnected feeding relationships."
+  },
+  {
+    question: "Which ecological term describes all the living organisms in a specific area, interacting with each other and their environment?",
+    options: ["Biome", "Population", "Ecosystem", "Community"],
+    answer: 2,
+    explanation: "An ecosystem encompasses both the biotic community and the abiotic environmental factors within a specific area."
+  },
+  {
+    question: "In energy flow through an ecosystem, approximately what percentage of energy is typically transferred from one trophic level to the next?",
+    options: ["90%", "100%", "50%", "10%"],
+    answer: 3,
+    explanation: "The \"10% rule\" in ecology states that only about 10% of energy is transferred from one trophic level to the next, with the rest lost as heat."
+  },
+  {
+    question: "Which term describes a group of the same species living in a specific area, capable of interbreeding?",
+    options: ["Population", "Ecosystem", "Biosphere", "Community"],
+    answer: 0,
+    explanation: "A population specifically refers to individuals of the same species living within a defined geographic area, capable of interbreeding."
+  },
+  {
+    question: "Symbiosis where both organisms benefit from the relationship is called:",
+    options: ["Mutualism", "Predation", "Commensalism", "Parasitism"],
+    answer: 0,
+    explanation: "Mutualism describes a symbiotic relationship where both interacting species derive benefit."
+  },
+  {
+    question: "Which type of pyramid in ecology typically shows a decrease in numbers/biomass/energy as you move up trophic levels?",
+    options: ["Population pyramid", "Age pyramid", "Food pyramid (dietary)", "Pyramid of numbers, biomass, or energy (ecological pyramids)"],
+    answer: 3,
+    explanation: "Ecological pyramids typically show a decreasing pattern from producers at the base to top predators, reflecting energy loss at each trophic transfer."
+  },
+  {
+    question: "Commensalism is a symbiotic relationship where:",
+    options: ["One organism benefits while the other is unaffected (neither helped nor harmed)", "Both organisms are harmed", "Both organisms benefit", "One organism benefits while the other is harmed"],
+    answer: 0,
+    explanation: "Commensalism specifically describes a relationship where one species benefits while the other experiences neither significant benefit nor harm."
+  },
+  {
+    question: "Biomagnification refers to:",
+    options: ["A process unrelated to food chains", "The increasing concentration of certain toxins/pollutants as they move up trophic levels", "The magnification of organisms' physical size", "The dilution of toxins as they move up the food chain"],
+    answer: 1,
+    explanation: "Biomagnification describes how certain persistent toxins become increasingly concentrated in organisms' tissues as they move up the food chain."
+  },
+  {
+    question: "Structural adaptations refer to:",
+    options: ["Physical/anatomical features that help an organism survive in its environment", "Behavioral changes only", "Changes that occur within a single lifetime through learning", "Temporary changes with no genetic basis"],
+    answer: 0,
+    explanation: "Structural adaptations are physical characteristics that have evolved over generations to help organisms survive and reproduce successfully."
+  },
+  {
+    question: "Camouflage in animals is an example of which type of adaptation?",
+    options: ["Physiological adaptation", "Structural/physical adaptation", "Temporary adaptation", "Behavioral adaptation"],
+    answer: 1,
+    explanation: "Camouflage involves physical coloring or patterning that helps an organism blend into its environment, making it a structural adaptation."
+  },
+  {
+    question: "Hibernation in animals during winter is an example of:",
+    options: ["Behavioral adaptation", "Genetic mutation only", "Structural adaptation", "No adaptation at all"],
+    answer: 0,
+    explanation: "Hibernation is a behavioral adaptation where animals modify their activity patterns to survive harsh winter conditions."
+  },
+  {
+    question: "Which of the following is an example of a physiological adaptation?",
+    options: ["A polar bear's white fur", "A chameleon's shape", "A bird's migration pattern", "A camel's ability to produce highly concentrated urine to conserve water"],
+    answer: 3,
+    explanation: "Physiological adaptations involve internal bodily processes — a camel's kidney efficiently concentrating urine is a physiological adaptation."
+  },
+  {
+    question: "Cacti having spines instead of broad leaves is an adaptation primarily for:",
+    options: ["Attracting pollinators", "Producing more oxygen", "Reducing water loss through transpiration in arid environments", "Enhancing photosynthesis rate"],
+    answer: 2,
+    explanation: "Cactus spines have minimal surface area compared to broad leaves, significantly reducing water loss through transpiration."
+  },
+  {
+    question: "Migration in birds is best classified as which type of adaptation?",
+    options: ["Structural", "Physiological", "Genetic mutation", "Behavioral"],
+    answer: 3,
+    explanation: "Migration represents a behavioral adaptation where birds seasonally travel to more favorable environments."
+  },
+  {
+    question: "Why do desert animals often exhibit nocturnal behavior (being active at night)?",
+    options: ["Only for social reasons", "To increase daytime hunting success", "It has no survival benefit", "To avoid extreme daytime heat and conserve water"],
+    answer: 3,
+    explanation: "Being active during cooler night hours helps desert animals avoid extreme daytime heat and reduce water loss through evaporation."
+  },
+  {
+    question: "Which of the following describes convergent evolution in relation to adaptation?",
+    options: ["Adaptation occurring randomly with no environmental influence", "Unrelated species independently evolving similar adaptations due to similar environmental pressures", "Only one species can adapt to an environment", "Closely related species developing identical traits"],
+    answer: 1,
+    explanation: "Convergent evolution occurs when unrelated species facing similar environmental challenges independently evolve similar adaptive traits."
+  },
+  {
+    question: "Thick blubber layers in Arctic marine mammals (like seals) serve as an adaptation for:",
+    options: ["Improving vision underwater", "Enhancing swimming speed only", "Increasing buoyancy only", "Insulation against extreme cold and energy storage"],
+    answer: 3,
+    explanation: "Blubber provides crucial thermal insulation, helping marine mammals maintain body temperature in frigid Arctic waters, while also serving as an energy reserve."
+  },
+  {
+    question: "Which term describes the evolutionary process where a species becomes highly specialized to a particular ecological niche over time?",
+    options: ["Random mutation", "Generalization", "Extinction", "Specialization (specialized adaptation)"],
+    answer: 3,
+    explanation: "Specialization refers to the evolutionary process where organisms develop highly specific adaptations suited to a particular ecological niche."
+  },
+  {
+    question: "The scientific classification system that groups organisms based on shared characteristics, developed by Linnaeus, is called:",
+    options: ["Ecology", "Genetics", "Taxonomy", "Evolution theory"],
+    answer: 2,
+    explanation: "Taxonomy is the scientific discipline concerned with classifying organisms into hierarchical categories based on shared characteristics."
+  },
+  {
+    question: "In the taxonomic hierarchy, which level is more specific: Genus or Species?",
+    options: ["Neither represents a specific classification", "Species is more specific", "Genus is more specific", "Both are equally specific"],
+    answer: 1,
+    explanation: "Species represents the most specific taxonomic rank, while genus is a broader category that can include multiple related species."
+  },
+  {
+    question: "Which kingdom includes organisms that are prokaryotic (lacking a true nucleus)?",
+    options: ["Fungi", "Animalia", "Monera (Bacteria)", "Plantae"],
+    answer: 2,
+    explanation: "Kingdom Monera specifically includes prokaryotic organisms lacking a membrane-bound nucleus."
+  },
+  {
+    question: "The scientific naming system using two names (genus and species) is called:",
+    options: ["Taxonomic ranking", "Common naming", "Classification coding", "Binomial nomenclature"],
+    answer: 3,
+    explanation: "Binomial nomenclature assigns each species a unique two-part scientific name, providing a standardized, universal naming system."
+  },
+  {
+    question: "Which of the following represents the correct hierarchical order from broadest to most specific in taxonomic classification?",
+    options: ["Phylum→Kingdom→Class→Family→Order→Genus→Species", "Species→Genus→Family→Order→Class→Phylum→Kingdom", "Kingdom→Phylum→Class→Order→Family→Genus→Species", "Kingdom→Class→Phylum→Order→Family→Species→Genus"],
+    answer: 2,
+    explanation: "The standard taxonomic hierarchy progresses from the broadest category (Kingdom) down to the most specific (Species)."
+  },
+  {
+    question: "Fungi are classified separately from plants primarily because fungi:",
+    options: ["Can photosynthesize like plants", "Lack chlorophyll and obtain nutrients through absorption (heterotrophic), unlike photosynthetic plants", "Cannot reproduce", "Have identical cell structures to plants"],
+    answer: 1,
+    explanation: "Unlike plants, fungi lack chlorophyll and obtain nutrients through absorption from their environment, representing a fundamentally different nutritional strategy."
+  },
+  {
+    question: "Which characteristic is used to classify organisms into the Kingdom Animalia?",
+    options: ["Multicellular, eukaryotic, heterotrophic organisms typically capable of movement", "Ability to photosynthesize", "Cell walls made of cellulose", "Prokaryotic cell structure"],
+    answer: 0,
+    explanation: "Kingdom Animalia includes multicellular, eukaryotic organisms that are heterotrophic and typically capable of movement."
+  },
+  {
+    question: "Viruses are often considered unique in biological classification because they:",
+    options: ["Are classified within Kingdom Monera", "Exhibit characteristics of both living and non-living entities, existing outside traditional taxonomic kingdoms", "Fit perfectly into existing kingdom classifications", "Are always classified as plants"],
+    answer: 1,
+    explanation: "Viruses present a classification challenge because they lack cellular structure and cannot reproduce independently, blurring the line between living and non-living matter."
+  },
+  {
+    question: "Which kingdom includes organisms like amoeba and algae, often characterized by simple eukaryotic structures?",
+    options: ["Plantae", "Fungi", "Monera", "Protista"],
+    answer: 3,
+    explanation: "Kingdom Protista includes diverse, mostly unicellular eukaryotic organisms that don't fit neatly into animal, plant, or fungal kingdoms."
+  },
+  {
+    question: "Why is classification important in biology?",
+    options: ["It has no practical purpose", "It only matters for naming purposes", "It prevents species from evolving", "It helps organize the diversity of life, showing evolutionary relationships and aiding scientific communication"],
+    answer: 3,
+    explanation: "Classification systems provide a structured framework for organizing the immense diversity of living organisms, revealing evolutionary relationships and enabling standardized scientific communication."
+  },
+];
+
+const BIOLOGYD = [
+  {
+    question: "Which type of microorganism causes diseases like the common cold and influenza?",
+    options: ["Bacteria", "Protozoa", "Viruses", "Fungi"],
+    answer: 2,
+    explanation: "Viruses, being much smaller than bacteria and requiring host cells to replicate, cause diseases like the common cold and influenza."
+  },
+  {
+    question: "Which of the following diseases is caused by a bacterial infection?",
+    options: ["Influenza", "HIV/AIDS", "Tuberculosis", "Malaria"],
+    answer: 2,
+    explanation: "Tuberculosis is caused by the bacterium Mycobacterium tuberculosis, unlike malaria, influenza, and HIV/AIDS."
+  },
+  {
+    question: "Malaria is transmitted to humans through:",
+    options: ["Direct skin contact", "Contaminated water", "Airborne droplets", "Bite of infected female Anopheles mosquito"],
+    answer: 3,
+    explanation: "Malaria is specifically transmitted when an infected female Anopheles mosquito bites a human, injecting Plasmodium parasites into the bloodstream."
+  },
+  {
+    question: "Which type of microorganism is responsible for diseases like athlete's foot and ringworm?",
+    options: ["Fungi", "Bacteria", "Virus", "Protozoa"],
+    answer: 0,
+    explanation: "Fungal infections like athlete's foot and ringworm are caused by dermatophyte fungi that thrive on keratin in skin, hair, and nails."
+  },
+  {
+    question: "Antibiotics are effective against which type of pathogen?",
+    options: ["Bacteria", "Fungi only", "Both viruses and bacteria equally", "Viruses"],
+    answer: 0,
+    explanation: "Antibiotics specifically target bacterial cell structures/processes, making them effective against bacterial infections but ineffective against viruses."
+  },
+  {
+    question: "Vaccines work by:",
+    options: ["Having no effect on immune response", "Stimulating the immune system to develop memory/immunity against a specific pathogen before actual infection", "Providing antibiotics preemptively", "Directly killing pathogens already in the body"],
+    answer: 1,
+    explanation: "Vaccines introduce a weakened, inactivated, or partial form of a pathogen, triggering the immune system to produce specific antibodies and memory cells."
+  },
+  {
+    question: "How is HIV (Human Immunodeficiency Virus) primarily transmitted?",
+    options: ["Contaminated food only", "Casual contact like hugging", "Bodily fluids (blood, sexual contact, mother-to-child)", "Airborne droplets"],
+    answer: 2,
+    explanation: "HIV is transmitted through specific bodily fluids including blood, semen, vaginal fluids, and breast milk."
+  },
+  {
+    question: "Which of the following best describes how the immune system's white blood cells combat pathogens?",
+    options: ["By identifying, engulfing, and destroying pathogens or producing antibodies against them", "By increasing heart rate only", "By having no specific function against pathogens", "By producing more red blood cells"],
+    answer: 0,
+    explanation: "White blood cells combat infections through phagocytosis and antibody production, forming the core of the immune response."
+  },
+  {
+    question: "Cholera, a severe diarrheal disease, is primarily transmitted through:",
+    options: ["Insect bites", "Contaminated water and food", "Airborne transmission", "Direct blood contact"],
+    answer: 1,
+    explanation: "Cholera is typically transmitted through consumption of water or food contaminated with fecal matter from infected individuals."
+  },
+  {
+    question: "Why is it generally ineffective to treat viral infections (like the common cold) with antibiotics?",
+    options: ["Viruses lack the cellular structures/processes that antibiotics target (which are specific to bacteria)", "Viruses are immune to all medications", "Antibiotics only work on plants", "Antibiotics are too strong for viral infections"],
+    answer: 0,
+    explanation: "Antibiotics work by targeting specific bacterial structures or processes that are fundamentally different from or absent in viruses."
+  },
+  {
+    question: "Which of the following is classified as a non-communicable disease?",
+    options: ["Tuberculosis", "Diabetes", "Influenza", "Malaria"],
+    answer: 1,
+    explanation: "Diabetes is a non-communicable disease, typically resulting from genetic factors, lifestyle, or autoimmune responses, unlike infectious diseases."
+  },
+  {
+    question: "Which lifestyle factor is most strongly associated with increased risk of cardiovascular disease?",
+    options: ["Regular exercise", "High intake of saturated fats and sedentary lifestyle", "Adequate sleep", "Balanced nutrition"],
+    answer: 1,
+    explanation: "A diet high in saturated fats combined with lack of physical activity significantly increases the risk of cardiovascular diseases."
+  },
+  {
+    question: "Which vitamin deficiency is associated with the disease scurvy?",
+    options: ["Vitamin A", "Vitamin D", "Vitamin C", "Vitamin B12"],
+    answer: 2,
+    explanation: "Scurvy results specifically from vitamin C deficiency, impairing collagen synthesis."
+  },
+  {
+    question: "Hypertension (high blood pressure) is a significant risk factor for which of the following conditions?",
+    options: ["Common cold", "Malaria", "Athlete's foot", "Stroke and heart disease"],
+    answer: 3,
+    explanation: "Chronic hypertension damages blood vessels over time, significantly increasing the risk of serious cardiovascular events."
+  },
+  {
+    question: "Which of the following best describes obesity's relationship to Type 2 diabetes?",
+    options: ["Obesity is a significant risk factor, often contributing to insulin resistance", "Obesity prevents diabetes", "No relationship exists", "Obesity only affects blood pressure"],
+    answer: 0,
+    explanation: "Excess body fat is strongly associated with insulin resistance, significantly increasing the risk of developing Type 2 diabetes."
+  },
+  {
+    question: "Which cancer-causing agent is specifically found in tobacco smoke?",
+    options: ["Vitamin C", "Water", "Carcinogens like tar and nicotine byproducts", "Protein"],
+    answer: 2,
+    explanation: "Tobacco smoke contains numerous carcinogenic compounds that damage DNA and cellular processes."
+  },
+  {
+    question: "Regular physical exercise primarily helps prevent lifestyle diseases by:",
+    options: ["Increasing disease susceptibility", "Improving cardiovascular health, weight management, and metabolic function", "Having no significant health impact", "Only building muscle mass"],
+    answer: 1,
+    explanation: "Regular exercise provides comprehensive health benefits including improved heart function, better weight management, and enhanced insulin sensitivity."
+  },
+  {
+    question: "Which of the following is a primary risk factor for developing lung cancer?",
+    options: ["Regular exercise", "Cigarette smoking", "High water intake", "Adequate sleep"],
+    answer: 1,
+    explanation: "Cigarette smoking is the leading cause of lung cancer, as carcinogens in tobacco smoke directly damage lung tissue and DNA."
+  },
+  {
+    question: "What is the primary cause of Type 1 diabetes?",
+    options: ["Bacterial infection", "Autoimmune destruction of insulin-producing pancreatic cells", "Excessive sugar consumption alone", "Viral infection only"],
+    answer: 1,
+    explanation: "Type 1 diabetes results from an autoimmune response where the immune system mistakenly attacks and destroys insulin-producing beta cells."
+  },
+  {
+    question: "Which of the following dietary practices would most likely help prevent malnutrition-related diseases?",
+    options: ["Eating only one food type exclusively", "Avoiding all fruits and vegetables", "Consuming a balanced diet with adequate vitamins, minerals, and macronutrients", "Consuming excessive processed foods only"],
+    answer: 2,
+    explanation: "A balanced diet providing appropriate amounts of all essential nutrients is crucial for preventing various malnutrition-related health issues."
+  },
+  {
+    question: "Which of the following is a common method of contraception that prevents fertilization by creating a physical barrier?",
+    options: ["Intrauterine devices (copper)", "Condoms", "Hormonal injections", "Oral contraceptive pills"],
+    answer: 1,
+    explanation: "Condoms work by providing a physical barrier that prevents sperm from reaching the egg."
+  },
+  {
+    question: "Sexually transmitted infections (STIs) are primarily transmitted through:",
+    options: ["Insect bites", "Contaminated food", "Airborne droplets", "Sexual contact (including vaginal, anal, oral)"],
+    answer: 3,
+    explanation: "STIs are specifically transmitted through intimate sexual contact, allowing pathogens to pass between partners."
+  },
+  {
+    question: "Which of the following practices significantly reduces the risk of STI transmission?",
+    options: ["Consistent and correct condom use", "Avoiding regular health checkups", "Ignoring symptoms of infection", "Having multiple unprotected sexual partners"],
+    answer: 0,
+    explanation: "Consistent, correct condom use creates a barrier that significantly reduces the risk of transmitting many STIs."
+  },
+  {
+    question: "Why is early prenatal care important for reproductive health?",
+    options: ["It has no significant benefits", "It helps monitor maternal and fetal health, identifying potential complications early", "It only matters in the final month of pregnancy", "It's only relevant for high-risk pregnancies"],
+    answer: 1,
+    explanation: "Early and regular prenatal care allows healthcare providers to monitor both maternal and fetal health, enabling early detection of potential complications."
+  },
+  {
+    question: "Which of the following is a significant risk associated with teenage pregnancy?",
+    options: ["Reduced need for prenatal care", "No significant risks exist", "Automatically improved health outcomes", "Higher risk of complications for both mother and baby due to physical immaturity and other factors"],
+    answer: 3,
+    explanation: "Teenage pregnancies often carry increased health risks for both mother and child, including higher rates of premature birth and low birth weight."
+  },
+  {
+    question: "Family planning primarily aims to:",
+    options: ["Have no relationship to health outcomes", "Help individuals/couples control the timing and number of children through informed choices", "Only benefit governments", "Prevent all forms of reproduction"],
+    answer: 1,
+    explanation: "Family planning empowers individuals and couples to make informed decisions about reproduction, contributing to better maternal, child, and family health outcomes."
+  },
+  {
+    question: "Which of the following STIs, if untreated, can lead to infertility in both men and women?",
+    options: ["Malaria", "Athlete's foot", "Chlamydia", "Common cold"],
+    answer: 2,
+    explanation: "Chlamydia, if left untreated, can cause pelvic inflammatory disease in women and epididymitis in men, potentially leading to infertility."
+  },
+  {
+    question: "Breastfeeding provides which significant benefit related to reproductive/infant health?",
+    options: ["Only benefits the mother", "No specific health benefits", "Increases infant susceptibility to disease", "Provides essential nutrients and antibodies, supporting infant immune development"],
+    answer: 3,
+    explanation: "Breast milk provides optimal nutrition along with maternal antibodies that help protect infants from various infections."
+  },
+  {
+    question: "Which reproductive health practice is specifically recommended to detect cervical cancer early?",
+    options: ["Vision screening", "Regular Pap smear tests", "Hearing tests", "Blood pressure monitoring"],
+    answer: 1,
+    explanation: "Pap smear tests specifically screen for abnormal cervical cell changes that could indicate precancerous conditions or early cervical cancer."
+  },
+  {
+    question: "Comprehensive sex education primarily aims to:",
+    options: ["Have no impact on health outcomes", "Only discuss abstinence", "Encourage risky sexual behavior", "Provide accurate information to promote informed decisions and healthy reproductive practices"],
+    answer: 3,
+    explanation: "Comprehensive sex education provides medically accurate information, empowering individuals to make informed, responsible decisions about their reproductive health."
+  },
+  {
+    question: "Which part of the brain is primarily responsible for controlling balance and coordination?",
+    options: ["Cerebellum", "Medulla oblongata", "Cerebrum", "Hypothalamus"],
+    answer: 0,
+    explanation: "The cerebellum specifically coordinates voluntary movements, maintains posture and balance, integrating sensory information."
+  },
+  {
+    question: "Which type of neuron carries impulses from sense organs toward the central nervous system?",
+    options: ["Sensory neuron", "Interneuron only", "Motor neuron", "Relay neuron"],
+    answer: 0,
+    explanation: "Sensory neurons specifically transmit information from sensory receptors toward the central nervous system for processing."
+  },
+  {
+    question: "The reflex arc allows for rapid, involuntary responses by:",
+    options: ["Only working during sleep", "Bypassing the brain and processing directly through the spinal cord for faster response", "Requiring extensive decision-making", "Requiring conscious brain processing first"],
+    answer: 1,
+    explanation: "Reflex arcs allow for extremely rapid responses by processing the response directly at the spinal cord level, bypassing conscious brain processing."
+  },
+  {
+    question: "Which part of the eye is responsible for controlling the amount of light entering the eye?",
+    options: ["Cornea", "Retina", "Iris (controlling pupil size)", "Lens"],
+    answer: 2,
+    explanation: "The iris contains muscles that adjust pupil size, controlling how much light enters the eye based on lighting conditions."
+  },
+  {
+    question: "Which structure in the ear is primarily responsible for converting sound vibrations into nerve impulses?",
+    options: ["Cochlea", "Outer ear", "Ear canal", "Eardrum (tympanic membrane)"],
+    answer: 0,
+    explanation: "The cochlea contains specialized hair cells that convert mechanical sound vibrations into electrical nerve impulses sent to the brain."
+  },
+  {
+    question: "The autonomic nervous system primarily controls:",
+    options: ["Conscious thought processes", "Memory formation only", "Involuntary functions like heart rate, digestion, and breathing", "Voluntary movements only"],
+    answer: 2,
+    explanation: "The autonomic nervous system regulates involuntary bodily functions without conscious control, maintaining essential life processes automatically."
+  },
+  {
+    question: "Which part of the brain controls vital functions like heart rate and breathing?",
+    options: ["Medulla oblongata", "Frontal lobe", "Cerebellum", "Cerebrum"],
+    answer: 0,
+    explanation: "The medulla oblongata controls essential involuntary functions crucial for survival, including heart rate and breathing rhythm."
+  },
+  {
+    question: "Which type of neuron transmits impulses from the central nervous system to muscles or glands?",
+    options: ["Motor neuron", "Sensory neuron", "Interneuron only", "Receptor cell"],
+    answer: 0,
+    explanation: "Motor neurons specifically carry signals from the central nervous system outward to effector organs like muscles or glands."
+  },
+  {
+    question: "The retina of the eye contains which specialized cells responsible for detecting light?",
+    options: ["Only cone cells", "Only rod cells", "Neither rods nor cones", "Rods and cones (photoreceptor cells)"],
+    answer: 3,
+    explanation: "The retina contains two types of photoreceptor cells — rods and cones — both essential for converting light into neural signals."
+  },
+  {
+    question: "Which lobe of the cerebrum is primarily associated with processing visual information?",
+    options: ["Temporal lobe", "Frontal lobe", "Occipital lobe", "Parietal lobe"],
+    answer: 2,
+    explanation: "The occipital lobe contains the primary visual cortex, specifically responsible for processing and interpreting visual information."
+  },
+  {
+    question: "Which gland is often referred to as the \"master gland\" because it regulates other endocrine glands?",
+    options: ["Pancreas", "Thyroid gland", "Adrenal gland", "Pituitary gland"],
+    answer: 3,
+    explanation: "The pituitary gland is called the \"master gland\" because it produces hormones that regulate the activity of many other endocrine glands."
+  },
+  {
+    question: "Which hormone, produced by the adrenal glands, is often called the \"fight or flight\" hormone?",
+    options: ["Thyroxine", "Adrenaline (epinephrine)", "Estrogen", "Insulin"],
+    answer: 1,
+    explanation: "Adrenaline is rapidly released during stressful or dangerous situations, triggering physiological changes that prepare the body for immediate action."
+  },
+  {
+    question: "Which gland produces thyroxine, a hormone regulating metabolic rate?",
+    options: ["Adrenal gland", "Pituitary gland", "Thyroid gland", "Pancreas"],
+    answer: 2,
+    explanation: "The thyroid gland produces thyroxine, which plays a crucial role in regulating the body's overall metabolic rate."
+  },
+  {
+    question: "Which hormone, produced by the ovaries, is primarily responsible for developing female secondary sexual characteristics?",
+    options: ["Adrenaline", "Estrogen", "Insulin", "Testosterone"],
+    answer: 1,
+    explanation: "Estrogen, primarily produced by the ovaries, drives the development of female secondary sexual characteristics during puberty."
+  },
+  {
+    question: "Hormones are transported throughout the body primarily via:",
+    options: ["The bloodstream", "Muscle contractions", "Nerve impulses", "Lymphatic system only"],
+    answer: 0,
+    explanation: "The endocrine system releases hormones directly into the bloodstream, allowing them to travel throughout the body to reach target organs/tissues."
+  },
+  {
+    question: "Which endocrine gland produces testosterone, responsible for male secondary sexual characteristics?",
+    options: ["Testes", "Thyroid gland", "Adrenal gland", "Pancreas"],
+    answer: 0,
+    explanation: "The testes primarily produce testosterone, which drives the development of male secondary sexual characteristics during puberty."
+  },
+  {
+    question: "Hypothyroidism (underactive thyroid) typically results in:",
+    options: ["Increased metabolic rate and weight loss", "Decreased metabolic rate, potentially causing weight gain and fatigue", "No metabolic changes", "Only affects reproductive function"],
+    answer: 1,
+    explanation: "Insufficient thyroxine production slows the body's metabolic processes, often resulting in weight gain, fatigue, and cold intolerance."
+  },
+  {
+    question: "Which gland, located near the kidneys, produces hormones involved in stress response and metabolism regulation?",
+    options: ["Adrenal gland", "Pancreas", "Thyroid gland", "Pituitary gland"],
+    answer: 0,
+    explanation: "The adrenal glands produce various hormones including adrenaline and cortisol, crucial for stress response and metabolism regulation."
+  },
+  {
+    question: "Compared to nervous system responses, hormonal (endocrine) responses are typically:",
+    options: ["Non-existent in humans", "Faster but shorter-lasting", "Slower to initiate but longer-lasting in effect", "Identical in speed and duration"],
+    answer: 2,
+    explanation: "While nervous responses are nearly instantaneous but brief, hormonal responses take longer to initiate but typically produce more sustained, longer-lasting effects."
+  },
+  {
+    question: "Which condition results from insufficient insulin production or ineffective insulin function, leading to elevated blood glucose levels?",
+    options: ["Hyperthyroidism", "Addison's disease", "Diabetes mellitus", "Hypothyroidism"],
+    answer: 2,
+    explanation: "Diabetes mellitus specifically results from problems with insulin, leading to chronically elevated blood glucose levels."
+  },
+];
+
+const CURRENTAFFAIRSA = [
+  {
+    question: "In which town/city is OAUSTECH located?",
+    options: ["Okitipupa", "Akure", "Ondo City", "Owo"],
+    answer: 0,
+    explanation: "OAUSTECH's main campus is located in Okitipupa, in the Southern Senatorial District of Ondo State."
+  },
+  {
+    question: "What year was OAUSTECH established?",
+    options: ["2011", "2005", "2019", "2008"],
+    answer: 3,
+    explanation: "The university was established by the Ondo State Government in 2008, though it commenced academic activities later in January 2011."
+  },
+  {
+    question: "What was OAUSTECH originally called before its current name?",
+    options: ["Ondo State University of Science and Technology (OSUSTECH)", "Ondo State Polytechnic", "Agagu Institute of Technology", "Federal University of Technology, Okitipupa"],
+    answer: 0,
+    explanation: "The institution was initially named Ondo State University of Science and Technology (OSUSTECH) before being renamed."
+  },
+  {
+    question: "Who was the Ondo State Governor under whose leadership OAUSTECH was established?",
+    options: ["Olusegun Mimiko", "Olusegun Agagu", "Lucky Aiyedatiwa", "Rotimi Akeredolu"],
+    answer: 1,
+    explanation: "The university was founded in 2008 under the leadership of Dr. Olusegun Agagu, the then-Governor of Ondo State, after whom the university is now named."
+  },
+  {
+    question: "In what year was the university renamed to Olusegun Agagu University of Science and Technology (OAUSTECH)?",
+    options: ["2017", "2019", "2011", "2021"],
+    answer: 1,
+    explanation: "The Ondo State government changed the name to OAUSTECH in 2019, honoring the late Governor Olusegun Agagu."
+  },
+  {
+    question: "When did OAUSTECH commence academic activities?",
+    options: ["2008", "2019", "2017", "January 2011"],
+    answer: 3,
+    explanation: "Although established in 2008, the university officially began academic activities in January 2011, initially under the Faculty of Science."
+  },
+  {
+    question: "What is OAUSTECH's official motto?",
+    options: ["Knowledge and Excellence", "Technology for Humanity", "For Society and Development", "Character and Learning"],
+    answer: 2,
+    explanation: "OAUSTECH's official motto is \"For Society and Development,\" reflecting its mission of technological and industrial development for Ondo State and Nigeria."
+  },
+  {
+    question: "Which two additional faculties were introduced at OAUSTECH in 2017?",
+    options: ["Faculty of Management Sciences and Faculty of Social Sciences", "Faculty of Arts and Faculty of Education", "Faculty of Agriculture & Agricultural Technology, and Faculty of Engineering and Engineering Technology", "Faculty of Law and Faculty of Medicine"],
+    answer: 2,
+    explanation: "In 2017, OAUSTECH expanded beyond its original Faculty of Science by introducing the Faculty of Agriculture & Agricultural Technology and the Faculty of Engineering and Engineering Technology."
+  },
+  {
+    question: "Who is the current (4th substantive) Vice-Chancellor of OAUSTECH?",
+    options: ["Prof. Foluso Adetuyi", "Prof. Olusegun Agagu", "Prof. Temi Ologunorisa", "Prof. Dipo Akomolafe"],
+    answer: 2,
+    explanation: "Prof. Temi E. Ologunorisa, a climate and environmental scientist, currently serves as the 4th substantive Vice-Chancellor of OAUSTECH."
+  },
+  {
+    question: "What is Prof. Temi Ologunorisa's academic specialization?",
+    options: ["Meteorology and Climate Science", "Biochemistry", "Civil Engineering", "Agricultural Economics"],
+    answer: 0,
+    explanation: "Prof. Ologunorisa is a Professor of Meteorology and Climate Science, and has held academic positions including at the Federal University of Technology, Akure."
+  },
+  {
+    question: "Along which major road is OAUSTECH's campus situated?",
+    options: ["Akure-Ondo Road", "Ore-Benin Expressway", "Okitipupa-Igbokoda Road", "Owo-Ikare Road"],
+    answer: 2,
+    explanation: "The university's Admissions Office and main campus are located along the Okitipupa-Igbokoda Road (Km. 6), in Ondo State."
+  },
+  {
+    question: "As of the 2021 NUC ranking, how was OAUSTECH ranked among state-owned universities in Nigeria?",
+    options: ["5th", "9th", "1st", "15th"],
+    answer: 1,
+    explanation: "OAUSTECH was ranked 9th among the best state-owned universities in Nigeria by the National Universities Commission (NUC) in 2021."
+  },
+  {
+    question: "Which of the following departments falls under OAUSTECH's science-related programmes?",
+    options: ["Law", "Biochemistry", "Mass Communication", "Theatre Arts"],
+    answer: 1,
+    explanation: "Biochemistry is one of the science departments at OAUSTECH, alongside others like Botany, Microbiology, Chemical Sciences, and Zoology."
+  },
+  {
+    question: "Which engineering discipline is offered at OAUSTECH?",
+    options: ["Petroleum and Gas Engineering", "Marine Engineering", "Nuclear Engineering", "Aerospace Engineering"],
+    answer: 0,
+    explanation: "Petroleum and Gas Engineering is one of the engineering programs offered under OAUSTECH's School of Engineering and Engineering Technology."
+  },
+  {
+    question: "OAUSTECH is owned by which body?",
+    options: ["A religious mission", "A private proprietor", "Ondo State Government", "Federal Government of Nigeria"],
+    answer: 2,
+    explanation: "OAUSTECH is a state-owned university, established and funded by the Ondo State Government."
+  },
+  {
+    question: "Which senatorial district of Ondo State is OAUSTECH located in?",
+    options: ["Ondo East", "Ondo North", "Ondo Central", "Ondo South"],
+    answer: 3,
+    explanation: "Okitipupa, where OAUSTECH is sited, falls within the Southern Senatorial District of Ondo State."
+  },
+  {
+    question: "Which of these is a department under OAUSTECH's science programmes?",
+    options: ["Pharmacy", "Nursing", "Geophysics", "Architecture"],
+    answer: 2,
+    explanation: "Geophysics is listed among the science departments at OAUSTECH, alongside Geology, Physics, Mathematics, and Statistics."
+  },
+  {
+    question: "What type of institution is OAUSTECH primarily focused on, based on its founding mandate?",
+    options: ["Technology-based manpower training for industrial/technological development", "Purely medical training", "Religious and theological studies", "Liberal arts education"],
+    answer: 0,
+    explanation: "OAUSTECH was specifically established as a technology-based institution aimed at providing manpower training for industrial and technological development in Ondo State and Nigeria."
+  },
+  {
+    question: "Which building houses OAUSTECH's Admissions Office?",
+    options: ["Agagu Library Complex", "Oluwarotimi Akeredolu Senate Building", "Okitipupa Central Hall", "Ologunorisa Administrative Block"],
+    answer: 1,
+    explanation: "The Admissions Office is located in the Oluwarotimi Akeredolu Senate building on OAUSTECH's campus."
+  },
+  {
+    question: "OAUSTECH currently organizes its academic units into which three \"Schools\" (alongside Postgraduate Studies)?",
+    options: ["School of Law, School of Medicine, School of Arts", "School of Postgraduate Studies only", "School of Business, School of Education, School of Social Sciences", "School of Sciences, School of Engineering and Engineering Technology, School of Agriculture, Food and Natural Resources"],
+    answer: 3,
+    explanation: "OAUSTECH's website lists these three Schools as its main current academic divisions, alongside a separate Postgraduate Studies school."
+  },
+  {
+    question: "Who is the current University Bursar of OAUSTECH?",
+    options: ["Dipo Akomolafe", "Ganiyu Bamidele Aminu", "Peter Abiodun Okunniga", "Olurotimi Adekanle"],
+    answer: 1,
+    explanation: "Mr. Ganiyu Bamidele Aminu, FCA, has served as (Acting) Bursar since January 2022, having risen through the ranks after joining OAUSTECH as a Senior Accountant in 2009."
+  },
+  {
+    question: "Who is the current University Librarian at OAUSTECH?",
+    options: ["Adesola Victoria Alade", "Foluso Olutope Adetuyi", "Idowu Falemora", "Dr. Adetoun Adebisi Oyelude"],
+    answer: 3,
+    explanation: "Dr. Adetoun Adebisi Oyelude, a librarian with about 30 years of academic library experience, serves as the University Librarian."
+  },
+  {
+    question: "Who was appointed as OAUSTECH's first-ever Deputy Librarian?",
+    options: ["Mr. Babarinde Moriyole", "Mrs. Adesola Victoria Alade", "Mr. Idowu Falemora", "Dr. Adetoun Oyelude"],
+    answer: 1,
+    explanation: "Mrs. Adesola Victoria Alade, formerly Principal Librarian, was appointed as the university's first-ever Deputy Librarian, effective June 18, 2025."
+  },
+  {
+    question: "What is the minimum O'Level requirement for admission into OAUSTECH (UTME/Direct Entry)?",
+    options: ["3 credit passes including English only", "6 credit passes at one sitting only", "No specific O'Level requirement", "5 'O' Level credit passes including Mathematics and English Language, at not more than 2 sittings"],
+    answer: 3,
+    explanation: "OAUSTECH's official admissions notice specifies candidates must possess five (5) 'O' Level credit passes in relevant subjects, including Mathematics and English Language, at not more than two sittings."
+  },
+  {
+    question: "For the 2025/2026 admission screening exercise, what was the minimum UTME score to be eligible for OAUSTECH's Post-UTME screening (as first-choice candidates)?",
+    options: ["140", "120", "150", "180"],
+    answer: 2,
+    explanation: "Candidates who made OAUSTECH their first choice and scored 150 and above in the 2025 UTME were eligible for the Post-UTME Screening Exercise."
+  },
+  {
+    question: "What must candidates who chose a different institution (not OAUSTECH) as first choice do to be considered for OAUSTECH admission?",
+    options: ["Change their institution to OAUSTECH as first choice on the JAMB portal", "Retake UTME entirely", "Nothing; they are automatically considered", "Apply directly to the Vice-Chancellor's office"],
+    answer: 0,
+    explanation: "OAUSTECH's admissions notice advises candidates who chose it as second choice (or not at all) to do a change of institution to OAUSTECH as first choice on the JAMB portal."
+  },
+  {
+    question: "Which of the following was newly appointed as a Deputy Registrar at OAUSTECH, effective December 10, 2024?",
+    options: ["Ganiyu Aminu", "Idowu Falemora", "Olurotimi Adekanle", "Babarinde Aaron Moriyole"],
+    answer: 3,
+    explanation: "Mr. Babarinde Aaron Moriyole, formerly Principal Assistant Registrar and Secretary of the School of Postgraduate Studies, was appointed Deputy Registrar effective December 10, 2024."
+  },
+  {
+    question: "What database access did OAUSTECH's library benefit from (2020–2025), aiding research?",
+    options: ["Research4Life", "JSTOR only", "ScienceDirect exclusive access", "Google Scholar Premium"],
+    answer: 0,
+    explanation: "Research4Life granted OAUSTECH five years (2020–2025) of free access to its research database, benefiting students and researchers at the university."
+  },
+  {
+    question: "Where was Mr. Babarinde Moriyole (Deputy Registrar) born?",
+    options: ["Okitipupa", "Odigbo Local Government, Ondo State", "Lagos State", "Ibadan, Oyo State"],
+    answer: 1,
+    explanation: "Mr. Moriyole was born on October 25, 1974, in Odigbo Local Government of Ondo State, Nigeria."
+  },
+  {
+    question: "OAUSTECH's academic calendar downloads (as of recent uploads) cover which academic sessions?",
+    options: ["2019/2020 and 2020/2021 only", "Only 2025/2026", "2024/2025 and 2025/2026", "No academic calendars are published"],
+    answer: 2,
+    explanation: "OAUSTECH's official downloads page lists academic calendars for both the 2024/2025 and 2025/2026 academic sessions."
+  },
+  {
+    question: "Which of these best describes OAUSTECH's institutional category?",
+    options: ["State-owned university", "Private university", "Federal university", "Faith-based university"],
+    answer: 0,
+    explanation: "OAUSTECH is explicitly classified as a state-owned university, funded and run by the Ondo State Government."
+  },
+  {
+    question: "In what capacity did Mr. Ganiyu Aminu serve before becoming (Acting) Bursar?",
+    options: ["Vice-Chancellor", "Deputy Bursar", "Librarian", "Registrar"],
+    answer: 1,
+    explanation: "Mr. Aminu rose through the ranks to become Deputy Bursar in 2019, before his appointment as Acting Bursar in January 2022."
+  },
+  {
+    question: "Which faculty/department combination is correctly matched at OAUSTECH?",
+    options: ["Faculty of Engineering – Zoology", "School of Sciences – Microbiology", "School of Engineering – Botany", "School of Agriculture – Petroleum Engineering"],
+    answer: 1,
+    explanation: "Microbiology is one of the departments correctly listed under OAUSTECH's science-related programmes (School of Sciences)."
+  },
+  {
+    question: "OAUSTECH's Postgraduate School operates as part of which broader academic structure?",
+    options: ["It only exists on paper, with no actual programmes", "It's entirely separate and unrelated to the three schools", "It's listed alongside the three Schools (Sciences; Engineering & Engineering Technology; Agriculture, Food & Natural Resources) as a distinct unit", "It merged into the School of Sciences only"],
+    answer: 2,
+    explanation: "OAUSTECH's official structure lists Postgraduate Studies as a distinct academic unit alongside its three main Schools."
+  },
+  {
+    question: "What is notable about Mrs. Adesola Victoria Alade's appointment as Deputy Librarian?",
+    options: ["She was the second person to hold the post", "It was a temporary, one-month appointment", "She was the first person ever to hold that specific post at OAUSTECH", "It was a demotion from Librarian"],
+    answer: 2,
+    explanation: "Mrs. Alade's appointment made her the university's first-ever Deputy Librarian, a newly created position, effective June 18, 2025."
+  },
+  {
+    question: "Which of the following statements about OAUSTECH's Faculty of Engineering departments is correct?",
+    options: ["It includes Mechanical, Electrical, and Civil Engineering", "It has no engineering technology programmes", "It only offers one engineering discipline", "It excludes Chemical Engineering"],
+    answer: 0,
+    explanation: "OAUSTECH's Faculty/School of Engineering and Engineering Technology includes Mechanical, Electrical, and Civil Engineering, alongside Chemical Engineering and Petroleum and Gas Engineering."
+  },
+  {
+    question: "What professional qualification does Bursar Ganiyu Aminu hold, as indicated by his title?",
+    options: ["No professional qualification indicated", "FCIB", "FCPA", "FCA (Fellow, Institute of Chartered Accountants)"],
+    answer: 3,
+    explanation: "Mr. Ganiyu Bamidele Aminu holds the FCA designation, indicating he is a Fellow of the Institute of Chartered Accountants."
+  },
+  {
+    question: "Which of these committees is Bursar Ganiyu Aminu a member of, based on his university roles?",
+    options: ["Students' Union Executive Council", "Finance and General Purposes Committee of the Governing Council", "Sports Council", "Academic Planning Committee only"],
+    answer: 1,
+    explanation: "Mr. Aminu serves as a member of the Finance and General Purposes Committee of the University's Governing Council, among other roles."
+  },
+  {
+    question: "What was Mr. Idowu Falemora's role before his appointment as Deputy Registrar (effective September 17, 2025)?",
+    options: ["Bursar", "Principal Assistant Registrar, Advancement Unit", "University Librarian", "Head of Postgraduate School"],
+    answer: 1,
+    explanation: "Mr. Falemora previously served as Principal Assistant Registrar in the Advancement Unit before his appointment as Deputy Registrar."
+  },
+  {
+    question: "Which of the following is true regarding OAUSTECH's approved but not-yet-verified faculties (as of recent official updates)?",
+    options: ["Two additional faculties have been approved by the Governing Council, awaiting NUC resource verification/approval", "The university has stopped expanding its faculties", "All proposed faculties have already commenced", "No additional faculties have been proposed"],
+    answer: 0,
+    explanation: "According to OAUSTECH's official \"About Us\" information, two additional faculties have been approved by the Governing Council and are awaiting National Universities Commission (NUC) resource verification and approval."
+  },
+];
+
+const CURRENTAFFAIRSB = [
+  {
+    question: "What system of government does Nigeria currently practice?",
+    options: ["Monarchy", "One-party state", "Presidential system (federal republic)", "Parliamentary system"],
+    answer: 2,
+    explanation: "Nigeria operates a presidential system of government under a federal republic structure, with power shared between federal, state, and local governments."
+  },
+  {
+    question: "How many arms of government does Nigeria's constitution provide for?",
+    options: ["Three (Executive, Legislature, Judiciary)", "Two", "Five", "Four"],
+    answer: 0,
+    explanation: "Nigeria's 1999 Constitution establishes three arms of government: the Executive, the Legislature, and the Judiciary, ensuring separation of powers."
+  },
+  {
+    question: "Nigeria's National Assembly is made up of which two chambers?",
+    options: ["House of Lords and House of Commons", "Federal Assembly and State Assembly", "Senate and House of Representatives", "Upper Chamber and Lower Chamber only (unnamed)"],
+    answer: 2,
+    explanation: "Nigeria's National Assembly is bicameral, consisting of the Senate (109 members, upper chamber) and the House of Representatives (360 members, lower chamber)."
+  },
+  {
+    question: "Who is the current President of the Nigerian Senate?",
+    options: ["Godswill Akpabio", "Tajudeen Abbas", "Ahmad Lawan", "Barau Jibrin"],
+    answer: 0,
+    explanation: "Godswill Akpabio has served as President of the Nigerian Senate since 13 June 2023, leading the 10th National Assembly."
+  },
+  {
+    question: "Who is the current Speaker of Nigeria's House of Representatives?",
+    options: ["Femi Gbajabiamila", "Benjamin Kalu", "Yakubu Dogara", "Tajudeen Abbas"],
+    answer: 3,
+    explanation: "Tajudeen Abbas has served as Speaker of the House of Representatives since 13 June 2023."
+  },
+  {
+    question: "How many states make up the Federal Republic of Nigeria (excluding the FCT)?",
+    options: ["30", "36", "38", "33"],
+    answer: 1,
+    explanation: "Nigeria is made up of 36 states, plus the Federal Capital Territory (FCT), Abuja, which is not itself a state."
+  },
+  {
+    question: "Which arm of government is primarily responsible for interpreting laws in Nigeria?",
+    options: ["Legislature", "Executive", "Local Government", "Judiciary"],
+    answer: 3,
+    explanation: "The Judiciary interprets and applies laws, resolving disputes and ensuring justice, distinct from the Executive and Legislature."
+  },
+  {
+    question: "What is the tenure length for a Nigerian President per term, before re-election eligibility?",
+    options: ["4 years", "6 years", "3 years", "5 years"],
+    answer: 0,
+    explanation: "Under Nigeria's constitution, a President serves a 4-year term and may be re-elected for one additional term (maximum of two terms, 8 years total)."
+  },
+  {
+    question: "Who is the current Vice President of Nigeria?",
+    options: ["Yemi Osinbajo", "Namadi Sambo", "Kashim Shettima", "Atiku Abubakar"],
+    answer: 2,
+    explanation: "Kashim Shettima has served as Vice President of Nigeria since 29 May 2023, under President Bola Tinubu."
+  },
+  {
+    question: "Who is the current Chief Justice of Nigeria?",
+    options: ["Olukayode Ariwoola", "Kudirat Kekere-Ekun", "Walter Onnoghen", "Tanko Muhammad"],
+    answer: 1,
+    explanation: "Kudirat Kekere-Ekun currently serves as the Chief Justice of Nigeria, the head of the country's judiciary."
+  },
+  {
+    question: "Who is the current President of Nigeria?",
+    options: ["Atiku Abubakar", "Goodluck Jonathan", "Bola Ahmed Tinubu", "Muhammadu Buhari"],
+    answer: 2,
+    explanation: "Bola Ahmed Tinubu has served as President of Nigeria since 29 May 2023, following his election victory in the 2023 presidential election."
+  },
+  {
+    question: "Who was Nigeria's first Prime Minister at independence in 1960?",
+    options: ["Yakubu Gowon", "Obafemi Awolowo", "Nnamdi Azikiwe", "Abubakar Tafawa Balewa"],
+    answer: 3,
+    explanation: "Sir Abubakar Tafawa Balewa served as Nigeria's first Prime Minister from independence in 1960 until 1966, under a parliamentary system with a ceremonial Governor-General."
+  },
+  {
+    question: "Who was Nigeria's first President (following the move to a republic in 1963)?",
+    options: ["Shehu Shagari", "Olusegun Obasanjo", "Nnamdi Azikiwe", "Yakubu Gowon"],
+    answer: 2,
+    explanation: "Dr. Nnamdi Azikiwe, who had earlier served as Governor-General, became Nigeria's first President when the country became a republic in 1963."
+  },
+  {
+    question: "Who succeeded General Johnson Aguiyi-Ironsi as Head of State following the 1966 counter-coup?",
+    options: ["Murtala Muhammed", "Yakubu Gowon", "Olusegun Obasanjo", "Sani Abacha"],
+    answer: 1,
+    explanation: "General Yakubu Gowon became Head of State in 1966 after Aguiyi-Ironsi's assassination during the July 1966 counter-coup, ruling until 1975."
+  },
+  {
+    question: "Which Nigerian leader served as Head of State twice — first as a military ruler, and later as a democratically elected President?",
+    options: ["Muhammadu Buhari", "Ibrahim Babangida", "Sani Abacha", "Yakubu Gowon"],
+    answer: 0,
+    explanation: "Muhammadu Buhari served as military Head of State from 1983–1985, and later returned as a democratically elected civilian President from 2015–2023."
+  },
+  {
+    question: "When did former President Muhammadu Buhari pass away?",
+    options: ["He is still alive", "13 July 2025", "13 July 2024", "5 May 2023"],
+    answer: 1,
+    explanation: "Muhammadu Buhari passed away on 13 July 2025, after having served as Nigeria's civilian President from 2015 to 2023."
+  },
+  {
+    question: "Which Nigerian civilian leader had the shortest tenure as Head of State, lasting only 83 days?",
+    options: ["Shehu Shagari", "Umaru Musa Yar'Adua", "Ernest Shonekan", "Sani Abacha"],
+    answer: 2,
+    explanation: "Ernest Shonekan led an Interim National Government for just 83 days in 1993 before being deposed, making his tenure the shortest in Nigeria's presidential history."
+  },
+  {
+    question: "Who was Nigeria's President immediately before Bola Tinubu?",
+    options: ["Umaru Musa Yar'Adua", "Olusegun Obasanjo", "Muhammadu Buhari", "Goodluck Jonathan"],
+    answer: 2,
+    explanation: "Muhammadu Buhari served as President from 2015 to 29 May 2023, when he was succeeded by Bola Ahmed Tinubu."
+  },
+  {
+    question: "Which Nigerian President died in office in 2010, leading to Goodluck Jonathan's succession?",
+    options: ["Umaru Musa Yar'Adua", "Muhammadu Buhari", "Shehu Shagari", "Sani Abacha"],
+    answer: 0,
+    explanation: "President Umaru Musa Yar'Adua died on 5 May 2010 while in office, leading Vice President Goodluck Jonathan to succeed him as President."
+  },
+  {
+    question: "Who was the youngest person to ever become Nigeria's Head of State?",
+    options: ["Goodluck Jonathan", "Yakubu Gowon", "Murtala Muhammed", "Muhammadu Buhari"],
+    answer: 1,
+    explanation: "Yakubu Gowon became Head of State in 1966 at just 31 years old, making him the youngest person ever to hold that position in Nigeria's history."
+  },
+  {
+    question: "What is the capital city of Nigeria?",
+    options: ["Lagos", "Port Harcourt", "Abuja", "Kano"],
+    answer: 2,
+    explanation: "Abuja, located in the Federal Capital Territory (FCT), has been Nigeria's capital since 12 December 1991, replacing Lagos."
+  },
+  {
+    question: "What is the capital of Lagos State?",
+    options: ["Ikeja", "Lagos Island", "Badagry", "Victoria Island"],
+    answer: 0,
+    explanation: "Although Lagos city is Nigeria's most populous city and former national capital, Ikeja specifically serves as the administrative capital of Lagos State."
+  },
+  {
+    question: "What is the capital of Ondo State?",
+    options: ["Ondo City", "Akure", "Okitipupa", "Owo"],
+    answer: 1,
+    explanation: "Akure serves as the capital of Ondo State, distinct from Ondo City (a different town) and Okitipupa (where OAUSTECH is located)."
+  },
+  {
+    question: "Which Nigerian state is known as the \"Centre of Excellence\"?",
+    options: ["Kano State", "Oyo State", "Lagos State", "Rivers State"],
+    answer: 2,
+    explanation: "Lagos State is popularly branded \"Centre of Excellence,\" reflecting its status as Nigeria's commercial and economic hub."
+  },
+  {
+    question: "What is the capital of Kano State?",
+    options: ["Kaduna", "Kano", "Katsina", "Zaria"],
+    answer: 1,
+    explanation: "Kano city serves as both the name and capital of Kano State, one of Nigeria's most populous states, located in the North-West geopolitical zone."
+  },
+  {
+    question: "Which Nigerian state is known for its large oil and gas production, with Port Harcourt as its capital?",
+    options: ["Delta State", "Bayelsa State", "Akwa Ibom State", "Rivers State"],
+    answer: 3,
+    explanation: "Rivers State, with its capital Port Harcourt, is one of Nigeria's key oil-producing states, often called the \"Treasure Base of the Nation.\""
+  },
+  {
+    question: "What is the capital of Oyo State?",
+    options: ["Ogbomoso", "Iseyin", "Ife", "Ibadan"],
+    answer: 3,
+    explanation: "Ibadan serves as the capital of Oyo State and is historically one of the largest cities in West Africa by landmass."
+  },
+  {
+    question: "Which state is located in Nigeria's Federal Capital Territory zone but is NOT itself a state?",
+    options: ["Niger State", "Kogi State", "Nasarawa State", "FCT (Abuja)"],
+    answer: 3,
+    explanation: "The Federal Capital Territory (FCT), home to Abuja, is a distinct federal entity, not classified as one of Nigeria's 36 states."
+  },
+  {
+    question: "What is the capital of Enugu State?",
+    options: ["Awgu", "Enugu", "Agbani", "Nsukka"],
+    answer: 1,
+    explanation: "Enugu city serves as the capital of Enugu State, historically significant as a former coal-mining hub in Nigeria's South-East region."
+  },
+  {
+    question: "Which Nigerian state has Sokoto as its capital, and is historically significant as the seat of the Sokoto Caliphate?",
+    options: ["Zamfara State", "Sokoto State", "Kebbi State", "Katsina State"],
+    answer: 1,
+    explanation: "Sokoto State, with Sokoto city as its capital, holds historical importance as the former center of the Sokoto Caliphate."
+  },
+  {
+    question: "In what year did Nigeria gain independence from British colonial rule?",
+    options: ["1957", "1966", "1963", "1960"],
+    answer: 3,
+    explanation: "Nigeria gained independence from Britain on 1 October 1960, a date still celebrated annually as Nigeria's Independence Day."
+  },
+  {
+    question: "In what year did Nigeria become a republic, replacing the Queen as Head of State with a President?",
+    options: ["1963", "1966", "1960", "1979"],
+    answer: 0,
+    explanation: "Nigeria became a republic in 1963, adopting a new constitution that replaced Queen Elizabeth II with a President as Head of State."
+  },
+  {
+    question: "The Nigerian Civil War (Biafran War) took place between which years?",
+    options: ["1967–1970", "1966–1970", "1960–1963", "1970–1975"],
+    answer: 0,
+    explanation: "The Nigerian Civil War, also known as the Biafran War, was fought from 1967 to 1970, following the secession attempt by the Eastern Region."
+  },
+  {
+    question: "Which event marked the end of Nigeria's First Republic in 1966?",
+    options: ["A military coup d'état", "Nigeria joining the UN", "A general election", "Independence celebrations"],
+    answer: 0,
+    explanation: "A series of military coups in 1966 ended Nigeria's First Republic, ushering in an extended period of military rule."
+  },
+  {
+    question: "When did Nigeria return to civilian democratic rule after prolonged military governance, marking the start of the Fourth Republic?",
+    options: ["1999", "2003", "1993", "1979"],
+    answer: 0,
+    explanation: "Nigeria returned to civilian democratic rule on 29 May 1999, when Olusegun Obasanjo was inaugurated as President."
+  },
+  {
+    question: "Which Nigerian city served as the capital before Abuja officially took over?",
+    options: ["Enugu", "Ibadan", "Kaduna", "Lagos"],
+    answer: 3,
+    explanation: "Lagos served as Nigeria's capital from independence until 12 December 1991, when the capital officially moved to Abuja."
+  },
+  {
+    question: "May 29 is significant in Nigerian history as:",
+    options: ["Democracy Day", "Independence Day", "Workers' Day", "Republic Day"],
+    answer: 0,
+    explanation: "May 29 is observed as Democracy Day in Nigeria, marking the anniversary of the 1999 return to civilian democratic rule."
+  },
+  {
+    question: "Which historic date is now also recognized in Nigeria to commemorate the annulled 1993 presidential election (won by MKO Abiola)?",
+    options: ["October 1", "June 12", "January 15", "May 29"],
+    answer: 1,
+    explanation: "June 12 is recognized as Democracy Day in Nigeria (since a 2018 redesignation), commemorating the 1993 presidential election won by MKO Abiola."
+  },
+  {
+    question: "Who was Nigeria's military Head of State assassinated in a coup in 1976?",
+    options: ["Ibrahim Babangida", "Sani Abacha", "Yakubu Gowon", "Murtala Muhammed"],
+    answer: 3,
+    explanation: "General Murtala Muhammed was assassinated on 13 February 1976 during an unsuccessful coup attempt."
+  },
+  {
+    question: "Nigeria's amalgamation of the Northern and Southern Protectorates into a single entity occurred in which year?",
+    options: ["1960", "1914", "1922", "1900"],
+    answer: 1,
+    explanation: "The Northern and Southern Protectorates of Nigeria were amalgamated into a single colonial entity in 1914, under British colonial administrator Lord Frederick Lugard."
+  },
+  {
+    question: "What are the colors of the Nigerian national flag?",
+    options: ["Green, Red, Green", "Red, White, Red", "Green, White, Green", "Green, Yellow, Green"],
+    answer: 2,
+    explanation: "Nigeria's flag consists of three vertical stripes — green, white, green — where green symbolizes agriculture/natural wealth, and white represents peace and unity."
+  },
+  {
+    question: "Who designed Nigeria's national flag?",
+    options: ["Michael Taiwo Akinkunmi", "Nnamdi Azikiwe", "Tafawa Balewa", "Obafemi Awolowo"],
+    answer: 0,
+    explanation: "Michael Taiwo Akinkunmi, a Nigerian student, designed the national flag, winning a national competition ahead of Nigeria's independence in 1960."
+  },
+  {
+    question: "What is Nigeria's official national currency?",
+    options: ["Dollar", "Cedi", "Franc", "Naira"],
+    answer: 3,
+    explanation: "The Naira (₦) is Nigeria's official currency, introduced in 1973, replacing the Nigerian pound."
+  },
+  {
+    question: "What is depicted on Nigeria's Coat of Arms alongside the black shield?",
+    options: ["Two horses (chargers) and an eagle atop the shield", "Two elephants and a lion", "Two lions and an eagle", "A dove and two doves"],
+    answer: 0,
+    explanation: "Nigeria's Coat of Arms features a black shield crossed by a wavy white \"Y\" pane, supported by two white horses, with an eagle perched on top."
+  },
+  {
+    question: "What does the eagle on Nigeria's Coat of Arms symbolize?",
+    options: ["Wealth", "Strength", "Unity", "Peace"],
+    answer: 1,
+    explanation: "The eagle on Nigeria's Coat of Arms represents strength, standing prominently atop the national emblem."
+  },
+  {
+    question: "What is Nigeria's national anthem currently titled (as of its most recent 2024 reinstatement)?",
+    options: ["\"One Nigeria, One Destiny\"", "\"Arise, O Compatriots\"", "\"God Bless Nigeria\"", "\"Nigeria, We Hail Thee\""],
+    answer: 3,
+    explanation: "In May 2024, Nigeria officially reinstated \"Nigeria, We Hail Thee\" as its national anthem, replacing \"Arise, O Compatriots\" which had been in use since 1978."
+  },
+  {
+    question: "What is Nigeria's national bird, as depicted on the Coat of Arms?",
+    options: ["Eagle", "Ostrich", "Peacock", "Vulture"],
+    answer: 0,
+    explanation: "The eagle is Nigeria's national bird, prominently featured atop the Coat of Arms as a symbol of strength and vision."
+  },
+  {
+    question: "What flower is recognized as Nigeria's national flower?",
+    options: ["Costus spectabilis (yellow trumpet flower)", "Sunflower", "Rose", "Hibiscus"],
+    answer: 0,
+    explanation: "Costus spectabilis, a bright yellow flower native to Nigeria, is recognized as the country's national flower."
+  },
+  {
+    question: "Which motto is inscribed on Nigeria's Coat of Arms?",
+    options: ["\"Freedom and Justice\"", "\"Peace and Progress\"", "\"One Nation, One Destiny\"", "\"Unity and Faith, Peace and Progress\""],
+    answer: 3,
+    explanation: "Nigeria's national motto, inscribed on the Coat of Arms, is \"Unity and Faith, Peace and Progress.\""
+  },
+  {
+    question: "What is Nigeria's official language for government, business, and education?",
+    options: ["Igbo", "Yoruba", "English", "Hausa"],
+    answer: 2,
+    explanation: "English is Nigeria's official language, chosen as a unifying language for administration and education, given the country's numerous indigenous languages."
+  },
+];
+
+const CURRENTAFFAIRSC = [
+  {
+    question: "Which sector currently contributes the largest share to Nigeria's GDP?",
+    options: ["Manufacturing", "Agriculture", "Services", "Oil and gas"],
+    answer: 2,
+    explanation: "The services sector is currently the largest contributor to Nigeria's GDP, accounting for over half of total output, even though oil remains the dominant export earner."
+  },
+  {
+    question: "What is Nigeria's official currency, and which body issues/regulates it?",
+    options: ["Naira; Nigerian Stock Exchange", "Naira; Central Bank of Nigeria (CBN)", "Cedi; Central Bank of Nigeria", "Naira; Federal Ministry of Finance"],
+    answer: 1,
+    explanation: "The Naira is issued and regulated by the Central Bank of Nigeria (CBN), which also sets monetary policy including interest rates."
+  },
+  {
+    question: "Despite contributing a smaller share to GDP directly, which sector remains Nigeria's dominant source of foreign exchange earnings?",
+    options: ["Telecommunications", "Agriculture", "Oil and gas (crude petroleum)", "Manufacturing"],
+    answer: 2,
+    explanation: "Crude petroleum and natural gas remain Nigeria's primary source of foreign exchange earnings and government revenue."
+  },
+  {
+    question: "Which of the following is NOT typically listed among Nigeria's major agricultural export/food crops?",
+    options: ["Wheat (as a major export crop)", "Palm oil", "Cassava", "Cocoa"],
+    answer: 0,
+    explanation: "While Nigeria produces cassava, cocoa, and palm oil in significant quantities, wheat is not a major Nigerian export crop — Nigeria imports substantial wheat to meet domestic demand."
+  },
+  {
+    question: "Nigeria's economy is often described as Africa's largest by which primary measure?",
+    options: ["Land area", "Number of airports", "Number of universities", "Population and overall GDP size"],
+    answer: 3,
+    explanation: "Nigeria is widely recognized as both Africa's most populous country and, by nominal GDP, one of its largest economies on the continent."
+  },
+  {
+    question: "Which Nigerian industry has grown into one of the world's largest film industries by volume?",
+    options: ["Nollywood (film industry)", "Fashion industry", "Publishing industry", "Music industry"],
+    answer: 0,
+    explanation: "Nollywood, Nigeria's film industry, has grown to become one of the world's largest by volume of films produced annually, alongside India's Bollywood and Hollywood."
+  },
+  {
+    question: "What has been a major economic challenge for Nigeria in recent years, significantly affecting household purchasing power?",
+    options: ["High inflation", "Currency appreciation", "Trade surplus with all partners", "Deflation"],
+    answer: 0,
+    explanation: "Nigeria has faced persistently high inflation in recent years, driven by factors including fuel subsidy removal and exchange rate reforms."
+  },
+  {
+    question: "Which economic reform, implemented in recent years, involved the removal of a long-standing government subsidy on petrol?",
+    options: ["Fuel subsidy removal", "Import ban policy", "Tax reform", "Naira redesign"],
+    answer: 0,
+    explanation: "The removal of the fuel (petrol) subsidy has been one of Nigeria's most significant recent economic reforms, aimed at reducing government expenditure."
+  },
+  {
+    question: "Which of the following best describes Nigeria's manufacturing sector output?",
+    options: ["Includes cement, food processing, textiles, and petroleum products", "Focuses exclusively on car manufacturing", "Only produces textiles", "No manufacturing exists"],
+    answer: 0,
+    explanation: "Nigeria's manufacturing sector spans several areas including cement production, food processing, textiles, fertilizers, and petroleum products."
+  },
+  {
+    question: "Nigeria's fintech and digital economy sector has grown significantly, becoming a notable part of which broader economic sector?",
+    options: ["Mining", "Services (particularly telecommunications/technology)", "Oil and gas", "Agriculture"],
+    answer: 1,
+    explanation: "Nigeria's rapidly growing fintech, e-commerce, and digital payments industry falls under the broader services sector."
+  },
+  {
+    question: "Which body is responsible for conducting elections in Nigeria?",
+    options: ["National Assembly", "Independent National Electoral Commission (INEC)", "Federal Ministry of Justice", "Nigeria Police Force"],
+    answer: 1,
+    explanation: "INEC is the constitutionally established body responsible for organizing and supervising elections in Nigeria at federal and state levels."
+  },
+  {
+    question: "Which agency is Nigeria's central bank, responsible for monetary policy?",
+    options: ["Nigerian Deposit Insurance Corporation (NDIC)", "Central Bank of Nigeria (CBN)", "Debt Management Office (DMO)", "Securities and Exchange Commission (SEC)"],
+    answer: 1,
+    explanation: "The Central Bank of Nigeria (CBN) is responsible for formulating and implementing monetary policy, regulating the banking sector, and issuing the national currency."
+  },
+  {
+    question: "Which agency is primarily responsible for admissions screening (JAMB examinations) into Nigerian tertiary institutions?",
+    options: ["NECO", "WAEC", "NUC", "JAMB (Joint Admissions and Matriculation Board)"],
+    answer: 3,
+    explanation: "JAMB conducts the UTME and coordinates admissions into Nigerian universities, polytechnics, and colleges of education."
+  },
+  {
+    question: "Which body regulates and accredits university education standards in Nigeria?",
+    options: ["WAEC", "JAMB", "NECO", "NUC (National Universities Commission)"],
+    answer: 3,
+    explanation: "The National Universities Commission (NUC) is responsible for regulating, accrediting, and ensuring quality standards for university education across Nigeria."
+  },
+  {
+    question: "Which agency examines students for the West African Senior School Certificate (WASSCE)?",
+    options: ["WAEC (West African Examinations Council)", "NECO", "JAMB", "NUC"],
+    answer: 0,
+    explanation: "WAEC conducts the WASSCE across West African countries, distinct from NECO which conducts Nigeria's own SSCE."
+  },
+  {
+    question: "Which agency is responsible for fighting corruption and economic crimes in Nigeria?",
+    options: ["Nigeria Police Force only", "INEC", "NNPC", "EFCC (Economic and Financial Crimes Commission)"],
+    answer: 3,
+    explanation: "The EFCC is specifically mandated to investigate and prosecute financial crimes, corruption, and economic fraud in Nigeria."
+  },
+  {
+    question: "Which national oil company oversees Nigeria's petroleum industry interests?",
+    options: ["Chevron Nigeria", "Shell Nigeria", "Dangote Group", "NNPC (Nigerian National Petroleum Company)"],
+    answer: 3,
+    explanation: "NNPC (now NNPC Limited) is Nigeria's state oil company, overseeing the country's interests in petroleum exploration, production, and distribution."
+  },
+  {
+    question: "Which body is responsible for regulating and combating drug trafficking in Nigeria?",
+    options: ["NAFDAC", "NDLEA (National Drug Law Enforcement Agency)", "Customs Service", "Immigration Service"],
+    answer: 1,
+    explanation: "NDLEA is specifically tasked with combating illicit drug trafficking and abuse within Nigeria."
+  },
+  {
+    question: "Which agency regulates food and drug safety standards in Nigeria?",
+    options: ["SON", "FIRS", "NDLEA", "NAFDAC (National Agency for Food and Drug Administration and Control)"],
+    answer: 3,
+    explanation: "NAFDAC is responsible for regulating and controlling the manufacture, importation, and distribution of food, drugs, and related products."
+  },
+  {
+    question: "Which body is responsible for collecting federal taxes in Nigeria?",
+    options: ["Debt Management Office", "FIRS (Federal Inland Revenue Service)", "Central Bank of Nigeria", "Nigerian Customs Service"],
+    answer: 1,
+    explanation: "FIRS is the primary agency responsible for assessing, collecting, and accounting for federal tax revenues in Nigeria."
+  },
+  {
+    question: "What does ECOWAS stand for?",
+    options: ["Eastern Council of West African States", "Economic Cooperation of West African States", "European Community of West African States", "Economic Community of West African States"],
+    answer: 3,
+    explanation: "ECOWAS is a regional political and economic union established in 1975 to promote economic integration among West African nations."
+  },
+  {
+    question: "As of early 2025, which three countries formally withdrew from ECOWAS?",
+    options: ["Burkina Faso, Mali, Niger", "Senegal, Guinea, Sierra Leone", "Ghana, Togo, Benin", "Chad, Cameroon, Central African Republic"],
+    answer: 0,
+    explanation: "Burkina Faso, Mali, and Niger — grouped together as the Alliance of Sahel States (AES) — formally withdrew from ECOWAS effective 29 January 2025."
+  },
+  {
+    question: "Where is ECOWAS headquartered?",
+    options: ["Accra, Ghana", "Lomé, Togo", "Dakar, Senegal", "Abuja, Nigeria"],
+    answer: 3,
+    explanation: "ECOWAS is headquartered in Abuja, Nigeria's capital, reflecting Nigeria's significant role in the organization's founding and ongoing operations."
+  },
+  {
+    question: "In what year was ECOWAS founded?",
+    options: ["1980", "1963", "1999", "1975"],
+    answer: 3,
+    explanation: "ECOWAS was established in 1975 through the Treaty of Lagos, aiming to promote economic cooperation and integration across West Africa."
+  },
+  {
+    question: "What alliance did Burkina Faso, Mali, and Niger form after tensions with ECOWAS, ahead of their formal withdrawal?",
+    options: ["Francophone Unity Front", "Sahel Cooperation Union", "Alliance of Sahel States (AES)", "West African Defense Pact"],
+    answer: 2,
+    explanation: "The three military-led governments formed the Alliance of Sahel States (AES), a confederation strengthening their mutual cooperation."
+  },
+  {
+    question: "Which organization serves as the primary continental body promoting unity and cooperation among African nations?",
+    options: ["African Union (AU)", "ECOWAS", "Commonwealth of Nations", "United Nations Africa Office"],
+    answer: 0,
+    explanation: "The African Union (AU), successor to the Organisation of African Unity (OAU), is the primary continental body promoting political and economic integration across all of Africa."
+  },
+  {
+    question: "Where is the African Union headquartered?",
+    options: ["Pretoria, South Africa", "Addis Ababa, Ethiopia", "Abuja, Nigeria", "Cairo, Egypt"],
+    answer: 1,
+    explanation: "The African Union is headquartered in Addis Ababa, Ethiopia, which also hosts many other continental diplomatic institutions."
+  },
+  {
+    question: "What organization did the African Union succeed in 2002?",
+    options: ["The Commonwealth", "ECOWAS", "The Organisation of African Unity (OAU)", "The United Nations"],
+    answer: 2,
+    explanation: "The African Union was formally established in 2002, replacing the Organisation of African Unity (OAU), which had existed since 1963."
+  },
+  {
+    question: "What is the main goal of the African Continental Free Trade Area (AfCFTA)?",
+    options: ["To promote free trade and economic integration across African countries", "To create a single African military force", "To establish a single African currency immediately", "To replace the African Union"],
+    answer: 0,
+    explanation: "AfCFTA aims to create a single continental market for goods and services, boosting intra-African trade by reducing tariffs and other trade barriers."
+  },
+  {
+    question: "How many countries currently remain in ECOWAS following the 2025 withdrawals?",
+    options: ["15", "10", "12", "18"],
+    answer: 2,
+    explanation: "Following the formal exit of Burkina Faso, Mali, and Niger in January 2025, ECOWAS's remaining membership stands at 12 countries (down from the original 15)."
+  },
+  {
+    question: "What does UN stand for?",
+    options: ["United Nations", "United Nigeria", "United Nationalities", "Universal Nations"],
+    answer: 0,
+    explanation: "UN stands for United Nations, an international organization founded in 1945 to promote international cooperation, peace, and security."
+  },
+  {
+    question: "In what year was the United Nations founded?",
+    options: ["1960", "1945", "1919", "1975"],
+    answer: 1,
+    explanation: "The United Nations was founded in 1945, immediately after World War II, replacing the earlier League of Nations."
+  },
+  {
+    question: "Where is the United Nations headquarters located?",
+    options: ["Vienna, Austria", "New York City, USA", "Geneva, Switzerland", "The Hague, Netherlands"],
+    answer: 1,
+    explanation: "The UN's main headquarters is located in New York City, USA, though it maintains other major offices in Geneva, Vienna, and Nairobi."
+  },
+  {
+    question: "How many permanent members does the UN Security Council have?",
+    options: ["10", "5", "15", "3"],
+    answer: 1,
+    explanation: "The UN Security Council has 5 permanent members (USA, UK, France, Russia, and China), each holding veto power, alongside 10 non-permanent rotating members."
+  },
+  {
+    question: "Which UN agency is primarily focused on children's welfare worldwide?",
+    options: ["UNICEF", "UNESCO", "UNHCR", "WHO"],
+    answer: 0,
+    explanation: "UNICEF (United Nations Children's Fund) is specifically dedicated to providing humanitarian and developmental aid to children worldwide."
+  },
+  {
+    question: "Which UN agency focuses on global health issues?",
+    options: ["WHO (World Health Organization)", "FAO", "UNESCO", "UNICEF"],
+    answer: 0,
+    explanation: "The World Health Organization (WHO) is the UN specialized agency responsible for international public health."
+  },
+  {
+    question: "Which international organization focuses on education, science, and culture?",
+    options: ["UNESCO", "WHO", "UNDP", "UNICEF"],
+    answer: 0,
+    explanation: "UNESCO promotes international collaboration in education, science, and cultural preservation, including World Heritage Site designations."
+  },
+  {
+    question: "Nigeria is a member of which of the following international organizations?",
+    options: ["NATO", "United Nations only", "United Nations, African Union, ECOWAS, and Commonwealth of Nations", "European Union"],
+    answer: 2,
+    explanation: "Nigeria holds membership in multiple international organizations including the UN, African Union, ECOWAS, and the Commonwealth of Nations, but is not part of NATO or the EU."
+  },
+  {
+    question: "Which international organization is primarily concerned with international peace, labor rights, and humanitarian standards through various specialized agencies?",
+    options: ["World Trade Organization only", "The United Nations and its specialized agencies", "OPEC", "IMF only"],
+    answer: 1,
+    explanation: "The United Nations, through its various specialized agencies, addresses a broad range of international peace, humanitarian, and development issues."
+  },
+  {
+    question: "Who is the current Secretary-General of the United Nations?",
+    options: ["Kofi Annan", "Boutros Boutros-Ghali", "António Guterres", "Ban Ki-moon"],
+    answer: 2,
+    explanation: "António Guterres has served as UN Secretary-General since 2017, continuing in this role through his current term."
+  },
+  {
+    question: "Who currently serves as President of Nigeria, having taken office in May 2023?",
+    options: ["Atiku Abubakar", "Peter Obi", "Muhammadu Buhari", "Bola Ahmed Tinubu"],
+    answer: 3,
+    explanation: "Bola Ahmed Tinubu has served as Nigeria's President since 29 May 2023, continuing to lead the country through 2025 and 2026."
+  },
+  {
+    question: "Former President Muhammadu Buhari passed away in which year?",
+    options: ["2024", "2026", "2025", "2023"],
+    answer: 2,
+    explanation: "Muhammadu Buhari passed away on 13 July 2025, a significant recent event in Nigeria's political history."
+  },
+  {
+    question: "What major economic reform has been a central focus of the Tinubu administration since 2023?",
+    options: ["Removal of fuel subsidy and foreign exchange rate reforms", "Nationalization of all banks", "Reintroduction of fuel subsidies", "Closure of the stock exchange"],
+    answer: 0,
+    explanation: "President Tinubu's administration has pursued significant economic reforms including the removal of the long-standing fuel subsidy and adjustments to foreign exchange policy."
+  },
+  {
+    question: "As of 2025-2026, which three West African countries have formed the Alliance of Sahel States after leaving ECOWAS?",
+    options: ["Togo, Benin, Ivory Coast", "Burkina Faso, Mali, Niger", "Chad, Cameroon, Gabon", "Nigeria, Ghana, Senegal"],
+    answer: 1,
+    explanation: "Burkina Faso, Mali, and Niger formed the Alliance of Sahel States (AES) and formally withdrew from ECOWAS in January 2025."
+  },
+  {
+    question: "What was notable about Nigeria's national anthem status as of May 2024?",
+    options: ["Nigeria adopted its first-ever national anthem", "The national anthem was translated into all local languages officially", "Nigeria abolished having a national anthem", "\"Nigeria, We Hail Thee\" was reinstated as the national anthem, replacing \"Arise, O Compatriots\""],
+    answer: 3,
+    explanation: "In May 2024, the Nigerian government reinstated \"Nigeria, We Hail Thee\" as the national anthem, a notable and somewhat controversial policy change."
+  },
+  {
+    question: "Which sector has been highlighted as a key driver of Nigeria's economic growth projections for 2026?",
+    options: ["Only agriculture", "Only oil and gas", "Services, technology/telecommunications, agriculture, and non-oil exports", "Only manufacturing"],
+    answer: 2,
+    explanation: "Economic outlooks for 2026 point to a broad-based recovery driven by services, oil and gas, agriculture, construction, and the growing digital economy."
+  },
+  {
+    question: "What has been a persistent macroeconomic challenge for Nigeria despite recent reforms (as of 2025-2026)?",
+    options: ["Zero inflation", "High inflation, though gradually easing from a 2024 peak", "Currency appreciation causing problems", "No economic challenges remain"],
+    answer: 1,
+    explanation: "Nigeria's inflation peaked above 33% in late 2024 following subsidy removal and exchange rate reforms, and while easing, remains a significant challenge."
+  },
+  {
+    question: "Which of the following reflects a recent global trend affecting international current affairs?",
+    options: ["Continued global focus on issues like climate change, artificial intelligence development, and geopolitical tensions", "Declining use of digital technology worldwide", "Total elimination of global trade", "Complete resolution of all international conflicts"],
+    answer: 0,
+    explanation: "Ongoing global current affairs continue to center around climate change mitigation, the rapid advancement of artificial intelligence, and various geopolitical tensions."
+  },
+  {
+    question: "Which body remains responsible for organizing Nigeria's general elections, including the most recent 2023 presidential election?",
+    options: ["INEC", "Nigerian Army", "National Assembly", "Supreme Court"],
+    answer: 0,
+    explanation: "INEC organized Nigeria's 2023 general elections, which brought President Bola Tinubu into office, and remains the body responsible for future elections."
+  },
+  {
+    question: "Why is it particularly important for post-UTME candidates to verify current affairs facts (like office holders) close to their exam date?",
+    options: ["Current affairs never change", "Only historical facts matter for exams", "Current affairs questions are never asked in Nigerian exams", "Office holders, government policies, and international memberships can change, making up-to-date verification essential"],
+    answer: 3,
+    explanation: "Unlike fixed historical facts, current affairs — such as who holds a particular office or recent policy changes — can and do change, making it essential to verify such details close to the exam date."
+  },
+];
+
 function getCourse(course) {
   return {
     ENGLISH,
@@ -4318,7 +7591,18 @@ function getCourse(course) {
     CHEMISTRYA,
     CHEMISTRYB,
     CHEMISTRYC,
-    CHEMISTRYD
+    CHEMISTRYD,
+    MATHSA,
+    MATHSB,
+    MATHSC,
+    MATHSD,
+    BIOLOGYA,
+    BIOLOGYB,
+    BIOLOGYC,
+    BIOLOGYD,
+    CURRENTAFFAIRSA,
+    CURRENTAFFAIRSB,
+    CURRENTAFFAIRSC
   }[course];
 }
 // ===== SHOW PREVIOUS RESULT =====
